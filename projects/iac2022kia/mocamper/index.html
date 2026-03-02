@@ -434,7 +434,7 @@
         };
 
         const PAGE_TITLE = "<b>MO</b>CAMPER";
-        const CORRECT_PASSWORD = "2287";
+        const CORRECT_PASSWORD = "2287"; // kept for compatibility (gate moved to parent index)
 
         // Images (WebP) — served from /portfolio/images/iac2022kia/mocamper/
         const BASE_IMG = '../../images/iac2022kia/mocamper/';
@@ -645,6 +645,10 @@
                 }
             }
         });
+
+        
+        // Parent index handles password gate now
+        sessionStorage.setItem('authed_mocamper', '1');
 
         /* ── password logic ── */
         let wrongCount = 0;
