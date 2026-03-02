@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOCAMPER – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --fade-time: 1000ms;
+            --accent: #1FFFE0;
+            --bg: #1F2121;
+            --text: #EBF2F4;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: #fff;
+        }
+
+        /* ═══════════════════════════════════════════
+       PASSWORD SCREEN
+    ═══════════════════════════════════════════ */
+        #password-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity var(--fade-time) ease-in-out;
+        }
+
+        /* blurred first-image background */
+        #password-screen::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            /* overshoot to hide blur edges */
+            background-image: var(--bg-img);
+            background-size: cover;
+            background-position: center;
+            filter: blur(24px);
+            transform: scale(1.05);
+            z-index: 0;
+        }
+
+        /* dark scrim on top of blur */
+        #password-screen::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 22, 22, 0.55);
+            z-index: 1;
+        }
+
+        .password-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px;
+            width: 100%;
+        }
+
+        .pre-title {
+            color: var(--text);
+            font-size: 17px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            min-height: 20px;
+        }
+
+        .kia-logo {
+            height: 13px;
+            width: auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: var(--accent);
+        }
+
+        h1 b {
+            font-weight: 700;
+        }
+
+        #password-input {
+            width: 300px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            background: var(--text);
+            color: var(--bg);
+            border-radius: 0;
+            outline: none;
+            transition: all 0.3s;
+            text-align: center;
+            letter-spacing: 3px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #password-input::placeholder {
+            color: #1F2F21;
+            opacity: 0.6;
+        }
+
+        #submit-btn {
+            display: none;
+        }
+
+        #error-message {
+            color: #ff6445;
+            margin-top: 15px;
+            font-size: 14px;
+            min-height: 20px;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-10px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(10px);
+            }
+        }
+
+        /* ═══════════════════════════════════════════
+       PORTFOLIO SCREEN  (Swiper Container)
+    ═══════════════════════════════════════════ */
+        #portfolio-screen {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity var(--fade-time) ease-in-out;
+            z-index: 100;
+            background: var(--bg);
+        }
+
+        #portfolio-screen.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ── Slide ── */
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            overflow: hidden;
+        }
+
+        /* Scale is applied to the img (or pair wrapper), not .swiper-slide,
+           so transform-origin is always the visible image center.
+           width:100% → always fills slide width edge-to-edge for landscape renders.
+           height:auto → maintains aspect ratio (no vertical cropping on normal screens). */
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* prevent save / copy */
+            pointer-events: none;
+            /* blocks long-press "save image" on mobile */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            /* iOS long-press menu */
+            -webkit-user-drag: none;
+            /* Safari drag */
+        }
+
+        /* Side-by-side pair layout */
+        .swiper-slide .pair {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            /* no gap – images sit flush */
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide .pair img {
+            flex: 1 1 0;
+            max-width: 50%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            /* pair images move with the wrapper */
+        }
+
+        /* Video slide — Minimalist Cover */
+        .slide-video {
+            background: #000;
+            position: relative;
+        }
+
+        .video-cover {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transition: opacity 0.4s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .play-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Left-alignment with text */
+            gap: 16px;
+            /* Gap between triangle and text */
+        }
+
+        /* Sharp, flat triangle play button */
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 80px 0 80px 138px;
+            /* 1.5x scaled from 106px / 92px */
+            border-color: transparent transparent transparent #EBF2F4;
+            margin-left: 0;
+            /* centered inside flex-start */
+            transition: transform 0.3s;
+            transform-origin: left center;
+        }
+
+        .video-cover:hover .play-icon {
+            transform: scale(1.06);
+            /* slight hover effect */
+        }
+
+        .play-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            /* 1.5x scaled from 10px */
+            letter-spacing: 0;
+            color: #EBF2F4;
+            font-weight: 400;
+            /* Regular weight */
+            margin-top: 0;
+        }
+
+        /* Iframe layer */
+        .video-iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s;
+            z-index: 1;
+        }
+
+        .video-iframe.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Invisible swipe zones to allow scrolling over iframe */
+        .swipe-overlay {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            /* 20% height top */
+            z-index: 5;
+            /* Above iframe, below cover */
+            /* pointer-events default is auto, allowing swiper to grab touches here */
+        }
+
+        .swipe-overlay.top {
+            top: 0;
+        }
+
+        /* ═══════════════════════════════════════════
+       SCROLL HINT
+    ═══════════════════════════════════════════ */
+        #scroll-hint {
+            position: fixed;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.6s ease;
+            z-index: 300;
+        }
+
+        #scroll-hint.show {
+            opacity: 1;
+        }
+
+        #scroll-hint.hide {
+            opacity: 0;
+        }
+
+        .scroll-arrow {
+            width: 20px;
+            height: 20px;
+            border-right: 2px solid var(--accent);
+            border-bottom: 2px solid var(--accent);
+            transform: rotate(45deg);
+            animation: bounce 1.4s infinite;
+        }
+
+        .scroll-label {
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: rotate(45deg) translateY(0);
+            }
+
+            50% {
+                transform: rotate(45deg) translateY(6px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            #password-screen {
+                justify-content: flex-start;
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ══ PASSWORD SCREEN ══════════════════════════════════════ -->
+    <div id="password-screen">
+        <div class="password-container">
+            <div class="pre-title" id="pre-title-container"></div>
+            <h1 id="page-title"></h1>
+            <input type="password" id="password-input" placeholder="password" autocomplete="off" maxlength="4">
+            <br>
+            <button id="submit-btn">확인</button>
+            <div id="error-message"></div>
+        </div>
+    </div>
+
+    <!-- ══ PORTFOLIO SCREEN ══════════════════════════════════════ -->
+    <div id="portfolio-screen" class="swiper">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides injected by JS -->
+        </div>
+    </div>
+
+    <!-- ══ SCROLL HINT ══════════════════════════════════════════ -->
+    <div id="scroll-hint">
+        <div class="scroll-arrow"></div>
+        <div class="scroll-label">SCROLL</div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // ═══════════════════════════════════════════════════════════
+        // ⚙️  SETTINGS
+        // ═══════════════════════════════════════════════════════════
+
+        const PRE_TITLE_CONFIG = {
+            text: "IAC 2022",
+            logoSrc: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMjUiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyOS44LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMSBCdWlsZCAyKSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6ICNlYmYyZjQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01OC4wMiwyMS44M2MwLC4xOS4wNi4zLjE3LjMuMDktLjAxLjE3LS4wNS4yNC0uMUw4OS42LDEuOGMuNTMtLjM3LDEuMTYtLjU2LDEuOC0uNTRoNi44NWMxLjA1LDAsMS43Ni43LDEuNzYsMS43NXYxMy4wOGMwLDEuNTgtLjM1LDIuNS0xLjc1LDMuMzRsLTguMzEsNWMtLjA4LjA2LS4xOC4wOS0uMjguMS0uMSwwLS4yLS4wOC0uMi0uMzd2LTE1LjI2YzAtLjE4LS4wNS0uMy0uMTctLjMtLjA5LjAxLS4xNy4wNC0uMjQuMWwtMjIuNzgsMTQuOGMtLjUyLjM1LTEuMTMuNTQtMS43NS41M2gtMTUuMWMtMS4wNiwwLTEuNzYtLjctMS43Ni0xLjc2VjMuNDJjMC0uMTQtLjA2LS4yNy0uMTgtLjI3LS4wOS4wMS0uMTcuMDUtLjI0LjFsLTE1LjAzLDkuMDJjLS4xNS4xLS4xOS4xNy0uMTkuMjQsMCwuMDYuMDMuMTIuMTMuMjNsMTAuNzQsMTAuNzNjLjE0LjE0LjI0LjI1LjI0LjM3LDAsLjEtLjE2LjE4LS4zNS4xOGgtOS43Yy0uNzYsMC0xLjM1LS4xMS0xLjc2LS41MmwtNi41MS02LjVjLS4wNS0uMDYtLjEyLS4xLS4yLS4xLS4wNywwLS4xNC4wMi0uMi4wNmwtMTAuODgsNi41NGMtLjY2LjQtMS4xMS41MS0xLjc2LjUxSDEuNzdjLTEuMDcuMDEtMS43Ny0uNy0xLjc3LTEuNzV2LTEyLjgzYzAtMS41OS4zNS0yLjUsMS43Ni0zLjM0TDEwLjEyLDEuMDdjLjA3LS4wNC4xNC0uMDcuMjItLjA3LjEzLDAsLjIuMTMuMi40MnYxNy4xOGMwLC4xOC4wNC4yNi4xNy4yNi4wOS0uMDEuMTctLjA1LjI1LS4xTDM5LjIsMS43N2MuNTQtLjM3LDEuMi0uNTUsMS44Ni0uNTJoMTUuMmMxLjA1LDAsMS43Ni43LDEuNzYsMS43NXYxOC44M3MwLDAsMCwwWiIvPgo8L3N2Zz4="
+        };
+
+        const PAGE_TITLE = "<b>MO</b>CAMPER";
+        const CORRECT_PASSWORD = "2287";
+
+        // Images (WebP) — served from /portfolio/images/iac2022kia/mocamper/
+        const BASE_IMG = '../../images/iac2022kia/mocamper/';
+        const IMAGES = [
+            "01IAC22K-01MC-01 _ Title (cinematic).webp",
+            "01IAC22K-01MC-02 _ 설명 (dimension.webp",
+            "01IAC22K-01MC-03 _ Components.webp",
+            "01IAC22K-01MC-04 _ Rigging.webp",
+            "01IAC22K-01MC-05 _ CMF.webp",
+            "01IAC22K-01MC-06 _ Exterior still.webp",
+            "01IAC22K-01MC-07 _ Interior still.webp",
+            "01IAC22K-01MC-08 _ Expedition variant (env).webp",
+            "01IAC22K-01MC-09 _ Adaptive suspension (env).webp",
+            "01IAC22K-01MC-10 _ All wheel steering (env).webp",
+            "01IAC22K-01MC-11 _ XR Integration (env interior).webp",
+            "01IAC22K-01MC-12 _ Camp mode exterior (env).webp",
+            "01IAC22K-01MC-13 _ Camp mode interior (env interior).webp",
+            "01IAC22K-01MC-14 _ Panorama (1.webp",
+            "01IAC22K-01MC-15 _ Panorama (2.webp",
+            "01IAC22K-01MC-16 _ Review.webp"
+        ];
+
+        // 5. YouTube Video (last slide) — set to null to hide
+        const YOUTUBE_VIDEO_ID = "HYbgUQKD9TA";
+
+        const FADE_TIME_MS = 1000;
+        const POST_FADE_DELAY = 500;
+
+        // ═══════════════════════════════════════════════════════════
+        // ⚠️  Do not edit below this line
+        // ═══════════════════════════════════════════════════════════
+
+        /* ── helpers ── */
+        const encName = f => f.replace(/ /g, '%20');
+        const imgURL = f => BASE_IMG + encName(f);
+
+        /* ── apply blur background using first image ── */
+        document.getElementById('password-screen')
+            .style.setProperty('--bg-img', `url('${imgURL(IMAGES[0])}')`);
+
+        document.documentElement.style.setProperty('--fade-time', `${FADE_TIME_MS}ms`);
+
+        /* ── DOM refs ── */
+        const passwordInput = document.getElementById('password-input');
+        const errorMessage = document.getElementById('error-message');
+        const passwordScreen = document.getElementById('password-screen');
+        const portfolioScreen = document.getElementById('portfolio-screen');
+        const swiperWrapper = document.getElementById('swiper-wrapper');
+        const preTitleContainer = document.getElementById('pre-title-container');
+        const pageTitleEl = document.getElementById('page-title');
+        const scrollHint = document.getElementById('scroll-hint');
+
+        /* ── pre-title ── */
+        let preTitleHTML = '';
+        if (PRE_TITLE_CONFIG.text) preTitleHTML += `<span>${PRE_TITLE_CONFIG.text}</span>`;
+        if (PRE_TITLE_CONFIG.logoSrc) preTitleHTML += `<img src="${PRE_TITLE_CONFIG.logoSrc}" alt="Kia Logo" class="kia-logo">`;
+        preTitleContainer.innerHTML = preTitleHTML;
+        pageTitleEl.innerHTML = PAGE_TITLE;
+        document.title = pageTitleEl.innerText + ' – Portfolio';
+
+        /* ── build slides ──
+        Panorama (1 & 2) = indices 13 & 14 → merged into one slide
+    ── */
+        const PAIR_INDICES = [13, 14]; // 0-based: "Panorama (1" and "Panorama (2"
+
+        let i = 0;
+        while (i < IMAGES.length) {
+            if (i === PAIR_INDICES[0]) {
+                // ── Paired slide ──
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+
+                // Swiper zoom wrapper
+                const zoomWrap = document.createElement('div');
+                zoomWrap.className = 'swiper-zoom-container';
+
+                const pair = document.createElement('div');
+                pair.className = 'pair swiper-zoom-target';
+                [PAIR_INDICES[0], PAIR_INDICES[1]].forEach((idx) => {
+                    const img = document.createElement('img');
+                    img.src = imgURL(IMAGES[idx]);
+                    img.alt = `Mocamper – slide ${idx + 1}`;
+                    img.loading = 'lazy';
+                    pair.appendChild(img);
+                });
+                zoomWrap.appendChild(pair);
+                slide.appendChild(zoomWrap);
+                swiperWrapper.appendChild(slide);
+                i += 2; // skip both panoramas
+            } else {
+                // ── Regular slide ──
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+
+                // Swiper zoom wrapper
+                const zoomWrap = document.createElement('div');
+                zoomWrap.className = 'swiper-zoom-container';
+
+                const img = document.createElement('img');
+                img.src = imgURL(IMAGES[i]);
+                img.alt = `Mocamper – slide ${i + 1}`;
+                img.loading = i < 2 ? 'eager' : 'lazy';
+
+                zoomWrap.appendChild(img);
+                slide.appendChild(zoomWrap);
+                swiperWrapper.appendChild(slide);
+                i++;
+            }
+        }
+
+        let videoIframe = null;
+
+        // ── Video slide (last) Minimalist UI ──
+        if (YOUTUBE_VIDEO_ID) {
+            const vSlide = document.createElement('div');
+            vSlide.className = 'swiper-slide slide-video';
+
+            // Minimalist Cover
+            const cover = document.createElement('div');
+            cover.className = 'video-cover';
+            // Added explicit click handler trick for iOS Safari robustness
+            cover.onclick = function () { };
+
+            const group = document.createElement('div');
+            group.className = 'play-group';
+
+            const icon = document.createElement('div');
+            icon.className = 'play-icon';
+
+            const text = document.createElement('div');
+            text.className = 'play-text';
+            text.textContent = 'press to play video';
+
+            group.appendChild(icon);
+            group.appendChild(text);
+            cover.appendChild(group);
+            vSlide.appendChild(cover);
+
+            // The iframe layer
+            const iframe = document.createElement('iframe');
+            iframe.className = 'video-iframe';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+            iframe.allowFullscreen = true;
+            vSlide.appendChild(iframe);
+            videoIframe = iframe;
+
+            // Subtle swipe areas to allow escaping the iframe (top only)
+            const topSwipe = document.createElement('div');
+            topSwipe.className = 'swipe-overlay top';
+            vSlide.appendChild(topSwipe);
+
+            // Click to Play
+            cover.addEventListener('click', () => {
+                // 1. Hide cover, show iframe visually
+                cover.style.opacity = '0';
+                cover.style.pointerEvents = 'none';
+                iframe.classList.add('active');
+
+                // 2. Load/Play video (No Fullscreen requested as per plan)
+                if (!iframe.src || iframe.src === 'about:blank') {
+                    iframe.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?controls=1&modestbranding=1&rel=0&enablejsapi=1&autoplay=1`;
+                } else {
+                    iframe.contentWindow?.postMessage('{"event":"command","func":"playVideo","args":[]}', '*');
+                }
+            });
+
+            swiperWrapper.appendChild(vSlide);
+        }
+
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            mousewheel: true,
+            keyboard: {
+                enabled: true,
+            },
+            zoom: {
+                maxRatio: 3,
+                toggle: false, // disable double-click zoom
+            },
+            speed: 600,
+            on: {
+                slideChange: function () {
+                    scrollHint.classList.add('hide');
+
+                    // Pause video and restore cover when leaving the slide
+                    if (videoIframe && videoIframe.src) {
+                        videoIframe.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":[]}', '*');
+                        if (this.activeIndex !== swiper.slides.length - 1) { // If leaving the last slide
+                            const cover = videoIframe.parentElement.querySelector('.video-cover');
+                            if (cover) {
+                                cover.style.opacity = '1';
+                                cover.style.pointerEvents = 'auto';
+                            }
+                            videoIframe.classList.remove('active');
+                        }
+                    }
+                },
+                // Force reset zoom to fix off-center clipping bug when shrinking
+                zoomChange: function (swiper, scale, imageEl, slideEl) {
+                    if (scale <= 1.05) {
+                        // Using a short timeout ensures Swiper's internal calculations finish
+                        setTimeout(() => {
+                            if (swiper.zoom.scale <= 1.05) swiper.zoom.out();
+                        }, 50);
+                    }
+                }
+            }
+        });
+
+        /* ── password logic ── */
+        let wrongCount = 0;
+
+        function unlockPortfolio(isInstant = false) {
+            sessionStorage.setItem('authed_mocamper', '1');
+            if (isInstant) {
+                passwordScreen.style.display = 'none';
+                portfolioScreen.classList.add('visible');
+
+                scrollHint.classList.add('show');
+                setTimeout(() => scrollHint.classList.add('hide'), 2800);
+            } else {
+                passwordScreen.style.opacity = '0';
+                setTimeout(() => {
+                    passwordScreen.style.display = 'none';
+                    portfolioScreen.classList.add('visible');
+
+                    scrollHint.classList.add('show');
+                    setTimeout(() => scrollHint.classList.add('hide'), 2800);
+                }, FADE_TIME_MS + POST_FADE_DELAY);
+            }
+        }
+
+        function checkPassword() {
+            if (passwordInput.value === CORRECT_PASSWORD) {
+                unlockPortfolio(false);
+            } else {
+                wrongCount++;
+                const msgs = [
+                    'invalid (3 remaining)',
+                    'invalid (2 remaining)',
+                    'invalid (1 remaining before video deletion)',
+                    'invalid (video deleted)',
+                    'invalid (I was joking)',
+                ];
+                errorMessage.textContent = msgs[wrongCount - 1] ?? 'invalid (do not give up)';
+                passwordInput.style.animation = 'shake 0.5s';
+                setTimeout(() => {
+                    passwordInput.style.animation = '';
+                    passwordInput.value = '';
+                }, 500);
+            }
+        }
+
+        passwordInput.addEventListener('input', function () {
+            errorMessage.textContent = '';
+            if (this.value.length === 4) checkPassword();
+        });
+
+        // `hide scroll hint on first scroll` is now handled in Swiper's on: slideChange
+
+        window.addEventListener('load', () => {
+            if (sessionStorage.getItem('authed_mocamper') === '1') {
+                unlockPortfolio(true);
+            } else {
+                passwordInput.focus();
+            }
+        });
+
+        /* ── Content protection (deterrents) ── */
+        // Disable right-click on portfolio content
+        portfolioScreen.addEventListener('contextmenu', e => e.preventDefault());
+        // Disable image drag
+        portfolioScreen.addEventListener('dragstart', e => {
+            if (e.target.tagName === 'IMG') e.preventDefault();
+        });
+        // Block Ctrl+S (save), Ctrl+U (view source)
+        document.addEventListener('keydown', e => {
+            if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'u')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
