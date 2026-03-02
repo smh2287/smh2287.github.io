@@ -65,13 +65,14 @@
 
   <script>
     const KEY='authed_iac2022kia';
-    const PASS='2287';
+    const PASS_SHA256='4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
     const app=document.getElementById('app');
     const gate=document.getElementById('gate');
     const pwd=document.getElementById('pwd');
     const err=document.getElementById('err');
     function unlock(){sessionStorage.setItem(KEY,'1');app.classList.remove('locked');gate.style.display='none'}
-    function check(){if(pwd.value===PASS){unlock()}else{err.textContent='비밀번호가 올바르지 않습니다.';pwd.value='';pwd.focus();}}
+    async function sha256(s){const b=new TextEncoder().encode(s);const d=await crypto.subtle.digest('SHA-256',b);return Array.from(new Uint8Array(d)).map(v=>v.toString(16).padStart(2,'0')).join('');}
+    async function check(){const h=await sha256(pwd.value);if(h===PASS_SHA256){unlock()}else{err.textContent='비밀번호가 올바르지 않습니다.';pwd.value='';pwd.focus();}}
     if(sessionStorage.getItem(KEY)==='1'){unlock()} else {pwd.focus()}
     document.getElementById('ok').addEventListener('click',check);
     pwd.addEventListener('keydown',e=>{if(e.key==='Enter')check()});
