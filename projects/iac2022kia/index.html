@@ -141,6 +141,10 @@
                 font-size: 24px;
             }
         }
+    
+        .card.disabled { opacity: .55; cursor: not-allowed; pointer-events: none; }
+        .card.disabled .card-title::after { content: " · Coming soon"; color: #888; font-weight: 400; }
+
     </style>
 </head>
 
@@ -156,79 +160,86 @@
     </div>
 
     <div class="grid">
-        <a class="card" href="pages_mocamper.html">
+        <a class="card" href="mocamper/">
             <div class="card-body">
                 <div class="card-title">MOCAMPER</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_movilla.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">MOVILLA</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_allroundshipper.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">ALLROUND SHIPPER</div>
                 <div class="card-meta"><span>Slides Only</span></div>
             </div>
         </a>
-        <a class="card" href="pages_egonest.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">EGONEST</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_environments.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">ENVIRONMENTS</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>5 Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_globeorbiter.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">GLOBE ORBITER</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_mdeklogo.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">MDEK LOGO</div>
                 <div class="card-meta"><span>Slides Only</span></div>
             </div>
         </a>
-        <a class="card" href="pages_mdekvr.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">MDEK VR</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>2 Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_manimo.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">MANIMO</div>
                 <div class="card-meta"><span>Slides Only</span></div>
             </div>
         </a>
-        <a class="card" href="pages_tess.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">TESS</div>
                 <div class="card-meta"><span class="tag">VIDEO</span><span>Slides + Video</span></div>
             </div>
         </a>
-        <a class="card" href="pages_tessacube.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">TESSA CUBE</div>
                 <div class="card-meta"><span>Slides Only</span></div>
             </div>
         </a>
-        <a class="card" href="pages_tessaplate.html">
+        <a class="card" href="#" data-disabled="true">
             <div class="card-body">
                 <div class="card-title">TESSA PLATE</div>
                 <div class="card-meta"><span>Slides Only</span></div>
             </div>
         </a>
     </div>
+
+<script>
+(function(){
+  document.querySelectorAll('.card[data-disabled="true"]').forEach(function(el){ el.classList.add('disabled'); });
+})();
+</script>
+
 </body>
 
 </html>
