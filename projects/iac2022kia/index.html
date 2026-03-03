@@ -83,7 +83,7 @@
 
       <!-- 2. Project Tiles on black -->
       <section class="swiper-slide" style="background:#1F1F21;">
-        <div class="grid-wrap swiper-no-swiping">
+        <div class="grid-wrap">
           <div class="grid-title"><div class="pre">IAC 2022 KIA</div><h1><b>PROJECT</b> TILES</h1></div>
           <div class="grid">
             <a class="tile" href="mocamper/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/mocamper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOCAMPER</div><div class="desc">Open project</div></div></a>
@@ -122,8 +122,8 @@
     const swiper=new Swiper('#index-swiper',{
       direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
       keyboard:{enabled:true},
-      noSwiping:true,
-      noSwipingClass:'swiper-no-swiping'
+      touchReleaseOnEdges:true,
+      threshold:6,
     });
 
     async function sha256(s){
