@@ -211,7 +211,7 @@
             pointer-events: auto;
         }
     
-        #password-screen{display:none !important;}
+        
     </style>
 </head>
 
@@ -237,6 +237,12 @@
         if (__ps) { __ps.style.display = 'none'; __ps.style.opacity = '0'; }
         const __pf = document.getElementById('portfolio-screen');
         if (__pf) { __pf.classList.add('visible'); }
+
+
+        // parent category gate bridge
+        if (sessionStorage.getItem('authed_iac2022kia') === '1') {
+            sessionStorage.setItem('authed_tess', '1');
+        }
 
 </script>
     <script>
