@@ -1,11 +1,156 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>IAC2022 HYUNDAI</title><style>body{margin:0;background:#0f1113;color:#fff;font-family:Montserrat,Arial}.wrap{max-width:1200px;margin:0 auto;padding:24px}.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.tile{text-decoration:none;color:#fff;background:#171a1d;border-radius:12px;overflow:hidden}.tile img{width:100%;height:140px;object-fit:cover;display:block}.tile span{display:block;padding:10px 12px}#main{display:none}#gate{min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}input{padding:10px 12px;border-radius:8px;border:1px solid #333;background:#111;color:#fff}</style></head><body><div id='gate'><h2>IAC2022 HYUNDAI</h2><input id='pw' maxlength='4' placeholder='password'><button onclick='enter()'>enter</button><div id='err' style='color:#f88'></div></div><div id='main'><div class='wrap'><h2>IAC2022 HYUNDAI</h2><p><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/index/intro.webp' style='max-width:100%;border-radius:12px'></p><div class='tiles'><a class='tile' href='./360ambulance/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/360ambulance.webp' alt='360ambulance'><span>360AMBULANCE</span></a>
-<a class='tile' href='./foldablebike/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/foldablebike.webp' alt='foldablebike'><span>FOLDABLEBIKE</span></a>
-<a class='tile' href='./groundsurfer/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/groundsurfer.webp' alt='groundsurfer'><span>GROUNDSURFER</span></a>
-<a class='tile' href='./h-drum/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/h-drum.webp' alt='h-drum'><span>H-DRUM</span></a>
-<a class='tile' href='./lunarpm/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/lunarpm.webp' alt='lunarpm'><span>LUNARPM</span></a>
-<a class='tile' href='./microlimo/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/microlimo.webp' alt='microlimo'><span>MICROLIMO</span></a>
-<a class='tile' href='./microlounge/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/microlounge.webp' alt='microlounge'><span>MICROLOUNGE</span></a>
-<a class='tile' href='./mobedxr/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/mobedxr.webp' alt='mobedxr'><span>MOBEDXR</span></a>
-<a class='tile' href='./robokicks/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/robokicks.webp' alt='robokicks'><span>ROBOKICKS</span></a>
-<a class='tile' href='./stickbike/index.html'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/stickbike.webp' alt='stickbike'><span>STICKBIKE</span></a></div><p style='margin-top:24px'><img src='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/index/review.webp' style='max-width:100%;border-radius:12px'></p></div></div><script>const CAT='iac2022hyundai';const OK='2287';function enter(){const v=document.getElementById('pw').value;if(v===OK){sessionStorage.setItem('authed_'+CAT,'1');show();}else{document.getElementById('err').textContent='invalid';}}function show(){document.getElementById('gate').style.display='none';document.getElementById('main').style.display='block';}
-if(sessionStorage.getItem('authed_'+CAT)==='1')show();</script></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAC 2022 HYUNDAI – Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root {
+      --accent:#1FFFE0; --bg:#1F1F21; --text:#EBF2F4; --fade:1000ms;
+      --intro-img:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/index/intro.webp');
+      --ending-img:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/index/review.webp');
+    }
+    html,body{width:100%;height:100%;background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;overflow:hidden}
+    .swiper{width:100%;height:100%}
+    .swiper-slide{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--bg)}
+
+    /* no-crop backgrounds */
+    .bg{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center;filter:brightness(.9)}
+    .bg.intro{background-image:var(--intro-img)}
+    .bg.ending{background-image:var(--ending-img)}
+
+    .overlay{position:absolute;inset:0;background:rgba(0,0,0,.28)}
+
+    /* slide 2 grid */
+    .grid-wrap{position:relative;z-index:2;width:min(1260px,96vw);height:min(86vh,980px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+    .grid-title{margin-bottom:18px;text-align:center}
+    .grid-title .pre{letter-spacing:3px;color:var(--accent);font-size:14px;margin-bottom:8px}
+    .grid-title h1{font-size:26px;font-weight:300;letter-spacing:2px}
+    .grid-title h1 b{font-weight:700;color:var(--accent)}
+    .grid{width:100%;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+    .tile{position:relative;display:block;border-radius:10px;overflow:hidden;min-height:120px;text-decoration:none;color:#fff;background:#222;border:1px solid rgba(255,255,255,.08);pointer-events:auto}
+    .tile .thumb{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);filter:brightness(.78)}
+    .tile .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%, rgba(0,0,0,.68) 100%)}
+    .tile .meta{position:relative;z-index:2;padding:12px}
+    .tile .name{font-size:13px;font-weight:700;letter-spacing:.3px}
+    .tile .desc{font-size:11px;color:#d0dddd;margin-top:4px}
+    .tile:hover{outline:1px solid rgba(31,255,224,.65);transform:translateY(-1px)}
+
+    /* lock screen (mocamper-like) */
+    #password-screen{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity var(--fade) ease-in-out}
+    #password-screen::before{content:'';position:absolute;inset:-40px;background-image:var(--intro-img);background-size:cover;background-position:center;filter:blur(24px);transform:scale(1.08)}
+    #password-screen::after{content:'';position:absolute;inset:0;background:rgba(31,33,33,.78)}
+    .password-container{position:relative;z-index:2;text-align:center;padding:40px;width:100%}
+    .password-container .pre-title{color:var(--text);font-size:17px;letter-spacing:2px;margin-bottom:14px}
+    .password-container h2{font-size:30px;font-weight:300;letter-spacing:2px;margin-bottom:30px}
+    .password-container h2 b{font-weight:700;color:var(--accent)}
+    #password-input{width:300px;padding:15px 20px;font-size:16px;border:none;background:var(--text);color:var(--bg);outline:none;text-align:center;letter-spacing:3px}
+    #password-input::placeholder{color:#1F2F21;opacity:.6}
+    #submit-btn{display:none}
+    #error-message{color:#ff6445;margin-top:15px;font-size:14px;min-height:20px}
+    @keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}
+
+    .scroll-hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:20;color:#e8f3f3;font-size:12px;letter-spacing:2px;opacity:.72;pointer-events:none}
+    @media (max-width: 640px) {
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .tile{min-height:104px}
+      #password-input{width:84vw;max-width:320px}
+    }
+  </style>
+</head>
+<body>
+  <div id="password-screen">
+    <div class="password-container">
+      <div class="pre-title">IAC 2022 HYUNDAI</div>
+      <h2><b>PROJECT</b> INDEX</h2>
+      <input type="password" id="password-input" placeholder="password" autocomplete="off" maxlength="4">
+      <br><button id="submit-btn">확인</button>
+      <div id="error-message"></div>
+    </div>
+  </div>
+
+  <div class="swiper" id="index-swiper">
+    <div class="swiper-wrapper">
+      <!-- 1. Intro image only -->
+      <section class="swiper-slide">
+        <div class="bg intro"></div><div class="overlay"></div>
+      </section>
+
+      <!-- 2. Project Tiles on black -->
+      <section class="swiper-slide" style="background:#1F1F21;">
+        <div class="grid-wrap swiper-no-swiping">
+          <div class="grid-title"><div class="pre">IAC 2022 HYUNDAI</div><h1><b>PROJECT</b> TILES</h1></div>
+                    <div class="grid">
+            <a class="tile" href="360ambulance/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/360ambulance.webp')"></div><div class="shade"></div><div class="meta"><div class="name">360 AMBULANCE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="foldablebike/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/foldablebike.webp')"></div><div class="shade"></div><div class="meta"><div class="name">FOLDABLE BIKE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="groundsurfer/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/groundsurfer.webp')"></div><div class="shade"></div><div class="meta"><div class="name">GROUND SURFER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="h-drum/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/h-drum.webp')"></div><div class="shade"></div><div class="meta"><div class="name">H-DRUM</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="lunarpm/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/lunarpm.webp')"></div><div class="shade"></div><div class="meta"><div class="name">LUNAR PM</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="microlimo/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/microlimo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MICRO LIMO</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="microlounge/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/microlounge.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MICRO LOUNGE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mobedxr/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/mobedxr.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOBED XR</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="robokicks/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/robokicks.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ROBO KICKS</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="stickbike/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022hyundai/thumbs/stickbike.webp')"></div><div class="shade"></div><div class="meta"><div class="name">STICK BIKE</div><div class="desc">Open project</div></div></a>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 3. Ending image only -->
+      <section class="swiper-slide">
+        <div class="bg ending"></div><div class="overlay"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="scroll-hint">SCROLL</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const KEY='authed_iac2022hyundai';
+    const PASS_SHA256='4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
+    const passwordScreen=document.getElementById('password-screen');
+    const passwordInput=document.getElementById('password-input');
+    const errorMessage=document.getElementById('error-message');
+
+    const swiper=new Swiper('#index-swiper',{
+      direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
+      keyboard:{enabled:true},
+      noSwiping:true,
+      noSwipingClass:'swiper-no-swiping'
+    });
+
+    async function sha256(s){
+      const b=new TextEncoder().encode(s);
+      const d=await crypto.subtle.digest('SHA-256',b);
+      return Array.from(new Uint8Array(d)).map(v=>v.toString(16).padStart(2,'0')).join('');
+    }
+    function unlock(isInstant=false){
+      sessionStorage.setItem(KEY,'1');
+      if(isInstant){passwordScreen.style.display='none';}
+      else{passwordScreen.style.opacity='0';setTimeout(()=>passwordScreen.style.display='none',1000)}
+    }
+    let wrongCount=0;
+    async function checkPassword(){
+      const h=await sha256(passwordInput.value);
+      if(h===PASS_SHA256) unlock(false);
+      else{
+        wrongCount++;
+        const msgs=['비밀번호가 올바르지 않습니다.','다시 확인해 주세요.','한 번 더 시도해 보세요.','invalid (do not give up)'];
+        errorMessage.textContent=msgs[Math.min(wrongCount-1,msgs.length-1)];
+        passwordInput.style.animation='shake .5s';
+        setTimeout(()=>{passwordInput.style.animation='';passwordInput.value='';passwordInput.focus();},500);
+      }
+    }
+    passwordInput.addEventListener('input',function(){if(this.value.length===4)checkPassword();});
+    passwordInput.addEventListener('keydown',e=>{if(e.key==='Enter')checkPassword();});
+
+    if(sessionStorage.getItem(KEY)==='1') unlock(true);
+    else passwordInput.focus();
+  </script>
+</body>
+</html>
