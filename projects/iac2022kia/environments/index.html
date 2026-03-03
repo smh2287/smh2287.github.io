@@ -420,7 +420,7 @@
         });
 
         window.addEventListener('load', () => {
-            if (sessionStorage.getItem('authed_environments') === '1') unlockPortfolio(true);
+            if (sessionStorage.getItem('authed_environments') === '1' || sessionStorage.getItem('authed_iac2022kia') === '1') { sessionStorage.setItem('authed_environments','1'); unlockPortfolio(true); }
             else document.getElementById('password-input').focus();
         });
     </script>
