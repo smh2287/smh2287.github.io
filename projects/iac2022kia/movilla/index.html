@@ -392,6 +392,8 @@
         }
     
         
+    
+        #password-screen{display:none !important;}
     </style>
 </head>
 
@@ -476,6 +478,15 @@
         /* ── DOM refs ── */
         const passwordInput = document.getElementById('password-input');
         const errorMessage = document.getElementById('error-message');
+        // force open: project-level password disabled (handled by category index)
+        sessionStorage.setItem('authed_movilla', '1');
+        if (typeof unlockPortfolio === 'function') {
+            unlockPortfolio(true);
+        } else {
+            const __ps = document.getElementById('password-screen'); if (__ps) __ps.style.display='none';
+            const __pf = document.getElementById('portfolio-screen'); if (__pf) __pf.classList.add('visible');
+        }
+
         const passwordScreen = document.getElementById('password-screen');
         const portfolioScreen = document.getElementById('portfolio-screen');
         const swiperWrapper = document.getElementById('swiper-wrapper');
@@ -645,20 +656,8 @@
         
         // Parent index handles password gate now
         sessionStorage.setItem('authed_movilla', '1');
-
-        
-        // Gate disabled at project level (handled by parent index)
-        sessionStorage.setItem('authed_movilla', '1');
-        const __ps = document.getElementById('password-screen');
-        if (__ps) { __ps.style.display = 'none'; __ps.style.opacity = '0'; }
         const __pf = document.getElementById('portfolio-screen');
         if (__pf) { __pf.classList.add('visible'); }
-
-        
-        // parent category gate bridge
-        if (sessionStorage.getItem('authed_iac2022kia') === '1') {
-            sessionStorage.setItem('authed_movilla', '1');
-        }
 
         /* ── password logic ── */
         let wrongCount = 0;
