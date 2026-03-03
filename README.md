@@ -9,11 +9,9 @@ Minho Song 포트폴리오의 GitHub Pages 호스팅 저장소.
 
 ## 현재 구조 (요약)
 - `index.html` : 루트 랜딩(임시)
-- `projects/iac2022kia/index.html` : IAC2022 KIA 허브
-- `projects/iac2022kia/mocamper/index.html` : Mocamper 상세
-- `assets/images/iac2022kia/mocamper/*` : 상세 페이지 이미지 에셋
-- `Webpage/Readme/README.md` : 웹페이지 운영 가이드(신규 경로 기준)
-- `QR/README.md` : QR 운영 가이드(신규 도메인 기준)
+- `projects/*` : 카테고리/프로젝트 페이지 모음
+- 이미지/썸네일 원본은 Synology (`/web/portfolio/images/...`)를 단일 소스로 사용
+- GitHub 저장소는 HTML/구성 파일 중심으로 유지
 
 ## 운영 원칙
 1. 링크 기준 도메인은 `https://smh2287.github.io`로 통일
