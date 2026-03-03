@@ -5,7 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><script>
 const BASE_IMG='https://songfamhome.synology.me/portfolio/images/iac2022hyundai/h-drum/';
 const IMAGES=["02IAC22H-03HD-01 _ One-page_ h-drum.webp"];
-const imgURL=f=>BASE_IMG+f.replace(/ /g,'%20');
+const imgURL=f=>BASE_IMG+encodeURIComponent(f).replace(/%2F/g,'/');
 const wrap=document.getElementById('swiper-wrapper');
 IMAGES.forEach((f,idx)=>{{const s=document.createElement('div');s.className='swiper-slide';s.innerHTML=`<img src="${{imgURL(f)}}" alt="slide ${{idx+1}}">`;wrap.appendChild(s);}});
 new Swiper('.swiper',{{direction:'vertical',mousewheel:true,keyboard:{{enabled:true}},speed:620}});
