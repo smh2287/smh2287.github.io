@@ -155,6 +155,8 @@
             -webkit-user-select: none;
             user-select: none;
         }
+    
+        #password-screen{display:none !important;}
     </style>
 </head>
 
@@ -173,7 +175,15 @@
     <div id="portfolio-screen" class="swiper">
         <div class="swiper-wrapper" id="swiper-wrapper"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+        // Gate disabled at project level (handled by parent index)
+        sessionStorage.setItem('authed_manimo', '1');
+        const __ps = document.getElementById('password-screen');
+        if (__ps) { __ps.style.display = 'none'; __ps.style.opacity = '0'; }
+        const __pf = document.getElementById('portfolio-screen');
+        if (__pf) { __pf.classList.add('visible'); }
+
+</script>
     <script>
         const PAGE_TITLE = "<b>MANI</b>MO";
         const CORRECT_PASSWORD = "2287";
