@@ -3,12 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Redirecting…</title>
-  <meta http-equiv="refresh" content="0; url=/projects/iac2022kia/" />
-  <script>location.replace('/projects/iac2022kia/');</script>
-  <style>body{font-family:Arial,sans-serif;background:#1F2121;color:#EBF2F4;display:flex;min-height:100vh;align-items:center;justify-content:center}a{color:#1FFFE0}</style>
+  <title>Minho Song Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#111315;--text:#EBF2F4;--accent:#1FFFE0;--panel:#16191c;--line:rgba(255,255,255,.12)}
+    html,body{width:100%;height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow:hidden}
+
+    /* full-screen landing (background image ready) */
+    .stage{position:fixed;inset:0;background:
+      radial-gradient(1100px 600px at 80% 20%, rgba(31,255,224,.08), transparent 60%),
+      linear-gradient(140deg,#0f1113 0%,#1a1e22 60%,#101215 100%);
+    }
+    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.22),rgba(0,0,0,.44));}
+
+    .top-left{position:fixed;left:20px;top:20px;z-index:40;display:flex;align-items:center;gap:12px}
+    .menu-btn{width:42px;height:42px;border:1px solid var(--line);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
+    .menu-btn:hover{border-color:var(--accent)}
+    .hamburger{width:18px;height:14px;position:relative}
+    .hamburger i{position:absolute;left:0;right:0;height:2px;background:#fff}
+    .hamburger i:nth-child(1){top:0}.hamburger i:nth-child(2){top:6px}.hamburger i:nth-child(3){top:12px}
+
+    .brand{letter-spacing:2px;font-size:12px;opacity:.85}
+
+    .hero{position:absolute;left:6vw;bottom:10vh;z-index:20;max-width:min(760px,90vw)}
+    .hero h1{font-size:clamp(28px,4vw,58px);font-weight:300;line-height:1.1;letter-spacing:1px}
+    .hero h1 b{font-weight:700;color:var(--accent)}
+    .hero p{margin-top:16px;font-size:14px;opacity:.78;letter-spacing:.3px}
+
+    /* slide-out wall */
+    .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:50}
+    .wall{position:fixed;left:0;top:0;bottom:0;width:min(420px,88vw);background:var(--panel);border-right:1px solid var(--line);transform:translateX(-102%);transition:.32s;z-index:60;padding:26px 22px;overflow:auto}
+    body.wall-open .wall{transform:translateX(0)}
+    body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
+
+    .wall h2{font-size:14px;letter-spacing:2px;color:var(--accent);margin-bottom:18px}
+    .menu{display:flex;flex-direction:column;gap:8px}
+    .menu-btn2{width:100%;text-align:left;padding:12px 10px;border:1px solid var(--line);background:transparent;color:#fff;cursor:pointer;font-size:13px;letter-spacing:.6px}
+    .menu-btn2:hover{border-color:var(--accent)}
+    .sub{margin:8px 0 14px 8px;padding-left:10px;border-left:1px solid var(--line);display:none;flex-direction:column;gap:8px}
+    .sub.open{display:flex}
+    .sub a{display:block;text-decoration:none;color:#d9e2e6;border:1px solid rgba(255,255,255,.18);padding:10px 10px;font-size:12px;letter-spacing:.4px}
+    .sub a:hover{border-color:var(--accent);color:#fff}
+
+    .hint{margin-top:16px;font-size:11px;opacity:.62;line-height:1.6}
+  </style>
 </head>
 <body>
-  <div>IAC2022 KIA 허브로 이동 중… <a href="/projects/iac2022kia/">클릭</a></div>
+  <div class="stage"><div class="overlay"></div></div>
+
+  <div class="top-left">
+    <button class="menu-btn" id="openWall" aria-label="open menu">
+      <span class="hamburger"><i></i><i></i><i></i></span>
+    </button>
+    <div class="brand">MINHO SONG / PORTFOLIO</div>
+  </div>
+
+  <section class="hero">
+    <h1><b>PROJECT</b> PORTFOLIO</h1>
+    <p>선택한 카테고리로 바로 진입. (IAC 계열은 index 비밀번호 정책 유지)</p>
+  </section>
+
+  <div class="wall-backdrop" id="wallBackdrop"></div>
+  <aside class="wall" id="wall">
+    <h2>NAVIGATION</h2>
+    <div class="menu">
+      <button class="menu-btn2" type="button">ABOUT ME (준비중)</button>
+
+      <button class="menu-btn2" id="projectsToggle" type="button">PROJECTS</button>
+      <div class="sub" id="projectsSub">
+        <a href="/projects/iac2022kia/index.html">IAC2022KIA</a>
+        <a href="/projects/iac2022hyundai/index.html">IAC2022HYUNDAI</a>
+        <a href="/projects/iac2021kia/index.html">IAC2021KIA</a>
+        <a href="/projects/vishow/index.html">VISHOW</a>
+        <a href="/projects/niva/index.html">NIVA</a>
+      </div>
+
+      <button class="menu-btn2" type="button">CONTACT (준비중)</button>
+    </div>
+    <div class="hint">요청 구조 반영: 왼쪽 버튼 → 수직 벽 메뉴 → Projects 펼침.</div>
+  </aside>
+
+  <script>
+    const body=document.body;
+    const open=document.getElementById('openWall');
+    const back=document.getElementById('wallBackdrop');
+    const toggle=document.getElementById('projectsToggle');
+    const sub=document.getElementById('projectsSub');
+
+    function closeWall(){ body.classList.remove('wall-open'); }
+    open.addEventListener('click',()=> body.classList.toggle('wall-open'));
+    back.addEventListener('click',closeWall);
+    toggle.addEventListener('click',()=> sub.classList.toggle('open'));
+    document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeWall(); });
+  </script>
 </body>
 </html>
