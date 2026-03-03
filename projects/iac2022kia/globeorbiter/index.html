@@ -277,7 +277,7 @@
                 else { document.getElementById('error-message').textContent = 'invalid'; this.style.animation = 'shake 0.5s'; setTimeout(() => { this.style.animation = ''; this.value = ''; }, 500); }
             }
         });
-        window.addEventListener('load', () => { if (sessionStorage.getItem('authed_globeorbiter') === '1') unlockPortfolio(true); else document.getElementById('password-input').focus(); });
+        window.addEventListener('load', () => { if (sessionStorage.getItem('authed_globeorbiter') === '1' || sessionStorage.getItem('authed_iac2022kia') === '1') { sessionStorage.setItem('authed_globeorbiter','1'); unlockPortfolio(true); } else document.getElementById('password-input').focus(); });
     </script>
 </body>
 
