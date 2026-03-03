@@ -83,14 +83,14 @@
 
       <!-- 2. Project Tiles on black -->
       <section class="swiper-slide" style="background:#1F1F21;">
-        <div class="grid-wrap">
+        <div class="grid-wrap swiper-no-swiping">
           <div class="grid-title"><div class="pre">IAC 2021 KIA</div><h1><b>PROJECT</b> TILES</h1></div>
                     <div class="grid">
             <a class="tile" href="cpsxr/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2021kia/thumbs/cpsxr.webp')"></div><div class="shade"></div><div class="meta"><div class="name">XR EXPERIENCE</div><div class="desc">Open project</div></div></a>
             <a class="tile" href="g1/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2021kia/thumbs/g1.webp')"></div><div class="shade"></div><div class="meta"><div class="name">G1</div><div class="desc">Open project</div></div></a>
             <a class="tile" href="g2/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2021kia/thumbs/g2.webp')"></div><div class="shade"></div><div class="meta"><div class="name">G2</div><div class="desc">Open project</div></div></a>
             <a class="tile" href="v2/?v=20260303"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2021kia/thumbs/v2.webp')"></div><div class="shade"></div><div class="meta"><div class="name">V2</div><div class="desc">Open project</div></div></a>
-          </div></div>
+          </div>
         </div>
       </section>
 
@@ -101,7 +101,7 @@
     </div>
   </div>
 
-  <div class="scroll-hint">SCROLL</div><div class="swiper-button-prev" style="color:#fff"></div><div class="swiper-button-next" style="color:#fff"></div><div class="swiper-pagination"></div>
+  <div class="scroll-hint">SCROLL</div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -114,8 +114,8 @@
     const swiper=new Swiper('#index-swiper',{
       direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
       keyboard:{enabled:true},
-      pagination:{el:'.swiper-pagination',clickable:true},
-      navigation:{nextEl:'.swiper-button-next',prevEl:'.swiper-button-prev'}
+      noSwiping:true,
+      noSwipingClass:'swiper-no-swiping'
     });
 
     async function sha256(s){
