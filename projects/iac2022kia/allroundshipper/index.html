@@ -257,6 +257,8 @@
         
     
         
+    
+        #password-screen{display:none !important;}
     </style>
 </head>
 
@@ -306,6 +308,20 @@
 
         const passwordInput = document.getElementById('password-input');
         const errorMessage = document.getElementById('error-message');
+        // auto-open without per-project password
+        setTimeout(() => {
+            try {
+                if (typeof unlockPortfolio === 'function') {
+                    unlockPortfolio(true);
+                } else {
+                    const __ps = document.getElementById('password-screen');
+                    if (__ps) __ps.style.display = 'none';
+                    const __pf = document.getElementById('portfolio-screen');
+                    if (__pf) __pf.classList.add('visible');
+                }
+            } catch(e) {}
+        }, 0);
+
 
         const passwordScreen = document.getElementById('password-screen');
         const portfolioScreen = document.getElementById('portfolio-screen');
