@@ -402,16 +402,7 @@
 <body>
 
     <!-- ══ PASSWORD SCREEN ══════════════════════════════════════ -->
-    <div id="password-screen">
-        <div class="password-container">
-            <div class="pre-title" id="pre-title-container"></div>
-            <h1 id="page-title"></h1>
-            <input type="password" id="password-input" placeholder="password" autocomplete="off" maxlength="4">
-            <br>
-            <button id="submit-btn">확인</button>
-            <div id="error-message"></div>
-        </div>
-    </div>
+    <!-- password gate removed -->
 
     <!-- ══ PORTFOLIO SCREEN ══════════════════════════════════════ -->
     <div id="portfolio-screen" class="swiper">
@@ -439,8 +430,7 @@
             logoSrc: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMjUiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyOS44LjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuMSBCdWlsZCAyKSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6ICNlYmYyZjQ7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01OC4wMiwyMS44M2MwLC4xOS4wNi4zLjE3LjMuMDktLjAxLjE3LS4wNS4yNC0uMUw4OS42LDEuOGMuNTMtLjM3LDEuMTYtLjU2LDEuOC0uNTRoNi44NWMxLjA1LDAsMS43Ni43LDEuNzYsMS43NXYxMy4wOGMwLDEuNTgtLjM1LDIuNS0xLjc1LDMuMzRsLTguMzEsNWMtLjA4LjA2LS4xOC4wOS0uMjguMS0uMSwwLS4yLS4wOC0uMi0uMzd2LTE1LjI2YzAtLjE4LS4wNS0uMy0uMTctLjMtLjA5LjAxLS4xNy4wNC0uMjQuMWwtMjIuNzgsMTQuOGMtLjUyLjM1LTEuMTMuNTQtMS43NS41M2gtMTUuMWMtMS4wNiwwLTEuNzYtLjctMS43Ni0xLjc2VjMuNDJjMC0uMTQtLjA2LS4yNy0uMTgtLjI3LS4wOS4wMS0uMTcuMDUtLjI0LjFsLTE1LjAzLDkuMDJjLS4xNS4xLS4xOS4xNy0uMTkuMjQsMCwuMDYuMDMuMTIuMTMuMjNsMTAuNzQsMTAuNzNjLjE0LjE0LjI0LjI1LjI0LjM3LDAsLjEtLjE2LjE4LS4zNS4xOGgtOS43Yy0uNzYsMC0xLjM1LS4xMS0xLjc2LS41MmwtNi41MS02LjVjLS4wNS0uMDYtLjEyLS4xLS4yLS4xLS4wNywwLS4xNC4wMi0uMi4wNmwtMTAuODgsNi41NGMtLjY2LjQtMS4xMS41MS0xLjc2LjUxSDEuNzdjLTEuMDcuMDEtMS43Ny0uNy0xLjc3LTEuNzV2LTEyLjgzYzAtMS41OS4zNS0yLjUsMS43Ni0zLjM0TDEwLjEyLDEuMDdjLjA3LS4wNC4xNC0uMDcuMjItLjA3LjEzLDAsLjIuMTMuMi40MnYxNy4xOGMwLC4xOC4wNC4yNi4xNy4yNi4wOS0uMDEuMTctLjA1LjI1LS4xTDM5LjIsMS43N2MuNTQtLjM3LDEuMi0uNTUsMS44Ni0uNTJoMTUuMmMxLjA1LDAsMS43Ni43LDEuNzYsMS43NXYxOC44M3MwLDAsMCwwWiIvPgo8L3N2Zz4="
         };
 
-        const PAGE_TITLE = "<b>MO</b>VILLA";
-        const CORRECT_PASSWORD = "2287";
+        const PAGE_TITLE = "<b>MO</b>VILLA";
 
         // Images (WebP)
         const BASE_IMG = 'https://songfamhome.synology.me/portfolio/images/iac2022kia/movilla/';
@@ -477,9 +467,7 @@
 
         document.documentElement.style.setProperty('--fade-time', `${FADE_TIME_MS}ms`);
 
-        /* ── DOM refs ── */
-        const passwordInput = document.getElementById('password-input');
-        const errorMessage = document.getElementById('error-message');
+        /* ── DOM refs ── */
         // auto-open without per-project password
         setTimeout(() => {
             try {
@@ -493,9 +481,6 @@
                 }
             } catch(e) {}
         }, 0);
-
-
-        const passwordScreen = document.getElementById('password-screen');
         const portfolioScreen = document.getElementById('portfolio-screen');
         const swiperWrapper = document.getElementById('swiper-wrapper');
         const preTitleContainer = document.getElementById('pre-title-container');
