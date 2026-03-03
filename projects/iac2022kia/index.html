@@ -9,9 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    :root{--accent:#1FFFE0;--bg:#1F2121;--card-bg:#2a2d2d;--text:#EBF2F4}
-    body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-    .wrap.locked .content{filter:blur(8px);pointer-events:none;user-select:none}
+    :root{
+      --accent:#1FFFE0; --bg:#1F2121; --card-bg:#2a2d2d; --text:#EBF2F4;
+      --fade-time:1000ms;
+      --bg-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mocamper/01IAC22K-01MC-01%20_%20Title%20(cinematic).webp');
+    }
+    html,body{width:100%;min-height:100vh;background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;overflow-x:hidden}
+
+    /* content */
+    #content-wrap{min-height:100vh;transition:filter .35s ease;}
+    #content-wrap.locked{filter:blur(8px);pointer-events:none;user-select:none}
     .header{text-align:center;padding:60px 20px 32px}
     .header .pre{font-size:14px;letter-spacing:3px;color:var(--accent)}
     .header h1{font-size:30px;font-weight:300;letter-spacing:2px;margin-top:10px}
@@ -23,62 +30,118 @@
     .card .m{margin-top:8px;color:#95a0a0;font-size:12px}
     .card.disabled{opacity:.55;pointer-events:none}
 
-    .gate{position:fixed;inset:0;background:rgba(12,13,13,.72);display:flex;align-items:center;justify-content:center;z-index:9999}
-    .panel{width:min(420px,90vw);background:#202323;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px}
-    .panel h2{font-size:20px;font-weight:300;margin-bottom:8px}
-    .panel p{font-size:12px;color:#9aa6a6;margin-bottom:16px}
-    .row{display:flex;gap:8px}
-    input{flex:1;background:#111313;border:1px solid #3b4444;color:#fff;padding:12px;border-radius:8px;font-size:16px;letter-spacing:2px}
-    button{background:var(--accent);color:#0f1313;border:none;border-radius:8px;padding:0 16px;font-weight:700;cursor:pointer}
-    .err{margin-top:10px;font-size:12px;color:#ff7f7f;min-height:16px}
+    /* mocamper-like password screen */
+    #password-screen{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity var(--fade-time) ease-in-out;}
+    #password-screen::before{content:'';position:absolute;inset:-40px;background-image:var(--bg-img);background-size:cover;background-position:center;filter:blur(24px);transform:scale(1.08);}
+    #password-screen::after{content:'';position:absolute;inset:0;background:rgba(31,33,33,.78);}
+    .password-container{position:relative;z-index:2;text-align:center;padding:40px;width:100%}
+    .pre-title{color:var(--text);font-size:17px;margin-bottom:15px;letter-spacing:2px}
+    .password-container h1{font-size:28px;margin-bottom:30px;font-weight:300;letter-spacing:2px}
+    .password-container h1 b{font-weight:700;color:var(--accent)}
+    #password-input{width:300px;padding:15px 20px;font-size:16px;border:none;background:var(--text);color:var(--bg);border-radius:0;outline:none;transition:all .3s;text-align:center;letter-spacing:3px;font-family:'Montserrat',sans-serif;}
+    #password-input::placeholder{color:#1F2F21;opacity:.6}
+    #submit-btn{display:none}
+    #error-message{color:#ff6445;margin-top:15px;font-size:14px;min-height:20px}
+    @keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}
+
+    @media (max-width:600px){
+      .grid{padding:18px;grid-template-columns:1fr}
+      #password-input{width:84vw;max-width:320px}
+    }
   </style>
 </head>
 <body>
-  <div id="app" class="wrap locked">
-    <div class="content">
-      <div class="header">
-        <div class="pre">IAC 2022 KIA</div>
-        <h1><b>PROJECT</b> HUB</h1>
-      </div>
-      <div class="grid">
-        <a class="card" href="mocamper/"><div class="t">MOCAMPER</div><div class="m">Live</div></a>
-        <a class="card" href="movilla/">
-        <div class="t">MOVILLA</div><div class="m">Coming soon</div></a>
-        <a class="card" href="egonest/">
-        <div class="t">EGONEST</div><div class="m">Coming soon</div></a>
-        <a class="card disabled" href="#"><div class="t">ALLROUND SHIPPER</div><div class="m">Coming soon</div></a>
-        <a class="card" href="environments/">
-        <div class="t">ENVIRONMENTS</div><div class="m">Coming soon</div></a>
-        <a class="card disabled" href="#"><div class="t">GLOBE ORBITER</div><div class="m">Coming soon</div></a>
-      </div>
+  <div id="content-wrap" class="locked">
+    <div class="header">
+      <div class="pre">IAC 2022 KIA</div>
+      <h1><b>PROJECT</b> HUB</h1>
+    </div>
+    <div class="grid">
+      <a class="card" href="mocamper/"><div class="t">MOCAMPER</div><div class="m">Live</div></a>
+      <a class="card" href="movilla/"><div class="t">MOVILLA</div><div class="m">Live</div></a>
+      <a class="card" href="egonest/"><div class="t">EGONEST</div><div class="m">Live</div></a>
+      <a class="card" href="allroundshipper/"><div class="t">ALLROUND SHIPPER</div><div class="m">Live</div></a>
+      <a class="card" href="environments/"><div class="t">ENVIRONMENTS</div><div class="m">Live</div></a>
+      <a class="card" href="globeorbiter/"><div class="t">GLOBE ORBITER</div><div class="m">Live</div></a>
+      <a class="card" href="manimo/"><div class="t">MANIMO</div><div class="m">Live</div></a>
+      <a class="card" href="tess/"><div class="t">TESS</div><div class="m">Live</div></a>
+      <a class="card" href="tessacube/"><div class="t">TESSA CUBE</div><div class="m">Live</div></a>
+      <a class="card" href="tessaplate/"><div class="t">TESSA PLATE</div><div class="m">Live</div></a>
+      <a class="card" href="mdeklogo/"><div class="t">MDEK LOGO</div><div class="m">Live</div></a>
+      <a class="card" href="mdekvr/"><div class="t">MDEK VR</div><div class="m">Live</div></a>
     </div>
   </div>
 
-  <div id="gate" class="gate" role="dialog" aria-modal="true">
-    <div class="panel">
-      <h2>Access Required</h2>
-      <p>Password를 입력하면 프로젝트 허브가 열립니다.</p>
-      <div class="row">
-        <input id="pwd" type="password" maxlength="4" placeholder="password" autocomplete="off" />
-        <button id="ok">확인</button>
-      </div>
-      <div id="err" class="err"></div>
+  <div id="password-screen">
+    <div class="password-container">
+      <div class="pre-title">IAC 2022 KIA</div>
+      <h1><b>PROJECT</b> HUB</h1>
+      <input type="password" id="password-input" placeholder="password" autocomplete="off" maxlength="4">
+      <br>
+      <button id="submit-btn">확인</button>
+      <div id="error-message"></div>
     </div>
   </div>
 
   <script>
-    const KEY='authed_iac2022kia';
-    const PASS_SHA256='4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
-    const app=document.getElementById('app');
-    const gate=document.getElementById('gate');
-    const pwd=document.getElementById('pwd');
-    const err=document.getElementById('err');
-    function unlock(){sessionStorage.setItem(KEY,'1');app.classList.remove('locked');gate.style.display='none'}
-    async function sha256(s){const b=new TextEncoder().encode(s);const d=await crypto.subtle.digest('SHA-256',b);return Array.from(new Uint8Array(d)).map(v=>v.toString(16).padStart(2,'0')).join('');}
-    async function check(){const h=await sha256(pwd.value);if(h===PASS_SHA256){unlock()}else{err.textContent='비밀번호가 올바르지 않습니다.';pwd.value='';pwd.focus();}}
-    if(sessionStorage.getItem(KEY)==='1'){unlock()} else {pwd.focus()}
-    document.getElementById('ok').addEventListener('click',check);
-    pwd.addEventListener('keydown',e=>{if(e.key==='Enter')check()});
+    const KEY = 'authed_iac2022kia';
+    const PASS_SHA256 = '4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
+
+    const contentWrap = document.getElementById('content-wrap');
+    const passwordScreen = document.getElementById('password-screen');
+    const passwordInput = document.getElementById('password-input');
+    const errorMessage = document.getElementById('error-message');
+
+    async function sha256(s) {
+      const b = new TextEncoder().encode(s);
+      const d = await crypto.subtle.digest('SHA-256', b);
+      return Array.from(new Uint8Array(d)).map(v => v.toString(16).padStart(2,'0')).join('');
+    }
+
+    function unlock(isInstant=false) {
+      sessionStorage.setItem(KEY, '1');
+      contentWrap.classList.remove('locked');
+      if (isInstant) {
+        passwordScreen.style.display = 'none';
+      } else {
+        passwordScreen.style.opacity = '0';
+        setTimeout(() => passwordScreen.style.display = 'none', 1000);
+      }
+    }
+
+    let wrongCount = 0;
+    async function checkPassword() {
+      const h = await sha256(passwordInput.value);
+      if (h === PASS_SHA256) {
+        unlock(false);
+      } else {
+        wrongCount++;
+        const msgs = [
+          '비밀번호가 올바르지 않습니다.',
+          '다시 확인해 주세요.',
+          '한 번 더 시도해 보세요.',
+          'invalid (do not give up)'
+        ];
+        errorMessage.textContent = msgs[Math.min(wrongCount-1, msgs.length-1)];
+        passwordInput.style.animation = 'shake 0.5s';
+        setTimeout(() => {
+          passwordInput.style.animation = '';
+          passwordInput.value = '';
+          passwordInput.focus();
+        }, 500);
+      }
+    }
+
+    passwordInput.addEventListener('input', function() {
+      if (this.value.length === 4) checkPassword();
+    });
+    passwordInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
+
+    if (sessionStorage.getItem(KEY) === '1') {
+      unlock(true);
+    } else {
+      passwordInput.focus();
+    }
   </script>
 </body>
 </html>
