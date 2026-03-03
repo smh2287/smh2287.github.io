@@ -3,145 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IAC 2022 KIA – Project Hub</title>
+  <title>IAC 2022 KIA – Index</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    :root{
-      --accent:#1FFFE0; --bg:#1F2121; --card-bg:#2a2d2d; --text:#EBF2F4;
-      --fade-time:1000ms;
-      --bg-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mocamper/01IAC22K-01MC-01%20_%20Title%20(cinematic).webp');
+    :root {
+      --accent:#1FFFE0; --bg:#1F2121; --text:#EBF2F4; --fade:1000ms;
+      --intro-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/index/01IAC22K-00-01%20_%20Intro.webp');
+      --ending-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/index/01IAC22K-13RV-01%20_%20Review.webp');
     }
-    html,body{width:100%;min-height:100vh;background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;overflow-x:hidden}
+    html,body{width:100%;height:100%;background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;overflow:hidden}
+    .swiper{width:100%;height:100%}
+    .swiper-slide{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#111}
 
-    /* content */
-    #content-wrap{min-height:100vh;transition:filter .35s ease;}
-    #content-wrap.locked{filter:blur(8px);pointer-events:none;user-select:none}
-    .header{text-align:center;padding:60px 20px 32px}
-    .header .pre{font-size:14px;letter-spacing:3px;color:var(--accent)}
-    .header h1{font-size:30px;font-weight:300;letter-spacing:2px;margin-top:10px}
-    .header h1 b{font-weight:700;color:var(--accent)}
-    .grid{max-width:980px;margin:0 auto;padding:20px 24px 70px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-    .card{display:block;text-decoration:none;color:var(--text);background:var(--card-bg);border-radius:8px;padding:18px;transition:.2s}
-    .card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(31,255,224,.15)}
-    .card .t{font-size:14px;font-weight:700;letter-spacing:.5px}
-    .card .m{margin-top:8px;color:#95a0a0;font-size:12px}
-    .card.disabled{opacity:.55;pointer-events:none}
+    .bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.72)}
+    .bg.intro{background-image:var(--intro-img)}
+    .bg.ending{background-image:var(--ending-img)}
 
-    /* mocamper-like password screen */
-    #password-screen{position:fixed;inset:0;z-index:200;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity var(--fade-time) ease-in-out;}
-    #password-screen::before{content:'';position:absolute;inset:-40px;background-image:var(--bg-img);background-size:cover;background-position:center;filter:blur(24px);transform:scale(1.08);}
-    #password-screen::after{content:'';position:absolute;inset:0;background:rgba(31,33,33,.78);}
+    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.62))}
+    .content{position:relative;z-index:2;text-align:center;padding:24px;max-width:1000px;width:100%}
+    .pre{letter-spacing:3px;color:var(--accent);font-size:14px;margin-bottom:10px}
+    h1{font-weight:300;letter-spacing:2px;font-size:34px}
+    h1 b{font-weight:700;color:var(--accent)}
+    .sub{margin-top:12px;color:#c8d3d3;font-size:12px;letter-spacing:1px}
+
+    /* slide 2 grid */
+    .grid-wrap{position:relative;z-index:2;width:min(1260px,96vw);height:min(86vh,980px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+    .grid-title{margin-bottom:18px;text-align:center}
+    .grid-title .pre{margin-bottom:8px}
+    .grid{width:100%;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+    .tile{position:relative;display:block;border-radius:10px;overflow:hidden;min-height:120px;text-decoration:none;color:#fff;background:#222;border:1px solid rgba(255,255,255,.08)}
+    .tile .thumb{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);filter:brightness(.74)}
+    .tile .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%, rgba(0,0,0,.68) 100%)}
+    .tile .meta{position:relative;z-index:2;padding:12px}
+    .tile .name{font-size:13px;font-weight:700;letter-spacing:.3px}
+    .tile .desc{font-size:11px;color:#d0dddd;margin-top:4px}
+    .tile:hover{outline:1px solid rgba(31,255,224,.65);transform:translateY(-1px)}
+
+    /* lock screen (mocamper-like) */
+    #password-screen{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity var(--fade) ease-in-out}
+    #password-screen::before{content:'';position:absolute;inset:-40px;background-image:var(--intro-img);background-size:cover;background-position:center;filter:blur(24px);transform:scale(1.08)}
+    #password-screen::after{content:'';position:absolute;inset:0;background:rgba(31,33,33,.78)}
     .password-container{position:relative;z-index:2;text-align:center;padding:40px;width:100%}
-    .pre-title{color:var(--text);font-size:17px;margin-bottom:15px;letter-spacing:2px}
-    .password-container h1{font-size:28px;margin-bottom:30px;font-weight:300;letter-spacing:2px}
-    .password-container h1 b{font-weight:700;color:var(--accent)}
-    #password-input{width:300px;padding:15px 20px;font-size:16px;border:none;background:var(--text);color:var(--bg);border-radius:0;outline:none;transition:all .3s;text-align:center;letter-spacing:3px;font-family:'Montserrat',sans-serif;}
+    .password-container .pre-title{color:var(--text);font-size:17px;letter-spacing:2px;margin-bottom:14px}
+    .password-container h2{font-size:30px;font-weight:300;letter-spacing:2px;margin-bottom:30px}
+    .password-container h2 b{font-weight:700;color:var(--accent)}
+    #password-input{width:300px;padding:15px 20px;font-size:16px;border:none;background:var(--text);color:var(--bg);outline:none;text-align:center;letter-spacing:3px}
     #password-input::placeholder{color:#1F2F21;opacity:.6}
     #submit-btn{display:none}
     #error-message{color:#ff6445;margin-top:15px;font-size:14px;min-height:20px}
     @keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}
 
-    @media (max-width:600px){
-      .grid{padding:18px;grid-template-columns:1fr}
+    .scroll-hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:20;color:#e8f3f3;font-size:12px;letter-spacing:2px;opacity:.72;pointer-events:none}
+
+    @media (max-width: 640px) {
+      h1{font-size:26px}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .tile{min-height:104px}
       #password-input{width:84vw;max-width:320px}
     }
   </style>
 </head>
 <body>
-  <div id="content-wrap" class="locked">
-    <div class="header">
-      <div class="pre">IAC 2022 KIA</div>
-      <h1><b>PROJECT</b> HUB</h1>
-    </div>
-    <div class="grid">
-      <a class="card" href="mocamper/"><div class="t">MOCAMPER</div><div class="m">Live</div></a>
-      <a class="card" href="movilla/"><div class="t">MOVILLA</div><div class="m">Live</div></a>
-      <a class="card" href="egonest/"><div class="t">EGONEST</div><div class="m">Live</div></a>
-      <a class="card" href="allroundshipper/"><div class="t">ALLROUND SHIPPER</div><div class="m">Live</div></a>
-      <a class="card" href="environments/"><div class="t">ENVIRONMENTS</div><div class="m">Live</div></a>
-      <a class="card" href="globeorbiter/"><div class="t">GLOBE ORBITER</div><div class="m">Live</div></a>
-      <a class="card" href="manimo/"><div class="t">MANIMO</div><div class="m">Live</div></a>
-      <a class="card" href="tess/"><div class="t">TESS</div><div class="m">Live</div></a>
-      <a class="card" href="tessacube/"><div class="t">TESSA CUBE</div><div class="m">Live</div></a>
-      <a class="card" href="tessaplate/"><div class="t">TESSA PLATE</div><div class="m">Live</div></a>
-      <a class="card" href="mdeklogo/"><div class="t">MDEK LOGO</div><div class="m">Live</div></a>
-      <a class="card" href="mdekvr/"><div class="t">MDEK VR</div><div class="m">Live</div></a>
-    </div>
-  </div>
-
   <div id="password-screen">
     <div class="password-container">
       <div class="pre-title">IAC 2022 KIA</div>
-      <h1><b>PROJECT</b> HUB</h1>
+      <h2><b>PROJECT</b> INDEX</h2>
       <input type="password" id="password-input" placeholder="password" autocomplete="off" maxlength="4">
-      <br>
-      <button id="submit-btn">확인</button>
+      <br><button id="submit-btn">확인</button>
       <div id="error-message"></div>
     </div>
   </div>
 
+  <div class="swiper" id="index-swiper">
+    <div class="swiper-wrapper">
+      <!-- 1. Intro -->
+      <section class="swiper-slide">
+        <div class="bg intro"></div><div class="overlay"></div>
+        <div class="content">
+          <div class="pre">IAC 2022</div>
+          <h1><b>PROJECT</b> INDEX</h1>
+          <div class="sub">Scroll down to explore projects</div>
+        </div>
+      </section>
+
+      <!-- 2. Project Tiles -->
+      <section class="swiper-slide">
+        <div class="bg" style="background-image:var(--intro-img); filter:brightness(.25)"></div>
+        <div class="grid-wrap">
+          <div class="grid-title"><div class="pre">IAC 2022 KIA</div><h1 style="font-size:26px"><b>PROJECT</b> TILES</h1></div>
+          <div class="grid">
+            <a class="tile" href="mocamper/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mocamper/01IAC22K-01MC-01%20_%20Title%20(cinematic).webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOCAMPER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="movilla/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/movilla/01IAC22K-02MV-01%20_%20Title.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOVILLA</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="egonest/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/egonest/01IAC22K-03EG-01%20_%20One-page_%20egonest.webp')"></div><div class="shade"></div><div class="meta"><div class="name">EGONEST</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="allroundshipper/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/allroundshipper/01IAC22K-04AS-01%20_%20One-page_%20allroundshipper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ALLROUND SHIPPER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tess/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/tess/01IAC22K-05TS-01%20_%20One-page_%20tess.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESS</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="globeorbiter/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/globeorbiter/01IAC22K-06GO-01%20_%20One-page_%20globe%20orbiter.webp')"></div><div class="shade"></div><div class="meta"><div class="name">GLOBE ORBITER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="manimo/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/manimo/01IAC22K-07MN-01%20_%20One-page_%20manimo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MANIMO</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tessaplate/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/tessaplate/01IAC22K-08TP-01%20_%20One-page_%20tessa%20plate.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA PLATE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tessacube/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/tessacube/01IAC22K-09TC-01%20_%20One-page_%20tessacube.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA CUBE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mdeklogo/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mdeklogo/01IAC22K-10ML-01%20_%20One-page_%20mdek%20logo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK LOGO</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="environments/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/environments/01IAC22K-11EN-01%20_%20Environment%20scene%2001.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ENVIRONMENTS</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mdekvr/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mdekvr/01IAC22K-12XR-01%20_%20XR%2001.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK VR</div><div class="desc">Open project</div></div></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Ending / Review -->
+      <section class="swiper-slide">
+        <div class="bg ending"></div><div class="overlay"></div>
+        <div class="content">
+          <div class="pre">IAC 2022 KIA</div>
+          <h1><b>REVIEW</b> PAGE</h1>
+          <div class="sub">One spectrum, many outputs. Keep refining.</div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="scroll-hint">SCROLL</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const KEY = 'authed_iac2022kia';
-    const PASS_SHA256 = '4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
+    const KEY='authed_iac2022kia';
+    const PASS_SHA256='4ea837ac2e51fbac23f73aff0a9dd25089f67d3e4b1b5355219dc8f254f4653d';
+    const passwordScreen=document.getElementById('password-screen');
+    const passwordInput=document.getElementById('password-input');
+    const errorMessage=document.getElementById('error-message');
 
-    const contentWrap = document.getElementById('content-wrap');
-    const passwordScreen = document.getElementById('password-screen');
-    const passwordInput = document.getElementById('password-input');
-    const errorMessage = document.getElementById('error-message');
-
-    async function sha256(s) {
-      const b = new TextEncoder().encode(s);
-      const d = await crypto.subtle.digest('SHA-256', b);
-      return Array.from(new Uint8Array(d)).map(v => v.toString(16).padStart(2,'0')).join('');
-    }
-
-    function unlock(isInstant=false) {
-      sessionStorage.setItem(KEY, '1');
-      contentWrap.classList.remove('locked');
-      if (isInstant) {
-        passwordScreen.style.display = 'none';
-      } else {
-        passwordScreen.style.opacity = '0';
-        setTimeout(() => passwordScreen.style.display = 'none', 1000);
-      }
-    }
-
-    let wrongCount = 0;
-    async function checkPassword() {
-      const h = await sha256(passwordInput.value);
-      if (h === PASS_SHA256) {
-        unlock(false);
-      } else {
-        wrongCount++;
-        const msgs = [
-          '비밀번호가 올바르지 않습니다.',
-          '다시 확인해 주세요.',
-          '한 번 더 시도해 보세요.',
-          'invalid (do not give up)'
-        ];
-        errorMessage.textContent = msgs[Math.min(wrongCount-1, msgs.length-1)];
-        passwordInput.style.animation = 'shake 0.5s';
-        setTimeout(() => {
-          passwordInput.style.animation = '';
-          passwordInput.value = '';
-          passwordInput.focus();
-        }, 500);
-      }
-    }
-
-    passwordInput.addEventListener('input', function() {
-      if (this.value.length === 4) checkPassword();
+    const swiper=new Swiper('#index-swiper',{
+      direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
+      keyboard:{enabled:true},
     });
-    passwordInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
 
-    if (sessionStorage.getItem(KEY) === '1') {
-      unlock(true);
-    } else {
-      passwordInput.focus();
+    async function sha256(s){
+      const b=new TextEncoder().encode(s);
+      const d=await crypto.subtle.digest('SHA-256',b);
+      return Array.from(new Uint8Array(d)).map(v=>v.toString(16).padStart(2,'0')).join('');
     }
+    function unlock(isInstant=false){
+      sessionStorage.setItem(KEY,'1');
+      if(isInstant){passwordScreen.style.display='none';}
+      else{passwordScreen.style.opacity='0';setTimeout(()=>passwordScreen.style.display='none',1000)}
+    }
+    let wrongCount=0;
+    async function checkPassword(){
+      const h=await sha256(passwordInput.value);
+      if(h===PASS_SHA256) unlock(false);
+      else{
+        wrongCount++;
+        const msgs=['비밀번호가 올바르지 않습니다.','다시 확인해 주세요.','한 번 더 시도해 보세요.','invalid (do not give up)'];
+        errorMessage.textContent=msgs[Math.min(wrongCount-1,msgs.length-1)];
+        passwordInput.style.animation='shake .5s';
+        setTimeout(()=>{passwordInput.style.animation='';passwordInput.value='';passwordInput.focus();},500);
+      }
+    }
+    passwordInput.addEventListener('input',function(){if(this.value.length===4)checkPassword();});
+    passwordInput.addEventListener('keydown',e=>{if(e.key==='Enter')checkPassword();});
+
+    if(sessionStorage.getItem(KEY)==='1') unlock(true);
+    else passwordInput.focus();
   </script>
 </body>
 </html>
