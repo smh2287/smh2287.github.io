@@ -394,6 +394,8 @@
         
     
         
+    
+        #password-screen{display:none !important;}
     </style>
 </head>
 
@@ -484,6 +486,20 @@
         /* ── DOM refs ── */
         const passwordInput = document.getElementById('password-input');
         const errorMessage = document.getElementById('error-message');
+        // auto-open without per-project password
+        setTimeout(() => {
+            try {
+                if (typeof unlockPortfolio === 'function') {
+                    unlockPortfolio(true);
+                } else {
+                    const __ps = document.getElementById('password-screen');
+                    if (__ps) __ps.style.display = 'none';
+                    const __pf = document.getElementById('portfolio-screen');
+                    if (__pf) __pf.classList.add('visible');
+                }
+            } catch(e) {}
+        }, 0);
+
 
         const passwordScreen = document.getElementById('password-screen');
         const portfolioScreen = document.getElementById('portfolio-screen');
@@ -703,7 +719,7 @@
 
         passwordInput.addEventListener('input', function () {
             errorMessage.textContent = '';
-            if (this.value.length === 4) checkPassword();
+            if (false) checkPassword();
         });
 
         // `hide scroll hint on first scroll` is now handled in Swiper's on: slideChange
