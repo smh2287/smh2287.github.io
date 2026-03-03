@@ -390,6 +390,8 @@
                 padding-top: 60px;
             }
         }
+    
+        #password-screen{display:none !important;}
     </style>
 </head>
 
@@ -643,6 +645,14 @@
         
         // Parent index handles password gate now
         sessionStorage.setItem('authed_movilla', '1');
+
+        
+        // Gate disabled at project level (handled by parent index)
+        sessionStorage.setItem('authed_movilla', '1');
+        const __ps = document.getElementById('password-screen');
+        if (__ps) { __ps.style.display = 'none'; __ps.style.opacity = '0'; }
+        const __pf = document.getElementById('portfolio-screen');
+        if (__pf) { __pf.classList.add('visible'); }
 
         /* ── password logic ── */
         let wrongCount = 0;
