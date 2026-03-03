@@ -11,32 +11,30 @@
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     :root {
-      --accent:#1FFFE0; --bg:#1F2121; --text:#EBF2F4; --fade:1000ms;
+      --accent:#1FFFE0; --bg:#1F1F21; --text:#EBF2F4; --fade:1000ms;
       --intro-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/index/01IAC22K-00-01%20_%20Intro.webp');
       --ending-img:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/index/01IAC22K-13RV-01%20_%20Review.webp');
     }
     html,body{width:100%;height:100%;background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;overflow:hidden}
     .swiper{width:100%;height:100%}
-    .swiper-slide{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#111}
+    .swiper-slide{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--bg)}
 
-    .bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.72)}
+    /* no-crop backgrounds */
+    .bg{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center;filter:brightness(.9)}
     .bg.intro{background-image:var(--intro-img)}
     .bg.ending{background-image:var(--ending-img)}
 
-    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.62))}
-    .content{position:relative;z-index:2;text-align:center;padding:24px;max-width:1000px;width:100%}
-    .pre{letter-spacing:3px;color:var(--accent);font-size:14px;margin-bottom:10px}
-    h1{font-weight:300;letter-spacing:2px;font-size:34px}
-    h1 b{font-weight:700;color:var(--accent)}
-    .sub{margin-top:12px;color:#c8d3d3;font-size:12px;letter-spacing:1px}
+    .overlay{position:absolute;inset:0;background:rgba(0,0,0,.28)}
 
     /* slide 2 grid */
     .grid-wrap{position:relative;z-index:2;width:min(1260px,96vw);height:min(86vh,980px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
     .grid-title{margin-bottom:18px;text-align:center}
-    .grid-title .pre{margin-bottom:8px}
+    .grid-title .pre{letter-spacing:3px;color:var(--accent);font-size:14px;margin-bottom:8px}
+    .grid-title h1{font-size:26px;font-weight:300;letter-spacing:2px}
+    .grid-title h1 b{font-weight:700;color:var(--accent)}
     .grid{width:100%;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
-    .tile{position:relative;display:block;border-radius:10px;overflow:hidden;min-height:120px;text-decoration:none;color:#fff;background:#222;border:1px solid rgba(255,255,255,.08)}
-    .tile .thumb{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);filter:brightness(.74)}
+    .tile{position:relative;display:block;border-radius:10px;overflow:hidden;min-height:120px;text-decoration:none;color:#fff;background:#222;border:1px solid rgba(255,255,255,.08);pointer-events:auto}
+    .tile .thumb{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.02);filter:brightness(.78)}
     .tile .shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%, rgba(0,0,0,.68) 100%)}
     .tile .meta{position:relative;z-index:2;padding:12px}
     .tile .name{font-size:13px;font-weight:700;letter-spacing:.3px}
@@ -58,9 +56,7 @@
     @keyframes shake{0%,100%{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}
 
     .scroll-hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:20;color:#e8f3f3;font-size:12px;letter-spacing:2px;opacity:.72;pointer-events:none}
-
     @media (max-width: 640px) {
-      h1{font-size:26px}
       .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
       .tile{min-height:104px}
       #password-input{width:84vw;max-width:320px}
@@ -80,46 +76,35 @@
 
   <div class="swiper" id="index-swiper">
     <div class="swiper-wrapper">
-      <!-- 1. Intro -->
+      <!-- 1. Intro image only -->
       <section class="swiper-slide">
         <div class="bg intro"></div><div class="overlay"></div>
-        <div class="content">
-          <div class="pre">IAC 2022</div>
-          <h1><b>PROJECT</b> INDEX</h1>
-          <div class="sub">Scroll down to explore projects</div>
-        </div>
       </section>
 
-      <!-- 2. Project Tiles -->
-      <section class="swiper-slide">
-        <div class="bg" style="background-image:var(--intro-img); filter:brightness(.25)"></div>
-        <div class="grid-wrap">
-          <div class="grid-title"><div class="pre">IAC 2022 KIA</div><h1 style="font-size:26px"><b>PROJECT</b> TILES</h1></div>
+      <!-- 2. Project Tiles on black -->
+      <section class="swiper-slide" style="background:#1F1F21;">
+        <div class="grid-wrap swiper-no-swiping">
+          <div class="grid-title"><div class="pre">IAC 2022 KIA</div><h1><b>PROJECT</b> TILES</h1></div>
           <div class="grid">
-            <a class="tile" href="mocamper/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/mocamper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOCAMPER</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="movilla/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/movilla.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOVILLA</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="egonest/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/egonest.webp')"></div><div class="shade"></div><div class="meta"><div class="name">EGONEST</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="allroundshipper/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/allroundshipper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ALLROUND SHIPPER</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="tess/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/tess.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESS</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="globeorbiter/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/globeorbiter.webp')"></div><div class="shade"></div><div class="meta"><div class="name">GLOBE ORBITER</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="manimo/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/manimo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MANIMO</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="tessaplate/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/tessaplate.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA PLATE</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="tessacube/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/tessacube.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA CUBE</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="mdeklogo/"><div class="thumb" style="background-image:url('https://smh2287.github.io/assets/thumbs/iac2022kia/mdeklogo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK LOGO</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="environments/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/environments/01IAC22K-11EN-01%20_%20Environment%20scene%2001%20(of%2005).webp')"></div><div class="shade"></div><div class="meta"><div class="name">ENVIRONMENTS</div><div class="desc">Open project</div></div></a>
-            <a class="tile" href="mdekvr/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/mdekvr/01IAC22K-12XR-01%20_%20XR%2001%20(of%2002).webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK VR</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mocamper/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/mocamper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOCAMPER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="movilla/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/movilla.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MOVILLA</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="egonest/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/egonest.webp')"></div><div class="shade"></div><div class="meta"><div class="name">EGONEST</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="allroundshipper/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/allroundshipper.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ALLROUND SHIPPER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tess/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/tess.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESS</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="globeorbiter/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/globeorbiter.webp')"></div><div class="shade"></div><div class="meta"><div class="name">GLOBE ORBITER</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="manimo/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/manimo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MANIMO</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tessaplate/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/tessaplate.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA PLATE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="tessacube/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/tessacube.webp')"></div><div class="shade"></div><div class="meta"><div class="name">TESSA CUBE</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mdeklogo/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/mdeklogo.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK LOGO</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="environments/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/environments.webp')"></div><div class="shade"></div><div class="meta"><div class="name">ENVIRONMENTS</div><div class="desc">Open project</div></div></a>
+            <a class="tile" href="mdekvr/"><div class="thumb" style="background-image:url('https://songfamhome.synology.me/portfolio/images/iac2022kia/thumbs/mdekvr.webp')"></div><div class="shade"></div><div class="meta"><div class="name">MDEK VR</div><div class="desc">Open project</div></div></a>
           </div>
         </div>
       </section>
 
-      <!-- 3. Ending / Review -->
+      <!-- 3. Ending image only -->
       <section class="swiper-slide">
         <div class="bg ending"></div><div class="overlay"></div>
-        <div class="content">
-          <div class="pre">IAC 2022 KIA</div>
-          <h1><b>REVIEW</b> PAGE</h1>
-          <div class="sub">One spectrum, many outputs. Keep refining.</div>
-        </div>
       </section>
     </div>
   </div>
@@ -137,6 +122,8 @@
     const swiper=new Swiper('#index-swiper',{
       direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
       keyboard:{enabled:true},
+      noSwiping:true,
+      noSwipingClass:'swiper-no-swiping'
     });
 
     async function sha256(s){
