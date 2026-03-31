@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
+    @font-face{font-family:'MiedingerW01-Bold';src:url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff') format('woff');font-weight:700;font-style:normal;}
     *{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#111315;--text:#EBF2F4;--accent:#1FFFE0;--panel:#16191c;--line:rgba(255,255,255,.12)}
     html,body{width:100%;height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow:hidden}
@@ -32,10 +33,9 @@
 
     .brand{letter-spacing:2px;font-size:12px;opacity:.85}
 
-    .hero{position:absolute;left:6vw;bottom:10vh;z-index:20;max-width:min(760px,90vw)}
-    .hero h1{font-size:clamp(28px,4vw,58px);font-weight:300;line-height:1.1;letter-spacing:1px}
-    .hero h1 b{font-weight:700;color:var(--accent)}
-    .hero p{margin-top:16px;font-size:14px;opacity:.78;letter-spacing:.3px}
+    .hero{position:fixed;left:50%;bottom:max(34px,6vh);transform:translateX(-50%);z-index:20;width:min(92vw,1200px);display:flex;justify-content:center;text-align:center;pointer-events:none}
+    .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(44px,9vw,148px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+    .hero p,.hero h1 b{display:none}
 
     /* slide-out wall */
     .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:50}
@@ -53,6 +53,11 @@
     .sub a:hover{border-color:var(--accent);color:#fff}
 
     .hint{margin-top:16px;font-size:11px;opacity:.62;line-height:1.6}
+
+    @media (max-width: 768px){
+      .hero{bottom:max(28px,5vh);width:94vw}
+      .hero h1{font-size:clamp(38px,16vw,84px);letter-spacing:.015em}
+    }
   </style>
 </head>
 <body>
@@ -66,8 +71,7 @@
   </div>
 
   <section class="hero">
-    <h1><b>PROJECT</b> PORTFOLIO</h1>
-    <p>선택한 카테고리로 바로 진입. (IAC 계열은 index 비밀번호 정책 유지)</p>
+    <h1>SPECTRUM</h1>
   </section>
 
   <div class="wall-backdrop" id="wallBackdrop"></div>
