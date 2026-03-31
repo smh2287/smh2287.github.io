@@ -33,8 +33,10 @@
 
     .brand{letter-spacing:2px;font-size:12px;opacity:.85}
 
-    .hero{position:fixed;left:50%;bottom:max(34px,6vh);transform:translateX(-50%);z-index:20;width:min(92vw,1200px);display:flex;justify-content:center;text-align:center;pointer-events:none}
+    .hero{position:fixed;left:50%;bottom:max(30px,5.5vh);transform:translateX(-50%);z-index:20;width:min(92vw,1200px);display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none}
     .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(44px,9vw,148px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+    .hero-sub{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;color:var(--accent);font-size:clamp(14px,1.65vw,22px);font-weight:500;letter-spacing:.01em}
+    .hero-sub span{display:block}
     .hero p,.hero h1 b{display:none}
 
     /* slide-out wall */
@@ -55,8 +57,9 @@
     .hint{margin-top:16px;font-size:11px;opacity:.62;line-height:1.6}
 
     @media (max-width: 768px){
-      .hero{bottom:max(28px,5vh);width:94vw}
+      .hero{bottom:max(24px,4.5vh);width:94vw;gap:8px}
       .hero h1{font-size:clamp(38px,16vw,84px);letter-spacing:.015em}
+      .hero-sub{font-size:clamp(11px,3.5vw,15px);gap:12px}
     }
   </style>
 </head>
@@ -72,6 +75,10 @@
 
   <section class="hero">
     <h1>SPECTRUM</h1>
+    <div class="hero-sub">
+      <span>Digital Visualization Portfolio</span>
+      <span>Minho Song</span>
+    </div>
   </section>
 
   <div class="wall-backdrop" id="wallBackdrop"></div>
