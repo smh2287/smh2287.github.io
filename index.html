@@ -40,9 +40,13 @@
     .copy-scene p{font-family:'Montserrat',sans-serif;font-size:clamp(16px,1.35vw,22px);font-weight:400;line-height:1.7;color:rgba(235,242,244,.92)}
 
     .about-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
-    .about-scene.about1{align-items:flex-start;justify-content:flex-start;padding:10vh 6vw 0}
+    .about-scene.about1{align-items:flex-start;justify-content:flex-end;padding:10vh 7vw 0}
     .about-scene.about2{align-items:flex-start;justify-content:flex-end;padding:10vh 6vw 0}
     .about-inner{max-width:min(560px,40vw);color:#fff}
+    .about-scene.about1 .about-inner{color:var(--accent)}
+    .about-scene.about1 h2,.about-scene.about1 p,.about-scene.about1 .id-label,.about-scene.about1 .id-value{color:var(--accent)}
+    .about-scene.about1 .id-label{opacity:.78}
+    .about-scene.about1 .id-grid{margin-top:30px}
     .about-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(235,242,244,.62);margin-bottom:18px}
     .about-scene h2{font-family:'Montserrat',sans-serif;font-size:clamp(28px,3.2vw,46px);font-weight:600;line-height:1.08;letter-spacing:-0.02em;color:#fff;margin-bottom:18px}
     .about-scene p{font-family:'Montserrat',sans-serif;font-size:clamp(15px,1.05vw,18px);font-weight:400;line-height:1.82;color:rgba(235,242,244,.92)}
@@ -120,7 +124,6 @@
 
   <section class="about-scene about1" id="aboutScene1">
     <div class="about-inner">
-      <div class="about-kicker">CAREER</div>
       <h2>MINHO SONG</h2>
       <p>i study mobility design and digital visualization, exploring diverse tools and creative processes.</p>
       <p>to me, design is about creating a meaningful flow, an experience that brings joy and ease to people's lives.</p>
