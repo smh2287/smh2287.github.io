@@ -107,13 +107,15 @@
     document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeWall(); });
 
     function updateScrollScene(){
-      const progress = Math.max(0, Math.min(1, window.scrollY / window.innerHeight));
-      hero.style.opacity = String(1 - progress * 1.15);
-      hero.style.transform = `translateX(-50%) translateY(${-progress * 18}vh)`;
-      bgMain.style.opacity = String(1 - progress * 0.95);
-      bgMain.style.transform = `scale(${1 + progress * 0.015})`;
+      const sceneLength = window.innerHeight * 0.92;
+      const progress = Math.max(0, Math.min(1, window.scrollY / sceneLength));
+      const heroFade = Math.max(0, 1 - progress * 1.8);
+      hero.style.opacity = String(heroFade);
+      hero.style.transform = `translateX(-50%) translateY(${-progress * 92}vh)`;
+      bgMain.style.opacity = String(Math.max(0, 1 - progress * 1.05));
+      bgMain.style.transform = `scale(${1 + progress * 0.02})`;
       bgPhilosophy.style.opacity = String(progress);
-      bgPhilosophy.style.transform = `scale(${1 + (1 - progress) * 0.01})`;
+      bgPhilosophy.style.transform = `scale(${1 + (1 - progress) * 0.006})`;
     }
     updateScrollScene();
     window.addEventListener('scroll', updateScrollScene, {passive:true});
