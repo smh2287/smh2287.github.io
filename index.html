@@ -68,8 +68,11 @@
     .sub.open{display:flex}
     .sub a{display:block;text-decoration:none;color:#d9e2e6;border:1px solid rgba(255,255,255,.18);padding:10px 10px;font-size:12px;letter-spacing:.4px}
     .sub a:hover{border-color:var(--accent);color:#fff}
-    .project-links{margin:0; padding:0; border-left:none; display:flex; flex-direction:column; gap:8px}
-    .hint{margin-top:16px;font-size:11px;opacity:.62;line-height:1.6}
+    .project-links{margin:0;padding:0;border-left:none;display:flex;flex-direction:column;gap:8px}
+    .project-links a{display:block;text-decoration:none;color:#d9e2e6;border:1px solid rgba(255,255,255,.18);padding:10px 10px;font-size:12px;letter-spacing:.4px;background:transparent}
+    .project-links a:visited{color:#d9e2e6}
+    .project-links a:hover{border-color:var(--accent);color:#fff}
+    .hint{display:none}
 
     @media (max-width: 768px){
       .hero{bottom:max(58px,9vh);width:calc(100vw - 40px);max-width:calc(100vw - 40px)}
@@ -157,7 +160,6 @@
       <a href="/projects/vishow/index.html">VISHOW</a>
       <a href="/projects/niva/index.html">NIVA</a>
     </div>
-    <div class="hint">스크롤 시 SPECTRUM이 올라가며 사라지고, 배경이 Philosophy 이미지로 전환됩니다.</div>
   </aside>
 
   <div class="scroll-space" aria-hidden="true"><section class="snap-section"></section><section class="snap-section"></section><section class="snap-section"></section><section class="snap-section"></section></div>
