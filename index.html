@@ -11,7 +11,7 @@
     @font-face{font-family:'MiedingerW01-Bold';src:url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff') format('woff');font-weight:700;font-style:normal;}
     *{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#111315;--text:#EBF2F4;--accent:#1FFFE0;--panel:#16191c;--line:rgba(255,255,255,.12)}
-    html,body{width:100%;height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;overflow-y:auto}
+    html,body{width:100%;min-height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden} body{min-height:220vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;}
 
     .stage{position:fixed;inset:0;z-index:0;overflow:hidden;background:#101214}
     .bg{position:absolute;inset:0;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:opacity .18s linear, transform .18s linear;will-change:opacity,transform}
@@ -19,7 +19,7 @@
     .bg.philosophy{background-image:linear-gradient(140deg,rgba(15,17,19,.06) 0%,rgba(26,30,34,.03) 60%,rgba(16,18,21,.08) 100%),url('https://songfamhome.synology.me/portfolio/images/home/phillosophy-home.webp');opacity:0}
     .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.04));pointer-events:none}
 
-    .scroll-space{position:relative;z-index:1;height:220vh}
+    .scroll-space{position:relative;z-index:1;height:220vh;min-height:220svh;pointer-events:none}
 
     .top-left{position:fixed;left:20px;top:20px;z-index:40;display:flex;align-items:center;gap:12px}
     .menu-btn{width:42px;height:42px;border:1px solid var(--line);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
@@ -107,8 +107,9 @@
     document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeWall(); });
 
     function updateScrollScene(){
-      const sceneLength = window.innerHeight * 0.92;
-      const progress = Math.max(0, Math.min(1, window.scrollY / sceneLength));
+      const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const sceneLength = Math.max(window.innerHeight * 0.92, 1);
+      const progress = Math.max(0, Math.min(1, scrollTop / sceneLength));
       const heroFade = Math.max(0, 1 - progress * 1.8);
       hero.style.opacity = String(heroFade);
       hero.style.transform = `translateX(-50%) translateY(${-progress * 92}vh)`;
