@@ -289,6 +289,7 @@
     const TOTAL_PAGES = 4;
     let snapLock = false;
     let touchStartY = null;
+    let touchCurrentY = null;
 
     function getScrollTop(){
       return window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -343,21 +344,47 @@
       }
     }, { passive:false });
 
+    function resetTouchState(){
+      touchStartY = null;
+      touchCurrentY = null;
+    }
+
+    function finishTouchSnap(endY){
+      if (body.classList.contains('wall-open')) { resetTouchState(); return; }
+      if (snapLock || touchStartY == null) { resetTouchState(); return; }
+      const delta = touchStartY - endY;
+      resetTouchState();
+      const current = getNearestPage();
+      if (Math.abs(delta) < 28) {
+        goToPage(current);
+        return;
+      }
+      const next = delta > 0 ? current + 1 : current - 1;
+      goToPage(next);
+    }
+
     window.addEventListener('touchstart', (e) => {
       if (!e.touches || !e.touches.length) return;
       touchStartY = e.touches[0].clientY;
+      touchCurrentY = touchStartY;
     }, { passive:true });
 
-    window.addEventListener('touchend', (e) => {
+    window.addEventListener('touchmove', (e) => {
       if (body.classList.contains('wall-open')) return;
-      if (snapLock || touchStartY == null) return;
-      const endY = (e.changedTouches && e.changedTouches.length) ? e.changedTouches[0].clientY : touchStartY;
-      const delta = touchStartY - endY;
-      touchStartY = null;
-      if (Math.abs(delta) < 38) return;
-      const current = getNearestPage();
-      const next = delta > 0 ? current + 1 : current - 1;
-      goToPage(next);
+      if (!e.touches || !e.touches.length || touchStartY == null) return;
+      touchCurrentY = e.touches[0].clientY;
+      if (Math.abs(touchStartY - touchCurrentY) > 8) {
+        e.preventDefault();
+      }
+    }, { passive:false });
+
+    window.addEventListener('touchend', (e) => {
+      const endY = (e.changedTouches && e.changedTouches.length) ? e.changedTouches[0].clientY : (touchCurrentY ?? touchStartY ?? 0);
+      finishTouchSnap(endY);
+    }, { passive:true });
+
+    window.addEventListener('touchcancel', () => {
+      finishTouchSnap(touchCurrentY ?? touchStartY ?? 0);
     }, { passive:true });
   </script>
 </body>
