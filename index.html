@@ -49,6 +49,7 @@
     .sub.open{display:flex}
     .sub a{display:block;text-decoration:none;color:#d9e2e6;border:1px solid rgba(255,255,255,.18);padding:10px 10px;font-size:12px;letter-spacing:.4px}
     .sub a:hover{border-color:var(--accent);color:#fff}
+    .project-links{margin:0; padding:0; border-left:none; display:flex; flex-direction:column; gap:8px}
     .hint{margin-top:16px;font-size:11px;opacity:.62;line-height:1.6}
 
     @media (max-width: 768px){
@@ -88,16 +89,13 @@
 
   <div class="wall-backdrop" id="wallBackdrop"></div>
   <aside class="wall" id="wall">
-    <h2>NAVIGATION</h2>
-    <div class="menu">
-      <button class="menu-btn2" id="projectsToggle" type="button">PROJECTS</button>
-      <div class="sub" id="projectsSub">
-        <a href="/projects/iac2022kia/index.html">IAC2022KIA</a>
-        <a href="/projects/iac2022hyundai/index.html">IAC2022HYUNDAI</a>
-        <a href="/projects/iac2021kia/index.html">IAC2021KIA</a>
-        <a href="/projects/vishow/index.html">VISHOW</a>
-        <a href="/projects/niva/index.html">NIVA</a>
-      </div>
+    <h2>PROJECTS</h2>
+    <div class="menu project-links" id="projectsSub">
+      <a href="/projects/iac2022kia/index.html">IAC2022KIA</a>
+      <a href="/projects/iac2022hyundai/index.html">IAC2022HYUNDAI</a>
+      <a href="/projects/iac2021kia/index.html">IAC2021KIA</a>
+      <a href="/projects/vishow/index.html">VISHOW</a>
+      <a href="/projects/niva/index.html">NIVA</a>
     </div>
     <div class="hint">스크롤 시 SPECTRUM이 올라가며 사라지고, 배경이 Philosophy 이미지로 전환됩니다.</div>
   </aside>
@@ -108,8 +106,6 @@
     const body=document.body;
     const open=document.getElementById('openWall');
     const back=document.getElementById('wallBackdrop');
-    const toggle=document.getElementById('projectsToggle');
-    const sub=document.getElementById('projectsSub');
     const hero=document.getElementById('hero');
     const copyScene=document.getElementById('copyScene');
     const bgMain=document.getElementById('bgMain');
@@ -118,7 +114,6 @@
     function closeWall(){ body.classList.remove('wall-open'); }
     open.addEventListener('click',()=> body.classList.toggle('wall-open'));
     back.addEventListener('click',closeWall);
-    toggle.addEventListener('click',()=> sub.classList.toggle('open'));
     document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeWall(); });
 
     function updateScrollScene(){
