@@ -11,7 +11,7 @@
     @font-face{font-family:'MiedingerW01-Bold';src:url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff') format('woff');font-weight:700;font-style:normal;}
     *{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#111315;--text:#EBF2F4;--accent:#1FFFE0;--panel:#16191c;--line:rgba(255,255,255,.12)}
-    html,body{width:100%;min-height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden} body{min-height:320vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;}
+    html,body{width:100%;min-height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden} body{min-height:300vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;scroll-snap-type:y mandatory;scroll-behavior:smooth;}
 
     .stage{position:fixed;inset:0;z-index:0;overflow:hidden;background:#101214}
     .bg{position:absolute;inset:0;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:opacity .18s linear, transform .18s linear;will-change:opacity,transform}
@@ -19,7 +19,7 @@
     .bg.philosophy{background-image:linear-gradient(140deg,rgba(15,17,19,.06) 0%,rgba(26,30,34,.03) 60%,rgba(16,18,21,.08) 100%),url('https://songfamhome.synology.me/portfolio/images/home/phillosophy-home.webp');opacity:0}
     .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.04));pointer-events:none}
 
-    .scroll-space{position:relative;z-index:1;height:320vh;min-height:320svh;pointer-events:none}
+    .scroll-space{position:relative;z-index:1;height:300vh;min-height:300svh;pointer-events:none}.snap-section{height:100vh;min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always}
 
     .top-left{position:fixed;left:20px;top:20px;z-index:40;display:flex;align-items:center;gap:12px}
     .menu-btn{width:42px;height:42px;border:1px solid var(--line);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
@@ -33,8 +33,8 @@
     .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%}
 
     .copy-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 7vw 14vh;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
-    .copy-inner{max-width:min(720px,44vw);color:rgba(235,242,244,.98);text-align:left}
-    .copy-scene h2{font-family:'Montserrat',sans-serif;font-size:clamp(30px,3.8vw,58px);font-weight:600;line-height:1.08;letter-spacing:-0.02em;color:#fff;margin-bottom:18px}
+    .copy-inner{max-width:min(980px,58vw);color:rgba(235,242,244,.98);text-align:left}
+    .copy-scene h2{font-family:'Montserrat',sans-serif;font-size:clamp(24px,2.8vw,42px);font-weight:600;line-height:1.08;letter-spacing:-0.02em;color:#fff;margin-bottom:18px;white-space:nowrap}
     .copy-scene p{font-family:'Montserrat',sans-serif;font-size:clamp(16px,1.35vw,22px);font-weight:400;line-height:1.7;color:rgba(235,242,244,.92)}
 
     .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:50}
@@ -55,8 +55,8 @@
       .hero{bottom:max(58px,9vh);width:calc(100vw - 40px);max-width:calc(100vw - 40px)}
       .hero h1{font-size:clamp(24px,8.6vw,48px);letter-spacing:0;max-width:100%}
       .copy-scene{padding:0 7vw 16vh;align-items:flex-end;justify-content:center}
-      .copy-inner{max-width:86vw;text-align:center}
-      .copy-scene h2{font-size:clamp(24px,8.2vw,40px);margin-bottom:14px}
+      .copy-inner{max-width:92vw;text-align:center}
+      .copy-scene h2{font-size:clamp(18px,5.4vw,28px);margin-bottom:14px;white-space:nowrap}
       .copy-scene p{font-size:clamp(14px,4vw,17px);line-height:1.65}
     }
   </style>
@@ -104,7 +104,7 @@
     <div class="hint">스크롤 시 SPECTRUM이 올라가며 사라지고, 배경이 Philosophy 이미지로 전환됩니다.</div>
   </aside>
 
-  <div class="scroll-space" aria-hidden="true"></div>
+  <div class="scroll-space" aria-hidden="true"><section class="snap-section"></section><section class="snap-section"></section><section class="snap-section"></section></div>
 
   <script>
     const body=document.body;
@@ -125,10 +125,9 @@
 
     function updateScrollScene(){
       const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      const firstScene = Math.max(window.innerHeight * 0.92, 1);
-      const secondScene = Math.max(window.innerHeight * 0.9, 1);
-      const progress = Math.max(0, Math.min(1, scrollTop / firstScene));
-      const copyProgress = Math.max(0, Math.min(1, (scrollTop - firstScene) / secondScene));
+      const page = Math.max(window.innerHeight, 1);
+      const progress = Math.max(0, Math.min(1, scrollTop / page));
+      const copyProgress = Math.max(0, Math.min(1, (scrollTop - page) / page));
 
       const heroFade = Math.max(0, 1 - progress * 1.8);
       hero.style.opacity = String(heroFade);
