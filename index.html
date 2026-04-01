@@ -11,7 +11,7 @@
     @font-face{font-family:'MiedingerW01-Bold';src:url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff') format('woff');font-weight:700;font-style:normal;}
     *{margin:0;padding:0;box-sizing:border-box}
     :root{--bg:#111315;--text:#EBF2F4;--accent:#1FFFE0;--panel:#16191c;--line:rgba(255,255,255,.12)}
-    html,body{width:100%;min-height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden} body{min-height:220vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;}
+    html,body{width:100%;min-height:100%;font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden} body{min-height:320vh;overflow-y:scroll;-webkit-overflow-scrolling:touch;}
 
     .stage{position:fixed;inset:0;z-index:0;overflow:hidden;background:#101214}
     .bg{position:absolute;inset:0;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:opacity .18s linear, transform .18s linear;will-change:opacity,transform}
@@ -19,7 +19,7 @@
     .bg.philosophy{background-image:linear-gradient(140deg,rgba(15,17,19,.06) 0%,rgba(26,30,34,.03) 60%,rgba(16,18,21,.08) 100%),url('https://songfamhome.synology.me/portfolio/images/home/phillosophy-home.webp');opacity:0}
     .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.04));pointer-events:none}
 
-    .scroll-space{position:relative;z-index:1;height:220vh;min-height:220svh;pointer-events:none}
+    .scroll-space{position:relative;z-index:1;height:320vh;min-height:320svh;pointer-events:none}
 
     .top-left{position:fixed;left:20px;top:20px;z-index:40;display:flex;align-items:center;gap:12px}
     .menu-btn{width:42px;height:42px;border:1px solid var(--line);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
@@ -31,6 +31,12 @@
 
     .hero{position:fixed;left:50%;bottom:max(76px,11vh);transform:translateX(-50%);z-index:20;width:min(92vw,1080px);display:flex;flex-direction:column;align-items:center;gap:0;pointer-events:none;will-change:transform,opacity}
     .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%}
+
+    .copy-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;align-items:flex-start;justify-content:flex-start;padding:12vh 7vw;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
+    .copy-inner{max-width:min(640px,78vw);color:rgba(235,242,244,.96)}
+    .copy-kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:rgba(235,242,244,.56);margin-bottom:18px}
+    .copy-scene h2{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(28px,4.6vw,64px);line-height:1.04;letter-spacing:.01em;color:#fff;margin-bottom:20px}
+    .copy-scene p{font-size:clamp(14px,1.25vw,18px);line-height:1.9;color:rgba(235,242,244,.84)}
 
     .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:50}
     .wall{position:fixed;left:0;top:0;bottom:0;width:min(420px,88vw);background:var(--panel);border-right:1px solid var(--line);transform:translateX(-102%);transition:.32s;z-index:60;padding:26px 22px;overflow:auto}
@@ -49,6 +55,11 @@
     @media (max-width: 768px){
       .hero{bottom:max(58px,9vh);width:calc(100vw - 40px);max-width:calc(100vw - 40px)}
       .hero h1{font-size:clamp(24px,8.6vw,48px);letter-spacing:0;max-width:100%}
+      .copy-scene{padding:10vh 6vw 0}
+      .copy-inner{max-width:88vw}
+      .copy-kicker{font-size:10px;margin-bottom:14px}
+      .copy-scene h2{font-size:clamp(22px,8vw,40px);margin-bottom:16px}
+      .copy-scene p{font-size:clamp(13px,3.5vw,16px);line-height:1.75}
     }
   </style>
 </head>
@@ -68,6 +79,14 @@
 
   <section class="hero" id="hero">
     <h1>SPECTRUM</h1>
+  </section>
+
+  <section class="copy-scene" id="copyScene">
+    <div class="copy-inner">
+      <div class="copy-kicker">PHILOSOPHY</div>
+      <h2>Design begins with perspective.</h2>
+      <p>I believe mobility is not defined only by function, but by the way a vision is translated into experience. Form, motion, atmosphere, and storytelling should move together as one language.</p>
+    </div>
   </section>
 
   <div class="wall-backdrop" id="wallBackdrop"></div>
@@ -97,6 +116,7 @@
     const toggle=document.getElementById('projectsToggle');
     const sub=document.getElementById('projectsSub');
     const hero=document.getElementById('hero');
+    const copyScene=document.getElementById('copyScene');
     const bgMain=document.getElementById('bgMain');
     const bgPhilosophy=document.getElementById('bgPhilosophy');
 
@@ -108,15 +128,22 @@
 
     function updateScrollScene(){
       const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      const sceneLength = Math.max(window.innerHeight * 0.92, 1);
-      const progress = Math.max(0, Math.min(1, scrollTop / sceneLength));
+      const firstScene = Math.max(window.innerHeight * 0.92, 1);
+      const secondScene = Math.max(window.innerHeight * 0.9, 1);
+      const progress = Math.max(0, Math.min(1, scrollTop / firstScene));
+      const copyProgress = Math.max(0, Math.min(1, (scrollTop - firstScene) / secondScene));
+
       const heroFade = Math.max(0, 1 - progress * 1.8);
       hero.style.opacity = String(heroFade);
       hero.style.transform = `translateX(-50%) translateY(${-progress * 92}vh)`;
+
       bgMain.style.opacity = String(Math.max(0, 1 - progress * 1.05));
       bgMain.style.transform = `scale(${1 + progress * 0.02})`;
       bgPhilosophy.style.opacity = String(progress);
       bgPhilosophy.style.transform = `scale(${1 + (1 - progress) * 0.006})`;
+
+      copyScene.style.opacity = String(copyProgress);
+      copyScene.style.transform = `translateY(${(1 - copyProgress) * 28}px)`;
     }
     updateScrollScene();
     window.addEventListener('scroll', updateScrollScene, {passive:true});
