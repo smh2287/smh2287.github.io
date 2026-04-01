@@ -6,7 +6,7 @@
   <title>Minho Song Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     @font-face{font-family:'MiedingerW01-Bold';src:url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff2') format('woff2'),url('https://db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.woff') format('woff');font-weight:700;font-style:normal;}
     *{margin:0;padding:0;box-sizing:border-box}
@@ -32,11 +32,10 @@
     .hero{position:fixed;left:50%;bottom:max(76px,11vh);transform:translateX(-50%);z-index:20;width:min(92vw,1080px);display:flex;flex-direction:column;align-items:center;gap:0;pointer-events:none;will-change:transform,opacity}
     .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%}
 
-    .copy-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;align-items:flex-start;justify-content:flex-start;padding:12vh 7vw;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
-    .copy-inner{max-width:min(640px,78vw);color:rgba(235,242,244,.96)}
-    .copy-kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:rgba(235,242,244,.56);margin-bottom:18px}
-    .copy-scene h2{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(28px,4.6vw,64px);line-height:1.04;letter-spacing:.01em;color:#fff;margin-bottom:20px}
-    .copy-scene p{font-size:clamp(14px,1.25vw,18px);line-height:1.9;color:rgba(235,242,244,.84)}
+    .copy-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;align-items:flex-end;justify-content:flex-end;padding:0 7vw 14vh;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
+    .copy-inner{max-width:min(720px,44vw);color:rgba(235,242,244,.98);text-align:left}
+    .copy-scene h2{font-family:'Montserrat',sans-serif;font-size:clamp(30px,3.8vw,58px);font-weight:600;line-height:1.08;letter-spacing:-0.02em;color:#fff;margin-bottom:18px}
+    .copy-scene p{font-family:'Montserrat',sans-serif;font-size:clamp(16px,1.35vw,22px);font-weight:400;line-height:1.7;color:rgba(235,242,244,.92)}
 
     .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:50}
     .wall{position:fixed;left:0;top:0;bottom:0;width:min(420px,88vw);background:var(--panel);border-right:1px solid var(--line);transform:translateX(-102%);transition:.32s;z-index:60;padding:26px 22px;overflow:auto}
@@ -55,11 +54,10 @@
     @media (max-width: 768px){
       .hero{bottom:max(58px,9vh);width:calc(100vw - 40px);max-width:calc(100vw - 40px)}
       .hero h1{font-size:clamp(24px,8.6vw,48px);letter-spacing:0;max-width:100%}
-      .copy-scene{padding:10vh 6vw 0}
-      .copy-inner{max-width:88vw}
-      .copy-kicker{font-size:10px;margin-bottom:14px}
-      .copy-scene h2{font-size:clamp(22px,8vw,40px);margin-bottom:16px}
-      .copy-scene p{font-size:clamp(13px,3.5vw,16px);line-height:1.75}
+      .copy-scene{padding:0 7vw 16vh;align-items:flex-end;justify-content:center}
+      .copy-inner{max-width:86vw;text-align:center}
+      .copy-scene h2{font-size:clamp(24px,8.2vw,40px);margin-bottom:14px}
+      .copy-scene p{font-size:clamp(14px,4vw,17px);line-height:1.65}
     }
   </style>
 </head>
@@ -83,9 +81,8 @@
 
   <section class="copy-scene" id="copyScene">
     <div class="copy-inner">
-      <div class="copy-kicker">PHILOSOPHY</div>
-      <h2>Design begins with perspective.</h2>
-      <p>I believe mobility is not defined only by function, but by the way a vision is translated into experience. Form, motion, atmosphere, and storytelling should move together as one language.</p>
+      <h2>One gaze, many domains</h2>
+      <p>From mobility to wearables, my priority stays constant, quality in build, emotion in scene.</p>
     </div>
   </section>
 
