@@ -99,6 +99,32 @@
     .project-links a:hover{border-color:var(--accent);color:#fff}
     .hint{display:none}
 
+    .notice-backdrop{position:fixed;inset:0;z-index:72;background:rgba(8,10,12,.58);backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .28s ease}
+    .notice-modal{position:fixed;left:50%;top:50%;z-index:73;width:min(640px,calc(100vw - 40px));padding:28px 28px 24px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(19,22,25,.94),rgba(14,16,18,.96));box-shadow:0 18px 60px rgba(0,0,0,.32);transform:translate(-50%,-50%) translateY(16px);opacity:0;pointer-events:none;transition:opacity .28s ease, transform .28s ease}
+    body.notice-open{overflow:hidden}
+    body.notice-open .notice-backdrop{opacity:1;pointer-events:auto}
+    body.notice-open .notice-modal{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) translateY(0)}
+    .notice-eyebrow{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px}
+    .notice-en{font-family:'Montserrat',sans-serif;font-size:clamp(18px,1.55vw,24px);font-weight:500;line-height:1.58;color:rgba(235,242,244,.96);margin-bottom:14px}
+    .notice-ko{font-family:'Montserrat',sans-serif;font-size:clamp(15px,1.12vw,18px);font-weight:500;line-height:1.7;color:var(--accent);margin-bottom:22px}
+    .notice-divider{height:1px;background:rgba(255,255,255,.08);margin:0 0 18px}
+    .notice-actions{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .notice-check{display:flex;align-items:center;gap:10px;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:500;color:rgba(235,242,244,.82);cursor:pointer;user-select:none}
+    .notice-check input{appearance:none;width:16px;height:16px;border:1px solid rgba(255,255,255,.28);background:transparent;display:grid;place-items:center;cursor:pointer}
+    .notice-check input::after{content:'';width:8px;height:8px;background:var(--accent);transform:scale(0);transition:transform .16s ease}
+    .notice-check input:checked{border-color:var(--accent)}
+    .notice-check input:checked::after{transform:scale(1)}
+    .notice-confirm{min-width:108px;padding:11px 18px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:#fff;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:border-color .2s ease, background .2s ease, color .2s ease}
+    .notice-confirm:hover{border-color:var(--accent);color:var(--accent);background:rgba(31,255,224,.05)}
+    @media (max-width: 768px){
+      .notice-modal{width:min(560px,calc(100vw - 24px));padding:22px 18px 18px}
+      .notice-en{font-size:clamp(15px,4.7vw,20px);line-height:1.55}
+      .notice-ko{font-size:clamp(13px,3.8vw,15px);line-height:1.62}
+      .notice-actions{flex-direction:column;align-items:stretch;gap:14px}
+      .notice-confirm{width:100%}
+      .notice-check{font-size:12px}
+    }
+
     @media (max-width: 768px){
       .hero{bottom:max(58px,9vh);width:calc(100vw - 40px);max-width:calc(100vw - 40px)}
       .hero h1{font-size:clamp(24px,8.6vw,48px);letter-spacing:0;max-width:100%}
@@ -152,6 +178,21 @@
       <span class="hamburger"><i></i><i></i><i></i></span>
     </button>
     <div class="brand">MINHO SONG / PORTFOLIO</div>
+  </div>
+
+  <div class="notice-backdrop" id="noticeBackdrop"></div>
+  <div class="notice-modal" id="noticeModal" role="dialog" aria-modal="true" aria-labelledby="noticeTitle">
+    <div class="notice-eyebrow">Notice</div>
+    <div class="notice-en" id="noticeTitle">During the Genesis Mobility application period (2026.04.03–2026.04.21), the industry-academic collaboration projects will be temporarily accessible via password authentication.</div>
+    <div class="notice-ko">제네시스 모빌리티 지원 기간(2026.04.03–2026.04.21) 동안, 비밀번호 인증을 통해 산학협력 프로젝트를 한시적으로 공개합니다.</div>
+    <div class="notice-divider"></div>
+    <div class="notice-actions">
+      <label class="notice-check" for="noticeHideToday">
+        <input type="checkbox" id="noticeHideToday">
+        <span>오늘 하루 보지 않기</span>
+      </label>
+      <button class="notice-confirm" id="noticeConfirm" type="button">확인</button>
+    </div>
   </div>
 
   <section class="hero" id="hero">
@@ -250,11 +291,47 @@
     const bgPhilosophy=document.getElementById('bgPhilosophy');
     const bgAbout1=document.getElementById('bgAbout1');
     const bgAbout2=document.getElementById('bgAbout2');
+    const noticeBackdrop=document.getElementById('noticeBackdrop');
+    const noticeModal=document.getElementById('noticeModal');
+    const noticeConfirm=document.getElementById('noticeConfirm');
+    const noticeHideToday=document.getElementById('noticeHideToday');
+    const NOTICE_KEY='hara-home-notice-hide-until';
+
+    function todayEndStamp(){
+      const now = new Date();
+      const end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+      return end.getTime();
+    }
+    function shouldShowNotice(){
+      try {
+        const raw = localStorage.getItem(NOTICE_KEY);
+        return !(raw && Number(raw) > Date.now());
+      } catch (e) {
+        return true;
+      }
+    }
+    function openNotice(){
+      body.classList.add('notice-open');
+    }
+    function closeNotice(){
+      if (noticeHideToday && noticeHideToday.checked) {
+        try { localStorage.setItem(NOTICE_KEY, String(todayEndStamp())); } catch (e) {}
+      }
+      body.classList.remove('notice-open');
+    }
 
     function closeWall(){ body.classList.remove('wall-open'); }
-    open.addEventListener('click',()=> body.classList.toggle('wall-open'));
+    open.addEventListener('click',()=> { if(body.classList.contains('notice-open')) return; body.classList.toggle('wall-open'); });
     back.addEventListener('click',closeWall);
-    document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeWall(); });
+    noticeBackdrop.addEventListener('click', closeNotice);
+    noticeConfirm.addEventListener('click', closeNotice);
+    if (shouldShowNotice()) openNotice();
+    document.addEventListener('keydown',e=>{
+      if(e.key==='Escape'){
+        if(body.classList.contains('notice-open')) { closeNotice(); return; }
+        closeWall();
+      }
+    });
 
     function updateScrollScene(){
       const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -315,7 +392,7 @@
     });
 
     window.addEventListener('wheel', (e) => {
-      if (body.classList.contains('wall-open')) return;
+      if (body.classList.contains('wall-open') || body.classList.contains('notice-open')) return;
       if (snapLock) { e.preventDefault(); return; }
       if (Math.abs(e.deltaY) < 10) return;
       e.preventDefault();
@@ -325,7 +402,7 @@
     }, { passive:false });
 
     window.addEventListener('keydown', (e) => {
-      if (body.classList.contains('wall-open')) return;
+      if (body.classList.contains('wall-open') || body.classList.contains('notice-open')) return;
       if (snapLock) return;
       if (['ArrowDown','PageDown','Space'].includes(e.key)) {
         e.preventDefault();
@@ -351,7 +428,7 @@
     }
 
     function finishTouchSnap(endY){
-      if (body.classList.contains('wall-open')) { resetTouchState(); return; }
+      if (body.classList.contains('wall-open') || body.classList.contains('notice-open')) { resetTouchState(); return; }
       if (snapLock || touchStartY == null) { resetTouchState(); return; }
       const delta = touchStartY - endY;
       resetTouchState();
@@ -371,7 +448,7 @@
     }, { passive:true });
 
     window.addEventListener('touchmove', (e) => {
-      if (body.classList.contains('wall-open')) return;
+      if (body.classList.contains('wall-open') || body.classList.contains('notice-open')) return;
       if (!e.touches || !e.touches.length || touchStartY == null) return;
       touchCurrentY = e.touches[0].clientY;
       if (Math.abs(touchStartY - touchCurrentY) > 8) {
