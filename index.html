@@ -31,12 +31,13 @@
     .hamburger i{position:absolute;left:0;right:0;height:2px;background:#fff}
     .hamburger i:nth-child(1){top:0}.hamburger i:nth-child(2){top:6px}.hamburger i:nth-child(3){top:12px}
     
-    .hero{position:fixed;left:50%;bottom:max(108px,15vh);transform:translateX(-50%);z-index:20;width:min(92vw,1080px);display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none;will-change:transform,opacity}
-    .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%}
-    .hero-meta{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding:0 .35vw}
-    .hero-meta span{font-family:'Montserrat',sans-serif;font-size:clamp(16px,1.65vw,28px);font-weight:500;line-height:1.1;color:rgba(17,19,21,.92);text-shadow:0 0 0 rgba(0,0,0,0)}
-    .hero-meta .hero-left{text-align:left}
-    .hero-meta .hero-right{text-align:right}
+    .hero{position:fixed;left:50%;bottom:max(122px,18vh);transform:translateX(-50%);z-index:20;display:flex;justify-content:center;pointer-events:none;will-change:transform,opacity}
+    .hero-lock{display:flex;flex-direction:column;align-items:stretch;width:fit-content;max-width:min(92vw,1080px)}
+    .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%;text-align:center}
+    .hero-meta{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:flex-start;column-gap:24px;margin-top:18px}
+    .hero-meta span{font-family:'Montserrat',sans-serif;font-size:clamp(14px,2.02vw,34px);font-weight:500;line-height:1.08;letter-spacing:0;color:var(--accent)}
+    .hero-meta .hero-left{justify-self:start;text-align:left}
+    .hero-meta .hero-right{justify-self:end;text-align:right;transform:translateX(.14em)}
 
     .copy-scene{position:fixed;left:0;top:0;right:0;bottom:0;z-index:18;display:flex;align-items:flex-end;justify-content:center;padding:0 8vw 14vh;pointer-events:none;opacity:0;transform:translateY(28px);will-change:opacity,transform}
     .copy-inner{width:min(760px,56vw);max-width:min(760px,56vw);color:rgba(235,242,244,.98);text-align:center}
@@ -129,10 +130,11 @@
     }
 
     @media (max-width: 768px){
-      .hero{bottom:max(82px,12vh);width:calc(100vw - 28px);max-width:calc(100vw - 28px);gap:8px}
+      .hero{bottom:max(96px,14vh)}
+      .hero-lock{max-width:calc(100vw - 28px)}
       .hero h1{font-size:clamp(24px,8.6vw,48px);letter-spacing:0;max-width:100%}
-      .hero-meta{gap:12px;padding:0 .2vw}
-      .hero-meta span{font-size:clamp(11px,3.7vw,16px);line-height:1.15}
+      .hero-meta{column-gap:10px;margin-top:14px}
+      .hero-meta span{font-size:clamp(11px,3.7vw,18px);line-height:1.12}
       .copy-scene{padding:0 9vw 14vh;align-items:flex-end;justify-content:center}
       .copy-inner{width:100%;max-width:84vw;text-align:left}
       .copy-scene h2{font-size:clamp(18px,5.4vw,28px);margin-bottom:14px;white-space:normal}
@@ -216,10 +218,12 @@
   </div>
 
   <section class="hero" id="hero">
-    <h1>SPECTRUM</h1>
-    <div class="hero-meta" aria-hidden="true">
-      <span class="hero-left">Digital Visualization Portfolio</span>
-      <span class="hero-right">Minho Song</span>
+    <div class="hero-lock">
+      <h1>SPECTRUM</h1>
+      <div class="hero-meta" aria-hidden="true">
+        <span class="hero-left">Digital Visualization Portfolio</span>
+        <span class="hero-right">Minho Song</span>
+      </div>
     </div>
   </section>
 
