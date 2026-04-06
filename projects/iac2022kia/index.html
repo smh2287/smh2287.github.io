@@ -45,6 +45,7 @@
 
     /* slide 2 grid */
     .grid-wrap{position:relative;z-index:2;width:min(1260px,96vw);height:min(86vh,980px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+    .list-slide{overflow:hidden}
     .grid-title{margin-bottom:18px;text-align:center}
     .grid-title h1{font-size:26px;font-weight:300;letter-spacing:2px}
     .grid-title h1 b{font-weight:700;color:var(--accent)}
@@ -77,6 +78,8 @@
       .top-left{left:14px;top:14px;gap:10px}
       .brand{font-size:11px;letter-spacing:1.4px}
       .wall{width:min(360px,88vw);padding:22px 18px}
+      .list-slide .grid-wrap{width:100%;height:100%;padding:84px 14px 30px;justify-content:flex-start;align-items:stretch;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+      .grid-title{margin-bottom:14px}
       .grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:104px;gap:10px}
       .tile.main{grid-column:span 2;grid-row:span 2}
       .tile .name{font-size:12px}
@@ -124,7 +127,7 @@
       </section>
 
       <!-- 2. Project Tiles on black -->
-      <section class="swiper-slide" style="background:#1F1F21;">
+      <section class="swiper-slide list-slide" style="background:#1F1F21;">
         <div class="grid-wrap">
           <div class="grid-title"><h1><b>PROJECT</b> LIST</h1></div>
           <div class="grid">
@@ -164,6 +167,8 @@
     const swiper=new Swiper('#index-swiper',{
       direction:'vertical', slidesPerView:1, speed:620, mousewheel:true,
       keyboard:{enabled:true},
+      nested:true,
+      touchStartPreventDefault:false,
       touchReleaseOnEdges:true,
       threshold:6,
     });
