@@ -24,14 +24,13 @@
 
     .scroll-space{position:relative;z-index:1;height:400vh;min-height:400svh;pointer-events:none}.snap-section{height:100vh;min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always}
 
-    .top-left{position:fixed;left:20px;top:20px;z-index:40;display:flex;align-items:center;gap:12px}
-    .menu-btn{width:42px;height:42px;border:1px solid var(--line);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
-    .menu-btn:hover{border-color:var(--accent)}
+    .top-left{position:fixed;left:20px;top:20px;z-index:10010}
+    .menu-btn{width:42px;height:42px;border:1px solid rgba(255,255,255,.12);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
+.menu-btn:hover{border-color:var(--accent)}
     .hamburger{width:18px;height:14px;position:relative}
     .hamburger i{position:absolute;left:0;right:0;height:2px;background:#fff}
     .hamburger i:nth-child(1){top:0}.hamburger i:nth-child(2){top:6px}.hamburger i:nth-child(3){top:12px}
-    .brand{letter-spacing:2px;font-size:12px;opacity:.85}
-
+    
     .hero{position:fixed;left:50%;bottom:max(76px,11vh);transform:translateX(-50%);z-index:20;width:min(92vw,1080px);display:flex;flex-direction:column;align-items:center;gap:0;pointer-events:none;will-change:transform,opacity}
     .hero h1{font-family:'MiedingerW01-Bold','Montserrat',sans-serif;font-size:clamp(41px,7.9vw,118px);font-weight:700;line-height:1;letter-spacing:.02em;color:var(--accent);text-transform:uppercase;white-space:nowrap;max-width:100%}
 
@@ -193,7 +192,6 @@
     <button class="menu-btn" id="openWall" aria-label="open menu">
       <span class="hamburger"><i></i><i></i><i></i></span>
     </button>
-    <div class="brand">MINHO SONG / PORTFOLIO</div>
   </div>
 
   <div class="notice-backdrop" id="noticeBackdrop"></div>
