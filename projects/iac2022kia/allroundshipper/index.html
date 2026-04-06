@@ -298,32 +298,33 @@
 
         const BASE_IMG = 'https://songfamhome.synology.me/portfolio/images/iac2022kia/allroundshipper/';
         const IMAGES = ["01IAC22K-04AS-01 _ One-page_ allroundshipper.webp"];
+        const CORRECT_PASSWORD = "2287";
 
         const FADE_TIME_MS = 1000;
         const POST_FADE_DELAY = 500;
 
         const imgURL = f => BASE_IMG + f.replace(/ /g, '%20');
-        document.getElementById('password-screen').style.setProperty('--bg-img', `url('${imgURL(IMAGES[0])}')`);
-        document.documentElement.style.setProperty('--fade-time', `${FADE_TIME_MS}ms`);
-
-        // auto-open without per-project password
-        setTimeout(() => {
-            try {
-                if (typeof unlockPortfolio === 'function') {
-                    unlockPortfolio(true);
-                } else {
-                    const __ps = document.getElementById('password-screen');
-                    if (__ps) __ps.style.display = 'none';
-                    const __pf = document.getElementById('portfolio-screen');
-                    if (__pf) __pf.classList.add('visible');
-                }
-            } catch(e) {}
-        }, 0);
+        const passwordScreen = document.getElementById('password-screen');
+        const passwordInput = document.getElementById('password-input');
+        const errorMessage = document.getElementById('error-message');
         const portfolioScreen = document.getElementById('portfolio-screen');
         const swiperWrapper = document.getElementById('swiper-wrapper');
         const preTitleContainer = document.getElementById('pre-title-container');
         const pageTitleEl = document.getElementById('page-title');
         const scrollHint = document.getElementById('scroll-hint');
+
+        passwordScreen.style.setProperty('--bg-img', `url('${imgURL(IMAGES[0])}')`);
+        document.documentElement.style.setProperty('--fade-time', `${FADE_TIME_MS}ms`);
+
+        // auto-open without per-project password
+        setTimeout(() => {
+            try {
+                unlockPortfolio(true);
+            } catch (e) {
+                if (passwordScreen) passwordScreen.style.display = 'none';
+                if (portfolioScreen) portfolioScreen.classList.add('visible');
+            }
+        }, 0);
 
         preTitleContainer.innerHTML = `<span>${PRE_TITLE_CONFIG.text}</span><img src="${PRE_TITLE_CONFIG.logoSrc}" alt="Kia Logo" class="kia-logo">`;
         if (pageTitleEl) { pageTitleEl.innerHTML = PAGE_TITLE; document.title = pageTitleEl.innerText + ' – Portfolio'; } else { document.title = PAGE_TITLE.replace(/<[^>]+>/g,'') + ' – Portfolio'; }
@@ -356,20 +357,22 @@
 
         function unlockPortfolio(isInstant = false) {
             sessionStorage.setItem('authed_allroundshipper', '1');
+
             if (isInstant) {
-                passwordScreen.style.display = 'none';
-                portfolioScreen.classList.add('visible');
-            } else {
-                passwordScreen.style.opacity = '0';
-                setTimeout(() => {
-                    passwordScreen.style.display = 'none';
-                    portfolioScreen.classList.add('visible');
-                    if (IMAGES.length > 1) {
-                        scrollHint.classList.add('show');
-                        setTimeout(() => scrollHint.classList.add('hide'), 2800);
-                    }
-                }, FADE_TIME_MS + POST_FADE_DELAY);
+                if (passwordScreen) passwordScreen.style.display = 'none';
+                if (portfolioScreen) portfolioScreen.classList.add('visible');
+                return;
             }
+
+            if (passwordScreen) passwordScreen.style.opacity = '0';
+            setTimeout(() => {
+                if (passwordScreen) passwordScreen.style.display = 'none';
+                if (portfolioScreen) portfolioScreen.classList.add('visible');
+                if (IMAGES.length > 1 && scrollHint) {
+                    scrollHint.classList.add('show');
+                    setTimeout(() => scrollHint.classList.add('hide'), 2800);
+                }
+            }, FADE_TIME_MS + POST_FADE_DELAY);
         }
 
         passwordInput.addEventListener('input', function () {
@@ -384,8 +387,12 @@
         });
 
         window.addEventListener('load', () => {
-            if (sessionStorage.getItem('authed_allroundshipper') === '1' || sessionStorage.getItem('authed_iac2022kia') === '1') { sessionStorage.setItem('authed_allroundshipper','1'); unlockPortfolio(true); }
-            else passwordInput.focus();
+            if (sessionStorage.getItem('authed_allroundshipper') === '1' || sessionStorage.getItem('authed_iac2022kia') === '1') {
+                sessionStorage.setItem('authed_allroundshipper', '1');
+                unlockPortfolio(true);
+            } else {
+                passwordInput.focus();
+            }
         });
     </script>
 </body>
