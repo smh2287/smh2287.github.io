@@ -26,7 +26,7 @@
 
     .overlay{position:absolute;inset:0;background:rgba(0,0,0,.28)}
 
-    .top-left{position:fixed;left:20px;top:20px;z-index:10010}
+    .top-left{position:fixed;left:20px;top:20px;z-index:10010;transition:opacity .22s ease}
     .menu-btn{width:42px;height:42px;border:1px solid rgba(255,255,255,.12);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
 .menu-btn:hover{border-color:var(--accent)}
     .hamburger{width:18px;height:14px;position:relative}
@@ -36,7 +36,9 @@
     .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:10020}
     .wall{position:fixed;left:0;top:0;bottom:0;width:min(420px,88vw);background:#16191c;border-right:1px solid rgba(255,255,255,.12);transform:translateX(-102%);transition:.32s;z-index:10030;padding:26px 22px;overflow:auto}
     body.wall-open .wall{transform:translateX(0)}
-    body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
+    body.wall-open .wall{transform:translateX(0)}
+body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
+body.wall-open .top-left{opacity:0;pointer-events:none}
     .wall h2{display:none}
     .wall-nav{display:flex;flex-direction:column}
     .menu-item{display:flex;align-items:center;justify-content:space-between;width:100%;padding:16px 0;border:none;border-bottom:1px dashed rgba(255,255,255,.26);background:none;color:#e8eff1;text-decoration:none;font-size:15px;letter-spacing:.8px;text-align:left;cursor:pointer}
@@ -138,7 +140,13 @@
         <a href="/projects/vishow/index.html">VISHOW</a>
         <a href="/projects/niva/index.html">NIVA</a>
       </div>
-      <a class="menu-item top-link" href="mailto:songminh0442@gmail.com">CONTACT</a>
+      <button class="menu-item accordion-toggle" id="contactToggle" aria-expanded="false" type="button">
+        <span>CONTACT</span><span class="chev"></span>
+      </button>
+      <div class="menu menu-sub contact-links" id="contactSub">
+        <a href="mailto:songminh0442@gmail.com">EMAIL</a>
+        <a href="https://www.instagram.com/haptic_jelly/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </div>
     </nav>
   </aside>
 
@@ -222,11 +230,18 @@
     const wallLinks=document.querySelectorAll('.project-links a');
     const projectsToggle=document.getElementById('projectsToggle');
     const projectsSub=document.getElementById('projectsSub');
+    const contactToggle=document.getElementById('contactToggle');
+    const contactSub=document.getElementById('contactSub');
 
     function setProjects(open){
       if(!projectsToggle || !projectsSub) return;
       projectsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       projectsSub.classList.toggle('open', open);
+    }
+    function setContact(open){
+      if(!contactToggle || !contactSub) return;
+      contactToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      contactSub.classList.toggle('open', open);
     }
     function setWall(open){
       document.body.classList.toggle('wall-open', open);
@@ -235,6 +250,7 @@
     if(openWall) openWall.addEventListener('click',()=>setWall(!document.body.classList.contains('wall-open')));
     if(wallBackdrop) wallBackdrop.addEventListener('click',()=>setWall(false));
     if(projectsToggle) projectsToggle.addEventListener('click',()=>setProjects(projectsToggle.getAttribute('aria-expanded')!=='true'));
+    if(contactToggle) contactToggle.addEventListener('click',()=>setContact(contactToggle.getAttribute('aria-expanded')!=='true'));
     wallLinks.forEach(a=>{
       if(a.pathname===location.pathname){
         a.classList.add('current');

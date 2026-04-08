@@ -262,7 +262,7 @@
     </style>
 
 <style id="hara-detail-nav">
-.top-left{position:fixed;left:20px;top:20px;z-index:10010}
+.top-left{position:fixed;left:20px;top:20px;z-index:10010;transition:opacity .22s ease}
 .menu-btn{width:42px;height:42px;border:1px solid rgba(255,255,255,.12);background:rgba(18,20,22,.7);color:#fff;display:grid;place-items:center;cursor:pointer}
 .menu-btn:hover{border-color:#1FFFE0}
 .hamburger{width:18px;height:14px;position:relative}
@@ -270,7 +270,9 @@
 .wall-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:.28s;z-index:10020}
 .wall{position:fixed;left:0;top:0;bottom:0;width:min(420px,88vw);background:#16191c;border-right:1px solid rgba(255,255,255,.12);transform:translateX(-102%);transition:.32s;z-index:10030;padding:26px 22px;overflow:auto}
 body.wall-open .wall{transform:translateX(0)}
+body.wall-open .wall{transform:translateX(0)}
 body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
+body.wall-open .top-left{opacity:0;pointer-events:none}
 .wall-nav{display:flex;flex-direction:column}
 .menu-item{display:flex;align-items:center;justify-content:space-between;width:100%;padding:16px 0;border:none;border-bottom:1px dashed rgba(255,255,255,.26);background:none;color:#e8eff1;text-decoration:none;font-size:15px;letter-spacing:.8px;text-align:left;cursor:pointer}
 .menu-item:hover,.menu-item.current{color:#fff}
@@ -279,9 +281,9 @@ body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
 .accordion-toggle[aria-expanded="true"] .chev{transform:rotate(225deg) translateY(-1px)}
 .menu-sub{display:flex;flex-direction:column;gap:0;max-height:0;overflow:hidden;opacity:0;transition:max-height .32s ease, opacity .22s ease, margin .22s ease;margin:0}
 .menu-sub.open{max-height:420px;opacity:1;margin:8px 0 10px}
-.project-links a{display:block;text-decoration:none;color:#bfc8cc;padding:10px 0 10px 18px;font-size:13px;letter-spacing:.45px;background:transparent;border:none;position:relative}
-.project-links a::before{content:'';position:absolute;left:0;top:50%;width:10px;border-top:1px solid rgba(255,255,255,.28);transform:translateY(-50%)}
-.project-links a:hover,.project-links a.current{color:#1FFFE0}
+.project-links a,.contact-links a{display:block;text-decoration:none;color:#bfc8cc;padding:10px 0 10px 18px;font-size:13px;letter-spacing:.45px;background:transparent;border:none;position:relative}
+.project-links a::before,.contact-links a::before{content:'';position:absolute;left:0;top:50%;width:10px;border-top:1px solid rgba(255,255,255,.28);transform:translateY(-50%)}
+.project-links a:hover,.project-links a.current,.contact-links a:hover,.contact-links a.current{color:#1FFFE0}
 @media (max-width:640px){.top-left{left:14px;top:14px}.wall{width:min(360px,88vw);padding:22px 18px}.menu-item{padding:14px 0;font-size:14px}.project-links a{padding:8px 0 8px 16px;font-size:12px}}
 </style>
 
@@ -307,7 +309,13 @@ body.wall-open .wall-backdrop{opacity:1;pointer-events:auto}
       <a href="/projects/vishow/index.html">VISHOW</a>
       <a href="/projects/niva/index.html">NIVA</a>
     </div>
-    <a class="menu-item top-link" id="contactLink" href="mailto:songminh0442@gmail.com">CONTACT</a>
+      <button class="menu-item accordion-toggle" id="contactToggle" aria-expanded="false" type="button">
+        <span>CONTACT</span><span class="chev"></span>
+      </button>
+      <div class="menu menu-sub contact-links" id="contactSub">
+        <a href="mailto:songminh0442@gmail.com">EMAIL</a>
+        <a href="https://www.instagram.com/haptic_jelly/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </div>
   </nav>
 </aside>
 
