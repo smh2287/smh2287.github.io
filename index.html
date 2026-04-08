@@ -308,13 +308,7 @@ body.wall-open .top-left{opacity:0;pointer-events:none}
         <a href="/projects/vishow/index.html">VISHOW</a>
         <a href="/projects/niva/index.html">NIVA</a>
       </div>
-      <button class="menu-item accordion-toggle" id="contactToggle" aria-expanded="false" type="button">
-        <span>CONTACT</span><span class="chev"></span>
-      </button>
-      <div class="menu menu-sub contact-links" id="contactSub">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=songminh0442@gmail.com">EMAIL</a>
-        <a href="https://www.instagram.com/haptic_jelly/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-      </div>
+      <a class="menu-item top-link" href="/contact/">CONTACT</a>
     </nav>
   </aside>
 
@@ -364,8 +358,6 @@ body.wall-open .top-left{opacity:0;pointer-events:none}
     function closeWall(){ body.classList.remove('wall-open'); if(open) open.setAttribute('aria-expanded','false'); }
     const projectsToggle=document.getElementById('projectsToggle');
     const projectsSub=document.getElementById('projectsSub');
-    const contactToggle=document.getElementById('contactToggle');
-    const contactSub=document.getElementById('contactSub');
     const projectLinks=document.querySelectorAll('.project-links a');
     function setProjects(opened){
       if(!projectsToggle || !projectsSub) return;
@@ -375,7 +367,6 @@ body.wall-open .top-left{opacity:0;pointer-events:none}
     open.addEventListener('click',()=> { if(body.classList.contains('notice-open')) return; body.classList.toggle('wall-open'); open.setAttribute('aria-expanded', body.classList.contains('wall-open') ? 'true' : 'false'); });
     back.addEventListener('click',closeWall);
     if(projectsToggle) projectsToggle.addEventListener('click',()=>setProjects(projectsToggle.getAttribute('aria-expanded')!=='true'));
-    if(contactToggle) contactToggle.addEventListener('click',()=>setContact(contactToggle.getAttribute('aria-expanded')!=='true'));
     projectLinks.forEach(a=>{ if(a.pathname===location.pathname){ a.classList.add('current'); setProjects(true); } a.addEventListener('click', closeWall); });
     noticeBackdrop.addEventListener('click', closeNotice);
     noticeConfirm.addEventListener('click', closeNotice);
