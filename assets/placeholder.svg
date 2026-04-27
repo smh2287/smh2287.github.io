@@ -1,9 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Placeholder image</title>
-  <desc id="desc">Neutral placeholder image for portfolio layout.</desc>
-  <rect width="1600" height="1000" fill="#d8d4cc"/>
-  <rect x="80" y="80" width="1440" height="840" fill="none" stroke="#1b1b1b" stroke-width="2" opacity="0.18"/>
-  <line x1="80" y1="80" x2="1520" y2="920" stroke="#1b1b1b" stroke-width="2" opacity="0.18"/>
-  <line x1="1520" y1="80" x2="80" y2="920" stroke="#1b1b1b" stroke-width="2" opacity="0.18"/>
-  <text x="800" y="505" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#1b1b1b" opacity="0.52">PLACEHOLDER</text>
+  <title id="title">Dark portfolio placeholder</title>
+  <desc id="desc">Dark abstract placeholder image for a minimal portfolio layout.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#3b3d3b"/>
+      <stop offset="0.46" stop-color="#111312"/>
+      <stop offset="1" stop-color="#050606"/>
+    </linearGradient>
+    <radialGradient id="r" cx="52%" cy="38%" r="55%">
+      <stop offset="0" stop-color="#b8a268" stop-opacity="0.42"/>
+      <stop offset="0.35" stop-color="#1b1d1c" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#030404" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <rect width="1600" height="1000" fill="url(#r)"/>
+  <path d="M150 710 C370 545 520 505 795 560 C1020 605 1180 548 1455 392" fill="none" stroke="#e8d6a5" stroke-opacity="0.28" stroke-width="5"/>
+  <path d="M210 755 C460 635 610 620 820 645 C1040 672 1230 610 1450 495" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
+  <rect x="0" y="0" width="1600" height="1000" fill="#000" opacity="0.22"/>
 </svg>

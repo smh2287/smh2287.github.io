@@ -6,51 +6,29 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <a class="site-title" href="index.html">Name</a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact/">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="intro" aria-label="Intro">
-      <p>Short identity line / portfolio statement.</p>
+<body class="home">
+  <div class="home-bg" aria-hidden="true"><img src="assets/placeholder.svg" alt="" /></div>
+  <main class="home-layout">
+    <section class="identity" aria-label="Identity">
+      <h1>NAME</h1>
+      <p>field / designer</p>
     </section>
 
-    <section class="project-list" aria-label="Projects">
-      <a class="project-card" href="project.html">
-        <img src="assets/placeholder.svg" alt="Project placeholder" />
-        <div class="project-meta">
-          <h2>Project 01</h2>
-          <p>Category · Year</p>
-        </div>
-      </a>
+    <a class="project-link" href="work.html">PROJECTS</a>
 
-      <a class="project-card" href="project.html">
-        <img src="assets/placeholder.svg" alt="Project placeholder" />
-        <div class="project-meta">
-          <h2>Project 02</h2>
-          <p>Category · Year</p>
-        </div>
-      </a>
-
-      <a class="project-card" href="project.html">
-        <img src="assets/placeholder.svg" alt="Project placeholder" />
-        <div class="project-meta">
-          <h2>Project 03</h2>
-          <p>Category · Year</p>
-        </div>
-      </a>
+    <section class="resume-block" aria-label="Short profile">
+      <p>born in year / location.</p>
+      <p>year-year : education / studio / location.</p>
+      <p>year-year : experience / role / location.</p>
+      <p>year-now : current role / location.</p>
+      <a class="resume-link" href="about.html">click here for detailed resume</a>
     </section>
+
+    <section class="social" aria-label="Contact">
+      <span class="mark">◎</span>
+      <a href="contact/">Email me : email@example.com</a>
+    </section>
+    <small class="copyright">© 2026 Portfolio</small>
   </main>
-
-  <footer class="site-footer">
-    <span>Portfolio</span>
-    <span>© 2026</span>
-  </footer>
 </body>
 </html>
