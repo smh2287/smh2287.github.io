@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1737 977" preserveAspectRatio="xMidYMid slice">
+  <rect width="1737" height="977" fill="#d8d8d4"/>
+  <rect x="0" y="0" width="1737" height="977" fill="#1b1b1b" opacity=".08"/>
+  <line x1="0" y1="0" x2="1737" y2="977" stroke="#111" stroke-width="2" opacity=".12"/>
+  <line x1="1737" y1="0" x2="0" y2="977" stroke="#111" stroke-width="2" opacity=".12"/>
+</svg>
