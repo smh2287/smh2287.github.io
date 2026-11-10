@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Portfolio drafts — 2026.11.10</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f4f1;color:#111;font:400 16px/1.55 "Helvetica Neue",Helvetica,Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+main{max-width:1180px;margin:0 auto;padding:clamp(28px,7vh,80px) clamp(18px,4vw,48px) 64px}
+h1{font-weight:400;font-size:clamp(24px,3vw,38px);letter-spacing:-.02em;margin:0 0 6px}
+.sub{color:#77756f;margin:0 0 clamp(28px,6vh,60px);max-width:44em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+article{border-top:1px solid #111;padding-top:14px;display:flex;flex-direction:column}
+.k{font:400 12px ui-monospace,Menlo,monospace;color:#77756f;letter-spacing:.04em}
+h2{font-weight:400;font-size:24px;letter-spacing:-.02em;margin:4px 0 10px}
+article p{margin:0 0 14px;color:#333;font-size:15px}
+.sw{height:120px;margin:auto 0 14px;position:relative;overflow:hidden}
+.sa{background:#f6f5f1;border:1px solid #d9d8d2}
+.sa::after{content:"";position:absolute;left:14px;right:14px;top:60%;height:1px;background:linear-gradient(90deg,#ff3b30,#ff9500,#ffd60a,#30d158,#0a84ff,#5e5ce6,#bf5af2)}
+.sb{background:#e3e3df;display:flex;gap:8px;padding:14px}
+.sb i{flex:1;background:#101012}.sb i:nth-child(odd){transform:translateY(6px)}.sb i:nth-child(even){transform:translateY(-6px)}
+.sc{background:#0b0b0c}
+.sc svg{position:absolute;inset:0;width:100%;height:100%}
+.links a{display:inline-block;margin-right:14px;text-underline-offset:3px}
+footer{margin-top:48px;color:#77756f;font-size:13px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+  <h1>포트폴리오 시안 3안</h1>
+  <p class="sub">2026.11.10 초안. 안마다 홈(인덱스) 1장 + 상세(Mercedes-Benz CLE Cabriolet) 1장. 잠금 화면은 아무 값이나 넣고 Enter 하면 열립니다. 세 안 모두 Spectrum을 “단계별 색”이 아닌 다른 방식으로 해석했습니다.</p>
+  <div class="grid">
+    <article>
+      <span class="k">A</span><h2>White Light</h2>
+      <p>단색 텍스트 홈. 색은 사이트 전체에서 가는 선 한 줄에만, 손이 닿는 순간에만 나타난다.</p>
+      <div class="sw sa"></div>
+      <div class="links"><a href="a/">홈</a><a href="a/cle.html">상세</a></div>
+    </article>
+    <article>
+      <span class="k">B</span><h2>Dispersion</h2>
+      <p>색 없음. 스펙트럼을 “분해와 눈금”으로 읽는다. 이미지가 띠로 갈라졌다 합쳐지고, 차가 부품·UV·리그로 풀린다.</p>
+      <div class="sw sb"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="links"><a href="b/">홈</a><a href="b/cle.html">상세</a></div>
+    </article>
+    <article>
+      <span class="k">C</span><h2>Prism</h2>
+      <p>절제된 3D 하나. 흰 빛 한 줄이 프리즘을 지나 여섯 프로젝트로 갈라진다. 색은 프로젝트의 자리.</p>
+      <div class="sw sc"><svg viewBox="0 0 300 120" preserveAspectRatio="none" fill="none" stroke-width="1">
+        <path d="M0 78 L96 62" stroke="#fff"/><path d="M84 84 L112 34 L140 84 Z" stroke="#f1f1ec"/>
+        <path d="M128 60 L300 14" stroke="#ff453a"/><path d="M128 60 L300 34" stroke="#ff9f0a"/><path d="M128 60 L300 54" stroke="#ffd60a"/>
+        <path d="M128 60 L300 74" stroke="#32d74b"/><path d="M128 60 L300 94" stroke="#0a84ff"/><path d="M128 60 L300 114" stroke="#bf5af2"/></svg></div>
+      <div class="links"><a href="c/">홈</a><a href="c/cle.html">상세</a></div>
+    </article>
+  </div>
+  <footer>이미지는 Adobe Portfolio의 CLE 플레이트에서 소스(렌더·분해도·UV·리그·무드)만 잘라 재배치한 것. CLE 외 프로젝트는 인덱스에만 있고 링크는 비어 있습니다.</footer>
+</main>
+</body>
+</html>

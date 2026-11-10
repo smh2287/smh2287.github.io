@@ -1,0 +1,68 @@
+/* C — Prism: 절제된 3D 하나. 흰 빛 한 줄이 들어가 여섯 프로젝트로 갈라진다 */
+:root{--bg:#0b0b0c;--ink:#f1f1ec;--mute:#8d8d88;--line:rgba(241,241,236,.16);--pad:clamp(20px,4vw,64px);--hue:#ff453a;
+  --sans:"Hanken Grotesk","Helvetica Neue",Arial,"Noto Sans KR",sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:auto}
+.m{font:400 11px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+header.top{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:baseline;padding:22px var(--pad)}
+header.top nav a{margin-left:1.6em;color:var(--mute)} header.top nav a:hover{color:var(--ink)}
+
+.hero{position:relative;min-height:calc(100vh - 66px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--pad);padding:0 var(--pad) 48px}
+#gl{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.left{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;min-height:520px}
+.left h1{margin:clamp(16px,5vh,56px) 0 0;font-weight:300;font-size:clamp(22px,2.3vw,34px);line-height:1.22;letter-spacing:-.01em;max-width:17em}
+.left h1 span{color:var(--mute)}
+#spot{flex:1;min-height:260px}
+.rays{position:relative;z-index:2;list-style:none;margin:0;padding:0;align-self:center;transition:opacity .8s .3s}
+.rays li{border-bottom:1px solid var(--line)} .rays li:first-child{border-top:1px solid var(--line)}
+.rays a{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 0;outline:none}
+.rays .dot{width:7px;height:7px;border-radius:50%;background:var(--c);opacity:.55;transition:opacity .3s,transform .3s}
+.rays .t{font-size:clamp(18px,1.9vw,28px);letter-spacing:-.012em;line-height:1.15}
+.rays .t small{display:block;margin-top:5px}
+.rays img{width:clamp(84px,9vw,132px);aspect-ratio:16/10;object-fit:cover;filter:grayscale(1) brightness(.7);transition:filter .35s}
+.rays:hover a,.rays:focus-within a{color:var(--mute)}
+.rays li:hover a,.rays a:focus{color:var(--ink)}
+.rays li:hover img,.rays a:focus img{filter:none}
+.rays li:hover .dot,.rays a:focus .dot{opacity:1;transform:scale(1.5)}
+
+/* lock (same page: the prism holds the light until the passcode opens it) */
+.gate{transition:opacity .4s}
+.gate p{margin:0 0 14px}
+.gate input{all:unset;display:block;width:min(280px,100%);border-bottom:1px solid var(--ink);padding:8px 0;font:400 16px var(--mono);letter-spacing:.4em}
+.gate .m{margin-top:10px}
+.locked .rays{opacity:0;pointer-events:none}
+body:not(.locked) .gate{opacity:0;pointer-events:none;height:0;overflow:hidden}
+footer.end{position:relative;z-index:2;display:flex;justify-content:space-between;padding:22px var(--pad);border-top:1px solid var(--line)}
+footer.end button{all:unset;cursor:pointer}
+
+/* detail */
+.title{position:relative;margin:clamp(36px,9vh,110px) var(--pad) clamp(32px,6vh,72px);padding-left:22px;border-left:2px solid var(--hue);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:var(--pad);align-items:end}
+.title h1{margin:10px 0 0;font-weight:200;font-size:clamp(34px,6vw,96px);line-height:.98;letter-spacing:-.03em}
+.title dl{margin:0;display:grid;grid-template-columns:6.5em 1fr;row-gap:.5em;font-size:14px}
+.title dt{color:var(--mute)} .title dd{margin:0}
+.plate{margin:0}
+.plate+.plate,.pair+.plate,.plate+.pair{margin-top:3px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;align-items:center}
+.pair.fill{align-items:stretch} .pair.fill img{height:100%;object-fit:cover}
+.pair figure{margin:0}
+.chap{padding:clamp(64px,14vh,170px) var(--pad) clamp(28px,5vh,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:var(--pad)}
+.chap h2{margin:0;font-weight:200;font-size:clamp(26px,3.4vw,52px);line-height:1.08;letter-spacing:-.025em}
+.chap p{margin:14px 0 0;max-width:36em;color:#bdbdb7}
+.walk{display:flex;gap:3px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--mute) transparent;-webkit-overflow-scrolling:touch}
+.walk figure{margin:0;flex:none;scroll-snap-align:center;height:min(64vh,46vw);min-height:200px}
+.walk img{height:100%;width:auto}
+.hint{display:flex;justify-content:space-between;padding:10px var(--pad) 0}
+.comments{margin:clamp(72px,14vh,170px) var(--pad) 0;border-top:1px solid var(--ink);padding-top:20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:var(--pad)}
+.comments h2{margin:0;font-weight:200;font-size:clamp(26px,3.4vw,52px);letter-spacing:-.025em}
+.comments .slot{border:1px dashed var(--line);min-height:220px;display:grid;place-items:center;text-align:center;padding:24px}
+.next{display:flex;justify-content:space-between;padding:clamp(56px,10vh,110px) var(--pad) 40px;font-weight:200;font-size:clamp(22px,3vw,44px);letter-spacing:-.02em}
+
+@media (max-width:820px){
+  .hero,.title,.chap,.comments{grid-template-columns:1fr}
+  .left{min-height:0} #spot{min-height:230px}
+  .pair{grid-template-columns:1fr}
+  .walk figure{height:56vw}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

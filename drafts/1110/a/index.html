@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Song — Draft A · White Light</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lock" id="lock">
+  <form autocomplete="off">
+    <h1>Minho Song</h1>
+    <p>Portfolio — private. Enter the passcode you received.</p>
+    <input id="pw" type="password" aria-label="Passcode" autofocus>
+    <div class="line"><i></i></div>
+    <div class="mono"><span>Passcode</span><span>Enter ↵</span></div>
+  </form>
+</div>
+
+<header class="top">
+  <a href="./">Minho Song</a>
+  <nav><a href="./" aria-current="page">Work</a><a href="#">About</a><a href="#">Contact</a></nav>
+</header>
+
+<section class="intro">
+  <p>Mobility and product designer. <span>One gaze, many domains — from mobility to wearables the priority stays constant: quality in build, emotion in scene.</span></p>
+  <div class="mono">Seoul · K'arts · Available for review</div>
+</section>
+
+<main class="work">
+  <ol class="list" id="list">
+    <li><a href="cle.html" data-img="../img/th-cle.jpg"><span class="n">01</span><span>Mercedes-Benz CLE Cabriolet<small>Automotive visualization</small><img class="thumb" src="../img/th-cle.jpg" alt="" loading="lazy"></span><span class="y">2025</span></a></li>
+    <li><a href="#" data-img="../img/th-mdek.jpg"><span class="n">02</span><span>MDEK<small>KIA × K'arts IAC — mobility system</small><img class="thumb" src="../img/th-mdek.jpg" alt="" loading="lazy"></span><span class="y">2022</span></a></li>
+    <li><a href="#" data-img="../img/th-h22.jpg"><span class="n">03</span><span>HYUNDAI × K'arts IAC<small>Industry–academy cooperation</small><img class="thumb" src="../img/th-h22.jpg" alt="" loading="lazy"></span><span class="y">2022</span></a></li>
+    <li><a href="#" data-img="../img/th-k21.jpg"><span class="n">04</span><span>KIA × K'arts IAC<small>Industry–academy cooperation</small><img class="thumb" src="../img/th-k21.jpg" alt="" loading="lazy"></span><span class="y">2021</span></a></li>
+    <li><a href="#" data-img="../img/th-vishow.jpg"><span class="n">05</span><span>VISHOW<small>Wearable</small><img class="thumb" src="../img/th-vishow.jpg" alt="" loading="lazy"></span><span class="y">—</span></a></li>
+    <li><a href="#" data-img="../img/th-niva.jpg"><span class="n">06</span><span>NIVA<small>Object</small><img class="thumb" src="../img/th-niva.jpg" alt="" loading="lazy"></span><span class="y">—</span></a></li>
+  </ol>
+  <figure class="preview">
+    <div class="frame" id="frame"></div>
+    <figcaption class="mono"><span id="pvn">01</span><span id="pvt">Mercedes-Benz CLE Cabriolet</span></figcaption>
+  </figure>
+</main>
+
+<footer class="end mono">
+  <span>© Minho Song</span>
+  <span><button id="relock" type="button">Lock ⌁</button> · <a href="../">Drafts</a></span>
+</footer>
+
+<script>
+(function(){
+  var lock=document.getElementById('lock'),pw=document.getElementById('pw');
+  if(sessionStorage.getItem('pfA')){lock.classList.add('open');lock.style.transition='none'}
+  pw.addEventListener('input',function(){lock.style.setProperty('--k',Math.min(pw.value.length/6,.92))});
+  lock.querySelector('form').addEventListener('submit',function(e){e.preventDefault();lock.style.transition='';lock.classList.add('open');sessionStorage.setItem('pfA','1')});
+  document.getElementById('relock').addEventListener('click',function(){sessionStorage.removeItem('pfA');pw.value='';lock.style.setProperty('--k',0);lock.style.transition='';lock.classList.remove('open');pw.focus()});
+
+  var frame=document.getElementById('frame'),imgs={};
+  document.querySelectorAll('#list a').forEach(function(a,i){
+    var im=new Image();im.src=a.dataset.img;im.alt='';if(i===0)im.className='on';frame.appendChild(im);imgs[i]=im;
+    function show(){for(var k in imgs)imgs[k].classList.toggle('on',k==i);
+      document.getElementById('pvn').textContent=a.querySelector('.n').textContent;
+      document.getElementById('pvt').textContent=a.children[1].firstChild.textContent}
+    a.addEventListener('mouseenter',show);a.addEventListener('focus',show);
+  });
+})();
+</script>
+</body>
+</html>

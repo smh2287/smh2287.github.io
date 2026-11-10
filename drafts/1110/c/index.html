@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Song — Draft C · Prism</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<header class="top">
+  <a href="./">Minho Song</a>
+  <nav><a href="./">Work</a><a href="#">About</a><a href="#">Contact</a></nav>
+</header>
+
+<main class="hero" id="hero">
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="left">
+    <h1>Mobility and product designer. <span>One gaze, many domains — quality in build, emotion in scene.</span></h1>
+    <div id="spot" aria-hidden="true"></div>
+    <form class="gate" id="gate" autocomplete="off">
+      <p>Private portfolio. Enter the passcode you received.</p>
+      <input id="pw" type="password" aria-label="Passcode" autofocus>
+      <div class="m">Enter ↵ to let the light through</div>
+    </form>
+  </div>
+  <ol class="rays" id="rays">
+    <li style="--c:#ff453a"><a href="cle.html"><i class="dot"></i><span class="t">Mercedes-Benz CLE Cabriolet<small class="m">01 · Automotive visualization · 2025</small></span><img src="../img/th-cle.jpg" alt=""></a></li>
+    <li style="--c:#ff9f0a"><a href="#"><i class="dot"></i><span class="t">MDEK<small class="m">02 · KIA × K'arts IAC · 2022</small></span><img src="../img/th-mdek.jpg" alt=""></a></li>
+    <li style="--c:#ffd60a"><a href="#"><i class="dot"></i><span class="t">HYUNDAI × K'arts IAC<small class="m">03 · Industry–academy · 2022</small></span><img src="../img/th-h22.jpg" alt=""></a></li>
+    <li style="--c:#32d74b"><a href="#"><i class="dot"></i><span class="t">KIA × K'arts IAC<small class="m">04 · Industry–academy · 2021</small></span><img src="../img/th-k21.jpg" alt=""></a></li>
+    <li style="--c:#0a84ff"><a href="#"><i class="dot"></i><span class="t">VISHOW<small class="m">05 · Wearable</small></span><img src="../img/th-vishow.jpg" alt=""></a></li>
+    <li style="--c:#bf5af2"><a href="#"><i class="dot"></i><span class="t">NIVA<small class="m">06 · Object</small></span><img src="../img/th-niva.jpg" alt=""></a></li>
+  </ol>
+</main>
+
+<footer class="end m"><span>© Minho Song</span><span><button id="relock" type="button">Lock</button> · <a href="../">Drafts</a></span></footer>
+
+<script>
+// lock state (works without WebGL)
+(function(){
+  var b=document.body;
+  window.pfUnlock=function(){b.classList.remove('locked');sessionStorage.setItem('pfC','1');dispatchEvent(new Event('pf-unlock'))};
+  if(sessionStorage.getItem('pfC'))b.classList.remove('locked');
+  document.getElementById('gate').addEventListener('submit',function(e){e.preventDefault();pfUnlock()});
+  document.getElementById('relock').addEventListener('click',function(){sessionStorage.removeItem('pfC');b.classList.add('locked');document.getElementById('pw').value='';dispatchEvent(new Event('pf-lock'));scrollTo(0,0);document.getElementById('pw').focus()});
+})();
+</script>
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+const hero=document.getElementById('hero'),canvas=document.getElementById('gl'),spot=document.getElementById('spot');
+const rows=[...document.querySelectorAll('#rays li')];
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let renderer;
+try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true})}catch(e){}
+if(renderer){
+  const scene=new THREE.Scene(),cam=new THREE.OrthographicCamera(0,1,0,-1,-2000,2000);
+  const prism=new THREE.Group();scene.add(prism);
+  const geo=new THREE.CylinderGeometry(1,1,1.5,3).rotateX(Math.PI/2);
+  prism.add(new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.045,depthWrite:false,side:THREE.DoubleSide})));
+  prism.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:0xf1f1ec,transparent:true,opacity:.9})));
+  const mk=(c,o)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(6),3));
+    const l=new THREE.Line(g,new THREE.LineBasicMaterial({color:c,transparent:true,opacity:o}));scene.add(l);return l};
+  const set=(l,a,b)=>{const p=l.geometry.attributes.position;p.setXYZ(0,a.x,a.y,0);p.setXYZ(1,b.x,b.y,0);p.needsUpdate=true};
+  const beam=mk(0xffffff,.95),inner=mk(0xffffff,.25);
+  const rays=rows.map(r=>mk(getComputedStyle(r).getPropertyValue('--c').trim(),.4));
+  let W=1,H=1,cx=0,cy=0,S=100,targets=[],active=-1,reveal=document.body.classList.contains('locked')?0:1,goal=reveal;
+  let rx=0,ry=0,tx=0,ty=0,dirty=true;
+  const vIn=new THREE.Vector3(),vOut=new THREE.Vector3();
+  function layout(){
+    const h=hero.getBoundingClientRect(),s=spot.getBoundingClientRect();
+    W=h.width;H=h.height;renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(W,H,false);
+    cam.right=W;cam.bottom=-H;cam.updateProjectionMatrix();
+    cx=s.left-h.left+s.width/2;cy=s.top-h.top+s.height/2;S=Math.min(s.width*.3,s.height*.42,150);
+    prism.position.set(cx,-cy,0);prism.scale.setScalar(S);
+    targets=rows.map(r=>{const d=r.querySelector('.dot').getBoundingClientRect();return{x:d.left-h.left-10,y:-(d.top-h.top+d.height/2)}});
+    dirty=true;
+  }
+  function frame(){
+    requestAnimationFrame(frame);
+    const ex=tx-rx,ey=ty-ry,er=goal-reveal;
+    if(Math.abs(ex)>.0005||Math.abs(ey)>.0005){rx+=ex*.08;ry+=ey*.08;dirty=true}
+    if(Math.abs(er)>.001){reveal+=er*(still?1:.06);dirty=true}
+    if(!dirty)return;dirty=false;
+    prism.rotation.set(-.55+ry*.25,.5+rx*.35,.12);prism.updateMatrixWorld();
+    vIn.set(-.42,-.1,0).applyMatrix4(prism.matrixWorld);vOut.set(.42,.05,0).applyMatrix4(prism.matrixWorld);
+    set(beam,{x:0,y:vIn.y-S*.45},vIn);set(inner,vIn,vOut);
+    rays.forEach((l,i)=>{const t=targets[i];set(l,vOut,{x:vOut.x+(t.x-vOut.x)*reveal,y:vOut.y+(t.y-vOut.y)*reveal});
+      l.material.opacity=(active<0?.42:(active===i?1:.12))*Math.min(1,reveal*4)});
+    renderer.render(scene,cam);
+  }
+  rows.forEach((r,i)=>{const on=()=>{active=i;dirty=true},off=()=>{active=-1;dirty=true};
+    r.addEventListener('mouseenter',on);r.addEventListener('mouseleave',off);r.querySelector('a').addEventListener('focus',on);r.querySelector('a').addEventListener('blur',off)});
+  if(!still)addEventListener('pointermove',e=>{tx=e.clientX/innerWidth*2-1;ty=e.clientY/innerHeight*2-1},{passive:true});
+  addEventListener('pf-unlock',()=>{goal=1;setTimeout(layout,60)});addEventListener('pf-lock',()=>{goal=0;reveal=0;dirty=true});
+  addEventListener('resize',layout);new ResizeObserver(layout).observe(hero);
+  rows.forEach(r=>r.querySelector('img').addEventListener('load',layout));
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(layout);
+  layout();frame();
+}
+</script>
+</body>
+</html>
