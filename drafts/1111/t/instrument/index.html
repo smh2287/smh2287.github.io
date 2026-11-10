@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Design — Portfolio unit · Instrument</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lock" id="lock" hidden>
+  <form autocomplete="off">
+    <div class="lh l"><span>MD–01 · Access</span><span><i class="led" id="lled"></i> Locked</span></div>
+    <h2>Enter passcode</h2>
+    <p>Private portfolio. Use the passcode you received, then press Enter.</p>
+    <label class="cells" id="cells"><i></i><i></i><i></i><i></i><i></i><i></i>
+      <input id="pw" type="password" aria-label="Passcode" maxlength="24"></label>
+    <div class="lf"><span class="l mute" style="align-self:center">6 cells · any length</span><button type="submit">Enter →</button></div>
+  </form>
+</div>
+
+<header class="bar l">
+  <a class="id" href="./"><b>Minho Design</b><span class="mute">MD–01 Portfolio unit</span></a>
+  <a href="./" aria-current="page">Index</a>
+  <a href="#info">Info</a>
+  <a href="mailto:hello@example.com" class="hidem">Contact</a>
+  <span class="sp mute">Mobility · Product · Visualization</span>
+  <span class="rev"><span class="mute">Rev 2026.11</span><button class="l" id="relock" type="button"><i class="led on"></i>&nbsp; Lock</button></span>
+</header>
+
+<main class="unit">
+  <section class="op" id="info">
+    <span class="l mute">Operator</span>
+    <h1>Minho<br>Song</h1>
+    <p>Mobility and product designer.</p>
+    <p>One gaze, many domains — from mobility to wearables the priority stays constant: quality in build, emotion in scene.</p>
+    <dl class="tbl l">
+      <div><dt class="mute">Modules</dt><dd>06</dd></div>
+      <div><dt class="mute">Range</dt><dd>2021 — 2025</dd></div>
+      <div><dt class="mute">Base</dt><dd>Seoul · K'arts</dd></div>
+      <div><dt class="mute">Status</dt><dd><i class="led on"></i>&nbsp; Available for review</dd></div>
+    </dl>
+    <ol class="howto l">
+      <li><b>1</b><span>Select a module</span></li>
+      <li><b>2</b><span>Read it top to bottom</span></li>
+      <li><b>3</b><span>Comment by figure code</span></li>
+    </ol>
+  </section>
+
+  <ol class="mods">
+    <li><a class="mod" href="cle.html">
+      <div class="mh l"><span>01</span><span class="mute">Automotive visualization</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-cle.jpg" alt=""></div>
+      <div class="mf"><span class="code">CLE–25</span><span class="nm">Mercedes-Benz CLE Cabriolet</span><span class="go">→</span></div>
+    </a></li>
+    <li><a class="mod" href="#">
+      <div class="mh l"><span>02</span><span class="mute">Mobility system</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-mdek.jpg" alt=""></div>
+      <div class="mf"><span class="code">MDEK–22</span><span class="nm">KIA × K'arts IAC 2022</span><span class="go">→</span></div>
+    </a></li>
+    <li><a class="mod" href="#">
+      <div class="mh l"><span>03</span><span class="mute">Industry–academy</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-h22.jpg" alt=""></div>
+      <div class="mf"><span class="code">HMC–22</span><span class="nm">HYUNDAI × K'arts IAC 2022</span><span class="go">→</span></div>
+    </a></li>
+    <li><a class="mod" href="#">
+      <div class="mh l"><span>04</span><span class="mute">Industry–academy</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-k21.jpg" alt=""></div>
+      <div class="mf"><span class="code">KIA–21</span><span class="nm">KIA × K'arts IAC 2021</span><span class="go">→</span></div>
+    </a></li>
+    <li><a class="mod" href="#">
+      <div class="mh l"><span>05</span><span class="mute">Wearable</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-vishow.jpg" alt=""></div>
+      <div class="mf"><span class="code">VISHOW</span><span class="nm">Wearable study</span><span class="go">→</span></div>
+    </a></li>
+    <li><a class="mod" href="#">
+      <div class="mh l"><span>06</span><span class="mute">Object</span><i class="led"></i></div>
+      <div class="mi"><img src="/drafts/1110/img/th-niva.jpg" alt=""></div>
+      <div class="mf"><span class="code">NIVA</span><span class="nm">Object study</span><span class="go">→</span></div>
+    </a></li>
+  </ol>
+</main>
+
+<footer class="foot l">
+  <span>© Minho Song</span>
+  <span class="scale" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+  <span class="mute">Private · Not indexed</span>
+</footer>
+
+<script src="lock.js"></script>
+</body>
+</html>

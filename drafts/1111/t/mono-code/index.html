@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Song — Mono Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lock" id="lock" hidden>
+  <form autocomplete="off">
+<pre><b>minho-song/portfolio</b>
+private. enter the passcode you received.</pre>
+    <div class="prompt"><span class="k">&gt;</span><input type="password" aria-label="Passcode"><kbd>↵</kbd></div>
+    <div class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </form>
+</div>
+
+<header class="bar">
+  <span><b>minho-song</b><i>/</i><a href="./">work</a><i>·</i><a href="#">about</a><i>·</i><a href="#">contact</a></span>
+  <span class="r"><span>seoul <time id="clock">--:--:--</time></span><button type="button" data-lock>lock</button></span>
+</header>
+
+<main class="shell">
+  <section>
+<p class="doccom">/**
+ * <b>Minho Song</b> — mobility and product designer.
+ * One gaze, many domains. Quality in build, emotion in scene.
+ * Seoul · K'arts · available for review
+ */</p>
+    <label class="filter"><span>/</span><input id="filter" type="text" placeholder="filter" aria-label="Filter projects" autocomplete="off" spellcheck="false"></label>
+    <div class="cols"><span>#</span><span>project</span><span>kind</span><span>year</span><span></span></div>
+    <ol class="idx" id="idx">
+      <li><a href="cle.html" data-slug="cle" data-name="Mercedes-Benz CLE Cabriolet" data-kind="automotive visualization" data-year="2025" data-plates="22"><span class="n">01</span><span class="t">Mercedes-Benz CLE Cabriolet</span><span class="kd">automotive visualization</span><span class="y">2025</span><span class="h"><kbd>1</kbd></span></a></li>
+      <li><a href="#" data-slug="mdek" data-name="MDEK" data-kind="KIA × K'arts IAC — mobility system" data-year="2022" data-plates="—"><span class="n">02</span><span class="t">MDEK</span><span class="kd">KIA × K'arts IAC — mobility system</span><span class="y">2022</span><span class="h"><kbd>2</kbd></span></a></li>
+      <li><a href="#" data-slug="hyundai-iac-2022" data-name="HYUNDAI × K'arts IAC" data-kind="industry–academy cooperation" data-year="2022" data-plates="—"><span class="n">03</span><span class="t">HYUNDAI × K'arts IAC</span><span class="kd">industry–academy cooperation</span><span class="y">2022</span><span class="h"><kbd>3</kbd></span></a></li>
+      <li><a href="#" data-slug="kia-iac-2021" data-name="KIA × K'arts IAC" data-kind="industry–academy cooperation" data-year="2021" data-plates="—"><span class="n">04</span><span class="t">KIA × K'arts IAC</span><span class="kd">industry–academy cooperation</span><span class="y">2021</span><span class="h"><kbd>4</kbd></span></a></li>
+      <li><a href="#" data-slug="vishow" data-name="VISHOW" data-kind="wearable" data-year="—" data-plates="—"><span class="n">05</span><span class="t">VISHOW</span><span class="kd">wearable</span><span class="y">—</span><span class="h"><kbd>5</kbd></span></a></li>
+      <li><a href="#" data-slug="niva" data-name="NIVA" data-kind="object" data-year="—" data-plates="—"><span class="n">06</span><span class="t">NIVA</span><span class="kd">object</span><span class="y">—</span><span class="h"><kbd>6</kbd></span></a></li>
+    </ol>
+    <div class="empty" id="empty" hidden>// no match — esc to clear</div>
+    <div class="sum"><span id="sum">6 of 6 projects</span><span>2021 — 2025</span></div>
+  </section>
+
+  <aside class="pv" aria-live="polite">
+    <div class="fr"><div class="im">
+      <img class="on" src="/drafts/1110/img/th-cle.jpg" alt="">
+      <img src="/drafts/1110/img/th-mdek.jpg" alt="">
+      <img src="/drafts/1110/img/th-h22.jpg" alt="">
+      <img src="/drafts/1110/img/th-k21.jpg" alt="">
+      <img src="/drafts/1110/img/th-vishow.jpg" alt="">
+      <img src="/drafts/1110/img/th-niva.jpg" alt="">
+    </div></div>
+    <dl>
+      <dt>name</dt><dd id="o-name"></dd>
+      <dt>kind</dt><dd id="o-kind"></dd>
+      <dt>year</dt><dd id="o-year"></dd>
+      <dt>plates</dt><dd id="o-plates"></dd>
+      <dt>path</dt><dd id="o-path"></dd>
+    </dl>
+  </aside>
+</main>
+
+<footer class="status">
+  <span class="mode">INDEX</span>
+  <span class="hints"><kbd>j</kbd><kbd>k</kbd> move <kbd>↵</kbd> open <kbd>/</kbd> filter <kbd>1</kbd>–<kbd>6</kbd> jump <kbd>l</kbd> lock</span>
+  <span class="pos"><span>© minho song</span><b id="count">01/06</b></span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "slug": "mono-code",
+  "name": "Mono Code",
+  "oneliner": "One monospace at one size, a keyboard-driven index, status bar, 2px spectrum cursor.",
+  "ko": "모노스페이스 한 벌·한 크기로 짠 정밀한 인덱스, j/k 키보드 탐색과 2px 스펙트럼 커서.",
+  "swatches": ["#FBFBFA", "#111112", "#9B9B97", "#E6E6E3", "#6C5CFF", "#FF4D6D"],
+  "fonts": ["JetBrains Mono"],
+  "refs": ["rauno.me", "huyml.co", "Teenage Engineering", "Stéphane Janin"],
+  "group": "Light & Spectrum"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "light-table",
+  "name": "Light Table",
+  "oneliner": "Dark room, one lit glass surface, projects as mounted slides under a loupe.",
+  "ko": "어두운 방에 켜진 라이트 테이블 하나, 프로젝트는 슬라이드 마운트로 놓이고 루페로 들여다본다.",
+  "swatches": ["#0B0B0C", "#F7F5ED", "#E3E0D6", "#EBE8E0", "#7C7A74", "#DFA23C"],
+  "fonts": ["Schibsted Grotesk", "Courier Prime"],
+  "refs": ["Teenage Engineering", "Studio Pic", "Stéphane Janin", "35mm slide mounts / film rebate"],
+  "group": "Light & Spectrum"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "one-object",
+  "name": "One Object",
+  "oneliner": "One product per screen on a quiet ground that shifts tone with each object.",
+  "ko": "한 화면에 제품 하나 — 작품마다 바탕 톤만 조용히 바뀌는 인더스트리얼 퍼실리티식 정적.",
+  "swatches": ["#DCDAD5", "#1B1B19", "#D3D9DC", "#CDD2C5", "#DFD0C4", "#D2CED6"],
+  "fonts": ["Instrument Sans"],
+  "refs": ["Industrial Facility", "Studio Pic", "Maria Vasilyeva", "Stéphane Janin"],
+  "group": "Product & Industrial"
+}

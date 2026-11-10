@@ -1,0 +1,10 @@
+{
+  "slug": "instrument",
+  "name": "Instrument",
+  "oneliner": "Hardware-manual panel: ruled cells, mono labels, big unit codes, one orange LED.",
+  "ko": "하드웨어 매뉴얼처럼 칸으로 짜인 패널 — 모노 라벨, 큰 모듈 코드, 주황 LED 하나.",
+  "swatches": ["#E4E4DF", "#EDEDE8", "#141413", "#85857F", "#FF4A00", "#1D1D20"],
+  "fonts": ["Archivo", "DM Mono"],
+  "refs": ["Teenage Engineering", "rauno.me", "Dieter Rams manuals", "Stéphane Janin"],
+  "group": "Product & Industrial"
+}

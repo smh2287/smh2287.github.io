@@ -1,0 +1,10 @@
+{
+  "slug": "studio-dark",
+  "name": "Studio Dark",
+  "oneliner": "Near-black automotive studio, one soft-box light, spec-sheet index in mono.",
+  "ko": "조명 낮춘 자동차 스튜디오 — 니어블랙 위 소프트박스 빛 하나와 스펙시트형 인덱스.",
+  "swatches": ["#0A0A0B", "#101012", "#ECEAE6", "#9B9A97", "#232325", "#D9382C"],
+  "fonts": ["Geist", "Geist Mono"],
+  "refs": ["Automotive studio photography", "Guillaume Colombel", "huyml.co", "Stéphane Janin"],
+  "group": "Product & Industrial"
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Song — Light Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lock" id="lock" hidden>
+  <form autocomplete="off">
+    <div class="mountL">
+      <div class="a"><span>MS—00</span><span>Private</span></div>
+      <div class="winL"><input type="password" aria-label="Passcode"></div>
+      <div class="a"><span>Passcode</span><span>Enter</span></div>
+    </div>
+    <p>Minho Song — Portfolio<br>Type the passcode to switch the lamp on</p>
+  </form>
+</div>
+
+<header class="top">
+  <a class="name" href="./">Minho Song <span>— Design</span></a>
+  <nav class="m">
+    <a href="./" aria-current="page">Work</a><a href="#">About</a><a href="#">Contact</a>
+    <button class="lamp" type="button" aria-pressed="true"><i></i>Lamp</button>
+    <button type="button" data-lock>Lock</button>
+  </nav>
+</header>
+
+<main class="home">
+  <aside>
+    <p class="intro">Mobility and product designer. <span>One gaze, many domains — quality in build, emotion in scene.</span></p>
+    <ol class="list">
+      <li><a href="cle.html"><span class="n">01</span><span class="t">Mercedes-Benz CLE Cabriolet<small>Automotive visualization</small></span><span class="y">2025</span></a></li>
+      <li><a href="#"><span class="n">02</span><span class="t">MDEK<small>KIA × K'arts IAC — mobility system</small></span><span class="y">2022</span></a></li>
+      <li><a href="#"><span class="n">03</span><span class="t">HYUNDAI × K'arts IAC<small>Industry–academy cooperation</small></span><span class="y">2022</span></a></li>
+      <li><a href="#"><span class="n">04</span><span class="t">KIA × K'arts IAC<small>Industry–academy cooperation</small></span><span class="y">2021</span></a></li>
+      <li><a href="#"><span class="n">05</span><span class="t">VISHOW<small>Wearable</small></span><span class="y">—</span></a></li>
+      <li><a href="#"><span class="n">06</span><span class="t">NIVA<small>Object</small></span><span class="y">—</span></a></li>
+    </ol>
+    <div class="note m"><span>Seoul · K'arts</span><span>Available for review</span></div>
+  </aside>
+
+  <section class="table" aria-label="Light table">
+    <div class="glass">
+      <div class="slides">
+        <a class="slide" href="cle.html" style="--rot:-.9deg" data-loupe="2.4"><span class="a"><span>MS—01</span><span>2025</span></span><span class="win"><img src="/drafts/1110/img/th-cle.jpg" alt="Mercedes-Benz CLE Cabriolet"></span><span class="b"><span>CLE Cabriolet</span><i>22 pl.</i></span></a>
+        <a class="slide" href="#" style="--rot:.6deg" data-loupe="2.4"><span class="a"><span>MS—02</span><span>2022</span></span><span class="win"><img src="/drafts/1110/img/th-mdek.jpg" alt="MDEK"></span><span class="b"><span>MDEK</span><i>KIA</i></span></a>
+        <a class="slide" href="#" style="--rot:-.3deg" data-loupe="2.4"><span class="a"><span>MS—03</span><span>2022</span></span><span class="win"><img src="/drafts/1110/img/th-h22.jpg" alt="HYUNDAI × K'arts IAC 2022"></span><span class="b"><span>IAC 2022</span><i>Hyundai</i></span></a>
+        <a class="slide" href="#" style="--rot:.4deg" data-loupe="2.4"><span class="a"><span>MS—04</span><span>2021</span></span><span class="win"><img src="/drafts/1110/img/th-k21.jpg" alt="KIA × K'arts IAC 2021"></span><span class="b"><span>IAC 2021</span><i>KIA</i></span></a>
+        <a class="slide" href="#" style="--rot:-.7deg" data-loupe="2.4"><span class="a"><span>MS—05</span><span>—</span></span><span class="win"><img src="/drafts/1110/img/th-vishow.jpg" alt="VISHOW"></span><span class="b"><span>VISHOW</span><i>Wearable</i></span></a>
+        <a class="slide" href="#" style="--rot:1deg" data-loupe="2.4"><span class="a"><span>MS—06</span><span>—</span></span><span class="win"><img src="/drafts/1110/img/th-niva.jpg" alt="NIVA"></span><span class="b"><span>NIVA</span><i>Object</i></span></a>
+      </div>
+    </div>
+    <div class="tablemeta m"><span>Light table · 5000 K · 6 transparencies</span><span>Loupe × 2.4 — move over a slide</span></div>
+    <div class="loupe" id="loupe" aria-hidden="true"></div>
+  </section>
+</main>
+
+<footer class="end m"><span>© Minho Song</span><span>Minho Design</span></footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "slug": "iridescent",
+  "name": "Iridescent",
+  "oneliner": "Neutral paper and light grotesk; thin-film colour lives only on hairlines and a seal.",
+  "ko": "뉴트럴한 종이 톤과 가는 그로테스크, 박막 간섭색은 헤어라인과 작은 씰에만 머문다.",
+  "swatches": ["#F2F1EE", "#18181B", "#8B8A86", "#DBD9D4", "#8498F2", "#F390B8"],
+  "fonts": ["Hanken Grotesk", "DM Mono"],
+  "refs": ["Industrial Facility", "Maria Vasilyeva", "Stéphane Janin", "Thin-film interference / anodised titanium"],
+  "group": "Light & Spectrum"
+}

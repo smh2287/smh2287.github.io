@@ -1,0 +1,109 @@
+/* gallery-white — works hung on a white wall */
+:root{--wall:#FFFFFF;--ink:#111111;--mute:#8E8E8E;--hair:#E6E6E6;--plinth:#F4F4F4;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;--m:40px;--g:24px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--wall);color:var(--ink);font:400 13px/1.45 var(--sans);letter-spacing:.005em;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;letter-spacing:inherit}
+.mute{color:var(--mute)}
+a.q:hover,button.q:hover{color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--g);padding:0 var(--m)}
+
+.top{padding-top:28px;padding-bottom:28px;align-items:start;position:relative;z-index:3}
+.top .nm{grid-column:1/4}
+.top .ttl{grid-column:5/9}
+.top nav{grid-column:9/13;display:flex;gap:24px;justify-content:flex-end}
+
+/* label: the small card beside a work */
+.lb{font-size:12px;line-height:1.45}
+.lb i{font-style:normal;color:var(--mute);display:block}
+.lb b{font-weight:400;display:block}
+
+/* home: the hang. every row shares one centre line */
+.hang{padding-top:24px;padding-bottom:120px;row-gap:150px;align-items:center}
+.wk{position:relative;display:block}
+.wk .fr{overflow:hidden;background:var(--plinth)}
+.wk img{aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.03);transition:filter .8s cubic-bezier(.3,0,.2,1)}
+.wk:hover img,.wk:focus-visible img{filter:none}
+.wk .lb{position:absolute;top:100%;left:0;padding-top:12px;white-space:nowrap}
+.wk:focus-visible{outline:1px solid var(--ink);outline-offset:6px}
+.w1{grid-column:1/8}.w2{grid-column:10/13}
+.w3{grid-column:2/5}.w4{grid-column:6/13}
+.w5{grid-column:1/6}.w6{grid-column:8/12}
+.say{grid-column:10/13;align-self:start;grid-row:1;max-width:30ch}
+.hang .w2{grid-row:1;align-self:end;margin-bottom:8%}
+.w1{grid-row:1}
+.foot{padding-top:20px;padding-bottom:28px;border-top:1px solid var(--hair);margin:0 var(--m);padding-inline:0}
+.foot>:nth-child(1){grid-column:1/5}.foot>:nth-child(2){grid-column:5/10}.foot>:nth-child(3){grid-column:10/13;text-align:right}
+
+/* lock: an invitation card */
+.lock{position:fixed;inset:0;z-index:40;background:var(--wall);display:grid;place-items:center}
+.lock[hidden]{display:none}
+.lock form{width:min(300px,calc(100vw - 48px))}
+.lock p{margin-bottom:64px}
+.lock input{width:100%;border:0;border-bottom:1px solid var(--ink);outline:0;background:none;font:inherit;font-size:20px;letter-spacing:.3em;color:var(--ink);padding:8px 0;border-radius:0}
+.lock .k{display:flex;justify-content:space-between;margin-top:10px}
+
+/* project */
+.intro{padding-top:120px;padding-bottom:120px;align-items:end}
+.intro h1{grid-column:1/8;font:400 44px/1.08 var(--sans);letter-spacing:-.03em}
+.intro h1 span{display:block}
+.intro dl{grid-column:9/13;display:grid;grid-template-columns:1fr 2fr;row-gap:6px;column-gap:var(--g)}
+.ex{align-items:end;margin-bottom:170px}
+.ex .lb{padding-bottom:2px}
+.ex.a .im{grid-column:1/11}.ex.a .lb{grid-column:11/13}
+.ex.b .im{grid-column:3/11}.ex.b .lb{grid-column:11/13}
+.ex.c .im{grid-column:4/10}.ex.c .lb{grid-column:10/12}
+.ex.d .im{grid-column:3/13;grid-row:1}.ex.d .lb{grid-column:1/3;grid-row:1}
+.ex.f .im{grid-column:1/13}.ex.f .lb{grid-column:1/5;padding-top:12px}
+.two{align-items:center;margin-bottom:170px}
+.two figure{position:relative}
+.two .lb{position:absolute;top:100%;left:0;padding-top:12px}
+.two .p1{grid-column:1/8}.two .p2{grid-column:9/12}
+.two.r .p1{grid-column:2/5}.two.r .p2{grid-column:6/13}
+.two.e .p1{grid-column:1/7}.two.e .p2{grid-column:7/13}
+.rm{padding-top:90px;padding-bottom:110px}
+.rm span{grid-column:1/3}
+.rm h2{grid-column:3/7;font:400 28px/1.15 var(--sans);letter-spacing:-.025em;margin-top:-6px}
+.rm p{grid-column:8/12;color:var(--mute);font-size:14px;line-height:1.5}
+.stage{position:relative;height:min(36vw,520px);margin:0 var(--m)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .5s}
+.stage img.on{opacity:1}
+.modes{padding-top:16px;margin-bottom:170px;align-items:start}
+.modes div{grid-column:1/5;display:flex;gap:20px}
+.modes button{color:var(--mute)}
+.modes button[aria-pressed=true]{color:var(--ink)}
+.modes p{grid-column:5/9;text-align:center;color:var(--mute)}
+.modes span{grid-column:9/13;text-align:right}
+.book{padding-top:90px;padding-bottom:140px;border-top:1px solid var(--hair);margin:0 var(--m);padding-inline:0}
+.book span{grid-column:1/3}
+.book h2{grid-column:3/7;font:400 28px/1.15 var(--sans);letter-spacing:-.025em;margin-top:-6px}
+.book .slot{grid-column:8/13;min-height:260px;background:repeating-linear-gradient(to bottom,transparent 0 43px,var(--hair) 43px 44px);display:flex;flex-direction:column;justify-content:space-between}
+.book .slot p{line-height:44px}
+.nx{border-top:1px solid var(--hair);margin:0 var(--m);padding:20px 0 90px;padding-inline:0;align-items:start}
+.nx>a:first-child{grid-column:1/3}
+.nx .n{grid-column:8/13;display:grid;grid-template-columns:2fr 3fr;gap:var(--g);align-items:end}
+.nx .n img{aspect-ratio:4/3;object-fit:cover;filter:grayscale(1);transition:filter .8s}
+.nx .n:hover img{filter:none}
+
+@media (hover:none){.wk img,.nx .n img{filter:none}}
+@media (max-width:900px){
+  :root{--m:18px;--g:12px}
+  .top .ttl{display:none}.top .nm{grid-column:1/6}.top nav{grid-column:6/13;gap:16px}
+  .hang{display:block;padding-bottom:40px}
+  .say{margin-bottom:56px;max-width:none}
+  .wk{margin-bottom:96px}.wk.w2,.wk.w3,.wk.w6{width:62%}.wk.w3,.wk.w6{margin-left:auto}
+  .hang .w2{margin-bottom:96px}
+  .intro{display:block;padding-top:64px;padding-bottom:72px}.intro h1{font-size:30px;margin-bottom:36px}
+  .ex,.two{display:block;margin-bottom:72px}
+  .ex .lb,.two .lb{position:static;padding-top:10px}
+  .two figure+figure{margin-top:72px}
+  .rm,.book{display:block;padding-top:48px;padding-bottom:64px}
+  .rm h2,.book h2{margin:8px 0 14px;font-size:24px}
+  .stage{height:62vw}
+  .modes{display:block;margin-bottom:72px}.modes p{text-align:left;margin-top:10px}.modes span{display:none}
+  .nx{display:block}.nx .n{margin-top:28px}
+  .foot{display:block}.foot>*{margin-bottom:4px}.foot>:nth-child(3){text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

@@ -1,0 +1,10 @@
+{
+  "slug": "split-spectrum",
+  "name": "Split Spectrum",
+  "oneliner": "Monochrome poster type on a spectrometer ruler; images part into RGB channels on hover.",
+  "ko": "인덱스가 곧 스펙트럼 눈금자. 흑백 화면에서 이미지 가장자리만 RGB 채널로 살짝 갈라진다.",
+  "swatches": ["#F3F3F0", "#0E0E0F", "#85857F", "#D2D2CC", "#7A4DFF", "#F0383F"],
+  "fonts": ["Archivo", "Spline Sans Mono"],
+  "refs": ["Teenage Engineering", "Guillaume Colombel", "Stéphane Janin", "Spectrometer scales / chromatic aberration"],
+  "group": "Light & Spectrum"
+}

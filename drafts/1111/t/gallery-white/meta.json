@@ -1,0 +1,10 @@
+{
+  "slug": "gallery-white",
+  "name": "Gallery White",
+  "oneliner": "White-wall hang: works at varied sizes, tiny wall labels, greyscale until approached.",
+  "ko": "흰 벽에 작품을 거는 방식 — 크기 다른 이미지와 작은 캡션 카드, 다가가면 색이 돌아온다.",
+  "swatches": ["#FFFFFF", "#111111", "#8E8E8E", "#E6E6E6", "#F4F4F4"],
+  "fonts": ["Hanken Grotesk"],
+  "refs": ["Léo Parpeix", "daikifujita.com", "Maria Vasilyeva", "Stéphane Janin"],
+  "group": "Product & Industrial"
+}
