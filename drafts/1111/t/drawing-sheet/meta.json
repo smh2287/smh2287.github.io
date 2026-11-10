@@ -1,0 +1,24 @@
+{
+  "slug": "drawing-sheet",
+  "name": "Drawing Sheet",
+  "oneliner": "Engineering drawing set: title block, mm grid, blue dimension lines, annotation toggle.",
+  "ko": "타이틀 블록·mm 그리드·파란 치수선으로 짠 도면 세트, 주석 켜고 끄기 토글.",
+  "swatches": [
+    "#ECEEE9",
+    "#18212E",
+    "#2447E6",
+    "#6C7480",
+    "#111214"
+  ],
+  "fonts": [
+    "Barlow Condensed",
+    "DM Mono"
+  ],
+  "refs": [
+    "Maria Vasilyeva",
+    "Teenage Engineering manuals",
+    "rauno.me",
+    "ISO title blocks"
+  ],
+  "group": "Editorial & Print"
+}

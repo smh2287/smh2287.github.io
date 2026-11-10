@@ -1,0 +1,25 @@
+{
+  "slug": "catalogue",
+  "name": "Catalogue",
+  "oneliner": "Cool-grey catalogue raisonné: one table, rows that open into plates, a prism hairline.",
+  "ko": "쿨 그레이 카탈로그 레조네 — 표 한 장, 행을 열면 도판이 펼쳐지고 프리즘 헤어라인 한 줄.",
+  "swatches": [
+    "#DADDE0",
+    "#E8EAEC",
+    "#14171A",
+    "#69717A",
+    "#A9B0B7",
+    "#0F1012"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Studio Pic",
+    "huyml.co",
+    "daikifujita.com",
+    "museum catalogue raisonné"
+  ],
+  "group": "Editorial & Print"
+}

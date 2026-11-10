@@ -1,0 +1,25 @@
+{
+  "slug": "editorial-serif",
+  "name": "Editorial Serif",
+  "oneliner": "Warm paper, light display serif, magazine pacing, captions set as footnotes.",
+  "ko": "따뜻한 종이 위의 가는 세리프 디스플레이, 잡지의 호흡, 각주처럼 달리는 캡션.",
+  "swatches": [
+    "#F2EDE3",
+    "#1D1A16",
+    "#8C2F1B",
+    "#7D7568",
+    "#CFC6B6",
+    "#141312"
+  ],
+  "fonts": [
+    "Newsreader",
+    "Instrument Sans"
+  ],
+  "refs": [
+    "Léo Parpeix",
+    "Apartamento / Kinfolk contents pages",
+    "Stéphane Janin",
+    "Industrial Facility"
+  ],
+  "group": "Editorial & Print"
+}

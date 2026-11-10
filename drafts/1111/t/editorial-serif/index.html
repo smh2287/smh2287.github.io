@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Song — Selected Works · Editorial Serif</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lock" id="lock" role="dialog" aria-label="Private portfolio">
+  <form autocomplete="off">
+    <div class="t">Minho Song</div>
+    <p>Selected Works — a private edition.<br>Enter the passcode you received.</p>
+    <input id="pw" type="password" aria-label="Passcode">
+    <div class="lab"><span>Passcode</span><span>Enter →</span></div>
+  </form>
+</div>
+
+<header class="mast">
+  <a class="name" href="./">Minho Song</a>
+  <span class="mid lab">Selected Works · Vol. I · 2021 — 2025</span>
+  <nav class="lab"><a href="./" aria-current="page">Contents</a><a href="#">About</a><a href="#">Contact</a><button type="button" data-lock>Lock</button></nav>
+</header>
+
+<section class="cover grid">
+  <h1>Selected<br><i>Works</i></h1>
+  <p class="stand">Mobility and product designer. One gaze, many domains — from mobility to wearables the priority stays constant: quality in build, emotion in scene.<sup class="fn" id="fnm">1</sup></p>
+  <figure>
+    <div class="ph" id="ph"></div>
+    <figcaption class="foot"><span class="fnn" id="fnn">1</span><span id="fnt"><i>Mercedes-Benz CLE Cabriolet,</i> 2025. Automotive visualization.</span></figcaption>
+  </figure>
+</section>
+
+<main class="contents">
+  <div class="hd lab"><span>Contents</span><span class="mute">Six works</span></div>
+  <ol id="list">
+    <li><a class="on" href="cle.html" data-img="/drafts/1110/img/th-cle.jpg"><span class="n lab"><span>01</span><span>2025</span></span><span class="t">Mercedes-Benz CLE Cabriolet</span><span class="k">Automotive visualization</span></a></li>
+    <li><a href="#" data-img="/drafts/1110/img/th-mdek.jpg"><span class="n lab"><span>02</span><span>2022</span></span><span class="t">MDEK</span><span class="k">KIA × K'arts IAC. Mobility system</span></a></li>
+    <li><a href="#" data-img="/drafts/1110/img/th-h22.jpg"><span class="n lab"><span>03</span><span>2022</span></span><span class="t">HYUNDAI × K'arts IAC</span><span class="k">Industry–academy cooperation</span></a></li>
+    <li><a href="#" data-img="/drafts/1110/img/th-k21.jpg"><span class="n lab"><span>04</span><span>2021</span></span><span class="t">KIA × K'arts IAC</span><span class="k">Industry–academy cooperation</span></a></li>
+    <li><a href="#" data-img="/drafts/1110/img/th-vishow.jpg"><span class="n lab"><span>05</span><span>—</span></span><span class="t">VISHOW</span><span class="k">Wearable</span></a></li>
+    <li><a href="#" data-img="/drafts/1110/img/th-niva.jpg"><span class="n lab"><span>06</span><span>—</span></span><span class="t">NIVA</span><span class="k">Object</span></a></li>
+  </ol>
+</main>
+
+<footer class="colophon lab">
+  <span>© Minho Song · Minho Design, Seoul</span>
+  <span class="mute">Private edition — shared by passcode</span>
+  <button type="button" data-lock>Lock this edition</button>
+</footer>
+
+<script>
+(function(){
+  var R=document.documentElement,L=document.getElementById('lock'),pw=document.getElementById('pw');
+  function lock(on){R.classList.toggle('locked',on);if(on){pw.value='';setTimeout(function(){pw.focus()},40)}}
+  if(location.hash==='#lock')lock(true);
+  L.querySelector('form').addEventListener('submit',function(e){e.preventDefault();if(!pw.value)return;lock(false);history.replaceState(null,'',location.pathname)});
+  document.querySelectorAll('[data-lock]').forEach(function(b){b.addEventListener('click',function(){lock(true)})});
+
+  var ph=document.getElementById('ph'),rows=[].slice.call(document.querySelectorAll('#list a')),imgs=[],fnt=document.getElementById('fnt');
+  rows.forEach(function(a,i){
+    var im=new Image();im.src=a.dataset.img;im.alt='';if(!i)im.className='on';ph.appendChild(im);imgs.push(im);
+    function show(){rows.forEach(function(r,k){r.classList.toggle('on',k===i);imgs[k].classList.toggle('on',k===i)});
+      var y=a.querySelector('.n span:last-child').textContent;
+      fnt.innerHTML='<i>'+a.querySelector('.t').textContent+(y==='—'?'.':',')+'</i> '+(y==='—'?'':y+'. ')+a.querySelector('.k').textContent+'.'}
+    a.addEventListener('mouseenter',show);a.addEventListener('focus',show);
+  });
+})();
+</script>
+</body>
+</html>

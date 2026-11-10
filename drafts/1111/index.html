@@ -1,0 +1,100 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minho Design — Portfolio template catalog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root{--bg:#f3f3f0;--ink:#121212;--mute:#77766f;--line:#d6d5cf}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 "Inter Tight","Helvetica Neue",Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1480px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+header{padding:clamp(40px,9vh,110px) 0 clamp(28px,5vh,56px);display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;border-bottom:1px solid var(--ink)}
+h1{font-weight:400;font-size:clamp(34px,4.6vw,72px);line-height:.98;letter-spacing:-.035em;margin:0}
+h1 span{color:var(--mute)}
+.intro{color:#3b3a36;max-width:34em;margin:0}
+.intro b{font-weight:500}
+.mono{font:400 11px/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+nav.f{display:flex;gap:6px;flex-wrap:wrap;padding:18px 0 26px}
+nav.f button{font:400 13px "Inter Tight",sans-serif;background:none;border:1px solid var(--line);border-radius:99px;padding:7px 14px;cursor:pointer;color:var(--ink)}
+nav.f button sup{color:var(--mute);font-size:10px}
+nav.f button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+nav.f button.on sup{color:#aaa}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 22px;padding-bottom:90px}
+.card .shot{display:block;aspect-ratio:16/10;overflow:hidden;background:#e4e4e0;border:1px solid var(--line)}
+.card img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.025)}
+.meta{padding-top:12px}
+.row1{display:flex;align-items:baseline;gap:10px}
+.no{font:400 11px "JetBrains Mono",monospace;color:var(--mute)}
+h2{font-weight:500;font-size:19px;letter-spacing:-.015em;margin:0;flex:1}
+.sw{display:flex;gap:3px}.sw i{width:12px;height:12px;border-radius:50%;border:1px solid rgba(0,0,0,.12);display:block}
+.en{margin:6px 0 2px;color:#2b2a27}
+.ko{margin:0 0 6px;color:var(--mute);font-size:14px}
+.ft{margin:0 0 10px}
+.ft{font:400 11px "JetBrains Mono",monospace;color:var(--mute)}
+.lk a{font-size:13px;margin-right:14px;border-bottom:1px solid var(--line)}
+.lk a:hover{border-color:var(--ink)}
+.card.hide{display:none}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;display:flex;justify-content:space-between}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}header{grid-template-columns:1fr}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.card img{transition:none}}
+</style></head><body><div class="wrap">
+<header>
+  <div><p class="mono">Minho Design · Portfolio · Template proposals · 2026.11.10</p>
+  <h1>4 visual languages<br><span>for one portfolio.</span></h1></div>
+  <p class="intro">Each template is the same content — the index and the <b>Mercedes-Benz CLE Cabriolet</b> detail — built in its own visual language, with a DESIGN.md that fixes colour, type, spacing and components. Pick one, or name the parts to combine.<br><span class="mono" style="display:inline-block;margin-top:10px">Lock screen: any input + Enter</span></p>
+</header>
+<nav class="f"><button class="on" data-f="all">All <sup>4</sup></button><button data-f="Editorial &amp; Print">Editorial &amp; Print <sup>4</sup></button></nav>
+<main class="grid">
+<article class="card" data-g="Editorial &amp; Print">
+  <a class="shot" href="t/catalogue/"><img src="t/catalogue/thumb.jpg" alt="Catalogue preview" loading="lazy"></a>
+  <div class="meta">
+    <div class="row1"><span class="no">01</span><h2><a href="t/catalogue/">Catalogue</a></h2><span class="sw"><i style="background:#DADDE0" title="#DADDE0"></i><i style="background:#E8EAEC" title="#E8EAEC"></i><i style="background:#14171A" title="#14171A"></i><i style="background:#69717A" title="#69717A"></i><i style="background:#A9B0B7" title="#A9B0B7"></i><i style="background:#0F1012" title="#0F1012"></i></span></div>
+    <p class="en">Cool-grey catalogue raisonné: one table, rows that open into plates, a prism hairline.</p>
+    <p class="ko">쿨 그레이 카탈로그 레조네 — 표 한 장, 행을 열면 도판이 펼쳐지고 프리즘 헤어라인 한 줄.</p>
+    <p class="ft">Geist · Geist Mono</p>
+    <p class="lk"><a href="t/catalogue/">Home</a><a href="t/catalogue/cle.html">CLE detail</a><a href="t/catalogue/DESIGN.md">DESIGN.md</a></p>
+  </div>
+</article>
+<article class="card" data-g="Editorial &amp; Print">
+  <a class="shot" href="t/drawing-sheet/"><img src="t/drawing-sheet/thumb.jpg" alt="Drawing Sheet preview" loading="lazy"></a>
+  <div class="meta">
+    <div class="row1"><span class="no">02</span><h2><a href="t/drawing-sheet/">Drawing Sheet</a></h2><span class="sw"><i style="background:#ECEEE9" title="#ECEEE9"></i><i style="background:#18212E" title="#18212E"></i><i style="background:#2447E6" title="#2447E6"></i><i style="background:#6C7480" title="#6C7480"></i><i style="background:#111214" title="#111214"></i></span></div>
+    <p class="en">Engineering drawing set: title block, mm grid, blue dimension lines, annotation toggle.</p>
+    <p class="ko">타이틀 블록·mm 그리드·파란 치수선으로 짠 도면 세트, 주석 켜고 끄기 토글.</p>
+    <p class="ft">Barlow Condensed · DM Mono</p>
+    <p class="lk"><a href="t/drawing-sheet/">Home</a><a href="t/drawing-sheet/cle.html">CLE detail</a><a href="t/drawing-sheet/DESIGN.md">DESIGN.md</a></p>
+  </div>
+</article>
+<article class="card" data-g="Editorial &amp; Print">
+  <a class="shot" href="t/editorial-serif/"><img src="t/editorial-serif/thumb.jpg" alt="Editorial Serif preview" loading="lazy"></a>
+  <div class="meta">
+    <div class="row1"><span class="no">03</span><h2><a href="t/editorial-serif/">Editorial Serif</a></h2><span class="sw"><i style="background:#F2EDE3" title="#F2EDE3"></i><i style="background:#1D1A16" title="#1D1A16"></i><i style="background:#8C2F1B" title="#8C2F1B"></i><i style="background:#7D7568" title="#7D7568"></i><i style="background:#CFC6B6" title="#CFC6B6"></i><i style="background:#141312" title="#141312"></i></span></div>
+    <p class="en">Warm paper, light display serif, magazine pacing, captions set as footnotes.</p>
+    <p class="ko">따뜻한 종이 위의 가는 세리프 디스플레이, 잡지의 호흡, 각주처럼 달리는 캡션.</p>
+    <p class="ft">Newsreader · Instrument Sans</p>
+    <p class="lk"><a href="t/editorial-serif/">Home</a><a href="t/editorial-serif/cle.html">CLE detail</a><a href="t/editorial-serif/DESIGN.md">DESIGN.md</a></p>
+  </div>
+</article>
+<article class="card" data-g="Editorial &amp; Print">
+  <a class="shot" href="t/swiss-grid/"><img src="t/swiss-grid/thumb.jpg" alt="Swiss Grid preview" loading="lazy"></a>
+  <div class="meta">
+    <div class="row1"><span class="no">04</span><h2><a href="t/swiss-grid/">Swiss Grid</a></h2><span class="sw"><i style="background:#F5F5F2" title="#F5F5F2"></i><i style="background:#0B0B0B" title="#0B0B0B"></i><i style="background:#F0301E" title="#F0301E"></i><i style="background:#8A8A85" title="#8A8A85"></i><i style="background:#D4D4CE" title="#D4D4CE"></i><i style="background:#101011" title="#101011"></i></span></div>
+    <p class="en">Strict 12-column grid, tight grotesk, numerals as architecture, one signal red.</p>
+    <p class="ko">엄격한 12단 그리드와 거대한 숫자가 구조가 되는 스위스 타이포그래피, 신호색 레드 하나.</p>
+    <p class="ft">Inter Tight</p>
+    <p class="lk"><a href="t/swiss-grid/">Home</a><a href="t/swiss-grid/cle.html">CLE detail</a><a href="t/swiss-grid/DESIGN.md">DESIGN.md</a></p>
+  </div>
+</article>
+</main>
+<footer><span class="mono">Drafts · not public · noindex</span><a class="mono" href="../1110/">Previous drafts (A/B/C) →</a></footer>
+</div>
+<script>
+document.querySelectorAll('nav.f button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('nav.f button').forEach(x=>x.classList.toggle('on',x===b));
+ const f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.g!==f));
+});
+</script></body></html>

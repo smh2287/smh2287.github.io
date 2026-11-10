@@ -1,0 +1,24 @@
+{
+  "slug": "swiss-grid",
+  "name": "Swiss Grid",
+  "oneliner": "Strict 12-column grid, tight grotesk, numerals as architecture, one signal red.",
+  "ko": "엄격한 12단 그리드와 거대한 숫자가 구조가 되는 스위스 타이포그래피, 신호색 레드 하나.",
+  "swatches": [
+    "#F5F5F2",
+    "#0B0B0B",
+    "#F0301E",
+    "#8A8A85",
+    "#D4D4CE",
+    "#101011"
+  ],
+  "fonts": [
+    "Inter Tight"
+  ],
+  "refs": [
+    "Josef Müller-Brockmann",
+    "Stewart Partners",
+    "Guillaume Colombel",
+    "Stéphane Janin"
+  ],
+  "group": "Editorial & Print"
+}
