@@ -1,0 +1,24 @@
+{
+  "slug": "cinemascope",
+  "name": "Cinemascope",
+  "oneliner": "Every plate a 2.39:1 letterboxed frame; reel index with mint timecode.",
+  "ko": "모든 컷을 2.39:1 레터박스 프레임으로 — 홈은 와이드 프레임 하나와 릴 인덱스, 프로젝트는 숏의 연속.",
+  "swatches": [
+    "#1F2021",
+    "#0B0B0C",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#34363A",
+    "#1FFFE0"
+  ],
+  "fonts": [
+    "Archivo",
+    "JetBrains Mono"
+  ],
+  "refs": [
+    "2.39:1 anamorphic film framing",
+    "Film slate / timecode burn-in",
+    "Studio Dark (round 1)"
+  ],
+  "group": "Wide Studio"
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "pdf-native",
+  "name": "PDF Native",
+  "oneliner": "His 12:5 PDF page grammar as live web layout: white/mint label, mint footer.",
+  "ko": "PDF 페이지 문법을 그대로 웹으로 — 12:5 페이지마다 흰색 MERCEDES BENZ + 민트 라벨과 민트 푸터, 전부 실제 텍스트.",
+  "swatches": [
+    "#1F2021",
+    "#121213",
+    "#FFFFFF",
+    "#A9A9A9",
+    "#1FFFE0"
+  ],
+  "fonts": [
+    "Montserrat",
+    "Michroma"
+  ],
+  "refs": [
+    "Minho's 2026 PDF portfolio pages",
+    "Studio Dark (round 1)"
+  ],
+  "group": "Wide Studio"
+}

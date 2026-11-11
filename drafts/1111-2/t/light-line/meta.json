@@ -1,0 +1,24 @@
+{
+  "slug": "light-line",
+  "name": "Light Line",
+  "oneliner": "Studio Dark wide plates; a 1px mint hairline under the nav that opens into spectrum.",
+  "ko": "Studio Dark 와이드 플레이트 그대로, 내비 아래 1px 민트 헤어라인 하나가 진행에 따라 스펙트럼으로 열린다.",
+  "swatches": [
+    "#1F2021",
+    "#121213",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#1FFFE0",
+    "#7A6BFF"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Studio Dark (round 1)",
+    "Mercedes MBUX ambient light strip",
+    "Minho's PDF mint label hairline"
+  ],
+  "group": "Mint + Spectrum"
+}

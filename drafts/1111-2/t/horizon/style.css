@@ -1,0 +1,78 @@
+/* horizon — one ground line at the same height on every page; cars sit on it, titles hang under it */
+:root{--bg:#1F2021;--deep:#171819;--ink:#E8E8EA;--mid:#A9A9A9;--mute:#60656E;--line:#404047;--mint:#1FFFE0;
+  --sans:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--m:32px;
+  --hy:64svh;                                   /* the horizon */
+  --pw:min(60vw,calc((var(--hy) - 150px)*2.4)); /* plate width; plate is 2.4:1 */
+  --gap:9vw}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+body{height:100svh;overflow:hidden;background:linear-gradient(to bottom,var(--bg) 0,var(--bg) var(--hy),var(--deep) 100%)}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-transform:inherit;letter-spacing:inherit}
+.m{font:400 11px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+.mint{color:var(--mint)}.mute{color:var(--mute)}
+::selection{background:var(--mint);color:var(--deep)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+
+/* the line */
+.hz{position:fixed;left:0;right:0;top:var(--hy);height:1px;background:var(--line);z-index:1;pointer-events:none}
+
+.top{position:fixed;inset:0 0 auto;height:72px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);z-index:6}
+.nm{font-weight:300;font-size:17px;letter-spacing:-.01em}
+.top nav{display:flex;gap:28px}
+.top nav a:hover,.top button:hover{color:var(--ink)}
+.cnt{position:fixed;right:var(--m);bottom:26px;z-index:4}
+
+/* the track: everything stands on the line */
+.track{position:fixed;inset:0;display:flex;align-items:stretch;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;
+  padding-inline:calc((100vw - var(--pw))/2);scroll-snap-type:x mandatory;z-index:2}
+.track::-webkit-scrollbar{display:none}
+.it{flex:none;position:relative;width:var(--pw);margin-right:var(--gap);scroll-snap-align:center;opacity:.32;transition:opacity .6s}
+.it:last-child{margin-right:0}
+.it.on{opacity:1}
+.pl{position:absolute;left:0;right:0;bottom:calc(100svh - var(--hy));aspect-ratio:12/5;overflow:hidden;display:block}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pl img.fit{inset:auto 0;bottom:0;top:auto;height:auto;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 16%),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 16%),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}
+/* the ground under the active car turns mint */
+.it::after{content:"";position:absolute;left:0;right:0;top:var(--hy);height:1px;background:var(--mint);transform:scaleX(0);transform-origin:left;transition:transform .7s cubic-bezier(.3,0,.2,1);z-index:4}
+.it.on::after{transform:scaleX(1)}
+.hang{position:absolute;left:0;right:0;top:calc(var(--hy) + 22px)}
+.hang h2{font:300 30px/1.1 var(--sans);letter-spacing:-.025em;margin:8px 0 6px}
+.hang .row{display:flex;flex-wrap:wrap;gap:4px 22px}.hang .row span{white-space:nowrap}
+
+/* project specifics */
+.it.txt{width:min(44vw,640px)}
+.it.txt h1{position:absolute;left:0;bottom:calc(100svh - var(--hy) + 18px);font:300 clamp(40px,5vw,72px)/1 var(--sans);letter-spacing:-.04em}
+.it.txt dl{display:grid;grid-template-columns:96px 1fr;row-gap:6px}
+.it.txt dd{color:var(--ink)}
+.it.txt p{color:var(--mid);max-width:44ch;margin-top:16px;font-size:14px}
+figcaption.hang{display:flex;gap:18px;align-items:baseline}
+figcaption.hang .t{font-size:14px;color:var(--mid)}
+.it.cm{width:min(52vw,760px)}
+.it.cm h2{position:absolute;left:0;bottom:calc(100svh - var(--hy) + 18px);font:300 44px/1 var(--sans);letter-spacing:-.035em}
+.slot{border:1px solid var(--line);height:min(170px,calc(100svh - var(--hy) - 110px));padding:16px;display:flex;flex-direction:column;justify-content:space-between;margin-bottom:16px}
+.slot span:first-child{color:var(--mid)}
+.nx{display:flex;justify-content:space-between}
+.nx a:hover{color:var(--ink)}
+
+/* lock */
+.lock{position:fixed;inset:0;z-index:40;background:var(--bg);display:block}
+.lock[hidden]{display:none}
+.lock::before{content:"";position:absolute;left:0;right:0;top:var(--hy);height:1px;background:var(--line)}
+.lock form{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(100svh - var(--hy));width:min(380px,calc(100vw - 48px));text-align:center}
+.lock h2{font:300 36px/1.1 var(--sans);letter-spacing:-.035em;margin:10px 0 40px}
+.lock input{display:block;width:100%;background:none;border:0;outline:0;color:var(--ink);font:400 20px/1 var(--mono);letter-spacing:.5em;text-align:center;padding:0 0 16px;border-radius:0}
+.lock .k{position:absolute;left:50%;transform:translateX(-50%);top:calc(var(--hy) + 16px);width:min(380px,calc(100vw - 48px));display:flex;justify-content:space-between}
+.lock form:focus-within~.k .mint{opacity:1}
+
+@media (max-width:760px){
+  :root{--m:16px;--hy:58svh;--pw:84vw;--gap:6vw}
+  .top nav a{display:none}
+  .it.txt,.it.cm{width:84vw}
+  .it.txt h1{font-size:36px}.hang h2{font-size:22px}
+  figcaption.hang{flex-wrap:wrap;gap:4px 12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

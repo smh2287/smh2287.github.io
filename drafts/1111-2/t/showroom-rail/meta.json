@@ -1,0 +1,24 @@
+{
+  "slug": "showroom-rail",
+  "name": "Showroom Rail",
+  "oneliner": "A horizontal wall of 21:9 plates; a thin mint ruler shows where you stand.",
+  "ko": "쇼룸 벽을 따라 걷듯 21:9 플레이트를 가로로 이동 — 하단의 얇은 민트 눈금자가 위치를 알려줌.",
+  "swatches": [
+    "#1F2021",
+    "#171819",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#34363A",
+    "#1FFFE0"
+  ],
+  "fonts": [
+    "Manrope",
+    "IBM Plex Mono"
+  ],
+  "refs": [
+    "Car showroom wall / configurator rail",
+    "Mercedes ambient-light strip",
+    "Studio Dark (round 1)"
+  ],
+  "group": "Wide Studio"
+}

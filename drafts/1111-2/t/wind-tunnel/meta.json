@@ -1,0 +1,24 @@
+{
+  "slug": "wind-tunnel",
+  "name": "Wind Tunnel",
+  "oneliner": "Fine static aero streamlines part around a wide plate; one line catches the spectrum.",
+  "ko": "와이드 플레이트를 감싸고 흐르는 가는 공력 유선 — 회색 몇 줄, 민트 두 줄, 단 한 줄만 스펙트럼이 비친다.",
+  "swatches": [
+    "#1F2021",
+    "#2B2B2B",
+    "#3A3D41",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#1FFFE0"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Wind-tunnel smoke streamlines",
+    "Aero CFD flow lines",
+    "Studio Dark (round 1)"
+  ],
+  "group": "Mint + Spectrum"
+}

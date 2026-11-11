@@ -1,0 +1,24 @@
+{
+  "slug": "spec-wide",
+  "name": "Spec Wide",
+  "oneliner": "Studio Dark refined: 2.4:1 charcoal band, mono spec-sheet index, mint tick.",
+  "ko": "Studio Dark의 가장 충실한 진화 — PDF 차콜 위 2.4:1 풀블리드 밴드와 모노 스펙시트, 빨간 틱 대신 민트 틱.",
+  "swatches": [
+    "#1F2021",
+    "#121213",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#34363A",
+    "#1FFFE0"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Studio Dark (round 1)",
+    "Minho's PDF page vignette",
+    "Automotive studio photography"
+  ],
+  "group": "Wide Studio"
+}

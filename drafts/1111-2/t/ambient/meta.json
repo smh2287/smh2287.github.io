@@ -1,0 +1,24 @@
+{
+  "slug": "ambient",
+  "name": "Ambient",
+  "oneliner": "A 2px edge light along each wide plate, mint drifting slowly along the spectrum.",
+  "ko": "벤츠 앰비언트 라이트처럼 — 플레이트 아래 가장자리 1–2px 라인이 민트에서 스펙트럼 쪽으로 아주 천천히 물든다.",
+  "swatches": [
+    "#1F2021",
+    "#121213",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#1FFFE0",
+    "#3FB2FF"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Mercedes-Benz 64-colour ambient lighting",
+    "MBUX Hyperscreen light band",
+    "Studio Dark (round 1)"
+  ],
+  "group": "Mint + Spectrum"
+}

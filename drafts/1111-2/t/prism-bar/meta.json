@@ -1,0 +1,24 @@
+{
+  "slug": "prism-bar",
+  "name": "Prism Bar",
+  "oneliner": "Every wide plate carries a thin video-scrubber; its played part runs mint into spectrum.",
+  "ko": "와이드 플레이트마다 영상 스크러버 같은 얇은 바 — 재생된 부분만 민트에서 스펙트럼으로 흐른다.",
+  "swatches": [
+    "#1F2021",
+    "#171819",
+    "#E8E8EA",
+    "#A9A9A9",
+    "#1FFFE0",
+    "#D45CF0"
+  ],
+  "fonts": [
+    "Geist",
+    "Geist Mono"
+  ],
+  "refs": [
+    "Video scrubber / timeline UI",
+    "Studio Dark (round 1)",
+    "Cinemascope film reels"
+  ],
+  "group": "Mint + Spectrum"
+}
