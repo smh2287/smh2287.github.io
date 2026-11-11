@@ -1,0 +1,90 @@
+/* d65 — One Car as a calibrated plate: four register marks, a grey step wedge and one mint reference patch beside it */
+:root{--bg:#1F2021;--deep:#121213;--plate:#171819;--ink:#E8E8EA;--mid:#A9A9A9;--mute:#60656E;--hair:#34363A;--mint:#1FFFE0;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;--mono:"DM Mono",ui-monospace,monospace;--m:28px;
+  --pw:min(70vw,calc((100svh - 300px)*2.4));--ph:calc(var(--pw)*5/12);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+body{min-height:100svh;background:radial-gradient(ellipse 80% 70% at 50% 48%,var(--bg) 40%,var(--deep) 125%) fixed}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.m{font:400 10.5px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--mid)}
+.mint{color:var(--mint)}.mute{color:var(--mute)}
+::selection{background:var(--mint);color:var(--deep)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:3px}
+
+.top{position:fixed;inset:0 0 auto;height:64px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);z-index:5}
+.tr{display:flex;gap:22px}
+.top .r{transition:color .2s}.top .r:hover{color:var(--mint)}
+.ft{position:fixed;inset:auto 0 0;height:56px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);color:var(--mute);font-size:9.5px;pointer-events:none}
+
+/* the plate — one wide object, centred, air on all sides */
+.st{position:relative;width:var(--pw)}
+.pl{position:relative;display:block;width:100%;aspect-ratio:12/5;overflow:hidden}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pl img.fit{inset:auto 0;top:50%;height:auto;transform:translateY(-50%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);mask-composite:intersect}
+.pl img.fith{inset:0 auto;left:50%;width:auto;height:100%;transform:translateX(-50%);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+.pl.ink{background:#1F1F21}
+
+.home{overflow:hidden;height:100svh}
+.one{height:100svh;display:grid;place-items:center}
+.one .pl img{opacity:0;transition:opacity .8s cubic-bezier(.3,0,.2,1)}
+.one .pl img.on{opacity:1}
+
+.scr{min-height:100svh;display:grid;place-items:center;padding:64px 0;scroll-snap-align:center}
+html.snap{scroll-snap-type:y proximity}
+.cap{position:absolute;top:calc(100% + 18px);left:0;right:0;display:flex;gap:20px;align-items:baseline}
+.cap .t{color:var(--mid);font-size:13px}
+.pre{position:absolute;bottom:calc(100% + 18px);left:0}
+
+/* comments — calm, narrow, with air */
+.cm{width:min(520px,calc(100vw - 32px))}
+.cm h2{font-weight:300;font-size:30px;line-height:1.1;letter-spacing:-.03em;margin:12px 0 44px}
+.cm .slot{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0 64px;color:var(--mute);font-size:14px}
+.cm .row{display:flex;justify-content:space-between;gap:16px;padding-top:14px}
+.nx{display:flex;justify-content:space-between;margin-top:96px}
+.nx a{transition:color .2s}.nx a:hover{color:var(--mint)}
+
+.lock{position:fixed;inset:0;z-index:40;background:radial-gradient(ellipse 70% 60% at 50% 45%,var(--bg),var(--deep));display:grid;place-items:center}
+.lock[hidden]{display:none}
+.lock form{width:min(380px,calc(100vw - 48px));text-align:center}
+.lock h2{font-weight:300;font-size:34px;line-height:1.1;letter-spacing:-.035em;margin:10px 0 48px}
+.lock input{width:100%;background:none;border:0;border-bottom:1px solid var(--hair);outline:0;color:var(--mint);font:400 20px/1 var(--mono);letter-spacing:.5em;text-align:center;padding:12px 0 14px;border-radius:0;margin-bottom:14px;caret-color:var(--mint)}
+.lock input:focus{border-color:var(--mint)}
+.nm{font-weight:400;font-size:16px;letter-spacing:-.01em}
+.cap .sp{margin-left:auto}
+.wp{position:absolute;bottom:calc(100% + 18px);right:0;color:var(--mute)}
+.ttl{justify-content:space-between;gap:40px}
+.ttl h1{font-weight:300;font-size:clamp(26px,2.5vw,36px);line-height:1.05;letter-spacing:-.03em;white-space:nowrap}
+.ttl p{color:var(--mid);font-size:13px;max-width:44ch;text-align:right}
+
+/* register marks: 11px corners standing 14px off the plate — they never touch it */
+.ck{position:absolute;width:11px;height:11px;border:0 solid var(--mute);pointer-events:none}
+.ck.a{left:-14px;top:-14px;border-width:1px 0 0 1px;border-color:var(--mint)}
+.ck.b{right:-14px;top:-14px;border-width:1px 1px 0 0}
+.ck.c{left:-14px;bottom:-14px;border-width:0 0 1px 1px}
+.ck.e{right:-14px;bottom:-14px;border-width:0 1px 1px 0}
+
+/* the step wedge: 11 greys from ground to paper white + one mint reference, standing in the left margin */
+.wg{position:absolute;right:calc(100% + 34px);bottom:0;display:flex;flex-direction:column-reverse;gap:3px}
+.wg i{width:7px;height:7px;display:block}
+.wg i:first-child{box-shadow:0 0 0 1px var(--hair)}
+.wg .ref{background:var(--mint);margin-bottom:9px}
+/* on a change of plate the wedge is re-read once: each step flashes its wavelength, bottom to top, and returns to grey */
+.wg.rd i:not(.ref){animation:rd .62s var(--d) both}
+@keyframes rd{0%,100%{background-color:inherit}25%,45%{background:var(--h)}}
+.js .proj .scr.in .wg i:not(.ref){animation:rd .62s calc(var(--d) + .25s) both}
+@media (max-width:760px){
+  :root{--m:16px;--pw:calc(100vw - 32px)}
+  .ft span:first-child{display:none}
+  .cm .row{flex-direction:column;gap:4px}
+  .wg{display:none}.ck{width:7px;height:7px}
+  .ck.a,.ck.c{left:-9px}.ck.b,.ck.e{right:-9px}.ck.a,.ck.b{top:-9px}.ck.c,.ck.e{bottom:-9px}
+  .cap{flex-direction:column;gap:4px}.cap .sp{margin-left:0}
+  .ttl p{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

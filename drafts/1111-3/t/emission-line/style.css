@@ -1,0 +1,98 @@
+/* emission-line — each project is one emission line on a 380–780 nm scale; a single mint hairline passes behind the centred plate and everything hangs on it */
+:root{--bg:#1F2021;--deep:#121213;--plate:#171819;--ink:#E8E8EA;--mid:#A9A9A9;--mute:#60656E;--hair:#34363A;--mint:#1FFFE0;
+  --sans:"Inter Tight",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--m:28px;
+  --pw:min(70vw,calc((100svh - 300px)*2.4));--ph:calc(var(--pw)*5/12);--x:30%;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+body{min-height:100svh;background:radial-gradient(ellipse 80% 70% at 50% 48%,var(--bg) 40%,var(--deep) 125%) fixed}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.m{font:400 10.5px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--mid)}
+.mint{color:var(--mint)}.mute{color:var(--mute)}
+::selection{background:var(--mint);color:var(--deep)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:3px}
+
+.top{position:fixed;inset:0 0 auto;height:64px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);z-index:5}
+.tr{display:flex;gap:22px}
+.top .r{transition:color .2s}.top .r:hover{color:var(--mint)}
+.ft{position:fixed;inset:auto 0 0;height:56px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);color:var(--mute);font-size:9.5px;pointer-events:none}
+
+/* the plate — one wide object, centred, air on all sides */
+.st{position:relative;width:var(--pw)}
+.pl{position:relative;display:block;width:100%;aspect-ratio:12/5;overflow:hidden}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pl img.fit{inset:auto 0;top:50%;height:auto;transform:translateY(-50%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);mask-composite:intersect}
+.pl img.fith{inset:0 auto;left:50%;width:auto;height:100%;transform:translateX(-50%);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+.pl.ink{background:#1F1F21}
+
+.home{overflow:hidden;height:100svh}
+.one{height:100svh;display:grid;place-items:center}
+.one .pl img{opacity:0;transition:opacity .8s cubic-bezier(.3,0,.2,1)}
+.one .pl img.on{opacity:1}
+
+.scr{min-height:100svh;display:grid;place-items:center;padding:64px 0;scroll-snap-align:center}
+html.snap{scroll-snap-type:y proximity}
+.cap{position:absolute;top:calc(100% + 18px);left:0;right:0;display:flex;gap:20px;align-items:baseline}
+.cap .t{color:var(--mid);font-size:13px}
+.pre{position:absolute;bottom:calc(100% + 18px);left:0}
+
+/* comments — calm, narrow, with air */
+.cm{width:min(520px,calc(100vw - 32px))}
+.cm h2{font-weight:300;font-size:30px;line-height:1.1;letter-spacing:-.03em;margin:12px 0 44px}
+.cm .slot{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0 64px;color:var(--mute);font-size:14px}
+.cm .row{display:flex;justify-content:space-between;gap:16px;padding-top:14px}
+.nx{display:flex;justify-content:space-between;margin-top:96px}
+.nx a{transition:color .2s}.nx a:hover{color:var(--mint)}
+
+.lock{position:fixed;inset:0;z-index:40;background:radial-gradient(ellipse 70% 60% at 50% 45%,var(--bg),var(--deep));display:grid;place-items:center}
+.lock[hidden]{display:none}
+.lock form{width:min(380px,calc(100vw - 48px));text-align:center}
+.lock h2{font-weight:300;font-size:34px;line-height:1.1;letter-spacing:-.035em;margin:10px 0 48px}
+.lock input{width:100%;background:none;border:0;border-bottom:1px solid var(--hair);outline:0;color:var(--mint);font:400 20px/1 var(--mono);letter-spacing:.5em;text-align:center;padding:12px 0 14px;border-radius:0;margin-bottom:14px;caret-color:var(--mint)}
+.lock input:focus{border-color:var(--mint)}
+.nm{font-weight:400;font-size:16px;letter-spacing:-.01em}
+
+/* the scale: sits above the plate, same width */
+.sc{position:absolute;left:0;right:0;bottom:calc(100% + 44px);height:1px;background:var(--hair)}
+.sc .k{position:absolute;bottom:0;width:1px;height:4px;background:var(--mute);opacity:.7}
+.sc .k.c{height:9px;opacity:1}
+.sc .k.p{top:0;bottom:auto;height:7px;background:var(--mid);opacity:1}
+.sc b{position:absolute;bottom:15px;left:0;transform:translateX(-50%);font:400 9px/1 var(--mono);letter-spacing:.08em;color:var(--mute)}
+.sc .u{position:absolute;left:calc(100% + 12px);bottom:-3px;font:400 9px/1 var(--mono);letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+
+/* the line: drops from the scale to the plate, disappears behind the car, continues below and carries the label */
+.la,.hang::before{background:linear-gradient(90deg,#2a0052 0%,#4b1fd6 10%,#1f4bff 17.5%,#1fb4ff 25%,#1FFFE0 30%,#3dff5a 37.5%,#e8ff2a 47.5%,#ffc21f 52.5%,#ff5a1f 60%,#e0102a 75%,#3a0008 100%) center/var(--pw) 100% no-repeat fixed}
+.la{position:absolute;left:var(--x);bottom:calc(100% + 8px);width:1px;height:36px}
+.la.s{height:18px}
+.la::after,.hang::after{content:"";position:absolute;inset:0;background:var(--mint);transition:opacity .35s}
+.hang{position:absolute;left:var(--x);top:calc(100% + 8px);padding:30px 0 2px 14px;white-space:nowrap}
+.hang::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px}
+.hang::after{right:auto;width:1px}
+.hang .w{display:flex;flex-direction:column;gap:5px;transition:opacity .3s}
+.hang b{font-weight:400;color:var(--ink)}
+.hang .t{color:var(--mid);font-size:13px}
+.hang.flip{transform:translateX(-100%);padding:30px 14px 2px 0;text-align:right}
+.hang.flip::before,.hang.flip::after{left:auto;right:0}
+.hang.flip .w{align-items:flex-end}
+.one .la,.one .hang{transition:left 1s cubic-bezier(.6,0,.15,1)}
+/* while it travels the line shows the true colour of the wavelength it is crossing; at rest it is mint */
+.mv .la::after,.mv .hang::after{opacity:0}
+.mv .hang .w{opacity:0}
+.ttl h1{font-weight:300;font-size:clamp(26px,2.5vw,36px);line-height:1.05;letter-spacing:-.035em;margin:6px 0 4px}
+.ttl .d{color:var(--mid);font-size:13px;white-space:normal;width:min(46ch,calc(var(--pw)*.68))}
+.proj .hang{padding-top:26px}
+@media (max-width:760px){
+  :root{--m:16px;--pw:calc(100vw - 32px)}
+  .ft span:first-child{display:none}
+  .cm .row{flex-direction:column;gap:4px}
+  .sc{bottom:calc(100% + 34px)}.sc .u{display:none}
+  .la{height:26px}
+  .hang{white-space:normal;max-width:68%}.hang.flip{max-width:80%}
+  .ttl .d{width:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

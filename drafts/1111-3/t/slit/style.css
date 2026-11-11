@@ -1,0 +1,98 @@
+/* slit — One Car seen through a spectrometer slit: one tall mint hairline stands beside the plate and sweeps across it to change the image */
+:root{--bg:#1F2021;--deep:#121213;--plate:#171819;--ink:#E8E8EA;--mid:#A9A9A9;--mute:#60656E;--hair:#34363A;--mint:#1FFFE0;
+  --sans:"Instrument Serif","Times New Roman",serif;--mono:"Geist Mono",ui-monospace,monospace;--m:28px;
+  --pw:min(70vw,calc((100svh - 300px)*2.4));--ph:calc(var(--pw)*5/12);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+body{min-height:100svh;background:radial-gradient(ellipse 80% 70% at 50% 48%,var(--bg) 40%,var(--deep) 125%) fixed}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.m{font:400 10.5px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--mid)}
+.mint{color:var(--mint)}.mute{color:var(--mute)}
+::selection{background:var(--mint);color:var(--deep)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:3px}
+
+.top{position:fixed;inset:0 0 auto;height:64px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);z-index:5}
+.tr{display:flex;gap:22px}
+.top .r{transition:color .2s}.top .r:hover{color:var(--mint)}
+.ft{position:fixed;inset:auto 0 0;height:56px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);color:var(--mute);font-size:9.5px;pointer-events:none}
+
+/* the plate — one wide object, centred, air on all sides */
+.st{position:relative;width:var(--pw)}
+.pl{position:relative;display:block;width:100%;aspect-ratio:12/5;overflow:hidden}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pl img.fit{inset:auto 0;top:50%;height:auto;transform:translateY(-50%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);mask-composite:intersect}
+.pl img.fith{inset:0 auto;left:50%;width:auto;height:100%;transform:translateX(-50%);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+.pl.ink{background:#1F1F21}
+
+.home{overflow:hidden;height:100svh}
+.one{height:100svh;display:grid;place-items:center}
+.one .pl img{opacity:0;transition:opacity .8s cubic-bezier(.3,0,.2,1)}
+.one .pl img.on{opacity:1}
+
+.scr{min-height:100svh;display:grid;place-items:center;padding:64px 0;scroll-snap-align:center}
+html.snap{scroll-snap-type:y proximity}
+.cap{position:absolute;top:calc(100% + 18px);left:0;right:0;display:flex;gap:20px;align-items:baseline}
+.cap .t{color:var(--mid);font-size:13px}
+.pre{position:absolute;bottom:calc(100% + 18px);left:0}
+
+/* comments — calm, narrow, with air */
+.cm{width:min(520px,calc(100vw - 32px))}
+.cm h2{font-weight:300;font-size:30px;line-height:1.1;letter-spacing:-.03em;margin:12px 0 44px}
+.cm .slot{border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);padding:22px 0 64px;color:var(--mute);font-size:14px}
+.cm .row{display:flex;justify-content:space-between;gap:16px;padding-top:14px}
+.nx{display:flex;justify-content:space-between;margin-top:96px}
+.nx a{transition:color .2s}.nx a:hover{color:var(--mint)}
+
+.lock{position:fixed;inset:0;z-index:40;background:radial-gradient(ellipse 70% 60% at 50% 45%,var(--bg),var(--deep));display:grid;place-items:center}
+.lock[hidden]{display:none}
+.lock form{width:min(380px,calc(100vw - 48px));text-align:center}
+.lock h2{font-weight:300;font-size:34px;line-height:1.1;letter-spacing:-.035em;margin:10px 0 48px}
+.lock input{width:100%;background:none;border:0;border-bottom:1px solid var(--hair);outline:0;color:var(--mint);font:400 20px/1 var(--mono);letter-spacing:.5em;text-align:center;padding:12px 0 14px;border-radius:0;margin-bottom:14px;caret-color:var(--mint)}
+.lock input:focus{border-color:var(--mint)}
+html{font-family:var(--mono);font-size:13px}
+.nm{font:400 21px/1 var(--sans);letter-spacing:-.005em}
+.cap .sp{margin-left:auto}
+.cap .t{font:400 12px/1.5 var(--mono);letter-spacing:.01em}
+.ttl{justify-content:space-between;gap:40px;align-items:flex-start}
+.ttl h1{font:400 clamp(34px,3.4vw,50px)/1 var(--sans);letter-spacing:-.02em;white-space:nowrap;margin-top:-4px}
+.ttl h1 em{font-style:italic}
+.ttl p{color:var(--mid);font-size:12px;max-width:46ch;text-align:right}
+.cm h2,.lock h2{font-family:var(--sans);font-weight:400;letter-spacing:-.02em}
+.cm h2{font-size:38px}.lock h2{font-size:40px}
+
+/* the slit: taller than the plate, parked just outside its right edge */
+.sl{position:absolute;top:-22px;bottom:-22px;left:calc(100% + 16px);width:1px;background:var(--mint);z-index:3;pointer-events:none}
+/* chromatic fringe — exists only while the slit is moving */
+.sl::before,.sl::after{content:"";position:absolute;top:0;bottom:0;width:1px;opacity:0;transition:opacity .25s}
+.sl::before{left:-1.5px;background:#ff3d5e}
+.sl::after{left:1.5px;background:#3d6bff}
+.sl.run::before,.sl.run::after{opacity:.9}
+.nxl{position:absolute;left:calc(100% + 30px);bottom:-22px;white-space:nowrap;color:var(--mute);line-height:1}
+.one .pl img{transition:none}
+
+/* project: each plate is opened once by the slit, left to right, then the slit parks at the right */
+.js .proj .scr:not(.end) .pl img{clip-path:inset(0 100% 0 0)}
+.js .proj .scr.in .pl img{animation:open 1.25s both}
+.js .proj .scr .sl{left:0;opacity:0}
+.js .proj .scr.in .sl{animation:sweep 1.25s both}
+.js .proj .scr.in .sl::before,.js .proj .scr.in .sl::after{animation:fringe 1.25s both}
+@keyframes open{0%{clip-path:inset(0 100% 0 0);animation-timing-function:cubic-bezier(.62,0,.18,1)}82%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes sweep{0%{left:0;opacity:1;animation-timing-function:cubic-bezier(.62,0,.18,1)}82%{left:100%;opacity:1}100%{left:calc(100% + 16px);opacity:1}}
+@keyframes fringe{0%,70%{opacity:.9}100%{opacity:0}}
+@media (max-width:760px){
+  :root{--m:16px;--pw:calc(100vw - 32px)}
+  .ft span:first-child{display:none}
+  .cm .row{flex-direction:column;gap:4px}
+  .sl{left:calc(100% + 7px);top:-12px;bottom:-12px}.nxl{display:none}
+  @keyframes sweep{0%{left:0;opacity:1}82%{left:100%;opacity:1}100%{left:calc(100% + 7px);opacity:1}}
+  .cap{flex-direction:column;gap:4px}.cap .sp{margin-left:0}
+  .ttl p{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){.js .proj .scr:not(.end) .pl img{clip-path:none}.js .proj .scr .sl{left:calc(100% + 16px);opacity:1}}

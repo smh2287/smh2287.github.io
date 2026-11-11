@@ -1,0 +1,87 @@
+/* seam — Light Seam: The car rests on one mint light seam; the lit span marks where you are. */
+:root{--bg:#1F2021;--deep:#171819;--ink:#E8E8EA;--mid:#A9A9A9;--mute:#60656E;--dim:#4A4E55;--hair:#34363A;--mint:#1FFFE0;--sans:"Geist",system-ui,sans-serif;--mono:"Geist Mono",ui-monospace,monospace;--m:32px;--pw:min(72vw,calc((100svh - 260px)*2.4));--nmf:300 17px/1 var(--sans);--h1f:300 clamp(30px,3.4vw,48px)/1.05 var(--sans);--h2f:300 32px/1.1 var(--sans);--i:0;--n:6}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--ink);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+body{min-height:100svh;background:radial-gradient(ellipse 80% 70% at 50% 48%,var(--bg) 45%,var(--deep) 130%) fixed}
+a{color:inherit;text-decoration:none}
+img{display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+em{font-style:normal}
+.m{font:400 11px/1.5 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--mid)}
+.mint{color:var(--mint)}.mute{color:var(--mute)}
+::selection{background:var(--mint);color:#121213}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+
+.top{position:fixed;inset:0 0 auto;height:68px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);z-index:6}
+.nm{font:var(--nmf);letter-spacing:-.01em;color:var(--ink)}
+.top .r{color:var(--mute)}.top .r:hover{color:var(--ink)}
+.foot{position:fixed;inset:auto 0 0;height:60px;display:flex;justify-content:space-between;align-items:center;padding:0 var(--m);color:var(--dim);z-index:2;pointer-events:none}
+
+/* the plate: one wide car, centred, with air */
+.stage{position:relative;width:var(--pw)}
+.pl{position:relative;display:block;width:100%;aspect-ratio:12/5;overflow:hidden}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pl img.fit{inset:auto 0;top:50%;height:auto;transform:translateY(-50%);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 14%,#000 86%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}
+.pl img.fith{inset:0 auto;left:50%;width:auto;height:100%;transform:translateX(-50%);
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+
+/* home: the frame never moves, only the car changes */
+.home{overflow:hidden;height:100svh}
+.one{height:100svh;display:grid;place-items:center}
+.one .pl>img{opacity:0;transition:opacity .8s cubic-bezier(.3,0,.2,1)}
+.one .pl>img.on{opacity:1}
+.above{position:absolute;left:0;right:0;bottom:100%;padding-bottom:22px}
+.below{position:absolute;left:0;right:0;top:100%;padding-top:18px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:24px}
+
+/* project: one plate per screen, exactly centred */
+.scr{height:100svh;min-height:520px;display:grid;place-items:center;scroll-snap-align:center}
+html.snap{scroll-snap-type:y proximity}
+.ttl{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.ttl h1{font:var(--h1f);letter-spacing:-.03em;margin-top:10px}
+.ttl p{color:var(--mid);max-width:40ch;font-size:13.5px;line-height:1.55}
+.cap{display:flex;gap:22px;align-items:baseline}
+.cap .t{color:var(--mid);font-size:13.5px}
+.cm{width:100%;aspect-ratio:12/5;border:1px solid var(--hair);display:flex;flex-direction:column;justify-content:space-between;padding:28px 30px}
+.cm h2{font:var(--h2f);letter-spacing:-.025em;margin-top:8px}
+.cm .slot{display:flex;justify-content:space-between;gap:20px}
+.nx{display:flex;justify-content:space-between}
+.nx a:hover{color:var(--ink)}
+
+/* lock */
+.lock{position:fixed;inset:0;z-index:40;background:radial-gradient(ellipse 70% 60% at 50% 45%,var(--bg),var(--deep));display:grid;place-items:center}
+.lock[hidden]{display:none}
+.lock form{width:min(360px,calc(100vw - 48px));text-align:center}
+.lock h2{font:var(--h2f);letter-spacing:-.03em;margin:12px 0 46px}
+.lock input{width:100%;background:none;border:0;border-bottom:1px solid var(--hair);outline:0;color:var(--ink);font:400 18px/1 var(--mono);letter-spacing:.5em;text-align:center;padding:12px 0 14px;border-radius:0;margin-bottom:14px;caret-color:var(--mint)}
+.lock input:focus{border-color:var(--mint)}
+
+/* the seam: one horizon of light the plate rests on */
+.seam{position:absolute;top:100%;left:50%;width:100vw;height:1px;transform:translateX(-50%);pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(31,255,224,.22) 14%,rgba(31,255,224,.22) 86%,transparent)}
+.seam i{position:absolute;top:-.5px;height:2px;left:calc(50% - var(--pw)/2 + var(--pw)/var(--n)*var(--i));width:calc(var(--pw)/var(--n));
+  background:linear-gradient(90deg,var(--mint) 0,var(--mint) 84%,#FFE14A 91%,#FF3D6E 96%,#8B5CFF);transition:left .8s cubic-bezier(.3,0,.2,1)}
+.lab{position:absolute;top:100%;padding-top:18px;left:calc(var(--pw)/var(--n)*var(--i));white-space:nowrap;transition:left .8s cubic-bezier(.3,0,.2,1)}
+.lab span{display:block}
+/* studio shots stand on the seam */
+.pl img.fit{top:auto;bottom:0;transform:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%),linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(to bottom,transparent,#000 22%),linear-gradient(to right,transparent,#000 6%,#000 94%,transparent)}
+.pl img.fit[src*="ext-side"]{bottom:calc(var(--pw)/3.2*-.085)}
+.pl img.fit[src*="ext-front34"]{bottom:calc(var(--pw)/2.93*-.05)}
+
+@media (max-width:760px){
+  :root{--m:16px;--pw:calc(100vw - 32px)}
+  .top{height:56px}.foot{height:48px}.foot span:first-child{display:none}
+  .scr{height:auto;min-height:74svh;padding:120px 0}
+  .ttl{flex-direction:column;align-items:flex-start;gap:12px}
+  .cap{flex-direction:column;gap:4px}
+  .cm{aspect-ratio:auto;min-height:230px;padding:20px}
+  .cm .slot{flex-direction:column;gap:4px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){.lab{left:0}}
