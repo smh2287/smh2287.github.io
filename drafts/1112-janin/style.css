@@ -1,0 +1,171 @@
+/* Janin structure, Minho colours. Hand-written; no code from the reference. */
+:root{
+  --g:#1F2021; --g2:#212121; --g3:#2B2B2B; --g0:#171819;
+  --mint:#1FFFE0; --t:#E8E8EA; --gr:#A9A9A9; --mu:#60656E;
+  /* Janin's page is one centred 980px text column; at 1440 its left edge is the 15.5% axis everything hangs from */
+  --col:min(100vw - 32px, max(980px, 68vw));
+  --ax:calc((100vw - var(--col)) / 2);
+  /* plates are wider than the text column and overhang it on both sides (his: 89vw plates over a 68vw column).
+     Here the overhang is kept but the plate stops at 78vw so the car has air */
+  --pw:min(100vw - 32px, max(78vw, var(--col)));
+  --gut:calc((100vw - var(--pw)) / 2);
+  --ff:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--g);color:var(--t);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 12.5px/16px var(--ff);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+::selection{background:var(--mint);color:var(--g0)}
+[hidden]{display:none!important}
+.mint{color:var(--mint)}
+
+/* ---------- top nav: two tiny words, far apart ---------- */
+.nav{display:flex;justify-content:space-between;width:var(--col);margin:0 auto;padding:12px 0 0;font-size:13px;line-height:20px;color:var(--gr)}
+.nav a{transform:translateX(-44px);transition:color .2s}
+.nav a + a{transform:translateX(0)}
+.nav a:hover{color:var(--mint)}
+.nav--proj a{font-size:15px}
+
+/* ---------- home / about: one tall cropped car, one line of type ---------- */
+.home{position:relative;min-height:188vh;background:var(--g0);overflow:hidden}
+.home .bg{position:absolute;inset:0;z-index:0}
+.home .bg img{object-position:44% 0;filter:grayscale(1) contrast(1.16) brightness(.36)}
+.home .bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(31,32,33,.78) 0,rgba(31,32,33,.3) 20%,rgba(31,32,33,.12) 44%,rgba(23,24,25,.8) 78%,#171819 96%)}
+.home > *:not(.bg){position:relative;z-index:1}
+.id{position:absolute!important;top:42.5vh;left:var(--ax);right:0;display:flex;align-items:baseline;margin:0}
+.id h1{margin:0;font:700 27px/32px var(--ff);letter-spacing:0;white-space:nowrap}
+.id p{margin:0 0 0 64px;font:300 25px/32px var(--ff);color:var(--t);white-space:nowrap}
+.id .go{position:absolute;right:4.6vw;top:-12px;font:700 27px/32px var(--ff);color:var(--mint);transition:opacity .2s}
+.id .go:hover{opacity:.72}
+.cv{position:absolute!important;top:92vh;left:calc(var(--ax) + 306px);width:min(706px,calc(100vw - var(--ax) - 322px));margin:0;padding:0;list-style:none;color:var(--t)}
+.cv li{line-height:15px}
+.cv .y{display:inline-block;min-width:62px;color:var(--gr)}
+.cv a:hover{color:var(--mint)}
+.cv .more{display:inline-block;margin-top:30px;font-weight:700;font-size:11px}
+.contact{position:absolute!important;top:calc(92vh + 250px);left:var(--ax);display:flex;align-items:center;gap:22px;font:italic 400 15px/18px Georgia,"Times New Roman",serif;color:var(--gr)}
+.contact b{font-weight:400;letter-spacing:.75px;color:var(--t)}
+.contact .pr{width:34px;height:1px;background:linear-gradient(90deg,#ff5a5a,#ffd35a,#1FFFE0,#5a8bff,#b05aff);opacity:.9}
+.foot{position:absolute!important;left:var(--ax);bottom:14px;font-size:13px;line-height:18px;color:var(--mu)}
+.foot a{color:var(--gr)}
+.foot a:hover{color:var(--mint)}
+
+/* ---------- projects: giant word, short list, one stacked column ---------- */
+.ph{width:var(--col);margin:0 auto;padding:36px 0 122px}
+.ph h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.ph p{margin:22px 0 0;font-size:14px;line-height:17px;color:var(--gr)}
+.stack{width:var(--pw);margin:0 auto;padding:0;list-style:none}
+.stack li{position:relative;margin:0 0 8px}
+.stack a{display:block;aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
+.stack img{transition:filter .35s,opacity .7s;filter:brightness(.9)}
+.stack a:hover img,.stack a:focus-visible img{filter:brightness(1.04)}
+.tag{position:absolute;right:100%;top:0;width:calc(var(--gut) - 34px);max-width:150px;margin-right:16px;text-align:right;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none;transition:color .2s}
+.tag i{display:block;font-style:normal;color:var(--mu)}
+.tag b{display:block;font-weight:400;color:var(--t)}
+.stack li:hover .tag i,.fig:hover .tag i{color:var(--mint)}
+.end{width:var(--col);margin:0 auto;padding:70px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--gr)}
+.end a:hover{color:var(--mint)}
+
+/* ---------- project page ---------- */
+.pt{width:var(--col);margin:0 auto;padding:12px 0 0}
+.pt h1{margin:0;font:700 20px/24px var(--ff)}
+.tx{width:var(--col);margin:0 auto}
+.tx p{max-width:262px;margin:0;color:var(--gr)}
+.tx p + p{margin-top:16px}
+.tx p.w{max-width:470px}
+.tx p:first-of-type{color:var(--t)}
+.intro{padding:41px 0 0}
+.lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
+.lab + .tx{margin-top:-8px;padding-bottom:34px}
+.lab span{color:var(--mint)}
+.fig{position:relative;width:var(--pw);margin:0 auto 5px}
+.fig > a,.row a{display:block;overflow:hidden;background:var(--g2);cursor:zoom-in}
+.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.row a{aspect-ratio:12/5}
+.row.r43 a{aspect-ratio:4/3}
+.row.r32 a{aspect-ratio:3/2}
+.fig img,.row img{transition:opacity .7s}
+.credit{width:var(--col);margin:0 auto;padding:120px 0 0;font-size:11px;line-height:14px;color:var(--gr)}
+.credit p{margin:0}
+.credit p:first-child{margin-bottom:14px;color:var(--t)}
+.js .fx{opacity:0}
+.js .fx.in{opacity:1}
+
+/* comments: fixed last section, same axis, narrow, quiet */
+.cm{width:var(--col);margin:0 auto;padding:0 0 40px}
+.cm .note{max-width:300px;margin:0 0 44px;color:var(--mu)}
+.cm ol{max-width:486px;margin:0;padding:0;list-style:none}
+.cm li{display:grid;grid-template-columns:110px 1fr;gap:0 20px;padding:0 0 22px}
+.cm li span{font-size:11px;line-height:14px;color:var(--gr)}
+.cm li span i{font-style:normal;color:var(--mu)}
+.cm li p{margin:0;color:var(--t)}
+.cm li p u{text-decoration:none;color:var(--mint)}
+.cm form{max-width:486px;margin:26px 0 0;display:grid;grid-template-columns:110px 1fr;gap:10px 20px;align-items:start}
+.cm input,.cm textarea{width:100%;border:0;border-bottom:1px solid var(--g3);border-radius:0;background:transparent;color:var(--t);font:400 12.5px/16px var(--ff);padding:5px 0 7px;resize:none}
+.cm input::placeholder,.cm textarea::placeholder{color:var(--mu)}
+.cm input:focus,.cm textarea:focus{outline:0;border-bottom-color:var(--mint)}
+.cm button{grid-column:2;justify-self:start;border:0;background:none;padding:6px 0;color:var(--t);font:700 11px/14px var(--ff);cursor:pointer}
+.cm button:hover{color:var(--mint)}
+
+/* ---------- lightbox: the plate alone, with air ---------- */
+.lb{position:fixed;inset:0;z-index:50;background:var(--g0);display:grid;place-items:center;cursor:zoom-out}
+.lb img{width:auto;height:auto;max-width:78vw;max-height:76vh;object-fit:contain;background:none}
+.lb .c{position:absolute;left:var(--ax);top:14px;font-size:11px;line-height:14px;color:var(--gr)}
+.lb .c b{font-weight:400;color:var(--mint);margin-right:12px}
+.lb .x{position:absolute;right:4.6vw;top:14px;font-size:13px;color:var(--gr)}
+.lb button{position:absolute;top:0;bottom:0;width:11vw;border:0;background:none;color:var(--mu);font:300 22px var(--ff);cursor:pointer}
+.lb button:hover{color:var(--mint)}
+.lb .p{left:0}.lb .n{right:0}
+
+/* ---------- lock ---------- */
+.lock{position:fixed;inset:0;z-index:60;background:var(--g)}
+.lock form{position:absolute;top:42.5vh;left:var(--ax);right:16px;display:flex;align-items:baseline;flex-wrap:wrap;margin:0}
+.lock h2{margin:0;font:700 27px/32px var(--ff)}
+.lock label{margin:0 0 0 64px;font:300 25px/32px var(--ff);color:var(--gr)}
+.lock input{width:190px;margin-left:22px;border:0;border-bottom:1px solid var(--mu);border-radius:0;background:none;color:var(--mint);font:300 25px/32px var(--ff);letter-spacing:.2em;caret-color:var(--mint)}
+.lock input:focus{outline:0;border-bottom-color:var(--mint)}
+.lock p{flex-basis:100%;margin:26px 0 0 calc(64px + 9.2em);margin-left:0;color:var(--mu)}
+
+/* ---------- narrower screens: gutter tags fold into a one-line caption above the plate ---------- */
+@media (max-width:1280px){
+  .tag{position:static;width:auto;max-width:none;margin:0 0 6px;text-align:left;display:block;pointer-events:auto}
+  .tag i,.tag b{display:inline}
+  .tag i{margin-right:10px}
+  .stack li{margin-bottom:22px}
+  .fig{margin-bottom:5px}
+  .fig .tag{margin-top:14px}
+  .nav a{transform:none}
+}
+@media (max-width:760px){
+  .home{min-height:0;padding-bottom:90px}
+  .id{position:relative!important;top:auto;left:auto;right:auto;display:block;padding:36vh 16px 0}
+  .id h1{font-size:24px}
+  .id p{margin:2px 0 0;font-size:19px;line-height:26px;white-space:normal}
+  .id .go{position:static;display:inline-block;margin-top:34px;font-size:24px}
+  .cv{position:relative!important;top:auto;left:auto;width:auto;padding:22vh 16px 0}
+  .cv li{line-height:16px;margin-bottom:5px;padding-left:48px;text-indent:-48px}
+  .cv .y{min-width:48px;text-indent:0}
+  .cv .more{text-indent:0}
+  .contact{position:relative!important;top:auto;left:auto;margin:54px 16px 0;gap:14px}
+  .foot{left:16px;right:16px}
+  .ph{padding:26px 0 64px}
+  .ph h1{font-size:52px;line-height:60px}
+  .row{grid-template-columns:1fr}
+  .row a,.row.r43 a,.row.r32 a{aspect-ratio:auto}
+  .row img{height:auto}
+  .lab{padding-top:96px}
+  .cm li,.cm form{grid-template-columns:1fr}
+  .cm li{gap:6px 0}
+  .cm button{grid-column:1}
+  .lb img{max-width:calc(100vw - 32px)}
+  .lb button{display:none}
+  .lock form{left:16px;display:block}
+  .lock label{display:block;margin:2px 0 18px;font-size:19px}
+  .lock input{margin:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .js .fx{opacity:1}
+}
