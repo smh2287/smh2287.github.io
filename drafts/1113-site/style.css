@@ -1,0 +1,242 @@
+/* Janin structure, Minho colours. Hand-written; no code from the reference. */
+:root{
+  --g:#1F2021; --g2:#212121; --g3:#2B2B2B; --g0:#171819;
+  --mint:#1FFFE0; --t:#E8E8EA; --gr:#A9A9A9; --mu:#60656E;
+  /* Janin's page is one centred 980px text column; at 1440 its left edge is the 15.5% axis everything hangs from */
+  --col:min(100vw - 32px, max(980px, 68vw));
+  --ax:calc((100vw - var(--col)) / 2);
+  /* plates are wider than the text column and overhang it on both sides (his: 89vw plates over a 68vw column).
+     Here the overhang is kept but the plate stops at 78vw so the car has air */
+  --pw:min(100vw - 32px, max(78vw, var(--col)));
+  --gut:calc((100vw - var(--pw)) / 2);
+  --ff:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+}
+*{box-sizing:border-box}
+html{background:var(--g);color:var(--t);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 12.5px/16px var(--ff);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+::selection{background:var(--mint);color:var(--g0)}
+[hidden]{display:none!important}
+.mint{color:var(--mint)}
+
+/* ---------- top nav: two tiny words, far apart ---------- */
+.nav{display:flex;justify-content:space-between;width:var(--col);margin:0 auto;padding:12px 0 0;font-size:13px;line-height:20px;color:var(--gr)}
+.nav a{transform:translateX(-44px);transition:color .2s}
+.nav a + a{transform:translateX(0)}
+.nav a:hover{color:var(--mint)}
+.nav--proj a{font-size:15px}
+
+/* ---------- home / about: one tall cropped car, one line of type ---------- */
+.home{position:relative;min-height:188vh;background:var(--g0);overflow:hidden}
+.home .bg{position:absolute;inset:0;z-index:0}
+.home .bg img{object-position:44% 0;filter:grayscale(1) contrast(1.16) brightness(.36)}
+.home .bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(31,32,33,.78) 0,rgba(31,32,33,.3) 20%,rgba(31,32,33,.12) 44%,rgba(23,24,25,.8) 78%,#171819 96%)}
+.home > *:not(.bg){position:relative;z-index:1}
+.id{position:absolute!important;top:42.5vh;left:var(--ax);right:0;display:flex;align-items:baseline;margin:0}
+.id h1{margin:0;font:700 27px/32px var(--ff);letter-spacing:0;white-space:nowrap}
+.id p{margin:0 0 0 64px;font:300 25px/32px var(--ff);color:var(--t);white-space:nowrap}
+.id .go{position:absolute;right:4.6vw;top:-12px;font:700 27px/32px var(--ff);color:var(--mint);transition:opacity .2s}
+.id .go:hover{opacity:.72}
+.cv{position:absolute!important;top:92vh;left:calc(var(--ax) + 306px);width:min(706px,calc(100vw - var(--ax) - 322px));margin:0;padding:0;list-style:none;color:var(--t)}
+.cv li{line-height:15px}
+.cv .y{display:inline-block;min-width:62px;color:var(--gr)}
+.cv a:hover{color:var(--mint)}
+.cv .more{display:inline-block;margin-top:30px;font-weight:700;font-size:11px}
+.contact{position:absolute!important;top:calc(92vh + 250px);left:var(--ax);display:flex;align-items:center;gap:22px;font:italic 400 15px/18px Georgia,"Times New Roman",serif;color:var(--gr)}
+.contact b{font-weight:400;letter-spacing:.75px;color:var(--t)}
+.contact .pr{width:34px;height:1px;background:linear-gradient(90deg,#ff5a5a,#ffd35a,#1FFFE0,#5a8bff,#b05aff);opacity:.9}
+.foot{position:absolute!important;left:var(--ax);bottom:14px;font-size:13px;line-height:18px;color:var(--mu)}
+.foot a{color:var(--gr)}
+.foot a:hover{color:var(--mint)}
+
+/* ---------- projects: giant word, short list, one stacked column ---------- */
+.ph{width:var(--col);margin:0 auto;padding:36px 0 122px}
+.ph h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.ph p{margin:22px 0 0;font-size:14px;line-height:17px;color:var(--gr)}
+.stack{width:var(--pw);margin:0 auto;padding:0;list-style:none}
+.stack li{position:relative;margin:0 0 8px}
+.stack a{display:block;aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
+.stack img{transition:filter .35s,opacity .7s;filter:brightness(.9)}
+.stack a:hover img,.stack a:focus-visible img{filter:brightness(1.04)}
+.tag{position:absolute;right:100%;top:0;width:calc(var(--gut) - 34px);max-width:150px;margin-right:16px;text-align:right;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none;transition:color .2s}
+.tag i{display:block;font-style:normal;color:var(--mu)}
+.tag b{display:block;font-weight:400;color:var(--t)}
+.stack li:hover .tag i,.fig:hover .tag i{color:var(--mint)}
+.end{width:var(--col);margin:0 auto;padding:70px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--gr)}
+.end a:hover{color:var(--mint)}
+
+/* ---------- project page ---------- */
+.pt{width:var(--col);margin:0 auto;padding:12px 0 0}
+.pt h1{margin:0;font:700 20px/24px var(--ff)}
+.tx{width:var(--col);margin:0 auto}
+.tx p{max-width:262px;margin:0;color:var(--gr)}
+.tx p + p{margin-top:16px}
+.tx p.w{max-width:470px}
+.tx p:first-of-type{color:var(--t)}
+.intro{padding:41px 0 0}
+.lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
+.lab + .tx{margin-top:-8px;padding-bottom:34px}
+.lab span{color:var(--mint)}
+.fig{position:relative;width:min(var(--pw),calc(84vh * var(--ar,1.78)));margin:0 auto 5px}
+.fig .tag{right:calc(100% + (var(--pw) - 100%) / 2)}
+.fig > a,.row a{display:block;overflow:hidden;background:var(--g2);cursor:pointer}
+.fig > a img{height:auto}
+.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.row.c2{grid-template-columns:repeat(2,1fr)}
+.row a{aspect-ratio:var(--ar,2.2)}
+.row a img{transition:opacity .7s,filter .35s;filter:brightness(.94)}
+.row a:hover img,.row a:focus-visible img{filter:brightness(1.05)}
+.fig img,.row img{transition:opacity .7s}
+.credit{width:var(--col);margin:0 auto;padding:120px 0 0;font-size:11px;line-height:14px;color:var(--gr)}
+.credit p{margin:0}
+.credit p:first-child{margin-bottom:14px;color:var(--t)}
+.js .fx{opacity:0}
+.js .fx.in{opacity:1}
+
+
+/* tiny mint "locked" */
+.lk{font:400 11px/14px var(--ff);font-style:normal;color:var(--mint);letter-spacing:.02em;margin-left:10px;vertical-align:2px}
+.tag .lk{display:block;margin:2px 0 0}
+.unlocked .lk{display:none}
+.stack img.bl{filter:none;image-rendering:auto}
+
+/* works inside one project: a short index, then each work opens like a small title page */
+.toc{width:var(--col);margin:0 auto;padding:44px 0 0;list-style:none;font-size:11px;line-height:15px;color:var(--gr)}
+.toc .y{display:inline-block;min-width:34px;color:var(--mu)}
+.toc b{font-weight:400;color:var(--t)}
+.toc a:hover,.toc a:hover b{color:var(--mint)}
+.sub{width:var(--col);margin:0 auto;padding:230px 0 0;scroll-margin-top:-180px}
+.sub h2{margin:0;font:700 20px/24px var(--ff)}
+.sub p{max-width:262px;margin:10px 0 0;color:var(--t)}
+.sub ul{max-width:420px;margin:18px 0 0;padding:0;list-style:none;font-size:11px;line-height:14px;color:var(--gr)}
+.sub + .lab{padding-top:70px}
+
+/* film: a calm cover, "press to play" in place; the player loads only on click */
+.vid .yt{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;background:var(--g0);color:var(--t);cursor:pointer;overflow:hidden;font:inherit}
+.vid .yt img{filter:brightness(.5) saturate(.85);transition:opacity .7s,filter .35s}
+.vid .yt:hover img,.vid .yt:focus-visible img{filter:brightness(.62) saturate(.9)}
+.vid .yt span{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;pointer-events:none}
+.vid .yt b{display:block;font:400 16px/21px var(--ff);letter-spacing:.02em;color:var(--t)}
+.vid .yt:hover b,.vid .yt:focus-visible b{color:var(--mint)}
+.vid .yt em{display:block;margin-top:6px;font:400 11px/14px var(--ff);font-style:normal;color:var(--gr)}
+.vid iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--g0)}
+.fig.vid{width:var(--pw);margin-top:5px}
+.fig.vid .tag{right:100%}
+
+/* comments: fixed last section, same axis, narrow, quiet */
+.cm{width:var(--col);margin:0 auto;padding:0 0 40px;min-height:150px}
+.cm .note{max-width:300px;margin:0 0 44px;color:var(--mu)}
+.cm ol{max-width:486px;margin:0;padding:0;list-style:none}
+.cm li{display:grid;grid-template-columns:110px 1fr;gap:0 20px;padding:0 0 22px}
+.cm li.hid{opacity:.4}
+.cm li span{font-size:11px;line-height:14px;color:var(--gr);overflow-wrap:anywhere}
+.cm li span i{display:block;font-style:normal;color:var(--mu)}
+.cm li p{margin:0;color:var(--t);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm li p u{text-decoration:none;color:var(--mint)}
+.cm li small{grid-column:2;margin-top:6px;font-size:11px;color:var(--mu)}
+.cm .none{max-width:486px;margin:0;padding:0 0 22px 130px;color:var(--mu)}
+.cm form,.cm .sign{max-width:486px;margin:26px 0 0;display:grid;grid-template-columns:110px 1fr;gap:10px 20px;align-items:start}
+.cm .who{font-size:11px;line-height:14px;color:var(--gr);padding-top:6px;overflow-wrap:anywhere}
+.cm .who i{display:block;font-style:normal;color:var(--mu)}
+.cm .sign p{grid-column:2;margin:0;color:var(--gr)}
+.cm input,.cm textarea{width:100%;border:0;border-bottom:1px solid var(--g3);border-radius:0;background:transparent;color:var(--t);font:400 12.5px/16px var(--ff);padding:5px 0 7px;resize:none}
+.cm input{grid-column:2;font-size:11px;color:var(--gr)}
+.cm input::placeholder,.cm textarea::placeholder{color:var(--mu)}
+.cm input:focus,.cm textarea:focus{outline:0;border-bottom-color:var(--mint)}
+.cm .acts{grid-column:2;display:flex;gap:22px;align-items:baseline}
+.cm button{border:0;background:none;padding:6px 0;color:var(--t);font:700 11px/14px var(--ff);cursor:pointer}
+.cm button.q{font-weight:400;color:var(--mu)}
+.cm small button{padding:0;margin-right:14px;font-weight:400;color:var(--mu)}
+.cm button:hover{color:var(--mint)}
+.cm button:disabled{opacity:.5;cursor:default}
+
+/* ---------- viewer: one image alone over the dimmed page (reference behaviour, own code) ---------- */
+.vw{position:fixed;inset:0;z-index:50;background:rgba(18,19,20,.96);opacity:0;transition:opacity .35s}
+.vw.on{opacity:1}
+.vw .bx{position:absolute;left:8.4vw;right:8.4vw;top:14.5vh;height:80.5vh;display:grid;place-items:center;opacity:0;transition:opacity .5s}
+.vw .bx.in{opacity:1}
+.vw .bx img{width:auto;height:auto;max-width:100%;max-height:80.5vh;object-fit:contain;background:none}
+.vw button{position:absolute;border:0;padding:0;background:none;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.vw svg{display:block;fill:none;stroke:currentColor;stroke-width:1.1;vector-effect:non-scaling-stroke;overflow:visible}
+.vw .z{top:0;bottom:0;width:33vw;opacity:.9;transition:opacity .5s}
+.vw .z svg{position:absolute;top:50%;margin-top:-15px;width:17px;height:30px}
+.vw .zp{left:0}.vw .zp svg{left:50px}
+.vw .zn{right:0}.vw .zn svg{right:50px}
+.vw .x{top:50px;right:50px;width:18px;height:18px;z-index:2}
+.vw .x::before{content:"";position:absolute;inset:-16px}
+.vw .x svg{width:18px;height:18px}
+.vw button:hover,.vw button:focus-visible{color:var(--mint);outline:0}
+.vw .c{position:absolute;left:var(--ax);top:52px;margin:0;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none}
+.vw .c b{font-weight:400;color:var(--mint);margin-right:12px}
+.vw.one .z{display:none}
+html.vwo,html.vwo body{overflow:hidden}
+
+/* ---------- lock: one line, in place of the project ---------- */
+.gate{width:var(--col);margin:0 auto;padding:calc(42.5vh - 60px) 0 46vh;display:flex;align-items:baseline;flex-wrap:wrap}
+.gate label{font:300 25px/32px var(--ff);color:var(--gr)}
+.gate input{width:190px;margin-left:22px;border:0;border-bottom:1px solid var(--mu);border-radius:0;background:none;color:var(--mint);font:300 25px/32px var(--ff);letter-spacing:.2em;caret-color:var(--mint)}
+.gate input:focus{outline:0;border-bottom-color:var(--mint)}
+.gate p{flex:0 0 100%;max-width:none;margin:26px 0 0;color:var(--mu)}
+.gate.no input{border-bottom-color:var(--gr);animation:no .32s}
+.gate.no p{color:var(--gr)}
+@keyframes no{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.pt h1 .lk{font-weight:400}
+
+/* ---------- narrower screens: gutter tags fold into a one-line caption above the plate ---------- */
+@media (max-width:1280px){
+  .tag{position:static;width:auto;max-width:none;margin:0 0 6px;text-align:left;display:block;pointer-events:auto}
+  .tag i,.tag b{display:inline}
+  .tag i{margin-right:10px}
+  .stack li{margin-bottom:22px}
+  .fig{margin-bottom:5px}
+  .fig .tag{margin-top:14px;right:auto}
+  .tag .lk{display:inline;margin-left:10px}
+  .nav a{transform:none}
+}
+@media (max-width:760px){
+  .home{min-height:0;padding-bottom:90px}
+  .id{position:relative!important;top:auto;left:auto;right:auto;display:block;padding:36vh 16px 0}
+  .id h1{font-size:24px}
+  .id p{margin:2px 0 0;font-size:19px;line-height:26px;white-space:normal}
+  .id .go{position:static;display:inline-block;margin-top:34px;font-size:24px}
+  .cv{position:relative!important;top:auto;left:auto;width:auto;padding:22vh 16px 0}
+  .cv li{line-height:16px;margin-bottom:5px;padding-left:48px;text-indent:-48px}
+  .cv .y{min-width:48px;text-indent:0}
+  .cv .more{text-indent:0}
+  .contact{position:relative!important;top:auto;left:auto;margin:54px 16px 0;gap:14px}
+  .foot{left:16px;right:16px}
+  .ph{padding:26px 0 64px}
+  .ph h1{font-size:52px;line-height:60px}
+  .row,.row.c2{grid-template-columns:1fr}
+  .row a{aspect-ratio:auto}
+  .row img{height:auto}
+  .lab{padding-top:96px}
+  .cm li,.cm form{grid-template-columns:1fr}
+  .cm li{gap:6px 0}
+  .cm button{grid-column:1}
+  .cm .none{padding-left:0}
+  .cm form,.cm .sign{grid-template-columns:1fr}
+  .cm input,.cm .acts,.cm .sign p,.cm li small{grid-column:1}
+  .fig,.fig.vid{width:var(--pw)}
+  .sub{padding-top:150px}
+  .vw{background:var(--g0)}
+  .vw .bx{left:16px;right:16px;top:12vh;height:76vh}
+  .vw .bx img{max-height:76vh}
+  .vw .z{width:30vw}
+  .vw .zp svg{left:14px}.vw .zn svg{right:14px}
+  .vw .z svg{top:auto;bottom:26px;margin:0;width:12px;height:22px}
+  .vw .x{top:22px;right:20px}
+  .vw .c{left:16px;top:24px;right:60px}
+  .gate{display:block;padding-top:26vh}
+  .gate label{display:block;margin:0 0 14px;font-size:19px}
+  .gate input{margin:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .js .fx{opacity:1}
+  .vw,.vw .bx{transition:none!important}
+  .gate.no input{animation:none}
+}
