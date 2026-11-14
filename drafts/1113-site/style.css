@@ -80,19 +80,39 @@ img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
 .lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
 .lab + .tx{margin-top:-8px;padding-bottom:34px}
 .lab span{color:var(--mint)}
-.fig{position:relative;width:min(var(--pw),calc(84vh * var(--ar,1.78)));margin:0 auto 5px}
-.fig .tag{right:calc(100% + (var(--pw) - 100%) / 2)}
-.fig > a,.row a{display:block;overflow:hidden;background:var(--g2);cursor:pointer}
-.fig > a img{height:auto}
-.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
-.row.c2{grid-template-columns:repeat(2,1fr)}
+.fig{position:relative;width:var(--pw);margin:0 auto 5px}
+.fig .tag{right:100%}
+/* one grid: every block is exactly --pw wide; cells are fixed-aspect windows, the image is placed inside by its crop (CSS only) */
+.fig > a,.row a{position:relative;display:block;overflow:hidden;background:var(--g2);cursor:pointer}
+img.ci{position:absolute;max-width:none;height:auto}
+.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.row.c1{grid-template-columns:minmax(0,1fr)}
+.row.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.row.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .row a{aspect-ratio:var(--ar,2.2)}
+.tag .pn{display:block;font-style:normal;color:var(--mint);margin-top:2px}
+.row a.pa::after{content:"pano";position:absolute;right:8px;bottom:6px;font-size:10px;line-height:12px;color:var(--mint);pointer-events:none}
+/* project pages: text, labels, credits and comments hang from the same left edge as the images */
+body.proj{--col:var(--pw);--ax:var(--gut)}
+.stack a{position:relative}
 .row a img{transition:opacity .7s,filter .35s;filter:brightness(.94)}
 .row a:hover img,.row a:focus-visible img{filter:brightness(1.05)}
 .fig img,.row img{transition:opacity .7s}
 .credit{width:var(--col);margin:0 auto;padding:120px 0 0;font-size:11px;line-height:14px;color:var(--gr)}
 .credit p{margin:0}
 .credit p:first-child{margin-bottom:14px;color:var(--t)}
+.credit .ic{margin-top:18px}
+/* credits: per person, name -> roles */
+.ppl{max-width:620px;margin:18px 0 0}
+.ppl .wk{max-width:none;margin:14px 0 4px;color:var(--t);font-size:11px;line-height:14px}
+.ppl .wk:first-child{margin-top:0}
+.pp{list-style:none;margin:0!important;padding:0;max-width:none!important}
+.pp li{display:grid;grid-template-columns:170px 1fr;gap:0 20px;font-size:11px;line-height:15px;color:var(--gr)}
+.pp b{font-weight:400;color:var(--t)}
+.pp b a{transition:color .2s}
+.pp b a:hover{color:var(--mint)}
+.pp small a{margin-left:7px;color:var(--mu);font-size:10px}
+.pp small a:hover{color:var(--mint)}
 .js .fx{opacity:0}
 .js .fx.in{opacity:1}
 
@@ -172,6 +192,13 @@ img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
 .vw .c{position:absolute;left:var(--ax);top:52px;margin:0;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none}
 .vw .c b{font-weight:400;color:var(--mint);margin-right:12px}
 .vw.one .z{display:none}
+.vw .c em{font-style:normal;color:var(--mint);margin-left:14px}
+/* panorama mode: full height strip, panned left/right */
+.vw.pano .bx{left:0;right:0;display:block;overflow:hidden;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.vw.pano .bx.drag{cursor:grabbing}
+.vw.pano .bx img{position:absolute;left:0;top:0;width:auto;height:100%;max-width:none;max-height:none;will-change:transform;-webkit-user-drag:none;pointer-events:none}
+.vw.pano .bx img.ease{transition:transform .45s cubic-bezier(.3,.6,.3,1)}
+.vw.pano .z{width:110px;z-index:1}
 html.vwo,html.vwo body{overflow:hidden}
 
 /* ---------- lock: one line, in place of the project ---------- */
@@ -210,9 +237,10 @@ html.vwo,html.vwo body{overflow:hidden}
   .foot{left:16px;right:16px}
   .ph{padding:26px 0 64px}
   .ph h1{font-size:52px;line-height:60px}
-  .row,.row.c2{grid-template-columns:1fr}
-  .row a{aspect-ratio:auto}
-  .row img{height:auto}
+  .row,.row.c2,.row.c3,.row.c4{grid-template-columns:minmax(0,1fr)}
+  .pp li{grid-template-columns:1fr}
+  .pp li span{padding-bottom:4px}
+  .vw.pano .z{width:60px}
   .lab{padding-top:96px}
   .cm li,.cm form{grid-template-columns:1fr}
   .cm li{gap:6px 0}
@@ -220,7 +248,6 @@ html.vwo,html.vwo body{overflow:hidden}
   .cm .none{padding-left:0}
   .cm form,.cm .sign{grid-template-columns:1fr}
   .cm input,.cm .acts,.cm .sign p,.cm li small{grid-column:1}
-  .fig,.fig.vid{width:var(--pw)}
   .sub{padding-top:150px}
   .vw{background:var(--g0)}
   .vw .bx{left:16px;right:16px;top:12vh;height:76vh}
@@ -240,3 +267,4 @@ html.vwo,html.vwo body{overflow:hidden}
   .vw,.vw .bx{transition:none!important}
   .gate.no input{animation:none}
 }
+.proj .nav a{transform:none}

@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261113b",
+ "generated": "20261114d",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -21,6 +21,13 @@
        "caption": "Cabriolet",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0D_White__White__a020ec32.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2308,
+        "y": 0.15,
+        "w": 0.5271,
+        "h": 0.6833
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 4
       },
@@ -33,6 +40,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Presentation/Thumbnails/Thumb_.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -57,6 +71,13 @@
        "caption": "Colour, material, finish",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/CMF/CLE_Still_Setting_CMF.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1023,
+        "y": 0.0636,
+        "w": 0.7715,
+        "h": 0.7715
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 5
       }
@@ -76,6 +97,13 @@
        "caption": "Parts",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Exploded/CLE_Still_Setting_Others.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1686,
+        "y": 0.0273,
+        "w": 0.7189,
+        "h": 0.9273
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
       },
@@ -88,6 +116,13 @@
        "caption": "Surface check",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160154.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.008,
+        "y": 0.0,
+        "w": 0.992,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
       },
@@ -100,6 +135,13 @@
        "caption": "Rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160943.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1063,
+        "y": 0.0294,
+        "w": 0.8936999999999999,
+        "h": 0.8643
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
       },
@@ -112,6 +154,13 @@
        "caption": "UV",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160812.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1057,
+        "y": 0.0,
+        "w": 0.8943,
+        "h": 0.8937
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
       }
@@ -131,6 +180,13 @@
        "caption": "Athletic stance",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext1_White1__White__ee730e53.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0429,
+        "y": 0.1839,
+        "w": 0.9397,
+        "h": 0.6962
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 7
       },
@@ -143,6 +199,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext2_White1__White__f4e255c6.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1081,
+        "y": 0.1114,
+        "w": 0.8139,
+        "h": 0.8285
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 8
       },
@@ -155,6 +218,13 @@
        "caption": "Fluid elegance",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext3_White1__White__9f804383.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1026,
+        "y": 0.0865,
+        "w": 0.8974,
+        "h": 0.9135
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
       },
@@ -167,6 +237,13 @@
        "caption": "Rear",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext4_White1__White__181b23b3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0351,
+        "w": 0.8901,
+        "h": 0.9061
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
       },
@@ -179,6 +256,13 @@
        "caption": "Pure openness",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0A_White__White__734c414f.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1385,
+        "w": 0.9755,
+        "h": 0.7226
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 10
       },
@@ -191,6 +275,13 @@
        "caption": "High front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0B_White__White__baa1eee3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -210,6 +301,13 @@
        "caption": "Front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext5_White1__White__a20a53a2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.8845,
+        "h": 0.8552
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
       },
@@ -222,6 +320,13 @@
        "caption": "Tail lamp",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext6_White1__White__97b98bc3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.03,
+        "y": 0.0,
+        "w": 0.94,
+        "h": 0.9088
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
       },
@@ -234,6 +339,13 @@
        "caption": "Rear deck",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext7_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9406,
+        "h": 0.9094
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
       },
@@ -246,6 +358,13 @@
        "caption": "Door handle",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext8_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0442,
+        "y": 0.0,
+        "w": 0.9558,
+        "h": 0.9241
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
       }
@@ -265,6 +384,13 @@
        "caption": "Cabin",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int1_White1__White__f5806816.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0338,
+        "y": 0.1584,
+        "w": 0.9223,
+        "h": 0.6832
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 12
       },
@@ -277,6 +403,13 @@
        "caption": "Premium detail",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int2_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0508,
+        "y": 0.0,
+        "w": 0.9492,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 13
       },
@@ -289,6 +422,13 @@
        "caption": "Dashboard",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int4_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0254,
+        "y": 0.0,
+        "w": 0.9492,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 14
       },
@@ -301,6 +441,13 @@
        "caption": "Seats",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int3_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0508,
+        "y": 0.0,
+        "w": 0.9492,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
       },
@@ -313,6 +460,13 @@
        "caption": "Door panel",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int5_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
       },
@@ -325,6 +479,13 @@
        "caption": "Console",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int6_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
       },
@@ -337,6 +498,13 @@
        "caption": "Steering wheel",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int7_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
       },
@@ -349,6 +517,13 @@
        "caption": "Subtle ambience",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int9_White__White__dc8e8fe0.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0749,
+        "y": 0.0926,
+        "w": 0.8832,
+        "h": 0.6542
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 16
       },
@@ -361,6 +536,13 @@
        "caption": "Rear seats",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int8_White1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0507,
+        "y": 0.1013,
+        "w": 0.7172,
+        "h": 0.7969
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -380,6 +562,13 @@
        "caption": "Yellow, front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext1_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0423,
+        "y": 0.1006,
+        "w": 0.9407,
+        "h": 0.6432
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -392,6 +581,13 @@
        "caption": "Yellow, side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext2_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1075,
+        "y": 0.0489,
+        "w": 0.8146,
+        "h": 0.8146
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -404,6 +600,13 @@
        "caption": "Yellow, rear",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext3_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1187,
+        "y": 0.0889,
+        "w": 0.8078,
+        "h": 0.8078
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -416,6 +619,13 @@
        "caption": "Yellow, front close-up",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext5_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -428,6 +638,13 @@
        "caption": "Black cabin",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Int1_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -440,6 +657,13 @@
        "caption": "Black cockpit",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Int2_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -452,6 +676,13 @@
        "caption": "Black dashboard",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Int4_Yellow1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -471,6 +702,13 @@
        "caption": "Seaside",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A5.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0574,
+        "y": 0.0,
+        "w": 0.923,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 17
       },
@@ -483,6 +721,13 @@
        "caption": "Coast road",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.8486,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -495,6 +740,13 @@
        "caption": "Shore",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -507,6 +759,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -519,7 +778,7 @@
    "title": "2022 KIA : MDEK MOBILITY LINEUP",
    "locked": true,
    "comments_id": "pf2026-kia2022",
-   "image_count": 156,
+   "image_count": 154,
    "sections": [
     {
      "label": "MOCAMPER _FILM",
@@ -534,6 +793,13 @@
        "caption": "Two in the fog",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/1st (Intro_Outdoor)/Rendered/Picked/Intro_1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1366,
+        "y": 0.2105,
+        "w": 0.7421,
+        "h": 0.7031
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 19
       },
@@ -543,9 +809,16 @@
        "w": 2560,
        "h": 549,
        "alt": "MOCAMPER parked on a mountain ridge above the clouds",
-       "caption": "Film",
+       "caption": "Panorama",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/13,14th (Final Dest_Outdoor)/Render/Picked/Rework/Final_Wide_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.3812,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -570,40 +843,61 @@
        "caption": "Under the aurora",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/2nd (Intro_Outdoor)/Render/Picked/02_Camping.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.214,
+        "y": 0.3635,
+        "w": 0.786,
+        "h": 0.4795
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 20
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/04-mc-sketches.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/04-mc-sketches@1280.webp",
-       "w": 1651,
-       "h": 500,
+       "w": 1632,
+       "h": 499,
        "alt": "Concept sketches: exterior by Hawon Jang, interior by Heechan Kim",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:20",
        "crop": [
-        0.533,
-        0.114,
-        0.963,
-        0.426
+        0.5365,
+        0.1144,
+        0.9615,
+        0.4262
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 20
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/05-mc-dimensions.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/05-mc-dimensions@1280.webp",
-       "w": 1666,
-       "h": 400,
+       "w": 1632,
+       "h": 640,
        "alt": "Package drawings with dimensions and full-open plan",
        "caption": "Dimensions",
        "nas_source_path": "pdf:20",
        "crop": [
-        0.533,
-        0.54,
-        0.967,
-        0.79
+        0.5365,
+        0.52,
+        0.9615,
+        0.92
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 20
       }
@@ -623,6 +917,13 @@
        "caption": "Exploded view",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/3rd (Exploded_Indoor)/Rendered/Picked/Exploded_View01_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.02,
+        "y": 0.0,
+        "w": 0.98,
+        "h": 0.9618
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 21
       }
@@ -642,6 +943,13 @@
        "caption": "Exterior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Ext 1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0003,
+        "y": 0.0,
+        "w": 0.9993,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
       },
@@ -654,6 +962,13 @@
        "caption": "Doors open",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Ext 2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0683,
+        "y": 0.0,
+        "w": 0.9317,
+        "h": 0.9298
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
       },
@@ -666,6 +981,13 @@
        "caption": "Fully open",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Ext 3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
       },
@@ -678,6 +1000,13 @@
        "caption": "Interior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Int1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0271,
+        "w": 0.9787,
+        "h": 0.847
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": 22
       },
@@ -690,6 +1019,13 @@
        "caption": "Seats rotated",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Int 2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1352,
+        "w": 1.0,
+        "h": 0.8648
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
       },
@@ -702,6 +1038,13 @@
        "caption": "Seated figure",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/4th (Rigging_Indoor)/Picked/4W1_Rig Int 3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0803,
+        "w": 1.0,
+        "h": 0.8612
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
       }
@@ -721,6 +1064,13 @@
        "caption": "Exterior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Main/CMF_Exterior__Picked_Main__c0f6ae8a.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2525,
+        "y": 0.1874,
+        "w": 0.4948,
+        "h": 0.6216
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -733,6 +1083,13 @@
        "caption": "Interior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Main/CMF_Interior__Picked_Main__bd045ec8.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2441,
+        "y": 0.1325,
+        "w": 0.534,
+        "h": 0.6709
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -745,6 +1102,13 @@
        "caption": "Sandblasted black",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Car_Roughmetal_Black.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -757,6 +1121,13 @@
        "caption": "Sandblasted grey",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Car_RoughmetalGrey.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -769,6 +1140,13 @@
        "caption": "Recycled plastic",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Car_RecycledPlasticBlack.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -781,6 +1159,13 @@
        "caption": "Hex fabric",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Cloth_Hexa.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -793,6 +1178,13 @@
        "caption": "Carbon fibre",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Car_CarbonGrey.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       },
@@ -805,6 +1197,13 @@
        "caption": "Brushed green",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/5th (CMF_Indoor)/Picked_Colorchip/Car_MetalGreen.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1258,
+        "y": 0.0,
+        "w": 0.7484,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
       }
@@ -824,6 +1223,13 @@
        "caption": "Front three-quarter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/6th (ObjectExt_Outdoor)/Render/Picked/Studio_Ext_01_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2234,
+        "y": 0.1432,
+        "w": 0.5495,
+        "h": 0.8007
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
       },
@@ -836,6 +1242,13 @@
        "caption": "From above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/6th (ObjectExt_Outdoor)/Render/Picked/Studio_Ext_02_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2454,
+        "y": 0.1789,
+        "w": 0.4714,
+        "h": 0.6584
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
       },
@@ -848,6 +1261,13 @@
        "caption": "Rear three-quarter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/6th (ObjectExt_Outdoor)/Render/Picked/Studio_Ext_03_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2172,
+        "y": 0.0649,
+        "w": 0.5845,
+        "h": 0.8164
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
       }
@@ -867,6 +1287,13 @@
        "caption": "Open cabin",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/7th (ObjectInt_Outdoor)/Render/Studio_Int_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2011,
+        "y": 0.0477,
+        "w": 0.6206,
+        "h": 0.9052
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
       },
@@ -879,6 +1306,13 @@
        "caption": "Folding seat",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/7th (ObjectInt_Outdoor)/Render/Studio_Int_02.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1407,
+        "y": 0.0,
+        "w": 0.7219,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
       },
@@ -891,6 +1325,13 @@
        "caption": "Seat frames",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/7th (ObjectInt_Outdoor)/Render/Studio_Int_03.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1345,
+        "y": 0.0,
+        "w": 0.7219,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
       }
@@ -910,6 +1351,13 @@
        "caption": "Expedition variant",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/16th (Comparison_Outdoor)/Render/Picked/Compare_1_Basic_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2043,
+        "y": 0.0944,
+        "w": 0.6232,
+        "h": 0.9056
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
       },
@@ -922,6 +1370,13 @@
        "caption": "Side, with trailer",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/16th (Comparison_Outdoor)/Render/Picked/Compare_2_Side_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0671,
+        "w": 1.0,
+        "h": 0.9096
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
       },
@@ -934,6 +1389,13 @@
        "caption": "From above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/16th (Comparison_Outdoor)/Render/Picked/Compare_2_High_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1256,
+        "w": 0.8413,
+        "h": 0.854
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
       }
@@ -953,6 +1415,13 @@
        "caption": "River crossing",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/8th (WaterCrossing_Outdoor)/Render/Picked/WaterCross_01_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1827,
+        "y": 0.1309,
+        "w": 0.7202,
+        "h": 0.6684
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 27
       }
@@ -972,6 +1441,13 @@
        "caption": "Canyon",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/9th (CanyonSteering_Outdoor)/Render/Picked/Canyon_01_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1832,
+        "y": 0.1464,
+        "w": 0.5991,
+        "h": 0.7031
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
       },
@@ -984,6 +1460,13 @@
        "caption": "Path from above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/9th (CanyonSteering_Outdoor)/Render/Picked/Canyon_02.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1755,
+        "w": 1.0,
+        "h": 0.7509
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
       },
@@ -996,6 +1479,13 @@
        "caption": "Path, alternate",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/9th (CanyonSteering_Outdoor)/Render/Picked/Canyon_02_2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1894,
+        "w": 1.0,
+        "h": 0.6639
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1015,6 +1505,13 @@
        "caption": "XR driving",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/10th (CanyonSteering_Indoor)/Render/Picked/CanyonInt_01_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1686,
+        "y": 0.0167,
+        "w": 0.6626,
+        "h": 0.9664
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 29
       },
@@ -1027,6 +1524,13 @@
        "caption": "Headset stowage",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/10th (CanyonSteering_Indoor)/Render/Picked/CanyonInt_02_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2,
+        "y": 0.0,
+        "w": 0.6348,
+        "h": 0.9261
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 29
       },
@@ -1039,6 +1543,13 @@
        "caption": "Before retouch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/10th (CanyonSteering_Indoor)/Render/Picked/CanyonInt_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1686,
+        "y": 0.0167,
+        "w": 0.6624,
+        "h": 0.9664
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1058,6 +1569,13 @@
        "caption": "Base camp",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/11th (Base_Outdoor)/Render/Picked/AI/1/QWEN_2509_00029_.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1746,
+        "y": 0.1216,
+        "w": 0.6495,
+        "h": 0.7375
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 30
       },
@@ -1070,6 +1588,13 @@
        "caption": "Frunk kitchen",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/11th (Base_Outdoor)/Render/Picked/AI/2/Scene1_Reworkdf.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1008,
+        "y": 0.0,
+        "w": 0.7232,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 30
       },
@@ -1082,6 +1607,13 @@
        "caption": "Rear storage",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/11th (Base_Outdoor)/Render/Picked/BaseCamp_03_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1008,
+        "y": 0.0,
+        "w": 0.7232,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 30
       },
@@ -1094,6 +1626,13 @@
        "caption": "Camp interior",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/12th (Base_Indoor)/Render/Picked/Re/Camping Interior.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1651,
+        "y": 0.0,
+        "w": 0.6856,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
       },
@@ -1106,6 +1645,13 @@
        "caption": "Mobile desk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/12th (Base_Indoor)/Render/Picked/CampInt_02.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1781,
+        "y": 0.0,
+        "w": 0.6924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
       },
@@ -1118,6 +1664,13 @@
        "caption": "Open roof",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/12th (Base_Indoor)/Render/Picked/CampInt_03_Aft.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2654,
+        "y": 0.0,
+        "w": 0.6493,
+        "h": 0.9377
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
       }
@@ -1129,28 +1682,23 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/43-mc-pano-left.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/43-mc-pano-left@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover@1280.webp",
        "w": 2560,
-       "h": 1206,
-       "alt": "MOCAMPER on a mountain top above the clouds, Discovery livery",
-       "caption": "Above the clouds",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/13,14th (Final Dest_Outdoor)/Render/Picked/Split/Final_Wide_Aft_Tall2_Left.png",
+       "h": 549,
+       "alt": "MOCAMPER parked on a mountain ridge above the clouds",
+       "caption": "Panorama",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/13,14th (Final Dest_Outdoor)/Render/Picked/Rework/Final_Wide_Aft.png",
        "crop": null,
-       "evidence": "visual match",
-       "pdf_page": 32
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/44-mc-pano-right.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/44-mc-pano-right@1280.webp",
-       "w": 2560,
-       "h": 1206,
-       "alt": "Open MOCAMPER on a cliff edge, a volcano and drone swarm beyond",
-       "caption": "Cliff edge",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/13,14th (Final Dest_Outdoor)/Render/Picked/Split/Final_Wide_Aft_Tall2_Right.png",
-       "crop": null,
-       "evidence": "visual match",
-       "pdf_page": 33
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
+       "evidence": "name match",
+       "pdf_page": null
       }
      ],
      "videos": []
@@ -1168,6 +1716,13 @@
        "caption": "On stage",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/15th (Outro_Indoor)/Render/Picked/AI/Outro_Added.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 34
       }
@@ -1187,6 +1742,13 @@
        "caption": "City morning",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene1/hf_20260228_044818_f76afb4b-b55c-4f34-8df4-0cc3e3ee8979.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0734,
+        "y": 0.0,
+        "w": 0.9266,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 35
       },
@@ -1199,6 +1761,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/LS_Studio_Ext_2_0000__Action__77480b9f.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.13,
+        "y": 0.1208,
+        "w": 0.7583,
+        "h": 0.7583
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1223,40 +1792,61 @@
        "caption": "Opened up",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene2/4V1_SC2_CopyB.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1356,
+        "w": 1.0,
+        "h": 0.625
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 36
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/04-mv-sketches.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/04-mv-sketches@1280.webp",
-       "w": 1651,
-       "h": 500,
+       "w": 1632,
+       "h": 499,
        "alt": "Concept sketches: exterior by Dahye Jeong, interior by Heejae Lee",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:36",
        "crop": [
-        0.533,
-        0.114,
-        0.963,
-        0.426
+        0.5365,
+        0.1144,
+        0.9615,
+        0.4262
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 36
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/05-mv-dimensions.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/05-mv-dimensions@1280.webp",
-       "w": 1666,
-       "h": 400,
+       "w": 1632,
+       "h": 640,
        "alt": "Package drawings with dimensions and full-open side view",
        "caption": "Dimensions",
        "nas_source_path": "pdf:36",
        "crop": [
-        0.533,
-        0.54,
-        0.967,
-        0.79
+        0.5365,
+        0.52,
+        0.9615,
+        0.92
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 36
       }
@@ -1276,6 +1866,13 @@
        "caption": "Exterior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/A-__Rig_IMG__4d619a_1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0255,
+        "w": 1.0,
+        "h": 0.8628
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       },
@@ -1288,6 +1885,13 @@
        "caption": "Clamshells open",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/A-__Rig_IMG__4d619a_2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0823,
+        "w": 1.0,
+        "h": 0.8628
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       },
@@ -1300,6 +1904,13 @@
        "caption": "Tailgate",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/A-__Rig_IMG__4d619a_3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0272,
+        "w": 1.0,
+        "h": 0.8628
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       },
@@ -1312,6 +1923,13 @@
        "caption": "Interior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/B-__Rig_IMG__1638d0_1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9299
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       },
@@ -1324,6 +1942,13 @@
        "caption": "Seats rotated",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/B-__Rig_IMG__1638d0_2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9299
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       },
@@ -1336,6 +1961,13 @@
        "caption": "Furniture",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Rig/IMG/B-__Rig_IMG__1638d0_3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9299
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
       }
@@ -1355,6 +1987,13 @@
        "caption": "Exterior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_CMF_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1216,
+        "y": 0.1152,
+        "w": 0.7839,
+        "h": 0.6583
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1367,6 +2006,13 @@
        "caption": "Interior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_CMF_02.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0416,
+        "w": 1.0,
+        "h": 0.8398
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1379,6 +2025,13 @@
        "caption": "Dark grey paint",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_EX_DG.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0747,
+        "y": 0.0565,
+        "w": 0.9209,
+        "h": 0.9209
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1391,6 +2044,13 @@
        "caption": "Silver paint",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_EX_SV.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1403,6 +2063,13 @@
        "caption": "Recycled plastic",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_EX_RP.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1415,6 +2082,13 @@
        "caption": "Corduroy",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_INT_CD.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1427,6 +2101,13 @@
        "caption": "Mesh fabric",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_INT_WT.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       },
@@ -1439,6 +2120,13 @@
        "caption": "Veneer wood",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/CMF/IMG/4V1_INT_WG.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
       }
@@ -1458,6 +2146,13 @@
        "caption": "Front three-quarter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Ex1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1429,
+        "y": 0.1189,
+        "w": 0.7489,
+        "h": 0.7602
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
       },
@@ -1470,6 +2165,13 @@
        "caption": "Front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Ex2_Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
       },
@@ -1482,6 +2184,13 @@
        "caption": "Rear three-quarter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Ex3_Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1607,
+        "y": 0.1799,
+        "w": 0.67,
+        "h": 0.67
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
       }
@@ -1501,6 +2210,13 @@
        "caption": "Free layout",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Int1_Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.063,
+        "y": 0.0,
+        "w": 0.8835,
+        "h": 0.9235
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
       },
@@ -1513,6 +2229,13 @@
        "caption": "Facing seats",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Int2_Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0278,
+        "y": 0.0,
+        "w": 0.9463,
+        "h": 0.9485
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
       },
@@ -1525,6 +2248,13 @@
        "caption": "Front seats",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Studio/4V1_STD_Int3_Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0337,
+        "w": 0.9641,
+        "h": 0.9663
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
       }
@@ -1544,6 +2274,13 @@
        "caption": "Mobile office",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene4/hf_20260228_054559_659dd1ac-8706-417a-b352-b5c7edc2e198.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9784,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
       },
@@ -1556,6 +2293,13 @@
        "caption": "Loft",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene3/hf_20260228_042334_42e83ab3-04eb-453b-9dd0-fb52e48f39be.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0076,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
       },
@@ -1568,6 +2312,13 @@
        "caption": "Studio pass",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene4/4V1_Action4_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1587,6 +2338,13 @@
        "caption": "Golden field",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene8/hf_20260228_082743_ac0cd1b7-a787-4d65-bdc4-247d0375ab04.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
       },
@@ -1599,6 +2357,13 @@
        "caption": "Cabin cinema",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene6/hf_20260228_071232_ebe8cf42-01ab-4ca8-935e-ef318fa974f9.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0288,
+        "y": 0.0,
+        "w": 0.9329,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
       },
@@ -1611,6 +2376,13 @@
        "caption": "Metaverse",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene7/hf_20260228_075309_a5026ff1-0a93-4ca7-8ffb-8198b93f13d5.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9329,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
       }
@@ -1630,6 +2402,13 @@
        "caption": "Rooftop sunset",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene5/hf_20260228_062509_7d002ba1-fd8b-46b8-a4c5-7d7a5d37463c.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0954,
+        "w": 1.0,
+        "h": 0.7652
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 43
       },
@@ -1642,6 +2421,13 @@
        "caption": "Studio pass",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene5/4V1_Action5_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -1654,6 +2440,13 @@
        "caption": "Lounge, studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/Scene8/4V1_Action8_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1673,6 +2466,13 @@
        "caption": "In the museum",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Review/hf_20260227_082605_b325114b-791a-4cb2-9970-80a3d18139b5.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 44
       },
@@ -1685,6 +2485,13 @@
        "caption": "Family, studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Review/4V1_Review_Source.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1704,6 +2511,13 @@
        "caption": "By the forest",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/hf_20260216_085549_ffd0105e-a6dd-4a32-8da6-3996c34271ec.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0624,
+        "y": 0.1135,
+        "w": 0.9055,
+        "h": 0.6998
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 45
       },
@@ -1716,6 +2530,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1740,40 +2561,61 @@
        "caption": "Lakeside deck",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/hf_20260330_080418_b84ae1bf-a1a4-44cb-958b-adc10f719dbc.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0286,
+        "y": 0.0254,
+        "w": 0.9637,
+        "h": 0.8069
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 46
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/04-eg-sketches.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/04-eg-sketches@1280.webp",
-       "w": 1651,
-       "h": 500,
+       "w": 1632,
+       "h": 499,
        "alt": "Interior concept sketches by Seongho Lim",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:46",
        "crop": [
-        0.533,
-        0.114,
-        0.963,
-        0.426
+        0.5365,
+        0.1144,
+        0.9615,
+        0.4262
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 46
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/05-eg-dimensions.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/05-eg-dimensions@1280.webp",
-       "w": 1666,
-       "h": 432,
+       "w": 1632,
+       "h": 688,
        "alt": "Package drawings with dimensions and full-open plan",
        "caption": "Dimensions",
        "nas_source_path": "pdf:46",
        "crop": [
-        0.533,
-        0.52,
-        0.967,
-        0.79
+        0.5365,
+        0.49,
+        0.9615,
+        0.92
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 46
       }
@@ -1793,6 +2635,13 @@
        "caption": "Exterior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Ex1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9543
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       },
@@ -1805,6 +2654,13 @@
        "caption": "Doors open",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Ex2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9543
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       },
@@ -1817,6 +2673,13 @@
        "caption": "On the robots",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Ex3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0431,
+        "w": 1.0,
+        "h": 0.9543
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       },
@@ -1829,6 +2692,13 @@
        "caption": "Interior rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Int1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0338,
+        "w": 0.9439,
+        "h": 0.9384
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       },
@@ -1841,6 +2711,13 @@
        "caption": "Furniture",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Int2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0359,
+        "w": 0.9446,
+        "h": 0.9391
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       },
@@ -1853,6 +2730,13 @@
        "caption": "Modules out",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Rig/7V_Int3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9942
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
       }
@@ -1872,6 +2756,13 @@
        "caption": "Exterior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/CMF/7V1Chip_EXT (2).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1251,
+        "w": 1.0,
+        "h": 0.75
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 48
       },
@@ -1884,6 +2775,13 @@
        "caption": "Interior CMF",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/CMF/7V1Chip_Int (2).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1253,
+        "w": 1.0,
+        "h": 0.75
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 50
       }
@@ -1903,6 +2801,13 @@
        "caption": "Opened",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_5.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.093,
+        "y": 0.0843,
+        "w": 0.8417,
+        "h": 0.8314
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
       },
@@ -1915,6 +2820,13 @@
        "caption": "Closed",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9551,
+        "h": 0.9649
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
       },
@@ -1927,6 +2839,13 @@
        "caption": "Wheels",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9476,
+        "h": 0.9573
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
       },
@@ -1939,6 +2858,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0102,
+        "y": 0.0,
+        "w": 0.9898,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -1958,6 +2884,13 @@
        "caption": "Forest lounge",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/hf_20260403_055119_e80479b4-ff0f-4d8b-9cf4-53785fa2c4d4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0539,
+        "y": 0.0,
+        "w": 0.8931,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
       },
@@ -1970,6 +2903,13 @@
        "caption": "Kitchen",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Int_5.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0292,
+        "y": 0.0,
+        "w": 0.9404,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
       },
@@ -1982,6 +2922,13 @@
        "caption": "Steps",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Int_2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0682,
+        "y": 0.0489,
+        "w": 0.8481,
+        "h": 0.9019
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
       },
@@ -1994,6 +2941,13 @@
        "caption": "Lounge chair",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Int_4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9404,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2006,6 +2960,13 @@
        "caption": "Skylight",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Int_3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2018,18 +2979,13 @@
        "caption": "From above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/Int_6.png",
        "crop": null,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/24-eg-ext-front.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/24-eg-ext-front@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "EGONEST closed, high front view",
-       "caption": "High front",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7V1/Still/Studio/7V_Ex_1.png",
-       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2049,6 +3005,13 @@
        "caption": "Globe Orbiter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W2/Still/hf_20260303_143317_cc1e1b42-1a2e-4452-89b9-5be53d6f4520.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0934,
+        "w": 1.0,
+        "h": 0.9066
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 52
       },
@@ -2061,6 +3024,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W2/Still/Still_white_4W2_closed_seq.0007.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0076,
+        "w": 1.0,
+        "h": 0.9924
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2073,6 +3043,13 @@
        "caption": "Moss field",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W2/Still/hf_20260216_095553_a51aa402-bc64-4018-b64f-1343c5cfdc7e.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2085,6 +3062,13 @@
        "caption": "Snow",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W2/Still/스크린샷 2025-01-05 151034.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1319,
+        "y": 0.102,
+        "w": 0.7488,
+        "h": 0.8143
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2097,6 +3081,13 @@
        "caption": "Tessa Plate",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/Still_white_0_seq.0000.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0199,
+        "y": 0.0,
+        "w": 0.8387,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2109,6 +3100,13 @@
        "caption": "Tessa Plate, lawn",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_090953_0f2b780d-3f1b-486b-8ad1-94255c7609d7.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2121,6 +3119,13 @@
        "caption": "Tessa Plate, sand",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_091632_f79a7c15-19d5-46dc-bcaf-df26d0a11e15.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2133,6 +3138,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W2/Still/hf_20260216_095553_80150afd-595d-4c6c-b302-fa2b1980298f.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2157,6 +3169,13 @@
        "caption": "Forest road",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4P/Still/hf_20260303_142100_3d414bb2-ffaf-4c2c-9a3a-e703f4708891.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0667,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 53
       },
@@ -2169,6 +3188,13 @@
        "caption": "Courtyard",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4P/Still/hf_20260216_093202_255fca4e-e333-4168-a8f7-44919098cfea.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0076,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2181,6 +3207,13 @@
        "caption": "Hillside",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4P/Still/Still_Hillside_4P_seq.0025.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2193,6 +3226,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4P/Still/Still_white_4P_etc_seq_0910 (2).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2205,6 +3245,13 @@
        "caption": "Allround Shipper",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0003.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2217,6 +3264,13 @@
        "caption": "City plaza",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0013.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2229,6 +3283,13 @@
        "caption": "Forest road",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/hf_20260216_095025_582816b6-3441-41ad-8889-b87451815876.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2241,6 +3302,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4P/Still/hf_20260303_142100_d0728ed3-61b8-4ee4-8ac1-86f773fbd8b9.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.1229,
+        "y": 0.0,
+        "w": 0.7542,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2265,6 +3333,13 @@
        "caption": "In the park",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0V/Still/hf_20260303_143720_d9775fc7-2370-43a6-8ab5-90250b26a8b4.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 54
       },
@@ -2277,6 +3352,13 @@
        "caption": "Manimo, folded",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/1V/Still/Still_white_1V_closed_seq_0910 (3).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2289,6 +3371,13 @@
        "caption": "Manimo, sand",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/1V/Still/Vishow_still_1V_etc_seq_0910 (1).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2301,6 +3390,13 @@
        "caption": "Riding",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/1V/Still/hf_20260216_084928_0fb92ec8-36ae-46a0-b1e1-ab2c7310db62.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.8927
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2313,6 +3409,13 @@
        "caption": "Tessa Cube",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0V/Still/hf_20260216_095251_2ba6a26e-3281-4064-a3a5-00cc3bf60b5b.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0256,
+        "w": 1.0,
+        "h": 0.7464
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2330,6 +3433,13 @@
         1.0,
         0.925
        ],
+       "view_crop": {
+        "x": 0.089,
+        "y": 0.0,
+        "w": 0.8091,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2347,6 +3457,13 @@
         1.0,
         0.925
        ],
+       "view_crop": {
+        "x": 0.0346,
+        "y": 0.0,
+        "w": 0.8091,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2366,6 +3483,13 @@
        "caption": "Tesseract",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-02 205604.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.249,
+        "y": 0.0,
+        "w": 0.751,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": 55
       },
@@ -2378,6 +3502,13 @@
        "caption": "Point",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-04 181205.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1234,
+        "w": 1.0,
+        "h": 0.8074
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": 55
       },
@@ -2390,6 +3521,13 @@
        "caption": "Hypercube",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-02 193337.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.039,
+        "y": 0.0,
+        "w": 0.922,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": 55
       },
@@ -2402,6 +3540,13 @@
        "caption": "Logo",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-02 205727.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0929,
+        "y": 0.0207,
+        "w": 0.9071,
+        "h": 0.9793
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2414,6 +3559,13 @@
        "caption": "Storyboard 1",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1245.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0005,
+        "y": 0.0,
+        "w": 0.9995,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2426,6 +3578,13 @@
        "caption": "Storyboard 2",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1249.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0005,
+        "y": 0.0,
+        "w": 0.9995,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2438,20 +3597,34 @@
        "caption": "Storyboard 3",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1252.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9995,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/08-logo-film-cover.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/08-logo-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon@1280.webp",
        "w": 2560,
-       "h": 1076,
-       "alt": "Glowing KIA logo on black",
-       "caption": "Film",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-02 205718.png",
+       "h": 1072,
+       "alt": "Nested hexagon outline",
+       "caption": "Hypercube",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/스크린샷 2025-01-02 193337.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1269,
+        "y": 0.0,
+        "w": 0.7444,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
-       "pdf_page": null
+       "pdf_page": 55
       }
      ],
      "videos": [
@@ -2479,6 +3652,13 @@
         0.497,
         0.495
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 56
       },
@@ -2491,6 +3671,13 @@
        "caption": "Residence",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Home/스크린샷 2025-01-04 210343.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1062,
+        "w": 1.0,
+        "h": 0.804
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
       },
@@ -2503,6 +3690,13 @@
        "caption": "River barge",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Deck/스크린샷 2025-01-04 214251.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0567,
+        "w": 1.0,
+        "h": 0.8899
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
       },
@@ -2515,6 +3709,13 @@
        "caption": "Beach stay",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Beach/스크린샷 2025-01-04 203127.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1035,
+        "w": 1.0,
+        "h": 0.8965
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
       },
@@ -2527,6 +3728,13 @@
        "caption": "Residence, road",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Home/스크린샷 2025-01-04 210429.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9151
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2539,6 +3747,13 @@
        "caption": "Canyon",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Canyon/스크린샷 2025-01-04 202257.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2551,6 +3766,13 @@
        "caption": "Coastline",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Beach/스크린샷 2025-01-04 202843.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0016,
+        "w": 1.0,
+        "h": 0.9984
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2568,6 +3790,13 @@
         0.497,
         0.55
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 57
       },
@@ -2585,6 +3814,13 @@
         0.745,
         0.67
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.2469,
+        "w": 1.0,
+        "h": 0.5061
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 57
       },
@@ -2597,6 +3833,13 @@
        "caption": "City model",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/MDEK/MDEK 2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1472,
+        "y": 0.0,
+        "w": 0.7444,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 57
       },
@@ -2609,6 +3852,13 @@
        "caption": "City model, detail",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/MDEK/MDEK 3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1359,
+        "y": 0.0,
+        "w": 0.7444,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2621,6 +3871,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/Deck/스크린샷 2025-01-04 214323.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0521,
+        "y": 0.0,
+        "w": 0.85,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2645,6 +3902,13 @@
        "caption": "Giant hangar",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/hf_20260217_075830_82847478-7550-406c-8592-1ad5f87ef8a9.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1958,
+        "w": 0.9401,
+        "h": 0.684
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 58
       },
@@ -2657,6 +3921,13 @@
        "caption": "Robot dog",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/hf_20260217_080648_995f6c9e-7f8e-4f37-9e56-1860a9ad3e46.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2669,6 +3940,13 @@
        "caption": "Landing deck",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/hf_20260217_081135_200d2fed-0cdb-4047-a765-79e1e83ec370.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2681,6 +3959,13 @@
        "caption": "Hangar hall",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/스크린샷 2025-01-04 221947.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.8915,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2693,6 +3978,13 @@
        "caption": "XR interface",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/XR KIA 4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2705,6 +3997,13 @@
        "caption": "XR hands",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/XR KIA3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2717,6 +4016,13 @@
        "caption": "Hangar gate",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/스크린샷 2025-01-04 221055.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0207,
+        "w": 1.0,
+        "h": 0.8078
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       },
@@ -2729,6 +4035,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/hf_20260305_090015_0cd1ab66-fdca-4318-97da-a44389082887.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.1229,
+        "y": 0.0,
+        "w": 0.7542,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
       }
@@ -2761,6 +4074,13 @@
        "caption": "Lineup",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/All/Still/LINEUP STILL DAY (5).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.3813,
+        "w": 1.0,
+        "h": 0.5555
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 59
       },
@@ -2773,6 +4093,13 @@
        "caption": "Lineup, low",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/All/Still/LINEUP STILL DAY (2).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -2785,6 +4112,13 @@
        "caption": "Platform",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/360Ambulance/Still/AMBULANCE STYLE STILL (3).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.7427
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2804,6 +4138,13 @@
        "caption": "Tunnel",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene1/FB_Action1_AI2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0561,
+        "y": 0.0,
+        "w": 0.9373,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 60
       },
@@ -2816,6 +4157,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene1/FB_Action1_AI3.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0916,
+        "y": 0.0,
+        "w": 0.7944,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -2840,6 +4188,13 @@
        "caption": "Folded",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene2/FB_Action2_AI1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1779,
+        "w": 1.0,
+        "h": 0.625
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
       },
@@ -2857,6 +4212,13 @@
         0.783,
         0.424
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 61
       },
@@ -2869,6 +4231,13 @@
        "caption": "Concept render",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/Sketch/스크린샷 2026-02-24 124551.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0845,
+        "w": 1.0,
+        "h": 0.831
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
       },
@@ -2886,6 +4255,13 @@
         0.967,
         0.74
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0002,
+        "w": 1.0,
+        "h": 0.9997
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 61
       }
@@ -2905,6 +4281,13 @@
        "caption": "Rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/Rig/IMG/FA1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0349,
+        "w": 1.0,
+        "h": 0.831
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
       },
@@ -2917,6 +4300,13 @@
        "caption": "Side view",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/CMF/IMG/FB_EX_01 - Copy.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1293,
+        "y": 0.1354,
+        "w": 0.7417,
+        "h": 0.6179
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
       },
@@ -2929,6 +4319,13 @@
        "caption": "Silver paint",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/CMF/IMG/FB_EX_SV.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.132,
+        "y": 0.0335,
+        "w": 0.8265,
+        "h": 0.9116
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
       },
@@ -2941,6 +4338,13 @@
        "caption": "Gunmetal",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/CMF/IMG/FB_EX_GM.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0268,
+        "w": 0.8266,
+        "h": 0.9117
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
       },
@@ -2953,6 +4357,13 @@
        "caption": "Suede",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/CMF/IMG/FB_EX_SD.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9067,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
       }
@@ -2972,6 +4383,13 @@
        "caption": "Street rank",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene3/hf_20260228_233513_11f2e730-ecd1-4d26-bc6e-fdf59cfd2353.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9492
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
       },
@@ -2984,6 +4402,13 @@
        "caption": "Bus stop",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene6/hf_20260303_105337_b99b8ce7-7587-4380-aa4b-5641b68f5fe2.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
       },
@@ -2996,6 +4421,13 @@
        "caption": "Out of the city",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene7/hf_20260301_011014_d7dda69f-30ee-4d82-b4f0-1a0e90082612.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
       },
@@ -3008,6 +4440,13 @@
        "caption": "Cornering",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene5/hf_20260301_004321_c03bdb61-d953-40f0-a58f-b7d1d623bf4a.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3020,6 +4459,13 @@
        "caption": "Sunny corner",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene5/hf_20260303_105031_59cefa87-de7a-4f97-9276-8ece5d8b818d.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3032,6 +4478,13 @@
        "caption": "Studio pass",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Action/Scene4/FB_Action4_1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0076,
+        "w": 1.0,
+        "h": 0.9924
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3051,6 +4504,13 @@
        "caption": "In the park",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Review/hf_20260227_085153_b909e866-e305-4819-a3b2-6a39da5a38ff.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9532,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 64
       },
@@ -3063,6 +4523,13 @@
        "caption": "Studio pass",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/FoldableBike/3. Scene/Review/FB_Rvw_Source.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3082,6 +4549,13 @@
        "caption": "Blue hour",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/hf_20260224_043453_5c96780b-7918-4241-aea0-1b7f12fa2645.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0532,
+        "y": 0.0509,
+        "w": 0.9468,
+        "h": 0.8672
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 65
       },
@@ -3094,6 +4568,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/hf_20260224_043453_045e4095-902e-48c4-a4d1-68ddbb525090.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.2501,
+        "y": 0.0514,
+        "w": 0.7499,
+        "h": 0.7557
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3106,6 +4587,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/스크린샷 2025-01-04 150559.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.101,
+        "w": 1.0,
+        "h": 0.7688
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3118,6 +4606,13 @@
        "caption": "Open door",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/스크린샷 2025-01-04 150610.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1278,
+        "w": 1.0,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3130,6 +4625,13 @@
        "caption": "Rear",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/스크린샷 2025-01-04 150546.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1029,
+        "w": 1.0,
+        "h": 0.7671
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3142,6 +4644,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/스크린샷 2026-02-24 133310.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.029,
+        "w": 1.0,
+        "h": 0.971
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3154,6 +4663,13 @@
        "caption": "Stage",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Still/image__Still__817965c2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3166,6 +4682,13 @@
        "caption": "Rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Limo/Rig/스크린샷 2025-01-04 170434.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0407,
+        "y": 0.1316,
+        "w": 0.8196,
+        "h": 0.8684
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3190,6 +4713,13 @@
        "caption": "Oasis",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Ground Surfer/Still/hf_20260303_140305_dc9fe817-a7bb-4794-afb8-24d5b460666e.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 66
       },
@@ -3202,6 +4732,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Ground Surfer/Still/G SURFER UX STILL (5).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3214,6 +4751,13 @@
        "caption": "Riding",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Ground Surfer/Still/G SURFER UX STILL (1).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.25,
+        "w": 1.0,
+        "h": 0.75
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3226,6 +4770,13 @@
        "caption": "Pair",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Ground Surfer/Still/G SURFER UX STILL (4).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3238,6 +4789,13 @@
        "caption": "Convoy",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Ground Surfer/Still/G SURFER UX STILL (6).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3250,6 +4808,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/H-Drum/Still/Rectangle 460.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0086,
+        "y": 0.0,
+        "w": 0.9743,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3262,6 +4827,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/H-Drum/Still/Rectangle 37.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1885,
+        "w": 1.0,
+        "h": 0.6923
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3274,6 +4846,13 @@
        "caption": "Two units",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/H-Drum/Still/스크린샷 2025-01-04 055246.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.87
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3286,6 +4865,13 @@
        "caption": "Wheel",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/H-Drum/Still/스크린샷 2025-01-04 055133.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0298,
+        "y": 0.1278,
+        "w": 0.8824,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3314,6 +4900,13 @@
        "caption": "Lunar base",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/hf_20260303_141334_ea58bf28-398e-49ba-b63d-5425d6043bf7.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0159,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 67
       },
@@ -3326,6 +4919,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Lunar PM/Still/스크린샷 2025-01-04 142003.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0948,
+        "y": 0.133,
+        "w": 0.7472,
+        "h": 0.7865
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3338,6 +4938,13 @@
        "caption": "Moonwalk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/hf_20260303_141334_c9df65ac-c7dc-4a1c-bf89-14eb8330133a.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3350,6 +4957,13 @@
        "caption": "Earthrise",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/hf_20260303_141545_271b142c-8eed-472f-9a04-3513f49506f7.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3362,6 +4976,13 @@
        "caption": "Lunar PM",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Lunar PM/Still/스크린샷 2025-01-04 141911.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.011,
+        "y": 0.108,
+        "w": 0.989,
+        "h": 0.7628
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3374,6 +4995,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/R.KICKS STYLE STILL (12).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0209,
+        "w": 1.0,
+        "h": 0.75
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3386,6 +5014,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/R.KICKS STYLE STILL (15).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.357,
+        "w": 1.0,
+        "h": 0.5687
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3398,6 +5033,13 @@
        "caption": "Folded and standing",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/스크린샷 2025-01-04 142854.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1276,
+        "w": 0.9993,
+        "h": 0.8006
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3410,6 +5052,13 @@
        "caption": "Accent light",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/RoboKicks/Still/스크린샷 2025-01-04 142901.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1208,
+        "w": 1.0,
+        "h": 0.8041
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3438,6 +5087,13 @@
        "caption": "Boardwalk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Stick Bike/Still/hf_20260303_135657_43de1085-57a4-4977-8973-4812283a362b.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.072,
+        "w": 1.0,
+        "h": 0.9066
+       },
+       "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 68
       },
@@ -3450,6 +5106,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Stick Bike/Still/스크린샷 2025-01-04 054544.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1101,
+        "y": 0.1278,
+        "w": 0.7458,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3462,6 +5125,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Stick Bike/Still/스크린샷 2025-01-04 054456.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1278,
+        "w": 1.0,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3474,6 +5144,13 @@
        "caption": "Wheel",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Stick Bike/Still/스크린샷 2025-01-04 054524.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1278,
+        "w": 1.0,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3486,6 +5163,13 @@
        "caption": "Folded",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Stick Bike/Still/스크린샷 2025-01-04 054800.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1278,
+        "w": 1.0,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3498,6 +5182,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Lounge/Still/hf_20260224_042051_73d56966-41d3-4cc3-b6c6-b796c04c3793.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3510,6 +5201,13 @@
        "caption": "Dusk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Lounge/Still/hf_20260224_042051_2ecdc0f8-388c-4efd-88eb-0bfcfa61a873.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9085,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3522,6 +5220,13 @@
        "caption": "Closed",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Lounge/Still/스크린샷 2026-02-19 185102.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3534,6 +5239,13 @@
        "caption": "Open",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/Micro Lounge/Still/스크린샷 2026-02-19 185113.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0744,
+        "w": 1.0,
+        "h": 0.9256
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3567,6 +5279,13 @@
         0.775,
         0.66
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 69
       },
@@ -3579,6 +5298,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/360Ambulance/Still/스크린샷 2025-01-04 151215.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1153,
+        "y": 0.1278,
+        "w": 0.7458,
+        "h": 0.7458
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3591,6 +5317,13 @@
        "caption": "Front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/360Ambulance/Still/스크린샷 2025-01-04 151152.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1264,
+        "w": 1.0,
+        "h": 0.7472
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3603,6 +5336,13 @@
        "caption": "Chassis",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/360Ambulance/Still/AMBULANCE STYLE STILL (5).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.3662,
+        "w": 1.0,
+        "h": 0.5604
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3627,6 +5367,13 @@
        "caption": "Rooftop",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 144508.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9186
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": 70
       },
@@ -3639,6 +5386,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/hf_20260217_094023_e8a55849-2e47-43c7-a40b-59cee7a1c49e.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3651,6 +5405,13 @@
        "caption": "Overview",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 141155.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0209,
+        "w": 1.0,
+        "h": 0.9791
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3663,6 +5424,13 @@
        "caption": "Revolving stand",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 144942.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3675,6 +5443,13 @@
        "caption": "Sunset",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 164459.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.01,
+        "y": 0.0,
+        "w": 0.9698,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3687,6 +5462,13 @@
        "caption": "Mode select",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 164420.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0306,
+        "y": 0.0,
+        "w": 0.9694,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3699,6 +5481,13 @@
        "caption": "Night mode",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/스크린샷 2025-01-04 164527.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3711,6 +5500,13 @@
        "caption": "UX flow",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/XR/Plan/vr - ux flow 1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.038,
+        "w": 1.0,
+        "h": 0.8053
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3728,7 +5524,7 @@
    "title": "2021 KIA : CPS MOBILITY",
    "locked": true,
    "comments_id": "pf2026-kia2021",
-   "image_count": 58,
+   "image_count": 55,
    "sections": [
     {
      "label": "IAC 2021 KIA / LINEUP",
@@ -3743,6 +5539,13 @@
        "caption": "Lineup at dusk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/Total/hf_20260303_130305_a8c48b91-ceba-493d-8344-25e861cf6d3c.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3755,6 +5558,13 @@
        "caption": "Studio lineup",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/Total/IAC2021KIA_Total1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0076,
+        "w": 1.0,
+        "h": 0.9924
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3767,6 +5577,13 @@
        "caption": "Waterfront",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/Total/hf_20260303_130053_017ad659-f6bc-46e6-ac75-843133a514a2.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3779,6 +5596,13 @@
        "caption": "Sunset",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/Total/hf_20260303_130053_e2f366a1-6fd3-47f9-8ec2-63dfd6cc90ad.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3798,6 +5622,13 @@
        "caption": "V2",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene4/hf_20260303_121301_471fce9a-4f4d-4f6a-94ee-4935a0e84a20.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.3272,
+        "w": 1.0,
+        "h": 0.625
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3810,6 +5641,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene4/V2_Action4_AI1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1292,
+        "y": 0.0,
+        "w": 0.8708,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3834,23 +5672,37 @@
        "caption": "Street, from above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene3/V2_Activity3_AI2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.124,
+        "w": 1.0,
+        "h": 0.625
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/04-v2-interior-sketches.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/04-v2-interior-sketches@1280.webp",
-       "w": 2494,
-       "h": 780,
+       "w": 2449,
+       "h": 750,
        "alt": "Interior design concept sketches by Seongho Lim and Minho Song",
        "caption": "Interior concepts",
        "nas_source_path": "02_Working/Shared/Portfolio_Page_Exports/0.75/03IAC21K-01V2-02___설명__0_75__af8d6568.png",
        "crop": [
-        0.532,
-        0.105,
-        0.965,
-        0.43
+        0.5365,
+        0.1142,
+        0.9616,
+        0.4267
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "page-export crop",
        "pdf_page": null
       },
@@ -3868,6 +5720,13 @@
         0.965,
         0.76
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "page-export crop",
        "pdf_page": null
       }
@@ -3887,6 +5746,13 @@
        "caption": "Body rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Rig/IMG/스크린샷 2026-02-25 093043.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0031,
+        "y": 0.0,
+        "w": 0.9969,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3899,6 +5765,13 @@
        "caption": "Cabin rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Rig/IMG/스크린샷 2026-02-25 093443.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -3911,6 +5784,13 @@
        "caption": "Seat rig",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Rig/IMG/스크린샷 2026-02-25 094159.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9774
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3930,6 +5810,13 @@
        "caption": "Materials in the cabin",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/CMF/IMG/V2_INT_01.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3942,6 +5829,13 @@
        "caption": "Wavy plastic",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/CMF/IMG/V2_INT_NT.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3954,6 +5848,13 @@
        "caption": "Patterned plastic",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/CMF/IMG/V2_INT_CL.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3966,6 +5867,13 @@
        "caption": "Perforated fabric",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/CMF/IMG/V2_INT_WT.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -3978,6 +5886,13 @@
        "caption": "Dark fabric",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/CMF/IMG/V2_INT_DG.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -3997,6 +5912,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Ex1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0181,
+        "y": 0.1208,
+        "w": 0.9384,
+        "h": 0.7583
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4009,6 +5931,13 @@
        "caption": "Front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Ex2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1208,
+        "w": 1.0,
+        "h": 0.7583
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4021,6 +5950,13 @@
        "caption": "Rear, from above",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Ex3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1208,
+        "w": 1.0,
+        "h": 0.7583
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4033,6 +5969,13 @@
        "caption": "On the beach",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene2/hf_20260228_114504_f3b45db1-172f-4017-a3b7-3838815f952c.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4045,6 +5988,13 @@
        "caption": "Beach, sunset",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene2/hf_20260228_114504_ff97f93a-5808-499b-9bf3-94323d8b42dd.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4057,6 +6007,13 @@
        "caption": "Opened",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/LS_Studio_Scene1.0000.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0076,
+        "w": 1.0,
+        "h": 0.9924
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4076,6 +6033,13 @@
        "caption": "Cabin",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Int1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4088,6 +6052,13 @@
        "caption": "Front seats",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Int2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4100,6 +6071,13 @@
        "caption": "Rear zone",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/V2_STD_Int3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4112,6 +6090,13 @@
        "caption": "Dedicated space for Gen-C",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene1/hf_20260228_114400_7db42168-cc03-4a9d-be8f-51adfe95796e.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4131,6 +6116,13 @@
        "caption": "In the museum",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Review/hf_20260227_093008_6aaa4549-4673-4497-af14-d35d24b873f7.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4143,6 +6135,13 @@
        "caption": "Museum, wide",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Review/hf_20260227_092346_622268fc-5204-483a-a294-f61ce941b4b0.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4155,6 +6154,13 @@
        "caption": "Base render",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Review/V2_Rvw_Source.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0076,
+        "w": 1.0,
+        "h": 0.9924
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4167,6 +6173,13 @@
        "caption": "Base render, street",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Action/Scene3/V2_Activity3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0525,
+        "y": 0.1208,
+        "w": 0.7642,
+        "h": 0.7583
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4186,18 +6199,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Still/스크린샷 2026-02-19 185540.png",
        "crop": null,
-       "evidence": "visual match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/02-g1-above.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/02-g1-above@1280.webp",
-       "w": 2513,
-       "h": 1380,
-       "alt": "G1 from above: open cargo bed and glass cabin",
-       "caption": "G1 from above",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Still/스크린샷 2026-02-19 185540.png",
-       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9763,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4210,6 +6218,13 @@
        "caption": "Cabin sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 181127.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4222,6 +6237,13 @@
        "caption": "Cargo sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 181118.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1532,
+        "w": 1.0,
+        "h": 0.6866
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4234,6 +6256,13 @@
        "caption": "Chassis sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 180758.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0418,
+        "y": 0.0,
+        "w": 0.9176,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4258,31 +6287,14 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Still/스크린샷 2026-02-19 185527.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0236,
+        "y": 0.0,
+        "w": 0.909,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/02-g2-hangar.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/02-g2-hangar@1280.webp",
-       "w": 2560,
-       "h": 1309,
-       "alt": "G2 with every door open, rotating module inside, drone dock above",
-       "caption": "Opened in the hangar",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Still/스크린샷 2026-02-19 185527.png",
-       "crop": null,
-       "evidence": "visual match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm@1280.webp",
-       "w": 2560,
-       "h": 1086,
-       "alt": "G2 opened inside a vertical farm under purple grow lights",
-       "caption": "Vertical farm",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Still/hf_20260303_110515_e717a3da-9273-449d-8279-d9927e80412d.png",
-       "crop": null,
-       "evidence": "name match",
        "pdf_page": null
       },
       {
@@ -4294,6 +6306,32 @@
        "caption": "Farm hall",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Still/hf_20260303_110540_a343833b-2650-48fd-946b-0b12d2e97e28.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm@1280.webp",
+       "w": 2560,
+       "h": 1086,
+       "alt": "G2 opened inside a vertical farm under purple grow lights",
+       "caption": "Vertical farm",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Still/hf_20260303_110515_e717a3da-9273-449d-8279-d9927e80412d.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0515,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4306,6 +6344,13 @@
        "caption": "Module concept",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181357.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0856,
+        "y": 0.0,
+        "w": 0.8023,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4318,6 +6363,13 @@
        "caption": "Body sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181402.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.228,
+        "w": 1.0,
+        "h": 0.6505
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4330,6 +6382,13 @@
        "caption": "Concept render",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181435.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4354,6 +6413,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full6.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9694,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4366,18 +6432,13 @@
        "caption": "Floating dream space",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Refine/hf_20260213_113847_1b4d67e3-77bc-424a-b114-fa7552e3603a.png",
        "crop": null,
-       "evidence": "visual match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/03-xr-platforms.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/03-xr-platforms@1280.webp",
-       "w": 2560,
-       "h": 1396,
-       "alt": "Aerial view of the connected platforms with the vehicles parked on them",
-       "caption": "Platforms",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full6.png",
-       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0723,
+        "w": 1.0,
+        "h": 0.6984
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4390,6 +6451,13 @@
        "caption": "Over the peaks",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full7.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4402,6 +6470,13 @@
        "caption": "On the platform",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0029,
+        "w": 1.0,
+        "h": 0.9971
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4414,6 +6489,13 @@
        "caption": "Arrival",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full11.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4426,6 +6508,13 @@
        "caption": "Guide",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9971,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4438,6 +6527,13 @@
        "caption": "Moon",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full3.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0014,
+        "w": 1.0,
+        "h": 0.9986
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4450,6 +6546,13 @@
        "caption": "Planning sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Plan/IMG_0111.PNG",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1766,
+        "w": 1.0,
+        "h": 0.6186
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4462,6 +6565,13 @@
        "caption": "Diagram",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Plan/스크린샷 2026-02-13 185209.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4474,6 +6584,13 @@
        "caption": "In the editor",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Full9.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.1078,
+        "y": 0.0,
+        "w": 0.7369,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4498,6 +6615,13 @@
        "caption": "Ecosystem",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Refine/Upscale/hf_20260226_173122_f2c8211d-46f1-403e-8916-95d192c9665e.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9125,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4510,6 +6634,13 @@
        "caption": "Canyon",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Refine/Upscale/hf_20260226_173330_cc3097ae-da14-417d-9319-591cf3293973.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9776
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4522,6 +6653,13 @@
        "caption": "Dunes",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Refine/Upscale/KIA 2021 title.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4534,6 +6672,13 @@
        "caption": "Desert dusk",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_XR/Refine/KIA 2021 Inro.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0464,
+        "y": 0.0,
+        "w": 0.7774,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4546,7 +6691,7 @@
    "title": "2019–2022 VISHOW : CREATIVE VISUALIZATION",
    "locked": false,
    "comments_id": "pf2026-vishow",
-   "image_count": 33,
+   "image_count": 32,
    "sections": [
     {
      "label": "VISHOW / 2019–2022",
@@ -4561,6 +6706,13 @@
        "caption": "2020 collection",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/1_2020_Collection_of_VSW__After_PS_-_1X3_alldf__No_Watermarks__b0ced1c8.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1411,
+        "w": 1.0,
+        "h": 0.7176
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4580,6 +6732,13 @@
        "caption": "The feed",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/스크린샷 2026-02-07 185950.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.156,
+        "w": 1.0,
+        "h": 0.6026
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4597,6 +6756,13 @@
         0.963,
         0.63
        ],
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "page-export crop",
        "pdf_page": null
       }
@@ -4616,6 +6782,13 @@
        "caption": "XY-2, front",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/sample_7_-_02__No_Watermarks__3888130a.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.2416,
+        "w": 1.0,
+        "h": 0.5903
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4628,6 +6801,13 @@
        "caption": "XY-2, rear",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/sample_9_-_02__No_Watermarks__314ca27c.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.2893,
+        "w": 1.0,
+        "h": 0.5167
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4647,6 +6827,13 @@
        "caption": "Underground runners",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/KTM RC F35 - 02 - edited 01 (- credit).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4659,6 +6846,13 @@
        "caption": "Studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/KTM RC F35 - 01 - edited (- credit).png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4678,6 +6872,13 @@
        "caption": "Ex Machina",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Porsche _The First Hybrid Car - Compose 04_Croped - 07 - Final__NoWatermarks__fbdbfbf0.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0448,
+        "w": 1.0,
+        "h": 0.9102
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4697,6 +6898,13 @@
        "caption": "Lively enjoyment",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/04. T.b - Experience Now_200924 - final__NoWatermarks__586e34f9.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0397,
+        "y": 0.0,
+        "w": 0.9212,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4709,6 +6917,13 @@
        "caption": "Mobility as a space",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Ta 05. EXPERIENCE NOW by Moritz Kirchhoff_201109 - final - 06__NoWatermarks__2d4d9e58.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4721,6 +6936,13 @@
        "caption": "In Blender",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/VSW Work.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4733,6 +6955,13 @@
        "caption": "Layout",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/VSW Work1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.9993
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4752,6 +6981,13 @@
        "caption": "Birth of new mobility",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/KakaoTalk_20210614_224641063_-_After_PS__No_Watermarks__bb14be65.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4771,6 +7007,13 @@
        "caption": "Ultimo",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Salt_daylight _ G 1X3 - with Credit__NoWatermarks__b2542a73.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0881,
+        "y": 0.1448,
+        "w": 0.8235,
+        "h": 0.7103
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4783,6 +7026,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Salt_daylight _ C 1X3__NoWatermarks__3ea5585d.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0002,
+        "y": 0.0,
+        "w": 0.9996,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4795,6 +7045,13 @@
        "caption": "Side, mountains",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Salt_daylight _ D 1X3 - with Credit__NoWatermarks__d940e085.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0002,
+        "y": 0.0,
+        "w": 0.9996,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4807,6 +7064,13 @@
        "caption": "Three-quarter",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Salt_daylight _ E 1X3 - with Credit__NoWatermarks__44e60f37.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0002,
+        "y": 0.0,
+        "w": 0.9996,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4819,6 +7083,13 @@
        "caption": "Distance",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/Salt_daylight _ F 1X3 - with Credit__NoWatermarks__49f552cb.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0002,
+        "y": 0.0,
+        "w": 0.9996,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4831,6 +7102,13 @@
        "caption": "Dark studio",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/SaltFlat5.0010.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": true,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -4850,6 +7128,13 @@
        "caption": "Classic sleekness",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/alfaromeocam__VISHOW_No_Watermarks__3b3816_0000.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9562,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4862,6 +7147,13 @@
        "caption": "Side",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/alfaromeocam__VISHOW_No_Watermarks__3b3816_0001.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4874,6 +7166,13 @@
        "caption": "Rear",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/alfaromeocam__VISHOW_No_Watermarks__3b3816_0002.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       }
@@ -4893,6 +7192,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene4.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4905,6 +7211,13 @@
        "caption": "The cube",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/hf_20260210_061428_aee7a7eb-ed82-4dea-a661-f1d4bdd9a3d5.jpeg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1238,
+        "w": 1.0,
+        "h": 0.8762
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4917,6 +7230,13 @@
        "caption": "Dust",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4929,6 +7249,13 @@
        "caption": "Drift",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4941,18 +7268,13 @@
        "caption": "Onboard",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene3.png",
        "crop": null,
-       "evidence": "visual match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/28-dr-chase.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/28-dr-chase@1280.webp",
-       "w": 2560,
-       "h": 1429,
-       "alt": "Two cars in a sandstorm, one blurred in the foreground",
-       "caption": "Chase",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene4.png",
-       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -4965,6 +7287,13 @@
        "caption": "Cube",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene0_A.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4977,6 +7306,13 @@
        "caption": "Cube, alternative",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/DR_Scene0_B.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -4989,6 +7325,13 @@
        "caption": "In production",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/스크린샷 2024-12-31 181144.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.7568,
+        "h": 0.8193
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5013,6 +7356,13 @@
        "caption": "Review",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/VISHOW_Review.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.6788,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5025,6 +7375,13 @@
        "caption": "Workbench",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/VISHOW_Review1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5052,6 +7409,13 @@
        "caption": "NIVA",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/a.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5064,6 +7428,13 @@
        "caption": "Film",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/Vid2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0366,
+        "y": 0.0,
+        "w": 0.9,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5088,6 +7459,13 @@
        "caption": "N · I · V · A",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/20-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0729,
+        "y": 0.0,
+        "w": 0.9271,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5100,6 +7478,13 @@
        "caption": "Neuralink",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/23-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0007,
+        "w": 1.0,
+        "h": 0.9993
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5112,6 +7497,13 @@
        "caption": "Earth and moon",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/24-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5124,6 +7516,13 @@
        "caption": "Design sketches",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/40-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5136,6 +7535,13 @@
        "caption": "Layers",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/43-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5148,6 +7554,13 @@
        "caption": "Inflatable panels",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/45-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9991,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5160,6 +7573,13 @@
        "caption": "Outer suit",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/51-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5179,6 +7599,13 @@
        "caption": "Inner and outer",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/74-nike-niva-project__Edit__65643197.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0165,
+        "w": 1.0,
+        "h": 0.647
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5191,6 +7618,13 @@
        "caption": "Pattern study",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/34-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0009,
+        "w": 1.0,
+        "h": 0.9991
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5203,6 +7637,13 @@
        "caption": "Suit forms",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/35-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5215,6 +7656,13 @@
        "caption": "Outer layer forms",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/36-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5227,6 +7675,13 @@
        "caption": "Pattern structure",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/32-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5239,6 +7694,13 @@
        "caption": "Knit and layout",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/33-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5258,6 +7720,13 @@
        "caption": "Inflation and skinny modes",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/52-nike-niva-project__Edit__3e1c6f9c.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0005,
+        "y": 0.0,
+        "w": 0.9995,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5270,6 +7739,13 @@
        "caption": "Hand",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/Untitled1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5282,6 +7758,13 @@
        "caption": "Inner suit",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/Untitled.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5294,6 +7777,13 @@
        "caption": "Cells",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/DA2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.125,
+        "y": 0.0,
+        "w": 0.5781,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5306,6 +7796,13 @@
        "caption": "Inflatable shell",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/53-nike-niva-project__Edit__48de0c00.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0005,
+        "y": 0.0,
+        "w": 0.9995,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5318,6 +7815,13 @@
        "caption": "Collar",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/58-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5330,6 +7834,13 @@
        "caption": "Back",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/59-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5342,6 +7853,13 @@
        "caption": "Helmet",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/61-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5354,6 +7872,13 @@
        "caption": "Hands",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/60-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0009,
+        "y": 0.0,
+        "w": 0.9991,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5366,6 +7891,13 @@
        "caption": "Boots",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/62-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5378,6 +7910,13 @@
        "caption": "Boot",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/63-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5390,6 +7929,13 @@
        "caption": "Cells",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/54-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5402,6 +7948,13 @@
        "caption": "Connection",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/56-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5414,6 +7967,13 @@
        "caption": "Lineup",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/57-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5433,6 +7993,13 @@
        "caption": "Poster",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/74-nike-niva-project__Presentation__5a12ea38.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0732,
+        "y": 0.0,
+        "w": 0.885,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5445,6 +8012,13 @@
        "caption": "Inner suit poster",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/75-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.2057,
+        "w": 1.0,
+        "h": 0.7112
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       },
@@ -5457,6 +8031,13 @@
        "caption": "Outer suit poster",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Presentation/76-nike-niva-project.jpg",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.1944,
+        "w": 1.0,
+        "h": 0.7112
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }
@@ -5476,6 +8057,13 @@
        "caption": "In the showcase",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/Ending1.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.017,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "visual match",
        "pdf_page": null
       },
@@ -5488,6 +8076,13 @@
        "caption": "Visitors",
        "nas_source_path": "02_Working/Projects/Digital Visualization/NIVA/Edit/Ending2.png",
        "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9333,
+        "h": 1.0
+       },
+       "pano": false,
        "evidence": "name match",
        "pdf_page": null
       }

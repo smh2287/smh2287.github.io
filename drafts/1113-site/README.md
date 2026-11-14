@@ -21,15 +21,15 @@ https://songfamhome.synology.me/portfolio2026/<project>[/<sub-work>]/<NN>-<short
 - Manifest: `https://songfamhome.synology.me/portfolio2026/manifest.json` — project, sections, images with src, w, h, alt, caption, nas_source_path, crop, evidence.
 - Pages use `<img src=@1280 srcset="@1280 1280w, full <w>w" width height loading=lazy>`.
 
-## Inventory (20261113b)
+## Inventory (20261114d)
 
 | project | locked | images | folders |
 |---|---|---|---|
 | mercedes | no | 37 | `mercedes` 37 |
-| kia2022 | yes | 156 | `kia2022/mocamper` 45, `kia2022/movilla` 36, `kia2022/egonest` 24, `kia2022/lineup` 23, `kia2022/mdek` 28 |
+| kia2022 | yes | 154 | `kia2022/mocamper` 44, `kia2022/movilla` 36, `kia2022/egonest` 23, `kia2022/lineup` 23, `kia2022/mdek` 28 |
 | hyundai2022 | yes | 69 | `hyundai2022` 3, `hyundai2022/foldable-bike` 19, `hyundai2022/micro-limo` 8, `hyundai2022/desert` 9, `hyundai2022/moon` 9, `hyundai2022/seaside` 9, `hyundai2022/ambulance` 4, `hyundai2022/xr` 8 |
-| kia2021 | yes | 58 | `kia2021` 8, `kia2021/v2` 27, `kia2021/g1` 5, `kia2021/g2` 7, `kia2021/xr` 11 |
-| vishow | no | 33 | `vishow` 33 |
+| kia2021 | yes | 55 | `kia2021` 8, `kia2021/v2` 27, `kia2021/g1` 4, `kia2021/g2` 6, `kia2021/xr` 10 |
+| vishow | no | 32 | `vishow` 32 |
 | niva | no | 34 | `niva` 34 |
 
 ## Lock
