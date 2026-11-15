@@ -361,3 +361,6 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
 
 /* image number/caption tags in the gutter removed (Janin has none) */
 .tag,.fig .tag,.fig.vid .tag{display:none!important}
+
+/* small-image clusters (rows of the same block / same column count) touch vertically on desktop; big groups keep the 5px gap */
+@media (min-width:761px){.row.tight{margin-bottom:0}}
