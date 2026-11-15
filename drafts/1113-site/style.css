@@ -82,7 +82,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
 .intro{padding:41px 0 0}
 .lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
 .lab + .tx{margin-top:-8px;padding-bottom:34px}
-.lab span{color:var(--mint)}
+.lab span{color:inherit}
 .fig{position:relative;width:var(--pw);margin:0 auto 5px}
 .fig .tag{right:100%}
 /* one grid: every block is exactly --pw wide; cells are fixed-aspect windows, the image is placed inside by its crop (CSS only) */

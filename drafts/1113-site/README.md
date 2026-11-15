@@ -21,7 +21,7 @@ https://songfamhome.synology.me/portfolio2026/<project>[/<sub-work>]/<NN>-<short
 - Manifest: `https://songfamhome.synology.me/portfolio2026/manifest.json` — project, sections, images with src, w, h, alt, caption, nas_source_path, crop, evidence.
 - Pages use `<img src=@1280 srcset="@1280 1280w, full <w>w" width height loading=lazy>`.
 
-## Inventory (20261115m)
+## Inventory (20261115n)
 
 | project | locked | images | folders |
 |---|---|---|---|
