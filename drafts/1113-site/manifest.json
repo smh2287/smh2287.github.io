@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115e",
+ "generated": "20261115h",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -29,6 +29,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 4
@@ -50,6 +51,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -86,6 +88,7 @@
         "exposure": -0.04,
         "contrast": 0.3667
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 5
@@ -117,6 +120,7 @@
         "temperature": -0.07,
         "tint": 0.04
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -138,6 +142,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -159,6 +164,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -180,6 +186,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -210,6 +217,7 @@
        "grade": {
         "exposure": -0.04
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 7
@@ -234,6 +242,7 @@
         "exposure": 0.06,
         "contrast": 0.1667
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 8
@@ -255,6 +264,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
@@ -276,6 +286,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
@@ -299,6 +310,7 @@
        "grade": {
         "exposure": -0.13
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 10
@@ -320,6 +332,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -351,6 +364,7 @@
         "exposure": -0.11,
         "contrast": -0.1667
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -374,6 +388,7 @@
        "grade": {
         "temperature": 0.08
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -395,6 +410,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -416,6 +432,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -444,6 +461,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 12
@@ -465,6 +483,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 13
@@ -489,6 +508,7 @@
         "exposure": 0.04,
         "contrast": 0.2
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 14
@@ -513,6 +533,7 @@
         "exposure": 0.04,
         "contrast": 0.1333
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -534,6 +555,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -555,6 +577,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -576,6 +599,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -597,6 +621,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 16
@@ -618,6 +643,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -645,7 +671,10 @@
         "h": 0.6432
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": -0.04
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -666,7 +695,11 @@
         "h": 0.8146
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "contrast": 0.1667
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -688,6 +721,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -709,6 +743,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -730,6 +765,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -751,6 +787,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -772,6 +809,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -800,6 +838,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 17
@@ -821,6 +860,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -842,6 +882,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -863,6 +904,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -899,6 +941,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 19
@@ -920,6 +963,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -956,15 +1000,16 @@
         "temperature": 0.06,
         "tint": 0.12
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 20
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/04-mc-sketches.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/04-mc-sketches@1280.webp",
-       "w": 1632,
-       "h": 499,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/mc-sketches-p4-trim-20261115g.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/mc-sketches-p4-trim-20261115g@1280.webp",
+       "w": 2560,
+       "h": 779,
        "alt": "Concept sketches: exterior by Hawon Jang, interior by Heechan Kim",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:20",
@@ -982,15 +1027,16 @@
        },
        "rotate": 0,
        "grade": null,
-       "pano": true,
-       "evidence": "pdf crop",
+       "grade_src": null,
+       "pano": false,
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 20
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/05-mc-dimensions.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/05-mc-dimensions@1280.webp",
-       "w": 1632,
-       "h": 640,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/mc-dimensions-p4-20261115.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/mc-dimensions-p4-20261115@1280.webp",
+       "w": 2560,
+       "h": 1440,
        "alt": "Package drawings with dimensions and full-open plan",
        "caption": "Dimensions",
        "nas_source_path": "pdf:20",
@@ -1008,8 +1054,9 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
-       "evidence": "pdf crop",
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 20
       }
      ],
@@ -1040,6 +1087,7 @@
         "temperature": -0.07,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 21
@@ -1068,6 +1116,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1089,6 +1138,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1110,6 +1160,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1131,6 +1182,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 22
@@ -1152,6 +1204,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1173,6 +1226,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1203,6 +1257,7 @@
        "grade": {
         "tint": 0.08
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1228,6 +1283,7 @@
         "temperature": 0.13,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1253,6 +1309,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1273,7 +1330,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1294,7 +1356,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1315,7 +1382,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1341,6 +1413,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1361,7 +1434,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1393,6 +1471,7 @@
         "exposure": 0.06,
         "tint": 0.04
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1414,6 +1493,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1435,6 +1515,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1466,6 +1547,7 @@
         "contrast": 0.2667,
         "tint": 0.07
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
@@ -1490,6 +1572,7 @@
         "temperature": 0.08,
         "tint": 0.04
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
@@ -1511,6 +1594,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
@@ -1539,6 +1623,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1560,6 +1645,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1581,6 +1667,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1613,6 +1700,7 @@
         "contrast": 0.0667,
         "saturation": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 27
@@ -1641,6 +1729,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
@@ -1662,6 +1751,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
@@ -1687,6 +1777,7 @@
         "contrast": 0.1,
         "temperature": 0.07
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -1719,6 +1810,7 @@
         "contrast": 0.1333,
         "saturation": -0.07
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 29
@@ -1745,6 +1837,7 @@
         "saturation": -0.06,
         "temperature": 0.12
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 29
@@ -1766,6 +1859,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -1798,6 +1892,7 @@
         "contrast": 0.1,
         "tint": 0.04
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 30
@@ -1822,6 +1917,7 @@
         "temperature": 0.08,
         "tint": 0.05
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 30
@@ -1843,6 +1939,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 30
@@ -1864,6 +1961,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
@@ -1887,6 +1985,7 @@
        "grade": {
         "contrast": 0.1
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
@@ -1908,6 +2007,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
@@ -1936,6 +2036,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -1964,6 +2065,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 34
@@ -1992,6 +2094,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 35
@@ -2013,6 +2116,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match (file sits in the 2021 V2 folder on the NAS)",
        "pdf_page": null
@@ -2046,15 +2150,16 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 36
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/04-mv-sketches.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/04-mv-sketches@1280.webp",
-       "w": 1632,
-       "h": 499,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/mv-sketches-p4-trim-20261115g.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/mv-sketches-p4-trim-20261115g@1280.webp",
+       "w": 2560,
+       "h": 779,
        "alt": "Concept sketches: exterior by Dahye Jeong, interior by Heejae Lee",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:36",
@@ -2072,15 +2177,16 @@
        },
        "rotate": 0,
        "grade": null,
-       "pano": true,
-       "evidence": "pdf crop",
+       "grade_src": null,
+       "pano": false,
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 36
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/05-mv-dimensions.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/05-mv-dimensions@1280.webp",
-       "w": 1632,
-       "h": 640,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/mv-dimensions-p4-20261115.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/mv-dimensions-p4-20261115@1280.webp",
+       "w": 2560,
+       "h": 1440,
        "alt": "Package drawings with dimensions and full-open side view",
        "caption": "Dimensions",
        "nas_source_path": "pdf:36",
@@ -2098,8 +2204,9 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
-       "evidence": "pdf crop",
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 36
       }
      ],
@@ -2126,6 +2233,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2147,6 +2255,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2168,6 +2277,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2189,6 +2299,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2210,6 +2321,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2231,6 +2343,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -2259,6 +2372,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2280,6 +2394,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2305,6 +2420,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2325,7 +2441,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2351,6 +2472,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2376,6 +2498,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2397,10 +2520,11 @@
        },
        "rotate": 0,
        "grade": {
-        "exposure": 0.38,
+        "exposure": 0.2,
         "temperature": -0.06,
         "tint": 0.08
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2426,6 +2550,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2454,6 +2579,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
@@ -2475,6 +2601,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
@@ -2499,6 +2626,7 @@
         "exposure": 0.08,
         "contrast": -0.1667
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
@@ -2527,6 +2655,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
@@ -2550,6 +2679,7 @@
        "grade": {
         "contrast": 0.1333
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
@@ -2573,6 +2703,7 @@
        "grade": {
         "contrast": 0.1
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
@@ -2601,6 +2732,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
@@ -2622,6 +2754,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
@@ -2643,6 +2776,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2671,6 +2805,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
@@ -2694,6 +2829,7 @@
        "grade": {
         "exposure": 0.1
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
@@ -2715,6 +2851,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
@@ -2743,6 +2880,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 43
@@ -2764,6 +2902,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2785,6 +2924,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2813,6 +2953,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 44
@@ -2834,6 +2975,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2862,6 +3004,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 45
@@ -2883,6 +3026,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2916,15 +3060,16 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 46
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/04-eg-sketches.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/04-eg-sketches@1280.webp",
-       "w": 1632,
-       "h": 499,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/eg-sketches-p4-trim-20261115g.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/eg-sketches-p4-trim-20261115g@1280.webp",
+       "w": 2560,
+       "h": 775,
        "alt": "Interior concept sketches by Seongho Lim",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:46",
@@ -2942,15 +3087,16 @@
        },
        "rotate": 0,
        "grade": null,
-       "pano": true,
-       "evidence": "pdf crop",
+       "grade_src": null,
+       "pano": false,
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 46
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/05-eg-dimensions.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/05-eg-dimensions@1280.webp",
-       "w": 1632,
-       "h": 688,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/eg-dimensions-p4-20261115.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/eg-dimensions-p4-20261115@1280.webp",
+       "w": 2560,
+       "h": 1440,
        "alt": "Package drawings with dimensions and full-open plan",
        "caption": "Dimensions",
        "nas_source_path": "pdf:46",
@@ -2968,8 +3114,9 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
-       "evidence": "pdf crop",
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 46
       }
      ],
@@ -2996,6 +3143,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3017,6 +3165,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3038,6 +3187,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3059,6 +3209,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3080,6 +3231,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3101,6 +3253,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -3135,6 +3288,7 @@
         "highlights": 0.08,
         "shadows": 0.38
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 48
@@ -3162,6 +3316,7 @@
         "highlights": 0.2,
         "shadows": -0.46
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 50
@@ -3190,6 +3345,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -3211,6 +3367,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -3232,6 +3389,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -3253,6 +3411,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3281,6 +3440,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -3302,6 +3462,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -3323,6 +3484,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -3344,6 +3506,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3365,6 +3528,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3386,6 +3550,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3414,6 +3579,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 52
@@ -3435,6 +3601,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3456,6 +3623,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3477,6 +3645,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3498,6 +3667,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3519,6 +3689,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3540,6 +3711,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3561,6 +3733,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3594,6 +3767,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 53
@@ -3615,6 +3789,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3636,6 +3811,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3657,6 +3833,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3678,6 +3855,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3699,6 +3877,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3720,6 +3899,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3741,6 +3921,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3774,6 +3955,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 54
@@ -3795,6 +3977,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3816,6 +3999,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3837,6 +4021,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3858,6 +4043,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3884,6 +4070,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3910,6 +4097,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3938,6 +4126,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3959,6 +4148,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3980,6 +4170,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -4001,6 +4192,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4022,6 +4214,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4043,6 +4236,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4059,11 +4253,12 @@
        "view_crop": {
         "x": 0.0,
         "y": 0.0,
-        "w": 0.9995,
+        "w": 1.0,
         "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4085,6 +4280,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -4123,6 +4319,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 56
@@ -4144,6 +4341,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -4165,6 +4363,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -4186,6 +4385,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -4207,6 +4407,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4228,6 +4429,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4249,6 +4451,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4275,6 +4478,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 57
@@ -4301,6 +4505,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 57
@@ -4322,6 +4527,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 57
@@ -4343,6 +4549,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4364,6 +4571,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4397,6 +4605,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 58
@@ -4418,6 +4627,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4439,6 +4649,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4460,6 +4671,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4481,6 +4693,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4502,6 +4715,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4523,6 +4737,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4544,6 +4759,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4585,6 +4801,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 59
@@ -4606,6 +4823,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4627,6 +4845,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4655,6 +4874,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 60
@@ -4676,6 +4896,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4709,23 +4930,24 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/04-fb-sketches.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/04-fb-sketches@1280.webp",
-       "w": 949,
-       "h": 496,
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/fb-sketches-p4-trim-20261115g.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/fb-sketches-p4-trim-20261115g@1280.webp",
+       "w": 2560,
+       "h": 779,
        "alt": "Design concept sketches by Euno Kim",
        "caption": "Concept sketches",
        "nas_source_path": "pdf:61",
        "crop": [
-        0.536,
-        0.114,
-        0.783,
-        0.424
+        0.5365,
+        0.1144,
+        0.9615,
+        0.4262
        ],
        "view_crop": {
         "x": 0.0,
@@ -4735,8 +4957,9 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
-       "evidence": "pdf crop",
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 61
       },
       {
@@ -4756,34 +4979,36 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/06-fb-dimensions.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/06-fb-dimensions@1280.webp",
-       "w": 1666,
-       "h": 224,
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/fb-dimensions-p4-20261115.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/fb-dimensions-p4-20261115@1280.webp",
+       "w": 2560,
+       "h": 1440,
        "alt": "Top, side and front drawings with dimensions",
        "caption": "Dimensions",
        "nas_source_path": "pdf:61",
        "crop": [
         0.533,
-        0.6,
+        0.55,
         0.967,
-        0.74
+        0.89
        ],
        "view_crop": {
         "x": 0.0,
-        "y": 0.0002,
+        "y": 0.0,
         "w": 1.0,
-        "h": 0.9997
+        "h": 1.0
        },
        "rotate": 0,
        "grade": null,
-       "pano": true,
-       "evidence": "pdf crop",
+       "grade_src": null,
+       "pano": false,
+       "evidence": "V4 PDF panel recapture; complete panel letterboxed, phase 4",
        "pdf_page": 61
       }
      ],
@@ -4810,6 +5035,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4831,6 +5057,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4856,6 +5083,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4881,6 +5109,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4906,6 +5135,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4934,6 +5164,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4955,6 +5186,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4976,6 +5208,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4997,6 +5230,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5018,6 +5252,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5039,6 +5274,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5067,6 +5303,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 64
@@ -5088,6 +5325,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5116,6 +5354,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 65
@@ -5137,6 +5376,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5158,6 +5398,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5179,6 +5420,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5200,6 +5442,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5221,6 +5464,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5242,6 +5486,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5263,6 +5508,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5296,6 +5542,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 66
@@ -5317,6 +5564,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5338,6 +5586,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5359,6 +5608,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5380,6 +5630,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5401,6 +5652,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5422,6 +5674,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5443,6 +5696,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5464,6 +5718,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5501,6 +5756,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 67
@@ -5522,6 +5778,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5543,6 +5800,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5564,6 +5822,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5585,6 +5844,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5606,6 +5866,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5627,6 +5888,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5648,6 +5910,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5669,6 +5932,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5706,6 +5970,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 68
@@ -5727,6 +5992,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5748,6 +6014,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5769,6 +6036,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5790,6 +6058,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5811,6 +6080,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5832,6 +6102,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5853,6 +6124,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5874,6 +6146,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5916,6 +6189,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 69
@@ -5937,6 +6211,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5958,6 +6233,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5979,6 +6255,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6012,6 +6289,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 70
@@ -6033,6 +6311,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6054,6 +6333,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6075,6 +6355,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6096,6 +6377,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6117,6 +6399,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6138,6 +6421,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6159,6 +6443,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6200,6 +6485,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6221,6 +6507,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6242,6 +6529,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6263,6 +6551,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6291,6 +6580,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6312,6 +6602,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6345,6 +6636,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6371,7 +6663,8 @@
        },
        "rotate": 0,
        "grade": null,
-       "pano": true,
+       "grade_src": null,
+       "pano": false,
        "evidence": "page-export crop",
        "pdf_page": null
       },
@@ -6397,6 +6690,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "page-export crop",
        "pdf_page": null
@@ -6425,6 +6719,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6446,6 +6741,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6467,6 +6763,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6495,6 +6792,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6520,6 +6818,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6545,6 +6844,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6570,6 +6870,7 @@
         "temperature": -0.06,
         "tint": 0.06
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6590,7 +6891,12 @@
         "h": 1.0
        },
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
+       "grade_src": "auto",
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6619,6 +6925,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6640,6 +6947,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6661,6 +6969,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6682,6 +6991,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6703,6 +7013,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6724,6 +7035,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match (file sits in the 2022 4V1 folder on the NAS)",
        "pdf_page": null
@@ -6752,6 +7064,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6773,6 +7086,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6794,6 +7108,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6815,6 +7130,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6843,6 +7159,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6864,6 +7181,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6885,6 +7203,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6906,6 +7225,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6934,6 +7254,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6955,6 +7276,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6970,12 +7292,13 @@
        "crop": null,
        "view_crop": {
         "x": 0.0,
-        "y": 0.1532,
+        "y": 0.0,
         "w": 1.0,
-        "h": 0.6866
+        "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6990,13 +7313,14 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 180758.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0418,
+        "x": 0.0,
         "y": 0.0,
-        "w": 0.9176,
+        "w": 1.0,
         "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7030,6 +7354,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7051,6 +7376,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -7072,6 +7398,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7086,13 +7413,14 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181357.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0856,
+        "x": 0.0,
         "y": 0.0,
-        "w": 0.8023,
+        "w": 1.0,
         "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7108,12 +7436,13 @@
        "crop": null,
        "view_crop": {
         "x": 0.0,
-        "y": 0.228,
+        "y": 0.0,
         "w": 1.0,
-        "h": 0.6505
+        "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7135,6 +7464,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7168,6 +7498,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7189,6 +7520,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7210,6 +7542,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7231,6 +7564,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7252,6 +7586,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7273,6 +7608,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7294,6 +7630,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7309,12 +7646,13 @@
        "crop": null,
        "view_crop": {
         "x": 0.0,
-        "y": 0.1766,
+        "y": 0.0,
         "w": 1.0,
-        "h": 0.6186
+        "h": 1.0
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7336,6 +7674,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7357,6 +7696,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7390,6 +7730,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7411,6 +7752,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7432,6 +7774,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7453,6 +7796,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7489,6 +7833,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7517,6 +7862,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7543,6 +7889,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "page-export crop",
        "pdf_page": null
@@ -7571,6 +7918,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7592,6 +7940,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7620,6 +7969,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7641,6 +7991,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7669,6 +8020,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7697,6 +8049,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7718,6 +8071,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7739,6 +8093,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7760,6 +8115,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7788,6 +8144,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7816,6 +8173,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7837,6 +8195,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7858,6 +8217,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7879,6 +8239,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7900,6 +8261,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7921,6 +8283,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -7949,6 +8312,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7970,6 +8334,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7991,6 +8356,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8019,6 +8385,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8040,6 +8407,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8061,6 +8429,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8082,6 +8451,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8103,6 +8473,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8124,6 +8495,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8145,6 +8517,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8166,6 +8539,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8199,6 +8573,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8220,6 +8595,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8256,6 +8632,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8277,6 +8654,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8310,6 +8688,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8331,6 +8710,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8352,6 +8732,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8373,6 +8754,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8394,6 +8776,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8415,6 +8798,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8436,6 +8820,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8464,6 +8849,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8485,6 +8871,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8506,6 +8893,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8527,6 +8915,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8548,6 +8937,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8569,6 +8959,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8597,6 +8988,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8622,6 +9014,7 @@
         "tint": 0.12,
         "highlights": -0.1
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8650,6 +9043,7 @@
         "highlights": 0.44,
         "shadows": -0.19
        },
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8671,6 +9065,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8692,6 +9087,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8713,6 +9109,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8734,6 +9131,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8755,6 +9153,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8776,6 +9175,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8797,6 +9197,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8818,6 +9219,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8839,6 +9241,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8860,6 +9263,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8881,6 +9285,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8909,6 +9314,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8930,6 +9336,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8951,6 +9358,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8979,6 +9387,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -9000,6 +9409,7 @@
        },
        "rotate": 0,
        "grade": null,
+       "grade_src": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
