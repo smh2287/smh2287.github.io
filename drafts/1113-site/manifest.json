@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115h",
+ "generated": "20261115i",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -4242,13 +4242,13 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/07-logo-sketch3.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/07-logo-sketch3@1280.webp",
-       "w": 2560,
-       "h": 1919,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/logo-sketch3-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/logo-sketch3-p4-desktop-20261115i@1280.webp",
+       "w": 2732,
+       "h": 2048,
        "alt": "Storyboard sketch: KIA lettering built from cubes",
        "caption": "Storyboard 3",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1252.png",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1253.png",
        "crop": null,
        "view_crop": {
         "x": 0.0,
@@ -4260,7 +4260,7 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; complete artwork",
        "pdf_page": null
       },
       {
@@ -6642,10 +6642,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/04-v2-interior-sketches.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/04-v2-interior-sketches@1280.webp",
-       "w": 2449,
-       "h": 750,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/v2-interior-sketches-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/v2-interior-sketches-p4-desktop-20261115i@1280.webp",
+       "w": 6530,
+       "h": 2000,
        "alt": "Interior design concept sketches by Seongho Lim and Minho Song",
        "caption": "Interior concepts",
        "nas_source_path": "02_Working/Shared/Portfolio_Page_Exports/0.75/03IAC21K-01V2-02___설명__0_75__af8d6568.png",
@@ -6665,7 +6665,7 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "page-export crop",
+       "evidence": "Recovered desktop source; complete artwork",
        "pdf_page": null
       },
       {
@@ -7260,10 +7260,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/03-g1-sketch-cabin.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/03-g1-sketch-cabin@1280.webp",
-       "w": 675,
-       "h": 385,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-cabin-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-cabin-p4-desktop-20261115i@1280.webp",
+       "w": 1432,
+       "h": 817,
        "alt": "Design sketch: folding interior of the cabin",
        "caption": "Cabin sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 181127.png",
@@ -7278,14 +7278,14 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/04-g1-sketch-cargo.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/04-g1-sketch-cargo@1280.webp",
-       "w": 874,
-       "h": 726,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-cargo-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-cargo-p4-desktop-20261115i@1280.webp",
+       "w": 1855,
+       "h": 1540,
        "alt": "Design sketch: cargo layout with yellow boxes",
        "caption": "Cargo sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 181118.png",
@@ -7300,14 +7300,14 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/05-g1-sketch-chassis.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/05-g1-sketch-chassis@1280.webp",
-       "w": 728,
-       "h": 381,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-chassis-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-chassis-p4-desktop-20261115i@1280.webp",
+       "w": 3089,
+       "h": 1617,
        "alt": "Design sketch: chassis and body",
        "caption": "Chassis sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 180758.png",
@@ -7322,7 +7322,7 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       }
      ],
@@ -7404,10 +7404,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/05-g2-sketch-module.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/05-g2-sketch-module@1280.webp",
-       "w": 1121,
-       "h": 408,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-module-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-module-p4-desktop-20261115i@1280.webp",
+       "w": 2377,
+       "h": 865,
        "alt": "Design concept: rotating module inside a transparent body",
        "caption": "Module concept",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181357.png",
@@ -7422,14 +7422,14 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/06-g2-sketch-doors.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/06-g2-sketch-doors@1280.webp",
-       "w": 598,
-       "h": 417,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-doors-p4-desktop-framed-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-doors-p4-desktop-framed-20261115i@1280.webp",
+       "w": 1267,
+       "h": 884,
        "alt": "Design sketch: opened body and doors",
        "caption": "Body sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181402.png",
@@ -7444,14 +7444,14 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/07-g2-sketch-interior.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/07-g2-sketch-interior@1280.webp",
-       "w": 690,
-       "h": 313,
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-interior-p4-desktop-20261115i.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/g2-sketch-interior-p4-desktop-20261115i@1280.webp",
+       "w": 1560,
+       "h": 708,
        "alt": "Design concept render of the G2 body",
        "caption": "Concept render",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G2/Sketch/스크린샷 2026-02-19 181435.png",
@@ -7466,7 +7466,7 @@
        "grade": null,
        "grade_src": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "Recovered desktop source; screenshot-matched framing",
        "pdf_page": null
       }
      ],
