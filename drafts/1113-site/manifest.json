@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115k",
+ "generated": "20261115l",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -27,6 +27,8 @@
         "w": 0.4798,
         "h": 0.6255
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -50,6 +52,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -85,6 +89,8 @@
         "w": 0.7624,
         "h": 0.7624
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "temperature": -0.07,
@@ -106,11 +112,13 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/CMF/CLE_Still_Setting_CMF.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1454,
-        "y": 0.1543,
-        "w": 0.672,
-        "h": 0.672
+        "x": 0.1046,
+        "y": 0.1876,
+        "w": 0.7766,
+        "h": 0.5917
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.04,
@@ -144,6 +152,8 @@
         "w": 0.7911,
         "h": 0.892
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -167,6 +177,8 @@
         "w": 0.8514,
         "h": 0.8526
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -190,6 +202,8 @@
         "w": 0.8777,
         "h": 0.877
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -220,6 +234,8 @@
         "w": 0.8954,
         "h": 0.6822
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.04
@@ -245,6 +261,8 @@
         "w": 0.8139,
         "h": 0.8285
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -271,6 +289,8 @@
         "w": 0.8351,
         "h": 0.8351
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -278,6 +298,31 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-sharp-20261115k@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "High front three-quarter view",
+       "caption": "High front",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0B_White__White__baa1eee3.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.094,
+        "y": 0.1289,
+        "w": 0.8227,
+        "h": 0.8227
+       },
+       "flipx": false,
+       "flipy": false,
+       "rotate": 0,
+       "grade": null,
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear-sharp-20261115k@3840.webp",
@@ -294,6 +339,8 @@
         "w": 0.6489,
         "h": 0.6489
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -317,6 +364,8 @@
         "w": 0.8936,
         "h": 0.6809
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.13
@@ -326,29 +375,6 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 10
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "High front three-quarter view",
-       "caption": "High front",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0B_White__White__baa1eee3.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0691,
-        "y": 0.2353,
-        "w": 0.8741,
-        "h": 0.666
-       },
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
       }
      ],
      "videos": []
@@ -372,6 +398,8 @@
         "w": 0.8845,
         "h": 0.8552
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.11,
@@ -398,6 +426,8 @@
         "w": 0.94,
         "h": 0.9088
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "temperature": 0.08
@@ -423,6 +453,8 @@
         "w": 0.9406,
         "h": 0.9094
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -446,6 +478,8 @@
         "w": 0.9558,
         "h": 0.9241
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -476,6 +510,8 @@
         "w": 0.9223,
         "h": 0.6832
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -499,6 +535,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.04,
@@ -525,6 +563,8 @@
         "w": 0.9492,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -548,6 +588,8 @@
         "w": 0.9492,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.04,
@@ -574,6 +616,8 @@
         "w": 0.945,
         "h": 0.945
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -597,6 +641,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -620,6 +666,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -643,6 +691,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -666,6 +716,8 @@
         "w": 0.9344,
         "h": 0.9344
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -696,6 +748,8 @@
         "w": 0.8776,
         "h": 0.6687
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.04
@@ -721,6 +775,8 @@
         "w": 0.8146,
         "h": 0.8146
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -747,6 +803,8 @@
         "w": 0.8078,
         "h": 0.8078
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -770,6 +828,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -793,6 +853,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -816,6 +878,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -839,6 +903,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -869,6 +935,8 @@
         "w": 0.923,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -907,6 +975,8 @@
         "w": 0.7421,
         "h": 0.7031
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -930,6 +1000,8 @@
         "w": 0.3812,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -965,6 +1037,8 @@
         "w": 0.786,
         "h": 0.4795
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "temperature": 0.06,
@@ -996,6 +1070,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1024,6 +1100,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1054,6 +1132,8 @@
         "w": 0.98,
         "h": 0.9618
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.07,
@@ -1088,6 +1168,8 @@
         "w": 0.9993,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1111,6 +1193,8 @@
         "w": 0.9317,
         "h": 0.9298
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1134,6 +1218,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1157,6 +1243,8 @@
         "w": 0.9787,
         "h": 0.847
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1180,6 +1268,8 @@
         "w": 1.0,
         "h": 0.8648
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1203,6 +1293,8 @@
         "w": 1.0,
         "h": 0.8612
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1233,6 +1325,8 @@
         "w": 0.4948,
         "h": 0.6216
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "tint": 0.08
@@ -1258,6 +1352,8 @@
         "w": 0.534,
         "h": 0.6709
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.4,
@@ -1285,6 +1381,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1312,6 +1410,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1339,6 +1439,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1366,6 +1468,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1393,6 +1497,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1420,6 +1526,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1454,6 +1562,8 @@
         "w": 0.5495,
         "h": 0.8007
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1480,6 +1590,8 @@
         "w": 0.4714,
         "h": 0.6584
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1503,6 +1615,8 @@
         "w": 0.5845,
         "h": 0.8164
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1533,6 +1647,8 @@
         "w": 0.6206,
         "h": 0.9052
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.2667,
@@ -1559,6 +1675,8 @@
         "w": 0.7219,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "temperature": 0.08,
@@ -1585,6 +1703,8 @@
         "w": 0.7219,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1615,6 +1735,8 @@
         "w": 0.6232,
         "h": 0.9056
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1638,6 +1760,8 @@
         "w": 1.0,
         "h": 0.9096
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1661,6 +1785,8 @@
         "w": 0.8413,
         "h": 0.854
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1691,6 +1817,8 @@
         "w": 0.7202,
         "h": 0.6684
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.07,
@@ -1725,6 +1853,8 @@
         "w": 0.5991,
         "h": 0.7031
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1748,6 +1878,8 @@
         "w": 1.0,
         "h": 0.7509
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1771,6 +1903,8 @@
         "w": 1.0,
         "h": 0.6639
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.06,
@@ -1805,6 +1939,8 @@
         "w": 0.6626,
         "h": 0.9664
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1832,6 +1968,8 @@
         "w": 0.6348,
         "h": 0.9261
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.08,
@@ -1860,6 +1998,8 @@
         "w": 0.6624,
         "h": 0.9664
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1890,6 +2030,8 @@
         "w": 0.6495,
         "h": 0.7375
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -1917,6 +2059,8 @@
         "w": 0.7232,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "temperature": 0.08,
@@ -1943,6 +2087,8 @@
         "w": 0.7232,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1966,6 +2112,8 @@
         "w": 0.6856,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -1989,6 +2137,8 @@
         "w": 0.6924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.1
@@ -2014,6 +2164,8 @@
         "w": 0.6493,
         "h": 0.9377
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2044,6 +2196,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2074,6 +2228,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2104,6 +2260,8 @@
         "w": 0.9266,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2127,6 +2285,8 @@
         "w": 0.7583,
         "h": 0.7583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2162,6 +2322,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2190,6 +2352,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2218,6 +2382,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2248,6 +2414,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2271,6 +2439,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2294,6 +2464,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2317,6 +2489,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2340,6 +2514,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2363,6 +2539,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2393,6 +2571,8 @@
         "w": 0.7839,
         "h": 0.6583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2416,6 +2596,8 @@
         "w": 1.0,
         "h": 0.8398
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2439,6 +2621,8 @@
         "w": 0.9209,
         "h": 0.9209
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -2466,6 +2650,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -2493,6 +2679,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -2520,6 +2708,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -2547,6 +2737,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.2,
@@ -2574,6 +2766,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -2608,6 +2802,8 @@
         "w": 0.7489,
         "h": 0.7602
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2631,6 +2827,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2654,6 +2852,8 @@
         "w": 0.67,
         "h": 0.67
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.08,
@@ -2687,6 +2887,8 @@
         "w": 0.8835,
         "h": 0.9235
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2710,6 +2912,8 @@
         "w": 0.9463,
         "h": 0.9485
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.1333
@@ -2735,6 +2939,8 @@
         "w": 0.9641,
         "h": 0.9663
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.1
@@ -2767,6 +2973,8 @@
         "w": 0.9784,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2790,6 +2998,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2813,6 +3023,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2843,6 +3055,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2866,6 +3080,8 @@
         "w": 0.9329,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.1
@@ -2891,6 +3107,8 @@
         "w": 0.9329,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2921,6 +3139,8 @@
         "w": 1.0,
         "h": 0.7652
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2944,6 +3164,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2967,6 +3189,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -2997,6 +3221,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3020,6 +3246,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3050,6 +3278,8 @@
         "w": 0.9055,
         "h": 0.6998
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3073,6 +3303,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3108,6 +3340,8 @@
         "w": 0.9637,
         "h": 0.8069
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3136,6 +3370,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3164,6 +3400,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3194,6 +3432,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3217,6 +3457,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3240,6 +3482,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3263,6 +3507,8 @@
         "w": 0.9439,
         "h": 0.9384
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3286,6 +3532,8 @@
         "w": 0.9446,
         "h": 0.9391
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3309,6 +3557,8 @@
         "w": 1.0,
         "h": 0.9942
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3339,6 +3589,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.2,
@@ -3368,6 +3620,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "contrast": 0.3667,
@@ -3404,6 +3658,8 @@
         "w": 0.8417,
         "h": 0.8314
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3427,6 +3683,8 @@
         "w": 0.9551,
         "h": 0.9649
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3450,6 +3708,8 @@
         "w": 0.9476,
         "h": 0.9573
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3473,6 +3733,8 @@
         "w": 0.9898,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3503,6 +3765,8 @@
         "w": 0.8931,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3526,6 +3790,8 @@
         "w": 0.9404,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3549,6 +3815,8 @@
         "w": 0.8481,
         "h": 0.9019
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3572,6 +3840,8 @@
         "w": 0.9404,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3595,6 +3865,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3618,6 +3890,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3648,6 +3922,8 @@
         "w": 1.0,
         "h": 0.9066
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3671,6 +3947,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3694,6 +3972,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3717,6 +3997,8 @@
         "w": 0.7488,
         "h": 0.8143
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3740,6 +4022,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3763,6 +4047,8 @@
         "w": 0.8387,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3786,6 +4072,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3809,6 +4097,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3844,6 +4134,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3867,6 +4159,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3890,6 +4184,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3913,6 +4209,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3936,6 +4234,8 @@
         "w": 0.7542,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3959,6 +4259,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -3982,6 +4284,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4005,6 +4309,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4040,6 +4346,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4063,6 +4371,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4086,6 +4396,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4109,6 +4421,8 @@
         "w": 1.0,
         "h": 0.8927
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4132,6 +4446,8 @@
         "w": 1.0,
         "h": 0.7464
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4160,6 +4476,8 @@
         "w": 0.8091,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4188,6 +4506,8 @@
         "w": 0.8091,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4218,6 +4538,8 @@
         "w": 0.751,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4241,6 +4563,8 @@
         "w": 1.0,
         "h": 0.8074
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4264,6 +4588,8 @@
         "w": 0.922,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4287,6 +4613,8 @@
         "w": 0.9071,
         "h": 0.9793
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4310,6 +4638,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4333,6 +4663,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4356,6 +4688,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4379,6 +4713,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4419,6 +4755,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4442,6 +4780,8 @@
         "w": 1.0,
         "h": 0.804
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4465,6 +4805,8 @@
         "w": 1.0,
         "h": 0.8899
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4488,6 +4830,8 @@
         "w": 1.0,
         "h": 0.8965
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4511,6 +4855,8 @@
         "w": 1.0,
         "h": 0.9151
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4534,6 +4880,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4557,6 +4905,8 @@
         "w": 1.0,
         "h": 0.9984
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4585,6 +4935,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4613,6 +4965,8 @@
         "w": 1.0,
         "h": 0.5061
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4636,6 +4990,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4659,6 +5015,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4682,6 +5040,8 @@
         "w": 0.85,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4717,6 +5077,8 @@
         "w": 0.9401,
         "h": 0.684
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4740,6 +5102,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4763,6 +5127,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4786,6 +5152,8 @@
         "w": 0.8915,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4809,6 +5177,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4832,6 +5202,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4855,6 +5227,8 @@
         "w": 1.0,
         "h": 0.8078
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4878,6 +5252,8 @@
         "w": 0.7542,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4921,6 +5297,8 @@
         "w": 1.0,
         "h": 0.5555
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4944,6 +5322,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4967,6 +5347,8 @@
         "w": 1.0,
         "h": 0.7427
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -4997,6 +5379,8 @@
         "w": 0.9373,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5020,6 +5404,8 @@
         "w": 0.7944,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5055,6 +5441,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5083,6 +5471,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5106,6 +5496,8 @@
         "w": 1.0,
         "h": 0.831
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5134,6 +5526,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5164,6 +5558,8 @@
         "w": 1.0,
         "h": 0.831
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5187,6 +5583,8 @@
         "w": 0.7417,
         "h": 0.6179
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5210,6 +5608,8 @@
         "w": 0.8265,
         "h": 0.9116
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.12,
@@ -5237,6 +5637,8 @@
         "w": 0.8266,
         "h": 0.9117
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -5264,6 +5666,8 @@
         "w": 0.9067,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -5298,6 +5702,8 @@
         "w": 1.0,
         "h": 0.9492
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5321,6 +5727,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5344,6 +5752,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5367,6 +5777,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5390,6 +5802,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5413,6 +5827,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5443,6 +5859,8 @@
         "w": 0.9532,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5466,6 +5884,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5496,6 +5916,8 @@
         "w": 0.9468,
         "h": 0.8672
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5519,6 +5941,8 @@
         "w": 0.7499,
         "h": 0.7557
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5542,6 +5966,8 @@
         "w": 1.0,
         "h": 0.7688
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5565,6 +5991,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5588,6 +6016,8 @@
         "w": 1.0,
         "h": 0.7671
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5611,6 +6041,8 @@
         "w": 1.0,
         "h": 0.971
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5634,6 +6066,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5657,6 +6091,8 @@
         "w": 0.8196,
         "h": 0.8684
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5692,6 +6128,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5715,6 +6153,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5738,6 +6178,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5761,6 +6203,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5784,6 +6228,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5807,6 +6253,8 @@
         "w": 0.9743,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5830,6 +6278,8 @@
         "w": 1.0,
         "h": 0.6923
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5853,6 +6303,8 @@
         "w": 1.0,
         "h": 0.87
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5876,6 +6328,8 @@
         "w": 0.8824,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5915,6 +6369,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5938,6 +6394,8 @@
         "w": 0.7472,
         "h": 0.7865
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5961,6 +6419,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -5984,6 +6444,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6007,6 +6469,8 @@
         "w": 0.989,
         "h": 0.7628
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6030,6 +6494,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6053,6 +6519,8 @@
         "w": 1.0,
         "h": 0.5687
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6076,6 +6544,8 @@
         "w": 0.9993,
         "h": 0.8006
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6099,6 +6569,8 @@
         "w": 1.0,
         "h": 0.8041
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6138,6 +6610,8 @@
         "w": 1.0,
         "h": 0.9066
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6161,6 +6635,8 @@
         "w": 0.7458,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6184,6 +6660,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6207,6 +6685,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6230,6 +6710,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6253,6 +6735,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6276,6 +6760,8 @@
         "w": 0.9085,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6299,6 +6785,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6322,6 +6810,8 @@
         "w": 1.0,
         "h": 0.9256
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6366,6 +6856,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6389,6 +6881,8 @@
         "w": 0.7458,
         "h": 0.7458
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6412,6 +6906,8 @@
         "w": 1.0,
         "h": 0.7472
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6435,6 +6931,8 @@
         "w": 1.0,
         "h": 0.5604
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6470,6 +6968,8 @@
         "w": 1.0,
         "h": 0.9186
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6493,6 +6993,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6516,6 +7018,8 @@
         "w": 1.0,
         "h": 0.9791
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6539,6 +7043,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6562,6 +7068,8 @@
         "w": 0.9698,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6585,6 +7093,8 @@
         "w": 0.9694,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6608,6 +7118,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6631,6 +7143,8 @@
         "w": 1.0,
         "h": 0.8053
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6674,6 +7188,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6697,6 +7213,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6720,6 +7238,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6743,6 +7263,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6773,6 +7295,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6796,6 +7320,8 @@
         "w": 0.8708,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6831,6 +7357,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6859,6 +7387,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6887,6 +7417,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6917,6 +7449,8 @@
         "w": 0.9969,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6940,6 +7474,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6963,6 +7499,8 @@
         "w": 1.0,
         "h": 0.9774
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -6993,6 +7531,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7016,6 +7556,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.08,
@@ -7043,6 +7585,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.08,
@@ -7070,6 +7614,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -7097,6 +7643,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": 0.06,
@@ -7131,6 +7679,8 @@
         "w": 0.9384,
         "h": 0.7583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7154,6 +7704,8 @@
         "w": 1.0,
         "h": 0.7583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7177,6 +7729,8 @@
         "w": 1.0,
         "h": 0.7583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7200,6 +7754,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7223,6 +7779,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7246,6 +7804,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7276,6 +7836,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7299,6 +7861,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7322,6 +7886,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7345,6 +7911,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7375,6 +7943,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7398,6 +7968,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7421,6 +7993,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7444,6 +8018,8 @@
         "w": 0.7642,
         "h": 0.7583
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7474,6 +8050,8 @@
         "w": 0.9763,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7497,6 +8075,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7520,6 +8100,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7543,6 +8125,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7578,6 +8162,8 @@
         "w": 0.909,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7601,6 +8187,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7624,6 +8212,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7647,6 +8237,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7670,6 +8262,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7693,6 +8287,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7728,6 +8324,8 @@
         "w": 0.9694,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7751,6 +8349,8 @@
         "w": 1.0,
         "h": 0.6984
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7774,6 +8374,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7797,6 +8399,8 @@
         "w": 1.0,
         "h": 0.9971
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7820,6 +8424,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7843,6 +8449,8 @@
         "w": 0.9971,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7866,6 +8474,8 @@
         "w": 1.0,
         "h": 0.9986
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7889,6 +8499,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7912,6 +8524,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7935,6 +8549,8 @@
         "w": 0.7369,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7970,6 +8586,8 @@
         "w": 0.9125,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -7993,6 +8611,8 @@
         "w": 1.0,
         "h": 0.9776
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8016,6 +8636,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8039,6 +8661,8 @@
         "w": 0.7774,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8077,6 +8701,8 @@
         "w": 1.0,
         "h": 0.7176
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8107,6 +8733,8 @@
         "w": 1.0,
         "h": 0.6026
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8135,6 +8763,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8165,6 +8795,8 @@
         "w": 1.0,
         "h": 0.5903
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8188,6 +8820,8 @@
         "w": 1.0,
         "h": 0.5167
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8218,6 +8852,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8241,6 +8877,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8271,6 +8909,8 @@
         "w": 1.0,
         "h": 0.9102
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8301,6 +8941,8 @@
         "w": 0.9212,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8324,6 +8966,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8347,6 +8991,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8370,6 +9016,8 @@
         "w": 1.0,
         "h": 0.9993
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8400,6 +9048,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8430,6 +9080,8 @@
         "w": 0.8235,
         "h": 0.7103
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8453,6 +9105,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8476,6 +9130,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8499,6 +9155,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8522,6 +9180,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8545,6 +9205,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8575,6 +9237,8 @@
         "w": 0.9562,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8598,6 +9262,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8621,6 +9287,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8651,6 +9319,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8674,6 +9344,8 @@
         "w": 1.0,
         "h": 0.8762
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8697,6 +9369,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8720,6 +9394,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8743,6 +9419,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8766,6 +9444,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8789,6 +9469,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8812,6 +9494,8 @@
         "w": 0.7568,
         "h": 0.8193
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8847,6 +9531,8 @@
         "w": 0.6788,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8870,6 +9556,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8908,6 +9596,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8931,6 +9621,8 @@
         "w": 0.9,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8966,6 +9658,8 @@
         "w": 0.9271,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -8989,6 +9683,8 @@
         "w": 1.0,
         "h": 0.9993
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9012,6 +9708,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9035,6 +9733,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9058,6 +9758,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9081,6 +9783,8 @@
         "w": 0.9991,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9104,6 +9808,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9134,6 +9840,8 @@
         "w": 1.0,
         "h": 0.647
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9157,6 +9865,8 @@
         "w": 1.0,
         "h": 0.9991
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9180,6 +9890,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9203,6 +9915,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9226,6 +9940,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9249,6 +9965,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9279,6 +9997,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9302,6 +10022,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.06,
@@ -9329,6 +10051,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": {
         "exposure": -0.1,
@@ -9359,6 +10083,8 @@
         "w": 0.5781,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9382,6 +10108,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9405,6 +10133,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9428,6 +10158,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9451,6 +10183,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9474,6 +10208,8 @@
         "w": 0.9991,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9497,6 +10233,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9520,6 +10258,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9543,6 +10283,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9566,6 +10308,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9589,6 +10333,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9619,6 +10365,8 @@
         "w": 0.885,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9642,6 +10390,8 @@
         "w": 1.0,
         "h": 0.7112
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9665,6 +10415,8 @@
         "w": 1.0,
         "h": 0.7112
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9695,6 +10447,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,
@@ -9718,6 +10472,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "flipx": false,
+       "flipy": false,
        "rotate": 0,
        "grade": null,
        "grade_src": null,

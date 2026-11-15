@@ -93,18 +93,22 @@
     var set=function(){PN.done=false;vimg.removeAttribute('src');vimg.removeAttribute('srcset');
       vimg.sizes='84vw';vimg.src=a.getAttribute('href');var q=(+a.dataset.rot||0)%180?1:0;vimg.width=q?a.dataset.h:a.dataset.w;vimg.height=q?a.dataset.w:a.dataset.h;
       vimg.alt=(a.querySelector('img')||{}).alt||'';cap.innerHTML='';var b=d.createElement('b');b.textContent=a.dataset.c;cap.appendChild(b);cap.appendChild(d.createTextNode(a.dataset.t||''));
-      PN.on=!!a.dataset.pano;vw.classList.toggle('pano',PN.on);vimg.style.transform='';vimg.classList.remove('ease');
+      PN.on=!!a.dataset.pano&&!Number(a.dataset.rot)&&!Number(a.dataset.flipx)&&!Number(a.dataset.flipy);vw.classList.toggle('pano',PN.on);vimg.style.transform='';vimg.classList.remove('ease');
       vimg.style.filter=a.dataset.g?'url(#'+a.dataset.g+')':'';vimg.style.mixBlendMode=a.dataset.blend||'';if(a.dataset.blend)box.dataset.blend=a.dataset.blend;else box.removeAttribute('data-blend');rot(a);
       if(PN.on){var m=d.createElement('em');m.textContent='pano · drag or use ← →';cap.appendChild(m);PN.cx=+a.dataset.cx||.5;measure(false)}
       var show=function(){if(PN.on)measure(true);box.classList.add('in')};if(vimg.complete)requestAnimationFrame(show);else{vimg.onload=show;vimg.onerror=show}
       var u=new URL(location.href);u.searchParams.set('lightbox',a.dataset.v);history.replaceState(history.state,'',u)};
     if(fade&&!RM){box.classList.remove('in');setTimeout(set,250)}else{box.classList.remove('in');set()}
     var n=group[(k+1)%group.length];if(n){var p=new Image();p.src=n.dataset.s}}
-  /* rotated image (layout rotate 90|180|270): data-w/h are the rotated size; the file itself is turned with a transform */
-  function rot(a){a=a||group[k];var r=+a.dataset.rot||0;vimg.style.width=vimg.style.height=vimg.style.maxWidth=vimg.style.maxHeight='';if(!r||PN.on)return;
-    if(r===180){vimg.style.transform='rotate(180deg)';return}
-    var W=+a.dataset.w,H=+a.dataset.h,sc=Math.min(box.clientWidth/W,box.clientHeight/H);
-    vimg.style.maxWidth=vimg.style.maxHeight='none';vimg.style.width=(H*sc)+'px';vimg.style.height=(W*sc)+'px';vimg.style.transform='rotate('+r+'deg)'}
+  /* H10: show the exact rendered crop; clip the source polygon before rotation. */
+  function rot(a){a=a||group[k];var r=+a.dataset.rot||0;
+    vimg.style.width=vimg.style.height=vimg.style.maxWidth=vimg.style.maxHeight=vimg.style.clipPath='';
+    if((!r&&!Number(a.dataset.flipx)&&!Number(a.dataset.flipy))||PN.on)return;
+    var W=+a.dataset.w,H=+a.dataset.h,ow=+a.dataset.ow,oh=+a.dataset.oh,c=a.dataset.crop.split(',').map(Number),t=r*Math.PI/180,co=Math.cos(t),si=Math.sin(t);
+    var sx=Number(a.dataset.flipx)?-1:1,sy=Number(a.dataset.flipy)?-1:1;var cw=W*c[2],ch=H*c[3],sc=Math.min(box.clientWidth/cw,box.clientHeight/ch),cx=(c[0]+c[2]/2-.5)*W,cy=(c[1]+c[3]/2-.5)*H;
+    var points=[[c[0],c[1]],[c[0]+c[2],c[1]],[c[0]+c[2],c[1]+c[3]],[c[0],c[1]+c[3]]].map(function(p){var x=(p[0]-.5)*W,y=(p[1]-.5)*H;return (50+100*sx*(co*x+si*y)/ow)+'% '+(50+100*sy*(-si*x+co*y)/oh)+'%'});
+    vimg.style.maxWidth=vimg.style.maxHeight='none';vimg.style.width=ow*sc+'px';vimg.style.height=oh*sc+'px';vimg.style.clipPath='polygon('+points.join(',')+')';vimg.style.transform='translate('+(-cx*sc)+'px,'+(-cy*sc)+'px) rotate('+r+'deg) scale('+sx+','+sy+')';
+  }
   function go(i){if(group.length>1)put(i,true)}
   function measure(keep){var a=group[k];PN.bw=box.clientWidth;PN.iw=box.clientHeight*(+a.dataset.w)/(+a.dataset.h);
     pan(keep&&PN.done?PN.x:PN.bw/2-PN.cx*PN.iw);PN.done=true}
