@@ -345,3 +345,10 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
   .mdl{padding-top:34px}
 }
 @media (prefers-reduced-motion:reduce){.stack .nm,.stack a::before,.row a::before{transition:none}}
+
+/* C-curated black-ground assets: blend filtered pixels against page, not a cell fill. */
+.fig > a.blended,.row a.blended{background:transparent}
+.row a.blended::before{display:none}
+.vw .bx[data-blend]{opacity:1;transition:none}
+.vw .bx[data-blend] img{opacity:0;transition:opacity .5s}
+.vw .bx[data-blend].in img{opacity:1}

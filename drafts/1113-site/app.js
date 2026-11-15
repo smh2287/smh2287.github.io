@@ -94,7 +94,7 @@
       vimg.sizes='84vw';vimg.src=a.getAttribute('href');var q=(+a.dataset.rot||0)%180?1:0;vimg.width=q?a.dataset.h:a.dataset.w;vimg.height=q?a.dataset.w:a.dataset.h;
       vimg.alt=(a.querySelector('img')||{}).alt||'';cap.innerHTML='';var b=d.createElement('b');b.textContent=a.dataset.c;cap.appendChild(b);cap.appendChild(d.createTextNode(a.dataset.t||''));
       PN.on=!!a.dataset.pano;vw.classList.toggle('pano',PN.on);vimg.style.transform='';vimg.classList.remove('ease');
-      vimg.style.filter=a.dataset.g?'url(#'+a.dataset.g+')':'';rot(a);
+      vimg.style.filter=a.dataset.g?'url(#'+a.dataset.g+')':'';vimg.style.mixBlendMode=a.dataset.blend||'';if(a.dataset.blend)box.dataset.blend=a.dataset.blend;else box.removeAttribute('data-blend');rot(a);
       if(PN.on){var m=d.createElement('em');m.textContent='pano · drag or use ← →';cap.appendChild(m);PN.cx=+a.dataset.cx||.5;measure(false)}
       var show=function(){if(PN.on)measure(true);box.classList.add('in')};if(vimg.complete)requestAnimationFrame(show);else{vimg.onload=show;vimg.onerror=show}
       var u=new URL(location.href);u.searchParams.set('lightbox',a.dataset.v);history.replaceState(history.state,'',u)};
