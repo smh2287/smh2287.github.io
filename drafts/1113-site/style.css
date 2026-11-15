@@ -83,12 +83,12 @@ img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
 .lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
 .lab + .tx{margin-top:-8px;padding-bottom:34px}
 .lab span{color:inherit}
-.fig{position:relative;width:var(--pw);margin:0 auto 5px}
+.fig{position:relative;width:var(--pw);margin:0 auto}
 .fig .tag{right:100%}
 /* one grid: every block is exactly --pw wide; cells are fixed-aspect windows, the image is placed inside by its crop (CSS only) */
 .fig > a,.row a{position:relative;display:block;overflow:hidden;background:var(--g2);cursor:pointer}
 img.ci{position:absolute;max-width:none;height:auto}
-.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.row{width:var(--pw);margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
 .row.c1{grid-template-columns:minmax(0,1fr)}
 .row.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
 .row.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -145,7 +145,7 @@ body.proj{--col:var(--pw);--ax:var(--gut)}
 .vid .yt:hover b,.vid .yt:focus-visible b{color:var(--mint)}
 .vid .yt em{display:block;margin-top:6px;font:400 11px/14px var(--ff);font-style:normal;color:var(--gr)}
 .vid iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--g0)}
-.fig.vid{width:var(--pw);margin-top:5px}
+.fig.vid{width:var(--pw);margin-top:0}
 .fig.vid .tag{right:100%}
 
 /* comments: fixed last section, same axis, narrow, quiet */
@@ -195,7 +195,7 @@ html.vwo,html.vwo body{overflow:hidden}
   .tag i,.tag b{display:inline}
   .tag i{margin-right:10px}
   .stack li{margin-bottom:22px}
-  .fig{margin-bottom:5px}
+  .fig{margin-bottom:0}
   .fig .tag{margin-top:14px;right:auto}
   .tag .lk{display:inline;margin-left:10px}
   .nav a{transform:none}
