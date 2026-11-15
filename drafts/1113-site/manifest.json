@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115o",
+ "generated": "20261115p",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -101,7 +101,14 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
-      },
+      }
+     ],
+     "videos": []
+    },
+    {
+     "label": "CLE CABRIOLET _MODEL",
+     "sub": null,
+     "images": [
       {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board@1280.webp",
@@ -113,7 +120,7 @@
        "crop": null,
        "view_crop": {
         "x": 0.1046,
-        "y": 0.1876,
+        "y": 0.1782,
         "w": 0.7766,
         "h": 0.5917
        },
@@ -129,14 +136,7 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 5
-      }
-     ],
-     "videos": []
-    },
-    {
-     "label": "CLE CABRIOLET _MODEL",
-     "sub": null,
-     "images": [
+      },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra@1280.webp",
@@ -163,31 +163,6 @@
        "pdf_page": 6
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig@1280.webp",
-       "w": 2560,
-       "h": 1438,
-       "alt": "Rig controls on the model",
-       "caption": "Rig",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160943.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.1397,
-        "y": 0.0379,
-        "w": 0.8514,
-        "h": 0.8526
-       },
-       "flipx": false,
-       "flipy": false,
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": "lighten",
-       "pano": false,
-       "evidence": "visual match",
-       "pdf_page": 6
-      },
-      {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv@1280.webp",
        "w": 2560,
@@ -201,6 +176,31 @@
         "y": 0.0126,
         "w": 0.8777,
         "h": 0.877
+       },
+       "flipx": false,
+       "flipy": false,
+       "rotate": 0,
+       "grade": null,
+       "grade_src": null,
+       "blend": "lighten",
+       "pano": false,
+       "evidence": "visual match",
+       "pdf_page": 6
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-sharp-20261115k@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig@1280.webp",
+       "w": 2560,
+       "h": 1438,
+       "alt": "Rig controls on the model",
+       "caption": "Rig",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160943.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.1397,
+        "y": 0.0379,
+        "w": 0.8514,
+        "h": 0.8526
        },
        "flipx": false,
        "flipy": false,
@@ -771,9 +771,9 @@
        "crop": null,
        "view_crop": {
         "x": 0.1075,
-        "y": 0.0489,
-        "w": 0.8146,
-        "h": 0.8146
+        "y": 0.0583,
+        "w": 0.8235,
+        "h": 0.8272
        },
        "flipx": false,
        "flipy": false,
@@ -798,10 +798,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext3_Yellow1.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1187,
-        "y": 0.0889,
-        "w": 0.8078,
-        "h": 0.8078
+        "x": 0.0709,
+        "y": 0.0881,
+        "w": 0.8635,
+        "h": 0.8635
        },
        "flipx": false,
        "flipy": false,
@@ -824,9 +824,9 @@
        "crop": null,
        "view_crop": {
         "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
+        "y": 0.0126,
+        "w": 0.9504,
+        "h": 0.9504
        },
        "flipx": false,
        "flipy": false,
@@ -849,9 +849,9 @@
        "crop": null,
        "view_crop": {
         "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
+        "y": 0.0586,
+        "w": 0.9131,
+        "h": 0.9131
        },
        "flipx": false,
        "flipy": false,
