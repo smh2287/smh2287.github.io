@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261114d",
+ "generated": "20261115e",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -27,6 +27,8 @@
         "w": 0.5271,
         "h": 0.6833
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 4
@@ -46,6 +48,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -77,6 +81,11 @@
         "w": 0.7715,
         "h": 0.7715
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.04,
+        "contrast": 0.3667
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 5
@@ -103,6 +112,11 @@
         "w": 0.7189,
         "h": 0.9273
        },
+       "rotate": 0,
+       "grade": {
+        "temperature": -0.07,
+        "tint": 0.04
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -122,6 +136,8 @@
         "w": 0.992,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -141,6 +157,8 @@
         "w": 0.8936999999999999,
         "h": 0.8643
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -160,6 +178,8 @@
         "w": 0.8943,
         "h": 0.8937
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 6
@@ -186,6 +206,10 @@
         "w": 0.9397,
         "h": 0.6962
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.04
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 7
@@ -204,6 +228,11 @@
         "y": 0.1114,
         "w": 0.8139,
         "h": 0.8285
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "contrast": 0.1667
        },
        "pano": false,
        "evidence": "visual match",
@@ -224,6 +253,8 @@
         "w": 0.8974,
         "h": 0.9135
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
@@ -243,6 +274,8 @@
         "w": 0.8901,
         "h": 0.9061
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 9
@@ -261,6 +294,10 @@
         "y": 0.1385,
         "w": 0.9755,
         "h": 0.7226
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.13
        },
        "pano": false,
        "evidence": "visual match",
@@ -281,6 +318,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -307,6 +346,11 @@
         "w": 0.8845,
         "h": 0.8552
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.11,
+        "contrast": -0.1667
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -325,6 +369,10 @@
         "y": 0.0,
         "w": 0.94,
         "h": 0.9088
+       },
+       "rotate": 0,
+       "grade": {
+        "temperature": 0.08
        },
        "pano": false,
        "evidence": "visual match",
@@ -345,6 +393,8 @@
         "w": 0.9406,
         "h": 0.9094
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -364,6 +414,8 @@
         "w": 0.9558,
         "h": 0.9241
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
@@ -390,6 +442,8 @@
         "w": 0.9223,
         "h": 0.6832
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 12
@@ -409,6 +463,8 @@
         "w": 0.9492,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 13
@@ -427,6 +483,11 @@
         "y": 0.0,
         "w": 0.9492,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.04,
+        "contrast": 0.2
        },
        "pano": false,
        "evidence": "visual match",
@@ -447,6 +508,11 @@
         "w": 0.9492,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.04,
+        "contrast": 0.1333
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -466,6 +532,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -485,6 +553,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -504,6 +574,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 15
@@ -523,6 +595,8 @@
         "w": 0.8832,
         "h": 0.6542
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 16
@@ -542,6 +616,8 @@
         "w": 0.7172,
         "h": 0.7969
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -568,6 +644,8 @@
         "w": 0.9407,
         "h": 0.6432
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -587,6 +665,8 @@
         "w": 0.8146,
         "h": 0.8146
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -606,6 +686,8 @@
         "w": 0.8078,
         "h": 0.8078
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -625,6 +707,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -644,6 +728,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -663,6 +749,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -682,6 +770,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -708,6 +798,8 @@
         "w": 0.923,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 17
@@ -727,6 +819,8 @@
         "w": 0.8486,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -746,6 +840,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -765,6 +861,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -799,6 +897,8 @@
         "w": 0.7421,
         "h": 0.7031
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 19
@@ -818,6 +918,8 @@
         "w": 0.3812,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -849,6 +951,11 @@
         "w": 0.786,
         "h": 0.4795
        },
+       "rotate": 0,
+       "grade": {
+        "temperature": 0.06,
+        "tint": 0.12
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 20
@@ -873,6 +980,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 20
@@ -897,6 +1006,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 20
@@ -922,6 +1033,12 @@
         "y": 0.0,
         "w": 0.98,
         "h": 0.9618
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.07,
+        "temperature": -0.07,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -949,6 +1066,8 @@
         "w": 0.9993,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -968,6 +1087,8 @@
         "w": 0.9317,
         "h": 0.9298
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -987,6 +1108,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1006,6 +1129,8 @@
         "w": 0.9787,
         "h": 0.847
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 22
@@ -1025,6 +1150,8 @@
         "w": 1.0,
         "h": 0.8648
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1044,6 +1171,8 @@
         "w": 1.0,
         "h": 0.8612
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 22
@@ -1070,6 +1199,10 @@
         "w": 0.4948,
         "h": 0.6216
        },
+       "rotate": 0,
+       "grade": {
+        "tint": 0.08
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1088,6 +1221,12 @@
         "y": 0.1325,
         "w": 0.534,
         "h": 0.6709
+       },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.4,
+        "temperature": 0.13,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -1108,6 +1247,12 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1127,6 +1272,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1146,6 +1293,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1165,6 +1314,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1183,6 +1334,12 @@
         "y": 0.0,
         "w": 0.7484,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -1203,6 +1360,8 @@
         "w": 0.7484,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 23
@@ -1229,6 +1388,11 @@
         "w": 0.5495,
         "h": 0.8007
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "tint": 0.04
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1248,6 +1412,8 @@
         "w": 0.4714,
         "h": 0.6584
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1267,6 +1433,8 @@
         "w": 0.5845,
         "h": 0.8164
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 24
@@ -1293,6 +1461,11 @@
         "w": 0.6206,
         "h": 0.9052
        },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.2667,
+        "tint": 0.07
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
@@ -1311,6 +1484,11 @@
         "y": 0.0,
         "w": 0.7219,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "temperature": 0.08,
+        "tint": 0.04
        },
        "pano": false,
        "evidence": "visual match",
@@ -1331,6 +1509,8 @@
         "w": 0.7219,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 25
@@ -1357,6 +1537,8 @@
         "w": 0.6232,
         "h": 0.9056
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1376,6 +1558,8 @@
         "w": 1.0,
         "h": 0.9096
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1395,6 +1579,8 @@
         "w": 0.8413,
         "h": 0.854
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 26
@@ -1420,6 +1606,12 @@
         "y": 0.1309,
         "w": 0.7202,
         "h": 0.6684
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.07,
+        "contrast": 0.0667,
+        "saturation": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -1447,6 +1639,8 @@
         "w": 0.5991,
         "h": 0.7031
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
@@ -1466,6 +1660,8 @@
         "w": 1.0,
         "h": 0.7509
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 28
@@ -1484,6 +1680,12 @@
         "y": 0.1894,
         "w": 1.0,
         "h": 0.6639
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.06,
+        "contrast": 0.1,
+        "temperature": 0.07
        },
        "pano": false,
        "evidence": "name match",
@@ -1511,6 +1713,12 @@
         "w": 0.6626,
         "h": 0.9664
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "contrast": 0.1333,
+        "saturation": -0.07
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 29
@@ -1529,6 +1737,13 @@
         "y": 0.0,
         "w": 0.6348,
         "h": 0.9261
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.08,
+        "contrast": -0.0667,
+        "saturation": -0.06,
+        "temperature": 0.12
        },
        "pano": false,
        "evidence": "visual match",
@@ -1549,6 +1764,8 @@
         "w": 0.6624,
         "h": 0.9664
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -1575,6 +1792,12 @@
         "w": 0.6495,
         "h": 0.7375
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "contrast": 0.1,
+        "tint": 0.04
+       },
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 30
@@ -1593,6 +1816,11 @@
         "y": 0.0,
         "w": 0.7232,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "temperature": 0.08,
+        "tint": 0.05
        },
        "pano": false,
        "evidence": "unconfirmed",
@@ -1613,6 +1841,8 @@
         "w": 0.7232,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 30
@@ -1632,6 +1862,8 @@
         "w": 0.6856,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
@@ -1650,6 +1882,10 @@
         "y": 0.0,
         "w": 0.6924,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.1
        },
        "pano": false,
        "evidence": "visual match",
@@ -1670,6 +1906,8 @@
         "w": 0.6493,
         "h": 0.9377
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 31
@@ -1696,6 +1934,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -1722,6 +1962,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 34
@@ -1748,6 +1990,8 @@
         "w": 0.9266,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 35
@@ -1757,9 +2001,9 @@
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/02-mv-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
-       "alt": "MOVILLA in a white studio with its doors open, a family around it",
+       "alt": "MOVILLA in a white studio seen from above, doors and roof open, a family inside",
        "caption": "Film",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/LS_Studio_Ext_2_0000__Action__77480b9f.png",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/LS_Studio_Scene1.0000.png",
        "crop": null,
        "view_crop": {
         "x": 0.13,
@@ -1767,8 +2011,10 @@
         "w": 0.7583,
         "h": 0.7583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "visual match (file sits in the 2021 V2 folder on the NAS)",
        "pdf_page": null
       }
      ],
@@ -1798,6 +2044,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 36
@@ -1822,6 +2070,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 36
@@ -1846,6 +2096,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 36
@@ -1872,6 +2124,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1891,6 +2145,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1910,6 +2166,8 @@
         "w": 1.0,
         "h": 0.8628
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1929,6 +2187,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1948,6 +2208,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1967,6 +2229,8 @@
         "w": 1.0,
         "h": 0.9299
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 37
@@ -1993,6 +2257,8 @@
         "w": 0.7839,
         "h": 0.6583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2012,6 +2278,8 @@
         "w": 1.0,
         "h": 0.8398
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2030,6 +2298,12 @@
         "y": 0.0565,
         "w": 0.9209,
         "h": 0.9209
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -2050,6 +2324,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2068,6 +2344,12 @@
         "y": 0.0,
         "w": 1.0,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -2088,6 +2370,12 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2107,6 +2395,12 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.38,
+        "temperature": -0.06,
+        "tint": 0.08
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 38
@@ -2125,6 +2419,12 @@
         "y": 0.0,
         "w": 1.0,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -2152,6 +2452,8 @@
         "w": 0.7489,
         "h": 0.7602
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
@@ -2171,6 +2473,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 39
@@ -2189,6 +2493,11 @@
         "y": 0.1799,
         "w": 0.67,
         "h": 0.67
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.08,
+        "contrast": -0.1667
        },
        "pano": false,
        "evidence": "visual match",
@@ -2216,6 +2525,8 @@
         "w": 0.8835,
         "h": 0.9235
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
@@ -2235,6 +2546,10 @@
         "w": 0.9463,
         "h": 0.9485
        },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.1333
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 40
@@ -2253,6 +2568,10 @@
         "y": 0.0337,
         "w": 0.9641,
         "h": 0.9663
+       },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.1
        },
        "pano": false,
        "evidence": "visual match",
@@ -2280,6 +2599,8 @@
         "w": 0.9784,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
@@ -2299,6 +2620,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 41
@@ -2318,6 +2641,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2344,6 +2669,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
@@ -2362,6 +2689,10 @@
         "y": 0.0,
         "w": 0.9329,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.1
        },
        "pano": false,
        "evidence": "unconfirmed",
@@ -2382,6 +2713,8 @@
         "w": 0.9329,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 42
@@ -2408,6 +2741,8 @@
         "w": 1.0,
         "h": 0.7652
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 43
@@ -2427,6 +2762,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2446,6 +2783,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2472,6 +2811,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 44
@@ -2491,6 +2832,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2517,6 +2860,8 @@
         "w": 0.9055,
         "h": 0.6998
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 45
@@ -2536,6 +2881,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2567,6 +2914,8 @@
         "w": 0.9637,
         "h": 0.8069
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 46
@@ -2591,6 +2940,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 46
@@ -2615,6 +2966,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 46
@@ -2641,6 +2994,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2660,6 +3015,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2679,6 +3036,8 @@
         "w": 1.0,
         "h": 0.9543
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2698,6 +3057,8 @@
         "w": 0.9439,
         "h": 0.9384
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2717,6 +3078,8 @@
         "w": 0.9446,
         "h": 0.9391
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2736,6 +3099,8 @@
         "w": 1.0,
         "h": 0.9942
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 47
@@ -2762,6 +3127,14 @@
         "w": 1.0,
         "h": 0.75
        },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.2,
+        "temperature": -0.06,
+        "tint": 0.04,
+        "highlights": 0.08,
+        "shadows": 0.38
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 48
@@ -2780,6 +3153,14 @@
         "y": 0.1253,
         "w": 1.0,
         "h": 0.75
+       },
+       "rotate": 0,
+       "grade": {
+        "contrast": 0.3667,
+        "temperature": -0.08,
+        "tint": 0.06,
+        "highlights": 0.2,
+        "shadows": -0.46
        },
        "pano": false,
        "evidence": "visual match",
@@ -2807,6 +3188,8 @@
         "w": 0.8417,
         "h": 0.8314
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -2826,6 +3209,8 @@
         "w": 0.9551,
         "h": 0.9649
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -2845,6 +3230,8 @@
         "w": 0.9476,
         "h": 0.9573
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 49
@@ -2864,6 +3251,8 @@
         "w": 0.9898,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2890,6 +3279,8 @@
         "w": 0.8931,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -2909,6 +3300,8 @@
         "w": 0.9404,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -2928,6 +3321,8 @@
         "w": 0.8481,
         "h": 0.9019
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 51
@@ -2947,6 +3342,8 @@
         "w": 0.9404,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2966,6 +3363,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -2985,6 +3384,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3011,6 +3412,8 @@
         "w": 1.0,
         "h": 0.9066
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 52
@@ -3030,6 +3433,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3049,6 +3454,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3068,63 +3475,8 @@
         "w": 0.7488,
         "h": 0.8143
        },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Tessa Plate drone in a white studio",
-       "caption": "Tessa Plate",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/Still_white_0_seq.0000.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0199,
-        "y": 0.0,
-        "w": 0.8387,
-        "h": 1.0
-       },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass@1280.webp",
-       "w": 2560,
-       "h": 1717,
-       "alt": "Tessa Plate landed on a stone path by a lawn",
-       "caption": "Tessa Plate, lawn",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_090953_0f2b780d-3f1b-486b-8ad1-94255c7609d7.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand@1280.webp",
-       "w": 2560,
-       "h": 1717,
-       "alt": "Tessa Plate on rippled sand",
-       "caption": "Tessa Plate, sand",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_091632_f79a7c15-19d5-46dc-bcaf-df26d0a11e15.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3144,6 +3496,71 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Tessa Plate drone in a white studio",
+       "caption": "Tessa Plate",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/Still_white_0_seq.0000.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0199,
+        "y": 0.0,
+        "w": 0.8387,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass@1280.webp",
+       "w": 2560,
+       "h": 1717,
+       "alt": "Tessa Plate landed on a stone path by a lawn",
+       "caption": "Tessa Plate, lawn",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_090953_0f2b780d-3f1b-486b-8ad1-94255c7609d7.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand@1280.webp",
+       "w": 2560,
+       "h": 1717,
+       "alt": "Tessa Plate on rippled sand",
+       "caption": "Tessa Plate, sand",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/0W/Still/hf_20260216_091632_f79a7c15-19d5-46dc-bcaf-df26d0a11e15.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3175,6 +3592,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 53
@@ -3194,6 +3613,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3213,6 +3634,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3232,63 +3655,8 @@
         "w": 1.0,
         "h": 1.0
        },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Allround Shipper by a concrete wall on a lawn",
-       "caption": "Allround Shipper",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0003.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Allround Shipper on a city plaza",
-       "caption": "City plaza",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0013.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest@1280.webp",
-       "w": 2560,
-       "h": 1429,
-       "alt": "Allround Shipper on a forest road",
-       "caption": "Forest road",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/hf_20260216_095025_582816b6-3441-41ad-8889-b87451815876.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 0.9924,
-        "h": 1.0
-       },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3308,6 +3676,71 @@
         "w": 0.7542,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Allround Shipper by a concrete wall on a lawn",
+       "caption": "Allround Shipper",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0003.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Allround Shipper on a city plaza",
+       "caption": "City plaza",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/Still_Hillside_7W_seq.0013.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest@1280.webp",
+       "w": 2560,
+       "h": 1429,
+       "alt": "Allround Shipper on a forest road",
+       "caption": "Forest road",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/7W1/Still/hf_20260216_095025_582816b6-3441-41ad-8889-b87451815876.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.9924,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3339,6 +3772,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 54
@@ -3358,6 +3793,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3377,6 +3814,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3396,6 +3835,8 @@
         "w": 1.0,
         "h": 0.8927
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3415,6 +3856,8 @@
         "w": 1.0,
         "h": 0.7464
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3439,6 +3882,8 @@
         "w": 0.8091,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3463,6 +3908,8 @@
         "w": 0.8091,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3489,6 +3936,8 @@
         "w": 0.751,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3508,6 +3957,8 @@
         "w": 1.0,
         "h": 0.8074
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3527,6 +3978,8 @@
         "w": 0.922,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3546,6 +3999,8 @@
         "w": 0.9071,
         "h": 0.9793
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3565,6 +4020,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3584,6 +4041,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3603,6 +4062,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3622,6 +4083,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": 55
@@ -3658,6 +4121,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 56
@@ -3677,6 +4142,8 @@
         "w": 1.0,
         "h": 0.804
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -3696,6 +4163,8 @@
         "w": 1.0,
         "h": 0.8899
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -3715,6 +4184,8 @@
         "w": 1.0,
         "h": 0.8965
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 56
@@ -3734,6 +4205,8 @@
         "w": 1.0,
         "h": 0.9151
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3753,6 +4226,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3772,6 +4247,8 @@
         "w": 1.0,
         "h": 0.9984
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3796,6 +4273,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 57
@@ -3820,6 +4299,8 @@
         "w": 1.0,
         "h": 0.5061
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 57
@@ -3839,6 +4320,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 57
@@ -3858,6 +4341,8 @@
         "w": 0.7444,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3877,6 +4362,8 @@
         "w": 0.85,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -3908,6 +4395,8 @@
         "w": 0.9401,
         "h": 0.684
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 58
@@ -3927,6 +4416,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -3946,6 +4437,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -3965,6 +4458,8 @@
         "w": 0.8915,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -3984,6 +4479,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4003,6 +4500,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4022,6 +4521,8 @@
         "w": 1.0,
         "h": 0.8078
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4041,6 +4542,8 @@
         "w": 0.7542,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": null
@@ -4080,6 +4583,8 @@
         "w": 1.0,
         "h": 0.5555
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 59
@@ -4099,6 +4604,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4118,6 +4625,8 @@
         "w": 1.0,
         "h": 0.7427
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4144,6 +4653,8 @@
         "w": 0.9373,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 60
@@ -4163,6 +4674,8 @@
         "w": 0.7944,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4194,6 +4707,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
@@ -4218,6 +4733,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 61
@@ -4237,6 +4754,8 @@
         "w": 1.0,
         "h": 0.831
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 61
@@ -4261,7 +4780,9 @@
         "w": 1.0,
         "h": 0.9997
        },
-       "pano": false,
+       "rotate": 0,
+       "grade": null,
+       "pano": true,
        "evidence": "pdf crop",
        "pdf_page": 61
       }
@@ -4287,6 +4808,8 @@
         "w": 1.0,
         "h": 0.831
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4306,6 +4829,8 @@
         "w": 0.7417,
         "h": 0.6179
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4324,6 +4849,12 @@
         "y": 0.0335,
         "w": 0.8265,
         "h": 0.9116
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.12,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -4344,6 +4875,12 @@
         "w": 0.8266,
         "h": 0.9117
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 62
@@ -4362,6 +4899,12 @@
         "y": 0.0,
         "w": 0.9067,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -4389,6 +4932,8 @@
         "w": 1.0,
         "h": 0.9492
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4408,6 +4953,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4427,6 +4974,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 63
@@ -4446,6 +4995,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4465,6 +5016,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4484,6 +5037,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4510,6 +5065,8 @@
         "w": 0.9532,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 64
@@ -4529,6 +5086,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4555,6 +5114,8 @@
         "w": 0.9468,
         "h": 0.8672
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 65
@@ -4574,6 +5135,8 @@
         "w": 0.7499,
         "h": 0.7557
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4593,6 +5156,8 @@
         "w": 1.0,
         "h": 0.7688
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4612,6 +5177,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4631,6 +5198,8 @@
         "w": 1.0,
         "h": 0.7671
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4650,6 +5219,8 @@
         "w": 1.0,
         "h": 0.971
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4669,6 +5240,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4688,6 +5261,8 @@
         "w": 0.8196,
         "h": 0.8684
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4719,6 +5294,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "unconfirmed",
        "pdf_page": 66
@@ -4738,6 +5315,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4757,6 +5336,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4776,6 +5357,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4795,6 +5378,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4814,6 +5399,8 @@
         "w": 0.9743,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4833,6 +5420,8 @@
         "w": 1.0,
         "h": 0.6923
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4852,6 +5441,8 @@
         "w": 1.0,
         "h": 0.87
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4871,6 +5462,8 @@
         "w": 0.8824,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4906,6 +5499,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 67
@@ -4925,6 +5520,8 @@
         "w": 0.7472,
         "h": 0.7865
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4944,6 +5541,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4963,6 +5562,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -4982,6 +5583,8 @@
         "w": 0.989,
         "h": 0.7628
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5001,6 +5604,8 @@
         "w": 1.0,
         "h": 0.75
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5020,6 +5625,8 @@
         "w": 1.0,
         "h": 0.5687
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5039,6 +5646,8 @@
         "w": 0.9993,
         "h": 0.8006
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5058,6 +5667,8 @@
         "w": 1.0,
         "h": 0.8041
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5093,6 +5704,8 @@
         "w": 1.0,
         "h": 0.9066
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "unconfirmed",
        "pdf_page": 68
@@ -5112,6 +5725,8 @@
         "w": 0.7458,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5131,6 +5746,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5150,6 +5767,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5169,6 +5788,8 @@
         "w": 1.0,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5188,6 +5809,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5207,6 +5830,8 @@
         "w": 0.9085,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5226,6 +5851,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5245,6 +5872,8 @@
         "w": 1.0,
         "h": 0.9256
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5285,6 +5914,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "pdf crop",
        "pdf_page": 69
@@ -5304,6 +5935,8 @@
         "w": 0.7458,
         "h": 0.7458
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5323,6 +5956,8 @@
         "w": 1.0,
         "h": 0.7472
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5342,6 +5977,8 @@
         "w": 1.0,
         "h": 0.5604
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5373,6 +6010,8 @@
         "w": 1.0,
         "h": 0.9186
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 70
@@ -5392,6 +6031,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5411,6 +6052,8 @@
         "w": 1.0,
         "h": 0.9791
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5430,6 +6073,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5449,6 +6094,8 @@
         "w": 0.9698,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5468,6 +6115,8 @@
         "w": 0.9694,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5487,6 +6136,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5506,6 +6157,8 @@
         "w": 1.0,
         "h": 0.8053
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5545,6 +6198,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5564,6 +6219,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5583,6 +6240,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5602,6 +6261,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5628,6 +6289,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5647,6 +6310,8 @@
         "w": 0.8708,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5678,6 +6343,8 @@
         "w": 1.0,
         "h": 0.625
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5702,6 +6369,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "page-export crop",
        "pdf_page": null
@@ -5726,6 +6395,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "page-export crop",
        "pdf_page": null
@@ -5752,6 +6423,8 @@
         "w": 0.9969,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5771,6 +6444,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5790,6 +6465,8 @@
         "w": 1.0,
         "h": 0.9774
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5816,6 +6493,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5834,6 +6513,12 @@
         "y": 0.0,
         "w": 1.0,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.08,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -5854,6 +6539,12 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.08,
+        "temperature": -0.06,
+        "tint": 0.06
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5872,6 +6563,12 @@
         "y": 0.0,
         "w": 1.0,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.06,
+        "temperature": -0.06,
+        "tint": 0.06
        },
        "pano": false,
        "evidence": "visual match",
@@ -5892,6 +6589,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -5918,6 +6617,8 @@
         "w": 0.9384,
         "h": 0.7583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5937,6 +6638,8 @@
         "w": 1.0,
         "h": 0.7583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5956,6 +6659,8 @@
         "w": 1.0,
         "h": 0.7583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5975,6 +6680,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -5994,6 +6701,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6003,9 +6712,9 @@
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/19-v2-studio-open@1280.webp",
        "w": 2560,
        "h": 1440,
-       "alt": "V2 in a white studio with doors and roof opened",
+       "alt": "V2 in a white studio with its doors open, a family around it",
        "caption": "Opened",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/V2/Still/Studio/LS_Studio_Scene1.0000.png",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4V1/Still/Action/LS_Studio_Ext_2_0000__Action__77480b9f.png",
        "crop": null,
        "view_crop": {
         "x": 0.0,
@@ -6013,8 +6722,10 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
-       "evidence": "name match",
+       "evidence": "visual match (file sits in the 2022 4V1 folder on the NAS)",
        "pdf_page": null
       }
      ],
@@ -6039,6 +6750,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6058,6 +6771,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6077,6 +6792,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6096,6 +6813,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6122,6 +6841,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6141,6 +6862,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6160,6 +6883,8 @@
         "w": 1.0,
         "h": 0.9924
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6179,6 +6904,8 @@
         "w": 0.7642,
         "h": 0.7583
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6205,6 +6932,8 @@
         "w": 0.9763,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6224,6 +6953,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6243,6 +6974,8 @@
         "w": 1.0,
         "h": 0.6866
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6262,6 +6995,8 @@
         "w": 0.9176,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6293,6 +7028,8 @@
         "w": 0.909,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6312,6 +7049,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -6331,6 +7070,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6350,6 +7091,8 @@
         "w": 0.8023,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6369,6 +7112,8 @@
         "w": 1.0,
         "h": 0.6505
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6388,6 +7133,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6419,6 +7166,8 @@
         "w": 0.9694,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6438,6 +7187,8 @@
         "w": 1.0,
         "h": 0.6984
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6457,6 +7208,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6476,6 +7229,8 @@
         "w": 1.0,
         "h": 0.9971
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6495,6 +7250,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6514,6 +7271,8 @@
         "w": 0.9971,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6533,6 +7292,8 @@
         "w": 1.0,
         "h": 0.9986
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6552,6 +7313,8 @@
         "w": 1.0,
         "h": 0.6186
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6571,6 +7334,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6590,6 +7355,8 @@
         "w": 0.7369,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6621,6 +7388,8 @@
         "w": 0.9125,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6640,6 +7409,8 @@
         "w": 1.0,
         "h": 0.9776
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6659,6 +7430,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6678,6 +7451,8 @@
         "w": 0.7774,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6712,6 +7487,8 @@
         "w": 1.0,
         "h": 0.7176
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6738,6 +7515,8 @@
         "w": 1.0,
         "h": 0.6026
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6762,6 +7541,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "page-export crop",
        "pdf_page": null
@@ -6788,6 +7569,8 @@
         "w": 1.0,
         "h": 0.5903
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6807,6 +7590,8 @@
         "w": 1.0,
         "h": 0.5167
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6833,6 +7618,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6852,6 +7639,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6878,6 +7667,8 @@
         "w": 1.0,
         "h": 0.9102
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6904,6 +7695,8 @@
         "w": 0.9212,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6923,6 +7716,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6942,6 +7737,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -6961,6 +7758,8 @@
         "w": 1.0,
         "h": 0.9993
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -6987,6 +7786,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7013,6 +7814,8 @@
         "w": 0.8235,
         "h": 0.7103
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7032,6 +7835,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7051,6 +7856,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7070,6 +7877,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7089,6 +7898,8 @@
         "w": 0.9996,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7108,6 +7919,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": true,
        "evidence": "name match",
        "pdf_page": null
@@ -7134,6 +7947,8 @@
         "w": 0.9562,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7153,6 +7968,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7172,6 +7989,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7198,6 +8017,8 @@
         "w": 0.9924,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7217,6 +8038,8 @@
         "w": 1.0,
         "h": 0.8762
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7236,6 +8059,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7255,6 +8080,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7274,6 +8101,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7293,6 +8122,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7312,6 +8143,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7331,6 +8164,8 @@
         "w": 0.7568,
         "h": 0.8193
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7362,6 +8197,8 @@
         "w": 0.6788,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7381,6 +8218,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7415,6 +8254,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7434,6 +8275,8 @@
         "w": 0.9,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7465,6 +8308,8 @@
         "w": 0.9271,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7484,6 +8329,8 @@
         "w": 1.0,
         "h": 0.9993
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7503,6 +8350,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7522,6 +8371,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7541,6 +8392,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7560,6 +8413,8 @@
         "w": 0.9991,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7579,6 +8434,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7605,6 +8462,8 @@
         "w": 1.0,
         "h": 0.647
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7624,6 +8483,8 @@
         "w": 1.0,
         "h": 0.9991
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7643,6 +8504,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7662,6 +8525,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7681,6 +8546,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7700,6 +8567,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7726,6 +8595,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7744,6 +8615,12 @@
         "y": 0.0,
         "w": 1.0,
         "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.06,
+        "tint": 0.12,
+        "highlights": -0.1
        },
        "pano": false,
        "evidence": "visual match",
@@ -7764,6 +8641,15 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.1,
+        "contrast": -0.3,
+        "temperature": -0.1,
+        "tint": 0.1,
+        "highlights": 0.44,
+        "shadows": -0.19
+       },
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7783,6 +8669,8 @@
         "w": 0.5781,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7802,6 +8690,8 @@
         "w": 0.9995,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7821,6 +8711,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7840,6 +8732,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7859,6 +8753,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7878,6 +8774,8 @@
         "w": 0.9991,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7897,6 +8795,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -7916,6 +8816,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7935,6 +8837,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7954,6 +8858,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7973,6 +8879,8 @@
         "w": 1.0,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -7999,6 +8907,8 @@
         "w": 0.885,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8018,6 +8928,8 @@
         "w": 1.0,
         "h": 0.7112
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8037,6 +8949,8 @@
         "w": 1.0,
         "h": 0.7112
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null
@@ -8063,6 +8977,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "visual match",
        "pdf_page": null
@@ -8082,6 +8998,8 @@
         "w": 0.9333,
         "h": 1.0
        },
+       "rotate": 0,
+       "grade": null,
        "pano": false,
        "evidence": "name match",
        "pdf_page": null

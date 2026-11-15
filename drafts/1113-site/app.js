@@ -50,7 +50,7 @@
   var bl=[].slice.call(d.querySelectorAll('img.bl[data-ct]'));
   if(bl.length&&subtle)stored().then(function(k){B.classList.add('unlocked');
     bl.forEach(function(im){dec(k,im.dataset.iv,im.dataset.ct).then(function(j){j=JSON.parse(j);
-      var n=new Image();n.onload=function(){im.srcset=j.srcset;im.sizes='(max-width:760px) 100vw, 78vw';im.src=j.src;im.style.objectPosition=im.dataset.pos||'';im.classList.remove('bl')};n.src=j.src})})}).catch(function(){});
+      var n=new Image();n.onload=function(){im.srcset=j.srcset;im.sizes='(max-width:760px) 100vw, 78vw';im.src=j.src;im.style.objectPosition=im.dataset.pos||'';if(j.g)im.style.filter='url(#'+j.g+')';im.classList.remove('bl')};n.src=j.src})})}).catch(function(){});
   watch(d);
 
   /* ---------- per-page init (runs after unlock on locked pages) ---------- */
@@ -81,7 +81,7 @@
       if(g.t!=='mouse'&&g.moved>40){var over=g.want-PN.x;if(over>70)go(k-1);else if(over<-70)go(k+1)}};
     box.addEventListener('pointerup',up);box.addEventListener('pointercancel',up);
     vw.addEventListener('wheel',function(e){if(!PN.on)return;e.preventDefault();var dl=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:e.deltaY;if(e.deltaMode===1)dl*=32;vimg.classList.remove('ease');pan(PN.x-dl)},{passive:false});
-    addEventListener('resize',function(){if(PN.on&&!vw.hidden)measure(true)});
+    addEventListener('resize',function(){if(vw.hidden)return;if(PN.on)measure(true);else rot()});
     var sx=null;vw.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
     vw.addEventListener('touchend',function(e){if(sx===null||PN.on){sx=null;return}var dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>50)go(dx<0?k+1:k-1)});
     addEventListener('keydown',function(e){if(vw.hidden)return;
@@ -91,14 +91,20 @@
   }
   function put(i,fade){k=(i+group.length)%group.length;var a=group[k];
     var set=function(){PN.done=false;vimg.removeAttribute('src');vimg.srcset=a.dataset.s+' 1280w, '+a.getAttribute('href')+' '+a.dataset.w+'w';
-      vimg.sizes='84vw';vimg.src=a.getAttribute('href');vimg.width=a.dataset.w;vimg.height=a.dataset.h;
+      vimg.sizes='84vw';vimg.src=a.getAttribute('href');var q=(+a.dataset.rot||0)%180?1:0;vimg.width=q?a.dataset.h:a.dataset.w;vimg.height=q?a.dataset.w:a.dataset.h;
       vimg.alt=(a.querySelector('img')||{}).alt||'';cap.innerHTML='';var b=d.createElement('b');b.textContent=a.dataset.c;cap.appendChild(b);cap.appendChild(d.createTextNode(a.dataset.t||''));
       PN.on=!!a.dataset.pano;vw.classList.toggle('pano',PN.on);vimg.style.transform='';vimg.classList.remove('ease');
+      vimg.style.filter=a.dataset.g?'url(#'+a.dataset.g+')':'';rot(a);
       if(PN.on){var m=d.createElement('em');m.textContent='pano · drag or use ← →';cap.appendChild(m);PN.cx=+a.dataset.cx||.5;measure(false)}
       var show=function(){if(PN.on)measure(true);box.classList.add('in')};if(vimg.complete)requestAnimationFrame(show);else{vimg.onload=show;vimg.onerror=show}
       var u=new URL(location.href);u.searchParams.set('lightbox',a.dataset.v);history.replaceState(history.state,'',u)};
     if(fade&&!RM){box.classList.remove('in');setTimeout(set,250)}else{box.classList.remove('in');set()}
     var n=group[(k+1)%group.length];if(n){var p=new Image();p.src=n.dataset.s}}
+  /* rotated image (layout rotate 90|180|270): data-w/h are the rotated size; the file itself is turned with a transform */
+  function rot(a){a=a||group[k];var r=+a.dataset.rot||0;vimg.style.width=vimg.style.height=vimg.style.maxWidth=vimg.style.maxHeight='';if(!r||PN.on)return;
+    if(r===180){vimg.style.transform='rotate(180deg)';return}
+    var W=+a.dataset.w,H=+a.dataset.h,sc=Math.min(box.clientWidth/W,box.clientHeight/H);
+    vimg.style.maxWidth=vimg.style.maxHeight='none';vimg.style.width=(H*sc)+'px';vimg.style.height=(W*sc)+'px';vimg.style.transform='rotate('+r+'deg)'}
   function go(i){if(group.length>1)put(i,true)}
   function measure(keep){var a=group[k];PN.bw=box.clientWidth;PN.iw=box.clientHeight*(+a.dataset.w)/(+a.dataset.h);
     pan(keep&&PN.done?PN.x:PN.bw/2-PN.cx*PN.iw);PN.done=true}
@@ -133,16 +139,18 @@
   var LBL={google:'Google',linkedin:'LinkedIn',dev:'test'};
   function comments(sec){var id=sec.dataset.pf,box=sec.querySelector('.cmb'),provs=null;
     function login(p){var w=520,h=640;window.open(API+'/auth/'+p+'/start?origin='+encodeURIComponent(location.origin),'pfc-login','width='+w+',height='+h+',left='+((screen.width-w)/2)+',top='+((screen.height-h)/2))}
-    function draw(me,list){var h='';
+    function av(n,me){return '<span class="av'+(me?' me':'')+'" aria-hidden="true">'+esc((String(n||'G').trim()[0]||'G'))+'</span>'}
+    function draw(me,list){var h='<p class="cmh"><b>Comments</b><i>'+list.length+'</i></p>';
       if(list.length){h+='<ol>'+list.map(function(c){var a=c.author||{};
-        return '<li'+(c.hidden?' class="hid"':'')+' data-id="'+esc(c.id)+'"><span>'+esc(a.name||'Guest')+(a.headline?'<i>'+esc(a.headline)+'</i>':'')+'<i>'+ago(c.createdAt)+(c.hidden?' · hidden':'')+'</i></span><p>'+codes(c.body||'')+'</p>'+
-          ((c.mine||(me&&me.isAdmin))?'<small>'+(me&&me.isAdmin?'<button type="button" data-a="hide">'+(c.hidden?'unhide':'hide')+'</button>':'')+'<button type="button" data-a="del">delete</button></small>':'')+'</li>'}).join('')+'</ol>'}
-      else h+='<p class="none">No comments yet.</p>';
-      if(me){h+='<form><span class="who">'+esc(me.name)+'<i>via '+esc(LBL[me.provider]||me.provider)+(me.isAdmin?' · owner':'')+'</i></span>'+
-        '<textarea name="t" rows="3" maxlength="4000" placeholder="Write a comment" aria-label="Comment" required></textarea>'+
-        '<input name="h" maxlength="80" placeholder="Role / company (optional)" aria-label="Role or company" value="'+esc(me.headline||'')+'">'+
-        '<div class="acts"><button type="submit">post</button><button type="button" class="q" data-a="out">sign out</button></div></form>'}
-      else h+='<div class="sign"><span class="who">Sign in to comment</span><p>'+(provs||[]).map(function(p){return '<button type="button" data-p="'+esc(p)+'">'+esc(LBL[p]||p)+'</button>'}).join(' &nbsp; ')+'</p></div>';
+        return '<li'+(c.hidden?' class="hid"':'')+' data-id="'+esc(c.id)+'">'+av(a.name,c.mine)+'<div><p class="by"><b>'+esc(a.name||'Guest')+'</b>'+(a.headline?'<i>'+esc(a.headline)+'</i>':'')+
+          '<time>'+ago(c.createdAt)+(c.hidden?' · hidden':'')+'</time></p><p class="bd">'+codes(c.body||'')+'</p>'+
+          ((c.mine||(me&&me.isAdmin))?'<small>'+(me&&me.isAdmin?'<button type="button" data-a="hide">'+(c.hidden?'unhide':'hide')+'</button>':'')+'<button type="button" data-a="del">delete</button></small>':'')+'</div></li>'}).join('')+'</ol>'}
+      else h+='<p class="none">No comments yet — be the first to leave one.</p>';
+      if(me){h+='<form class="wr">'+av(me.name,true)+'<div><p class="by"><b>'+esc(me.name)+'</b><i>via '+esc(LBL[me.provider]||me.provider)+'</i>'+(me.isAdmin?'<span class="ow">owner</span>':'')+'</p>'+
+        '<div class="field"><textarea name="t" rows="3" maxlength="4000" placeholder="Write a comment…" aria-label="Comment" required></textarea>'+
+        '<input name="h" maxlength="80" placeholder="Role / company (optional)" aria-label="Role or company" value="'+esc(me.headline||'')+'"></div>'+
+        '<div class="acts"><button type="submit" class="post">Post comment</button><button type="button" class="q" data-a="out">sign out</button><span class="hint">Ctrl / ⌘ + Enter to post</span></div></div></form>'}
+      else h+='<div class="sign">'+av('+')+'<div><div class="fake">Write a comment…</div><p>Sign in to post a comment</p><div>'+(provs||[]).map(function(p){return '<button type="button" data-p="'+esc(p)+'">Continue with '+esc(LBL[p]||p)+'</button>'}).join('')+'</div></div></div>';
       box.innerHTML=h;
       [].forEach.call(box.querySelectorAll('[data-p]'),function(b){b.onclick=function(){login(b.dataset.p)}});
       [].forEach.call(box.querySelectorAll('[data-a]'),function(b){b.onclick=function(){var li=b.closest('li'),a=b.dataset.a;
@@ -158,7 +166,7 @@
     }
     function refresh(){Promise.all([api('/api/me').catch(function(){return{}}),api('/api/projects/'+encodeURIComponent(id)+'/comments'),provs?Promise.resolve({providers:provs}):api('/api/providers')])
       .then(function(r){provs=r[2].providers||[];if(tok()&&!r[0].user)try{localStorage.removeItem(TK)}catch(e){}draw(r[0].user,r[1].comments||[])})
-      .catch(function(){box.innerHTML='<p class="none">Comments are unavailable right now.</p>'})}
+      .catch(function(){box.innerHTML='<p class="cmh"><b>Comments</b></p><p class="none">Comments are unavailable right now.</p>'})}
     cms.push(refresh);
     if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){io.disconnect();refresh()}},{rootMargin:'600px'});io.observe(sec)}else refresh();
   }
