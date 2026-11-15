@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115l",
+ "generated": "20261115m",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -22,14 +22,14 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0D_White__White__a020ec32.png",
        "crop": null,
        "view_crop": {
-        "x": 0.2492,
-        "y": 0.2032,
-        "w": 0.4798,
-        "h": 0.6255
+        "x": 0.36060000000000003,
+        "y": 0.4049,
+        "w": 0.3531,
+        "h": 0.243
        },
-       "flipx": false,
+       "flipx": true,
        "flipy": false,
-       "rotate": 0,
+       "rotate": 341.1,
        "grade": null,
        "grade_src": null,
        "blend": null,
