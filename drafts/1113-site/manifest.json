@@ -1,6 +1,6 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115p",
+ "generated": "20261116a",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
@@ -13,8 +13,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1309,
        "alt": "CLE Cabriolet, two cars seen from above, front and rear",
@@ -38,8 +38,8 @@
        "pdf_page": 4
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Film cover: two CLE Cabriolets from above",
@@ -75,8 +75,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Exploded view of the car model",
@@ -110,8 +110,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour, material and finish samples on a plinth",
@@ -138,8 +138,8 @@
        "pdf_page": 5
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1277,
        "alt": "Zebra-stripe surface check of the body",
@@ -163,8 +163,8 @@
        "pdf_page": 6
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1441,
        "alt": "UV checker layout on the model",
@@ -188,8 +188,8 @@
        "pdf_page": 6
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1438,
        "alt": "Rig controls on the model",
@@ -220,8 +220,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Front three-quarter view, roof open",
@@ -247,8 +247,8 @@
        "pdf_page": 7
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Side view",
@@ -275,8 +275,8 @@
        "pdf_page": 8
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rear three-quarter view",
@@ -300,8 +300,8 @@
        "pdf_page": 9
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "High front three-quarter view",
@@ -325,8 +325,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rear view",
@@ -350,8 +350,8 @@
        "pdf_page": 9
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "High rear three-quarter view into the open cabin",
@@ -384,8 +384,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Front close-up: grille, headlamp and wheel",
@@ -412,8 +412,8 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Tail lamp and rear bumper close-up",
@@ -439,8 +439,8 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rear deck and soft-top cover",
@@ -464,8 +464,8 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Door handle close-up",
@@ -496,8 +496,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Cabin from a high angle, four red seats",
@@ -521,8 +521,8 @@
        "pdf_page": 12
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Dashboard seen from the rear seats",
@@ -549,8 +549,8 @@
        "pdf_page": 14
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Cockpit and centre console",
@@ -574,8 +574,8 @@
        "pdf_page": 13
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Front seats",
@@ -602,8 +602,8 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Cabin seen from behind the front seats",
@@ -627,8 +627,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Door panel",
@@ -652,8 +652,8 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Centre console",
@@ -677,8 +677,8 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Steering wheel and instrument display",
@@ -702,8 +702,8 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Dark cabin with ambient lighting",
@@ -734,8 +734,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, front three-quarter view",
@@ -761,8 +761,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, side view",
@@ -789,8 +789,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, rear three-quarter view",
@@ -814,8 +814,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, front close-up",
@@ -839,8 +839,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, black cabin from a high angle",
@@ -864,8 +864,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, cockpit",
@@ -889,8 +889,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Yellow variant, dashboard",
@@ -921,8 +921,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1074,
        "alt": "CLE Cabriolet on a seaside promenade at dusk, a man leaning on the car",
@@ -961,8 +961,8 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "Two MOCAMPER off-roaders driving through fog over dark rock",
@@ -1023,10 +1023,10 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1614,
+       "h": 1613,
        "alt": "MOCAMPER camped under the northern lights, a man and his dog by the fire",
        "caption": "Under the aurora",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Mobility/4W1/Still/3. Scene/2nd (Intro_Outdoor)/Render/Picked/02_Camping.png",
@@ -1311,8 +1311,8 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "MOCAMPER side view in the studio",
@@ -1367,8 +1367,8 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1080,
        "alt": "Colour chip: sandblasted metal, black",
@@ -1425,8 +1425,8 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1080,
        "alt": "Colour chip: recycled plastic, black",
@@ -1548,8 +1548,8 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "MOCAMPER front three-quarter view in the studio",
@@ -1601,8 +1601,8 @@
        "pdf_page": 24
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "Rear three-quarter view with the light bar",
@@ -1689,8 +1689,8 @@
        "pdf_page": 25
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "Two seat frames seen from behind, green details",
@@ -1746,8 +1746,8 @@
        "pdf_page": 26
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1587,
        "alt": "Side view of the vehicle and trailer",
@@ -1954,8 +1954,8 @@
        "pdf_page": 29
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "XR headset stored in the dashboard compartment",
@@ -2214,8 +2214,8 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1097,
        "alt": "MOCAMPER on a show stage, a family looking at it",
@@ -2557,8 +2557,8 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "MOVILLA side view in the studio",
@@ -2607,8 +2607,8 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: metallic paint, dark grey",
@@ -2636,8 +2636,8 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: metallic paint, silver",
@@ -2665,8 +2665,8 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: recycled plastic, black",
@@ -2723,8 +2723,8 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Fabric sample: mesh, white",
@@ -2752,8 +2752,8 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: veneer wood, taupe",
@@ -2788,8 +2788,8 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "MOVILLA front three-quarter view in the studio",
@@ -2813,8 +2813,8 @@
        "pdf_page": 39
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Front view",
@@ -2838,8 +2838,8 @@
        "pdf_page": 39
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "High rear three-quarter view",
@@ -3009,8 +3009,8 @@
        "pdf_page": 41
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "The office scene before AI editing, in the studio",
@@ -3066,8 +3066,8 @@
        "pdf_page": 42
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A woman watching a film on the cabin screen",
@@ -3093,8 +3093,8 @@
        "pdf_page": 42
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A woman reclining with a VR headset in blue light",
@@ -3207,8 +3207,8 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A weathered MOVILLA shown in a museum hall, a family looking at it",
@@ -3289,8 +3289,8 @@
        "pdf_page": 45
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "EGONEST in a dark studio, high front view",
@@ -3326,8 +3326,8 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1911,
        "alt": "EGONEST docked at a lakeside deck at dusk, a couple outside",
@@ -3575,8 +3575,8 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "Exterior material samples and a tyre on a plinth",
@@ -3606,8 +3606,8 @@
        "pdf_page": 48
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "Interior material samples on a plinth",
@@ -3644,8 +3644,8 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "EGONEST in the studio with every door and step open",
@@ -3669,8 +3669,8 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rear three-quarter view, closed",
@@ -3694,8 +3694,8 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Close-up of the mobility robot wheels under the body",
@@ -3719,8 +3719,8 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Side view in the studio",
@@ -3851,8 +3851,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Skylight and window above the bed",
@@ -3876,8 +3876,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Cut-away view of the interior from above",
@@ -3933,8 +3933,8 @@
        "pdf_page": 52
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Globe Orbiter in a white studio",
@@ -4195,8 +4195,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Tess in a white studio",
@@ -4357,8 +4357,8 @@
        "pdf_page": 54
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Manimo folded in a white studio",
@@ -4382,8 +4382,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Manimo on a sandy studio floor",
@@ -4432,8 +4432,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Tessa Cube glowing above a charging dock",
@@ -4457,8 +4457,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock-dith-20261116@1280.webp",
        "w": 2560,
        "h": 863,
        "alt": "Tessa Cube on its dock in front of a vehicle",
@@ -4599,8 +4599,8 @@
        "pdf_page": 55
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1077,
        "alt": "KIA logo with 'Movement that inspires'",
@@ -4866,8 +4866,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1228,
        "alt": "Mountain canyon environment",
@@ -5001,10 +5001,10 @@
        "pdf_page": 57
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1072,
+       "h": 1071,
        "alt": "Grey model, curved connectors between blocks",
        "caption": "City model, detail",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Environment/MDEK/MDEK 3.png",
@@ -5026,8 +5026,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1224,
        "alt": "River barge from above",
@@ -5063,8 +5063,8 @@
      "sub": "mdek",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1595,
        "alt": "The giant hangar with a helicopter on the apron",
@@ -5113,8 +5113,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A helicopter landing on the raised deck",
@@ -5138,8 +5138,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1274,
        "alt": "A jet aircraft inside the hangar hall",
@@ -5163,10 +5163,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui-dithr-20261116@1280.webp",
        "w": 2560,
-       "h": 1072,
+       "h": 1071,
        "alt": "XR hand pressing a control panel",
        "caption": "XR interface",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/XR KIA 4.png",
@@ -5188,10 +5188,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1072,
+       "h": 1071,
        "alt": "XR hands in front of the hangar",
        "caption": "XR hands",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_XR/XR KIA3.png",
@@ -5283,8 +5283,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1920,
        "alt": "The whole robotic lineup on a rooftop under a blue sky",
@@ -5308,10 +5308,10 @@
        "pdf_page": 59
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1426,
+       "h": 1425,
        "alt": "The lineup at a low angle, a micro limo and bikes in front",
        "caption": "Lineup, low",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 Hyundai/_Mobility/All/Still/LINEUP STILL DAY (2).png",
@@ -5365,8 +5365,8 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1297,
        "alt": "Two riders on foldable bikes in a wet city tunnel",
@@ -5390,8 +5390,8 @@
        "pdf_page": 60
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1144,
        "alt": "Riders in the tunnel, a second take",
@@ -5427,8 +5427,8 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "A rider walking beside the folded bike on a rainy waterfront",
@@ -5569,8 +5569,8 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Foldable bike side view in the studio",
@@ -5594,8 +5594,8 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: metallic paint, silver",
@@ -5623,8 +5623,8 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Colour chip: brushed metal, gunmetal",
@@ -5652,8 +5652,8 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Fabric sample: suede, grey",
@@ -5813,8 +5813,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rider lifting the front wheel in the studio",
@@ -5902,8 +5902,8 @@
      "sub": "micro-limo",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Micro Limo under blue light, an older man in the back",
@@ -5927,8 +5927,8 @@
        "pdf_page": 65
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Micro Limo side view under blue light",
@@ -5952,8 +5952,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1397,
        "alt": "Micro Limo in a dark studio",
@@ -5977,8 +5977,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Open door with the contracting seat",
@@ -6027,8 +6027,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1412,
        "alt": "Side view in blue light",
@@ -6052,8 +6052,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1371,
        "alt": "Micro Limo on a lit stage",
@@ -6078,7 +6078,7 @@
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig@1280.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1294,
        "alt": "Rig of the opening body and seats",
@@ -6239,8 +6239,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1403,
        "alt": "H-Drum robot with tank, front view",
@@ -6264,8 +6264,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1758,
        "alt": "H-Drum in the studio",
@@ -6380,8 +6380,8 @@
        "pdf_page": 67
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1368,
        "alt": "Lunar PM module on its legs",
@@ -6505,8 +6505,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1920,
        "alt": "Robokicks pair, front view",
@@ -6621,8 +6621,8 @@
        "pdf_page": 68
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Stick Bike in a studio",
@@ -6646,8 +6646,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Stick Bike side view",
@@ -6696,8 +6696,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Folded Stick Bikes lined up",
@@ -6721,8 +6721,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Micro Lounges at a seaside promenade at sunset",
@@ -6771,8 +6771,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/08-mlg-studio.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/08-mlg-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/08-mlg-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/08-mlg-studio-dith-20261116@1280.webp",
        "w": 2106,
        "h": 1294,
        "alt": "Micro Lounge closed, studio",
@@ -6796,8 +6796,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/09-mlg-open.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/09-mlg-open@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/09-mlg-open-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/09-mlg-open-dith-20261116@1280.webp",
        "w": 2252,
        "h": 1495,
        "alt": "Micro Lounge open, studio",
@@ -6917,8 +6917,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1920,
        "alt": "Chassis in the studio, low view",
@@ -6954,8 +6954,8 @@
      "sub": "xr",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1357,
        "alt": "An airliner climbing over the rooftop showcase",
@@ -7004,8 +7004,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1388,
        "alt": "Overview of the rooftop with round display stands",
@@ -7029,8 +7029,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1359,
        "alt": "A foldable bike on a revolving stand",
@@ -7054,8 +7054,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1318,
        "alt": "The rooftop at sunset",
@@ -7079,8 +7079,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1396,
        "alt": "XR panel selecting a riding mode",
@@ -7104,8 +7104,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Mode panel at night",
@@ -7174,8 +7174,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "The KIA 2021 lineup — G2, G1 and V2 — on a waterfront at dusk, city skyline behind",
@@ -7199,8 +7199,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "The three vehicles in a grey studio",
@@ -7281,8 +7281,8 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "V2 on a cobbled street in fog, front lamps glowing",
@@ -7517,8 +7517,8 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Cabin seen through the open side, motion seats and lilac light",
@@ -7542,8 +7542,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Material sample: wavy plastic, dark grey",
@@ -7571,8 +7571,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Material sample: patterned plastic, light grey",
@@ -7690,8 +7690,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "V2 front view, triangular-pattern lamps",
@@ -7715,8 +7715,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "V2 rear three-quarter view from above",
@@ -7822,8 +7822,8 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "V2 cabin through the open side: motion seats, flatbed and lilac light",
@@ -7847,8 +7847,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Front seats from behind, looking forward",
@@ -7872,8 +7872,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "Rear zone from above with seats and flatbed",
@@ -7897,8 +7897,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A child playing with an XR headset in the rear while a woman drinks coffee in the front seat",
@@ -7954,8 +7954,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "The museum scene, wider view",
@@ -8036,8 +8036,8 @@
      "sub": "g1",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/01-g1-film-cover.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/01-g1-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/01-g1-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/01-g1-film-cover-dith-20261116@1280.webp",
        "w": 2513,
        "h": 1380,
        "alt": "Film cover: G1 seen from above in a hangar",
@@ -8310,8 +8310,8 @@
      "sub": "xr",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1396,
        "alt": "Film cover: the platforms floating over the mountains",
@@ -8335,8 +8335,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2062,
        "alt": "The platform floating above mountains at night, a red moon and the Milky Way",
@@ -8360,8 +8360,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1395,
        "alt": "The platforms seen from a low angle against snowy peaks",
@@ -8385,8 +8385,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1399,
        "alt": "Two vehicles on the white platform, mountains behind",
@@ -8410,8 +8410,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1397,
        "alt": "Vehicles lined up on the white platform",
@@ -8435,8 +8435,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1393,
        "alt": "Guide ring on the platform surface",
@@ -8460,8 +8460,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1399,
        "alt": "A moon and a floating sphere above the platform edge",
@@ -8597,8 +8597,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Weathered vehicles in a red canyon",
@@ -8647,8 +8647,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1086,
        "alt": "The lineup in an orange desert at dusk",
@@ -8687,10 +8687,10 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1486,
+       "h": 1485,
        "alt": "Rows of gold car trophies on VISHOW plinths, on dark green felt",
        "caption": "2020 collection",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/1_2020_Collection_of_VSW__After_PS_-_1X3_alldf__No_Watermarks__b0ced1c8.png",
@@ -8744,8 +8744,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/03-models.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/03-models@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/03-models-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/03-models-dith-20261116@1280.webp",
        "w": 2465,
        "h": 1248,
        "alt": "Nine grey 3D models of cars and motorcycles acquired by VISHOW",
@@ -8781,8 +8781,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front-dithr-20261116@1280.webp",
        "w": 2199,
        "h": 2560,
        "alt": "A low violet coupe in front of a propeller aircraft, front view",
@@ -8806,8 +8806,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear-dith-20261116@1280.webp",
        "w": 1925,
        "h": 2560,
        "alt": "The XY-2 seen from behind with the aircraft beyond",
@@ -8838,8 +8838,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "The KTM F35 motorcycle under studio lights in a dark warehouse",
@@ -8863,8 +8863,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio-dith-20261116@1280.webp",
        "w": 2560,
        "h": 2560,
        "alt": "The F35 in a concrete studio, orange wheels",
@@ -8952,8 +8952,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1447,
        "alt": "Two transforming vehicle modules beside a cargo aircraft in blue dusk, one opened with a person inside",
@@ -9002,8 +9002,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1378,
        "alt": "Grey-model layout of the beach scene",
@@ -9034,8 +9034,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1555,
        "alt": "A small three-wheeled vehicle glowing in the dark between a robot dog and a suited figure",
@@ -9191,8 +9191,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark-dith-20261116@1280.webp",
        "w": 2560,
        "h": 853,
        "alt": "Ultimo in a dark studio",
@@ -9223,8 +9223,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1224,
        "alt": "A red Alfa Romeo 33 Stradale in a dark studio, front three-quarter view",
@@ -9248,8 +9248,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "The Stradale in side view, red light on the floor",
@@ -9273,8 +9273,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34-dithr-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34-dithr-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
        "alt": "The Stradale from the rear three-quarter",
@@ -9305,8 +9305,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "Film cover: two cars in a sandstorm",
@@ -9355,8 +9355,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "The cube's edge over the dunes in a dust storm",
@@ -9380,8 +9380,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "A dark car drifting through red desert, sand flying",
@@ -9405,8 +9405,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1429,
        "alt": "View from the side of a speeding orange car across the dunes",
@@ -9480,8 +9480,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor-dith-20261116@1280.webp",
        "w": 2560,
        "h": 1320,
        "alt": "The desert scene in the 3D editor",
@@ -9542,10 +9542,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy-sharp-20261115k@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy-dith-20261116@1280.webp",
        "w": 2560,
-       "h": 1086,
+       "h": 1087,
        "alt": "Two elderly men at a workbench with a gold car trophy",
        "caption": "Workbench",
        "nas_source_path": "02_Working/Projects/Digital Visualization/VISHOW/No Watermarks/VISHOW_Review1.png",
@@ -9644,8 +9644,8 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/03-niva-letters.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/niva/03-niva-letters@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/03-niva-letters-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/niva/03-niva-letters-dith-20261116@1280.webp",
        "w": 1400,
        "h": 649,
        "alt": "Four red panels spelling N-I-V-A: neuralinked, intra-vehicular, personal adaptive, robotic space-mobility",
@@ -9669,8 +9669,8 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/04-neuralink.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/niva/04-neuralink@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/04-neuralink-dith-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/niva/04-neuralink-dith-20261116@1280.webp",
        "w": 1200,
        "h": 546,
        "alt": "Diagram of a neural link between the human brain and AI beside a rendered head",
