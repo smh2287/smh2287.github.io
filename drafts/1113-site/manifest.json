@@ -1,19 +1,19 @@
 {
  "base": "https://songfamhome.synology.me/portfolio2026/",
- "generated": "20261115j",
+ "generated": "20261115k",
  "projects": {
   "mercedes": {
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
    "locked": false,
    "comments_id": "pf2026-mercedes",
-   "image_count": 37,
+   "image_count": 34,
    "sections": [
     {
      "label": "MERCEDES BENZ / 2025",
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/01-cabriolet-top-pair@1280.webp",
        "w": 2560,
        "h": 1309,
@@ -22,10 +22,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0D_White__White__a020ec32.png",
        "crop": null,
        "view_crop": {
-        "x": 0.2308,
-        "y": 0.15,
-        "w": 0.5271,
-        "h": 0.6833
+        "x": 0.2492,
+        "y": 0.2032,
+        "w": 0.4798,
+        "h": 0.6255
        },
        "rotate": 0,
        "grade": null,
@@ -36,7 +36,7 @@
        "pdf_page": 4
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/02-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -71,7 +71,33 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-sharp-20261115k@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Exploded view of the car model",
+       "caption": "Parts",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Exploded/CLE_Still_Setting_Others.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.156,
+        "y": 0.1159,
+        "w": 0.7624,
+        "h": 0.7624
+       },
+       "rotate": 0,
+       "grade": {
+        "temperature": -0.07,
+        "tint": 0.04
+       },
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "visual match",
+       "pdf_page": 6
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -80,10 +106,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/CMF/CLE_Still_Setting_CMF.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1023,
-        "y": 0.0636,
-        "w": 0.7715,
-        "h": 0.7715
+        "x": 0.1454,
+        "y": 0.1543,
+        "w": 0.672,
+        "h": 0.672
        },
        "rotate": 0,
        "grade": {
@@ -104,33 +130,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Exploded view of the car model",
-       "caption": "Parts",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Exploded/CLE_Still_Setting_Others.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.1686,
-        "y": 0.0273,
-        "w": 0.7189,
-        "h": 0.9273
-       },
-       "rotate": 0,
-       "grade": {
-        "temperature": -0.07,
-        "tint": 0.04
-       },
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "visual match",
-       "pdf_page": 6
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra@1280.webp",
        "w": 2560,
        "h": 1277,
@@ -139,10 +139,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160154.png",
        "crop": null,
        "view_crop": {
-        "x": 0.008,
-        "y": 0.0,
-        "w": 0.992,
-        "h": 1.0
+        "x": 0.1546,
+        "y": 0.0106,
+        "w": 0.7911,
+        "h": 0.892
        },
        "rotate": 0,
        "grade": null,
@@ -153,7 +153,7 @@
        "pdf_page": 6
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/06-model-rig@1280.webp",
        "w": 2560,
        "h": 1438,
@@ -162,10 +162,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160943.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1063,
-        "y": 0.0294,
-        "w": 0.8936999999999999,
-        "h": 0.8643
+        "x": 0.1397,
+        "y": 0.0379,
+        "w": 0.8514,
+        "h": 0.8526
        },
        "rotate": 0,
        "grade": null,
@@ -176,7 +176,7 @@
        "pdf_page": 6
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/07-model-uv@1280.webp",
        "w": 2560,
        "h": 1441,
@@ -185,10 +185,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Model/스크린샷 2026-05-23 160812.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1057,
-        "y": 0.0,
-        "w": 0.8943,
-        "h": 0.8937
+        "x": 0.1223,
+        "y": 0.0126,
+        "w": 0.8777,
+        "h": 0.877
        },
        "rotate": 0,
        "grade": null,
@@ -206,7 +206,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/08-ext-front34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -215,10 +215,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext1_White1__White__ee730e53.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0429,
-        "y": 0.1839,
-        "w": 0.9397,
-        "h": 0.6962
+        "x": 0.0691,
+        "y": 0.215,
+        "w": 0.8954,
+        "h": 0.6822
        },
        "rotate": 0,
        "grade": {
@@ -231,7 +231,7 @@
        "pdf_page": 7
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/09-ext-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -257,7 +257,7 @@
        "pdf_page": 8
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/10-ext-rear34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -266,10 +266,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext3_White1__White__9f804383.png",
        "crop": null,
        "view_crop": {
-        "x": 0.1026,
-        "y": 0.0865,
-        "w": 0.8974,
-        "h": 0.9135
+        "x": 0.0833,
+        "y": 0.1352,
+        "w": 0.8351,
+        "h": 0.8351
        },
        "rotate": 0,
        "grade": null,
@@ -280,7 +280,7 @@
        "pdf_page": 9
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/11-ext-rear@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -289,10 +289,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext4_White1__White__181b23b3.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0,
-        "y": 0.0351,
-        "w": 0.8901,
-        "h": 0.9061
+        "x": 0.1826,
+        "y": 0.1855,
+        "w": 0.6489,
+        "h": 0.6489
        },
        "rotate": 0,
        "grade": null,
@@ -303,7 +303,7 @@
        "pdf_page": 9
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -312,10 +312,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0A_White__White__734c414f.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0,
-        "y": 0.1385,
-        "w": 0.9755,
-        "h": 0.7226
+        "x": 0.0443,
+        "y": 0.181,
+        "w": 0.8936,
+        "h": 0.6809
        },
        "rotate": 0,
        "grade": {
@@ -328,7 +328,7 @@
        "pdf_page": 10
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/13-ext-high-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -337,10 +337,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0B_White__White__baa1eee3.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
+        "x": 0.0691,
+        "y": 0.2353,
+        "w": 0.8741,
+        "h": 0.666
        },
        "rotate": 0,
        "grade": null,
@@ -358,7 +358,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -384,7 +384,7 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/15-cu-tail@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -409,7 +409,7 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -432,7 +432,7 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/17-cu-door@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -462,7 +462,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/18-int-high@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -485,7 +485,33 @@
        "pdf_page": 12
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front-sharp-20261115k@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Dashboard seen from the rear seats",
+       "caption": "Dashboard",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int4_White1.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
+       },
+       "rotate": 0,
+       "grade": {
+        "exposure": 0.04,
+        "contrast": 0.2
+       },
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "visual match",
+       "pdf_page": 14
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/19-int-cockpit@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -508,33 +534,7 @@
        "pdf_page": 13
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/20-int-front@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Dashboard seen from the rear seats",
-       "caption": "Dashboard",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int4_White1.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0254,
-        "y": 0.0,
-        "w": 0.9492,
-        "h": 1.0
-       },
-       "rotate": 0,
-       "grade": {
-        "exposure": 0.04,
-        "contrast": 0.2
-       },
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "visual match",
-       "pdf_page": 14
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/21-int-seats@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -560,7 +560,30 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear-sharp-20261115k@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Cabin seen from behind the front seats",
+       "caption": "Rear seats",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int8_White1.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0124,
+        "y": 0.0426,
+        "w": 0.945,
+        "h": 0.945
+       },
+       "rotate": 0,
+       "grade": null,
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "name match",
+       "pdf_page": null
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/22-int-door@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -583,7 +606,7 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/23-int-console@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -606,7 +629,7 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/24-int-wheel@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -629,7 +652,7 @@
        "pdf_page": 15
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/25-int-ambient@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -638,10 +661,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int9_White__White__dc8e8fe0.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0749,
-        "y": 0.0926,
-        "w": 0.8832,
-        "h": 0.6542
+        "x": 0.0372,
+        "y": 0.0157,
+        "w": 0.9344,
+        "h": 0.9344
        },
        "rotate": 0,
        "grade": null,
@@ -650,29 +673,6 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 16
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/26-int-rear@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Cabin seen from behind the front seats",
-       "caption": "Rear seats",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Int8_White1.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0507,
-        "y": 0.1013,
-        "w": 0.7172,
-        "h": 0.7969
-       },
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
       }
      ],
      "videos": []
@@ -682,7 +682,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/27-yellow-front34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -691,10 +691,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Yellow/CLE_Still_Ext1_Yellow1.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0423,
-        "y": 0.1006,
-        "w": 0.9407,
-        "h": 0.6432
+        "x": 0.0798,
+        "y": 0.2202,
+        "w": 0.8776,
+        "h": 0.6687
        },
        "rotate": 0,
        "grade": {
@@ -707,7 +707,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/28-yellow-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -733,7 +733,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/29-yellow-rear34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -756,7 +756,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/30-yellow-front-closeup@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -779,7 +779,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/31-yellow-cabin@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -802,7 +802,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/32-yellow-cockpit@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -825,7 +825,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/33-yellow-dashboard@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -855,7 +855,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside@1280.webp",
        "w": 2560,
        "h": 1074,
@@ -876,75 +876,6 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 17
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/35-scene-coast-road.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/35-scene-coast-road@1280.webp",
-       "w": 2560,
-       "h": 1222,
-       "alt": "CLE Cabriolet on a coastal road at sunset",
-       "caption": "Coast road",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A4.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 0.8486,
-        "h": 1.0
-       },
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/36-scene-shore.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/36-scene-shore@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "CLE Cabriolet on a rocky shore",
-       "caption": "Shore",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A2.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
-      },
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/37-scene-studio.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/37-scene-studio@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "CLE Cabriolet in the studio with a figure",
-       "caption": "Studio",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A1.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0,
-        "y": 0.0,
-        "w": 1.0,
-        "h": 1.0
-       },
-       "rotate": 0,
-       "grade": null,
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "name match",
-       "pdf_page": null
       }
      ],
      "videos": []
@@ -962,7 +893,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/01-mc-intro@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -985,7 +916,7 @@
        "pdf_page": 19
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover@1280.webp",
        "w": 2560,
        "h": 549,
@@ -1020,7 +951,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/03-mc-aurora@1280.webp",
        "w": 2560,
        "h": 1614,
@@ -1109,7 +1040,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/06-mc-exploded.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/06-mc-exploded-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/06-mc-exploded@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1143,7 +1074,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/07-mc-rig-ext1.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/07-mc-rig-ext1-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/07-mc-rig-ext1@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -1166,7 +1097,7 @@
        "pdf_page": 22
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/08-mc-rig-ext2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/08-mc-rig-ext2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/08-mc-rig-ext2@1280.webp",
        "w": 2560,
        "h": 1444,
@@ -1189,7 +1120,7 @@
        "pdf_page": 22
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/09-mc-rig-ext3.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/09-mc-rig-ext3-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/09-mc-rig-ext3@1280.webp",
        "w": 2560,
        "h": 1441,
@@ -1235,7 +1166,7 @@
        "pdf_page": 22
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/11-mc-rig-int2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/11-mc-rig-int2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/11-mc-rig-int2@1280.webp",
        "w": 2560,
        "h": 1442,
@@ -1258,7 +1189,7 @@
        "pdf_page": 22
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/12-mc-rig-int3.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/12-mc-rig-int3-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/12-mc-rig-int3@1280.webp",
        "w": 2560,
        "h": 1448,
@@ -1288,7 +1219,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/13-mc-cmf-ext@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1313,7 +1244,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/14-mc-cmf-int.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/14-mc-cmf-int-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/14-mc-cmf-int@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1340,7 +1271,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/15-mc-chip-black@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1367,7 +1298,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/16-mc-chip-grey.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/16-mc-chip-grey-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/16-mc-chip-grey@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1394,7 +1325,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/17-mc-chip-plastic@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1421,7 +1352,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/18-mc-chip-fabric.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/18-mc-chip-fabric-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/18-mc-chip-fabric@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1448,7 +1379,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/19-mc-chip-carbon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/19-mc-chip-carbon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/19-mc-chip-carbon@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1475,7 +1406,7 @@
        "pdf_page": 23
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/20-mc-chip-green.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/20-mc-chip-green-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/20-mc-chip-green@1280.webp",
        "w": 2560,
        "h": 1080,
@@ -1509,7 +1440,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/21-mc-ext-front34@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1535,7 +1466,7 @@
        "pdf_page": 24
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/22-mc-ext-high.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/22-mc-ext-high-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/22-mc-ext-high@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1558,7 +1489,7 @@
        "pdf_page": 24
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/23-mc-ext-rear34@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1588,7 +1519,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/24-mc-int-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/24-mc-int-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/24-mc-int-side@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1614,7 +1545,7 @@
        "pdf_page": 25
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/25-mc-int-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/25-mc-int-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/25-mc-int-rear@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1640,7 +1571,7 @@
        "pdf_page": 25
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/26-mc-int-seats@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1670,7 +1601,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/27-mc-exp-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/27-mc-exp-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/27-mc-exp-front@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1693,7 +1624,7 @@
        "pdf_page": 26
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/28-mc-exp-side@1280.webp",
        "w": 2560,
        "h": 1587,
@@ -1716,7 +1647,7 @@
        "pdf_page": 26
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/29-mc-exp-top.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/29-mc-exp-top-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/29-mc-exp-top@1280.webp",
        "w": 2560,
        "h": 1422,
@@ -1746,7 +1677,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/30-mc-river.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/30-mc-river-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/30-mc-river@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1780,7 +1711,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/31-mc-canyon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/31-mc-canyon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/31-mc-canyon@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1803,7 +1734,7 @@
        "pdf_page": 28
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/32-mc-canyon-top.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/32-mc-canyon-top-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/32-mc-canyon-top@1280.webp",
        "w": 2560,
        "h": 2557,
@@ -1826,7 +1757,7 @@
        "pdf_page": 28
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/33-mc-canyon-top2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/33-mc-canyon-top2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/33-mc-canyon-top2@1280.webp",
        "w": 2266,
        "h": 2560,
@@ -1860,7 +1791,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/34-mc-xr-drive.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/34-mc-xr-drive-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/34-mc-xr-drive@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1887,7 +1818,7 @@
        "pdf_page": 29
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/35-mc-xr-hmd@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1915,7 +1846,7 @@
        "pdf_page": 29
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/36-mc-xr-drive-raw.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/36-mc-xr-drive-raw-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/36-mc-xr-drive-raw@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1945,7 +1876,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/37-mc-camp.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/37-mc-camp-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/37-mc-camp@1280.webp",
        "w": 2560,
        "h": 1409,
@@ -1972,7 +1903,7 @@
        "pdf_page": 30
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/38-mc-camp-kitchen.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/38-mc-camp-kitchen-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/38-mc-camp-kitchen@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -1998,7 +1929,7 @@
        "pdf_page": 30
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/39-mc-camp-storage.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/39-mc-camp-storage-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/39-mc-camp-storage@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -2021,7 +1952,7 @@
        "pdf_page": 30
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/40-mc-camp-int.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/40-mc-camp-int-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/40-mc-camp-int@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -2044,7 +1975,7 @@
        "pdf_page": 31
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/41-mc-camp-office.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/41-mc-camp-office-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/41-mc-camp-office@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -2069,7 +2000,7 @@
        "pdf_page": 31
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/42-mc-camp-roof.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/42-mc-camp-roof-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/42-mc-camp-roof@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -2099,7 +2030,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/02-mc-film-cover@1280.webp",
        "w": 2560,
        "h": 549,
@@ -2129,7 +2060,7 @@
      "sub": "mocamper",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mocamper/45-mc-review@1280.webp",
        "w": 2560,
        "h": 1097,
@@ -2159,7 +2090,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/01-mv-street.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/01-mv-street-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/01-mv-street@1280.webp",
        "w": 2560,
        "h": 1186,
@@ -2182,7 +2113,7 @@
        "pdf_page": 35
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/02-mv-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/02-mv-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/02-mv-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2217,7 +2148,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/03-mv-top.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/03-mv-top-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/03-mv-top@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -2448,7 +2379,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/12-mv-cmf-ext@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2471,7 +2402,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/13-mv-cmf-int.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/13-mv-cmf-int-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/13-mv-cmf-int@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2494,7 +2425,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/14-mv-chip-darkgrey@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2521,7 +2452,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/15-mv-chip-silver@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2548,7 +2479,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/16-mv-chip-plastic@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2575,7 +2506,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/17-mv-chip-corduroy.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/17-mv-chip-corduroy-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/17-mv-chip-corduroy@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2602,7 +2533,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/18-mv-chip-mesh@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2629,7 +2560,7 @@
        "pdf_page": 38
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/19-mv-chip-wood@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2663,7 +2594,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/20-mv-ext-front34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2686,7 +2617,7 @@
        "pdf_page": 39
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/21-mv-ext-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2709,7 +2640,7 @@
        "pdf_page": 39
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/22-mv-ext-rear34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2742,7 +2673,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/23-mv-int-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/23-mv-int-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/23-mv-int-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2765,7 +2696,7 @@
        "pdf_page": 40
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/24-mv-int-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/24-mv-int-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/24-mv-int-rear@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2790,7 +2721,7 @@
        "pdf_page": 40
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/25-mv-int-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/25-mv-int-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/25-mv-int-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2822,7 +2753,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/26-mv-office.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/26-mv-office-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/26-mv-office@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2845,7 +2776,7 @@
        "pdf_page": 41
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/27-mv-loft.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/27-mv-loft-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/27-mv-loft@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2868,7 +2799,7 @@
        "pdf_page": 41
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/28-mv-office-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -2898,7 +2829,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/29-mv-field.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/29-mv-field-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/29-mv-field@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2921,7 +2852,7 @@
        "pdf_page": 42
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/30-mv-cinema@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2946,7 +2877,7 @@
        "pdf_page": 42
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/31-mv-vr@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2976,7 +2907,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/32-mv-cabana.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/32-mv-cabana-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/32-mv-cabana@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -2999,7 +2930,7 @@
        "pdf_page": 43
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/33-mv-cabana-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/33-mv-cabana-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/33-mv-cabana-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3022,7 +2953,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/34-mv-lounge-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/34-mv-lounge-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/34-mv-lounge-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3052,7 +2983,7 @@
      "sub": "movilla",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/35-mv-review@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -3075,7 +3006,7 @@
        "pdf_page": 44
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/36-mv-review-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/36-mv-review-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/movilla/36-mv-review-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3105,7 +3036,7 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/01-eg-forest.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/01-eg-forest-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/01-eg-forest@1280.webp",
        "w": 2560,
        "h": 1274,
@@ -3128,7 +3059,7 @@
        "pdf_page": 45
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/02-eg-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3163,7 +3094,7 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/03-eg-deck@1280.webp",
        "w": 2560,
        "h": 1911,
@@ -3394,7 +3325,7 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/12-eg-cmf-ext@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -3423,7 +3354,7 @@
        "pdf_page": 48
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/13-eg-cmf-int@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -3459,7 +3390,7 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/14-eg-ext-open@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3482,7 +3413,7 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/15-eg-ext-rear34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3505,7 +3436,7 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/16-eg-ext-wheels@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3528,7 +3459,7 @@
        "pdf_page": 49
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/17-eg-ext-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3558,7 +3489,7 @@
      "sub": "egonest",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/18-eg-int-forest.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/18-eg-int-forest-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/18-eg-int-forest@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -3581,7 +3512,7 @@
        "pdf_page": 51
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/19-eg-int-kitchen.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/19-eg-int-kitchen-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/19-eg-int-kitchen@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3604,7 +3535,7 @@
        "pdf_page": 51
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/20-eg-int-stairs.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/20-eg-int-stairs-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/20-eg-int-stairs@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3627,7 +3558,7 @@
        "pdf_page": 51
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/21-eg-int-chair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/21-eg-int-chair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/21-eg-int-chair@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3650,7 +3581,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/22-eg-int-skylight@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3673,7 +3604,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/egonest/23-eg-int-top@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3703,7 +3634,7 @@
      "sub": "lineup",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/01-go-moss.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/01-go-moss-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/01-go-moss@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -3726,7 +3657,7 @@
        "pdf_page": 52
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/02-go-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3749,7 +3680,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/03-go-moss2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/03-go-moss2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/03-go-moss2@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -3772,7 +3703,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/04-go-snow.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/04-go-snow-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/04-go-snow@1280.webp",
        "w": 2560,
        "h": 1314,
@@ -3795,7 +3726,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/08-go-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/08-go-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/08-go-film-cover@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -3818,7 +3749,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/05-tp-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3841,7 +3772,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/06-tp-grass@1280.webp",
        "w": 2560,
        "h": 1717,
@@ -3864,7 +3795,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/07-tp-sand@1280.webp",
        "w": 2560,
        "h": 1717,
@@ -3899,7 +3830,7 @@
      "sub": "lineup",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/09-ts-forest.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/09-ts-forest-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/09-ts-forest@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -3922,7 +3853,7 @@
        "pdf_page": 53
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/10-ts-arcade.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/10-ts-arcade-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/10-ts-arcade@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -3945,7 +3876,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/11-ts-hillside.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/11-ts-hillside-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/11-ts-hillside@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3968,7 +3899,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/12-ts-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -3991,7 +3922,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/16-ts-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/16-ts-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/16-ts-film-cover@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -4014,7 +3945,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/13-as-hillside@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -4037,7 +3968,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/14-as-plaza@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -4060,7 +3991,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/15-as-forest@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -4095,7 +4026,7 @@
      "sub": "lineup",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/17-mn-park.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/17-mn-park-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/17-mn-park@1280.webp",
        "w": 2560,
        "h": 924,
@@ -4118,7 +4049,7 @@
        "pdf_page": 54
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/18-mn-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -4141,7 +4072,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/19-mn-desert@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -4164,7 +4095,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/20-mn-ride.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/20-mn-ride-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/20-mn-ride@1280.webp",
        "w": 2560,
        "h": 1613,
@@ -4187,7 +4118,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/21-tc-glow@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -4210,7 +4141,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/22-tc-dock@1280.webp",
        "w": 2560,
        "h": 863,
@@ -4238,7 +4169,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/23-tc-dock2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/23-tc-dock2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/lineup/23-tc-dock2@1280.webp",
        "w": 2560,
        "h": 863,
@@ -4273,7 +4204,7 @@
      "sub": "mdek",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/01-logo-tesseract.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/01-logo-tesseract-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/01-logo-tesseract@1280.webp",
        "w": 2560,
        "h": 1075,
@@ -4296,7 +4227,7 @@
        "pdf_page": 55
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/02-logo-burst.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/02-logo-burst-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/02-logo-burst@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -4319,7 +4250,7 @@
        "pdf_page": 55
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4342,7 +4273,7 @@
        "pdf_page": 55
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/04-logo-kia@1280.webp",
        "w": 2560,
        "h": 1077,
@@ -4365,7 +4296,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/05-logo-sketch1.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/05-logo-sketch1-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/05-logo-sketch1@1280.webp",
        "w": 2560,
        "h": 1919,
@@ -4388,7 +4319,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/06-logo-sketch2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/06-logo-sketch2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/06-logo-sketch2@1280.webp",
        "w": 2560,
        "h": 1919,
@@ -4411,10 +4342,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/logo-sketch3-p4-desktop-20261115i.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/logo-sketch3-p4-desktop-20261115i-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/logo-sketch3-p4-desktop-20261115i@1280.webp",
-       "w": 2732,
-       "h": 2048,
+       "w": 2560,
+       "h": 1919,
        "alt": "Storyboard sketch: KIA lettering built from cubes",
        "caption": "Storyboard 3",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2022 KIA/_Logo/Storyboard/IMG_1253.png",
@@ -4434,7 +4365,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/03-logo-hexagon@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4497,7 +4428,7 @@
        "pdf_page": 56
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/10-env-home.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/10-env-home-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/10-env-home@1280.webp",
        "w": 2560,
        "h": 1347,
@@ -4520,7 +4451,7 @@
        "pdf_page": 56
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/11-env-barge.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/11-env-barge-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/11-env-barge@1280.webp",
        "w": 2560,
        "h": 1217,
@@ -4543,7 +4474,7 @@
        "pdf_page": 56
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/12-env-beach.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/12-env-beach-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/12-env-beach@1280.webp",
        "w": 2560,
        "h": 1208,
@@ -4566,7 +4497,7 @@
        "pdf_page": 56
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/13-env-home2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/13-env-home2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/13-env-home2@1280.webp",
        "w": 2560,
        "h": 1342,
@@ -4589,7 +4520,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/14-env-canyon@1280.webp",
        "w": 2560,
        "h": 1228,
@@ -4612,7 +4543,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/15-env-beach2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/15-env-beach2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/15-env-beach2@1280.webp",
        "w": 2560,
        "h": 1230,
@@ -4691,7 +4622,7 @@
        "pdf_page": 57
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/18-env-mdek-model.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/18-env-mdek-model-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/18-env-mdek-model@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4714,7 +4645,7 @@
        "pdf_page": 57
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/19-env-mdek-model2@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4737,7 +4668,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/20-city-film-cover@1280.webp",
        "w": 2560,
        "h": 1224,
@@ -4772,7 +4703,7 @@
      "sub": "mdek",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/21-xr-hangar@1280.webp",
        "w": 2560,
        "h": 1595,
@@ -4795,7 +4726,7 @@
        "pdf_page": 58
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/22-xr-robot.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/22-xr-robot-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/22-xr-robot@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -4818,7 +4749,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/23-xr-heli@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -4841,7 +4772,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/24-xr-jet@1280.webp",
        "w": 2560,
        "h": 1274,
@@ -4864,7 +4795,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/25-xr-ui@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4887,7 +4818,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/26-xr-hands@1280.webp",
        "w": 2560,
        "h": 1072,
@@ -4910,7 +4841,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/27-xr-entrance.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/27-xr-entrance-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/27-xr-entrance@1280.webp",
        "w": 2560,
        "h": 1327,
@@ -4933,7 +4864,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/28-xr-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/28-xr-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2022/mdek/28-xr-film-cover@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -4976,7 +4907,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/01-lineup-day@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -4999,7 +4930,7 @@
        "pdf_page": 59
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/02-lineup-day2@1280.webp",
        "w": 2560,
        "h": 1426,
@@ -5022,7 +4953,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/03-lineup-ambulance.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/03-lineup-ambulance-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/03-lineup-ambulance@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -5052,7 +4983,7 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/01-fb-tunnel@1280.webp",
        "w": 2560,
        "h": 1297,
@@ -5075,7 +5006,7 @@
        "pdf_page": 60
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/02-fb-film-cover@1280.webp",
        "w": 2560,
        "h": 1144,
@@ -5110,7 +5041,7 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/03-fb-folded@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -5242,7 +5173,7 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/08-fb-cmf@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5265,7 +5196,7 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/09-fb-chip-silver@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5292,7 +5223,7 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/10-fb-chip-gunmetal@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5319,7 +5250,7 @@
        "pdf_page": 62
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/11-fb-chip-suede@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5353,7 +5284,7 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/12-fb-street.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/12-fb-street-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/12-fb-street@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5376,7 +5307,7 @@
        "pdf_page": 63
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/13-fb-busstop.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/13-fb-busstop-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/13-fb-busstop@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5399,7 +5330,7 @@
        "pdf_page": 63
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/14-fb-hillroad.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/14-fb-hillroad-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/14-fb-hillroad@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5422,7 +5353,7 @@
        "pdf_page": 63
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/15-fb-lean.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/15-fb-lean-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/15-fb-lean@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5445,7 +5376,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/16-fb-lean2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/16-fb-lean2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/16-fb-lean2@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5468,7 +5399,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/17-fb-wheelie@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5498,7 +5429,7 @@
      "sub": "foldable-bike",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/18-fb-review.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/18-fb-review-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/18-fb-review@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5521,7 +5452,7 @@
        "pdf_page": 64
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/19-fb-review-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/19-fb-review-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/foldable-bike/19-fb-review-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5551,7 +5482,7 @@
      "sub": "micro-limo",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/01-ml-blue@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5574,7 +5505,7 @@
        "pdf_page": 65
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/02-ml-film-cover@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -5597,7 +5528,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/03-ml-studio@1280.webp",
        "w": 2560,
        "h": 1397,
@@ -5620,7 +5551,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/04-ml-open@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5643,7 +5574,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/05-ml-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/05-ml-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/05-ml-rear@1280.webp",
        "w": 2560,
        "h": 1400,
@@ -5666,7 +5597,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/06-ml-side@1280.webp",
        "w": 2560,
        "h": 1412,
@@ -5689,7 +5620,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/07-ml-stage@1280.webp",
        "w": 2560,
        "h": 1371,
@@ -5712,7 +5643,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/micro-limo/08-ml-rig@1280.webp",
        "w": 2560,
        "h": 1294,
@@ -5747,7 +5678,7 @@
      "sub": "desert",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/01-gs-oasis.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/01-gs-oasis-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/01-gs-oasis@1280.webp",
        "w": 2560,
        "h": 897,
@@ -5770,7 +5701,7 @@
        "pdf_page": 66
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/02-gs-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/02-gs-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/02-gs-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5793,7 +5724,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/03-gs-ride.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/03-gs-ride-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/03-gs-ride@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -5816,7 +5747,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/04-gs-pair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/04-gs-pair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/04-gs-pair@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5839,7 +5770,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/05-gs-convoy.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/05-gs-convoy-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/05-gs-convoy@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5862,7 +5793,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/06-hd-film-cover@1280.webp",
        "w": 2560,
        "h": 1403,
@@ -5885,7 +5816,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/07-hd-studio@1280.webp",
        "w": 2560,
        "h": 1758,
@@ -5908,7 +5839,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/08-hd-pair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/08-hd-pair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/08-hd-pair@1280.webp",
        "w": 2560,
        "h": 1399,
@@ -5931,7 +5862,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/09-hd-wheel.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/09-hd-wheel-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/desert/09-hd-wheel@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -5970,7 +5901,7 @@
      "sub": "moon",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/01-moon-base.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/01-moon-base-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/01-moon-base@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -5993,7 +5924,7 @@
        "pdf_page": 67
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/02-lp-film-cover@1280.webp",
        "w": 2560,
        "h": 1368,
@@ -6016,7 +5947,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/03-moon-walk.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/03-moon-walk-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/03-moon-walk@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -6039,7 +5970,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/04-moon-earth.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/04-moon-earth-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/04-moon-earth@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -6062,7 +5993,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/05-lp-close.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/05-lp-close-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/05-lp-close@1280.webp",
        "w": 2560,
        "h": 1408,
@@ -6085,7 +6016,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/06-rk-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/06-rk-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/06-rk-film-cover@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -6108,7 +6039,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/07-rk-studio@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -6131,7 +6062,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/08-rk-pair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/08-rk-pair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/08-rk-pair@1280.webp",
        "w": 2560,
        "h": 1363,
@@ -6154,7 +6085,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/09-rk-light.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/09-rk-light-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/moon/09-rk-light@1280.webp",
        "w": 2560,
        "h": 1358,
@@ -6193,7 +6124,7 @@
      "sub": "seaside",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/01-sea-boardwalk.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/01-sea-boardwalk-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/01-sea-boardwalk@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -6216,7 +6147,7 @@
        "pdf_page": 68
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/02-sb-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6239,7 +6170,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/03-sb-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6262,7 +6193,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/04-sb-wheel.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/04-sb-wheel-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/04-sb-wheel@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6285,7 +6216,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/05-sb-folded@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6308,7 +6239,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/06-mlg-film-cover@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6331,7 +6262,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/07-mlg-sunset.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/07-mlg-sunset-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/seaside/07-mlg-sunset@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6444,7 +6375,7 @@
        "pdf_page": 69
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/02-amb-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/02-amb-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/02-amb-film-cover@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6467,7 +6398,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/03-amb-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/03-amb-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/03-amb-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6490,7 +6421,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/ambulance/04-amb-studio@1280.webp",
        "w": 2560,
        "h": 1920,
@@ -6525,7 +6456,7 @@
      "sub": "xr",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/01-xr-plane@1280.webp",
        "w": 2560,
        "h": 1357,
@@ -6548,7 +6479,7 @@
        "pdf_page": 70
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/02-xr-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/02-xr-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/02-xr-film-cover@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6571,7 +6502,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/03-xr-overview@1280.webp",
        "w": 2560,
        "h": 1388,
@@ -6594,7 +6525,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/04-xr-stand@1280.webp",
        "w": 2560,
        "h": 1359,
@@ -6617,7 +6548,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/05-xr-dusk@1280.webp",
        "w": 2560,
        "h": 1318,
@@ -6640,7 +6571,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/06-xr-mode@1280.webp",
        "w": 2560,
        "h": 1396,
@@ -6663,7 +6594,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/hyundai2022/xr/07-xr-mode4@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6729,7 +6660,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/01-lineup-city-dusk@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6752,7 +6683,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/02-lineup-studio@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -6775,7 +6706,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/03-lineup-waterfront.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/03-lineup-waterfront-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/03-lineup-waterfront@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6798,7 +6729,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/04-lineup-sunset.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/04-lineup-sunset-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/04-lineup-sunset@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -6828,7 +6759,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/01-v2-fog-street@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -6851,7 +6782,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/02-v2-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/02-v2-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/02-v2-film-cover@1280.webp",
        "w": 2560,
        "h": 1254,
@@ -6886,7 +6817,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/03-v2-street-above.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/03-v2-street-above-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/03-v2-street-above@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -6909,10 +6840,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/v2-interior-sketches-p4-desktop-20261115i.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/v2-interior-sketches-p4-desktop-20261115i-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/v2-interior-sketches-p4-desktop-20261115i@1280.webp",
-       "w": 6530,
-       "h": 2000,
+       "w": 2560,
+       "h": 784,
        "alt": "Interior design concept sketches by Seongho Lim and Minho Song",
        "caption": "Interior concepts",
        "nas_source_path": "02_Working/Shared/Portfolio_Page_Exports/0.75/03IAC21K-01V2-02___설명__0_75__af8d6568.png",
@@ -7048,7 +6979,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/09-v2-cmf-cabin@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7071,7 +7002,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/10-v2-cmf-wavy@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7098,7 +7029,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/11-v2-cmf-pattern@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7125,7 +7056,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/12-v2-cmf-fabric.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/12-v2-cmf-fabric-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/12-v2-cmf-fabric@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7152,7 +7083,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/13-v2-cmf-fabric-dark.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/13-v2-cmf-fabric-dark-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/13-v2-cmf-fabric-dark@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7186,7 +7117,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/14-v2-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/14-v2-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/14-v2-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7209,7 +7140,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/15-v2-front@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7232,7 +7163,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/16-v2-rear-above@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7255,7 +7186,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/17-v2-beach.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/17-v2-beach-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/17-v2-beach@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -7278,7 +7209,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/18-v2-beach-sunset.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/18-v2-beach-sunset-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/18-v2-beach-sunset@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -7301,7 +7232,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/19-v2-studio-open.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/19-v2-studio-open-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/19-v2-studio-open@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7331,7 +7262,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/20-v2-cabin@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7354,7 +7285,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/21-v2-front-seats@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7377,7 +7308,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/22-v2-rear-zone@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7400,7 +7331,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/23-v2-gen-c@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -7430,7 +7361,7 @@
      "sub": "v2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/24-v2-museum.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/24-v2-museum-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/24-v2-museum@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -7453,7 +7384,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/25-v2-museum-wide@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -7476,7 +7407,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/26-v2-review-source.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/26-v2-review-source-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/26-v2-review-source@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7499,7 +7430,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/27-v2-street-base.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/27-v2-street-base-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/v2/27-v2-street-base@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -7598,10 +7529,10 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-chassis-p4-desktop-20261115i.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-chassis-p4-desktop-20261115i-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g1/g1-sketch-chassis-p4-desktop-20261115i@1280.webp",
-       "w": 3089,
-       "h": 1617,
+       "w": 2560,
+       "h": 1340,
        "alt": "Design sketch: chassis and body",
        "caption": "Chassis sketch",
        "nas_source_path": "02_Working/Projects/Digital Visualization/2021 KIA/_Mobility/G1/Sketch/스크린샷 2026-02-19 180758.png",
@@ -7633,7 +7564,7 @@
      "sub": "g2",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/01-g2-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/01-g2-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/01-g2-film-cover@1280.webp",
        "w": 2560,
        "h": 1309,
@@ -7656,7 +7587,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/04-g2-farm-wide.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/04-g2-farm-wide-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/04-g2-farm-wide@1280.webp",
        "w": 2560,
        "h": 881,
@@ -7679,7 +7610,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/g2/03-g2-farm@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -7783,7 +7714,7 @@
      "sub": "xr",
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/01-xr-film-cover@1280.webp",
        "w": 2560,
        "h": 1396,
@@ -7806,7 +7737,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/02-xr-night@1280.webp",
        "w": 2560,
        "h": 2062,
@@ -7829,7 +7760,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/04-xr-platforms-low@1280.webp",
        "w": 2560,
        "h": 1395,
@@ -7852,7 +7783,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/05-xr-v2-g2@1280.webp",
        "w": 2560,
        "h": 1399,
@@ -7875,7 +7806,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/06-xr-arrival@1280.webp",
        "w": 2560,
        "h": 1397,
@@ -7898,7 +7829,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/07-xr-guide@1280.webp",
        "w": 2560,
        "h": 1393,
@@ -7921,7 +7852,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/08-xr-moon@1280.webp",
        "w": 2560,
        "h": 1399,
@@ -7990,7 +7921,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/11-xr-editor.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/11-xr-editor-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/xr/11-xr-editor@1280.webp",
        "w": 2560,
        "h": 1393,
@@ -8025,7 +7956,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/05-review-desert.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/05-review-desert-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/05-review-desert@1280.webp",
        "w": 2560,
        "h": 1168,
@@ -8048,7 +7979,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/06-desert-canyon@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8071,7 +8002,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/07-desert-dunes.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/07-desert-dunes-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/07-desert-dunes@1280.webp",
        "w": 2560,
        "h": 1397,
@@ -8094,7 +8025,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/kia2021/08-desert-dusk@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -8132,7 +8063,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/01-collection@1280.webp",
        "w": 2560,
        "h": 1486,
@@ -8220,7 +8151,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/04-xy2-front@1280.webp",
        "w": 2199,
        "h": 2560,
@@ -8243,7 +8174,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/05-xy2-rear@1280.webp",
        "w": 1925,
        "h": 2560,
@@ -8273,7 +8204,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/06-f35-set@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -8296,7 +8227,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/07-f35-studio@1280.webp",
        "w": 2560,
        "h": 2560,
@@ -8326,7 +8257,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/08-ex-machina.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/08-ex-machina-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/08-ex-machina@1280.webp",
        "w": 2560,
        "h": 1505,
@@ -8356,7 +8287,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/09-experience-beach.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/09-experience-beach-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/09-experience-beach@1280.webp",
        "w": 2560,
        "h": 1262,
@@ -8379,7 +8310,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/10-experience-hangar@1280.webp",
        "w": 2560,
        "h": 1447,
@@ -8402,7 +8333,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/11-experience-blender.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/11-experience-blender-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/11-experience-blender@1280.webp",
        "w": 2560,
        "h": 1377,
@@ -8425,7 +8356,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/12-experience-blender-2@1280.webp",
        "w": 2560,
        "h": 1378,
@@ -8455,7 +8386,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/13-three-wheeler@1280.webp",
        "w": 2560,
        "h": 1555,
@@ -8485,7 +8416,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/14-ultimo-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/14-ultimo-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/14-ultimo-front34@1280.webp",
        "w": 2560,
        "h": 1590,
@@ -8508,7 +8439,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/15-ultimo-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/15-ultimo-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/15-ultimo-side@1280.webp",
        "w": 2560,
        "h": 853,
@@ -8531,7 +8462,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/16-ultimo-side-mountains.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/16-ultimo-side-mountains-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/16-ultimo-side-mountains@1280.webp",
        "w": 2560,
        "h": 853,
@@ -8554,7 +8485,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/17-ultimo-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/17-ultimo-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/17-ultimo-rear34@1280.webp",
        "w": 2560,
        "h": 853,
@@ -8577,7 +8508,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/18-ultimo-far.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/18-ultimo-far-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/18-ultimo-far@1280.webp",
        "w": 2560,
        "h": 853,
@@ -8600,7 +8531,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/19-ultimo-dark@1280.webp",
        "w": 2560,
        "h": 853,
@@ -8630,7 +8561,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/20-stradale-front34@1280.webp",
        "w": 2560,
        "h": 1224,
@@ -8653,7 +8584,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/21-stradale-side@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -8676,7 +8607,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/22-stradale-rear34@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -8706,7 +8637,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/23-desert-run-cover@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8729,7 +8660,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/24-dr-cube.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/24-dr-cube-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/24-dr-cube@1280.webp",
        "w": 2560,
        "h": 1826,
@@ -8752,7 +8683,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/25-dr-edge@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8775,7 +8706,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/26-dr-drift@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8798,7 +8729,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/27-dr-onboard@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8821,7 +8752,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/29-dr-cube-a.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/29-dr-cube-a-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/29-dr-cube-a@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8844,7 +8775,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/30-dr-cube-b.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/30-dr-cube-b-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/30-dr-cube-b@1280.webp",
        "w": 2560,
        "h": 1429,
@@ -8867,7 +8798,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/31-dr-editor@1280.webp",
        "w": 2560,
        "h": 1320,
@@ -8902,7 +8833,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/32-review-workshop.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/32-review-workshop-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/32-review-workshop@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -8925,7 +8856,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/vishow/33-review-trophy@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -8963,7 +8894,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/01-helmet.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/01-helmet-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/01-helmet@1280.webp",
        "w": 2560,
        "h": 1440,
@@ -8986,7 +8917,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/02-film-cover.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/02-film-cover-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/02-film-cover@1280.webp",
        "w": 2560,
        "h": 1296,
@@ -9067,7 +8998,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/05-earth-moon.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/05-earth-moon-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/05-earth-moon@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9090,7 +9021,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/06-design-sketches.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/06-design-sketches-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/06-design-sketches@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9113,7 +9044,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/07-design-layers.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/07-design-layers-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/07-design-layers@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9136,7 +9067,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/08-design-orange.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/08-design-orange-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/08-design-orange@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9159,7 +9090,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/09-design-outer.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/09-design-outer-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/09-design-outer@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9189,7 +9120,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/10-inner-outer.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/10-inner-outer-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/10-inner-outer@1280.webp",
        "w": 2560,
        "h": 2473,
@@ -9212,7 +9143,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/11-pattern-study.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/11-pattern-study-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/11-pattern-study@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9235,7 +9166,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/12-pattern-forms.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/12-pattern-forms-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/12-pattern-forms@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9258,7 +9189,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/13-pattern-forms-2.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/13-pattern-forms-2-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/13-pattern-forms-2@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9281,7 +9212,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/14-pattern-structure.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/14-pattern-structure-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/14-pattern-structure@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9304,7 +9235,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/15-knit-reference.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/15-knit-reference-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/15-knit-reference@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9334,7 +9265,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/16-inner-modes.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/16-inner-modes-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/16-inner-modes@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9414,7 +9345,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/19-torso-cells.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/19-torso-cells-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/19-torso-cells@1280.webp",
        "w": 2560,
        "h": 1480,
@@ -9437,7 +9368,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/20-outer-shell.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/20-outer-shell-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/20-outer-shell@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9460,7 +9391,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/21-collar.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/21-collar-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/21-collar@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9483,7 +9414,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/22-back-logo.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/22-back-logo-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/22-back-logo@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9506,7 +9437,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/23-helmet-detail.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/23-helmet-detail-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/23-helmet-detail@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9529,7 +9460,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/24-hands-detail.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/24-hands-detail-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/24-hands-detail@1280.webp",
        "w": 2560,
        "h": 1163,
@@ -9552,7 +9483,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/25-boots.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/25-boots-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/25-boots@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9575,7 +9506,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/26-boot-detail.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/26-boot-detail-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/26-boot-detail@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9598,7 +9529,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/27-suit-torso-cells.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/27-suit-torso-cells-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/27-suit-torso-cells@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9621,7 +9552,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/28-connection-loop.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/28-connection-loop-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/28-connection-loop@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9644,7 +9575,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/29-three-suits.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/29-three-suits-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/29-three-suits@1280.webp",
        "w": 2560,
        "h": 1164,
@@ -9674,7 +9605,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/30-poster-pair.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/30-poster-pair-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/30-poster-pair@1280.webp",
        "w": 1808,
        "h": 2560,
@@ -9697,7 +9628,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/31-poster-inner.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/31-poster-inner-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/31-poster-inner@1280.webp",
        "w": 1138,
        "h": 2560,
@@ -9720,7 +9651,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/32-poster-outer.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/32-poster-outer-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/32-poster-outer@1280.webp",
        "w": 1138,
        "h": 2560,
@@ -9750,7 +9681,7 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/33-museum.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/33-museum-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/33-museum@1280.webp",
        "w": 2560,
        "h": 1086,
@@ -9773,7 +9704,7 @@
        "pdf_page": null
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/niva/34-museum-crowd.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/niva/34-museum-crowd-sharp-20261115k@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/niva/34-museum-crowd@1280.webp",
        "w": 2560,
        "h": 1086,
