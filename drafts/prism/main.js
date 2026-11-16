@@ -454,9 +454,9 @@
 
   function layoutHome() {                             // hang the wordmark between the legs, lower centre (pass 4: from the pose numbers)
     var W = innerWidth, H = innerHeight, hp = O.homePose(aspect(), HOPT), st = d.documentElement.style;
-    var ty = hp.portrait ? Math.max(hp.beamY + 0.085, hp.footBaseY - 0.122) : Math.min(0.668, hp.footBaseY - 0.16);
+    var ty = hp.portrait ? Math.max(hp.beamY + 0.085, hp.footBaseY - 0.122) : Math.min(0.668, hp.footBaseY - 0.2);
     var room = 2 * (ty + 0.06 - hp.footApexY) * H / Math.sqrt(3);                       // width of the floor footprint at the wordmark
-    var tw = hp.portrait ? Math.min(0.74 * W, 340) : Math.max(260, Math.min(0.40 * W, 0.84 * room, 780));
+    var tw = hp.portrait ? Math.min(0.74 * W, 340) : Math.max(260, Math.min(0.40 * W, 0.9 * room, 780));
     st.setProperty('--tx', (hp.cx * W).toFixed(1) + 'px'); st.setProperty('--ty', (ty * H).toFixed(1) + 'px');
     st.setProperty('--wf', (tw / 7.05).toFixed(2) + 'px'); st.setProperty('--ts', tw.toFixed(1) + 'px');
   }
