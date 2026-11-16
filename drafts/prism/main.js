@@ -44,7 +44,7 @@
      - every scene draw is a scissored band of bounded size, rendered into an offscreen frame and presented by a trivial blit;
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
-  var TILE = Q.get('tile') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
+  var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
   var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
@@ -90,7 +90,7 @@
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
     gl.activeTexture(gl.TEXTURE0);
     glOK = true;
-    blit = makeProgram(PRISM_BLIT(GL2), ['t', 'sr']);
+    blit = makeProgram(PRISM_BLIT(GL2), ['t', 'sr', 'tp', 'fx']);
     progs = { base: sceneProgram(false), cards: null };   // `cards` (About images inside the glass) is compiled when About is first needed
   }
   try {
@@ -129,7 +129,7 @@
     rotP1 = win[0] + (win[1] - win[0]) * (0.35 + 0.60 * (N - 0.7) / (N - 1));           // largest rotation Projects can reach (drag included)
     solvedRot = 99;
     // about: rest on the middle of the transmission window so the spectrum is valid on all three faces
-    AB_BASE = (win[0] + win[1]) / 2 + 120 * DEG; AB_AZ = 270 * DEG - AB_BASE + AB_DELTA;
+    AB_BASE = (win[0] + win[1]) / 2; AB_AZ = 270 * DEG - AB_BASE + AB_DELTA - 120 * DEG;   // the prism looks the same every 120°: this equivalent pose is ≈15° (not ≈105°) of spin and ≈25° (not ≈145°) of camera roll away from Home
   }
   function lightOK(r) {                    // true where R, G, B and V leave through the same face after the same number of bounces
     var ps = ['r', 'g', 'b', 'v'].map(function (k) { return O.path(mat.n(O.TC[k]), r); }), g = ps[1];
@@ -393,7 +393,7 @@
     for (var i = 0; i < 3; i++) {
       var a = [30, 150, 270][i] * DEG - rot, cf = Math.cos(a - pose.az);
       var al = Math.max(0, Math.min(1, (cf - 0.45) / 0.4)); al = al * al * (3 - 2 * al) * abAmt * cardK;
-      var turn = Math.round((rot - AB_BASE - FACE_SLOT[i] * 120 * DEG) / (360 * DEG)), k = 3 * turn + FACE_SLOT[i], idx = ((k % n) + n) % n;   // changes only while the face is at the back
+      var turn = Math.round((rot - AB_BASE - FACE_SLOT[i] * 120 * DEG) / (360 * DEG)), k = 3 * turn + FACE_SLOT[i] + 1, idx = ((k % n) + n) % n;   // +1: AB_BASE moved by -120°, so the face that rests in front now has slot 2   // changes only while the face is at the back
       var flip = -Math.sin(a) * Bs.r[0] + Math.cos(a) * Bs.r[2] >= 0 ? 1 : -1;
       cards.set([al, idx / n, flip, 1 / n], i * 4);
       if (cf > best) { best = cf; bi = idx; }
@@ -552,7 +552,7 @@
   function present() {                                // base frame stretched over the canvas, then the refined bands on top
     if (!TILE || !base || !pollProgram(blit)) return;
     var cw = canvas.width, ch = canvas.height;
-    gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, cw, ch); gl.useProgram(blit.p); gl.disable(gl.BLEND); gl.activeTexture(gl.TEXTURE3);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, cw, ch); gl.useProgram(blit.p); gl.disable(gl.BLEND); gl.activeTexture(gl.TEXTURE3); gl.uniform2f(blit.loc.tp, 1 / rtW, 1 / rtH); gl.uniform1f(blit.loc.fx, FXAA ? 1 : 0);
     gl.bindTexture(gl.TEXTURE_2D, base.tex); gl.uniform4f(blit.loc.sr, base.w / cw, base.h / ch, (base.w - 0.5) / cw, (base.h - 0.5) / ch); gl.drawArrays(gl.TRIANGLES, 0, 6);
     if (job && job.kind === 'refine' && job.y > 0) {
       gl.enable(gl.SCISSOR_TEST); gl.scissor(0, ch - job.y, cw, job.y);

@@ -200,7 +200,21 @@ window.PRISM_BUILD = function (o) {
   return { vs: (o.gl2 ? head : '') + vs, fs: head + fs };
 };
 window.PRISM_BLIT = function (gl2) {   // presents an offscreen frame (or its sub-rectangle, stretched) on the canvas
-  var fs = 'precision mediump float;varying vec2 uv;uniform sampler2D t;uniform vec4 sr;void main(){gl_FragColor=vec4(texture2D(t,min((uv*.5+.5)*sr.xy,sr.zw)).rgb,1.);}', vs = window.PRISM_VS;
+  var fs = [
+    'precision highp float;varying vec2 uv;uniform sampler2D t;uniform vec4 sr;uniform vec2 tp;uniform float fx;',
+    'vec3 S(vec2 p){return texture2D(t,min(p,sr.zw)).rgb;}',
+    'float L(vec3 c){return dot(c,vec3(.299,.587,.114));}',
+    // Post AA (FXAA 1 style, 9 taps, edge-directed): catches every contrast edge — glass bevels, image-card edges, beam edges —
+    // which the geometric silhouette AA of the scene shader cannot see. It reads the finished frame only; it never changes the optics.
+    'void main(){vec2 p=(uv*.5+.5)*sr.xy;vec3 m=S(p);if(fx<.5){gl_FragColor=vec4(m,1.);return;}',
+    ' vec3 nw=S(p+vec2(-1.,-1.)*tp),ne=S(p+vec2(1.,-1.)*tp),sw=S(p+vec2(-1.,1.)*tp),se=S(p+vec2(1.,1.)*tp);',
+    ' float lm=L(m),lnw=L(nw),lne=L(ne),lsw=L(sw),lse=L(se);float lo=min(lm,min(min(lnw,lne),min(lsw,lse))),hi=max(lm,max(max(lnw,lne),max(lsw,lse)));',
+    ' if(hi-lo<max(.0312,hi*.125)){gl_FragColor=vec4(m,1.);return;}',
+    ' vec2 d=vec2(-((lnw+lne)-(lsw+lse)),(lnw+lsw)-(lne+lse));',
+    ' float red=max((lnw+lne+lsw+lse)*.25*.125,.0078125);float inv=1./(min(abs(d.x),abs(d.y))+red);d=clamp(d*inv,-8.,8.)*tp;',
+    ' vec3 a=.5*(S(p+d*(1./3.-.5))+S(p+d*(2./3.-.5)));vec3 b=a*.5+.25*(S(p+d*-.5)+S(p+d*.5));float lb=L(b);',
+    ' gl_FragColor=vec4((lb<lo||lb>hi)?a:b,1.);}'
+  ].join('\n'), vs = window.PRISM_VS;
   if (gl2) { fs = '#version 300 es\n' + fs.replace('varying vec2 uv;', 'in vec2 uv;out vec4 fragColor;').replace('gl_FragColor', 'fragColor').replace('texture2D(', 'texture('); vs = '#version 300 es\n' + vs.replace('attribute', 'in').replace('varying', 'out'); }
   return { vs: vs, fs: fs };
 };
