@@ -313,7 +313,7 @@
   var ABV = (+Q.get('abv') || 2.25) * DEG;          // About: slow constant turn (rad/s), clockwise seen from above, until the next face/image comes round
   var abT = 0, abTimer = 0, abAmt = 0, abGain = 1;
   var selF = 0, selCur = 0, rot = 0, homeTurn = 0, selAmt = 0, dim = 1;
-  var mvShown = false, selU = 0.5, pAmt = 0, flood = 0, floodShown = -1, pReady = null;   // selU: spectral coordinate of the emphasised band; flood: Contact white-out 0…1
+  var restShown = null, mvShown = false, selU = 0.5, pAmt = 0, flood = 0, floodShown = -1, pReady = null;   // selU: spectral coordinate of the emphasised band; flood: Contact white-out 0…1
   var pose, tween = null, cur = null;
   var dirty = true, raf = 0, last = 0;
   var easeIO = function (t) { return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -354,8 +354,8 @@
   if (Q.get('sil') === '0') B.classList.add('nosil');        // A/B switch: the silhouette plate is the only blend-mode layer of the page
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
-    var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17n'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
+    var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17o'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 480 : 260) : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -632,7 +632,7 @@
   }
   /* pass 17h — the picture is drawn INSIDE the light by the scene shader (pimage()): where the fan is lit, the picture's own colours replace
      the spectral colour (weighted by the fan's brightness), the light only tints it a little and keeps its edges/stripes. ?simg=0 = DOM plate, ?sitint= how much the beam colours it. */
-  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.9, 0, 1), SIOVL = num('siovl', 0.25, 0, 1), SIPW = num('sipw', 0.9, 0.3, 2.2), SIGLOW = num('siglow', 0.16, 0, 0.6), pSel = new Float32Array([1, 1, 1]), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
+  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.9, 0, 1), SIOVL = num('siovl', 0.25, 0, 1), SIPW = num('sipw', 0.9, 0.3, 2.2), SIGLOW = num('siglow', 0.16, 0, 0.6), pSel = new Float32Array([1, 1, 1]), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '', simgF = 0, simgHold = false;
   if (SIMG) B.classList.add('simg');
   function loadPTex(src) {
     if (!SIMG || !glOK || src === pImgSrc) return; pImgSrc = src; ptexOK = false;
@@ -646,10 +646,10 @@
         gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, im);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-        gl.activeTexture(gl.TEXTURE0); ptexOK = true; pAsp = im.naturalHeight / im.naturalWidth; layoutField(); sceneRev++; invalidate();
+        gl.activeTexture(gl.TEXTURE0); ptexOK = true; simgHold = false; pAsp = im.naturalHeight / im.naturalWidth; layoutField(); sceneRev++; invalidate();
       } catch (e) { ptexOK = false; }
     };
-    im.onerror = function () { ptexOK = false; };
+    im.onerror = function () { ptexOK = false; simgHold = false; };
     im.src = src;
   }
   var pAsp = 0.4;
@@ -758,7 +758,7 @@
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
     var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
-    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW);
+    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) * simgF : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
@@ -870,16 +870,18 @@
     selAmt = chase(selAmt, aT, 2.4, dt, 0.004); dim = chase(dim, dT, 3, dt, 0.004);
     abAmt = chase(abAmt, bT, 2.2, dt, 0.004); abGain = abAmt > 0 ? chase(abGain, lightGain(rot), 9, dt, 0.004) : 1;
     cardK = chase(cardK, kT, 3, dt, 0.004);
+    var sf0 = simgF; simgF = chase(simgF, SIMG && pReady && ptexOK && !simgHold ? 1 : 0, simgHold ? 7 : 3.2, dt, 0.004);       // the picture fades out before the next one is fetched, and in only after the pose has settled
     // the emphasised band: in Projects it is the light that passes through the title point (follows the rotation itself); elsewhere the old per-index band
     var uT = state === 'projects' ? (graphicProjects ? wavelengthAt(rot) : uAt(rot)) : 1 - (selCur + 0.5) / N; selU = opt.snap && first ? uT : chase(selU, uT, 10, dt, 0.0005);
     if (FIELD && selU !== u0 && state === 'projects') setBand();
-    var changed = rot !== r0 || selCur !== c0 || selAmt !== a0 || dim !== d0 || abAmt !== b0 || abGain !== g0 || cardK !== k0 || selU !== u0 || pAmt !== p0;
+    var changed = rot !== r0 || selCur !== c0 || selAmt !== a0 || dim !== d0 || abAmt !== b0 || abGain !== g0 || cardK !== k0 || selU !== u0 || pAmt !== p0 || simgF !== sf0;
     // Contact: the white-out starts once the camera is half-way down the beam and leaves as soon as it turns back (DOM only: no scene redraw)
     var fT = 0; // Pass 9: no source-facing flood; preserve the beam and glass.
     flood = opt.snap && first ? fT : fT > flood ? Math.min(1, flood + dt / 1.5) : Math.max(0, flood - dt / 0.9);
     if (FLOOD_FIX != null) flood = FLOOD_FIX;        // ?flood=0…1 holds the white-out at one stage (checks)
     if (flood !== floodShown) setFlood();
     var mv = moving === 1 || !!drag; if (mv !== mvShown) { mvShown = mv; B.classList.toggle('mv', mv); }
+    var rs = !tween; if (rs !== restShown) { restShown = rs; B.classList.toggle('rest', rs); }
     var pr = state === 'projects' && !tween; if (pr !== pReady) { pReady = pr; B.classList.toggle('pready', pr); if (pr && FIELD) { setBand(); layoutField(); } }
     if (changed && !moving) moving = drift && Math.abs(rot - rT) < 0.02 && selAmt === a0 && dim === d0 && abAmt === b0 && cardK === k0 ? 2 : 1;
     if (changed || moving || dirty) { sceneRev++; dirty = false; }

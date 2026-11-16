@@ -439,3 +439,7 @@ body.under[data-state=projects].pready #c{mix-blend-mode:var(--ub);opacity:var(-
 body.under .sil::after{display:none!important}
 
 body.simg .sil{display:none!important}
+
+/* pass 17o — text and pictures wait until the camera has come to rest (body.rest = no pose tween running) */
+body:not(.rest) .home,body:not(.rest) .work,body:not(.rest) .ab{opacity:0!important;visibility:hidden!important;transition:opacity .2s,visibility 0s .2s!important}
+body.rest[data-state=home] .home,body.rest[data-state=projects] .work,body.rest[data-state=about] .ab{transition:opacity var(--fade) .22s,visibility 0s}
