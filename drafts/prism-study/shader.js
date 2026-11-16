@@ -14,7 +14,7 @@ window.PRISM_FS = [
 'precision highp float;',
 'varying vec2 uv;',
 'uniform vec2 res,shift,rc;',
-'uniform sampler2D pimg;uniform vec4 prect;uniform vec2 pset;',                 // rc = (cos rot, sin rot)
+'uniform sampler2D pimg;uniform vec4 prect;uniform vec3 pset;',                 // rc = (cos rot, sin rot)
 'uniform vec3 camE,camF,camR,camU,nrgb;',
 'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;uniform vec4 fld;',   // fld (pass 16, Projects only): amount, field half-width, stripe-zone width (both in honest-u units), hue drift inside the field   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
 'uniform vec4 rb[24];',                        // 4 ribbons × (R,G,B,V origin.xz+dir.xz, power, meta)
@@ -153,7 +153,10 @@ window.PRISM_FS = [
 // beam axis at y=.06, clipped by the first surface). Artistic haze, not a scattering integral.
 'float airBeam(vec3 o,vec3 d,float limit){vec3 bo=vec3(rail.x-60.,.06,rail.y),w=o-bo;float b=d.x,den=max(1.-b*b,.00001);float t=(b*w.x-dot(d,w))/den;float along=clamp(w.x+b*t,0.,60.);t=clamp(dot(bo+vec3(along,0.,0.)-o,d),0.,limit);vec3 dl=o+d*t-bo-vec3(along,0.,0.);float d2=dot(dl,dl);return (exp(-d2/.0022)*1.1+exp(-d2/.016)*.10)*smoothstep(0.,.04,t)*smoothstep(0.,.008,limit-t);}',
 'vec3 viewRay(vec2 st){vec2 q=st;q.x*=res.x/res.y;q-=shift;return normalize(camF+q.x*camR*lens+q.y*camU*lens);}',
-'vec3 pimage(vec3 col,vec2 st){if(pset.x<.001)return col;vec2 u=(st-prect.xy)/(prect.zw-prect.xy);if(u.x<0.||u.y<0.||u.x>1.||u.y>1.)return col;vec4 t=texture2D(pimg,u);float fe=smoothstep(0.,.16,u.x)*smoothstep(0.,.16,1.-u.x)*smoothstep(0.,.30,u.y)*smoothstep(0.,.30,1.-u.y);t.a*=fe;float L=max(col.r,max(col.g,col.b));float lit=smoothstep(.02,.22,L);vec3 im=pow(t.rgb,vec3(2.2))*1.12;return mix(col,mix(im,col,pset.y),t.a*lit*pset.x);}',
+'vec3 pimage(vec3 col,vec2 st){if(pset.x<.001)return col;vec2 u=(st-prect.xy)/(prect.zw-prect.xy);if(u.x<0.||u.y<0.||u.x>1.||u.y>1.)return col;vec4 t=texture2D(pimg,u);float fe=smoothstep(0.,.16,u.x)*smoothstep(0.,.16,1.-u.x)*smoothstep(0.,.30,u.y)*smoothstep(0.,.30,1.-u.y);t.a*=fe;float L=max(col.r,max(col.g,col.b));float lit=smoothstep(.02,.22,L);',
+// Minho's Photoshop method: picture clipped to the light wedge, a flat colour layer of the light's hue on top (multiply / overlay, display space), so the picture's darks stay dark.
+' vec3 imd=t.rgb,bc=pow(col/max(L,.03),vec3(.4545));vec3 mu=imd*mix(vec3(1.),bc,pset.y);vec3 ov=mix(2.*imd*bc,1.-2.*(1.-imd)*(1.-bc),step(.5,imd));vec3 rs=mix(mu,ov,pset.z);',
+' vec3 rl=pow(clamp(rs,0.,1.),vec3(2.2))*1.15+col*.10;return mix(col,rl,t.a*lit*pset.x);}',
 'vec3 scene(vec2 st){vec3 rd=viewRay(st);vec3 ro=toLocal(camE),di=toLocal(rd);float a,b;vec3 n,ex;',
 ' vec3 col=environment();float limit=200.;gFa=vec2(0.);gFb=vec2(0.);',
 ' if(rd.y<-.0001){limit=-camE.y/rd.y;paperAt(camE.xz+rd.xz*limit,pap*smoothstep(.03,.22,-rd.y)*exp(-limit*.012));float fk=limit*lens*2./res.y;gFa=camR.xz*fk;gFb=normalize(rd.xz+vec2(1e-6,0.))*(fk/max(-rd.y,.02));col=world(camE,rd);}',
