@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>SPECTRUM — Minho Song, digital visualization portfolio 2026 (prism home prototype)</title>
+<link rel="stylesheet" href="style.css?v=p5">
+</head>
+<body data-state="home">
+<!-- tool marks: hand-drawn monochrome approximations (see NOTES), not the vendors' artwork -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-procreate" viewBox="0 0 24 24"><path fill="currentColor" d="M2.5 18.6c4.6-.4 8.3-2.6 11.3-6.5 2.4-3.1 4.6-5.4 7.7-6.7-.7 3.6-2.3 6.9-5.2 9.6-3.6 3.4-8.4 4.6-13.8 3.6z"/></symbol>
+  <symbol id="i-ps" viewBox="0 0 24 24"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 16.5v-9h2.4a2.7 2.7 0 0 1 0 5.4H7M17.2 11.3c-.5-.5-1.1-.7-1.8-.7-1 0-1.7.5-1.7 1.3 0 1.9 3.7 1 3.7 3 0 .9-.8 1.5-1.9 1.5-.8 0-1.5-.3-2-.8"/></symbol>
+  <symbol id="i-vizcom" viewBox="0 0 24 24"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M7.2 9.2 12 15.2l4.8-6"/></symbol>
+  <symbol id="i-gravity" viewBox="0 0 24 24"><image href="about/gravity-sketch-logomark.png" x="2.5" y="2.5" width="19" height="19" style="filter:grayscale(1) brightness(1.5)"/></symbol>
+  <symbol id="i-blender" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12.8 4.2 6.3 9.3H2.8M2.5 13.4h5.3M4.8 17.3l3.7-1.5"/><circle cx="14.6" cy="13.2" r="5.7" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="14.6" cy="13.2" r="2.1" fill="currentColor"/></symbol>
+  <symbol id="i-unreal" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7.8 8h3.1M9.5 8v6.1c0 3.3 5 3.3 5 0V8M13 8h3.2"/></symbol>
+  <symbol id="i-pr" viewBox="0 0 24 24"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 16.5v-9h2.4a2.7 2.7 0 0 1 0 5.4H7M14.5 16.5v-5.8M14.5 12.8c.5-1.3 1.4-2 2.7-2"/></symbol>
+  <symbol id="i-comfyui" viewBox="0 0 520 520"><rect x="14" y="14" width="492" height="492" rx="150" fill="none" stroke="currentColor" stroke-width="26"/><path fill="currentColor" d="M176.484 428.831C168.649 428.831 162.327 425.919 158.204 420.412C153.966 414.755 152.861 406.857 155.171 398.749L164.447 366.178C165.187 363.585 164.672 360.794 163.059 358.636C161.446 356.483 158.921 355.216 156.241 355.216H129.571C121.731 355.216 115.409 352.308 111.289 346.802C107.051 341.14 105.946 333.242 108.258 325.134L140.124 213.748L143.642 201.51C148.371 184.904 165.62 171.407 182.097 171.407H214.009C217.817 171.407 221.167 168.868 222.215 165.183L232.769 128.135C237.494 111.545 254.742 98.048 271.219 98.048L339.468 97.9264L389.431 97.9221C397.268 97.9221 403.59 100.831 407.711 106.337C411.949 111.994 413.054 119.892 410.744 128L396.457 178.164C391.734 194.75 374.485 208.242 358.009 208.242L289.607 208.372H257.706C253.902 208.372 250.557 210.907 249.502 214.588L222.903 307.495C222.159 310.093 222.673 312.892 224.291 315.049C225.904 317.202 228.428 318.469 231.107 318.469C231.113 318.469 276.307 318.381 276.307 318.381H326.122C333.959 318.381 340.281 321.29 344.402 326.796C348.639 332.457 349.744 340.355 347.433 348.463L333.146 398.619C328.423 415.209 311.174 428.701 294.698 428.701L226.299 428.831H176.484Z"/></symbol>
+</svg>
+<canvas id="c" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+
+<!-- HOME: the prism seen down its long axis is the title emblem -->
+<main class="home" id="home">
+  <a class="go" href="#/projects">PROJECTS</a>
+  <a class="ab-link" href="#/about">about</a>
+  <div class="id">
+    <h1 class="wm">SPECTRUM</h1>
+    <p class="sl"><span>Digital Visualization Portfolio 2026</span><b>Minho Song</b></p>
+  </div>
+  <ul class="cv">
+    <li>Minho Song — digital visualization designer. Mobility design and digital visualization.</li>
+    <li>One gaze, many domains: quality in build, emotion in scene.</li>
+    <li>Seoul, Republic of Korea. B.A. Korea National University of Arts, design (2015 – 2024).</li>
+  </ul>
+  <p class="contact"><span class="pr"></span><span>Contact: <a href="https://smh2287.github.io/contact.html" target="_blank" rel="noopener"><b>leave a message</b></a></span></p>
+  <p class="hint" aria-hidden="true"><span class="d">scroll</span><span class="t">swipe up</span></p>
+</main>
+
+<!-- PROJECTS: the standing prism; six bands of the spectrum are the six projects -->
+<section class="work" id="work" aria-label="Projects">
+  <nav class="nav" aria-label="Site"><a href="#/">home page</a><a href="#/about">about</a></nav>
+  <header class="ph">
+    <h2>Projects</h2>
+    <ol class="list" id="list"></ol>
+    <p class="pd" id="pd" aria-live="polite"></p>
+  </header>
+  <ol class="ticks" id="ticks" aria-hidden="true"></ol>
+  <a class="pv" id="pv" href="#"><img alt=""><span class="lk">locked</span></a>
+</section>
+
+<!-- ABOUT: the standing prism seen square-on; the images turn up inside it as it rotates -->
+<section class="ab" id="ab" aria-label="About">
+  <nav class="nav" aria-label="Site"><a href="#/">home page</a><a href="#/projects">projects</a></nav>
+  <div class="atx" id="atx"><div class="sheet">
+    <h2>About</h2>
+    <p class="nm">Minho Song</p>
+    <p class="abcap" id="abcap" aria-live="polite"></p>
+    <div class="acols">
+      <div class="ca">
+        <div class="ai">
+          <p>I study mobility design and digital visualization, exploring diverse tools and creative processes.</p>
+          <p>To me, design is about creating a meaningful flow, an experience that brings joy and ease to people’s lives.</p>
+          <p>I aim to grow as a designer who can sense that flow, shape it with intent, and contribute meaningfully to the teams I work with.</p>
+        </div>
+        <dl class="idl">
+          <dt>Nationality</dt><dd>Seoul, Republic of Korea</dd>
+          <dt>Language</dt><dd>Korean, English</dd>
+          <dt>Education</dt><dd>B.A. Korea National University of Arts, design major (2015 – 2024)</dd>
+          <dt>Skills</dt><dd>Creative design, 3D visualization, project management</dd>
+        </dl>
+        <ul class="sk" aria-label="Tools">
+          <li title="Procreate"><svg viewBox="0 0 24 24" role="img" aria-label="Procreate"><use href="#i-procreate"/></svg></li>
+          <li title="Photoshop"><svg viewBox="0 0 24 24" role="img" aria-label="Photoshop"><use href="#i-ps"/></svg></li>
+          <li title="Vizcom"><svg viewBox="0 0 24 24" role="img" aria-label="Vizcom"><use href="#i-vizcom"/></svg></li>
+          <li title="Gravity Sketch"><svg viewBox="0 0 24 24" role="img" aria-label="Gravity Sketch"><use href="#i-gravity"/></svg></li>
+          <li title="Blender"><svg viewBox="0 0 24 24" role="img" aria-label="Blender"><use href="#i-blender"/></svg></li>
+          <li title="Unreal Engine"><svg viewBox="0 0 24 24" role="img" aria-label="Unreal Engine"><use href="#i-unreal"/></svg></li>
+          <li title="Premiere Pro"><svg viewBox="0 0 24 24" role="img" aria-label="Premiere Pro"><use href="#i-pr"/></svg></li>
+          <li title="ComfyUI"><svg viewBox="0 0 24 24" role="img" aria-label="ComfyUI"><use href="#i-comfyui"/></svg></li>
+        </ul>
+      </div>
+      <div class="cb">
+        <p class="xh">Industry–Academy Cooperation Project</p>
+        <ul class="xp">
+        <li><i>2024</i><span class="lgb"><img src="about/logo-kia.png" alt="KIA" width="64" height="14"></span><span><b>Interior research</b> 2024.02 – 2024.06<br>designer</span></li>
+        <li><i>2022</i><span class="lgb"><img src="about/logo-kia.png" alt="KIA" width="64" height="14"></span><span><b>Interior research</b> 2022.05 – 2023.06<br>visualization team leader, designer</span></li>
+        <li><i>2022</i><span class="lgb"><img src="about/logo-kia.png" alt="KIA" width="64" height="14"></span><span><b>Exterior research</b> 2022.05 – 2023.06<br>visualization team leader, designer</span></li>
+        <li><i>2022</i><span class="lgb"><img src="about/logo-hyundai.png" alt="HYUNDAI" width="64" height="14"></span><span><b>Robotics research</b> 2022.04 – 2023.05<br>project manager, visualization team leader</span></li>
+        <li><i>2022</i><span class="lgb"><img src="about/logo-samsung.png" alt="SAMSUNG" width="64" height="14"></span><span><b>Wearable research</b> 2022.01 – 2022.03<br>project manager, visualization team leader</span></li>
+        <li><i>2021</i><span class="lgb"><img src="about/logo-kia.png" alt="KIA" width="64" height="14"></span><span><b>Interior research</b> 2021.02 – 2021.11<br>visualization team leader</span></li>
+        </ul>
+        <p class="xh">Visualization Team</p>
+        <ul class="xp">
+          <li><i>2020</i><span class="lgb w">VISHOW</span><span><b>VISHOW visualization team</b> 2020 – 2022<br>visualization artist</span></li>
+        </ul>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ENTRY: one project, one plate; the way into the project page -->
+<article class="en" id="en" aria-live="polite">
+  <nav class="nav nav--proj" aria-label="Project"><a id="back" href="#/projects">&lt; back to projects</a></nav>
+  <div class="pt"><h2 id="enT"></h2></div>
+  <div class="tx intro"><p id="enP"></p></div>
+  <a class="fig" id="enF" href="#" target="_blank" rel="noopener"><img alt=""><span class="lk">locked — the project page asks for the passcode</span></a>
+  <p class="more"><a id="enGo" href="#" target="_blank" rel="noopener">view project</a><span id="enN"></span></p>
+</article>
+
+<p class="foot"><span>© 2026 Minho Song. SPECTRUM</span><button id="lp" type="button">low power</button><span id="dbg"></span></p>
+<p id="error" hidden></p>
+
+<script src="optics.js?v=p5"></script>
+<script src="shader.js?v=p5"></script>
+<script src="main.js?v=p5"></script>
+</body>
+</html>
