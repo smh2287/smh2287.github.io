@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR ? 'art/' : 'project-images/') + p.id + '.webp?v=p17h'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17j'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -632,7 +632,7 @@
   }
   /* pass 17h — the picture is drawn INSIDE the light by the scene shader (pimage()): where the fan is lit, the picture's own colours replace
      the spectral colour (weighted by the fan's brightness), the light only tints it a little and keeps its edges/stripes. ?simg=0 = DOM plate, ?sitint= how much the beam colours it. */
-  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.28, 0, 1), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
+  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.45, 0, 1), SIPW = num('sipw', 0.74, 0.3, 1.4), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
   if (SIMG) B.classList.add('simg');
   function loadPTex(src) {
     if (!SIMG || !glOK || src === pImgSrc) return; pImgSrc = src; ptexOK = false;
@@ -664,8 +664,8 @@
     st.setProperty('--px', g[0].toFixed(1) + 'px'); st.setProperty('--py', g[1].toFixed(1) + 'px'); st.setProperty('--sw', Math.round(ww) + 'px');
     st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
     if (SIMG) {                                      // plate rectangle in scene (st) coordinates: x,y ∈ [-1,1], y up
-      var hh = ww * pAsp, bx = g[0], by = g[1];
-      pRect[0] = (bx - ww / 2) / W * 2 - 1; pRect[2] = (bx + ww / 2) / W * 2 - 1; pRect[1] = 1 - by / H * 2; pRect[3] = 1 - (by - hh) / H * 2; sceneRev++; invalidate();
+      var pw = SIPW * W, hh = pw * pAsp, bx = g[0], by = g[1];      // the ORIGINAL picture, big enough to fill the fan (the light itself bounds it); centred on the field axis
+      pRect[0] = (bx - pw / 2) / W * 2 - 1; pRect[2] = (bx + pw / 2) / W * 2 - 1; pRect[1] = 1 - (by + hh / 2) / H * 2; pRect[3] = 1 - (by - hh / 2) / H * 2; sceneRev++; invalidate();
     }
     st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');
     st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px');
