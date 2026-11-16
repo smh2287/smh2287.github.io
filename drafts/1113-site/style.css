@@ -202,13 +202,13 @@ html.vwo,html.vwo body{overflow:hidden}
 }
 @media (max-width:760px){
   .home{min-height:0;padding-bottom:90px}
-  .id{position:relative!important;top:auto;left:auto;right:auto;display:flex;flex-direction:column;padding:31vh 16px 0}
+  .id{position:relative!important;top:auto!important;left:auto!important;right:auto!important;display:flex;flex-direction:column;padding:31vh 16px 0;margin:0}
   .id .wm{font-size:clamp(44px,16.2vw,120px)}
   .id .sl{display:block;margin-top:18px;padding-top:14px;font-size:17px;line-height:23px}
   .id .sl::before{width:100%}
   .id .sl b{display:block;font-size:18px}
   .id .go{position:static;order:3;align-self:flex-start;margin-top:34px;font-size:24px}
-  .cv{position:relative!important;top:auto;left:auto;width:auto;padding:22vh 16px 0}
+  .cv{position:relative!important;top:auto!important;left:auto!important;width:auto;padding:12vh 16px 0;clear:both}
   .cv li{line-height:16px;margin-bottom:5px;padding-left:48px;text-indent:-48px}
   .cv .y{min-width:48px;text-indent:0}
   .cv .more{text-indent:0}
