@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17q'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 480 : 260) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17s'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 480 : 260) : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -665,7 +665,7 @@
     st.setProperty('--px', g[0].toFixed(1) + 'px'); st.setProperty('--py', g[1].toFixed(1) + 'px'); st.setProperty('--sw', Math.round(ww) + 'px');
     st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
     if (SIMG) {                                      // plate rectangle in scene (st) coordinates: x,y ∈ [-1,1], y up
-      var PK = { mercedes: [0.80, -0.07, 0], niva: [1.0, 0, 0.04] }[pr.id] || [1, 0, 0], pw = SIPW * PK[0] * W, hh = pw * pAsp, bx = g[0] + PK[1] * W, by = g[1] + PK[2] * H;       // per-project size / nudge (fractions of the screen), tuned by eye      // the ORIGINAL picture, big enough to fill the fan (the light itself bounds it); centred on the field axis
+      var PK = { mercedes: [0.80, -0.07, 0], niva: [0.78, -0.06, 0.02], kia2022: [1.12, -0.06, 0.0] }[pr.id] || [1, 0, 0], pw = SIPW * PK[0] * W, hh = pw * pAsp, bx = g[0] + PK[1] * W, by = g[1] + PK[2] * H;       // per-project size / nudge (fractions of the screen), tuned by eye      // the ORIGINAL picture, big enough to fill the fan (the light itself bounds it); centred on the field axis
       pRect[0] = (bx - pw / 2) / W * 2 - 1; pRect[2] = (bx + pw / 2) / W * 2 - 1; pRect[1] = 1 - (by + hh / 2) / H * 2; pRect[3] = 1 - (by - hh / 2) / H * 2; sceneRev++; invalidate();
     }
     st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');
