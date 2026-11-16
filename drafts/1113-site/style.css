@@ -31,7 +31,7 @@ img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
 /* ---------- home / about: one tall cropped car, one line of type ---------- */
 .home{position:relative;min-height:188vh;background:var(--g0);overflow:hidden}
 .home .bg{position:absolute;inset:0;z-index:0}
-.home .bg img{object-position:44% 0;filter:grayscale(1) contrast(1.16) brightness(.36)}
+.home .bg img{object-position:44% 0;filter:none}
 .home .bg::after{content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,rgba(31,32,33,.78) 0,rgba(31,32,33,.3) 20%,rgba(31,32,33,.12) 44%,rgba(23,24,25,.8) 78%,#171819 96%)}
 .home > *:not(.bg){position:relative;z-index:1}
@@ -375,7 +375,7 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
 .home{min-height:188vh}
 .home .bg{inset:0 0 auto 0;height:100vh}
 .home .bg img{object-fit:cover;object-position:50% 50%;filter:none;background:#000}
-.home .bg::after{background:linear-gradient(180deg,rgba(23,24,25,.35) 0,rgba(23,24,25,0) 18%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}
+.home .bg::after{background:linear-gradient(180deg,rgba(23,24,25,0) 0,rgba(23,24,25,0) 18%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}
 .id{left:0;right:0;top:61vh;display:flex;flex-direction:column;align-items:center}
 .id .wm{margin:0;font-weight:300;font-size:clamp(40px,6.4vw,112px);letter-spacing:.2em;line-height:1;padding-left:.2em}
 .id .sl{width:min(52vw,900px);justify-content:space-between;margin:12px 0 0;padding-top:0;font-size:clamp(11px,1.1vw,17px);line-height:1.4}
