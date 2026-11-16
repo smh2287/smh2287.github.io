@@ -7,6 +7,7 @@
   var projectRenderer = graphicProjects ? ProjectScene.init($('#project-scene')) : null;
   B.classList.toggle('graphic-projects', graphicProjects);
   B.classList.toggle('spatial-projects', !graphicProjects);
+  B.classList.toggle('field', Q.get('field') !== '0' && !graphicProjects);
   var RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
   var COARSE = matchMedia('(pointer:coarse)').matches;
   var LIVE = 'https://smh2287.github.io/drafts/1113-site/';
@@ -24,8 +25,13 @@
   var N = PROJECTS.length;
   var SHORT = { mercedes: 'MERCEDES-BENZ', kia2022: 'KIA 2022', hyundai2022: 'HYUNDAI 2022', kia2021: 'KIA 2021', vishow: 'VISHOW', niva: 'NIKE NIVA' };   // the word that sits at the light
   var MAIL = 'songminh0442@gmail.com';             // public in the portfolio PDF; the only contact action is this mailto
-  var PDIM = num('pdim', 0.03, 0, 1), PBW = num('pbw', 1.25, 0.5, 3);   // Projects: how much of the rest of the spectrum stays visible beside the project's colour (linear; the fan is HDR, 0.03 still reads), and the width of that colour band
-  var PFAN = num('fan', 2.8, 1, 4); // Projects-only transverse art-direction multiplier, not a glass index.
+  /* Pass 16 — Projects "light field" (?field=0 = the pass 10 look: transverse ×2.8 warp + one emphasised band).
+     FA / FB: half-angle of the colour field and width of the stripe zone on each side, in degrees ON THE FLOOR about the selected ray;
+     FDR: how far the colour drifts inside the field (spectral coordinate). The selected colour itself is not chosen here: it is the
+     wavelength that really passes through the reference point PT at the current rotation (uAt). */
+  var FIELD = Q.get('field') !== '0' && !graphicProjects, FA = num('fa', 16, 4, 30), FB = num('fb', 7, 2, 20), FDR = num('fdrift', 0.09, 0, 0.3);
+  var PDIM = num('pdim', FIELD ? 0.62 : 0.03, 0, 1), PBW = num('pbw', 1.25, 0.5, 3);   // Projects: how much of the rest of the spectrum stays visible beside the project's colour (linear; the fan is HDR, 0.03 still reads), and the width of that colour band
+  var PFAN = FIELD ? 1 : num('fan', 2.8, 1, 4); // Projects-only transverse art-direction multiplier, not a glass index.
   var PKEY = num('pkey', 1.2, 0, 4);              // Projects: strength of the key card on the glass
   var FLOOD_FIX = Q.get('flood') != null ? num('flood', 0, 0, 1) : null;
   var CSTEP = Q.get('cstep') !== '0';              // Home: one step back (wheel up / swipe right / arrow left) goes to Contact; ?cstep=0 turns that off
@@ -56,7 +62,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -250,6 +256,7 @@
     }
     // Pass 9: near-orthographic editorial view. The fan axis is almost perpendicular to the view,
     // so it reads horizontally without rolling the upright column or changing the refraction.
+    if (FIELD) return fieldPose(p);
     var P = { az: num('paz', 128, 0, 360) * DEG, el: num('pel', p ? 13 : 12, 2, 89) * DEG,
       dist: num('pd', p ? 39 : 35, 6, 80), lens: num('plens', p ? 0.43 : 0.34, 0.1, 1),
       roll: num('proll', 0, -45, 45) * DEG,
@@ -257,6 +264,20 @@
       shift: [0, 0], amb: 1, air: 1 };
     var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.14 : Math.max(0.06, ((innerWidth-Math.min(innerWidth-32,Math.max(980,.68*innerWidth)))/2-44)/innerWidth), 0, 1), fy = num('pfy', p ? 0.50 : 0.66, 0, 1);
     if (ft) P.shift = [(fx * innerWidth - ft[0]) / innerWidth * 2 * a, -(fy * innerHeight - ft[1]) / innerHeight * 2];
+    return P;
+  }
+  /* Pass 16 — sketch-led Projects camera. A real pose in the same room, nothing 2D:
+     - elevated (35°) and CLOSE with a wide lens ("zoom the prism in fully"): the column grows toward the top and runs out of the frame;
+     - the camera AIMS AT THE PRISM AXIS and the frame is shifted (lens shift, as for Home/About): the vertical vanishing point lies
+       under the column, so the column stands exactly upright without any roll;
+     - azimuth: the near edge of the light field runs along screen-right (level), the field opens away from the camera = up the screen.
+     Column axis: left of the Janin title axis (--ax). */
+  function fieldPose(p) {
+    var a = aspect(), W = innerWidth, H = innerHeight, ax = Math.max(16, (W - Math.max(980, 0.68 * W)) / 2);
+    var P = { az: num('paz', 155, 0, 360) * DEG, el: num('pel', 35, 2, 89) * DEG, dist: num('pd', 12.5, 4, 80), lens: num('plens', p ? 0.78 : 0.58, 0.1, 1.2),
+      roll: num('proll', 0, -45, 45) * DEG, aim: [0, num('pay', 2, 0, 9), 0], shift: [0, 0], amb: 1, air: 1 };
+    var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.13 : Math.max(0.07, (ax - 96) / W), 0, 1), fy = num('pfy', p ? 0.62 : 0.70, 0, 1);
+    if (ft) P.shift = [(fx * W - ft[0]) / W * 2 * a, -(fy * H - ft[1]) / H * 2];
     return P;
   }
   function mixPose(A, Bp, t) {
@@ -321,7 +342,7 @@
      and an "all projects" switch sit at the bottom left; the switch shows the header block (body.plist). */
   var pix = $('#pix'), pixB = [], pall = $('#pall');
   PROJECTS.forEach(function (p, i) {
-    var b = d.createElement('button'); b.type = 'button'; b.textContent = '0' + (i + 1); b.title = p.name; b.setAttribute('aria-label', 'Project ' + (i + 1) + ': ' + p.name);
+    var b = d.createElement('button'); b.type = 'button'; b.textContent = (FIELD ? '' : '0') + (i + 1); b.title = p.name; b.setAttribute('aria-label', 'Project ' + (i + 1) + ': ' + p.name);
     b.addEventListener('click', function () { select(i); }); pix.insertBefore(b, pall); pixB.push(b);
   });
   function setList(on) { if (B.classList.contains('plist') === on) return; B.classList.toggle('plist', on); pall.setAttribute('aria-expanded', on ? 'true' : 'false'); pall.textContent = on ? 'close list' : 'all projects'; }
@@ -331,7 +352,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); }; silImg.onerror = function () { silEl.classList.remove('in'); }; silImg.src = 'project-images/' + p.id + '.webp?v=p12a'; }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD ? 'art/' : 'project-images/') + p.id + '.webp?v=p16c'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (FIELD) layoutField(); }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -571,11 +592,36 @@
   }
   function layoutProjects() {                         // where the title point PT lands on screen → silhouette and title
     if (graphicProjects) { var g = ProjectScene.layout(innerWidth,innerHeight), st=d.documentElement.style; st.setProperty('--px',g.artX+'px');st.setProperty('--py',g.artY+'px');st.setProperty('--sw',g.artW+'px');st.setProperty('--caption-y',g.captionY+'px');return; }
+    if (FIELD) { layoutField(); return; }
     var t = toScreen(basis(poseFor('projects', 0)), [PT[0], 0, PT[1]]), st = d.documentElement.style, W = innerWidth, H = innerHeight;
     if (!t) return;
     st.setProperty('--px', t[0].toFixed(1) + 'px'); st.setProperty('--py', t[1].toFixed(1) + 'px');
     st.setProperty('--sw', Math.round(portrait() ? Math.min(0.74 * W, 0.40 * H) : Math.min(0.48 * W, 0.67 * H, 2 * (W - t[0]) - 40)) + 'px');
     st.setProperty('--caption-y',Math.min(H-64,Math.max(H*.76,t[1]+42))+'px');
+  }
+  /* Pass 16 — the project picture stands INSIDE the light: an upright plate on the floor of the same scene, facing the camera.
+     Its base line is a floor line at constant depth (so it is level on screen), its base centre is a floor point of the field
+     (IS units from the exit, IOFF degrees from the selected ray toward the camera), its width is IW floor units at that depth. It is a
+     camera-facing plate (level, like the sketch); ?ilean=1 makes it a truly vertical one. All of it is the camera projection of world numbers; the element itself is DOM (no scene cost). */
+  var IS = num('is', innerWidth / innerHeight < 0.9 ? 6.2 : 12.5, 2, 40), IOFF = num('ioff', 10.5, -20, 20), IWK = num('iw', 1, 0.2, 3);
+  var ILEAN = num('ilean', 0, 0, 1), FGAIN = num('fgain', 0.6, 0.1, 1.5);   // FGAIN: brightness of the Projects fan relative to the approved far gain (a whole field at full gain clips to flat yellow)
+  var ARTW = { mercedes: 15.5, niva: 13.5, vishow: 14.5 }, ARTLOCK = 14;
+  function layoutField() {
+    var p = portrait(), Bs = basis(poseFor('projects', 0)), st = d.documentElement.style, W = innerWidth, H = innerHeight;
+    var ex = [0.42, -0.12], w = Math.atan2(PT[1] - ex[1], PT[0] - ex[0]) + IOFF * DEG, is = num('is', p ? 6.2 : 12.5, 2, 40);
+    var G = [ex[0] + is * Math.cos(w), 0, ex[1] + is * Math.sin(w)], g = toScreen(Bs, G), g1 = toScreen(Bs, [G[0] + Bs.r[0], 0, G[2] + Bs.r[2]]), g2 = toScreen(Bs, [G[0], 1, G[2]]), ft = toScreen(Bs, [0, 0, 0]);
+    if (!g || !g1 || !g2 || !ft) return;
+    var ppu = Math.hypot(g1[0] - g[0], g1[1] - g[1]), pr = PROJECTS[sel], ww = (pr.locked ? ARTLOCK : ARTW[pr.id] || 14) * IWK * (p ? 0.5 : 1) * ppu;
+    ww = Math.min(ww, p ? 2 * (W - g[0]) - 12 : 2 * (W - g[0]) + 0.10 * W);
+    st.setProperty('--px', g[0].toFixed(1) + 'px'); st.setProperty('--py', g[1].toFixed(1) + 'px'); st.setProperty('--sw', Math.round(ww) + 'px');
+    st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
+    st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');
+    st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px');
+  }
+  var bandShown = '';
+  function setBand() {                                // the picture is tinted by the light it stands in: display colour of the selected wavelength (from the rotation)
+    var c = O.spectral(selU), m = Math.max(c[0], c[1], c[2], 1e-3), k = function (v) { return Math.round(255 * Math.pow(Math.min(1, v / m), 0.4545)); }, v = 'rgb(' + k(c[0]) + ',' + k(c[1]) + ',' + k(c[2]) + ')';
+    if (v !== bandShown) { bandShown = v; d.documentElement.style.setProperty('--band', v); }
   }
   function layoutContact() {                          // the white-out grows from where the source is seen (the vanishing point of the beam)
     var t = toScreen(basis(poseFor('contact', 0)), [-60, 0.06, O.BEAM_Z]), st = d.documentElement.style;
@@ -654,11 +700,16 @@
     gl.uniform2f(l.rc, Math.cos(rot), Math.sin(rot));
     gl.uniform3fv(l.camE, Bs.e); gl.uniform3fv(l.camF, Bs.f); gl.uniform3fv(l.camR, Bs.r); gl.uniform3fv(l.camU, Bs.u);
     gl.uniform1f(l.lens, Bs.lens); gl.uniform1f(l.aa, quality === 0 ? 1 : 0);
-    gl.uniform1f(l.farGain, opt.falloff === 'physical' ? 0 : 2.75);
+    gl.uniform1f(l.farGain, opt.falloff === 'physical' ? 0 : 2.75 * (FIELD ? 1 - (1 - FGAIN) * pAmt : 1));
     var homeAmt = (1 - selAmt) * (1 - abAmt), sl = 1 + (opt.slit - 1) * homeAmt; gl.uniform1f(l.SIG2, 0.00048 * sl * sl);
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
+    var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
+  }
+  function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
+    var u = s && s.ribbons; if (!u) return 0;
+    var c = u[26] * u[35] - u[27] * u[34]; c = Math.abs(Math.asin(Math.max(-1, Math.min(1, c)))); return c > 1e-4 ? c / 0.67 : 0;
   }
   function startJob(kind, Bs, f) {
     var cw = canvas.width, ch = canvas.height, k = 1;
@@ -767,6 +818,7 @@
     cardK = chase(cardK, kT, 3, dt, 0.004);
     // the emphasised band: in Projects it is the light that passes through the title point (follows the rotation itself); elsewhere the old per-index band
     var uT = state === 'projects' ? (graphicProjects ? wavelengthAt(rot) : uAt(rot)) : 1 - (selCur + 0.5) / N; selU = opt.snap && first ? uT : chase(selU, uT, 10, dt, 0.0005);
+    if (FIELD && selU !== u0 && state === 'projects') setBand();
     var changed = rot !== r0 || selCur !== c0 || selAmt !== a0 || dim !== d0 || abAmt !== b0 || abGain !== g0 || cardK !== k0 || selU !== u0 || pAmt !== p0;
     // Contact: the white-out starts once the camera is half-way down the beam and leaves as soon as it turns back (DOM only: no scene redraw)
     var fT = 0; // Pass 9: no source-facing flood; preserve the beam and glass.
@@ -774,7 +826,7 @@
     if (FLOOD_FIX != null) flood = FLOOD_FIX;        // ?flood=0…1 holds the white-out at one stage (checks)
     if (flood !== floodShown) setFlood();
     var mv = moving === 1 || !!drag; if (mv !== mvShown) { mvShown = mv; B.classList.toggle('mv', mv); }
-    var pr = state === 'projects' && !tween; if (pr !== pReady) { pReady = pr; B.classList.toggle('pready', pr); }
+    var pr = state === 'projects' && !tween; if (pr !== pReady) { pReady = pr; B.classList.toggle('pready', pr); if (pr && FIELD) { setBand(); layoutField(); } }
     if (changed && !moving) moving = drift && Math.abs(rot - rT) < 0.02 && selAmt === a0 && dim === d0 && abAmt === b0 && cardK === k0 ? 2 : 1;
     if (changed || moving || dirty) { sceneRev++; dirty = false; }
     // the optics solve (CPU) runs only when something uses it: the band ticks in Projects, or a frame that is about to be rendered (startJob)
@@ -800,6 +852,6 @@
   window.prism = {
     go: go, select: select, step: step, back: back, setOptics: function (n) { setOptics(n); pose = target(); tween = null; resize(); },
     idle: function () { if(graphicProjects && state==='projects')return !raf; return !raf && !dirty && (FLOOD_FIX != null || flood === 0) && paperState !== 1 && (state !== 'about' || !glOK || tex.ready || tex.failed) && (!glOK || (!!base && base.rev === sceneRev && base.scale === 1 && !job)); },
-    state: function () { return { projectRenderer: projectRenderer && projectRenderer.stats(), state: state, sel: sel, rot: rot, rotDeg: rot / DEG, selU: selU, flood: flood, prot: PROT.map(function (r) { return +(r / DEG).toFixed(2); }), pt: PT, optics: opt.optics, falloff: opt.falloff, quality: quality, width: canvas.width, height: canvas.height, webgl: glOK, gl2: GL2, parallel: !!EXT.par, lod: !!EXT.lod, tile: TILE, shader: 'compact-full-optics', programs: { base: progs.base ? (progs.base.ready ? Math.round(progs.base.ms) : progs.base.failed ? 'failed' : 'pending') : null, cards: progs.cards ? (progs.cards.ready ? Math.round(progs.cards.ms) : progs.cards.failed ? 'failed: ' + progs.cards.err : 'pending') : null }, budgetPx: Math.round(budgetPx), baseScale: base ? base.scale : 0, stat: stat, spreadDeg: solved && solved.spreadDeg, nk: solvedNk, gain: solved && solved.gain, window: win, moving: !!raf, ramp: !!(solved && solved.rampOK && opt.sp), rampU: solved && solved.rampU, paper: paperState, about: { img: abIdx, tex: tex.ready, light: abGain, az: AB_AZ / DEG, base: AB_BASE / DEG } }; }
+    state: function () { return { projectRenderer: projectRenderer && projectRenderer.stats(), field: FIELD, state: state, sel: sel, rot: rot, rotDeg: rot / DEG, selU: selU, flood: flood, prot: PROT.map(function (r) { return +(r / DEG).toFixed(2); }), pt: PT, optics: opt.optics, falloff: opt.falloff, quality: quality, width: canvas.width, height: canvas.height, webgl: glOK, gl2: GL2, parallel: !!EXT.par, lod: !!EXT.lod, tile: TILE, shader: 'compact-full-optics', programs: { base: progs.base ? (progs.base.ready ? Math.round(progs.base.ms) : progs.base.failed ? 'failed' : 'pending') : null, cards: progs.cards ? (progs.cards.ready ? Math.round(progs.cards.ms) : progs.cards.failed ? 'failed: ' + progs.cards.err : 'pending') : null }, budgetPx: Math.round(budgetPx), baseScale: base ? base.scale : 0, stat: stat, spreadDeg: solved && solved.spreadDeg, nk: solvedNk, gain: solved && solved.gain, window: win, moving: !!raf, ramp: !!(solved && solved.rampOK && opt.sp), rampU: solved && solved.rampU, paper: paperState, about: { img: abIdx, tex: tex.ready, light: abGain, az: AB_AZ / DEG, base: AB_BASE / DEG } }; }
   };
 })();

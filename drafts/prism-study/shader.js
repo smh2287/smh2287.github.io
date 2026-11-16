@@ -15,7 +15,7 @@ window.PRISM_FS = [
 'varying vec2 uv;',
 'uniform vec2 res,shift,rc;',                 // rc = (cos rot, sin rot)
 'uniform vec3 camE,camF,camR,camU,nrgb;',
-'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;',   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
+'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;uniform vec4 fld;',   // fld (pass 16, Projects only): amount, field half-width, stripe-zone width (both in honest-u units), hue drift inside the field   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
 'uniform vec4 rb[24];',                        // 4 ribbons × (R,G,B,V origin.xz+dir.xz, power, meta)
 'uniform vec4 rail;uniform float railP;',
 'uniform sampler2D atlas;uniform vec4 cd[3];uniform vec4 key;uniform vec3 glow;uniform float ab;',   // about: image cards inside the glass (per face: alpha, tile offset, flip, tile width), key light, floor glow
@@ -78,6 +78,16 @@ window.PRISM_FS = [
 'vec3 fan(vec2 p,vec4 cr,vec4 cg,vec4 cb,vec4 pw){',
 ' p=fanPoint(p);',
 ' float s=dot(p-cg.xy,cg.zw);float lr=cross2(p-cr.xy,cr.zw),lb=cross2(p-cb.xy,cb.zw),dd=lb-lr;',
+/* Pass 16 — Projects "light field" (DECLARED STYLISATION, like NK_HOME; fld.x = 0 everywhere else, and with ?field=0).
+   The honest spectral coordinate uh of this floor point is re-read through a monotonic map around the selected colour selT
+   (= the colour that really passes through the reference point at this rotation): within fld.y of it the colour only drifts by
+   fld.w (one wide colour field), the rest of the spectrum on each side is laid into a zone fld.z wide (the thin stripes).
+   lb/dd are then rescaled as if the glass dispersed E times more, so the brightness / blur model of the fan stays the same one. */
+' if(fld.x>.001){float uh=.19+.67*lb/(dd+(dd<0.?-1e-5:1e-5)),x=uh-selT,ax=abs(x);',
+'  float R=max((x>0.?1.07-selT:selT+.07)-fld.w,.03),k0=fld.w/fld.y,k1=R/fld.z;',
+'  float q=max(ax-fld.y,0.),e=.3*fld.z,sm=q*q/(q+e),dsm=q*(q+2.*e)/((q+e)*(q+e));',
+'  float u2=mix(uh,selT+(x<0.?-1.:1.)*(k0*ax+(k1-k0)*sm),fld.x),E=mix(1.,1./max(k0+(k1-k0)*dsm,.02),fld.x);',
+'  dd*=E;lb=(u2-.19)*1.4925*dd;}',
 ' float sg=dd<0.?-1.:1.,W2=2.2276*dd*dd+1e-9,lc=(lb-.4627*dd)*sg;',
 ' float su2=SIG2*.5/W2;',                                             // σu²
 ' float uq=lc*min(inversesqrt(W2),RSC*sqrt(2./SIG2));',               // u−.5; beyond the last row the profile is self-similar, so u is rescaled instead

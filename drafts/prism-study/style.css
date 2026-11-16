@@ -386,3 +386,37 @@ body.plist .ph{z-index:3;background:rgba(20,21,22,.94);padding:18px;max-height:7
  [data-state=contact] .ct .cx{left:16px;top:100px;width:min(400px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:calc(100dvh - 132px);padding:0 12px 20px 0;background:linear-gradient(90deg,rgba(18,19,20,.72),rgba(18,19,20,0))}
  .ct .cx h2{font-size:40px;line-height:48px}
 }
+
+/* Pass 16 (Fable A) — Projects "light field": picture standing inside the light, vertical numerals under the Janin title, one-line caption.
+   Everything here is scoped to body.field (absent with ?field=0 → the pass 14/15 rules above apply unchanged). */
+body.field .sil{left:var(--px);top:var(--py);width:var(--sw);aspect-ratio:auto;transform:translate(-50%,-100%) rotate(var(--lean,0deg));transform-origin:50% 100%;-webkit-mask-image:none;mask-image:none;mix-blend-mode:normal;isolation:isolate}
+body.field .sil img,body.field .sil.profile img{display:block;width:100%;height:auto;object-fit:fill;filter:none}
+/* the light it stands in: the selected spectral colour (from the rotation, --band) laid over the picture's own pixels only (masked by its alpha), from the prism side */
+body.field .sil::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,var(--band,#fff),rgba(255,255,255,0) 78%);mix-blend-mode:soft-light;opacity:.5;-webkit-mask:var(--art) center/100% 100% no-repeat;mask:var(--art) center/100% 100% no-repeat}
+body.field .sil::after{content:"";position:absolute;left:3%;right:3%;bottom:-4%;height:10%;z-index:-1;background:radial-gradient(closest-side,rgba(8,9,10,.5),rgba(8,9,10,0))}
+body.field.pready[data-state=projects] .sil.in{opacity:1}
+body.field.pready[data-state=projects] .sil.in.lk{opacity:.78}
+body.field .sil.lk::before,body.field .sil.lk::after{display:none}
+body.field .phit{left:var(--px);top:var(--py);width:var(--sw);aspect-ratio:3/1;transform:translate(-50%,-100%)}
+body.field .pix{display:flex;flex-direction:column;align-items:flex-start;gap:0;left:var(--ax);top:164px;bottom:auto;z-index:3}
+body.field .pix button:not(.pall){padding:2px 12px 2px 1px;min-width:30px;text-align:left;font:400 15px/23px var(--ff);letter-spacing:0;color:#8b8e92;text-shadow:none}
+body.field .pix button:not(.pall):hover{color:var(--t)}
+body.field .pix button.on{color:var(--mint);text-shadow:0 0 12px rgba(31,255,224,.5)}
+body.field .pix .pall{margin:14px 0 0;padding:4px 0;font-size:11px;color:#8b8e92}
+body.field .pix .pall::before{display:none}
+body.field.plist[data-state=projects] .ph{display:block;left:calc(var(--ax) + 62px);top:168px;z-index:5}
+body.field .ph h2{display:none}
+body.field .ptl{right:var(--ax);top:var(--caption-y,80vh);gap:14px;padding:0 2px 10px;border-bottom:1px solid rgba(233,235,236,.5);text-shadow:0 1px 10px rgba(13,14,15,.7)}
+body.field .pn{font:400 clamp(13px,1.25vw,18px)/1 var(--ff);color:var(--gr);letter-spacing:.02em}
+body.field .pT{font:400 clamp(17px,2vw,29px)/1.2 var(--ff);letter-spacing:.01em;text-transform:uppercase}
+body.field .ptl:hover{border-bottom-color:var(--mint)}
+body.field .ptl:hover .pT{text-decoration:none}
+body.field .po::after{font-size:clamp(16px,1.6vw,22px)}
+@media (max-width:760px),(max-aspect-ratio:9/10){
+ body.field[data-state=projects] .project-heading{left:27vw;top:58px;font-size:44px;line-height:52px}
+ body.field .pix{left:calc(27vw + 3px);top:116px}
+ body.field .pix button:not(.pall){min-width:44px;line-height:26px}
+ body.field .ptl{right:16px;left:auto;max-width:calc(100vw - 32px);white-space:nowrap}
+ body.field .pT{font-size:clamp(13px,4vw,19px);white-space:nowrap}
+ body.field.plist[data-state=projects] .ph{left:0;top:auto}
+}
