@@ -62,7 +62,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset', 'psel', 'pglow'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17k'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17n'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -632,7 +632,7 @@
   }
   /* pass 17h — the picture is drawn INSIDE the light by the scene shader (pimage()): where the fan is lit, the picture's own colours replace
      the spectral colour (weighted by the fan's brightness), the light only tints it a little and keeps its edges/stripes. ?simg=0 = DOM plate, ?sitint= how much the beam colours it. */
-  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.9, 0, 1), SIOVL = num('siovl', 0.5, 0, 1), SIPW = num('sipw', 0.74, 0.3, 1.4), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
+  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.9, 0, 1), SIOVL = num('siovl', 0.25, 0, 1), SIPW = num('sipw', 0.9, 0.3, 2.2), SIGLOW = num('siglow', 0.16, 0, 0.6), pSel = new Float32Array([1, 1, 1]), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
   if (SIMG) B.classList.add('simg');
   function loadPTex(src) {
     if (!SIMG || !glOK || src === pImgSrc) return; pImgSrc = src; ptexOK = false;
@@ -673,6 +673,7 @@
   var bandShown = '';
   function setBand() {                                // the picture is tinted by the light it stands in: display colour of the selected wavelength (from the rotation)
     var c = O.spectral(selU), m = Math.max(c[0], c[1], c[2], 1e-3), k = function (v) { return Math.round(255 * Math.pow(Math.min(1, v / m), 0.4545)); }, v = 'rgb(' + k(c[0]) + ',' + k(c[1]) + ',' + k(c[2]) + ')';
+    pSel[0] = Math.pow(Math.min(1, c[0] / m), 0.4545); pSel[1] = Math.pow(Math.min(1, c[1] / m), 0.4545); pSel[2] = Math.pow(Math.min(1, c[2] / m), 0.4545);
     if (v !== bandShown) { bandShown = v; d.documentElement.style.setProperty('--band', v); }
   }
   function layoutContact() {                          // the white-out grows from where the source is seen (the vanishing point of the beam)
@@ -757,7 +758,7 @@
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
     var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
-    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect);
+    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
