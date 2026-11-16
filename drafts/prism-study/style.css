@@ -1,0 +1,273 @@
+/* SPECTRUM prism home — prototype. Tokens, type scale and axis taken from drafts/1113-site (DESIGN.md §3–5). */
+:root{
+  --g:#1F2021; --g2:#212121; --g3:#2B2B2B; --g0:#171819;
+  --mint:#1FFFE0; --t:#E8E8EA; --gr:#A9A9A9; --mu:#60656E;
+  --col:min(100vw - 32px, max(980px, 68vw));
+  --ax:calc((100vw - var(--col)) / 2);
+  --pw:min(100vw - 32px, max(78vw, var(--col)));
+  --gut:calc((100vw - var(--pw)) / 2);
+  --ff:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  /* set by main.js from the projected prism (home pose) */
+  --tx:50vw; --ty:64vh; --ts:46vw; --wf:44px;
+  --fade:.7s;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+html{background:var(--g0);color:var(--t);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 12.5px/16px var(--ff);-webkit-font-smoothing:antialiased;overflow:hidden;overscroll-behavior:none}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+::selection{background:var(--mint);color:var(--g0)}
+[hidden]{display:none!important}
+
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;background:var(--g0);cursor:grab}
+canvas.drag{cursor:grabbing}
+/* the canvas appears with its first presented frame (programs compile in the background); the text is there from the start */
+canvas{opacity:0;transition:opacity .6s}
+body.live canvas{opacity:1}
+body.nogl canvas{background:var(--g0)}
+
+/* three layers; only the current one is visible and reachable */
+.home,.work,.ab,.ct{position:fixed;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility 0s .35s}
+[data-state=home] .home,[data-state=projects] .work,[data-state=about] .ab{opacity:1;visibility:visible;transition:opacity var(--fade) .55s,visibility 0s}
+[data-state=home] .home a,[data-state=projects] .work a,[data-state=about] .ab a{pointer-events:auto}
+
+/* ---------- home ---------- */
+.go{position:absolute;right:4.6vw;top:24px;font:700 27px/32px var(--ff);color:var(--mint);transition:opacity .2s}
+.go:hover{opacity:.72}
+.id{position:absolute;left:var(--tx);top:var(--ty);transform:translateX(-50%);display:flex;flex-direction:column;align-items:stretch}
+.wm{margin:0 -.2em 0 0;font:300 var(--wf,44px)/1 var(--ff);letter-spacing:.2em;color:var(--t);white-space:nowrap;text-shadow:0 0 22px rgba(13,14,15,.55)}
+.sl{display:flex;justify-content:space-between;margin:calc(var(--wf,44px) * .36) 0 0;font:300 clamp(10px,calc(var(--wf,44px) * .2),17px)/1.4 var(--ff);color:var(--t);white-space:nowrap;text-shadow:0 0 12px rgba(13,14,15,.7)}
+.sl b{font-weight:400}
+/* Contact rides on the incoming beam: --cx/--cy = a point of the beam, --ca = its angle on screen (main.js layoutHome) */
+.ct-link{position:absolute;left:var(--cx,9vw);top:var(--cy,60vh);padding:8px 10px;font-size:13px;line-height:16px;letter-spacing:.04em;color:var(--t);white-space:nowrap;
+  transform:translate(-50%,-50%) rotate(var(--ca,0deg)) translateY(-20px);text-shadow:0 0 10px rgba(13,14,15,.9);transition:color .2s}
+.ct-link span{color:var(--gr);transition:color .2s}
+.ct-link:hover,.ct-link:hover span{color:var(--mint)}
+
+/* ---------- projects (pass 7) ----------
+   Left axis: label, the vision line, the list. In the light (main.js layoutProjects: --px/--py = the title point on the floor,
+   --sw = plate width): the silhouette plate (.sil, body level, multiplied) and the title block; both are links to the real page. */
+.nav{position:absolute;left:var(--ax);right:var(--ax);top:12px;display:flex;justify-content:space-between;font-size:13px;line-height:20px;color:var(--gr)}
+.nav a{transition:color .2s}
+.nav > a{transform:translateX(-44px)}
+.nr{display:flex;gap:26px}
+.nav a:hover{color:var(--mint)}
+.ph{position:absolute;left:var(--ax);top:64px;width:min(300px,calc(100vw - 32px))}
+.ph h2{margin:0;font:700 20px/24px var(--ff);pointer-events:none}
+/* VISION LINE (movable unit, see index.html) */
+.vision{margin:14px 0 0;font:400 16px/23px var(--ff);letter-spacing:-.003em;color:var(--t);text-shadow:0 0 10px rgba(13,14,15,.8)}
+.list{margin:26px 0 0;padding:0;list-style:none}
+.list li{font-size:12.5px;line-height:21px;color:var(--gr);white-space:nowrap;text-shadow:0 0 8px rgba(13,14,15,.9)}
+.list a{display:inline-block;transition:color .2s}
+.list i{display:inline-block;min-width:34px;font-style:normal;font-size:11px;color:var(--mu);transition:color .2s}
+.list b{font-weight:400}
+.list .y{color:var(--mu)}
+.list .k{margin-left:10px;font-size:10px;letter-spacing:.06em;color:var(--mu)}
+.list li.on a{color:var(--t)}
+.list li.on i{color:var(--mint)}
+.list li.to{color:var(--mu)}
+.sil{position:fixed;left:var(--px,68vw);top:var(--py,72vh);width:var(--sw,40vw);aspect-ratio:12/5;transform:translate(-50%,-62%);mix-blend-mode:multiply;opacity:0;pointer-events:none;transition:opacity .25s}
+.sil img{display:block;width:100%;height:100%;object-fit:cover}
+body.pready[data-state=projects] .sil.in{opacity:.6;transition:opacity .6s .12s}
+body.pready[data-state=projects] .sil.in.lk{opacity:.5}
+.phit{position:absolute;left:var(--px);top:var(--py);width:var(--sw);aspect-ratio:12/5;transform:translate(-50%,-62%)}
+.ptl{position:absolute;left:calc(var(--px) - var(--sw) * .1);top:calc(var(--py) - var(--sw) * .2583 - 12px);transform:translateY(-100%);display:flex;flex-direction:column;align-items:flex-start;text-shadow:0 0 14px rgba(13,14,15,.85)}
+.pn{font-size:11px;line-height:14px;letter-spacing:.06em;color:var(--mint)}
+.pT{margin:6px 0 0 -2px;font:700 clamp(26px,3.1vw,44px)/1.04 var(--ff);letter-spacing:.005em;color:var(--t);white-space:nowrap}
+.pS{margin:7px 0 0;font-size:11px;line-height:15px;letter-spacing:.06em;color:var(--gr);white-space:nowrap}
+.po{margin:9px 0 0;font-style:normal;font-size:12.5px;line-height:16px;color:var(--mint);transition:opacity .2s}
+.po::after{content:"  \2192"}
+.ptl:hover .po{opacity:.72}
+@media (max-height:720px) and (min-width:761px){.ph{top:50px}.vision{margin-top:10px;font-size:14.5px;line-height:20px}.list{margin-top:16px}.list li{line-height:19px}}
+
+/* ---------- contact (pass 7): dark small type on the flooded white ---------- */
+.flood{position:fixed;inset:0;overflow:hidden;pointer-events:none;visibility:hidden;--fo:0;--fd:0;--fs:.04}
+.flood::before{content:"";position:absolute;inset:0;background:#f6f2e9;opacity:var(--fo)}
+.flood::after{content:"";position:absolute;left:var(--lx,50vw);top:var(--ly,50vh);width:120vmax;height:120vmax;margin:-60vmax 0 0 -60vmax;border-radius:50%;
+  background:radial-gradient(circle closest-side,#fffefa 0,#fefbf4 18%,rgba(252,248,240,.86) 34%,rgba(251,247,238,.6) 48%,rgba(251,246,236,.34) 62%,rgba(250,245,234,.14) 76%,rgba(250,245,234,.04) 89%,rgba(250,245,234,0) 100%);transform:scale(var(--fs));opacity:var(--fd)}
+.ct{color:#17181a}
+body.flooded[data-state=contact] .ct{opacity:1;visibility:visible;transition:opacity .7s .1s,visibility 0s}
+body.flooded[data-state=contact] .ct a{pointer-events:auto}
+.ct .nav{color:#5d6168}
+.ct .nav a:hover{color:#17181a}
+.ct :focus-visible{outline-color:#17181a}
+.cx{position:absolute;left:var(--ax);top:68px;max-width:calc(100vw - 32px)}
+.cx h2{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.cl{margin:10px 0 0;font-size:12.5px;line-height:17px;color:#5d6168}
+.cm{display:inline-block;margin:46px 0 0}
+.cm span{display:block;font-size:11px;line-height:15px;letter-spacing:.04em;color:#5d6168}
+.cm b{display:inline-block;margin-top:7px;padding:0 1px 5px;font:300 clamp(20px,2.3vw,30px)/1.25 var(--ff);box-shadow:inset 0 -2px 0 var(--mint);transition:box-shadow .25s}
+.cm:hover b,.cm:focus-visible b{box-shadow:inset 0 -1.6em 0 var(--mint)}
+.cs{margin:46px 0 0;font-size:11px;line-height:15px;color:#5d6168}
+[data-state=contact] .foot button{color:#8a8d92}
+
+/* ---------- film grain (pass 7): moving DOM overlay; the scene is not redrawn for it ---------- */
+.grain{position:fixed;inset:-260px;pointer-events:none;background-repeat:repeat;animation:grain .72s steps(1) infinite}
+@keyframes grain{0%{transform:translate(0,0)}12.5%{transform:translate(-97px,61px)}25%{transform:translate(113px,-142px)}37.5%{transform:translate(-171px,-39px)}50%{transform:translate(59px,177px)}62.5%{transform:translate(-23px,-203px)}75%{transform:translate(189px,83px)}87.5%{transform:translate(-131px,149px)}}
+body.lowp .grain{display:none}
+.grain{transition:opacity .8s}
+[data-state=contact] .grain{opacity:.55}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+
+/* ---------- foot ---------- */
+.foot{position:fixed;right:4.6vw;bottom:14px;margin:0;display:flex;gap:18px;font-size:11px;line-height:14px;color:var(--mu);z-index:2}
+.foot button{color:var(--mu);transition:color .2s}
+.foot button:hover,.foot button.on{color:var(--mint)}
+#error{position:fixed;left:var(--ax);bottom:60px;max-width:420px;margin:0;font-size:11px;line-height:15px;color:var(--gr)}
+body.bare .home,body.bare .work,body.bare .ct,body.bare .ab,body.bare .foot,body.bare .sil,body.bare .flood{display:none}
+
+@media (max-width:1280px){.nav > a{transform:none}}
+@media (max-width:760px), (max-aspect-ratio:9/10){
+  :root{--col:calc(100vw - 32px)}
+  .go{right:16px;top:18px;font-size:24px;line-height:30px}
+  .sl{font-size:clamp(9.5px,calc(var(--wf,40px) * .25),13px)}
+  .ct-link{font-size:12.5px}
+  /* projects, phone: prism top-left, label + vision line to its right, silhouette + title in the light, the list at the bottom */
+  .ph{left:16px;right:16px;top:46px;width:auto}
+  .ph h2,.vision{margin-left:38%}
+  .ph h2{font-size:15px;line-height:20px}
+  .vision{margin-top:8px;font-size:13.5px;line-height:19px}
+  .list{position:fixed;left:16px;right:16px;bottom:30px;margin:0}
+  /* the lower third is a dark sheet (title + list stay readable whatever colour passes under them); the light shows between prism and silhouette */
+  .work::before{content:"";position:fixed;left:0;right:0;bottom:0;top:calc(var(--py) + var(--sw) * .1583 - 26px);background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.9) 44px,rgba(18,19,20,.94));pointer-events:none}
+  .list li{font-size:12.5px;line-height:22px}
+  .ptl{left:calc(var(--px) - var(--sw) * .5);top:calc(var(--py) + var(--sw) * .1583 + 8px);transform:none}
+  .pT{font-size:26px}
+  .pS{display:none}
+  .po{margin-top:6px}
+  .cx{left:16px;top:50px}
+  .cx h2{font-size:52px;line-height:60px}
+  .cm{margin-top:36px}
+  .foot{right:16px;bottom:8px}
+  .foot span:first-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01s!important;transition-delay:0s!important}}
+
+/* ---------- about (pass 5) ----------
+   The images are drawn inside the glass by the shader; the DOM is the text. --abx (right of the widest silhouette of the
+   turning prism) and --aby (its foot) come from the projected prism. Small type only, one mint accent (the name),
+   experience = three aligned columns: year | logo box 64×14 | role. */
+.atx{position:absolute;left:var(--abx,46vw);right:4.6vw;top:68px;bottom:38px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;container-type:inline-size;
+  -webkit-mask-image:linear-gradient(180deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(180deg,#000 calc(100% - 26px),transparent)}
+.atx::-webkit-scrollbar{display:none}
+[data-state=about] .sheet{pointer-events:auto}
+.sheet{padding-bottom:26px;text-shadow:0 0 6px rgba(13,14,15,.85)}
+.atx h2{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.nm{margin:10px 0 0;font:300 22px/28px var(--ff);color:var(--mint)}
+.abcap{min-height:14px;margin:2px 0 0;font-size:11px;line-height:14px;letter-spacing:.04em;color:var(--mu);white-space:pre}
+.acols{display:grid;grid-template-columns:minmax(0,1fr);row-gap:30px;margin-top:26px;font-size:11px;line-height:15px;color:var(--gr)}
+.ai p{max-width:300px;margin:0 0 10px;font-size:12.5px;line-height:17px;color:var(--t)}
+.idl{display:grid;grid-template-columns:76px minmax(0,1fr);row-gap:7px;max-width:380px;margin:22px 0 0}
+.idl dt{color:var(--mu)}
+.idl dd{margin:0}
+.sk{display:flex;gap:13px;margin:12px 0 0 76px;padding:0;list-style:none;color:var(--gr)}
+.sk svg{display:block;width:20px;height:20px}
+.xh{margin:0 0 11px;font-size:11px;line-height:15px;letter-spacing:.04em;color:var(--mu)}
+.xp{margin:0 0 26px;padding:0;list-style:none}
+.xp li{display:grid;grid-template-columns:30px 64px minmax(0,1fr);column-gap:14px;align-items:start;margin:0 0 9px}
+.xp i{font-style:normal;font-variant-numeric:tabular-nums;color:var(--mu)}
+.lgb{display:block;width:64px;height:14px;margin-top:1px}
+.lgb img{display:block;width:64px;height:14px;object-fit:contain;object-position:left center;opacity:.9}
+.lgb.w{margin-top:0;height:15px;font-weight:700;font-size:10.5px;letter-spacing:.14em;color:var(--t)}
+.xp b{font-weight:400;color:var(--t)}
+@container (min-width:540px){.acols{grid-template-columns:minmax(0,236px) minmax(0,1fr);column-gap:44px}.sk{margin-left:0}}
+[data-state=about] .foot{text-shadow:0 0 8px var(--g0),0 0 2px var(--g0)}
+@media (max-height:760px) and (min-width:761px){.atx{top:52px}.atx h2{font-size:56px;line-height:64px}.acols{margin-top:18px}}
+@media (max-width:760px), (max-aspect-ratio:9/10){
+  .ab-link{left:16px;top:18px}
+  .ab .nav{text-shadow:0 0 8px var(--g0),0 0 2px var(--g0);color:var(--t)}
+  /* phone: prism and image on top; the text is a sheet that starts under the foot of the prism and scrolls up to 34 % of the
+     screen. Only the sheet takes touches (pan-y); the canvas above it keeps the prism drag. */
+  .atx{left:0;right:0;top:34vh;bottom:0;padding-top:calc(var(--aby,66vh) - 34vh - 8px);touch-action:pan-y;-webkit-overflow-scrolling:touch;
+    -webkit-mask-image:linear-gradient(180deg,transparent,#000 20px,#000 calc(100% - 50px),transparent calc(100% - 26px));mask-image:linear-gradient(180deg,transparent,#000 20px,#000 calc(100% - 50px),transparent calc(100% - 26px))}
+  .sheet{min-height:100%;padding:30px 16px 78px;touch-action:pan-y;background:linear-gradient(180deg,rgba(23,24,25,0),rgba(23,24,25,.9) 34px,rgba(23,24,25,.96))}
+  .atx h2{display:none}
+  .nm{display:inline-block;margin:0;font-size:20px;line-height:24px}
+  .abcap{display:inline-block;margin:0 0 0 12px}
+  .acols{margin-top:14px;row-gap:28px}
+  .ai p{max-width:none}
+  .sk{margin-left:0;gap:16px}
+}
+.ab-link{position:absolute;left:var(--ax);top:24px;font-size:13px;line-height:20px;color:var(--gr);transition:color .2s}
+.ab-link:hover{color:var(--mint)}
+@media (max-width:760px), (max-aspect-ratio:9/10){.ab-link{left:16px;top:18px}}
+#dbg{position:fixed;left:8px;bottom:2px;font:10px/12px ui-monospace,Menlo,Consolas,monospace;color:var(--mu);white-space:nowrap;pointer-events:none}
+
+/* About: the message leads — two sentences, the first one set large */
+.ai .lead{margin:0 0 14px;font:400 18px/25px var(--ff);color:var(--t);letter-spacing:-.005em}
+.ai .sub{margin:0;font:400 13px/19px var(--ff);color:#cfd0d2}
+@media (max-width:760px), (max-aspect-ratio:9/10){.ai .lead{font-size:17px;line-height:24px}.ai .sub{font-size:13px}}
+
+/* ---------- pass 8: Projects without the list ----------
+   The header block (.ph = "Projects" + VISION LINE + list) is hidden until "all projects" is pressed (body.plist).
+   .pix = the quiet index: six numbers + the switch, bottom left on the site axis. */
+.ph{opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
+body.plist[data-state=projects] .ph{opacity:1;visibility:visible;transition:opacity .35s,visibility 0s}
+.ph::before{content:"";position:absolute;inset:-22px -40px -26px -28px;z-index:-1;background:radial-gradient(closest-side,rgba(13,14,15,.82),rgba(13,14,15,.6) 70%,rgba(13,14,15,0));pointer-events:none}
+.pix{position:absolute;left:var(--ax);bottom:18px;display:flex;align-items:center;gap:2px;font-size:11px;line-height:14px;letter-spacing:.06em}
+.pix button{padding:8px 7px;color:var(--mu);transition:color .2s;pointer-events:none;text-shadow:0 0 8px rgba(13,14,15,.9)}
+[data-state=projects] .pix button{pointer-events:auto}
+.pix button:hover{color:var(--t)}
+.pix button.on{color:var(--mint)}
+.pix .pall{margin-left:14px;letter-spacing:.02em;font-size:11.5px;color:var(--gr)}
+.pix .pall::before{content:"";display:inline-block;width:14px;height:1px;margin:0 12px 3px 0;background:currentColor;opacity:.5}
+body.nosil .sil{display:none}
+/* grain: its 11 steps a second pause while the scene itself is being redrawn (camera travel, drag); it stays visible */
+body.mv .grain{animation-play-state:paused}
+@media (max-width:760px), (max-aspect-ratio:9/10){
+  .pix{left:9px;bottom:2px}
+  .pix button{padding:10px 6px}
+  .pix .pall{margin-left:6px}
+  .pix .pall::before{width:8px;margin-right:8px}
+  .foot{bottom:12px}
+  /* phone: the opened block is a bottom sheet over the title area (vision line first, then the list) */
+  .ph{position:fixed;left:0;right:0;top:auto;bottom:0;width:auto;padding:18px 16px 46px;background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.95) 26px)}
+  .ph::before{display:none}
+  .ph h2{display:none}
+  .vision{margin:0 0 12px}
+  .list{position:static;margin:0}
+  .pix{z-index:1}
+  /* the list no longer lives at the bottom: the dark sheet only backs the title, then lets the light through again */
+  .work::before{background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.86) 40px,rgba(18,19,20,.86) 128px,rgba(18,19,20,0) 250px,rgba(18,19,20,0))}
+}
+
+/* Pass 9 — graphic composition: an upright column, a horizontal light field, a quiet caption. */
+.flood{display:none}
+[data-state=contact] .ct{opacity:1;visibility:visible;transition:opacity .7s .6s,visibility 0s}
+[data-state=contact] .ct a{pointer-events:auto}
+.ct{color:var(--t)}
+.ct .nav,.cm span,.cl,.cs{color:var(--gr)}
+.ct .nav a:hover{color:var(--mint)}
+.ct :focus-visible{outline-color:var(--mint)}
+.cx{left:12vw;top:29vh;max-width:55vw}
+.cx h2{font-size:clamp(44px,5.7vw,82px);line-height:1.05;font-weight:300;letter-spacing:-.045em}
+.cm{margin-top:34px}
+.cm b{font-size:clamp(18px,2.1vw,30px);font-weight:300}
+.cs{margin-top:26px}
+.sil,.phit{transform:translate(-50%,-90%)}
+.sil img{object-fit:contain}
+body.pready[data-state=projects] .sil.in{opacity:.82}
+.ptl{left:calc(var(--px) - var(--sw) * .5);top:calc(var(--py) + 18px);transform:none;text-shadow:0 1px 12px #171819}
+.pT{font-weight:400;font-size:clamp(24px,2.7vw,40px);letter-spacing:-.025em}
+.pn{color:var(--gr)}
+.work::before{display:none}
+body.plist .ph{z-index:3;background:rgba(20,21,22,.94);padding:18px;max-height:70vh;overflow:auto}
+@media (max-width:760px),(max-aspect-ratio:9/10){
+ .cx{left:7vw;top:62vh;max-width:86vw}
+ .cx h2{font-size:44px}
+ .cm{margin-top:22px}
+ .cm b{font-size:clamp(16px,4.6vw,23px)}
+ .cl{font-size:12px}
+ .cs{margin-top:20px}
+ .ptl{left:22vw;top:calc(var(--py) + 18px);max-width:74vw}
+ .pT{white-space:normal;font-size:clamp(22px,5.7vw,30px)}
+ .pS{display:block;white-space:normal;font-size:10px}
+ .phit{width:var(--sw)}
+}
+
+/* A single side elevation, using the original render with a CSS edge fade, not a claimed object cut-out. */
+.sil.profile{mix-blend-mode:screen;mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 65%,transparent 94%)}
+.sil.profile img{object-fit:cover;filter:grayscale(1) contrast(1.8) brightness(.7)}
+body.pready[data-state=projects] .sil.profile.in{opacity:.48}
