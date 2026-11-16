@@ -3,9 +3,10 @@
   'use strict';
   var O = PrismOptics, d = document, B = d.body, $ = function (s) { return d.querySelector(s); };
   var Q = new URLSearchParams(location.search);
-  var graphicProjects = Q.get('projectrender') !== 'optics' && typeof ProjectScene !== 'undefined';
+  var graphicProjects = Q.get('projectrender') === 'flat-diagnostic' && typeof ProjectScene !== 'undefined';
   var projectRenderer = graphicProjects ? ProjectScene.init($('#project-scene')) : null;
   B.classList.toggle('graphic-projects', graphicProjects);
+  B.classList.toggle('spatial-projects', !graphicProjects);
   var RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
   var COARSE = matchMedia('(pointer:coarse)').matches;
   var LIVE = 'https://smh2287.github.io/drafts/1113-site/';
@@ -254,7 +255,7 @@
       roll: num('proll', 0, -45, 45) * DEG,
       aim: [0.46 + 0.5 * PS * Math.cos(PTH), 2, -0.08 + 0.5 * PS * Math.sin(PTH)],
       shift: [0, 0], amb: 1, air: 1 };
-    var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.14 : 0.20, 0, 1), fy = num('pfy', p ? 0.50 : 0.66, 0, 1);
+    var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.14 : Math.max(0.06, ((innerWidth-Math.min(innerWidth-32,Math.max(980,.68*innerWidth)))/2-44)/innerWidth), 0, 1), fy = num('pfy', p ? 0.50 : 0.66, 0, 1);
     if (ft) P.shift = [(fx * innerWidth - ft[0]) / innerWidth * 2 * a, -(fy * innerHeight - ft[1]) / innerHeight * 2];
     return P;
   }
@@ -340,7 +341,7 @@
     $('#ptl').href = $('#phit').href = urlOf(p);
     $('#pN').textContent = '0' + (sel + 1); $('#pT').textContent = p.name;
     $('#ptl').setAttribute('aria-label', p.name + (p.locked ? ' — enter passcode' : ' — view project'));
-    $('#pS').textContent = (tt[1] || p.name) + ' — ' + p.year; $('#pO').textContent = graphicProjects ? '' : (p.locked ? 'open project (passcode)' : 'open project');
+    $('#pS').textContent = (tt[1] || p.name) + ' — ' + p.year; $('#pO').textContent = '';
     setSil(p);
   }
   function hash() { return state === 'home' ? '#/' : state === 'about' ? '#/about' : state === 'contact' ? '#/contact' : '#/projects/' + PROJECTS[sel].id; }
@@ -573,7 +574,8 @@
     var t = toScreen(basis(poseFor('projects', 0)), [PT[0], 0, PT[1]]), st = d.documentElement.style, W = innerWidth, H = innerHeight;
     if (!t) return;
     st.setProperty('--px', t[0].toFixed(1) + 'px'); st.setProperty('--py', t[1].toFixed(1) + 'px');
-    st.setProperty('--sw', Math.round(portrait() ? Math.min(0.64 * W, 0.36 * H) : Math.min(0.40 * W, 0.60 * H, 2 * (W - t[0]) - 40)) + 'px');
+    st.setProperty('--sw', Math.round(portrait() ? Math.min(0.74 * W, 0.40 * H) : Math.min(0.48 * W, 0.67 * H, 2 * (W - t[0]) - 40)) + 'px');
+    st.setProperty('--caption-y',Math.min(H-64,Math.max(H*.76,t[1]+42))+'px');
   }
   function layoutContact() {                          // the white-out grows from where the source is seen (the vanishing point of the beam)
     var t = toScreen(basis(poseFor('contact', 0)), [-60, 0.06, O.BEAM_Z]), st = d.documentElement.style;
