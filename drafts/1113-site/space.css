@@ -28,3 +28,13 @@ body.space .cm .wr,body.space .cm .sign{width:min(430px,100%);margin-top:26px;pa
 body.space .cm .field{background:rgba(0,0,0,.18);border-color:rgba(255,255,255,.16)}
 @media (max-width:760px){body.space .cm ol{gap:22px 0}body.space .cm li{width:100%}body.space main{padding-bottom:40vh}}
 @media (prefers-reduced-motion:reduce){body.space .cm li.in{animation:none}}
+
+/* pass 2: sharp glass — right angles only, knife-edge highlights like a prism face (no rounded corners anywhere in the comment area) */
+body.space .cm *,body.space .cm li,body.space .cm .wr,body.space .cm .sign,body.space .cm .field,body.space .cm .av{border-radius:0!important}
+body.space .cm li,body.space .cm .wr,body.space .cm .sign{position:relative;border:0;
+ background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.035) 52%,rgba(255,255,255,.085));
+ box-shadow:0 30px 46px -22px rgba(0,0,0,.8),0 2px 10px rgba(0,0,0,.4),inset 1px 1px 0 rgba(255,255,255,.62),inset -1px -1px 0 rgba(255,255,255,.12),inset 0 0 0 1px rgba(255,255,255,.07)}
+body.space .cm li::before,body.space .cm .wr::before,body.space .cm .sign::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(112deg,transparent 38%,rgba(255,255,255,.085) 48%,rgba(255,255,255,0) 58%)}
+body.space .cm li::after,body.space .cm .wr::after,body.space .cm .sign::after{content:"";position:absolute;left:0;top:0;width:34%;height:1px;background:linear-gradient(90deg,rgba(255,170,150,.9),rgba(255,235,150,.9),rgba(150,255,225,.9),rgba(150,190,255,0));opacity:.8;pointer-events:none}   /* a thin spectral glint on the upper edge */
+body.space .cm .av{background:rgba(255,255,255,.12);box-shadow:inset 1px 1px 0 rgba(255,255,255,.35)}
+body.space .cm .field{background:rgba(0,0,0,.2);border:0;box-shadow:inset 1px 1px 0 rgba(0,0,0,.5),inset -1px -1px 0 rgba(255,255,255,.14)}
