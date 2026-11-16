@@ -159,10 +159,21 @@
   function uAt(r) {
     var b = O.path(mat.n(O.TC.b), r), q = O.path(mat.n(O.TC.r), r); b = b && b.direct; q = q && q.direct; if (!b || !q) return 0.5;
     var g = O.path(mat.n(O.TC.g), r).direct, n = [-g.dir[1], g.dir[0]];
-    var k = ((PT[0]-g.X[0])*n[0]+(PT[1]-g.X[1])*n[1])*(1-1/PFAN);
+    var k = ((PT[0]-g.X[0])*n[0]+(PT[1]-g.X[1])*n[1])*(1-1/(graphicProjects?1:PFAN));
     var px=PT[0]-n[0]*k, py=PT[1]-n[1]*k;
     var lb = (px - b.X[0]) * b.dir[1] - (py - b.X[1]) * b.dir[0], lr = (px - q.X[0]) * q.dir[1] - (py - q.X[1]) * q.dir[0], dd = lb - lr;
     return Math.abs(dd) < 1e-7 ? 0.5 : Math.max(0, Math.min(1, 0.19 + 0.67 * lb / dd));
+  }
+  // Find the wavelength whose actual Snell exit ray passes through the reference point.
+  // This is an inverse ray query, not a project-index palette or a linear RGB guess.
+  var waveCache = new Map();
+  function wavelengthAt(r) {
+    var key=opt.optics+'|'+Math.round(r*1e4); if(waveCache.has(key)) return waveCache.get(key);
+    function side(t){var p=O.path(mat.n(t),r),q=p&&p.direct;return q?(PT[0]-q.X[0])*q.dir[1]-(PT[1]-q.X[1])*q.dir[0]:null;}
+    var a=0,b=1,fa=side(a),fb=side(b),t=.5;
+    if(fa!=null&&fb!=null){if(fa*fb>0)t=Math.abs(fa)<Math.abs(fb)?0:1;
+      else {for(var i=0;i<14;i++){var m=(a+b)/2,fm=side(m);if(fm==null)break;if(fa*fm<=0)b=m;else{a=m;fa=fm;}}t=(a+b)/2;}}
+    if(waveCache.size>360)waveCache.clear();waveCache.set(key,t);return t;
   }
   function projRots() {
     PT = [0.46 + PS * Math.cos(PTH), -0.08 + PS * Math.sin(PTH)];
@@ -538,7 +549,7 @@
     resize();
   }
   $('#lp').addEventListener('click', function () { setQuality(quality === 2 ? 0 : 2, true); });
-  addEventListener('resize', function () { PS = num('ps', portrait() ? 8 : 20, 6, 30); projRots(); if (!tween) pose = target(); else tween.b = target(); resize(); });
+  addEventListener('resize', function () { PS = num('ps', portrait() ? 8 : 20, 6, 30); waveCache.clear(); projRots(); if (!tween) pose = target(); else tween.b = target(); resize(); });
   d.addEventListener('visibilitychange', function () { if (!d.hidden) invalidate(); });
 
   function layoutHome() {                             // hang the wordmark between the legs, lower centre (pass 4: from the pose numbers)
@@ -752,7 +763,7 @@
     abAmt = chase(abAmt, bT, 2.2, dt, 0.004); abGain = abAmt > 0 ? chase(abGain, lightGain(rot), 9, dt, 0.004) : 1;
     cardK = chase(cardK, kT, 3, dt, 0.004);
     // the emphasised band: in Projects it is the light that passes through the title point (follows the rotation itself); elsewhere the old per-index band
-    var uT = state === 'projects' ? uAt(rot) : 1 - (selCur + 0.5) / N; selU = opt.snap && first ? uT : chase(selU, uT, 10, dt, 0.0005);
+    var uT = state === 'projects' ? (graphicProjects ? wavelengthAt(rot) : uAt(rot)) : 1 - (selCur + 0.5) / N; selU = opt.snap && first ? uT : chase(selU, uT, 10, dt, 0.0005);
     var changed = rot !== r0 || selCur !== c0 || selAmt !== a0 || dim !== d0 || abAmt !== b0 || abGain !== g0 || cardK !== k0 || selU !== u0 || pAmt !== p0;
     // Contact: the white-out starts once the camera is half-way down the beam and leaves as soon as it turns back (DOM only: no scene redraw)
     var fT = 0; // Pass 9: no source-facing flood; preserve the beam and glass.
