@@ -329,7 +329,7 @@
 
   /* ---------- DOM ---------- */
   var list = $('#list'), items = [], silEl = $('#sil'), silImg = silEl.querySelector('img'), silT = 0;
-  var urlOf = function (p) { return LIVE + 'p/' + p.id + '.html'; };      // pass 7: no in-between "entry" view; every project link is the real page (locked ones ask for the passcode there)
+  var urlOf = function (p) { return LIVE + 'ps/' + p.id + '.html'; };      // pass 7: no in-between "entry" view; every project link is the real page (locked ones ask for the passcode there)
   PROJECTS.forEach(function (p, i) {
     var li = d.createElement('li'), a = d.createElement('a');
     a.href = urlOf(p);
@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p18b'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p18c'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
   }
   var sndState = null, sndSel = -1;
   function paint() {
