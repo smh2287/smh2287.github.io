@@ -6,7 +6,7 @@
    "title": "2025 Mercedes-Benz : CLE CABRIOLET",
    "locked": false,
    "comments_id": "pf2026-mercedes",
-   "image_count": 34,
+   "image_count": 35,
    "sections": [
     {
      "label": "MERCEDES BENZ / 2025",
@@ -75,40 +75,30 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Exploded view of the car model",
-       "caption": "Parts",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Exploded/CLE_Still_Setting_Others.png",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-brand-moodboard-pdf-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/05-brand-moodboard-pdf-20261116@1280.webp",
+       "w": 1641,
+       "h": 879,
+       "alt": "Brand moodboard: grille arch pattern, 300 SL seen from above, a scarf in the wind",
+       "caption": "Moodboard",
+       "nas_source_path": "pdf:5",
        "crop": null,
        "view_crop": {
-        "x": 0.156,
-        "y": 0.1159,
-        "w": 0.7624,
-        "h": 0.7624
+        "x": 0.0,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 1.0
        },
        "flipx": false,
        "flipy": false,
        "rotate": 0,
-       "grade": {
-        "temperature": -0.07,
-        "tint": 0.04
-       },
+       "grade": null,
        "grade_src": null,
        "blend": null,
        "pano": false,
-       "evidence": "visual match",
-       "pdf_page": 6
-      }
-     ],
-     "videos": []
-    },
-    {
-     "label": "CLE CABRIOLET _MODEL",
-     "sub": null,
-     "images": [
+       "evidence": "pdf p5",
+       "pdf_page": null
+      },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-ll-20261116@3840.webp",
        "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/03-cmf-board-ll-20261116@1280.webp",
@@ -136,6 +126,41 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 5
+      }
+     ],
+     "videos": []
+    },
+    {
+     "label": "CLE CABRIOLET _MODEL",
+     "sub": null,
+     "images": [
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/04-exploded-ll-20261116@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "Exploded view of the car model",
+       "caption": "Parts",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/Exploded/CLE_Still_Setting_Others.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.156,
+        "y": 0.1159,
+        "w": 0.7624,
+        "h": 0.7624
+       },
+       "flipx": false,
+       "flipy": false,
+       "rotate": 0,
+       "grade": {
+        "temperature": -0.07,
+        "tint": 0.04
+       },
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "visual match",
+       "pdf_page": 6
       },
       {
        "src": "https://songfamhome.synology.me/portfolio2026/mercedes/05-model-zebra-ll-20261116@3840.webp",
