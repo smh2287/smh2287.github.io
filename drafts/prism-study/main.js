@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p18a'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p18b'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
   }
   var sndState = null, sndSel = -1;
   function paint() {
@@ -951,7 +951,8 @@
     var graphic = graphicProjects && state === 'projects';
     if (graphic) projectRenderer.draw(selU,innerWidth,innerHeight);
     var busy = glOK && !graphic ? render(now, Bs, moving) : false;
-    if (!graphic && !busy && glOK && EXT.par && !progs.cards && progs.base.ready) ensureCardsProgram();   // idle and compiling is free: have About's program ready before it is asked for
+    if (!graphic && !busy && glOK && EXT.par && !progs.cards && progs.base.ready) ensureCardsProgram();
+    if (!graphic && !busy && glOK && !tex.started && progs.base.ready && quality < 2 && state !== 'about' && bootFrames > 120) loadCards();   // idle: have About's images in the atlas before it is asked for (the fetch + atlas upload used to land in the first About frames)   // idle and compiling is free: have About's program ready before it is asked for
     if (DBG) debugLine(solved);
     if (moving || drift || busy || (FLOOD_FIX == null && flood !== fT) || (!graphic && progs.cards && !progs.cards.ready && !progs.cards.failed && glOK)) { if (!raf) raf = requestAnimationFrame(frame); }
   }
