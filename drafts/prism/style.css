@@ -199,3 +199,36 @@ body.bare .home,body.bare .work,body.bare .ct,body.bare .ab,body.bare .foot,body
 .ai .lead{margin:0 0 14px;font:400 18px/25px var(--ff);color:var(--t);letter-spacing:-.005em}
 .ai .sub{margin:0;font:400 13px/19px var(--ff);color:#cfd0d2}
 @media (max-width:760px), (max-aspect-ratio:9/10){.ai .lead{font-size:17px;line-height:24px}.ai .sub{font-size:13px}}
+
+/* ---------- pass 8: Projects without the list ----------
+   The header block (.ph = "Projects" + VISION LINE + list) is hidden until "all projects" is pressed (body.plist).
+   .pix = the quiet index: six numbers + the switch, bottom left on the site axis. */
+.ph{opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
+body.plist[data-state=projects] .ph{opacity:1;visibility:visible;transition:opacity .35s,visibility 0s}
+.ph::before{content:"";position:absolute;inset:-22px -40px -26px -28px;z-index:-1;background:radial-gradient(closest-side,rgba(13,14,15,.82),rgba(13,14,15,.6) 70%,rgba(13,14,15,0));pointer-events:none}
+.pix{position:absolute;left:var(--ax);bottom:18px;display:flex;align-items:center;gap:2px;font-size:11px;line-height:14px;letter-spacing:.06em}
+.pix button{padding:8px 7px;color:var(--mu);transition:color .2s;pointer-events:none;text-shadow:0 0 8px rgba(13,14,15,.9)}
+[data-state=projects] .pix button{pointer-events:auto}
+.pix button:hover{color:var(--t)}
+.pix button.on{color:var(--mint)}
+.pix .pall{margin-left:14px;letter-spacing:.02em;font-size:11.5px;color:var(--gr)}
+.pix .pall::before{content:"";display:inline-block;width:14px;height:1px;margin:0 12px 3px 0;background:currentColor;opacity:.5}
+body.nosil .sil{display:none}
+/* grain: its 11 steps a second pause while the scene itself is being redrawn (camera travel, drag); it stays visible */
+body.mv .grain{animation-play-state:paused}
+@media (max-width:760px), (max-aspect-ratio:9/10){
+  .pix{left:9px;bottom:2px}
+  .pix button{padding:10px 6px}
+  .pix .pall{margin-left:6px}
+  .pix .pall::before{width:8px;margin-right:8px}
+  .foot{bottom:12px}
+  /* phone: the opened block is a bottom sheet over the title area (vision line first, then the list) */
+  .ph{position:fixed;left:0;right:0;top:auto;bottom:0;width:auto;padding:18px 16px 46px;background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.95) 26px)}
+  .ph::before{display:none}
+  .ph h2{display:none}
+  .vision{margin:0 0 12px}
+  .list{position:static;margin:0}
+  .pix{z-index:1}
+  /* the list no longer lives at the bottom: the dark sheet only backs the title, then lets the light through again */
+  .work::before{background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.86) 40px,rgba(18,19,20,.86) 128px,rgba(18,19,20,0) 250px,rgba(18,19,20,0))}
+}

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>SPECTRUM — Minho Song, digital visualization portfolio 2026 (prism home prototype)</title>
-<link rel="stylesheet" href="style.css?v=p8">
+<link rel="stylesheet" href="style.css?v=p8c">
 </head>
 <body data-state="home">
 <!-- tool marks: hand-drawn monochrome approximations (see NOTES), not the vendors' artwork -->
@@ -50,12 +50,14 @@
 <!-- PROJECTS: a small, long prism at the left; a slight turn changes the colour of the light at the title and the project -->
 <section class="work" id="work" aria-label="Projects">
   <nav class="nav" aria-label="Site"><a href="#/">home page</a><span class="nr"><a href="#/about">about</a><a href="#/contact">contact</a></span></nav>
-  <header class="ph">
+  <header class="ph" id="ph">
     <h2>Projects</h2>
-    <!-- VISION LINE. One element; Minho is still deciding where it lives. To move it: move this <p> and the ".vision" rules in style.css. -->
+    <!-- VISION LINE. One element; Minho is still deciding where it lives. To move it: move this <p> and the ".vision" rules in style.css. Pass 8: it is inside the hidden header block (shown by "all projects"); move it out of <header class="ph"> to show it always. -->
     <p class="vision" id="vision">One gaze, many domains: from mobility to wearables, my priority stays constant, quality in build, emotion in scene.</p>
     <ol class="list" id="list"></ol>
   </header>
+  <!-- pass 8: quiet index + switch for the hidden header block above (list + vision line) -->
+  <nav class="pix" id="pix" aria-label="Project index"><button class="pall" id="pall" type="button" aria-expanded="false" aria-controls="ph">all projects</button></nav>
   <a class="phit" id="phit" href="#" tabindex="-1" aria-hidden="true"></a>
   <a class="ptl" id="ptl" href="#"><span class="pn" id="pN"></span><b class="pT" id="pT"></b><span class="pS" id="pS"></span><em class="po" id="pO"></em></a>
 </section>
@@ -112,8 +114,8 @@
 <p class="foot"><button id="lp" type="button">low power</button><span id="dbg"></span></p>
 <p id="error" hidden></p>
 
-<script src="optics.js?v=p8"></script>
-<script src="shader.js?v=p8"></script>
-<script src="main.js?v=p9"></script>
+<script src="optics.js?v=p8c"></script>
+<script src="shader.js?v=p8c"></script>
+<script src="main.js?v=p8c"></script>
 </body>
 </html>

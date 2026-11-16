@@ -121,10 +121,11 @@
     } catch (err) { fail('Graphics could not be restored (' + err.message + '). Reload to retry.'); }
   });
 
+  var stat = { draws: 0, maxDrawPx: 0, sliceMs: 0, emaMs: 0, blocked: 0, slices: 0, frames: 0, solveRun: 0, solveHit: 0, shrink: 0 };
   /* ---------- optics state ---------- */
   var DEG = Math.PI / 180;
   var AB_DELTA = (Q.get('abd') != null ? +Q.get('abd') : 10) * DEG, AB_AZ = 0, AB_BASE = 0;   // about: the front face is turned AB_DELTA away from the camera; azimuth and rest rotation follow from the optics window
-  var rampDirty = true, mat, win, rotHome, rotP1, HOME_AZ = 90 * DEG, solved = null, solvedRot = 99, solvedG = 1, solvedNk = 1;
+  var solveCache = new Map(), rampDirty = true, mat, win, rotHome, rotP1, HOME_AZ = 90 * DEG, solved = null, solvedRot = 99, solvedG = 1, solvedNk = 1;
   var NK_HOME = Q.get('nk') != null ? +Q.get('nk') : 0.955, ROT_FIX = Q.get('rot') != null ? +Q.get('rot') * DEG : null;   // ?rot=deg freezes the prism rotation (checks)
   function setOptics(name) {
     opt.optics = name; mat = O.MATERIAL[name]; win = O.windowFor(mat);
@@ -174,7 +175,16 @@
   function solve(rot, g) {                 // g < 1 (about only): fade the light where the colour channels take different routes
     g = g == null ? 1 : g; var nk = nkFor(rot);
     if (solved && Math.abs(rot - solvedRot) < 1e-5 && g === solvedG && nk === solvedNk) return solved;
-    solved = O.solve(mat, rot, { secondary: opt.secondary, nk: nk, ramp: !!opt.sp }); solvedRot = rot; solvedG = g; solvedNk = nk;
+    // pass 8: results are kept per rotation rounded to 1e-4 rad (0.006°: far below one pixel of fan movement), so going back and forth
+    // between projects / returning to a rest pose does not trace the 16 wavelengths and rebuild the ramp again. About's faded light (g < 1)
+    // edits the arrays in place and is therefore never cached.
+    var ck = g === 1 ? opt.optics + '|' + opt.secondary + '|' + opt.sp + '|' + nk.toFixed(5) + '|' + Math.round(rot * 1e4) : null, hit = ck && solveCache.get(ck);
+    if (hit) { solved = hit; stat.solveHit++; }
+    else {
+      solved = O.solve(mat, rot, { secondary: opt.secondary, nk: nk, ramp: !!opt.sp }); stat.solveRun++;
+      if (ck) { if (solveCache.size >= 360) solveCache.delete(solveCache.keys().next().value); solveCache.set(ck, solved); }
+    }
+    solvedRot = rot; solvedG = g; solvedNk = nk;
     if (g < 1) {
       var u = solved.ribbons, k;
       for (var sl = 0; sl < O.RB; sl++) { var gg = sl === 0 ? 0.35 + 0.65 * g : g, o4 = (sl * O.STRIDE + 4) * 4; for (k = 0; k < 4; k++) u[o4 + k] *= gg; }
@@ -217,16 +227,20 @@
     // projects (pass 7): low, close to the title point PT, looking back up the fan: the prism stands small and whole at the left, the fan
     // opens toward the camera. The frame shift puts the foot of the prism at (pfx, pfy) of the window.
     var P = p ? { az: +(Q.get('paz') || 54) * DEG, el: +(Q.get('pel') || 12) * DEG, dist: +(Q.get('pd') || 8), lens: +(Q.get('plens') || 0.6) }
-              : { az: +(Q.get('paz') || 66) * DEG, el: +(Q.get('pel') || 12) * DEG, dist: +(Q.get('pd') || 6), lens: +(Q.get('plens') || 0.55) };
+              : { az: num('paz', 64, 0, 360) * DEG, el: num('pel', 8, 2, 89) * DEG, dist: +(Q.get('pd') || 6), lens: +(Q.get('plens') || 0.55) };
+    // pass 8: lower camera, a little further off the fan axis, and rolled 10° (the prism leans ≈12° to the left). The ray to the title
+    // point leaves 19.5° below the horizontal (pass 7: 34°) with the same on-screen opening. ?p7=1 = the pass 7 camera, ?proll= the roll.
+    P.roll = num('proll', p ? 0 : -10, -45, 45) * DEG;
+    if (Q.get('p7') === '1' && !p) { P.az = 66 * DEG; P.el = 12 * DEG; P.roll = 0; }
     P.aim = [0.46 + 0.9 * PS * Math.cos(PTH), 0.4, -0.08 + 0.9 * PS * Math.sin(PTH)]; P.shift = [0, 0]; P.amb = 1; P.air = 1;
-    var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.256 : 0.42, 0, 1), fy = num('pfy', p ? 0.39 : 0.50, 0, 1);
+    var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.256 : Q.get('p7') === '1' ? 0.42 : 0.26, 0, 1), fy = num('pfy', p ? 0.39 : Q.get('p7') === '1' ? 0.50 : 0.46, 0, 1);
     if (ft) P.shift = [(fx * innerWidth - ft[0]) / innerWidth * 2 * a, -(fy * innerHeight - ft[1]) / innerHeight * 2];
     return P;
   }
   function mixPose(A, Bp, t) {
     var da = Bp.az - A.az; da -= Math.round(da / (2 * Math.PI)) * 2 * Math.PI;
     var L = function (x, y) { return x + (y - x) * t; }, G = function (x, y) { return Math.exp(L(Math.log(x), Math.log(y))); };
-    return { amb: L(A.amb, Bp.amb), air: L(A.air, Bp.air), az: A.az + da * t, el: L(A.el, Bp.el), dist: G(A.dist, Bp.dist), lens: G(A.lens, Bp.lens),
+    return { amb: L(A.amb, Bp.amb), air: L(A.air, Bp.air), az: A.az + da * t, roll: L(A.roll || 0, Bp.roll || 0), el: L(A.el, Bp.el), dist: G(A.dist, Bp.dist), lens: G(A.lens, Bp.lens),
       aim: [L(A.aim[0], Bp.aim[0]), L(A.aim[1], Bp.aim[1]), L(A.aim[2], Bp.aim[2])], shift: [L(A.shift[0], Bp.shift[0]), L(A.shift[1], Bp.shift[1])] };
   }
   function basis(P) {
@@ -234,6 +248,10 @@
     var dir = [ce * ca, se, ce * sa], f = [-dir[0], -dir[1], -dir[2]];
     var u = [-se * ca, ce, -se * sa];                 // d(dir)/d(el): defined at the pole, no axis switch anywhere
     var r = [f[1] * u[2] - f[2] * u[1], f[2] * u[0] - f[0] * u[2], f[0] * u[1] - f[1] * u[0]];
+    if (P.roll) {                                     // pass 8: camera roll about the view axis (a real camera move; the optics are untouched)
+      var cR = Math.cos(P.roll), sR = Math.sin(P.roll), r2 = [cR * r[0] + sR * u[0], cR * r[1] + sR * u[1], cR * r[2] + sR * u[2]];
+      u = [cR * u[0] - sR * r[0], cR * u[1] - sR * r[1], cR * u[2] - sR * r[2]]; r = r2;
+    }
     return { e: [P.aim[0] + P.dist * dir[0], P.aim[1] + P.dist * dir[1], P.aim[2] + P.dist * dir[2]], f: f, r: r, u: u, lens: P.lens, shift: P.shift, amb: P.amb, air: P.air };
   }
   function toScreen(Bs, w) {                          // world point → CSS px (null when behind the camera)
@@ -249,7 +267,7 @@
   var ABV = (+Q.get('abv') || 2.25) * DEG;          // About: slow constant turn (rad/s), clockwise seen from above, until the next face/image comes round
   var abT = 0, abTimer = 0, abAmt = 0, abGain = 1;
   var selF = 0, selCur = 0, rot = 0, homeTurn = 0, selAmt = 0, dim = 1;
-  var selU = 0.5, pAmt = 0, flood = 0, floodShown = -1, pReady = null;   // selU: spectral coordinate of the emphasised band; flood: Contact white-out 0…1
+  var mvShown = false, selU = 0.5, pAmt = 0, flood = 0, floodShown = -1, pReady = null;   // selU: spectral coordinate of the emphasised band; flood: Contact white-out 0…1
   var pose, tween = null, cur = null;
   var dirty = true, raf = 0, last = 0;
   var easeIO = function (t) { return t * t * t * (t * (t * 6 - 15) + 10); };
@@ -277,6 +295,17 @@
     li.appendChild(a); list.appendChild(li); items.push(li);
     if (i === TEXT_ONLY.after) { var t = d.createElement('li'); t.className = 'to'; t.innerHTML = '<i>—</i>'; t.appendChild(d.createTextNode(TEXT_ONLY.text)); list.appendChild(t); }
   });
+  /* pass 8: the list and the "Projects" + vision header are hidden by default; the scene carries the page. A quiet index (six numbers)
+     and an "all projects" switch sit at the bottom left; the switch shows the header block (body.plist). */
+  var pix = $('#pix'), pixB = [], pall = $('#pall');
+  PROJECTS.forEach(function (p, i) {
+    var b = d.createElement('button'); b.type = 'button'; b.textContent = '0' + (i + 1); b.title = p.name; b.setAttribute('aria-label', 'Project ' + (i + 1) + ': ' + p.name);
+    b.addEventListener('click', function () { select(i); }); pix.insertBefore(b, pall); pixB.push(b);
+  });
+  function setList(on) { if (B.classList.contains('plist') === on) return; B.classList.toggle('plist', on); pall.setAttribute('aria-expanded', on ? 'true' : 'false'); pall.textContent = on ? 'close list' : 'all projects'; }
+  pall.addEventListener('click', function () { setList(!B.classList.contains('plist')); });
+  if (Q.get('list') === '1') setList(true);
+  if (Q.get('sil') === '0') B.classList.add('nosil');        // A/B switch: the silhouette plate is the only blend-mode layer of the page
   function setSil(p) {                                // the silhouette plate (sil/<id>.webp: grey, dark shape on white) — multiplied over the canvas, so it only exists where there is light
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); clearTimeout(silT);
@@ -285,7 +314,8 @@
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
     B.dataset.state = state;
-    items.forEach(function (li, i) { li.classList.toggle('on', i === sel); });
+    items.forEach(function (li, i) { li.classList.toggle('on', i === sel); pixB[i].classList.toggle('on', i === sel); pixB[i].setAttribute('aria-current', i === sel ? 'true' : 'false'); });
+    if (state !== 'projects' && Q.get('list') !== '1') setList(false);
     $('#ptl').href = $('#phit').href = urlOf(p);
     $('#pN').textContent = '0' + (sel + 1) + ' / 0' + N; $('#pT').textContent = SHORT[p.id] || p.name;
     $('#pS').textContent = (tt[1] || p.name) + ' — ' + p.year; $('#pO').textContent = p.locked ? 'open project (passcode)' : 'open project';
@@ -299,6 +329,8 @@
     if (next === 'home' || next === 'contact') homeTurn = 0;
     if (next === 'about') { loadCards(); abKick(); } else clearTimeout(abTimer);
     if (changed && !opt.snap) {
+      // The prism looks the same every 120°. Entering About restarts at the resting front face (image 1); every change of page then
+      // takes the nearest equivalent rotation, so the prism never spins through the turns About's slow drift (or earlier drags) piled up.
       if (next === 'about') abT = AB_BASE;
       var rT0 = rotTarget(), TW = 120 * DEG, dr = rot - rT0;
       rot = rT0 + dr - Math.round(dr / TW) * TW;
@@ -348,7 +380,7 @@
     else if (k === 'ArrowUp' || k === 'ArrowLeft' || k === 'PageUp') { step(-1); e.preventDefault(); }
     else if (k === 'Enter' && state === 'projects' && d.activeElement === B) location.href = urlOf(PROJECTS[sel]);
     else if (k === 'Enter' && state === 'home' && d.activeElement === B) go('projects', 0);
-    else if (k === 'Escape') back();
+    else if (k === 'Escape') { if (state === 'projects' && B.classList.contains('plist')) setList(false); else back(); }
     else if (k === 'o') { var ks = Object.keys(O.MATERIAL); var kf = Math.round((abT - AB_BASE) / (120 * DEG)); setOptics(ks[(ks.indexOf(opt.optics) + 1) % ks.length]); abT = AB_BASE + kf * 120 * DEG; pose = target(); tween = null; resize(); }
     else if (k === 'f') { opt.falloff = opt.falloff === 'physical' ? 'approved' : 'physical'; invalidate(); }
     else if (k === 's') { opt.secondary = opt.secondary === 0 ? 0.18 : opt.secondary < 1 ? 1 : 0; solvedRot = 99; invalidate(); }
@@ -568,13 +600,17 @@
      Moving: the whole frame is rendered at a scale that fits the budget and shown when complete.
      Still: the frame is refined to full resolution band by band (top → bottom) over the last complete frame, then nothing runs. */
   var P_MIN = 8192, P_MAX = 4e6, TILE_MAX_PX = 262144, budgetPx = Math.min(96000, +Q.get('p0') || 96000);
+  var LATE_OK = Q.get('bp') === '1' ? 0 : 1, PACE = Q.get('pace') != null ? num('pace', 0, 0, 100) : null;
   var fence = null, fenceT = 0, fenceBlocked = 0, submitT = 0, submitPx = 0, gapMin = 1e9, lastRaf = 0, lastMotion = 0;
-  var stat = { draws: 0, maxDrawPx: 0, sliceMs: 0, emaMs: 0, blocked: 0, slices: 0, frames: 0 };
+  
   function fullPx() { return canvas.width * canvas.height; }
   function adapt(ms, blocked, used) {                 // ms: submit → observed completion (quantised to animation frames)
     stat.sliceMs = ms; stat.emaMs = stat.emaMs ? stat.emaMs * 0.8 + ms * 0.2 : ms;
     var g = Math.min(gapMin, 34), quick = Math.max(24, g * 1.35 + 3);   // g: the display's own frame interval (no display is slower than 30 Hz)
-    if (blocked > 0 || ms > Math.max(70, g * 3)) budgetPx = Math.max(P_MIN, budgetPx * (blocked > 2 || ms > 200 ? 0.4 : 0.65));
+    // pass 8: ONE late frame no longer cuts the resolution (some mobile drivers signal the fence a frame late as a habit: the budget fell
+    // to its floor there and motion turned to mush); it only stops the growth. Two or more late frames, or > 70 ms, still shrink. ?bp=1 = old rule.
+    if (blocked > LATE_OK || ms > Math.max(70, g * 3)) { budgetPx = Math.max(P_MIN, budgetPx * (blocked > 2 || ms > 200 ? 0.4 : 0.65)); stat.shrink++; }
+    else if (blocked > 0) { /* hold */ }
     else if (ms <= quick && used >= budgetPx * 0.7) budgetPx = Math.min(P_MAX, fullPx(), budgetPx * 1.25);
   }
   function uniforms(Pg, Bs, w, h) {                   // the complete state of one frame; set once when its job starts
@@ -653,7 +689,7 @@
     if (!job) {
       var have = base && base.rev === sceneRev;
       if (!have && (animating || !base || !TILE)) {
-        var slowOnly = animating === 2, pace = COARSE || slowOnly ? 30 : 0;                   // drift (About) and touch devices: ≈30 new frames/s is plenty
+        var slowOnly = animating === 2, pace = PACE != null ? PACE : slowOnly ? 30 : 0;          // pass 8: only the slow About drift is held at ≈30 new frames/s. Touch devices were capped at 30 for every move since pass 5 (felt heavy once the tiled path really ran again in pass 7); the fence still holds back a GPU that cannot keep up. ?pace=30 = old cap
         if (base && now - lastMotion < pace) return true;
         lastMotion = now; job = startJob('motion', Bs, slowOnly ? 3 : 1);
       } else if (!have) job = startJob('refine', Bs, 1);       // still scene, new content (paper / images arrived): replace band by band, never drop to low resolution
@@ -710,6 +746,7 @@
     flood = opt.snap && first ? fT : fT > flood ? Math.min(1, flood + dt / 1.5) : Math.max(0, flood - dt / 0.9);
     if (FLOOD_FIX != null) flood = FLOOD_FIX;        // ?flood=0…1 holds the white-out at one stage (checks)
     if (flood !== floodShown) setFlood();
+    var mv = moving === 1 || !!drag; if (mv !== mvShown) { mvShown = mv; B.classList.toggle('mv', mv); }
     var pr = state === 'projects' && !tween; if (pr !== pReady) { pReady = pr; B.classList.toggle('pready', pr); }
     if (changed && !moving) moving = drift && Math.abs(rot - rT) < 0.02 && selAmt === a0 && dim === d0 && abAmt === b0 && cardK === k0 ? 2 : 1;
     if (changed || moving || dirty) { sceneRev++; dirty = false; }
