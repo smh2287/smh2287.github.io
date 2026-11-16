@@ -9,7 +9,7 @@
   --ff:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
   /* set by main.js from the projected prism (home pose) */
   --tx:50vw; --ty:64vh; --ts:46vw; --wf:44px;
-  --fade:.7s;
+  --fade:.35s;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -30,7 +30,7 @@ body.nogl canvas{background:var(--g0)}
 
 /* three layers; only the current one is visible and reachable */
 .home,.work,.ab,.ct{position:fixed;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility 0s .35s}
-[data-state=home] .home,[data-state=projects] .work,[data-state=about] .ab{opacity:1;visibility:visible;transition:opacity var(--fade) .55s,visibility 0s}
+[data-state=home] .home,[data-state=projects] .work,[data-state=about] .ab{opacity:1;visibility:visible;transition:opacity var(--fade) .28s,visibility 0s}
 [data-state=home] .home a,[data-state=projects] .work a,[data-state=about] .ab a{pointer-events:auto}
 
 /* ---------- home ---------- */
@@ -235,7 +235,7 @@ body.mv .grain{animation-play-state:paused}
 
 /* Pass 9 — graphic composition: an upright column, a horizontal light field, a quiet caption. */
 .flood{display:none}
-[data-state=contact] .ct{opacity:1;visibility:visible;transition:opacity .7s .6s,visibility 0s}
+[data-state=contact] .ct{opacity:1;visibility:visible;transition:opacity .35s .3s,visibility 0s}
 [data-state=contact] .ct a{pointer-events:auto}
 .ct{color:var(--t)}
 .ct .nav,.cm span,.cl,.cs{color:var(--gr)}
@@ -441,5 +441,9 @@ body.under .sil::after{display:none!important}
 body.simg .sil{display:none!important}
 
 /* pass 17o — text and pictures wait until the camera has come to rest (body.rest = no pose tween running) */
-body:not(.rest) .home,body:not(.rest) .work,body:not(.rest) .ab{opacity:0!important;visibility:hidden!important;transition:opacity .2s,visibility 0s .2s!important}
-body.rest[data-state=home] .home,body.rest[data-state=projects] .work,body.rest[data-state=about] .ab{transition:opacity var(--fade) .22s,visibility 0s}
+body:not(.rest) .home,body:not(.rest) .work,body:not(.rest) .ab{opacity:0!important;visibility:hidden!important;transition:opacity .12s,visibility 0s .12s!important}
+body.rest[data-state=home] .home,body.rest[data-state=projects] .work,body.rest[data-state=about] .ab{transition:opacity var(--fade) .1s,visibility 0s}
+
+/* pass 20 — the contact panel keeps its geometry while it fades out (it used to fall back to the default .cx position when the state changed = a jump) */
+.ct .cx{left:var(--ax);top:100px;width:min(400px,42vw);max-width:calc(100vw - 32px);max-height:calc(100dvh - 150px);padding:0 12px 20px 0;background:none;overflow:auto}
+@media (max-width:760px),(max-aspect-ratio:9/10){.ct .cx{left:16px;top:100px;width:min(400px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:calc(100dvh - 132px);padding:0 12px 20px 0;background:linear-gradient(90deg,rgba(18,19,20,.72),rgba(18,19,20,0))}}

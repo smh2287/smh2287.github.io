@@ -14,7 +14,7 @@ window.PRISM_FS = [
 'precision highp float;',
 'varying vec2 uv;',
 'uniform vec2 res,shift,rc;',
-'uniform sampler2D pimg;uniform vec4 prect;uniform vec3 pset;uniform vec3 psel;uniform float pglow;',                 // rc = (cos rot, sin rot)
+'uniform sampler2D pimg;uniform vec4 prect;uniform vec3 pset;uniform vec3 psel;uniform float pglow;uniform vec2 pvv;',                 // rc = (cos rot, sin rot)
 'uniform vec3 camE,camF,camR,camU,nrgb;',
 'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;uniform vec4 fld;',   // fld (pass 16, Projects only): amount, field half-width, stripe-zone width (both in honest-u units), hue drift inside the field   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
 'uniform vec4 rb[24];',                        // 4 ribbons × (R,G,B,V origin.xz+dir.xz, power, meta)
@@ -155,8 +155,8 @@ window.PRISM_FS = [
 'vec3 viewRay(vec2 st){vec2 q=st;q.x*=res.x/res.y;q-=shift;return normalize(camF+q.x*camR*lens+q.y*camU*lens);}',
 'vec3 pimage(vec3 col,vec2 st,float pm){if(pset.x<.001)return col;vec2 u=(st-prect.xy)/(prect.zw-prect.xy);vec4 t=texture2D(pimg,clamp(u,0.,1.));float L=max(col.r,max(col.g,col.b));float lit=smoothstep(.02,.22,L);',
 // Minho's Photoshop method: the picture fills the light wedge (clamped past its edge), a flat colour layer of the light's hue lies on top (multiply / overlay, display space), so the picture's darks stay dark; a little of the light's own glow keeps the wedge readable.
-' vec3 imd=t.rgb,bc=mix(pow(col/max(L,.03),vec3(.4545)),psel,.75);vec3 mu=imd*mix(vec3(1.),bc,pset.y);vec3 ov=mix(2.*imd*bc,1.-2.*(1.-imd)*(1.-bc),step(.5,imd));vec3 rs=mix(mu,ov,pset.z);',
-' vec3 rl=pow(clamp(rs,0.,1.),vec3(2.2))*1.15+col*pglow;return mix(col,rl,lit*pset.x*pm);}',
+' vec3 imd=clamp((t.rgb-.5)*pvv.x+.5+pvv.y,0.,1.),bc=mix(pow(col/max(L,.03),vec3(.4545)),psel,.75);vec3 mu=imd*mix(vec3(1.),bc,pset.y);vec3 ov=mix(2.*imd*bc,1.-2.*(1.-imd)*(1.-bc),step(.5,imd));vec3 rs=mix(mu,ov,pset.z);',
+' vec3 rl=pow(clamp(rs,0.,1.),vec3(2.2))*1.25+col*pglow;return mix(col,rl,lit*pset.x*pm);}',
 'vec3 scene(vec2 st){vec3 rd=viewRay(st);vec3 ro=toLocal(camE),di=toLocal(rd);float a,b;vec3 n,ex;',
 ' vec3 col=environment();float limit=200.;float pmk=1.;gFa=vec2(0.);gFb=vec2(0.);',
 ' if(rd.y<-.0001){limit=-camE.y/rd.y;paperAt(camE.xz+rd.xz*limit,pap*smoothstep(.03,.22,-rd.y)*exp(-limit*.012));float fk=limit*lens*2./res.y;gFa=camR.xz*fk;gFb=normalize(rd.xz+vec2(1e-6,0.))*(fk/max(-rd.y,.02));col=world(camE,rd);}',

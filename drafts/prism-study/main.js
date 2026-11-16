@@ -62,7 +62,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset', 'psel', 'pglow'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset', 'psel', 'pglow', 'pvv'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17s'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 480 : 260) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17u'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -473,7 +473,8 @@
   /* ---------- about: image slides standing inside the glass, one per side face (drawn in the shader) ---------- */
   var IMGS = [                                     // swap freely: any number, any size; each is cover-cropped to the 4:7 slide
     { src: 'about/portrait.webp', cap: 'Minho Song' },
-    { src: 'about/office.webp', cap: 'At work' }
+    { src: 'about/office.webp', cap: 'At work' },
+    { src: 'about/sup.webp', cap: '' }                              // the surf shot stays (no label)
   ];
   var capEl = $('#abcap'), abIdx = -1, cardK = 0, cardU = { glow: [0, 0, 0], key: [0, 1, 0, 0] }, cards = new Float32Array(12), tex = { started: false, ready: false, failed: false, mean: [] };
   var FACE_SLOT = [1, 2, 0];                       // face 2 is in front at the rest rotation, then face 0, then face 1
@@ -633,7 +634,7 @@
   }
   /* pass 17h — the picture is drawn INSIDE the light by the scene shader (pimage()): where the fan is lit, the picture's own colours replace
      the spectral colour (weighted by the fan's brightness), the light only tints it a little and keeps its edges/stripes. ?simg=0 = DOM plate, ?sitint= how much the beam colours it. */
-  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.9, 0, 1), SIOVL = num('siovl', 0.25, 0, 1), SIPW = num('sipw', 0.9, 0.3, 2.2), SIGLOW = num('siglow', 0.16, 0, 0.6), pSel = new Float32Array([1, 1, 1]), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '', simgF = 0, simgHold = false;
+  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.62, 0, 1), SIPUNCH = num('sipunch', 1.18, 0.6, 2), SILIFT = num('silift', 0.02, -0.2, 0.2), SIOVL = num('siovl', 0.25, 0, 1), SIPW = num('sipw', 0.9, 0.3, 2.2), SIGLOW = num('siglow', 0.16, 0, 0.6), pSel = new Float32Array([1, 1, 1]), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '', simgF = 0, simgHold = false;
   if (SIMG) B.classList.add('simg');
   function loadPTex(src) {
     if (!SIMG || !glOK || src === pImgSrc) return; pImgSrc = src; ptexOK = false;
@@ -759,7 +760,7 @@
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
     var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
-    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) * simgF : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW);
+    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) * simgF : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW); if (l.pvv) gl.uniform2f(l.pvv, SIPUNCH, SILIFT);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
@@ -871,7 +872,7 @@
     selAmt = chase(selAmt, aT, 2.4, dt, 0.004); dim = chase(dim, dT, 3, dt, 0.004);
     abAmt = chase(abAmt, bT, 2.2, dt, 0.004); abGain = abAmt > 0 ? chase(abGain, lightGain(rot), 9, dt, 0.004) : 1;
     cardK = chase(cardK, kT, 3, dt, 0.004);
-    var sf0 = simgF; simgF = chase(simgF, SIMG && pReady && ptexOK && !simgHold ? 1 : 0, simgHold ? 7 : 3.2, dt, 0.004);       // the picture fades out before the next one is fetched, and in only after the pose has settled
+    var sf0 = simgF; simgF = chase(simgF, SIMG && pReady && ptexOK && !simgHold ? 1 : 0, simgHold ? 14 : 6.4, dt, 0.004);       // the picture fades out before the next one is fetched, and in only after the pose has settled
     // the emphasised band: in Projects it is the light that passes through the title point (follows the rotation itself); elsewhere the old per-index band
     var uT = state === 'projects' ? (graphicProjects ? wavelengthAt(rot) : uAt(rot)) : 1 - (selCur + 0.5) / N; selU = opt.snap && first ? uT : chase(selU, uT, 10, dt, 0.0005);
     if (FIELD && selU !== u0 && state === 'projects') setBand();
