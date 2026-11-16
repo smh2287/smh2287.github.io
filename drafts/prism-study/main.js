@@ -327,10 +327,10 @@
   pall.addEventListener('click', function () { setList(!B.classList.contains('plist')); });
   if (Q.get('list') === '1') setList(true);
   if (Q.get('sil') === '0') B.classList.add('nosil');        // A/B switch: the silhouette plate is the only blend-mode layer of the page
-  function setSil(p) {                                // the silhouette plate (sil/<id>.webp: grey, dark shape on white) — multiplied over the canvas, so it only exists where there is light
+  function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); }; silImg.onerror = function () { silEl.classList.remove('in'); }; silImg.src = p.id === 'mercedes' ? 'sil/mercedes-side.webp?v=p9a' : 'sil/' + p.id + '.webp?v=p8'; }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); }; silImg.onerror = function () { silEl.classList.remove('in'); }; silImg.src = 'project-images/' + p.id + '.webp?v=p12a'; }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
