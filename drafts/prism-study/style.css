@@ -447,3 +447,6 @@ body.rest[data-state=home] .home,body.rest[data-state=projects] .work,body.rest[
 /* pass 20 — the contact panel keeps its geometry while it fades out (it used to fall back to the default .cx position when the state changed = a jump) */
 .ct .cx{left:var(--ax);top:100px;width:min(400px,42vw);max-width:calc(100vw - 32px);max-height:calc(100dvh - 150px);padding:0 12px 20px 0;background:none;overflow:auto}
 @media (max-width:760px),(max-aspect-ratio:9/10){.ct .cx{left:16px;top:100px;width:min(400px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:calc(100dvh - 132px);padding:0 12px 20px 0;background:linear-gradient(90deg,rgba(18,19,20,.72),rgba(18,19,20,0))}}
+
+/* pass 21 — dive: the chrome leaves quickly while the picture is entered */
+body.diving .work,body.diving .nav,body.diving .foot,body.diving .pix,body.diving .ptl,body.diving .phit{opacity:0!important;transition:opacity .22s!important;pointer-events:none!important}
