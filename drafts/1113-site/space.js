@@ -51,4 +51,9 @@
     var put = function () { var cmb = box.querySelector('.cmb'); if (!cmb) return; cmb.innerHTML = '<p class="cmh"><b>Comments</b><i>' + S.length + '</i></p><ol>' + S.map(function (c, i) { return '<li data-id="demo' + i + '"><span class="av" aria-hidden="true">' + c[0][0] + '</span><div><p class="by"><b>' + c[0] + '</b>' + (c[1] ? '<i>' + c[1] + '</i>' : '') + '<time>' + c[3] + ' d ago</time></p><p class="bd">' + c[2] + '</p></div></li>'; }).join('') + '</ol>'; };
     var tries = 0, iv = setInterval(function () { tries++; var cm = box.querySelector('.cmb'); if (cm && !cm.querySelector('ol') && !/Loading/.test(cm.textContent) || tries > 40) { clearInterval(iv); put(); } }, 400);
   }
+
+  /* the prism package stays inside the prism package: links that arrive after an unlock (encrypted pages) are re-pointed the same way make_space.py points the plain ones */
+  var PR = 'https://smh2287.github.io/drafts/prism-study/', pid = (location.pathname.match(/\/ps\/([\w-]+)\.html/) || [])[1];
+  function fixLinks() { [].forEach.call(d.querySelectorAll('a[href]'), function (a) { var h = a.getAttribute('href'); if (h === '../work.html') a.setAttribute('href', PR + '#/projects/' + (pid || '')); else if (h === '../index.html') a.setAttribute('href', PR + '#/home'); }); }
+  fixLinks(); new MutationObserver(fixLinks).observe(d.body, { childList: true, subtree: true });
 })();
