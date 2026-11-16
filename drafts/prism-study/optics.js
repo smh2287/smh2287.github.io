@@ -278,7 +278,7 @@
      hs = triangle side / frame height (landscape) or / frame width (portrait), hx = centre x / width, hy = beam y / height. */
   function homePose(a, o) {
     o = o || {}; var p = a < 0.9, HD = o.hd || 34, top = HD - HEIGHT, side = 2 * Math.sqrt(3) * RIN;
-    var hs = o.hs || (p ? 1.3 : 0.80), hx = o.hx != null ? o.hx : (p ? 0.40 : 0.5), hy = o.hy != null ? o.hy : (p ? 0.36 : 0.43);   // landscape: the whole upright triangle in frame, centred (Minho prefers this over the cropped close-up)
+    var hs = o.hs || (p ? 1.3 : 0.80), hx = o.hx != null ? o.hx : (p ? 0.5 : 0.5), hy = o.hy != null ? o.hy : (p ? 0.36 : 0.43);   // landscape: the whole upright triangle in frame, centred (Minho prefers this over the cropped close-up)
     var sH = p ? hs * a : hs, lens = side / (2 * top * sH), sy = 1 - 2 * hy + BEAM_Z / (HD * lens), cy = (1 - sy) / 2, f = top / HD;
     return { portrait: p, dist: HD, lens: lens, shift: [(2 * hx - 1) * a, sy], sH: sH, cx: hx, cy: cy, f: f,
       apexY: cy - sH / Math.sqrt(3), baseY: cy + sH / (2 * Math.sqrt(3)), footApexY: cy - f * sH / Math.sqrt(3), footBaseY: cy + f * sH / (2 * Math.sqrt(3)), beamY: hy };

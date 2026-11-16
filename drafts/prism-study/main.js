@@ -355,9 +355,11 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17x'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17z'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
   }
+  var sndState = null, sndSel = -1;
   function paint() {
+    if (window.PrismSound) { try { if (sndState !== null && state !== sndState) PrismSound.swell(state); else if (sndState !== null && state === 'projects' && sel !== sndSel) PrismSound.tink(sel); } catch (e) {} sndState = state; sndSel = sel; }
     var p = PROJECTS[sel], tt = p.title.split(' : ');
     B.dataset.state = state;
     items.forEach(function (li, i) { li.classList.toggle('on', i === sel); pixB[i].classList.toggle('on', i === sel); pixB[i].setAttribute('aria-current', i === sel ? 'true' : 'false'); });
@@ -527,7 +529,7 @@
     var wA = 0.95 * abAmt, wP = PKEY * pAmt * (1 - abAmt), kp = 156 * DEG, kq = 7 * DEG;
     var kv = [wA * Math.cos(ke) * Math.cos(ka) + wP * Math.cos(kq) * Math.cos(kp), wA * Math.sin(ke) + wP * Math.sin(kq), wA * Math.cos(ke) * Math.sin(ka) + wP * Math.cos(kq) * Math.sin(kp)], kl = Math.hypot(kv[0], kv[1], kv[2]) || 1;
     cardU.key = [kv[0] / kl, kv[1] / kl, kv[2] / kl, wA + wP];
-    if (state === 'about' && bi !== abIdx && bi >= 0) { abIdx = bi; capEl.textContent = '0' + (bi + 1) + ' / 0' + n + '   ' + IMGS[bi].cap; }
+    if (state === 'about' && bi !== abIdx && bi >= 0) { if (abIdx >= 0 && window.PrismSound) PrismSound.tick(); abIdx = bi; capEl.textContent = '0' + (bi + 1) + ' / 0' + n + '   ' + IMGS[bi].cap; }
   }
   function layoutAbout() {                         // text column starts right of the widest silhouette of the turning prism; on phones below its foot
     var P = poseFor('about', 0), Bs = basis(P), R = 2 * O.RIN, st = d.documentElement.style;
@@ -603,7 +605,7 @@
     var W = innerWidth, H = innerHeight, hp = O.homePose(aspect(), HOPT), st = d.documentElement.style;
     var ty = hp.portrait ? Math.max(hp.beamY + 0.085, hp.footBaseY - 0.122) : Math.min(0.668, hp.footBaseY - 0.16);
     var room = 2 * (ty + 0.06 - hp.footApexY) * H / Math.sqrt(3);                       // width of the floor footprint at the wordmark
-    var tw = hp.portrait ? Math.min(0.74 * W, 340) : Math.max(260, Math.min(0.40 * W, 0.9 * room, 780));
+    var tw = hp.portrait ? Math.min(0.80 * W, 340) : Math.max(260, Math.min(0.40 * W, 0.9 * room, 780));
     st.setProperty('--tx', (hp.cx * W).toFixed(1) + 'px'); st.setProperty('--ty', (ty * H).toFixed(1) + 'px');
     st.setProperty('--wf', (tw / 7.05).toFixed(2) + 'px'); st.setProperty('--ts', tw.toFixed(1) + 'px');
     // pass 7: the Contact label rides on the incoming beam (two projected points of the beam → position and angle)
@@ -696,7 +698,7 @@
     if (dive || !SIMG || !ptexOK || state !== 'projects' || !pReady || RM_DIVE || tween) { location.href = url; return; }
     var P0 = poseFor('projects', 0), zEnd = Math.max(1.2, P0.dist * P0.lens / (DIVE_ZOOM * DIVE_LENS));      // picture scale at the end = DIVE_ZOOM × the scale at rest
     divePose0 = P0; divePose1 = { az: P0.az, el: P0.el, roll: 0, dist: zEnd, lens: DIVE_LENS, aim: [pPl.C[0], pPl.C[1], pPl.C[2]], shift: [0, 0], amb: P0.amb, air: P0.air };
-    dive = { t0: performance.now(), url: url }; B.classList.add('diving'); invalidate();
+    dive = { t0: performance.now(), url: url }; B.classList.add('diving'); if (window.PrismSound) PrismSound.dive(DIVE_MS); invalidate();
   }
   var DIVE_HOLD = Q.get('divep') != null ? +Q.get('divep') : null;      // checks: freeze the dive at this progress, never navigate
   function diveStep(now) {
@@ -964,7 +966,7 @@
   pose = target(); tween = null;
   setQuality(quality);
   window.prism = {
-    go: go, select: select, step: step, back: back, setOptics: function (n) { setOptics(n); pose = target(); tween = null; resize(); },
+    go: go, select: select, sound: window.PrismSound, step: step, back: back, setOptics: function (n) { setOptics(n); pose = target(); tween = null; resize(); },
     idle: function () { if(graphicProjects && state==='projects')return !raf; return !raf && !dirty && (FLOOD_FIX != null || flood === 0) && paperState !== 1 && (state !== 'about' || !glOK || tex.ready || tex.failed) && (!glOK || (!!base && base.rev === sceneRev && base.scale === 1 && !job)); },
     state: function () { return { projectRenderer: projectRenderer && projectRenderer.stats(), field: FIELD, state: state, sel: sel, rot: rot, rotDeg: rot / DEG, selU: selU, flood: flood, prot: PROT.map(function (r) { return +(r / DEG).toFixed(2); }), pt: PT, optics: opt.optics, falloff: opt.falloff, quality: quality, width: canvas.width, height: canvas.height, webgl: glOK, gl2: GL2, parallel: !!EXT.par, lod: !!EXT.lod, tile: TILE, shader: 'compact-full-optics', programs: { base: progs.base ? (progs.base.ready ? Math.round(progs.base.ms) : progs.base.failed ? 'failed' : 'pending') : null, cards: progs.cards ? (progs.cards.ready ? Math.round(progs.cards.ms) : progs.cards.failed ? 'failed: ' + progs.cards.err : 'pending') : null }, budgetPx: Math.round(budgetPx), baseScale: base ? base.scale : 0, stat: stat, spreadDeg: solved && solved.spreadDeg, nk: solvedNk, gain: solved && solved.gain, window: win, moving: !!raf, ramp: !!(solved && solved.rampOK && opt.sp), rampU: solved && solved.rampU, paper: paperState, about: { img: abIdx, tex: tex.ready, light: abGain, az: AB_AZ / DEG, base: AB_BASE / DEG } }; }
   };
