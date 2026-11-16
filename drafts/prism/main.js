@@ -298,6 +298,11 @@
     if (nextSel != null) { sel = Math.max(0, Math.min(N - 1, nextSel)); selF = sel; }
     if (next === 'home' || next === 'contact') homeTurn = 0;
     if (next === 'about') { loadCards(); abKick(); } else clearTimeout(abTimer);
+    if (changed && !opt.snap) {
+      if (next === 'about') abT = AB_BASE;
+      var rT0 = rotTarget(), TW = 120 * DEG, dr = rot - rT0;
+      rot = rT0 + dr - Math.round(dr / TW) * TW;
+    }
     paint();
     if (changed) travel(from); else invalidate();
     if (changed && next === 'contact') setTimeout(function () { if (state === 'contact') try { $('#cm').focus({ preventScroll: true }); } catch (e) {} }, opt.snap ? 1700 : 3300);   // keyboard lands on the one action
