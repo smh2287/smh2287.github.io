@@ -27,13 +27,11 @@ canvas.drag{cursor:grabbing}
 canvas{opacity:0;transition:opacity .6s}
 body.live canvas{opacity:1}
 body.nogl canvas{background:var(--g0)}
-.veil{position:fixed;inset:0;background:var(--g0);opacity:0;pointer-events:none;transition:opacity var(--fade)}
-[data-state=entry] .veil{opacity:.58}
 
 /* three layers; only the current one is visible and reachable */
-.home,.work,.en,.ab{position:fixed;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility 0s .35s}
-[data-state=home] .home,[data-state=projects] .work,[data-state=entry] .en,[data-state=about] .ab{opacity:1;visibility:visible;transition:opacity var(--fade) .55s,visibility 0s}
-[data-state=home] .home a,[data-state=projects] .work a,[data-state=entry] .en a,[data-state=about] .ab a{pointer-events:auto}
+.home,.work,.ab,.ct{position:fixed;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .35s,visibility 0s .35s}
+[data-state=home] .home,[data-state=projects] .work,[data-state=about] .ab{opacity:1;visibility:visible;transition:opacity var(--fade) .55s,visibility 0s}
+[data-state=home] .home a,[data-state=projects] .work a,[data-state=about] .ab a{pointer-events:auto}
 
 /* ---------- home ---------- */
 .go{position:absolute;right:4.6vw;top:24px;font:700 27px/32px var(--ff);color:var(--mint);transition:opacity .2s}
@@ -42,98 +40,109 @@ body.nogl canvas{background:var(--g0)}
 .wm{margin:0 -.2em 0 0;font:300 var(--wf,44px)/1 var(--ff);letter-spacing:.2em;color:var(--t);white-space:nowrap;text-shadow:0 0 22px rgba(13,14,15,.55)}
 .sl{display:flex;justify-content:space-between;margin:calc(var(--wf,44px) * .36) 0 0;font:300 clamp(10px,calc(var(--wf,44px) * .2),17px)/1.4 var(--ff);color:var(--t);white-space:nowrap;text-shadow:0 0 12px rgba(13,14,15,.7)}
 .sl b{font-weight:400}
-.cv{position:absolute;left:calc(var(--ax) + 306px);bottom:26px;margin:0;padding:0;list-style:none;color:var(--gr);font-size:11px}
-.cv li{line-height:15px}
-.cv li:first-child{color:var(--t)}
-.contact{position:absolute;left:var(--ax);bottom:24px;margin:0;display:flex;align-items:center;gap:22px;font:italic 400 15px/18px Georgia,"Times New Roman",serif;color:var(--gr)}
-.contact b{font-weight:400;letter-spacing:.75px;color:var(--t)}
-.contact a:hover b{color:var(--mint)}
-.contact .pr{width:34px;height:1px;background:linear-gradient(90deg,#ff5a5a,#ffd35a,#1FFFE0,#5a8bff,#b05aff);opacity:.9}
-.hint{position:absolute;right:4.6vw;bottom:54px;margin:0;font-size:11px;line-height:14px;color:var(--mu);letter-spacing:.04em}
-.hint::after{content:"";display:block;width:1px;height:26px;margin:8px 0 0 auto;background:linear-gradient(180deg,var(--mu),rgba(96,101,110,0))}
-.hint .t{display:none}
+/* Contact rides on the incoming beam: --cx/--cy = a point of the beam, --ca = its angle on screen (main.js layoutHome) */
+.ct-link{position:absolute;left:var(--cx,9vw);top:var(--cy,60vh);padding:8px 10px;font-size:13px;line-height:16px;letter-spacing:.04em;color:var(--t);white-space:nowrap;
+  transform:translate(-50%,-50%) rotate(var(--ca,0deg)) translateY(-20px);text-shadow:0 0 10px rgba(13,14,15,.9);transition:color .2s}
+.ct-link span{color:var(--gr);transition:color .2s}
+.ct-link:hover,.ct-link:hover span{color:var(--mint)}
 
-/* ---------- projects ---------- */
+/* ---------- projects (pass 7) ----------
+   Left axis: label, the vision line, the list. In the light (main.js layoutProjects: --px/--py = the title point on the floor,
+   --sw = plate width): the silhouette plate (.sil, body level, multiplied) and the title block; both are links to the real page. */
 .nav{position:absolute;left:var(--ax);right:var(--ax);top:12px;display:flex;justify-content:space-between;font-size:13px;line-height:20px;color:var(--gr)}
-.nav a{transform:translateX(-44px);transition:color .2s}
-.nav a + a{transform:none}
+.nav a{transition:color .2s}
+.nav > a{transform:translateX(-44px)}
+.nr{display:flex;gap:26px}
 .nav a:hover{color:var(--mint)}
-.ph{position:absolute;left:var(--ax);top:68px}
-.ph h2{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em;pointer-events:none}
-.list{margin:22px 0 0;padding:0;list-style:none}
-.list li{font-size:12.5px;line-height:21px;color:var(--gr);white-space:nowrap}
+.ph{position:absolute;left:var(--ax);top:64px;width:min(300px,calc(100vw - 32px))}
+.ph h2{margin:0;font:700 20px/24px var(--ff);pointer-events:none}
+/* VISION LINE (movable unit, see index.html) */
+.vision{margin:14px 0 0;font:400 16px/23px var(--ff);letter-spacing:-.003em;color:var(--t);text-shadow:0 0 10px rgba(13,14,15,.8)}
+.list{margin:26px 0 0;padding:0;list-style:none}
+.list li{font-size:12.5px;line-height:21px;color:var(--gr);white-space:nowrap;text-shadow:0 0 8px rgba(13,14,15,.9)}
 .list a{display:inline-block;transition:color .2s}
-.list i{display:inline-block;min-width:34px;font-style:normal;font-size:11px;color:var(--mu)}
+.list i{display:inline-block;min-width:34px;font-style:normal;font-size:11px;color:var(--mu);transition:color .2s}
 .list b{font-weight:400}
-.list em{margin-left:18px;font-style:normal;font-size:11px;letter-spacing:.04em;color:var(--mint);opacity:0;transition:opacity .25s}
-.list em::after{content:"  \2192"}
+.list .y{color:var(--mu)}
+.list .k{margin-left:10px;font-size:10px;letter-spacing:.06em;color:var(--mu)}
 .list li.on a{color:var(--t)}
-.list li.on em{opacity:1}
+.list li.on i{color:var(--mint)}
 .list li.to{color:var(--mu)}
-.pd{max-width:262px;min-height:32px;margin:26px 0 0 34px;color:var(--gr)}
-.ticks{position:absolute;inset:0;margin:0;padding:0;list-style:none;pointer-events:none}
-.ticks li{position:absolute;left:0;top:0;margin:-7px 0 0 -8px;font-size:10px;line-height:14px;letter-spacing:.06em;color:rgba(232,232,234,.5);text-shadow:0 0 6px rgba(13,14,15,.9);opacity:0;transition:opacity .4s,color .2s;will-change:transform}
-.ticks li.v{opacity:0}
-.ticks li.v.on{opacity:1;color:var(--mint);font-size:11px}
-.pv{position:absolute;left:var(--ax);bottom:9vh;width:min(27vw,400px);aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
-.pv img,.fig img{display:block;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity var(--fade)}
-.pv img.in,.fig img.in{opacity:1}
-.pv::before{content:"";position:absolute;inset:0;z-index:1;background:#0d0e0f;opacity:.12;transition:opacity .35s}
-.pv:hover::before{opacity:0}
-.lk{display:none;position:absolute;left:12px;bottom:9px;z-index:2;font-size:11px;line-height:14px;color:var(--mint);letter-spacing:.02em}
-.locked .lk{display:block}
-.locked img{visibility:hidden}
-.pv.locked,.fig.locked{background:transparent;box-shadow:inset 0 0 0 1px var(--g3)}
+.sil{position:fixed;left:var(--px,68vw);top:var(--py,72vh);width:var(--sw,40vw);aspect-ratio:12/5;transform:translate(-50%,-62%);mix-blend-mode:multiply;opacity:0;pointer-events:none;transition:opacity .25s}
+.sil img{display:block;width:100%;height:100%;object-fit:cover}
+body.pready[data-state=projects] .sil.in{opacity:.6;transition:opacity .6s .12s}
+body.pready[data-state=projects] .sil.in.lk{opacity:.5}
+.phit{position:absolute;left:var(--px);top:var(--py);width:var(--sw);aspect-ratio:12/5;transform:translate(-50%,-62%)}
+.ptl{position:absolute;left:calc(var(--px) - var(--sw) * .1);top:calc(var(--py) - var(--sw) * .2583 - 12px);transform:translateY(-100%);display:flex;flex-direction:column;align-items:flex-start;text-shadow:0 0 14px rgba(13,14,15,.85)}
+.pn{font-size:11px;line-height:14px;letter-spacing:.06em;color:var(--mint)}
+.pT{margin:6px 0 0 -2px;font:700 clamp(26px,3.1vw,44px)/1.04 var(--ff);letter-spacing:.005em;color:var(--t);white-space:nowrap}
+.pS{margin:7px 0 0;font-size:11px;line-height:15px;letter-spacing:.06em;color:var(--gr);white-space:nowrap}
+.po{margin:9px 0 0;font-style:normal;font-size:12.5px;line-height:16px;color:var(--mint);transition:opacity .2s}
+.po::after{content:"  \2192"}
+.ptl:hover .po{opacity:.72}
+@media (max-height:720px) and (min-width:761px){.ph{top:50px}.vision{margin-top:10px;font-size:14.5px;line-height:20px}.list{margin-top:16px}.list li{line-height:19px}}
 
-/* ---------- entry ---------- */
-.en{--col:var(--pw);--ax:var(--gut)}
-.en .nav{font-size:15px}
-.en .nav a{transform:none}
-.pt{position:absolute;left:var(--ax);top:44px}
-.pt h2{margin:0;font:700 20px/24px var(--ff)}
-.tx{position:absolute;left:var(--ax);top:109px}
-.tx p{max-width:262px;margin:0;color:var(--t)}
-.fig{--w:min(var(--pw), calc((100vh - 290px) * 2.4));position:absolute;left:calc(50vw - var(--w) / 2);top:188px;width:var(--w);aspect-ratio:12/5;overflow:hidden;background:var(--g2);cursor:pointer}
-.fig .lk{left:16px;bottom:13px}
-.more{position:absolute;left:var(--ax);right:var(--ax);top:calc(188px + min(var(--pw), calc((100vh - 290px) * 2.4)) / 2.4 + 20px);margin:0;display:flex;justify-content:space-between;font-size:13px;line-height:20px;color:var(--mu)}
-.more a{font-weight:700;color:var(--mint);transition:opacity .2s}
-.more a::after{content:"  \2192"}
-.more a:hover{opacity:.72}
+/* ---------- contact (pass 7): dark small type on the flooded white ---------- */
+.flood{position:fixed;inset:0;overflow:hidden;pointer-events:none;visibility:hidden;--fo:0;--fd:0;--fs:.04}
+.flood::before{content:"";position:absolute;inset:0;background:#f6f2e9;opacity:var(--fo)}
+.flood::after{content:"";position:absolute;left:var(--lx,50vw);top:var(--ly,50vh);width:120vmax;height:120vmax;margin:-60vmax 0 0 -60vmax;border-radius:50%;
+  background:radial-gradient(circle closest-side,#fffefa 0,#fefbf4 18%,rgba(252,248,240,.86) 34%,rgba(251,247,238,.6) 48%,rgba(251,246,236,.34) 62%,rgba(250,245,234,.14) 76%,rgba(250,245,234,.04) 89%,rgba(250,245,234,0) 100%);transform:scale(var(--fs));opacity:var(--fd)}
+.ct{color:#17181a}
+body.flooded[data-state=contact] .ct{opacity:1;visibility:visible;transition:opacity .7s .1s,visibility 0s}
+body.flooded[data-state=contact] .ct a{pointer-events:auto}
+.ct .nav{color:#5d6168}
+.ct .nav a:hover{color:#17181a}
+.ct :focus-visible{outline-color:#17181a}
+.cx{position:absolute;left:var(--ax);top:68px;max-width:calc(100vw - 32px)}
+.cx h2{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.cl{margin:10px 0 0;font-size:12.5px;line-height:17px;color:#5d6168}
+.cm{display:inline-block;margin:46px 0 0}
+.cm span{display:block;font-size:11px;line-height:15px;letter-spacing:.04em;color:#5d6168}
+.cm b{display:inline-block;margin-top:7px;padding:0 1px 5px;font:300 clamp(20px,2.3vw,30px)/1.25 var(--ff);box-shadow:inset 0 -2px 0 var(--mint);transition:box-shadow .25s}
+.cm:hover b,.cm:focus-visible b{box-shadow:inset 0 -1.6em 0 var(--mint)}
+.cs{margin:46px 0 0;font-size:11px;line-height:15px;color:#5d6168}
+[data-state=contact] .foot button{color:#8a8d92}
+
+/* ---------- film grain (pass 7): moving DOM overlay; the scene is not redrawn for it ---------- */
+.grain{position:fixed;inset:-260px;pointer-events:none;background-repeat:repeat;animation:grain .72s steps(1) infinite}
+@keyframes grain{0%{transform:translate(0,0)}12.5%{transform:translate(-97px,61px)}25%{transform:translate(113px,-142px)}37.5%{transform:translate(-171px,-39px)}50%{transform:translate(59px,177px)}62.5%{transform:translate(-23px,-203px)}75%{transform:translate(189px,83px)}87.5%{transform:translate(-131px,149px)}}
+body.lowp .grain{display:none}
+.grain{transition:opacity .8s}
+[data-state=contact] .grain{opacity:.55}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
 
 /* ---------- foot ---------- */
-.foot{position:fixed;right:4.6vw;bottom:14px;margin:0;display:flex;gap:18px;font-size:11px;line-height:14px;color:var(--mu)}
+.foot{position:fixed;right:4.6vw;bottom:14px;margin:0;display:flex;gap:18px;font-size:11px;line-height:14px;color:var(--mu);z-index:2}
 .foot button{color:var(--mu);transition:color .2s}
 .foot button:hover,.foot button.on{color:var(--mint)}
 #error{position:fixed;left:var(--ax);bottom:60px;max-width:420px;margin:0;font-size:11px;line-height:15px;color:var(--gr)}
-body.bare .home,body.bare .work,body.bare .en,body.bare .foot,body.bare .veil{display:none}
+body.bare .home,body.bare .work,body.bare .ct,body.bare .ab,body.bare .foot,body.bare .sil,body.bare .flood{display:none}
 
-@media (max-width:1280px){.nav a{transform:none}}
+@media (max-width:1280px){.nav > a{transform:none}}
 @media (max-width:760px), (max-aspect-ratio:9/10){
   :root{--col:calc(100vw - 32px)}
   .go{right:16px;top:18px;font-size:24px;line-height:30px}
   .sl{font-size:clamp(9.5px,calc(var(--wf,40px) * .25),13px)}
-  .cv{left:16px;right:16px;bottom:62px}
-  .cv li{line-height:15px;margin-bottom:3px}
-  .contact{left:16px;bottom:22px;gap:14px}
-  .hint{right:16px;bottom:22px}
-  .hint::after{display:none}
-  .hint .d{display:none}.hint .t{display:inline}
-  .ph{top:50px}
-  .ph h2{font-size:52px;line-height:60px}
-  .list{margin-top:12px}
-  .list li{font-size:13px;line-height:30px}
-  .list em{display:none}
-  .pd{display:none}
-  .pv{left:auto;right:16px;bottom:54px;width:40vw}
-  .en .nav{top:14px}
-  .pt{top:54px;right:16px}
-  .tx{top:auto;bottom:86px}
-  .fig{--w:calc(100vw - 32px);top:31vh}
-  .more{top:auto;bottom:44px}
+  .ct-link{font-size:12.5px}
+  /* projects, phone: prism top-left, label + vision line to its right, silhouette + title in the light, the list at the bottom */
+  .ph{left:16px;right:16px;top:46px;width:auto}
+  .ph h2,.vision{margin-left:38%}
+  .ph h2{font-size:15px;line-height:20px}
+  .vision{margin-top:8px;font-size:13.5px;line-height:19px}
+  .list{position:fixed;left:16px;right:16px;bottom:30px;margin:0}
+  /* the lower third is a dark sheet (title + list stay readable whatever colour passes under them); the light shows between prism and silhouette */
+  .work::before{content:"";position:fixed;left:0;right:0;bottom:0;top:calc(var(--py) + var(--sw) * .1583 - 26px);background:linear-gradient(180deg,rgba(18,19,20,0),rgba(18,19,20,.9) 44px,rgba(18,19,20,.94));pointer-events:none}
+  .list li{font-size:12.5px;line-height:22px}
+  .ptl{left:calc(var(--px) - var(--sw) * .5);top:calc(var(--py) + var(--sw) * .1583 + 8px);transform:none}
+  .pT{font-size:26px}
+  .pS{display:none}
+  .po{margin-top:6px}
+  .cx{left:16px;top:50px}
+  .cx h2{font-size:52px;line-height:60px}
+  .cm{margin-top:36px}
   .foot{right:16px;bottom:8px}
   .foot span:first-child{display:none}
 }
-.touch .hint .d{display:none}.touch .hint .t{display:inline}
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01s!important;transition-delay:0s!important}}
 
 /* ---------- about (pass 5) ----------
