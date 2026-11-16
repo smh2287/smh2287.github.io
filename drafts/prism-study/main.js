@@ -62,7 +62,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset', 'psel', 'pglow', 'pvv', 'pdive'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'pC', 'pR', 'pU', 'pN', 'pset', 'psel', 'pglow', 'pvv', 'pdive'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; if (SIMG) simgHold = true; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17w'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR && !SIMG ? 'art/' : 'project-images/') + p.id + '.webp?v=p17x'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? (SIMG ? 260 : 150) : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -542,7 +542,7 @@
   try { if (!opt.q && navigator.connection && navigator.connection.saveData) quality = 2; } catch (e) {}
   /* three tiers — 0 quality (edge AA, paper, grain, full resolution), 1 balanced (0.58 scale, paper + grain), 2 performance (0.34 scale, no paper/grain).
      Default = AUTO: the start tier comes from the hardware (touch / small screen / few cores / little memory → lower), and a run of GPU-late frames steps down one tier.
-     The button cycles auto → quality → balanced → performance; the manual choice is remembered. ?q=low|mid|high pins a tier (checks). */
+     The button cycles quality → balanced → performance (it also ends the automatic stepping); the manual choice is remembered. ?q=low|mid|high pins a tier (checks). */
   var TIERS = ['quality', 'balanced', 'performance'], qAuto = true, qSaved = null;
   try { qSaved = localStorage.getItem('prism-q'); } catch (e) {}
   if (opt.q) qAuto = false;
@@ -581,14 +581,14 @@
   }
   function setQuality(q, manual) {
     quality = q; solvedRot = 99;
-    if (manual) { qAuto = manual === 'auto'; try { qAuto ? localStorage.removeItem('prism-q') : localStorage.setItem('prism-q', TIERS[q]); } catch (e) {} }
-    $('#lp').classList.toggle('on', quality === 2); $('#lp').textContent = (qAuto ? 'auto · ' : '') + TIERS[quality];
+    if (manual) { qAuto = false; try { localStorage.setItem('prism-q', TIERS[q]); } catch (e) {} }
+    $('#lp').classList.toggle('on', quality === 2); $('#lp').textContent = TIERS[quality];
     B.classList.toggle('lowp', quality === 2); if (quality !== 2) makeGrain();
     if (!(graphicProjects && state === 'projects')) ensurePaper();
     resize();
   }
-  $('#lp').addEventListener('click', function () {   // auto → quality → balanced → performance → auto
-    if (qAuto) setQuality(0, 'tier'); else if (quality < 2) setQuality(quality + 1, 'tier'); else { qAuto = true; setQuality(startTier(), 'auto'); }
+  $('#lp').addEventListener('click', function () {   // quality → balanced → performance (a click also ends the automatic stepping)
+    setQuality((quality + 1) % 3, true);
   });
   function startTier() { var mem = navigator.deviceMemory || 8, cores = navigator.hardwareConcurrency || 8; return COARSE || Math.min(innerWidth, innerHeight) < 600 ? 2 : (mem <= 4 || cores <= 4 || (devicePixelRatio || 1) > 2.4) ? 1 : 0; }
   var shrinkSeen = 0;
@@ -674,24 +674,39 @@
     im.onerror = function () { ptexOK = false; simgHold = false; };
     im.src = src;
   }
-  var pAsp = 0.4, diveP = 0, dive = null, pRect0 = new Float32Array(4);
-  /* pass 21 — "dive": choosing a project zooms straight into its picture (rect scaled about its centre, the light forced to cover the screen),
-     fades to the site ground colour, then the real project page opens (?dive=1 there plays the fade-out + zoom-out arrival). Same scene, no new pass. */
-  var DIVE_MS = num('divems', 800, 200, 3000), DIVE_ZOOM = num('divez', 3.4, 1.5, 8);
+  var pAsp = 0.4, diveP = 0, dive = null, pPl = { C: new Float32Array(3), R: new Float32Array([1, 0, 0]), U: new Float32Array([0, 1, 0]), N: new Float32Array([0, 0, 1]), hw: 8, hh: 3 }, divePose0 = null, divePose1 = null;
+  /* pass 22 — the picture is a PLANE in the scene (centre C, half sizes hw/hh along the camera's right/up at rest, facing the rest camera), read by ray-plane intersection in
+     pimage(). At rest the camera is quasi-orthographic, so it looks exactly like the screen-space rectangle before. "Dive": the CAMERA flies in along its own axis to the
+     plane (lens opens from ortho to a normal lens, aim moves to the plane centre), so the prism / floor / fan slide past with real parallax; the light is forced to
+     cover the view and fades to the site ground colour at the end, then the real project page opens (?dive=1 there: fade-out + zoom-out arrival). */
+  var DIVE_MS = num('divems', 900, 200, 3000), DIVE_ZOOM = num('divez', 3.2, 1.5, 8), DIVE_LENS = num('divelens', 0.62, 0.2, 1.4);
+  function planeAt(Bs, G, px, py) {                  // world point where the screen point (px, py) meets the plane through G facing the camera
+    var W = innerWidth, H = innerHeight, a = aspect(), qx = ((px / W) * 2 - 1) * a - Bs.shift[0], qy = (1 - (py / H) * 2) - Bs.shift[1];
+    var dx = Bs.f[0] + qx * Bs.lens * Bs.r[0] + qy * Bs.lens * Bs.u[0], dy = Bs.f[1] + qx * Bs.lens * Bs.r[1] + qy * Bs.lens * Bs.u[1], dz = Bs.f[2] + qx * Bs.lens * Bs.r[2] + qy * Bs.lens * Bs.u[2];
+    var den = dx * Bs.f[0] + dy * Bs.f[1] + dz * Bs.f[2] || 1e-6, num_ = (G[0] - Bs.e[0]) * Bs.f[0] + (G[1] - Bs.e[1]) * Bs.f[1] + (G[2] - Bs.e[2]) * Bs.f[2], t = num_ / den;
+    return [Bs.e[0] + dx * t, Bs.e[1] + dy * t, Bs.e[2] + dz * t];
+  }
+  function setPlane(Bs, G, bx, by, pw, hhpx) {       // rect centre (bx, by), size pw × hhpx in screen px at the rest camera
+    var Cc = planeAt(Bs, G, bx, by), L = planeAt(Bs, G, bx - pw / 2, by), Rr = planeAt(Bs, G, bx + pw / 2, by), T = planeAt(Bs, G, bx, by - hhpx / 2), Bt = planeAt(Bs, G, bx, by + hhpx / 2);
+    var hw = Math.hypot(Rr[0] - L[0], Rr[1] - L[1], Rr[2] - L[2]) / 2, hh = Math.hypot(T[0] - Bt[0], T[1] - Bt[1], T[2] - Bt[2]) / 2;
+    for (var k = 0; k < 3; k++) { pPl.C[k] = Cc[k]; pPl.R[k] = Bs.r[k] / hw; pPl.U[k] = Bs.u[k] / hh; pPl.N[k] = -Bs.f[k]; }
+    pPl.hw = hw; pPl.hh = hh;
+  }
   function startDive(url) {
-    if (dive || !SIMG || !ptexOK || state !== 'projects' || !pReady || RM_DIVE) { location.href = url; return; }
-    pRect0.set(pRect); dive = { t0: performance.now(), url: url }; B.classList.add('diving'); invalidate();
+    if (dive || !SIMG || !ptexOK || state !== 'projects' || !pReady || RM_DIVE || tween) { location.href = url; return; }
+    var P0 = poseFor('projects', 0), zEnd = Math.max(1.2, P0.dist * P0.lens / (DIVE_ZOOM * DIVE_LENS));      // picture scale at the end = DIVE_ZOOM × the scale at rest
+    divePose0 = P0; divePose1 = { az: P0.az, el: P0.el, roll: 0, dist: zEnd, lens: DIVE_LENS, aim: [pPl.C[0], pPl.C[1], pPl.C[2]], shift: [0, 0], amb: P0.amb, air: P0.air };
+    dive = { t0: performance.now(), url: url }; B.classList.add('diving'); invalidate();
   }
   var DIVE_HOLD = Q.get('divep') != null ? +Q.get('divep') : null;      // checks: freeze the dive at this progress, never navigate
   function diveStep(now) {
     if (!dive) return;
-    var t = DIVE_HOLD != null ? DIVE_HOLD : Math.min(1, (now - dive.t0) / DIVE_MS); diveP = t * t * (3 - 2 * t) * 0.35 + t * t * t * 0.65;   // slow start, fast end ("diving")
-    var s = 1 + (DIVE_ZOOM - 1) * diveP, cx = (pRect0[0] + pRect0[2]) / 2, cy = (pRect0[1] + pRect0[3]) / 2, hw = (pRect0[2] - pRect0[0]) / 2 * s, hh = (pRect0[3] - pRect0[1]) / 2 * s;
-    pRect[0] = cx - hw; pRect[2] = cx + hw; pRect[1] = cy - hh; pRect[3] = cy + hh; sceneRev++;
+    var t = DIVE_HOLD != null ? DIVE_HOLD : Math.min(1, (now - dive.t0) / DIVE_MS), e = t * t * (2.2 - 1.2 * t);          // slow start, fast end ("diving")
+    pose = mixPose(divePose0, divePose1, e); diveP = t < 0.4 ? 0 : (t - 0.4) / 0.6; diveP = diveP * diveP * (3 - 2 * diveP); sceneRev++;
     if (t >= 1 && !dive.gone && DIVE_HOLD == null) { dive.gone = true; location.href = dive.url + (dive.url.indexOf('?') < 0 ? '?dive=1' : '&dive=1'); }
   }
   var RM_DIVE = matchMedia('(prefers-reduced-motion:reduce)').matches;
-  addEventListener('pageshow', function (e) { if (e.persisted && dive) { dive = null; diveP = 0; B.classList.remove('diving'); layoutField(); sceneRev++; invalidate(); } });   // back button (bfcache): come out of the dive
+  addEventListener('pageshow', function (e) { if (e.persisted && dive) { dive = null; diveP = 0; B.classList.remove('diving'); pose = target(); layoutField(); sceneRev++; invalidate(); } });   // back button (bfcache): come out of the dive
   ['ptl', 'phit'].forEach(function (id) { var el = $('#' + id); if (el) el.addEventListener('click', function (e) { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return; e.preventDefault(); startDive(el.href); }); });
   function layoutField() {
     var p = portrait(), Bs = basis(poseFor('projects', 0)), st = d.documentElement.style, W = innerWidth, H = innerHeight;
@@ -705,7 +720,7 @@
     st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
     if (SIMG) {                                      // plate rectangle in scene (st) coordinates: x,y ∈ [-1,1], y up
       var PK = { mercedes: [0.80, -0.07, 0], niva: [0.78, -0.06, 0.02], kia2022: [1.12, -0.06, 0.0] }[pr.id] || [1, 0, 0], pw = SIPW * PK[0] * W, hh = pw * pAsp, bx = g[0] + PK[1] * W, by = g[1] + PK[2] * H;       // per-project size / nudge (fractions of the screen), tuned by eye      // the ORIGINAL picture, big enough to fill the fan (the light itself bounds it); centred on the field axis
-      pRect[0] = (bx - pw / 2) / W * 2 - 1; pRect[2] = (bx + pw / 2) / W * 2 - 1; pRect[1] = 1 - (by + hh / 2) / H * 2; pRect[3] = 1 - (by - hh / 2) / H * 2; sceneRev++; invalidate();
+      setPlane(Bs, G, bx, by, pw, hh); sceneRev++; invalidate();
     }
     st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');
     st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px');
@@ -798,7 +813,7 @@
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
     var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
-    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) * simgF : 0, SITINT, SIOVL); if (l.prect) gl.uniform4fv(l.prect, pRect); if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW); if (l.pvv) gl.uniform2f(l.pvv, SIPUNCH, SILIFT); if (l.pdive) gl.uniform1f(l.pdive, diveP);
+    if (l.pset) gl.uniform3f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) * simgF : 0, SITINT, SIOVL); if (l.pC) { gl.uniform3fv(l.pC, pPl.C); gl.uniform3fv(l.pR, pPl.R); gl.uniform3fv(l.pU, pPl.U); gl.uniform3fv(l.pN, pPl.N); } if (l.psel) gl.uniform3fv(l.psel, pSel); if (l.pglow) gl.uniform1f(l.pglow, SIGLOW); if (l.pvv) gl.uniform2f(l.pvv, SIPUNCH, SILIFT); if (l.pdive) gl.uniform1f(l.pdive, diveP);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
