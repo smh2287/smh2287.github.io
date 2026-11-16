@@ -350,61 +350,24 @@
        "pdf_page": 9
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
-       "alt": "High rear three-quarter view into the open cabin",
-       "caption": "Pure openness",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0A_White__White__734c414f.png",
-       "crop": null,
-       "view_crop": {
-        "x": 0.0443,
-        "y": 0.181,
-        "w": 0.8936,
-        "h": 0.6809
-       },
-       "flipx": false,
-       "flipy": false,
-       "rotate": 0,
-       "grade": {
-        "exposure": -0.13
-       },
-       "grade_src": null,
-       "blend": null,
-       "pano": false,
-       "evidence": "visual match",
-       "pdf_page": 10
-      }
-     ],
-     "videos": []
-    },
-    {
-     "label": "CLE CABRIOLET _CLOSEUP",
-     "sub": null,
-     "images": [
-      {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@1280.webp",
-       "w": 2560,
-       "h": 1440,
-       "alt": "Front close-up: grille, headlamp and wheel",
-       "caption": "Front",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext5_White1__White__a20a53a2.png",
+       "alt": "Rear deck and soft-top cover",
+       "caption": "Rear deck",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext7_White1.png",
        "crop": null,
        "view_crop": {
         "x": 0.0,
         "y": 0.0,
-        "w": 0.8845,
-        "h": 0.8552
+        "w": 0.9406,
+        "h": 0.9094
        },
        "flipx": false,
        "flipy": false,
        "rotate": 0,
-       "grade": {
-        "exposure": -0.11,
-        "contrast": -0.1667
-       },
+       "grade": null,
        "grade_src": null,
        "blend": null,
        "pano": false,
@@ -439,24 +402,27 @@
        "pdf_page": 11
       },
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/16-cu-deck-ll-20261116@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/14-cu-front-ll-20261116@1280.webp",
        "w": 2560,
        "h": 1440,
-       "alt": "Rear deck and soft-top cover",
-       "caption": "Rear deck",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext7_White1.png",
+       "alt": "Front close-up: grille, headlamp and wheel",
+       "caption": "Front",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext5_White1__White__a20a53a2.png",
        "crop": null,
        "view_crop": {
         "x": 0.0,
         "y": 0.0,
-        "w": 0.9406,
-        "h": 0.9094
+        "w": 0.8845,
+        "h": 0.8552
        },
        "flipx": false,
        "flipy": false,
        "rotate": 0,
-       "grade": null,
+       "grade": {
+        "exposure": -0.11,
+        "contrast": -0.1667
+       },
        "grade_src": null,
        "blend": null,
        "pano": false,
@@ -487,6 +453,33 @@
        "pano": false,
        "evidence": "visual match",
        "pdf_page": 11
+      },
+      {
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/12-ext-high-rear-ll-20261116@1280.webp",
+       "w": 2560,
+       "h": 1440,
+       "alt": "High rear three-quarter view into the open cabin",
+       "caption": "Pure openness",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_Still_Ext0A_White__White__734c414f.png",
+       "crop": null,
+       "view_crop": {
+        "x": 0.0709,
+        "y": 0.1877,
+        "w": 0.8617,
+        "h": 0.6565
+       },
+       "flipx": false,
+       "flipy": false,
+       "rotate": 0,
+       "grade": {
+        "exposure": -0.13
+       },
+       "grade_src": null,
+       "blend": null,
+       "pano": false,
+       "evidence": "visual match",
+       "pdf_page": 10
       }
      ],
      "videos": []
@@ -930,10 +923,10 @@
        "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A5.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0,
-        "y": 0.08,
-        "w": 1.0,
-        "h": 0.8725
+        "x": 0.0071,
+        "y": 0.1195,
+        "w": 0.7358,
+        "h": 0.6606
        },
        "flipx": false,
        "flipy": false,
