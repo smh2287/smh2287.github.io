@@ -13,7 +13,8 @@ window.PRISM_VS = 'attribute vec2 p;varying vec2 uv;void main(){uv=p;gl_Position
 window.PRISM_FS = [
 'precision highp float;',
 'varying vec2 uv;',
-'uniform vec2 res,shift,rc;',                 // rc = (cos rot, sin rot)
+'uniform vec2 res,shift,rc;',
+'uniform sampler2D pimg;uniform vec4 prect;uniform vec2 pset;',                 // rc = (cos rot, sin rot)
 'uniform vec3 camE,camF,camR,camU,nrgb;',
 'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;uniform vec4 fld;',   // fld (pass 16, Projects only): amount, field half-width, stripe-zone width (both in honest-u units), hue drift inside the field   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
 'uniform vec4 rb[24];',                        // 4 ribbons × (R,G,B,V origin.xz+dir.xz, power, meta)
@@ -152,6 +153,7 @@ window.PRISM_FS = [
 // beam axis at y=.06, clipped by the first surface). Artistic haze, not a scattering integral.
 'float airBeam(vec3 o,vec3 d,float limit){vec3 bo=vec3(rail.x-60.,.06,rail.y),w=o-bo;float b=d.x,den=max(1.-b*b,.00001);float t=(b*w.x-dot(d,w))/den;float along=clamp(w.x+b*t,0.,60.);t=clamp(dot(bo+vec3(along,0.,0.)-o,d),0.,limit);vec3 dl=o+d*t-bo-vec3(along,0.,0.);float d2=dot(dl,dl);return (exp(-d2/.0022)*1.1+exp(-d2/.016)*.10)*smoothstep(0.,.04,t)*smoothstep(0.,.008,limit-t);}',
 'vec3 viewRay(vec2 st){vec2 q=st;q.x*=res.x/res.y;q-=shift;return normalize(camF+q.x*camR*lens+q.y*camU*lens);}',
+'vec3 pimage(vec3 col,vec2 st){if(pset.x<.001)return col;vec2 u=(st-prect.xy)/(prect.zw-prect.xy);if(u.x<0.||u.y<0.||u.x>1.||u.y>1.)return col;vec4 t=texture2D(pimg,u);float L=max(col.r,max(col.g,col.b));vec3 tint=col/max(L,.03);float lit=smoothstep(.03,.30,L);vec3 im=pow(t.rgb,vec3(2.2))*1.18;im=mix(im,im*tint*1.5,pset.y);return mix(col,im*(.55+.45*min(L,1.)),t.a*lit*pset.x);}',
 'vec3 scene(vec2 st){vec3 rd=viewRay(st);vec3 ro=toLocal(camE),di=toLocal(rd);float a,b;vec3 n,ex;',
 ' vec3 col=environment();float limit=200.;gFa=vec2(0.);gFb=vec2(0.);',
 ' if(rd.y<-.0001){limit=-camE.y/rd.y;paperAt(camE.xz+rd.xz*limit,pap*smoothstep(.03,.22,-rd.y)*exp(-limit*.012));float fk=limit*lens*2./res.y;gFa=camR.xz*fk;gFb=normalize(rd.xz+vec2(1e-6,0.))*(fk/max(-rd.y,.02));col=world(camE,rd);}',
@@ -174,6 +176,7 @@ window.PRISM_FS = [
 '  if(n.y<.99)edge=min(edge,abs(entry.y-HT));if(n.y>-.99)edge=min(edge,abs(entry.y));',
 '  float bevel=1.-smoothstep(.001,.012,edge);col+=bevel*vec3(.18,.24,.23)*(.3+.7*abs(dot(rd,vec3(.4,.8,.3))))*(1.+.7*ab);}',
 ' col+=vec3(1.,.975,.90)*airBeam(camE,rd,limit)*air;',
+' col=pimage(col,st);',
 ' return max(col,vec3(0.));}',
 // Geometry-aware edge AA: four subpixel samples only at silhouettes / facet seams.
 'vec4 surfaceKey(vec2 st){vec3 rd=viewRay(st);float a,b;vec3 n,e;bool h=hit(toLocal(camE),toLocal(rd),a,b,n,e);return h&&a>0.?vec4(n,1.):vec4(0.);}',

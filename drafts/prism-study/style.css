@@ -437,3 +437,5 @@ body.under .sil{z-index:0}
 body.under #c{z-index:1;mix-blend-mode:normal}
 body.under[data-state=projects].pready #c{mix-blend-mode:var(--ub);opacity:var(--uo,1)}
 body.under .sil::after{display:none!important}
+
+body.simg .sil{display:none!important}

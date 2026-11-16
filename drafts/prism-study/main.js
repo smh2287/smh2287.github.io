@@ -62,7 +62,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread', 'fld', 'pimg', 'prect', 'pset'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -83,7 +83,7 @@
       P.failed = true; P.err = String(gl.getProgramInfoLog(P.p) || gl.getShaderInfoLog(P.fs) || gl.getShaderInfoLog(P.vs) || 'link failed').slice(0, 300); return false;
     }
     gl.useProgram(P.p); P.names.forEach(function (k) { P.loc[k] = gl.getUniformLocation(P.p, k); });
-    if (P.loc.atlas) { gl.uniform1i(P.loc.atlas, 0); } if (P.loc.ramp) gl.uniform1i(P.loc.ramp, 1); if (P.loc.paper) gl.uniform1i(P.loc.paper, 2); if (P.loc.t) gl.uniform1i(P.loc.t, 3);
+    if (P.loc.atlas) { gl.uniform1i(P.loc.atlas, 0); } if (P.loc.ramp) gl.uniform1i(P.loc.ramp, 1); if (P.loc.paper) gl.uniform1i(P.loc.paper, 2); if (P.loc.t) gl.uniform1i(P.loc.t, 3); if (P.loc.pimg) gl.uniform1i(P.loc.pimg, 4);
     P.ready = true; P.ms = performance.now() - P.t0; return true;
   }
   function sceneProgram(cards) { return makeProgram(PRISM_BUILD({ gl2: GL2, lod: EXT.lod, cards: cards }), UNI); }
@@ -355,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR ? 'art/' : 'project-images/') + p.id + '.webp?v=p17g'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (FIELD) layoutField(); }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR ? 'art/' : 'project-images/') + p.id + '.webp?v=p17h'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (SIMG) loadPTex(src); if (FIELD) layoutField(); }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -605,7 +605,7 @@
      Its base line is a floor line at constant depth (so it is level on screen), its base centre is a floor point of the field
      (IS units from the exit, IOFF degrees from the selected ray toward the camera), its width is IW floor units at that depth. It is a
      camera-facing plate (level, like the sketch); ?ilean=1 makes it a truly vertical one. All of it is the camera projection of world numbers; the element itself is DOM (no scene cost). */
-  var IS = num('is', innerWidth / innerHeight < 0.9 ? 6.2 : 12.5, 2, 40), IOFF = num('ioff', 10.5, -20, 20), IWK = num('iw', 1, 0.2, 3);
+  var IS = num('is', innerWidth / innerHeight < 0.9 ? 6.2 : 16, 2, 40), IOFF = num('ioff', 7, -20, 20), IWK = num('iw', 0.62, 0.2, 3);
   var ILEAN = num('ilean', 0, 0, 1), FGAIN = num('fgain', 0.6, 0.1, 1.5);   // FGAIN: brightness of the Projects fan relative to the approved far gain (a whole field at full gain clips to flat yellow)
   var ARTW = { mercedes: 15.5, niva: 13.5, vishow: 14.5 }, ARTLOCK = 14;
   var BO_Q = function () { return num('bo', 1, 0.2, 1); }, FLOOR = Q.get('floor') === '1', IHK = num('ihk', 1.35, 0.4, 3), BM = (Q.get('blend') || 'normal');
@@ -630,9 +630,32 @@
     var ox = bx - wpx / 2, oy = by - hpx, loc = function (q) { return (q[0] - ox).toFixed(0) + 'px ' + (q[1] - oy).toFixed(0) + 'px'; };
     st.setProperty('--px', bx.toFixed(1) + 'px'); st.setProperty('--py', by.toFixed(1) + 'px'); st.setProperty('--sw', Math.round(wpx) + 'px'); st.setProperty('--clip', 'polygon(' + [uB, uA, lA, lB].map(loc).join(',') + ')');
   }
+  /* pass 17h — the picture is drawn INSIDE the light by the scene shader (pimage()): where the fan is lit, the picture's own colours replace
+     the spectral colour (weighted by the fan's brightness), the light only tints it a little and keeps its edges/stripes. ?simg=0 = DOM plate, ?sitint= how much the beam colours it. */
+  var SIMG = Q.get('simg') !== '0' && !Q.get('under'), SITINT = num('sitint', 0.28, 0, 1), ptex = null, ptexOK = false, pRect = new Float32Array([0, 0, 0, 0]), pImgSrc = '';
+  if (SIMG) B.classList.add('simg');
+  function loadPTex(src) {
+    if (!SIMG || !glOK || src === pImgSrc) return; pImgSrc = src; ptexOK = false;
+    var im = new Image(); im.crossOrigin = 'anonymous';
+    im.onload = function () {
+      if (src !== pImgSrc) return;
+      try {
+        if (!ptex) ptex = gl.createTexture();
+        gl.activeTexture(gl.TEXTURE4); gl.bindTexture(gl.TEXTURE_2D, ptex);
+        gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true); gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, im);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+        gl.activeTexture(gl.TEXTURE0); ptexOK = true; pAsp = im.naturalHeight / im.naturalWidth; layoutField(); sceneRev++; invalidate();
+      } catch (e) { ptexOK = false; }
+    };
+    im.onerror = function () { ptexOK = false; };
+    im.src = src;
+  }
+  var pAsp = 0.4;
   function layoutField() {
     var p = portrait(), Bs = basis(poseFor('projects', 0)), st = d.documentElement.style, W = innerWidth, H = innerHeight;
-    var ex = [0.42, -0.12], w = Math.atan2(PT[1] - ex[1], PT[0] - ex[0]) + IOFF * DEG, is = num('is', p ? 6.2 : 12.5, 2, 40);
+    var ex = [0.42, -0.12], w = Math.atan2(PT[1] - ex[1], PT[0] - ex[0]) + IOFF * DEG, is = num('is', p ? 6.2 : 16, 2, 40);
     var G = [ex[0] + is * Math.cos(w), 0, ex[1] + is * Math.sin(w)], g = toScreen(Bs, G), g1 = toScreen(Bs, [G[0] + Bs.r[0], 0, G[2] + Bs.r[2]]), g2 = toScreen(Bs, [G[0], 1, G[2]]), ft = toScreen(Bs, [0, 0, 0]);
     if (!g || !g1 || !g2 || !ft) return;
     var ppu = Math.hypot(g1[0] - g[0], g1[1] - g[1]), pr = PROJECTS[sel], ww = (pr.locked ? ARTLOCK : ARTW[pr.id] || 14) * IWK * (p ? 0.5 : 1) * ppu;
@@ -640,6 +663,10 @@
     if (FLOOR) { layoutFloor(Bs, G, ppu, p, w, ex); st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px'); st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px'); return; }
     st.setProperty('--px', g[0].toFixed(1) + 'px'); st.setProperty('--py', g[1].toFixed(1) + 'px'); st.setProperty('--sw', Math.round(ww) + 'px');
     st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
+    if (SIMG) {                                      // plate rectangle in scene (st) coordinates: x,y ∈ [-1,1], y up
+      var hh = ww * pAsp, bx = g[0], by = g[1];
+      pRect[0] = (bx - ww / 2) / W * 2 - 1; pRect[2] = (bx + ww / 2) / W * 2 - 1; pRect[1] = 1 - by / H * 2; pRect[3] = 1 - (by - hh) / H * 2; sceneRev++; invalidate();
+    }
     st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');
     st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px');
   }
@@ -730,6 +757,7 @@
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
     var th = fieldTheta(s); gl.uniform4f(l.fld, FIELD && th > 0 ? pAmt : 0, FA * DEG / (th || 1), FB * DEG / (th || 1), FDR);
     gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
+    if (l.pset) gl.uniform2f(l.pset, SIMG && ptexOK ? pAmt * (1 - abAmt) : 0, SITINT); if (l.prect) gl.uniform4fv(l.prect, pRect);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function fieldTheta(s) {                            // floor angle (rad) the honest fan covers per unit of spectral coordinate u: angle between the red and blue reference rays / 0.67
