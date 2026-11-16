@@ -921,19 +921,19 @@
      "sub": null,
      "images": [
       {
-       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-ll-20261116@3840.webp",
-       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-ll-20261116@1280.webp",
+       "src": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-a5png-20261116@3840.webp",
+       "src1280": "https://songfamhome.synology.me/portfolio2026/mercedes/34-scene-seaside-a5png-20261116@1280.webp",
        "w": 2560,
-       "h": 1074,
+       "h": 1222,
        "alt": "CLE Cabriolet on a seaside promenade at dusk, a man leaning on the car",
        "caption": "Seaside",
-       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A5.jpeg",
+       "nas_source_path": "02_Working/Projects/Digital Visualization/Mercedes Viz/Image/Edit/White/CLE_FinalImage_A5.png",
        "crop": null,
        "view_crop": {
-        "x": 0.0574,
-        "y": 0.0,
-        "w": 0.923,
-        "h": 1.0
+        "x": 0.0,
+        "y": 0.08,
+        "w": 1.0,
+        "h": 0.8725
        },
        "flipx": false,
        "flipy": false,
