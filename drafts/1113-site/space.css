@@ -1,0 +1,30 @@
+/* Spatial project page (prism-space version). The Janin page is untouched: this file only applies to pages with body.space (site/ps/*). */
+html:has(body.space){background:#161718}
+body.space{background:transparent;position:relative}
+#sp-bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
+/* images float: a soft contact-less shadow whose offset follows where the picture is on screen (light fixed above the page) */
+body.space .fig > a,body.space .row a,body.space .mosaic3 a{--sy:34px;--so:.5;box-shadow:0 var(--sy) calc(var(--sy)*2.2) calc(var(--sy)*-.55) rgba(0,0,0,var(--so)),0 2px 10px rgba(0,0,0,.28),0 0 0 1px rgba(255,255,255,.045);transition:box-shadow .25s linear}
+body.space .fig > a::after,body.space .row a::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0) 22%);mix-blend-mode:screen}
+body.space .row{margin-bottom:14px}
+body.space .row.free{margin-bottom:14px}
+body.space .fig{margin-bottom:34px}
+/* room to keep scrolling after the ending: the floor goes on */
+body.space main{padding-bottom:62vh}
+body.space .end{padding-top:90px}
+/* comments: translucent glass tiles tossed onto the floor */
+body.space .cm{width:min(1040px,calc(100vw - 32px));padding-bottom:90px}
+body.space .cm .cmb{max-width:none}
+body.space .cm .cmh{border-bottom-color:rgba(255,255,255,.14)}
+body.space .cm ol{display:flex;flex-wrap:wrap;gap:30px 34px;padding:14px 0 10px;align-items:flex-start}
+body.space .cm li{--r:0deg;--dx:0px;--dy:0px;display:grid;grid-template-columns:30px minmax(0,1fr);gap:0 12px;width:min(290px,100%);padding:16px 18px 14px;margin:0;border:1px solid rgba(255,255,255,.2);border-radius:7px;
+ background:linear-gradient(140deg,rgba(255,255,255,.13),rgba(255,255,255,.035) 55%,rgba(255,255,255,.075));
+ -webkit-backdrop-filter:blur(12px) saturate(1.25);backdrop-filter:blur(12px) saturate(1.25);
+ box-shadow:0 26px 44px -20px rgba(0,0,0,.75),0 3px 12px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.3),inset 0 -1px 0 rgba(255,255,255,.06);
+ transform:translate(var(--dx),var(--dy)) rotate(var(--r));opacity:0}
+body.space .cm li.in{opacity:1;animation:toss .7s cubic-bezier(.2,.9,.25,1.12) backwards;animation-delay:var(--d,0s)}
+@keyframes toss{0%{opacity:0;transform:translate(calc(var(--dx) + var(--fx,0px)),calc(var(--dy) - 70px)) rotate(calc(var(--r) + var(--fr,10deg))) scale(1.06)}55%{opacity:1}100%{opacity:1;transform:translate(var(--dx),var(--dy)) rotate(var(--r)) scale(1)}}
+body.space .cm .av{width:30px;height:30px;font:700 12px/30px var(--ff);background:rgba(255,255,255,.14)}
+body.space .cm .wr,body.space .cm .sign{width:min(430px,100%);margin-top:26px;padding:18px 20px;border:1px solid rgba(255,255,255,.2);border-radius:7px;background:linear-gradient(140deg,rgba(255,255,255,.1),rgba(255,255,255,.03));-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 26px 44px -20px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.25);transform:rotate(-.6deg)}
+body.space .cm .field{background:rgba(0,0,0,.18);border-color:rgba(255,255,255,.16)}
+@media (max-width:760px){body.space .cm ol{gap:22px 0}body.space .cm li{width:100%}body.space main{padding-bottom:40vh}}
+@media (prefers-reduced-motion:reduce){body.space .cm li.in{animation:none}}
