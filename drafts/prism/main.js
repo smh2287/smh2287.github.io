@@ -118,14 +118,18 @@
   /* ---------- optics state ---------- */
   var DEG = Math.PI / 180;
   var AB_DELTA = (Q.get('abd') != null ? +Q.get('abd') : 10) * DEG, AB_AZ = 0, AB_BASE = 0;   // about: the front face is turned AB_DELTA away from the camera; azimuth and rest rotation follow from the optics window
-  var rampDirty = true, mat, win, rotHome, rotP1, solved = null, solvedRot = 99, solvedG = 1, solvedNk = 1;
+  var rampDirty = true, mat, win, rotHome, rotP1, HOME_AZ = 90 * DEG, solved = null, solvedRot = 99, solvedG = 1, solvedNk = 1;
   var NK_HOME = Q.get('nk') != null ? +Q.get('nk') : 0.955, ROT_FIX = Q.get('rot') != null ? +Q.get('rot') * DEG : null;   // ?rot=deg freezes the prism rotation (checks)
   function setOptics(name) {
     opt.optics = name; mat = O.MATERIAL[name]; win = O.windowFor(mat);
     // Home title pose: exactly upright (apex up, base horizontal) = world rotation 60°. With the approved index a
     // horizontal beam is totally reflected there (window top ≈55°), so near that pose the floor-light index is
     // scaled down by NK_HOME (see nkFor). `?hr=0..1` restores the old in-window pose, `?nk=` overrides the scale.
-    rotHome = Q.get('hr') != null ? win[0] + (win[1] - win[0]) * +Q.get('hr') : 60 * DEG;
+    rotHome = Q.get('hr') != null ? win[0] + (win[1] - win[0]) * +Q.get('hr') : (Q.get('hrot') != null ? +Q.get('hrot') : 38) * DEG;
+    // Title pose v2 (Minho): prism upright on screen, beam rising in from the lower left, spectrum leaving to the right at a shallow angle.
+    // Physically exact with the approved indices: rot 38° sits inside the direct-transmission window (34–55°), so no index cheat (nk=1).
+    // The camera is rolled by (60° − rot) so the prism stays upright; beam on screen rises (60°−rot), the fan leaves ≈ (41° − (60° − rot)) below horizontal.
+    HOME_AZ = 90 * DEG + (60 * DEG - rotHome);
     rotP1 = win[0] + (win[1] - win[0]) * (0.35 + 0.60 * (N - 0.7) / (N - 1));           // largest rotation Projects can reach (drag included)
     solvedRot = 99;
     // about: rest on the middle of the transmission window so the spectrum is valid on all three faces
@@ -166,7 +170,7 @@
       // apex-up triangle; telephoto so the far end of the prism reads as the thickness of the glass.
       // Pass 4: close, like the title art — the apex is cropped and the legs run off the frame (O.homePose: zoom + shift only).
       var hp = O.homePose(a, HOPT);
-      return { az: (Q.get('haz') != null ? +Q.get('haz') : 90) * DEG, el: 90 * DEG, dist: hp.dist, aim: [0, 0, 0], lens: hp.lens, shift: hp.shift, amb: 0.22, air: 0 };
+      return { az: Q.get('haz') != null ? +Q.get('haz') * DEG : HOME_AZ, el: 90 * DEG, dist: hp.dist, aim: [0, 0, 0], lens: hp.lens, shift: hp.shift, amb: 0.22, air: 0 };
     }
     if (state === 'about') {
       // Front view: one flat face toward the camera, prism standing on the left, its upper end leaves the frame.
@@ -331,7 +335,7 @@
     drag.moved = Math.max(drag.moved, Math.abs(dx), Math.abs(dy));
     if (!drag.axis && drag.moved > 8) drag.axis = Math.abs(dx) >= Math.abs(dy) ? 1 : 2;
     if (drag.axis !== 1) return;
-    if (state === 'home') homeTurn = Math.max(-0.2, Math.min(0.2, dx * 0.0035));        // feel the optics; it settles back
+    if (state === 'home') homeTurn = Math.max(-0.07, Math.min(0.07, dx * 0.0035));   // stays inside the transmission window around the title rotation        // feel the optics; it settles back
     else if (state === 'about') { abT = drag.a0 - dx * 0.006; clearTimeout(abTimer); }
     else if (state === 'projects') {
       selF = Math.max(-0.3, Math.min(N - 0.7, drag.s0 + dx / Math.min(170, innerWidth / 3.4)));
@@ -454,7 +458,7 @@
 
   function layoutHome() {                             // hang the wordmark between the legs, lower centre (pass 4: from the pose numbers)
     var W = innerWidth, H = innerHeight, hp = O.homePose(aspect(), HOPT), st = d.documentElement.style;
-    var ty = hp.portrait ? Math.max(hp.beamY + 0.085, hp.footBaseY - 0.122) : Math.min(0.668, hp.footBaseY - 0.2);
+    var ty = hp.portrait ? Math.max(hp.beamY + 0.085, hp.footBaseY - 0.122) : Math.min(0.668, hp.footBaseY - 0.16);
     var room = 2 * (ty + 0.06 - hp.footApexY) * H / Math.sqrt(3);                       // width of the floor footprint at the wordmark
     var tw = hp.portrait ? Math.min(0.74 * W, 340) : Math.max(260, Math.min(0.40 * W, 0.9 * room, 780));
     st.setProperty('--tx', (hp.cx * W).toFixed(1) + 'px'); st.setProperty('--ty', (ty * H).toFixed(1) + 'px');

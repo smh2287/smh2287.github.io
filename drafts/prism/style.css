@@ -185,3 +185,8 @@ body.bare .home,body.bare .work,body.bare .en,body.bare .foot,body.bare .veil{di
 .ab-link:hover{color:var(--mint)}
 @media (max-width:760px), (max-aspect-ratio:9/10){.ab-link{left:16px;top:18px}}
 #dbg{position:fixed;left:8px;bottom:2px;font:10px/12px ui-monospace,Menlo,Consolas,monospace;color:var(--mu);white-space:nowrap;pointer-events:none}
+
+/* About: the message leads — two sentences, the first one set large */
+.ai .lead{margin:0 0 14px;font:400 18px/25px var(--ff);color:var(--t);letter-spacing:-.005em}
+.ai .sub{margin:0;font:400 13px/19px var(--ff);color:#cfd0d2}
+@media (max-width:760px), (max-aspect-ratio:9/10){.ai .lead{font-size:17px;line-height:24px}.ai .sub{font-size:13px}}
