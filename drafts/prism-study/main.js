@@ -274,7 +274,10 @@
      Column axis: left of the Janin title axis (--ax). */
   function fieldPose(p) {
     var a = aspect(), W = innerWidth, H = innerHeight, ax = Math.max(16, (W - Math.max(980, 0.68 * W)) / 2);
-    var P = { az: num('paz', 155, 0, 360) * DEG, el: num('pel', 35, 2, 89) * DEG, dist: num('pd', 12.5, 4, 80), lens: num('plens', p ? 0.78 : 0.58, 0.1, 1.2),
+    /* pass 17: quasi-orthographic. dist grows ×POK and the lens (focal length) grows with it, so the picture scale at the prism stays the same (scale ∝ 1/(dist·lens): lens ÷ POK) but the
+       perspective shrinks to 1/POK of pass 16 (column stays parallel, floor fan keeps its width up to the far edge). ?pok=1 = pass 16. */
+    var K = num('pok', 3.6, 1, 8);
+    var P = { az: num('paz', 155, 0, 360) * DEG, el: num('pel', 35, 2, 89) * DEG, dist: num('pd', 12.5 * K, 4, 160), lens: num('plens', (p ? 0.78 : 0.58) / K, 0.02, 8),
       roll: num('proll', 0, -45, 45) * DEG, aim: [0, num('pay', 2, 0, 9), 0], shift: [0, 0], amb: 1, air: 1 };
     var ft = toScreen(basis(P), [0, 0, 0]), fx = num('pfx', p ? 0.13 : Math.max(0.07, (ax - 96) / W), 0, 1), fy = num('pfy', p ? 0.62 : 0.70, 0, 1);
     if (ft) P.shift = [(fx * W - ft[0]) / W * 2 * a, -(fy * H - ft[1]) / H * 2];
@@ -352,7 +355,7 @@
   function setSil(p) {                                // Original-color project plates; CSS opacity and edge fade only.
     if (silEl.dataset.id === p.id) return;
     var had = !!silEl.dataset.id; silEl.dataset.id = p.id; silEl.classList.remove('in'); silEl.classList.toggle('lk', !!p.locked); silEl.classList.toggle('profile', p.id === 'mercedes'); clearTimeout(silT);
-    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD ? 'art/' : 'project-images/') + p.id + '.webp?v=p16c'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (FIELD) layoutField(); }, had ? 260 : 0);
+    silT = setTimeout(function () { silImg.onload = function () { silEl.classList.add('in'); if (FIELD) layoutField(); }; silImg.onerror = function () { silEl.classList.remove('in'); }; var src = (FIELD && !FLOOR ? 'art/' : 'project-images/') + p.id + '.webp?v=p17g'; silEl.style.setProperty('--art', 'url(' + src + ')'); silImg.src = src; if (FIELD) layoutField(); }, had ? 260 : 0);
   }
   function paint() {
     var p = PROJECTS[sel], tt = p.title.split(' : ');
@@ -470,8 +473,7 @@
   /* ---------- about: image slides standing inside the glass, one per side face (drawn in the shader) ---------- */
   var IMGS = [                                     // swap freely: any number, any size; each is cover-cropped to the 4:7 slide
     { src: 'about/portrait.webp', cap: 'Minho Song' },
-    { src: 'about/office.webp', cap: 'At work' },
-    { src: 'about/sup.webp', cap: 'Off work' }                   // Minho's candidates (Profile 1/Original: Personal.jpg, 20190730_142432.jpg); portrait stays fixed
+    { src: 'about/office.webp', cap: 'At work' }
   ];
   var capEl = $('#abcap'), abIdx = -1, cardK = 0, cardU = { glow: [0, 0, 0], key: [0, 1, 0, 0] }, cards = new Float32Array(12), tex = { started: false, ready: false, failed: false, mean: [] };
   var FACE_SLOT = [1, 2, 0];                       // face 2 is in front at the rest rotation, then face 0, then face 1
@@ -606,6 +608,28 @@
   var IS = num('is', innerWidth / innerHeight < 0.9 ? 6.2 : 12.5, 2, 40), IOFF = num('ioff', 10.5, -20, 20), IWK = num('iw', 1, 0.2, 3);
   var ILEAN = num('ilean', 0, 0, 1), FGAIN = num('fgain', 0.6, 0.1, 1.5);   // FGAIN: brightness of the Projects fan relative to the approved far gain (a whole field at full gain clips to flat yellow)
   var ARTW = { mercedes: 15.5, niva: 13.5, vishow: 14.5 }, ARTLOCK = 14;
+  var BO_Q = function () { return num('bo', 1, 0.2, 1); }, FLOOR = Q.get('floor') === '1', IHK = num('ihk', 1.35, 0.4, 3), BM = (Q.get('blend') || 'normal');
+  if (FLOOR) B.classList.add('fl'); if (Q.get('under')) { B.classList.add('under'); d.documentElement.style.setProperty('--ub', Q.get('under')); d.documentElement.style.setProperty('--uo', String(num('uo', 1, 0.2, 1))); d.documentElement.style.setProperty('--bm', 'normal'); } d.documentElement.style.setProperty('--bm', BM); d.documentElement.style.setProperty('--bo', String(BO_Q()));
+  function quadMatrix(w, h, P) {                      // CSS matrix3d taking the rectangle (0,0,w,h) onto the quad P = [TL, TR, BR, BL] (screen px)
+    var x0 = P[0][0], y0 = P[0][1], x1 = P[1][0], y1 = P[1][1], x2 = P[2][0], y2 = P[2][1], x3 = P[3][0], y3 = P[3][1];
+    var dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3, den = dx1 * dy2 - dy1 * dx2 || 1e-9;
+    var g = (dx3 * dy2 - dy3 * dx2) / den, hh = (dx1 * dy3 - dy1 * dx3) / den, a = x1 - x0 + g * x1, b = x3 - x0 + hh * x3, dd = y1 - y0 + g * y1, e = y3 - y0 + hh * y3;
+    return 'matrix3d(' + [a / w, dd / w, 0, g / w, b / h, e / h, 0, hh / h, 0, 0, 1, 0, x0, y0, 0, 1].map(function (v) { return +v.toFixed(7); }).join(',') + ')';
+  }
+  /* pass 17b: the picture is a camera-facing plate standing in the light (not lying on the floor), cut by the edges of the light field:
+     clip-path = the field wedge (floor rays from the exit at ±FCLIP° around the selected ray, projected by the camera), so nothing sticks out of the fan. */
+  var FCLIP = num('fclip', 13, 4, 30), SDEP = num('sdep', 12, 4, 60), BO = num('bo', 1, 0.2, 1);
+  function layoutFloor(Bs, G, ppu, p, w0, ex) {
+    var iw = silImg.naturalWidth || 1920, ih = silImg.naturalHeight || 800, st = d.documentElement.style;
+    var P = function (a, s) { return toScreen(Bs, [ex[0] + s * Math.cos(a), 0, ex[1] + s * Math.sin(a)]); };
+    var s = p ? SDEP * 0.55 : SDEP, aU = w0 - FCLIP * DEG, aL = w0 + FCLIP * DEG, ctr = P(w0, s);
+    var e0 = P(w0, 0), uA = P(aU, s * 1.4), lA = P(aL, s * 1.4), uB = P(aU, s * 0.3), lB = P(aL, s * 0.3);
+    if (!ctr || !e0 || !uA || !lA || !uB || !lB) return;
+    var wedgeW = Math.hypot(P(aU, s)[0] - P(aL, s)[0], P(aU, s)[1] - P(aL, s)[1]);
+    var wpx = Math.max(160, Math.min(wedgeW * 1.9 * IWK, innerWidth * 0.62)), hpx = wpx * ih / iw, bx = ctr[0], by = ctr[1] + hpx * 0.06;
+    var ox = bx - wpx / 2, oy = by - hpx, loc = function (q) { return (q[0] - ox).toFixed(0) + 'px ' + (q[1] - oy).toFixed(0) + 'px'; };
+    st.setProperty('--px', bx.toFixed(1) + 'px'); st.setProperty('--py', by.toFixed(1) + 'px'); st.setProperty('--sw', Math.round(wpx) + 'px'); st.setProperty('--clip', 'polygon(' + [uB, uA, lA, lB].map(loc).join(',') + ')');
+  }
   function layoutField() {
     var p = portrait(), Bs = basis(poseFor('projects', 0)), st = d.documentElement.style, W = innerWidth, H = innerHeight;
     var ex = [0.42, -0.12], w = Math.atan2(PT[1] - ex[1], PT[0] - ex[0]) + IOFF * DEG, is = num('is', p ? 6.2 : 12.5, 2, 40);
@@ -613,6 +637,7 @@
     if (!g || !g1 || !g2 || !ft) return;
     var ppu = Math.hypot(g1[0] - g[0], g1[1] - g[1]), pr = PROJECTS[sel], ww = (pr.locked ? ARTLOCK : ARTW[pr.id] || 14) * IWK * (p ? 0.5 : 1) * ppu;
     ww = Math.min(ww, p ? 2 * (W - g[0]) - 12 : 2 * (W - g[0]) + 0.10 * W);
+    if (FLOOR) { layoutFloor(Bs, G, ppu, p, w, ex); st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px'); st.setProperty('--caption-y', Math.round(Math.min(H - 58, ft[1] + Math.max(46, 0.085 * H))) + 'px'); return; }
     st.setProperty('--px', g[0].toFixed(1) + 'px'); st.setProperty('--py', g[1].toFixed(1) + 'px'); st.setProperty('--sw', Math.round(ww) + 'px');
     st.setProperty('--lean', (ILEAN * Math.atan2(g2[0] - g[0], g[1] - g2[1]) / DEG).toFixed(2) + 'deg');   // ILEAN 0 (default): a camera-facing plate, level like the sketch. 1 = truly vertical plate (leans ≈25° at the right of this wide lens)
     st.setProperty('--fx', ft[0].toFixed(1) + 'px'); st.setProperty('--fy', ft[1].toFixed(1) + 'px');

@@ -196,9 +196,9 @@ body.bare .home,body.bare .work,body.bare .ct,body.bare .ab,body.bare .foot,body
 #dbg{position:fixed;left:8px;bottom:2px;font:10px/12px ui-monospace,Menlo,Consolas,monospace;color:var(--mu);white-space:nowrap;pointer-events:none}
 
 /* About: the message leads — two sentences, the first one set large */
-.ai .lead{margin:0 0 14px;font:400 18px/25px var(--ff);color:var(--t);letter-spacing:-.005em}
-.ai .sub{margin:0;font:400 13px/19px var(--ff);color:#cfd0d2}
-@media (max-width:760px), (max-aspect-ratio:9/10){.ai .lead{font-size:17px;line-height:24px}.ai .sub{font-size:13px}}
+.ai .lead,.ai .sub{margin:0 0 10px;font:400 15px/22px var(--ff);color:var(--t);letter-spacing:0}
+.ai .sub{margin-bottom:0}
+@media (max-width:760px), (max-aspect-ratio:9/10){.ai .lead,.ai .sub{font-size:15px;line-height:22px}}
 
 /* ---------- pass 8: Projects without the list ----------
    The header block (.ph = "Projects" + VISION LINE + list) is hidden until "all projects" is pressed (body.plist).
@@ -420,3 +420,20 @@ body.field .po::after{font-size:clamp(16px,1.6vw,22px)}
  body.field .pT{font-size:clamp(13px,4vw,19px);white-space:nowrap}
  body.field.plist[data-state=projects] .ph{left:0;top:auto}
 }
+
+/* pass 17b — camera-facing plate standing in the light, cut by the wedge of the field (--clip), blended with --bm / --bo (?blend= ?bo=) */
+body.field.fl .sil{left:var(--px);top:var(--py);width:var(--sw);height:auto;aspect-ratio:auto;transform:translate(-50%,-100%);isolation:auto;mix-blend-mode:var(--bm,normal);opacity:0;clip-path:var(--clip,none);-webkit-mask-image:none;mask-image:none}
+body.field.fl .sil img{width:100%;height:auto;object-fit:fill;display:block}
+body.field.fl .sil::before,body.field.fl .sil::after{display:none}
+body.field.fl.pready[data-state=projects] .sil.in,body.field.fl.pready[data-state=projects] .sil.in.lk{opacity:var(--bo,1)}
+
+body.field:not(.fl) .sil{mix-blend-mode:var(--bm,normal)}
+body.field:not(.fl).pready[data-state=projects] .sil.in,body.field:not(.fl).pready[data-state=projects] .sil.in.lk{opacity:var(--bo,1)}
+body.field:not(.fl) .sil::before,body.field:not(.fl) .sil::after{display:none}
+body.field:not(.fl) .sil[data-id=mercedes]::after{display:block;content:"";position:absolute;left:4%;right:4%;bottom:-3%;height:9%;z-index:-1;background:radial-gradient(closest-side,rgba(8,9,10,.45),rgba(8,9,10,0))}
+
+/* pass 17g — Minho's idea: the picture lies UNDER the light layer; the WebGL canvas is blended over it (?under=hard-light|overlay|screen|soft-light, ?uo= canvas opacity) */
+body.under .sil{z-index:0}
+body.under #c{z-index:1;mix-blend-mode:normal}
+body.under[data-state=projects].pready #c{mix-blend-mode:var(--ub);opacity:var(--uo,1)}
+body.under .sil::after{display:none!important}
