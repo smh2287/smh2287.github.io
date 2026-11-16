@@ -338,8 +338,9 @@
     items.forEach(function (li, i) { li.classList.toggle('on', i === sel); pixB[i].classList.toggle('on', i === sel); pixB[i].setAttribute('aria-current', i === sel ? 'true' : 'false'); });
     if (state !== 'projects' && Q.get('list') !== '1') setList(false);
     $('#ptl').href = $('#phit').href = urlOf(p);
-    $('#pN').textContent = '0' + (sel + 1) + ' / 0' + N; $('#pT').textContent = SHORT[p.id] || p.name;
-    $('#pS').textContent = (tt[1] || p.name) + ' — ' + p.year; $('#pO').textContent = p.locked ? 'open project (passcode)' : 'open project';
+    $('#pN').textContent = '0' + (sel + 1); $('#pT').textContent = p.name;
+    $('#ptl').setAttribute('aria-label', p.name + (p.locked ? ' — enter passcode' : ' — view project'));
+    $('#pS').textContent = (tt[1] || p.name) + ' — ' + p.year; $('#pO').textContent = graphicProjects ? '' : (p.locked ? 'open project (passcode)' : 'open project');
     setSil(p);
   }
   function hash() { return state === 'home' ? '#/' : state === 'about' ? '#/about' : state === 'contact' ? '#/contact' : '#/projects/' + PROJECTS[sel].id; }
@@ -568,7 +569,7 @@
     }
   }
   function layoutProjects() {                         // where the title point PT lands on screen → silhouette and title
-    if (graphicProjects) { var g = ProjectScene.layout(innerWidth,innerHeight), st=d.documentElement.style; st.setProperty('--px',g.artX+'px');st.setProperty('--py',g.artY+'px');st.setProperty('--sw',g.artW+'px');return; }
+    if (graphicProjects) { var g = ProjectScene.layout(innerWidth,innerHeight), st=d.documentElement.style; st.setProperty('--px',g.artX+'px');st.setProperty('--py',g.artY+'px');st.setProperty('--sw',g.artW+'px');st.setProperty('--caption-y',g.captionY+'px');return; }
     var t = toScreen(basis(poseFor('projects', 0)), [PT[0], 0, PT[1]]), st = d.documentElement.style, W = innerWidth, H = innerHeight;
     if (!t) return;
     st.setProperty('--px', t[0].toFixed(1) + 'px'); st.setProperty('--py', t[1].toFixed(1) + 'px');
