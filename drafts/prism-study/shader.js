@@ -15,7 +15,7 @@ window.PRISM_FS = [
 'varying vec2 uv;',
 'uniform vec2 res,shift,rc;',                 // rc = (cos rot, sin rot)
 'uniform vec3 camE,camF,camR,camU,nrgb;',
-'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW;',   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
+'uniform float lens,aa,farGain,selT,selAmt,dimAmt,amb,air,bandW,fanSpread;',   // bandW: width of the emphasised band (1 = the old six-band width; wider in Projects)
 'uniform vec4 rb[24];',                        // 4 ribbons × (R,G,B,V origin.xz+dir.xz, power, meta)
 'uniform vec4 rail;uniform float railP;',
 'uniform sampler2D atlas;uniform vec4 cd[3];uniform vec4 key;uniform vec3 glow;uniform float ab;',   // about: image cards inside the glass (per face: alpha, tile offset, flip, tile width), key light, floor glow
@@ -73,7 +73,10 @@ window.PRISM_FS = [
    (0 violet … 1 red, exact for a linear pencil), W = their separation scaled to the whole spectrum. One lookup:
    T(u, σu) with σu = slit σ in u units. Amplitude = white slit beam (CN) while the fan is narrower than the slit, the
    approved constant far brightness (farGain) afterwards (farGain 0 = energy conserving 1/W). */
+// Projects-only art direction: inverse transverse stretch around the green exit ray.
+'vec2 fanPoint(vec2 p){vec4 g=rb[7];vec2 n=vec2(-g.w,g.z);return p-n*dot(p-g.xy,n)*(1.-1./fanSpread);}',
 'vec3 fan(vec2 p,vec4 cr,vec4 cg,vec4 cb,vec4 pw){',
+' p=fanPoint(p);',
 ' float s=dot(p-cg.xy,cg.zw);float lr=cross2(p-cr.xy,cr.zw),lb=cross2(p-cb.xy,cb.zw),dd=lb-lr;',
 ' float sg=dd<0.?-1.:1.,W2=2.2276*dd*dd+1e-9,lc=(lb-.4627*dd)*sg;',
 ' float su2=SIG2*.5/W2;',                                             // σu²
@@ -97,7 +100,7 @@ window.PRISM_FS = [
 'float pm(vec2 d){return clamp(1.+dot(gGr,d),.45,1.7)+gSp;}',
 'void paperAt(vec2 xz,float k){if(k>.004){vec4 t=texture2D(paper,vec2(.6504*xz.x-.3314*xz.y,.3314*xz.x+.6504*xz.y));gGr=(t.rg-.5)*(3.0*k);gSp=k*.9*smoothstep(.30,.95,t.a);gH=1.+k*.30*(t.b-.5);}else{gGr=vec2(0.);gSp=0.;gH=1.;}}',
 'vec3 floorLight(vec2 p,float ins){vec3 c=vec3(0.);',
-' for(int i=0;i<4;i++){vec4 pw=rb[i*6+4];if(pw.x+pw.y+pw.z>.0005){float clip=rb[i*6+5].x;float m=clip>0.?ins:1.-ins;if(m>.001){vec3 l;if(i==1&&spK>.5)l=fan(p,rb[6],rb[7],rb[8],pw);else l=ribbon(p,rb[i*6],rb[i*6+1],rb[i*6+2],rb[i*6+3],pw,clip>0.?0.:1.);c+=l*(m*pm(rb[i*6+1].zw));}}}',
+' for(int i=0;i<4;i++){vec4 pw=rb[i*6+4];if(pw.x+pw.y+pw.z>.0005){float clip=rb[i*6+5].x;float m=clip>0.?ins:1.-ins;if(m>.001){vec3 l;if(i==1&&spK>.5)l=fan(p,rb[6],rb[7],rb[8],pw);else l=ribbon(i==1?fanPoint(p):p,rb[i*6],rb[i*6+1],rb[i*6+2],rb[i*6+3],pw,clip>0.?0.:1.);c+=l*(m*pm(rb[i*6+1].zw));}}}',
 // white rails: the incident slit beam (ends at the entry point) and its reflection off the entry face
 ' vec2 q=p-rail.xy;float l2=q.y*q.y;float prof=lineP(l2,fp2(vec2(1.,0.)));',
 ' c+=vec3(1.,.975,.90)*prof*(1.-smoothstep(-.02,.004,q.x))*(1.-ins)*pm(vec2(1.,0.));',

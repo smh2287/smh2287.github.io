@@ -21,6 +21,7 @@
   var SHORT = { mercedes: 'MERCEDES-BENZ', kia2022: 'KIA 2022', hyundai2022: 'HYUNDAI 2022', kia2021: 'KIA 2021', vishow: 'VISHOW', niva: 'NIKE NIVA' };   // the word that sits at the light
   var MAIL = 'songminh0442@gmail.com';             // public in the portfolio PDF; the only contact action is this mailto
   var PDIM = num('pdim', 0.03, 0, 1), PBW = num('pbw', 1.25, 0.5, 3);   // Projects: how much of the rest of the spectrum stays visible beside the project's colour (linear; the fan is HDR, 0.03 still reads), and the width of that colour band
+  var PFAN = num('fan', 2.8, 1, 4); // Projects-only transverse art-direction multiplier, not a glass index.
   var PKEY = num('pkey', 1.2, 0, 4);              // Projects: strength of the key card on the glass
   var FLOOD_FIX = Q.get('flood') != null ? num('flood', 0, 0, 1) : null;
   var CSTEP = Q.get('cstep') !== '0';              // Home: one step back (wheel up / swipe right / arrow left) goes to Contact; ?cstep=0 turns that off
@@ -51,7 +52,7 @@
      - no new GPU work is queued while the previous slice is unfinished (WebGL2 fence; WebGL1: rAF-gap heuristic). */
   var canvas = $('#c'), gl = null, glOK = false, GL2 = false, EXT = {}, progs = {}, blit = null, rampTex = null, paperTex = null;
   var TILE = Q.get('tile') !== '0', FXAA = Q.get('fxaa') !== '0', DBG = Q.get('dbg') === '1' || opt.debug, lostN = 0, bootFrames = 0;
-  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW'];
+  var UNI = ['res', 'shift', 'rc', 'camE', 'camF', 'camR', 'camU', 'nrgb', 'lens', 'aa', 'farGain', 'selT', 'selAmt', 'dimAmt', 'amb', 'air', 'rb[0]', 'rail', 'railP', 'atlas', 'cd[0]', 'key', 'glow', 'ab', 'ramp', 'paper', 'SIG2', 'rampE', 'spK', 'fanK', 'rampS', 'bloom', 'pap', 'legT', 'jitter', 'samplePass', 'bandW', 'fanSpread'];
   function fail(msg) {
     glOK = false; B.classList.add('nogl'); B.classList.remove('live');
     var e = $('#error'); e.hidden = false; e.textContent = msg;
@@ -154,7 +155,10 @@
   var PT = [0, 0], PROT = [], PS = num('ps', innerWidth / innerHeight < 0.9 ? 8 : 20, 6, 30), PTH = num('pth', 44.2, 40, 48) * DEG;
   function uAt(r) {
     var b = O.path(mat.n(O.TC.b), r), q = O.path(mat.n(O.TC.r), r); b = b && b.direct; q = q && q.direct; if (!b || !q) return 0.5;
-    var lb = (PT[0] - b.X[0]) * b.dir[1] - (PT[1] - b.X[1]) * b.dir[0], lr = (PT[0] - q.X[0]) * q.dir[1] - (PT[1] - q.X[1]) * q.dir[0], dd = lb - lr;
+    var g = O.path(mat.n(O.TC.g), r).direct, n = [-g.dir[1], g.dir[0]];
+    var k = ((PT[0]-g.X[0])*n[0]+(PT[1]-g.X[1])*n[1])*(1-1/PFAN);
+    var px=PT[0]-n[0]*k, py=PT[1]-n[1]*k;
+    var lb = (px - b.X[0]) * b.dir[1] - (py - b.X[1]) * b.dir[0], lr = (px - q.X[0]) * q.dir[1] - (py - q.X[1]) * q.dir[0], dd = lb - lr;
     return Math.abs(dd) < 1e-7 ? 0.5 : Math.max(0, Math.min(1, 0.19 + 0.67 * lb / dd));
   }
   function projRots() {
@@ -371,13 +375,14 @@
   var wheelAcc = 0, wheelLock = 0;
   addEventListener('wheel', function (e) {
     if (state === 'about' && e.target && e.target.closest && e.target.closest('.atx')) { var sc = $('#atx'); if (sc.scrollHeight > sc.clientHeight + 1) return; }   // the text column scrolls by itself
+    if (state === 'contact' && e.target.closest && e.target.closest('.cx')) return;
     var now = performance.now(); if (now < wheelLock) return;
     var v = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;       // wheel down, or two fingers swiped to the left (deltaX > 0): forward
     wheelAcc += e.deltaMode === 1 ? v * 32 : v;
     if (Math.abs(wheelAcc) > 50) { step(wheelAcc > 0 ? 1 : -1); wheelAcc = 0; wheelLock = now + (state !== 'projects' || sel === 0 ? 900 : 380); }
   }, { passive: true });
   addEventListener('keydown', function (e) {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(e.target && e.target.tagName) || (e.target && e.target.isContentEditable)) return;
     var k = e.key;
     if (k === 'ArrowDown' || k === 'ArrowRight' || k === 'PageDown') { step(1); e.preventDefault(); }
     else if (k === 'ArrowUp' || k === 'ArrowLeft' || k === 'PageUp') { step(-1); e.preventDefault(); }
@@ -605,7 +610,7 @@
   var P_MIN = 8192, P_MAX = 4e6, TILE_MAX_PX = 262144, budgetPx = Math.min(96000, +Q.get('p0') || 96000);
   var LATE_OK = Q.get('bp') === '1' ? 0 : 1, PACE = Q.get('pace') != null ? num('pace', 0, 0, 100) : null;
   var fence = null, fenceT = 0, fenceBlocked = 0, submitT = 0, submitPx = 0, gapMin = 1e9, lastRaf = 0, lastMotion = 0;
-
+  
   function fullPx() { return canvas.width * canvas.height; }
   function adapt(ms, blocked, used) {                 // ms: submit → observed completion (quantised to animation frames)
     stat.sliceMs = ms; stat.emaMs = stat.emaMs ? stat.emaMs * 0.8 + ms * 0.2 : ms;
@@ -633,7 +638,7 @@
     gl.uniform1f(l.farGain, opt.falloff === 'physical' ? 0 : 2.75);
     var homeAmt = (1 - selAmt) * (1 - abAmt), sl = 1 + (opt.slit - 1) * homeAmt; gl.uniform1f(l.SIG2, 0.00048 * sl * sl);
     gl.uniform1f(l.bloom, opt.bloom); gl.uniform1f(l.pap, quality !== 2 && paperState === 2 ? opt.paper : 0); gl.uniform1f(l.legT, opt.leg * (1 - selAmt) * (1 - abAmt));
-    gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
+    gl.uniform1f(l.fanSpread, 1 + (PFAN - 1) * pAmt); gl.uniform1f(l.selT, selU); gl.uniform1f(l.bandW, 1 + (PBW - 1) * pAmt); gl.uniform1f(l.selAmt, selAmt); gl.uniform1f(l.dimAmt, dim); gl.uniform1f(l.amb, Bs.amb); gl.uniform1f(l.air, Bs.air);
     gl.uniform4fv(l['cd[0]'], cards); gl.uniform1f(l.ab, abAmt); gl.uniform3fv(l.glow, cardU.glow); gl.uniform4fv(l.key, cardU.key);
   }
   function startJob(kind, Bs, f) {
