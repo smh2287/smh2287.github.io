@@ -3,6 +3,9 @@
   'use strict';
   var O = PrismOptics, d = document, B = d.body, $ = function (s) { return d.querySelector(s); };
   var Q = new URLSearchParams(location.search);
+  var graphicProjects = Q.get('projectrender') !== 'optics' && typeof ProjectScene !== 'undefined';
+  var projectRenderer = graphicProjects ? ProjectScene.init($('#project-scene')) : null;
+  B.classList.toggle('graphic-projects', graphicProjects);
   var RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
   var COARSE = matchMedia('(pointer:coarse)').matches;
   var LIVE = 'https://smh2287.github.io/drafts/1113-site/';
@@ -395,13 +398,14 @@
     else if (k === 'q') setQuality((quality + 1) % 3, true);
   });
   var drag = null;
-  canvas.addEventListener('pointerdown', function (e) {
+  function projectPointer(type, fn){canvas.addEventListener(type,fn); if(graphicProjects) $('#project-scene').addEventListener(type,fn);}
+  projectPointer('pointerdown', function (e) {
     if (e.button > 0) return;
     // k: radians per px so that the glass surface roughly follows the finger (About: the prism is ≈0.6 units "deep" at the grabbed face)
     drag = { id: e.pointerId, x: e.clientX, y: e.clientY, x0: e.clientX, y0: e.clientY, s0: selF, a0: abT, moved: 0, touch: e.pointerType !== 'mouse', axis: 0, k: 2 * pose.dist * pose.lens / (0.6 * innerHeight) };
-    canvas.setPointerCapture(e.pointerId); canvas.classList.add('drag');
+    e.currentTarget.setPointerCapture(e.pointerId); canvas.classList.add('drag');
   });
-  canvas.addEventListener('pointermove', function (e) {
+  projectPointer('pointermove', function (e) {
     if (!drag || e.pointerId !== drag.id) return;
     var dx = e.clientX - drag.x0, dy = e.clientY - drag.y0;
     drag.moved = Math.max(drag.moved, Math.abs(dx), Math.abs(dy));
@@ -426,7 +430,7 @@
     }
     invalidate();
   }
-  canvas.addEventListener('pointerup', drop); canvas.addEventListener('pointercancel', drop);
+  projectPointer('pointerup', drop); projectPointer('pointercancel', drop);
 
 
   /* ---------- about: image slides standing inside the glass, one per side face (drawn in the shader) ---------- */
@@ -523,14 +527,14 @@
     var k = Math.min(1, Math.sqrt(BUDGET * QS[quality] / (w * h)));
     var cw = Math.max(2, Math.round(w * k)), ch = Math.max(2, Math.round(h * k));
     if (canvas.width !== cw || canvas.height !== ch) { canvas.width = cw; canvas.height = ch; }
-    allocTargets();
+    if (!(graphicProjects && state === 'projects')) allocTargets();
     layoutHome(); layoutAbout(); layoutProjects(); layoutContact(); invalidate();
   }
   function setQuality(q, manual) {
     quality = q; solvedRot = 99;
     $('#lp').classList.toggle('on', quality === 2); $('#lp').textContent = quality === 2 ? 'low power on' : 'low power';
     B.classList.toggle('lowp', quality === 2); if (quality !== 2) makeGrain();
-    ensurePaper();
+    if (!(graphicProjects && state === 'projects')) ensurePaper();
     resize();
   }
   $('#lp').addEventListener('click', function () { setQuality(quality === 2 ? 0 : 2, true); });
@@ -553,6 +557,7 @@
     }
   }
   function layoutProjects() {                         // where the title point PT lands on screen → silhouette and title
+    if (graphicProjects) { var g = ProjectScene.layout(innerWidth,innerHeight), st=d.documentElement.style; st.setProperty('--px',g.artX+'px');st.setProperty('--py',g.artY+'px');st.setProperty('--sw',g.artW+'px');return; }
     var t = toScreen(basis(poseFor('projects', 0)), [PT[0], 0, PT[1]]), st = d.documentElement.style, W = innerWidth, H = innerHeight;
     if (!t) return;
     st.setProperty('--px', t[0].toFixed(1) + 'px'); st.setProperty('--py', t[1].toFixed(1) + 'px');
@@ -759,12 +764,14 @@
     if (changed && !moving) moving = drift && Math.abs(rot - rT) < 0.02 && selAmt === a0 && dim === d0 && abAmt === b0 && cardK === k0 ? 2 : 1;
     if (changed || moving || dirty) { sceneRev++; dirty = false; }
     // the optics solve (CPU) runs only when something uses it: the band ticks in Projects, or a frame that is about to be rendered (startJob)
-    var Bs = basis(pose); if (!solved || !glOK) solve(rot, 1 - abAmt * (1 - abGain));
+    var Bs = basis(pose); if ((!solved || !glOK) && !(graphicProjects && state === 'projects')) solve(rot, 1 - abAmt * (1 - abGain));
     updateCards(Bs); cur = Bs;
-    var busy = glOK ? render(now, Bs, moving) : false;
-    if (!busy && glOK && EXT.par && !progs.cards && progs.base.ready) ensureCardsProgram();   // idle and compiling is free: have About's program ready before it is asked for
+    var graphic = graphicProjects && state === 'projects';
+    if (graphic) projectRenderer.draw(selU,innerWidth,innerHeight);
+    var busy = glOK && !graphic ? render(now, Bs, moving) : false;
+    if (!graphic && !busy && glOK && EXT.par && !progs.cards && progs.base.ready) ensureCardsProgram();   // idle and compiling is free: have About's program ready before it is asked for
     if (DBG) debugLine(solved);
-    if (moving || drift || busy || (FLOOD_FIX == null && flood !== fT) || (progs.cards && !progs.cards.ready && !progs.cards.failed && glOK)) { if (!raf) raf = requestAnimationFrame(frame); }
+    if (moving || drift || busy || (FLOOD_FIX == null && flood !== fT) || (!graphic && progs.cards && !progs.cards.ready && !progs.cards.failed && glOK)) { if (!raf) raf = requestAnimationFrame(frame); }
   }
 
   /* ---------- start ---------- */
@@ -778,7 +785,7 @@
   setQuality(quality);
   window.prism = {
     go: go, select: select, step: step, back: back, setOptics: function (n) { setOptics(n); pose = target(); tween = null; resize(); },
-    idle: function () { return !raf && !dirty && (FLOOD_FIX != null || flood === 0) && paperState !== 1 && (state !== 'about' || !glOK || tex.ready || tex.failed) && (!glOK || (!!base && base.rev === sceneRev && base.scale === 1 && !job)); },
-    state: function () { return { state: state, sel: sel, rot: rot, rotDeg: rot / DEG, selU: selU, flood: flood, prot: PROT.map(function (r) { return +(r / DEG).toFixed(2); }), pt: PT, optics: opt.optics, falloff: opt.falloff, quality: quality, width: canvas.width, height: canvas.height, webgl: glOK, gl2: GL2, parallel: !!EXT.par, lod: !!EXT.lod, tile: TILE, shader: 'compact-full-optics', programs: { base: progs.base ? (progs.base.ready ? Math.round(progs.base.ms) : progs.base.failed ? 'failed' : 'pending') : null, cards: progs.cards ? (progs.cards.ready ? Math.round(progs.cards.ms) : progs.cards.failed ? 'failed: ' + progs.cards.err : 'pending') : null }, budgetPx: Math.round(budgetPx), baseScale: base ? base.scale : 0, stat: stat, spreadDeg: solved && solved.spreadDeg, nk: solvedNk, gain: solved && solved.gain, window: win, moving: !!raf, ramp: !!(solved && solved.rampOK && opt.sp), rampU: solved && solved.rampU, paper: paperState, about: { img: abIdx, tex: tex.ready, light: abGain, az: AB_AZ / DEG, base: AB_BASE / DEG } }; }
+    idle: function () { if(graphicProjects && state==='projects')return !raf; return !raf && !dirty && (FLOOD_FIX != null || flood === 0) && paperState !== 1 && (state !== 'about' || !glOK || tex.ready || tex.failed) && (!glOK || (!!base && base.rev === sceneRev && base.scale === 1 && !job)); },
+    state: function () { return { projectRenderer: projectRenderer && projectRenderer.stats(), state: state, sel: sel, rot: rot, rotDeg: rot / DEG, selU: selU, flood: flood, prot: PROT.map(function (r) { return +(r / DEG).toFixed(2); }), pt: PT, optics: opt.optics, falloff: opt.falloff, quality: quality, width: canvas.width, height: canvas.height, webgl: glOK, gl2: GL2, parallel: !!EXT.par, lod: !!EXT.lod, tile: TILE, shader: 'compact-full-optics', programs: { base: progs.base ? (progs.base.ready ? Math.round(progs.base.ms) : progs.base.failed ? 'failed' : 'pending') : null, cards: progs.cards ? (progs.cards.ready ? Math.round(progs.cards.ms) : progs.cards.failed ? 'failed: ' + progs.cards.err : 'pending') : null }, budgetPx: Math.round(budgetPx), baseScale: base ? base.scale : 0, stat: stat, spreadDeg: solved && solved.spreadDeg, nk: solvedNk, gain: solved && solved.gain, window: win, moving: !!raf, ramp: !!(solved && solved.rampOK && opt.sp), rampU: solved && solved.rampU, paper: paperState, about: { img: abIdx, tex: tex.ready, light: abGain, az: AB_AZ / DEG, base: AB_BASE / DEG } }; }
   };
 })();
