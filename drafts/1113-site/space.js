@@ -43,4 +43,12 @@
     tio ? tio.observe(li) : li.classList.add('in');
   }
   var box = d.querySelector('.cm'); if (box) { var mo = new MutationObserver(function () { [].forEach.call(box.querySelectorAll('ol li'), tile); }); mo.observe(box, { childList: true, subtree: true }); [].forEach.call(box.querySelectorAll('ol li'), tile); }
+
+  /* ?demo=comments: sample tiles drawn only in this browser (nothing is posted) so the glass look can be judged without real comments */
+  if (/[?&]demo=comments/.test(location.search) && box) {
+    var S = [['Jiwoo K.', 'Product designer', 'The inflated outer shell studies are beautiful — the pattern tessellation really reads as skin.', 3], ['Daniel M.', 'XR studio', 'Love how the suit boards keep the explanations next to the renders. Is the knit reference from a real fabric?', 5],
+      ['Seoyeon', '', 'Poster set is striking. 2.3 reads very strongly against the black.', 12], ['A. Rossi', 'Automotive visualization', 'Great concept sheet, the layer diagram is clear at a glance.', 26], ['Hyun', 'Industrial design', 'The neuralink panel is my favourite. Would read a case study on the touch concept.', 41]];
+    var put = function () { var cmb = box.querySelector('.cmb'); if (!cmb) return; cmb.innerHTML = '<p class="cmh"><b>Comments</b><i>' + S.length + '</i></p><ol>' + S.map(function (c, i) { return '<li data-id="demo' + i + '"><span class="av" aria-hidden="true">' + c[0][0] + '</span><div><p class="by"><b>' + c[0] + '</b>' + (c[1] ? '<i>' + c[1] + '</i>' : '') + '<time>' + c[3] + ' d ago</time></p><p class="bd">' + c[2] + '</p></div></li>'; }).join('') + '</ol>'; };
+    var tries = 0, iv = setInterval(function () { tries++; var cm = box.querySelector('.cmb'); if (cm && !cm.querySelector('ol') && !/Loading/.test(cm.textContent) || tries > 40) { clearInterval(iv); put(); } }, 400);
+  }
 })();
