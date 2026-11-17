@@ -586,3 +586,7 @@ html.mo,html.mo body{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.mn,.mb i,.mb i::before,.mb i::after{transition:none}}
 @media (max-width:760px){.home .bg::after{background:linear-gradient(180deg,#171819 0,rgba(23,24,25,0) 16%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}}
+
+/* resume page (Janin: photo, RESUME, plain lines, EDUCATION / POSITION) */
+.abt.rs h1{font-size:24px;line-height:30px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 28px}
+@media (max-width:760px){.abt.rs h1{font-size:22px}}
