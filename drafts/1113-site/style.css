@@ -735,3 +735,8 @@ html.mo,html.mo body{overflow:hidden}
   .home .id{padding-bottom:0}
   .home .cv{padding-top:36px}
 }
+
+/* projects list: more air between projects (was 6px) — desktop 36px, phone 22px */
+.stack li{margin:0 0 36px}
+.stack li:last-child{margin-bottom:0}
+@media (max-width:760px){.stack li{margin:0 0 22px}.stack li:last-child{margin-bottom:0}}
