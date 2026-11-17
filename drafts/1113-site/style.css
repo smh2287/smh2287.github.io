@@ -654,3 +654,12 @@ html.mo,html.mo body{overflow:hidden}
   .home .cv li:has(.more){display:none}
 }
 @media (max-width:760px){.home .foot{order:9;padding-top:36px}}
+
+/* ---- home desktop: PROJECTS / RESUME / CONTACT as one equal-weight row top right (same words and order as the phone); the old mint PROJECTS word and the separate Contact line retire ---- */
+@media (min-width:761px) and (min-aspect-ratio:9/10){
+  .home .id .hl{position:absolute;right:4.6vw;top:calc(-61vh + 26px);display:flex;align-items:baseline;gap:38px;margin:0;padding:0}
+  .home .id .hr{display:flex;align-items:baseline;gap:38px}
+  .home .id .go,.home .id .hr .ab,.home .id .hr .ct{position:static;display:block;margin:0;padding:6px 0;font:300 14px/20px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.9);border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .home .id .go:hover,.home .id .hr .ab:hover,.home .id .hr .ct:hover{opacity:1;color:var(--mint);border-bottom-color:var(--mint)}
+  .home .contact{display:none}
+}
