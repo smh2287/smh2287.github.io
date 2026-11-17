@@ -545,11 +545,12 @@ html.mo,html.mo body{overflow:hidden}
   .home{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;padding-bottom:0}
   .home .bg{inset:44px 0 auto 0;height:43vh}
   .id{flex:1 0 auto;min-height:0;padding:calc(40vh + 40px) 20px 0}
-  .hl{display:flex;justify-content:space-between;align-items:baseline;margin:auto 0 0;padding:44px 0 0}
-  .id .go,.id .ab{position:static;display:block;order:0;align-self:auto;margin:0;padding:0;border:0;font:300 20px/26px var(--ff);letter-spacing:.05em;text-transform:uppercase;color:var(--t)}
+  .hl{display:flex;justify-content:space-between;align-items:baseline;margin:auto 0 0;padding:36px 0 0}
+  .id .go,.id .ab{position:static;display:block;order:0;align-self:auto;margin:0;padding:0;border:0;font:300 14px/20px var(--ff);letter-spacing:.18em;text-transform:uppercase;color:var(--t)}
   .id .go::after{content:none}
   .cv{display:none}
-  .contact{margin:26px 20px 0;padding-top:0;border-top:0;font-size:14px}
+  .contact{margin:10px 20px 0;padding-top:0;border-top:0;font-size:12px;line-height:16px;justify-content:flex-end;gap:10px}
+  .contact .pr{width:18px}
   .home .foot{position:static!important;margin:26px 20px 18px;font-size:10.5px;line-height:15px}
 
   /* ---- projects: big word, then pictures edge to edge with a thin gap, no captions ---- */
