@@ -721,3 +721,10 @@ html.mo,html.mo body{overflow:hidden}
     .pg .end{padding-top:96px}
   }
 }
+
+/* ---- home desktop: subtitle row justified to SPECTRUM's own width (left end under S, right end under M) like the phone ---- */
+@media (min-width:761px) and (min-aspect-ratio:9/10){
+  .home{--f:clamp(40px,6.4vw,112px)}
+  .home .id .wm{font-size:var(--f)}
+  .home .id .sl{width:calc(var(--f)*7.03);max-width:none;transform:translateX(calc(var(--f)*.035));margin-top:calc(var(--f)*.12);font-size:clamp(12px,1.15vw,18px)}
+}
