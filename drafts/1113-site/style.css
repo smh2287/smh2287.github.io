@@ -642,3 +642,15 @@ html.mo,html.mo body{overflow:hidden}
   .hl{margin:28px 0 0!important}
 }
 @media (max-width:760px){.home .foot{margin-top:auto!important;padding-top:28px}}
+
+/* ---- home phone, round 6: links as a vertical left-aligned list; compact career under them ---- */
+@media (max-width:760px){
+  .hl{flex-direction:column;align-items:flex-start;justify-content:flex-start;padding-top:10px}
+  .id .go,.id .hr .ab,.id .hr .ct{padding:9px 0;font-size:clamp(15px,4.2vw,17px)}
+  .home .cv{display:block;order:3;padding:26px 20px 0;margin:0}
+  .home .cv li{display:none}
+  .home .cv li:has(.y){display:block;margin:0 0 8px;padding-left:46px;text-indent:-46px;font-size:11.5px;line-height:16px;color:var(--gr)}
+  .home .cv li:has(.y) .y{min-width:42px;color:var(--mu)}
+  .home .cv li:has(.more){display:none}
+}
+@media (max-width:760px){.home .foot{order:9;padding-top:36px}}
