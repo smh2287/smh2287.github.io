@@ -678,3 +678,46 @@ html.mo,html.mo body{overflow:hidden}
   .abt.rs>.por{grid-column:1;grid-row:1 / span 14;width:100%;margin:0;position:sticky;top:32px}
   .abt.rs>h1{margin-top:0}
 }
+
+/* ================= desktop pass 2026-11-17c (Fable; >=761px only — phone rules untouched) =================
+   same content as the phone on every page; only the arrangement follows the wide screen (Janin's relation)
+   home: career hangs from the title block's left edge, page ends right after it · projects: plates 89vw, 6px gaps
+   resume + contact: one two-column grid on the site column · project pages: same right-hand links as the other pages */
+@media (min-width:761px){
+  /* ---- home ---- */
+  .home{min-height:calc(92vh + 340px)}
+  .home .cv{left:calc(50vw - min(26vw,450px));top:92vh;width:min(52vw,900px);font-size:13px}
+  .home .cv li{line-height:21px}
+  .home .cv .y{min-width:76px;color:var(--mu)}
+  .home .cv a{transition:color .2s}
+  .home .foot{left:calc(50vw - min(26vw,450px));bottom:24px;font-size:11px;line-height:16px;letter-spacing:.04em;opacity:.7}
+  .home .foot .ft-long{display:none}
+
+  /* ---- projects list: large plates near the screen edges, thin gaps, no captions; name on hover; locked ones stay softly blurred ---- */
+  .ph{padding-bottom:96px}
+  .stack{width:min(100vw - 32px,89vw)}
+  .stack li{margin:0 0 6px}
+  .stack li:last-child{margin-bottom:0}
+  .stack .nm b{font-size:clamp(21px,1.7vw,30px);line-height:1.2}
+  .stack .nm i{font-size:clamp(15px,1.1vw,19px);line-height:1.25}
+
+  /* ---- project pages: the right-hand links of every other page ---- */
+  .nav--proj{align-items:baseline}
+  .nav--proj .nvp[hidden]{display:flex!important}
+  .nav--proj .nv a{font-size:13px}
+
+  /* ---- resume + contact: left column (photo / page word) and right column (text / form) on the site column ---- */
+  @media (min-width:900px){
+    .abt.rs,.abt.ctc{display:grid;grid-template-columns:clamp(300px,33%,420px) minmax(0,1fr);column-gap:64px;align-items:start;width:var(--col);margin:56px auto 0}
+    .abt.rs{grid-template-rows:repeat(7,auto) 1fr}
+    .abt.rs>.por{grid-row:1 / span 8}
+    .abt.rs .abl{max-width:none}
+    .abt.rs .abl li{grid-template-columns:88px minmax(0,1fr);margin-bottom:4px;line-height:17px}
+    .abt.ctc{grid-template-rows:auto auto 1fr}
+    .abt.ctc>h1{grid-column:1;grid-row:1}
+    .abt.ctc>.lead{grid-column:1;grid-row:2;max-width:330px}
+    .abt.ctc>.cf{grid-column:2;grid-row:1 / span 3;max-width:600px;margin:20px 0 0}
+    .abt.ctc .cf textarea{min-height:210px}
+    .pg .end{padding-top:96px}
+  }
+}
