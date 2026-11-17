@@ -396,3 +396,10 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
 .row.free a{flex:var(--a) 1 0;min-width:0;aspect-ratio:var(--a)}
 .row.free.c1 a{flex:none;width:100%;max-width:calc(82vh*var(--a));margin:0 auto}
 @media (max-width:760px){.row.free{flex-direction:column;row-gap:5px}.row.free a{flex:none;width:100%;max-width:calc(82vh*var(--a));margin:0 auto}}
+
+/* paired concepts (IAC): names as titles above the two pictures, explanations below in the same order */
+.row.pt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:8px}
+.row.pt h3{margin:0;font:700 15px/20px var(--ff);color:var(--t)}
+.ptx{margin-top:16px}
+.ptx p{margin:0 0 8px}.ptx b{display:inline-block;min-width:104px;margin-right:10px;color:var(--t)}
+@media (max-width:760px){.row.pt{display:none}.ptx b{display:block;margin:0 0 2px}}
