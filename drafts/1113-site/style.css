@@ -491,7 +491,7 @@ html.mo,html.mo body{overflow:hidden}
 /* ---- about / contact: same column as Projects ---- */
 .abt{width:var(--col);margin:0 auto;padding:36px 0 0}
 .abt h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
-.abt .por{width:min(100%,420px);margin:0 0 44px;aspect-ratio:1;overflow:hidden;background:var(--g2)}
+.abt .por{width:min(100%,420px);margin:0 0 44px;aspect-ratio:3/4;overflow:hidden;background:var(--g2)}
 .abi{margin:38px 0 0;font-size:12.5px;line-height:18px;color:var(--gr)}
 .abi p{margin:0}
 .abi b{font-weight:700;color:var(--t)}
@@ -574,7 +574,7 @@ html.mo,html.mo body{overflow:hidden}
   /* ---- about / contact ---- */
   .abt{width:auto;margin:0;padding:116px 20px 0}
   .abt h1{margin:0;font-size:46px;line-height:50px;letter-spacing:-.012em}
-  .abt .por{width:100%;margin-bottom:36px}
+  .abt .por{width:100%;max-width:340px;margin-bottom:36px}
   .abi{margin-top:30px;font-size:13px;line-height:20px}
   .abq{margin-top:20px;font-size:13px;line-height:20px}
   .abt h2{margin-top:44px}
