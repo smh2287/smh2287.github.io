@@ -635,3 +635,10 @@ html.mo,html.mo body{overflow:hidden}
   .home .foot{margin:0 20px calc(24px + env(safe-area-inset-bottom))!important;padding-top:6px;font-size:11px;opacity:.5;letter-spacing:.04em}
   .home .foot .ft-long{display:none}
 }
+
+/* ---- home phone, round 5: links sit close under the prism (not pinned far down); only the footer stays at the bottom ---- */
+@media (max-width:760px){
+  .home .id{flex:0 0 auto!important;padding-bottom:0;min-height:0}
+  .hl{margin:28px 0 0!important}
+}
+@media (max-width:760px){.home .foot{margin-top:auto!important;padding-top:28px}}
