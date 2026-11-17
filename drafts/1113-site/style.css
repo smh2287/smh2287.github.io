@@ -623,3 +623,15 @@ html.mo,html.mo body{overflow:hidden}
   .home .id{padding-top:calc(44px + 43vh + 8px);flex:0 0 auto}
 }
 @media (max-width:760px){.home .foot{margin-top:auto!important}}
+
+/* ---- home phone, round 4 (Fable review): three equal links on one row spread edge to edge in the lower third; footer pinned to the bottom ---- */
+@media (max-width:760px){
+  .home .id .sl{top:calc(44px + 43vh*.62 + var(--f) + 5px)}
+  .home .id{flex:1 0 auto;display:flex;flex-direction:column;padding-top:calc(44px + 43vh + 8px)}
+  .hl{margin:auto 0 0;padding:0;display:flex;justify-content:space-between;align-items:center;gap:0;border-top:1px solid rgba(232,232,234,.12);padding-top:6px}
+  .hr{display:contents}
+  .id .go,.id .hr .ab,.id .hr .ct{display:block;font:300 clamp(13px,3.7vw,15px)/20px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.88);padding:14px 0;margin:0}
+  .home .id{padding-bottom:0}
+  .home .foot{margin:0 20px calc(24px + env(safe-area-inset-bottom))!important;padding-top:6px;font-size:11px;opacity:.5;letter-spacing:.04em}
+  .home .foot .ft-long{display:none}
+}
