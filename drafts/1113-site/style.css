@@ -412,7 +412,7 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
   .id .sl{width:auto;max-width:none;margin:18px 0 0;display:block;font-size:13px;line-height:20px;color:var(--gr);text-align:left}
   .id .sl b{display:block;font-weight:400;font-size:13px;color:var(--gr)}
   .id .go{position:static;order:3;align-self:flex-start;margin:calc(34vh - 58px) 0 0;font:600 15px/20px var(--ff);letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
-  .cv{padding:9vh 20px 0}
+  .cv{padding:5vh 20px 0}
   .cv li{margin-bottom:14px;line-height:21px;padding-left:0;text-indent:0;color:var(--t)}
   .cv li:has(.y){padding-left:58px;text-indent:-58px;margin-bottom:11px}
   .cv .y{min-width:58px;text-indent:0}
