@@ -407,7 +407,7 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
 /* ---------- phone hierarchy pass (2026-11-17): one left edge, SPECTRUM > Projects > body, looser rhythm ---------- */
 @media (max-width:760px){
   /* home */
-  .id{align-items:flex-start;padding:0 20px;left:0;right:0}
+  .id{align-items:flex-start;padding:44vh 20px 0;left:0;right:0}
   .id .wm{padding-left:0;margin:0 0 0 -2px;font-size:clamp(34px,11.6vw,58px);letter-spacing:.14em;text-align:left}
   .id .sl{width:auto;max-width:none;margin:18px 0 0;display:block;font-size:13px;line-height:20px;color:var(--gr);text-align:left}
   .id .sl b{display:block;font-weight:400;font-size:13px;color:var(--gr)}
