@@ -473,3 +473,116 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
   .stack .nm em{margin:0;font:400 11px/17px var(--ff);letter-spacing:.03em;color:var(--mint);text-align:right}
   .end{padding:56px 20px 48px;font-size:12px}
 }
+
+/* ================= Janin-match pass 3 (2026-11-17c) =================
+   menu (phone) · about.html · contact.html (dark) · phone home = one full-bleed hero · projects list: touching pictures, name on tap */
+.hl{margin:0}
+.id .ab{display:none}
+.mb,.stack .lkb{display:none}
+.mn{position:fixed;inset:0;z-index:60;background:var(--g0);overflow:auto;opacity:0;transition:opacity .25s}
+html.mo .mn{opacity:1}
+html.mo,html.mo body{overflow:hidden}
+.mn nav{padding:132px 20px 40px;text-align:center}
+.mn a{display:block;width:max-content;max-width:100%;margin:0 auto 34px;padding:4px 0 4px .22em;font:300 20px/26px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:var(--gr);transition:color .2s}
+.mn a:hover,.mn a[aria-current]{color:var(--t)}
+.mn a.hm{margin-top:56px;font-size:11px;line-height:16px;letter-spacing:.2em;color:var(--mu)}
+.mn a.hm[aria-current]{display:none}
+
+/* ---- about / contact: same column as Projects ---- */
+.abt{width:var(--col);margin:0 auto;padding:36px 0 0}
+.abt h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.abt .por{width:min(100%,420px);margin:0 0 44px;aspect-ratio:1;overflow:hidden;background:var(--g2)}
+.abi{margin:38px 0 0;font-size:12.5px;line-height:18px;color:var(--gr)}
+.abi p{margin:0}
+.abi b{font-weight:700;color:var(--t)}
+.abi a,.abl a{color:var(--t);transition:color .2s}
+.abi a{border-bottom:1px solid var(--mu)}
+.abi a:hover,.abl a:hover{color:var(--mint)}
+.abq{max-width:470px;margin:24px 0 0;color:var(--t)}
+.abt h2{margin:56px 0 12px;font:400 11px/14px var(--ff);letter-spacing:.08em;text-transform:uppercase;color:var(--mint)}
+.abl{max-width:720px;margin:0;padding:0;list-style:none;color:var(--t)}
+.abl li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:0 12px;margin:0 0 3px;line-height:16px}
+.abl .y{color:var(--gr)}
+.ctc .lead{max-width:470px;margin:22px 0 0;font-size:14px;line-height:20px;color:var(--gr)}
+.cf{max-width:520px;margin:44px 0 0;color-scheme:dark}
+.cf label{display:block;margin:0 0 20px;font-size:12px;line-height:16px;color:var(--gr)}
+.cf input,.cf textarea{display:block;width:100%;margin:8px 0 0;padding:11px 12px;border:1px solid #3A3C3F;border-radius:2px;background:var(--g0);color:var(--t);font:400 15px/21px var(--ff);caret-color:var(--mint);-webkit-appearance:none;appearance:none;transition:border-color .2s}
+.cf textarea{min-height:170px;resize:vertical}
+.cf input:focus,.cf textarea:focus{outline:0;border-color:var(--mint)}
+.cf input:-webkit-autofill{-webkit-text-fill-color:var(--t);box-shadow:0 0 0 1000px var(--g0) inset}
+.cf button{margin:6px 0 0;padding:10px 22px;border:1px solid var(--mint);border-radius:20px;background:var(--mint);color:var(--g0);font:700 13px/18px var(--ff);cursor:pointer;transition:opacity .2s}
+.cf button:hover{opacity:.8}
+.cf button:disabled{opacity:.45;cursor:default}
+.cf .hpot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.cf #status{min-height:18px;margin:16px 0 0;font-size:13px;line-height:18px;color:var(--t)}
+
+/* ---- projects list on touch screens: clean pictures, the name appears over the picture on the first tap (li.on), the second tap opens ---- */
+@media (hover:none){
+  .stack a::before{background:#0d0e0f;opacity:0}
+  .stack .nm{align-items:center;justify-content:center;gap:4px;padding:0 24px;text-align:center;opacity:0}
+  .stack li.on a::before{opacity:.66}
+  .stack li.on .nm{opacity:1}
+  .stack .lkb{display:block;position:absolute;left:12px;bottom:9px;z-index:2;margin:0;transition:opacity .3s}
+  .stack li.on .lkb{opacity:0}
+  .unlocked .stack .lkb{display:none}
+}
+
+@media (max-width:760px){
+  /* ---- menu button: round, top-left, on the 20px edge ---- */
+  .js .nav:not(.nav--proj){display:none}
+  .js .mb{display:block;position:absolute;left:20px;top:20px;z-index:61;width:52px;height:52px;padding:0;border:0;border-radius:50%;background:#2B2B2B;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent}
+  html.mo .mb{position:fixed}
+  .mb i,.mb i::before,.mb i::after{position:absolute;left:50%;width:20px;height:1.5px;margin-left:-10px;background:currentColor;transition:transform .25s,background-color .2s}
+  .mb i{top:50%;margin-top:-.75px}
+  .mb i::before,.mb i::after{content:"";top:0}
+  .mb i::before{transform:translateY(-6.5px)}
+  .mb i::after{transform:translateY(6.5px)}
+  html.mo .mb i{background:transparent}
+  html.mo .mb i::before{transform:rotate(45deg)}
+  html.mo .mb i::after{transform:rotate(-45deg)}
+
+  /* ---- home: one screen. prism on top, SPECTRUM, then PROJECTS / ABOUT across the bottom and the contact line (Janin's home) ---- */
+  .home{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;padding-bottom:0}
+  .home .bg{inset:44px 0 auto 0;height:43vh}
+  .id{flex:1 0 auto;min-height:0;padding:calc(40vh + 40px) 20px 0}
+  .hl{display:flex;justify-content:space-between;align-items:baseline;margin:auto 0 0;padding:44px 0 0}
+  .id .go,.id .ab{position:static;display:block;order:0;align-self:auto;margin:0;padding:0;border:0;font:300 20px/26px var(--ff);letter-spacing:.05em;text-transform:uppercase;color:var(--t)}
+  .id .go::after{content:none}
+  .cv{display:none}
+  .contact{margin:26px 20px 0;padding-top:0;border-top:0;font-size:14px}
+  .home .foot{position:static!important;margin:26px 20px 18px;font-size:10.5px;line-height:15px}
+
+  /* ---- projects: big word, then pictures edge to edge with a thin gap, no captions ---- */
+  .ph{padding:116px 20px 48px}
+  .ph h1{font-size:46px;line-height:50px;letter-spacing:-.012em}
+  .ph p{margin-top:16px}
+  .stack{margin:0}
+  .stack li{margin:0 0 6px}
+  .stack a{aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
+  .stack a::before{display:block;background:#0d0e0f;opacity:0}
+  .stack a img{height:100%;aspect-ratio:auto}
+  .stack .nm{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0 24px;text-align:center;opacity:0;pointer-events:none}
+  .stack .nm b{grid-column:auto;font:700 19px/24px var(--ff);color:#fff}
+  .stack .nm i{font:300 13px/18px var(--ff);color:var(--t)}
+  .stack .nm em{margin:10px 0 0;font:400 11px/14px var(--ff);letter-spacing:.04em;color:var(--mint);text-align:center}
+  .stack li.on a::before{opacity:.66}
+  .stack li.on .nm{opacity:1}
+  .stack .lkb{display:block;position:absolute;left:12px;bottom:9px;z-index:2;margin:0;transition:opacity .3s}
+  .stack li.on .lkb{opacity:0}
+  .unlocked .stack .lkb{display:none}
+
+  /* ---- about / contact ---- */
+  .abt{width:auto;margin:0;padding:116px 20px 0}
+  .abt h1{margin:0;font-size:46px;line-height:50px;letter-spacing:-.012em}
+  .abt .por{width:100%;margin-bottom:36px}
+  .abi{margin-top:30px;font-size:13px;line-height:20px}
+  .abq{margin-top:20px;font-size:13px;line-height:20px}
+  .abt h2{margin-top:44px}
+  .abl li{grid-template-columns:92px minmax(0,1fr);margin-bottom:10px;font-size:13px;line-height:19px}
+  .ctc .lead{margin-top:18px;font-size:13px;line-height:20px}
+  .cf{max-width:none;margin-top:34px}
+  .cf input,.cf textarea{font-size:16px;line-height:22px}
+  .cf button{padding:12px 26px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){.mn,.mb i,.mb i::before,.mb i::after{transition:none}}
+@media (max-width:760px){.home .bg::after{background:linear-gradient(180deg,#171819 0,rgba(23,24,25,0) 16%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}}

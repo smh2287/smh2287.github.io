@@ -174,4 +174,28 @@
     cms.push(refresh);
     if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){io.disconnect();refresh()}},{rootMargin:'600px'});io.observe(sec)}else refresh();
   }
+  /* ---------- phone menu: round button, full overlay (About / Portfolio / Contact) ---------- */
+  var mb=d.querySelector('.mb'),mn=d.getElementById('mn');
+  if(mb&&mn){
+    var mset=function(on){if(on){mn.hidden=false;void mn.offsetWidth}root.classList.toggle('mo',on);mb.setAttribute('aria-expanded',on?'true':'false');mb.setAttribute('aria-label',on?'Close menu':'Menu');
+      if(!on)setTimeout(function(){if(!root.classList.contains('mo'))mn.hidden=true},RM?0:260)};
+    mb.addEventListener('click',function(){mset(!root.classList.contains('mo'))});
+    d.addEventListener('keydown',function(e){if(e.key==='Escape'&&root.classList.contains('mo')){mset(false);mb.focus()}});
+    mn.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))mset(false)});
+    addEventListener('resize',function(){if(innerWidth>760&&root.classList.contains('mo'))mset(false)});
+    addEventListener('pageshow',function(e){if(e.persisted)mset(false)});
+  }
+
+  /* ---------- projects list on touch: first tap shows the name over the picture, second tap opens the project ---------- */
+  var tiles=[].slice.call(d.querySelectorAll('.stack li'));
+  if(tiles.length){
+    var ptype='',off=function(x){tiles.forEach(function(li){if(li!==x)li.classList.remove('on')})};
+    d.addEventListener('pointerdown',function(e){ptype=e.pointerType||''},true);
+    tiles.forEach(function(li){var a=li.querySelector('a');if(!a)return;
+      a.addEventListener('click',function(e){
+        if(ptype!=='touch'||e.metaKey||e.ctrlKey||e.shiftKey||li.classList.contains('on'))return;   /* mouse, keyboard and assistive activation open at once */
+        e.preventDefault();off(li);li.classList.add('on')})});
+    d.addEventListener('click',function(e){if(!(e.target.closest&&e.target.closest('.stack a')))off(null)});
+    addEventListener('pageshow',function(){ptype='';off(null)});
+  }
 })();
