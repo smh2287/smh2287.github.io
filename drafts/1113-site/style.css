@@ -728,3 +728,10 @@ html.mo,html.mo body{overflow:hidden}
   .home .id .wm{font-size:var(--f)}
   .home .id .sl{width:calc(var(--f)*7.03);max-width:none;transform:translateX(calc(var(--f)*.035));margin-top:calc(var(--f)*.12);font-size:clamp(12px,1.15vw,18px)}
 }
+
+/* home phone: the three links retire (the menu button carries them) */
+@media (max-width:760px){
+  .home .hl{display:none!important}
+  .home .id{padding-bottom:0}
+  .home .cv{padding-top:36px}
+}
