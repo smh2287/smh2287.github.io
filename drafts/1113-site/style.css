@@ -425,3 +425,51 @@ img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
   .stack li{margin-bottom:34px}
   .end{width:auto;margin:0;padding:48px 20px 56px}
 }
+
+/* ================= design pass 2026-11-17b (phone only, max-width:760px; desktop untouched) =================
+   one 20px left edge for every text and picture · SPECTRUM (title) > Projects (page head) > card names > body
+   home: title sits in the dark band under the beam, PROJECTS is its own row under the picture */
+@media (max-width:760px){
+  /* ---- home / title ---- */
+  .home{min-height:0;padding-bottom:84px}
+  .home .bg{height:78vh}
+  .id{display:flex;flex-direction:column;align-items:stretch;min-height:calc(78vh + 62px);padding:48.5vh 20px 0}
+  .id .wm{margin:0 0 0 -2px;padding:0;font-weight:300;font-size:clamp(36px,12.4vw,62px);line-height:1;letter-spacing:.14em;text-align:left}
+  .id .sl{margin:14px 0 0;font-size:13px;line-height:19px;color:var(--gr)}
+  .id .sl span{display:block}
+  .id .sl b{font-size:13px;font-weight:400;color:var(--t)}
+  .id .go{position:static;order:3;align-self:stretch;display:flex;justify-content:space-between;align-items:baseline;
+    margin:auto 0 0;padding:15px 0 0;border-top:1px solid rgba(232,232,234,.16);
+    font:600 14px/20px var(--ff);letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
+  .id .go::after{content:"\2192";font-weight:400;letter-spacing:0}
+  /* ---- about ---- */
+  .cv{padding:64px 20px 0;font-size:13px}
+  .cv li{margin:0 0 6px;padding-left:0;text-indent:0;line-height:20px;color:var(--gr)}
+  .cv li:first-child{margin-bottom:12px;font-size:15px;line-height:22px;color:var(--t)}
+  .cv li:nth-child(4){height:0;margin:26px 0 22px;border-top:1px solid rgba(232,232,234,.1);font-size:0;line-height:0;overflow:hidden}
+  .cv li:has(.y){margin-bottom:12px;padding-left:54px;text-indent:-54px;line-height:19px;color:var(--t)}
+  .cv .y{min-width:50px;text-indent:0;color:var(--mu)}
+  .cv li:has(.more){margin:22px 0 0}
+  .cv .more{margin:0;font:600 11px/16px var(--ff);letter-spacing:.12em;text-transform:uppercase;color:var(--mint)}
+  .cv .more::after{content:"  \2192";font-weight:400;letter-spacing:0}
+  /* ---- contact / foot ---- */
+  .contact{margin:52px 20px 0;padding-top:24px;border-top:1px solid rgba(232,232,234,.1);gap:14px;font-size:15px;line-height:20px}
+  .foot{left:20px;right:20px;bottom:18px;font-size:11px;line-height:16px}
+  /* ---- projects list ---- */
+  .nav{padding:16px 20px 0;font-size:12px}
+  .ph{padding:56px 20px 40px}
+  .ph h1{font-size:30px;line-height:34px;letter-spacing:0}
+  .ph p{margin-top:14px;font-size:12.5px;line-height:19px}
+  .stack{margin:0 20px}
+  .stack li{margin:0 0 30px}
+  .stack li:last-child{margin-bottom:0}
+  /* the name leaves the picture: picture first, caption under it on the same left edge */
+  .stack a{aspect-ratio:auto;overflow:visible;background:none}
+  .stack a::before{display:none}
+  .stack a img{height:auto;aspect-ratio:12/5;background:var(--g2)}
+  .stack .nm{position:static;opacity:1;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:1px 12px;padding:10px 0 0;text-align:left;pointer-events:auto}
+  .stack .nm b{grid-column:1 / -1;font:700 15px/20px var(--ff);letter-spacing:0;color:var(--t)}
+  .stack .nm i{font:400 12px/17px var(--ff);color:var(--gr)}
+  .stack .nm em{margin:0;font:400 11px/17px var(--ff);letter-spacing:.03em;color:var(--mint);text-align:right}
+  .end{padding:56px 20px 48px;font-size:12px}
+}
