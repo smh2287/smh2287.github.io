@@ -663,3 +663,18 @@ html.mo,html.mo body{overflow:hidden}
   .home .id .go:hover,.home .id .hr .ab:hover,.home .id .hr .ct:hover{opacity:1;color:var(--mint);border-bottom-color:var(--mint)}
   .home .contact{display:none}
 }
+
+/* ---- desktop alignment with the phone: same content per page ---- */
+.nav .nv{display:flex;gap:30px}
+.nav .nv a{transform:none}
+.nav .nv a[aria-current]{color:var(--t)}
+.home .cv li:not(:has(.y)){display:none}
+@media (max-width:760px){.nav .nv{gap:20px}}
+
+/* resume desktop: photo left, text right (Janin keeps the same content, only the arrangement follows the screen) */
+@media (min-width:900px){
+  .abt.rs{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,560px);column-gap:96px;align-items:start;width:min(1100px,calc(100vw - 160px));margin:56px auto 0}
+  .abt.rs>*{grid-column:2}
+  .abt.rs>.por{grid-column:1;grid-row:1 / span 14;width:100%;margin:0;position:sticky;top:32px}
+  .abt.rs>h1{margin-top:0}
+}
