@@ -590,3 +590,7 @@ html.mo,html.mo body{overflow:hidden}
 /* resume page (Janin: photo, RESUME, plain lines, EDUCATION / POSITION) */
 .abt.rs h1{font-size:24px;line-height:30px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 28px}
 @media (max-width:760px){.abt.rs h1{font-size:22px}}
+
+/* locked projects in the list: soft gaussian blur until the passcode has been entered in this session */
+.stack li.lockd img.fx{filter:blur(3.5px);transform:scale(1.03);transition:filter .6s,transform .6s}
+.unlocked .stack li.lockd img.fx{filter:none;transform:none}

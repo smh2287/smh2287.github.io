@@ -47,6 +47,7 @@
   } else if(main) init(main);
 
   /* ---------- projects list: locked covers stay blurred until the key is known ---------- */
+  if(d.querySelector('.stack li.lockd')&&subtle)stored().then(function(){B.classList.add('unlocked')},function(){});
   var bl=[].slice.call(d.querySelectorAll('img.bl[data-ct]'));
   if(bl.length&&subtle)stored().then(function(k){B.classList.add('unlocked');
     bl.forEach(function(im){dec(k,im.dataset.iv,im.dataset.ct).then(function(j){j=JSON.parse(j);
