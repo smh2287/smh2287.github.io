@@ -199,4 +199,16 @@
     d.addEventListener('click',function(e){if(!(e.target.closest&&e.target.closest('.stack a')))off(null)});
     addEventListener('pageshow',function(){ptype='';off(null)});
   }
+
+  /* ---------- home hero: slow light loop video over the still (optional, silent, skipped for reduced motion / data saver) ---------- */
+  (function(){var bg=d.querySelector('.home .bg[data-loop]');if(!bg)return;
+    try{if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;var c=navigator.connection;if(c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||'')))return}catch(e){}
+    var m=matchMedia('(max-width:760px)').matches,src=m?bg.getAttribute('data-loop-m'):bg.getAttribute('data-loop');if(!src)return;
+    var v=d.createElement('video');v.className='hv';v.muted=true;v.defaultMuted=true;v.loop=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('muted','');v.preload='auto';v.setAttribute('aria-hidden','true');v.tabIndex=-1;
+    v.addEventListener('playing',function(){v.classList.add('on')});
+    v.src=src;bg.appendChild(v);
+    var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){})};
+    v.addEventListener('canplay',go);go();
+    d.addEventListener('visibilitychange',function(){if(d.hidden)v.pause();else go()});
+  })();
 })();
