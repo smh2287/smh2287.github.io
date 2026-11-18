@@ -771,3 +771,11 @@ html.mo,html.mo body{overflow:hidden}
 .home .bg{overflow:hidden}
 .home .bg .hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;opacity:0;transition:opacity 1.4s ease;pointer-events:none;background:transparent}
 .home .bg .hv.on{opacity:1}
+
+/* logo strip v3: one track with two identical halves, translate by exactly -50% (no seam jump); GPU layer; cleaned alpha */
+.lgm{display:block;overflow:hidden;contain:paint}
+.lgk{display:flex;width:max-content;will-change:transform;animation:lgmove2 56s linear infinite;backface-visibility:hidden}
+.lgl{animation:none!important}
+.lgm:hover .lgk{animation-play-state:paused}
+@keyframes lgmove2{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media (prefers-reduced-motion:reduce){.lgk{animation:none;flex-wrap:wrap;width:auto}}
