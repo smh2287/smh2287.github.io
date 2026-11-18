@@ -1,96 +1,781 @@
-:root {
-  --design-width: 1897;
-  --paper: #fbfbfb;
-  --ink: #000;
-  --white: #fff;
+/* Janin structure, Minho colours. Hand-written; no code from the reference. */
+:root{
+  --g:#1F2021; --g2:#212121; --g3:#2B2B2B; --g0:#171819;
+  --mint:#1FFFE0; --t:#E8E8EA; --gr:#A9A9A9; --mu:#60656E;
+  /* Janin's page is one centred 980px text column; at 1440 its left edge is the 15.5% axis everything hangs from */
+  --col:min(100vw - 32px, max(980px, 68vw));
+  --ax:calc((100vw - var(--col)) / 2);
+  /* plates are wider than the text column and overhang it on both sides (his: 89vw plates over a 68vw column).
+     Here the overhang is kept but the plate stops at 78vw so the car has air */
+  --pw:min(100vw - 32px, max(78vw, var(--col)));
+  --gut:calc((100vw - var(--pw)) / 2);
+  --ff:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; overflow-x: hidden; }
-a { color: inherit; text-decoration: none; }
-h1, h2, h3, p { margin: 0; }
-img { display: block; width: 100%; height: 100%; object-fit: cover; }
+*{box-sizing:border-box}
+html{background:var(--g);color:var(--t);-webkit-text-size-adjust:100%}
+body{margin:0;font:400 12.5px/16px var(--ff);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover;background:var(--g2)}
+:focus-visible{outline:1px solid var(--mint);outline-offset:4px}
+::selection{background:var(--mint);color:var(--g0)}
+[hidden]{display:none!important}
+.mint{color:var(--mint)}
 
-/* Scale an original 1897px-wide layout to the current viewport. */
-.stage {
-  position: relative;
-  width: 100vw;
-  overflow: hidden;
-  background: var(--paper);
-}
-.home-stage { min-height: 100vh; height: max(100vh, 119.08vw); background: #050505; color: var(--white); }
-.work-stage { height: 1420vw; color: var(--ink); }
-.resume-stage,
-.contact-stage { min-height: 100vh; height: 119.08vw; color: var(--ink); background: var(--paper); }
+/* ---------- top nav: two tiny words, far apart ---------- */
+.nav{display:flex;justify-content:space-between;width:var(--col);margin:0 auto;padding:12px 0 0;font-size:13px;line-height:20px;color:var(--gr)}
+.nav a{transform:translateX(-44px);transition:color .2s}
+.nav a + a{transform:translateX(0)}
+.nav a:hover{color:var(--mint)}
+.nav--proj a{font-size:15px}
 
-.abs { position: absolute; }
-.home-bg { inset: 0; z-index: 0; }
-.home-bg img { object-fit: cover; }
-.home-bg::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.08); }
+/* ---------- home / about: one tall cropped car, one line of type ---------- */
+.home{position:relative;min-height:188vh;background:var(--g0);overflow:hidden}
+.home .bg{position:absolute;inset:0;z-index:0}
+.home .bg img{object-position:44% 0;filter:none}
+.home .bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(31,32,33,.78) 0,rgba(31,32,33,.3) 20%,rgba(31,32,33,.12) 44%,rgba(23,24,25,.8) 78%,#171819 96%)}
+.home > *:not(.bg){position:relative;z-index:1}
+/* SPECTRUM: the portfolio's title as the landing wordmark. Colour stays quiet: off-white type, one mint-centred hairline */
+.id{position:absolute!important;top:calc(42.5vh - 8.6vw);left:var(--ax);right:0;margin:0}
+.id .wm{margin:0 0 0 -.045em;font:700 clamp(56px,11.4vw,188px)/.8 var(--ff);letter-spacing:-.022em;color:var(--t);white-space:nowrap}
+.id .sl{position:relative;display:flex;align-items:baseline;gap:0 40px;flex-wrap:wrap;margin:calc(1.5vw + 14px) 0 0;padding-top:calc(.9vw + 10px);font:300 22px/28px var(--ff);color:var(--t)}
+.id .sl::before{content:"";position:absolute;left:0;top:0;width:min(62vw,calc(100% - 4.6vw));height:1px;
+  background:linear-gradient(90deg,rgba(122,140,255,0) 0,rgba(110,170,255,.55) 16%,#1FFFE0 46%,rgba(168,255,170,.6) 72%,rgba(255,226,140,0) 100%);opacity:.85}
+.id .sl b{font-weight:700;font-size:23px}
+.id .go{position:absolute;right:4.6vw;top:-46px;font:700 27px/32px var(--ff);color:var(--mint);transition:opacity .2s}
+.id .go:hover{opacity:.72}
+.cv{position:absolute!important;top:92vh;left:calc(var(--ax) + 306px);width:min(706px,calc(100vw - var(--ax) - 322px));margin:0;padding:0;list-style:none;color:var(--t)}
+.cv li{line-height:15px}
+.cv .y{display:inline-block;min-width:62px;color:var(--gr)}
+.cv a:hover{color:var(--mint)}
+.cv .more{display:inline-block;margin-top:30px;font-weight:700;font-size:11px}
+.contact{position:absolute!important;top:calc(92vh + 250px);left:var(--ax);display:flex;align-items:center;gap:22px;font:italic 400 15px/18px Georgia,"Times New Roman",serif;color:var(--gr)}
+.contact b{font-weight:400;letter-spacing:.75px;color:var(--t)}
+.contact .pr{width:34px;height:1px;background:linear-gradient(90deg,#ff5a5a,#ffd35a,#1FFFE0,#5a8bff,#b05aff);opacity:.9}
+.foot{position:absolute!important;left:var(--ax);bottom:14px;font-size:13px;line-height:18px;color:var(--mu)}
+.foot a{color:var(--gr)}
+.foot a:hover{color:var(--mint)}
 
-.home-name {
-  left: 24.2vw; top: 20.19vw; width: 12.6vw; height: 1.7vw;
-  font-size: 1.42vw; line-height: 1.2; font-weight: 800; color: #fff;
-}
-.home-subtitle {
-  left: 40.33vw; top: 20.19vw; width: 25.7vw; height: 1.6vw;
-  font-size: 1.32vw; line-height: 1.2; font-weight: 400; color: #fff;
-}
-.home-projects {
-  left: 87.45vw; top: 20.72vw; width: 11.75vw; height: 2.1vw;
-  font-size: 1.48vw; line-height: 1.4; font-weight: 800; color: #fff;
-}
-.home-bio {
-  left: 40.17vw; top: 43.86vw; width: 37.22vw; min-height: 12vw;
-  font-size: .632vw; line-height: 1.25; color: #fff;
-}
-.home-bio p { margin: 0; }
-.home-bio .link { display: block; margin-top: 1vw; font-weight: 700; }
-.home-email {
-  left: 28.68vw; top: 65vw; width: 22vw;
-  font-size: .72vw; line-height: 1.3; color: #fff; font-style: italic;
-}
-.home-icon { left: 25.46vw; top: 64.9vw; width: 1vw; height: 1vw; border: .13vw solid #fff; border-radius: 50%; opacity: .9; }
-.home-copy { left: 25.72vw; top: 117.18vw; width: 22vw; font-size: .55vw; color: rgba(255,255,255,.85); }
+/* ---------- projects: giant word, short list, one stacked column ---------- */
+.ph{width:var(--col);margin:0 auto;padding:36px 0 122px}
+.ph h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.ph p{margin:22px 0 0;font-size:14px;line-height:17px;color:var(--gr)}
+.stack{width:var(--pw);margin:0 auto;padding:0;list-style:none}
+.stack li{position:relative;margin:0 0 8px}
+.stack a{display:block;aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
+.stack img{transition:opacity .7s}
+.tag{position:absolute;right:100%;top:0;width:calc(var(--gut) - 34px);max-width:150px;margin-right:16px;text-align:right;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none;transition:color .2s}
+.tag i{display:block;font-style:normal;color:var(--mu)}
+.tag b{display:block;font-weight:400;color:var(--t)}
+.stack li:hover .tag i,.fig:hover .tag i{color:var(--mint)}
+.end{width:var(--col);margin:0 auto;padding:70px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--gr)}
+.end a:hover{color:var(--mint)}
 
-.top-home { left: 18.45vw; top: 0; width: 7.5vw; height: 1.6vw; font-size: .685vw; line-height: 1.4; }
-.top-resume { left: 73.32vw; top: 0; width: 13.4vw; height: 1.6vw; font-size: .685vw; line-height: 1.4; }
-.work-title { left: 23.95vw; top: 3.84vw; width: 33.15vw; height: 3.8vw; font-size: 3.795vw; line-height: 1; font-weight: 800; letter-spacing: -.055em; }
-.work-cats { left: 24.2vw; top: 9.85vw; width: 7.6vw; font-size: .738vw; line-height: 1.16; }
-.work-image { left: 4.22vw; width: 91.57vw; height: 51.5vw; background: #ddd; }
-.work-image.one { top: 20.93vw; }
-.work-image.two { top: 72.85vw; height: 61.04vw; }
-.work-image.three { top: 137vw; }
-.work-image.four { top: 190vw; }
-.work-image.five { top: 243vw; }
-.work-image.six { top: 296vw; }
-.work-spacer-text { left: 24vw; top: 360vw; width: 44vw; font-size: .68vw; line-height: 1.22; color: #000; }
-.work-spacer-text p { margin: 0 0 .25vw; }
+/* ---------- project page ---------- */
+.pt{width:var(--col);margin:0 auto;padding:12px 0 0}
+.pt h1{margin:0;font:700 20px/24px var(--ff)}
+.tx{width:var(--col);margin:0 auto}
+.tx p{max-width:262px;margin:0;color:var(--gr)}
+.tx p + p{margin-top:16px}
+.tx p.w{max-width:470px}
+.tx p:first-of-type{color:var(--t)}
+.intro{padding:41px 0 0}
+.lab{width:var(--col);margin:0 auto;padding:150px 0 30px;font:400 16px/21px var(--ff);letter-spacing:0;text-transform:uppercase;color:var(--t)}
+.lab + .tx{margin-top:-8px;padding-bottom:34px}
+.lab span{color:inherit}
+.fig{position:relative;width:var(--pw);margin:0 auto 5px}
+.fig .tag{right:100%}
+/* one grid: every block is exactly --pw wide; cells are fixed-aspect windows, the image is placed inside by its crop (CSS only) */
+.fig > a,.row a{position:relative;display:block;overflow:hidden;background:var(--g2);cursor:pointer}
+img.ci{position:absolute;max-width:none;height:auto}
+.row{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.row.c1{grid-template-columns:minmax(0,1fr)}
+.row.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.row.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.row a{aspect-ratio:var(--ar,2.2)}
+.tag .pn{display:block;font-style:normal;color:var(--mint);margin-top:2px}
+.row a.pa::after{content:"pano";position:absolute;right:8px;bottom:6px;font-size:10px;line-height:12px;color:var(--mint);pointer-events:none}
+/* project pages: text, labels, credits and comments hang from the same left edge as the images */
+body.proj{--col:var(--pw);--ax:var(--gut)}
+.stack a{position:relative}
+.fig img,.row img{transition:opacity .7s}
+.credit{width:var(--col);margin:0 auto;padding:120px 0 0;font-size:11px;line-height:14px;color:var(--gr)}
+.credit p{margin:0}
+.credit p:first-child{margin-bottom:14px;color:var(--t)}
+.credit .ic{margin-top:18px}
+/* credits: per person, name -> roles */
+.ppl{max-width:620px;margin:18px 0 0}
+.ppl .wk{max-width:none;margin:14px 0 4px;color:var(--t);font-size:11px;line-height:14px}
+.ppl .wk:first-child{margin-top:0}
+.pp{list-style:none;margin:0!important;padding:0;max-width:none!important}
+.pp li{display:grid;grid-template-columns:170px 1fr;gap:0 20px;font-size:11px;line-height:15px;color:var(--gr)}
+.pp b{font-weight:400;color:var(--t)}
+.pp b a{transition:color .2s}
+.pp b a:hover{color:var(--mint)}
+.pp small a{margin-left:7px;color:var(--mu);font-size:10px}
+.pp small a:hover{color:var(--mint)}
+.js .fx{opacity:0}
+.js .fx.in{opacity:1}
 
-.simple-title { left: 24vw; top: 5vw; width: 35vw; font-size: 3.8vw; line-height: 1; font-weight: 800; letter-spacing: -.055em; }
-.simple-block { left: 24vw; top: 12vw; width: 44vw; font-size: .76vw; line-height: 1.3; }
-.simple-block p { margin: 0 0 .35vw; }
 
-@media (max-width: 760px) {
-  .home-name { font-size: 18px; left: 9vw; top: 22vh; width: auto; }
-  .home-subtitle { font-size: 14px; left: 9vw; top: calc(22vh + 30px); width: auto; }
-  .home-projects { font-size: 18px; left: 9vw; top: calc(22vh + 78px); width: auto; }
-  .home-bio { font-size: 10px; left: 9vw; top: calc(22vh + 130px); width: 82vw; }
-  .home-icon { left: 9vw; top: auto; bottom: 8vh; width: 13px; height: 13px; border-width: 1px; }
-  .home-email { font-size: 11px; left: 14vw; top: auto; bottom: 7.8vh; width: 70vw; }
-  .home-copy { font-size: 9px; left: 9vw; bottom: 3vh; width: 70vw; }
-  .work-stage { min-height: 5200px; height: 680vw; }
-  .top-home { left: 8vw; font-size: 10px; }
-  .top-resume { left: auto; right: 8vw; font-size: 10px; }
-  .work-title { left: 8vw; top: 10vw; font-size: 52px; width: auto; }
-  .work-cats { left: 8vw; top: 30vw; font-size: 12px; width: 42vw; }
-  .work-image { left: 4vw; width: 92vw; height: 52vw; }
-  .work-image.one { top: 64vw; }
-  .work-image.two { top: 120vw; height: 61vw; }
-  .work-image.three { top: 185vw; }
-  .work-image.four { top: 241vw; }
-  .work-image.five { top: 297vw; }
-  .work-image.six { top: 353vw; }
-  .work-spacer-text { left: 8vw; top: 430vw; width: 84vw; font-size: 11px; }
-  .simple-title { left: 8vw; top: 16vw; font-size: 52px; width: auto; }
-  .simple-block { left: 8vw; top: 40vw; width: 84vw; font-size: 12px; }
+/* tiny mint "locked" */
+.lk{font:400 11px/14px var(--ff);font-style:normal;color:var(--mint);letter-spacing:.02em;margin-left:10px;vertical-align:2px}
+.tag .lk{display:block;margin:2px 0 0}
+.unlocked .lk{display:none}
+.stack img.bl{filter:none;image-rendering:auto}
+
+/* works inside one project: a short index, then each work opens like a small title page */
+.toc{width:var(--col);margin:0 auto;padding:44px 0 0;list-style:none;font-size:11px;line-height:15px;color:var(--gr)}
+.toc li{padding-left:34px;text-indent:-34px}
+.toc .y{display:inline-block;min-width:34px;color:var(--mu);text-indent:0}
+.toc b{font-weight:400;color:var(--t)}
+.toc a:hover,.toc a:hover b{color:var(--mint)}
+.sub{width:var(--col);margin:0 auto;padding:230px 0 0;scroll-margin-top:-180px}
+.sub h2{margin:0;font:700 20px/24px var(--ff)}
+.sub p{max-width:262px;margin:10px 0 0;color:var(--t)}
+.sub ul{max-width:420px;margin:18px 0 0;padding:0;list-style:none;font-size:11px;line-height:14px;color:var(--gr)}
+.sub + .lab{padding-top:70px}
+
+/* film: a calm cover, "press to play" in place; the player loads only on click */
+.vid .yt{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;background:#000;color:var(--t);cursor:pointer;overflow:hidden;font:inherit}
+.vid .yt img{filter:brightness(.5) saturate(.85);transition:opacity .7s,filter .35s}
+.vid .yt:hover img,.vid .yt:focus-visible img{filter:brightness(.62) saturate(.9)}
+.vid .yt>span:last-child{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;pointer-events:none}
+.vid .yt b{display:block;font:400 16px/21px var(--ff);letter-spacing:.02em;color:var(--t)}
+.vid .yt:hover b,.vid .yt:focus-visible b{color:var(--mint)}
+.vid .yt em{display:block;margin-top:6px;font:400 11px/14px var(--ff);font-style:normal;color:var(--gr)}
+.vid iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--g0)}
+.fig.vid{width:var(--pw);margin-top:5px}
+.fig.vid .tag{right:100%}
+
+/* comments: fixed last section, same axis, narrow, quiet */
+
+/* ---------- viewer: one image alone over the dimmed page (reference behaviour, own code) ---------- */
+.vw{position:fixed;inset:0;z-index:50;background:rgba(18,19,20,.96);opacity:0;transition:opacity .35s}
+.vw.on{opacity:1}
+.vw .bx{position:absolute;left:8.4vw;right:8.4vw;top:14.5vh;height:80.5vh;display:grid;place-items:center;opacity:0;transition:opacity .5s}
+.vw .bx.in{opacity:1}
+.vw .bx img{width:auto;height:auto;max-width:100%;max-height:80.5vh;object-fit:contain;background:none}
+.vw button{position:absolute;border:0;padding:0;background:none;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent}
+.vw svg{display:block;fill:none;stroke:currentColor;stroke-width:1.1;vector-effect:non-scaling-stroke;overflow:visible}
+.vw .z{top:0;bottom:0;width:33vw;opacity:.9;transition:opacity .5s}
+.vw .z svg{position:absolute;top:50%;margin-top:-15px;width:17px;height:30px}
+.vw .zp{left:0}.vw .zp svg{left:50px}
+.vw .zn{right:0}.vw .zn svg{right:50px}
+.vw .x{top:50px;right:50px;width:18px;height:18px;z-index:2}
+.vw .x::before{content:"";position:absolute;inset:-16px}
+.vw .x svg{width:18px;height:18px}
+.vw button:hover,.vw button:focus-visible{color:var(--mint);outline:0}
+.vw .c{position:absolute;left:var(--ax);top:52px;margin:0;font-size:11px;line-height:14px;color:var(--gr);pointer-events:none}
+.vw .c b{font-weight:400;color:var(--mint);margin-right:12px}
+.vw.one .z{display:none}
+.vw .c em{font-style:normal;color:var(--mint);margin-left:14px}
+/* panorama mode: full height strip, panned left/right */
+.vw.pano .bx{left:0;right:0;display:block;overflow:hidden;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.vw.pano .bx.drag{cursor:grabbing}
+.vw.pano .bx img{position:absolute;left:0;top:0;width:auto;height:100%;max-width:none;max-height:none;will-change:transform;-webkit-user-drag:none;pointer-events:none}
+.vw.pano .bx img.ease{transition:transform .45s cubic-bezier(.3,.6,.3,1)}
+.vw.pano .z{width:110px;z-index:1}
+html.vwo,html.vwo body{overflow:hidden}
+
+/* ---------- lock: one line, in place of the project ---------- */
+.gate{width:var(--col);margin:0 auto;padding:calc(42.5vh - 60px) 0 46vh;display:flex;align-items:baseline;flex-wrap:wrap}
+.gate label{font:300 25px/32px var(--ff);color:var(--gr)}
+.gate input{width:190px;margin-left:22px;border:0;border-bottom:1px solid var(--mu);border-radius:0;background:none;color:var(--mint);font:300 25px/32px var(--ff);letter-spacing:.2em;caret-color:var(--mint)}
+.gate input:focus{outline:0;border-bottom-color:var(--mint)}
+.gate p{flex:0 0 100%;max-width:none;margin:26px 0 0;color:var(--mu)}
+.gate.no input{border-bottom-color:var(--gr);animation:no .32s}
+.gate.no p{color:var(--gr)}
+@keyframes no{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.pt h1 .lk{font-weight:400}
+
+/* ---------- narrower screens: gutter tags fold into a one-line caption above the plate ---------- */
+@media (max-width:1280px){
+  .tag{position:static;width:auto;max-width:none;margin:0 0 6px;text-align:left;display:block;pointer-events:auto}
+  .tag i,.tag b{display:inline}
+  .tag i{margin-right:10px}
+  .stack li{margin-bottom:22px}
+  .fig{margin-bottom:5px}
+  .fig .tag{margin-top:14px;right:auto}
+  .tag .lk{display:inline;margin-left:10px}
+  .nav a{transform:none}
 }
+@media (max-width:760px){
+  .home{min-height:0;padding-bottom:90px}
+  .id{position:relative!important;top:auto!important;left:auto!important;right:auto!important;display:flex;flex-direction:column;padding:31vh 16px 0;margin:0}
+  .id .wm{font-size:clamp(44px,16.2vw,120px)}
+  .id .sl{display:block;margin-top:18px;padding-top:14px;font-size:17px;line-height:23px}
+  .id .sl::before{width:100%}
+  .id .sl b{display:block;font-size:18px}
+  .id .go{position:static;order:3;align-self:flex-start;margin-top:34px;font-size:24px}
+  .cv{position:relative!important;top:auto!important;left:auto!important;width:auto;padding:12vh 16px 0;clear:both}
+  .cv li{line-height:16px;margin-bottom:5px;padding-left:48px;text-indent:-48px}
+  .cv .y{min-width:48px;text-indent:0}
+  .cv .more{text-indent:0}
+  .contact{position:relative!important;top:auto;left:auto;margin:54px 16px 0;gap:14px}
+  .foot{left:16px;right:16px}
+  .ph{padding:26px 0 64px}
+  .ph h1{font-size:52px;line-height:60px}
+  .row,.row.c2,.row.c3,.row.c4{grid-template-columns:minmax(0,1fr);row-gap:5px}
+  .pp li{grid-template-columns:1fr}
+  .pp li span{padding-bottom:4px}
+  .vw.pano .z{width:60px}
+  .lab{padding-top:96px}
+  .sub{padding-top:150px}
+  .vw{background:var(--g0)}
+  .vw .bx{left:16px;right:16px;top:12vh;height:76vh}
+  .vw .bx img{max-height:76vh}
+  .vw .z{width:30vw}
+  .vw .zp svg{left:14px}.vw .zn svg{right:14px}
+  .vw .z svg{top:auto;bottom:26px;margin:0;width:12px;height:22px}
+  .vw .x{top:22px;right:20px}
+  .vw .c{left:16px;top:24px;right:60px}
+  .gate{display:block;padding-top:26vh}
+  .gate label{display:block;margin:0 0 14px;font-size:19px}
+  .gate input{margin:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .js .fx{opacity:1}
+  .vw,.vw .bx{transition:none!important}
+  .gate.no input{animation:none}
+}
+.proj .nav a{transform:none}
+
+/* ================= phase 3 ================= */
+.gf{position:absolute;width:0;height:0;overflow:hidden}
+/* rotated / contained images inside a crop window (STATUS_E H1) */
+.rb,.kb{position:absolute;display:block}
+.kb{overflow:hidden}
+img.ro{left:50%;top:50%;width:100%;height:100%;object-fit:fill}
+/* hover without CSS filters on the image (filters are reserved for the colour grade) */
+.row a::before,.stack a::before{content:"";position:absolute;inset:0;z-index:1;background:#0d0e0f;opacity:.07;transition:opacity .35s;pointer-events:none}
+.row a:hover::before,.row a:focus-visible::before{opacity:0}
+/* R2 projects list: name over the tile on hover, whole tile is the link */
+.stack a{cursor:pointer}
+.stack a::before{opacity:.1}
+.stack .nm{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0 24px;text-align:center;opacity:0;transition:opacity .3s;pointer-events:none}
+.stack .nm b{font:700 21px/26px var(--ff);color:#fff;letter-spacing:.005em}
+.stack .nm i{font:300 15px/18px var(--ff);font-style:normal;color:var(--t)}
+.stack .nm em{margin-top:10px;font:400 11px/14px var(--ff);font-style:normal;color:var(--mint);letter-spacing:.04em}
+.stack .nm em::after{content:"  \2192"}
+.stack a:hover::before,.stack a:focus-visible::before{opacity:.5}
+.stack a:hover .nm,.stack a:focus-visible .nm{opacity:1}
+@media (hover:none){
+  .stack a::before{opacity:1;background:linear-gradient(180deg,rgba(13,14,15,0) 45%,rgba(13,14,15,.78) 100%)}
+  .stack .nm{opacity:1;align-items:flex-start;justify-content:flex-end;gap:2px;padding:0 14px 12px;text-align:left}
+  .stack .nm b{font-size:16px;line-height:20px}
+  .stack .nm i{font-size:12px;line-height:15px}
+  .stack .nm em{margin-top:4px}
+  .stack .tag{display:none}
+}
+/* R3 credits under the title / intro */
+.credit.top{padding:34px 0 0}
+.credit.top .ppl{margin-top:14px}
+.pp.ft li{color:var(--gr)}
+.pp.ft b{color:var(--mu)}
+.sub .ppl{margin-top:18px}
+/* R6 one description per model inside a shared section */
+.mdl{width:var(--col);margin:0 auto;padding:44px 0 22px}
+.lab + .mdl{padding-top:0}
+.fig + .mdl,.row + .mdl{padding-top:54px}
+.mdl h3{margin:0 0 8px;font:700 14px/18px var(--ff);letter-spacing:.01em;color:var(--t)}
+.mdl h3 span{margin-left:12px;font-weight:400;font-size:12.5px;color:var(--mint)}
+.mdl p{max-width:470px;margin:0;color:var(--gr)}
+.mdl .mp{margin-top:8px;font-size:11px;line-height:14px;color:var(--mu)}
+/* R8 review: statement left, core values with scores right, on the page frame */
+.rv{width:var(--pw);margin:5px auto 5px;padding:44px 0 50px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0 5px;background:var(--g0)}
+.rv .rvt{padding:0 44px}
+.rv h3{margin:0 0 14px;font:700 20px/25px var(--ff);color:var(--t)}
+.rv .rvt p{max-width:400px;margin:0 0 12px;color:var(--gr)}
+.rv .cvl{padding:0 44px 0 24px;border-left:1px solid var(--g3)}
+.rv h4{margin:5px 0 22px;font:400 11px/14px var(--ff);letter-spacing:.08em;text-transform:uppercase;color:var(--mint)}
+.cvr{display:grid;grid-template-columns:118px minmax(0,1fr);gap:4px 22px;padding:0 0 20px}
+.cvr b{grid-column:1;font:700 12.5px/16px var(--ff);color:var(--t)}
+.cvr .dots{grid-column:1;display:flex;gap:5px;margin-top:2px}
+.cvr .dots i{width:9px;height:9px;border-radius:50%;background:var(--g3)}
+.cvr .dots i.on{background:var(--mint)}
+.cvr p{grid-column:2;grid-row:1 / span 2;max-width:430px;margin:0;color:var(--gr)}
+/* R10 comments: a thread — avatar, name, time, text; one clear box to write in */
+.cm{width:var(--col);margin:0 auto;padding:0 0 40px;min-height:150px}
+.cm .cmb{max-width:680px}
+.cm .cmh{display:flex;align-items:baseline;gap:10px;margin:0 0 22px;padding:0 0 12px;border-bottom:1px solid var(--g3);font:700 13px/18px var(--ff);color:var(--t)}
+.cm .cmh i{font-style:normal;font-weight:400;color:var(--mu)}
+.cm ol{margin:0;padding:0;list-style:none}
+.cm li,.cm .wr,.cm .sign{display:grid;grid-template-columns:36px minmax(0,1fr);gap:0 14px;padding:0 0 24px}
+.cm li.hid{opacity:.45}
+.cm .av{width:36px;height:36px;border-radius:50%;background:var(--g3);color:var(--t);font:700 13px/36px var(--ff);text-align:center;text-transform:uppercase;user-select:none}
+.cm .av.me{background:var(--mint);color:var(--g0)}
+.cm .by{margin:0 0 4px;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;font-size:12.5px;line-height:17px}
+.cm .by b{font-weight:700;color:var(--t)}
+.cm .by i{font-style:normal;font-size:11px;color:var(--gr)}
+.cm .by time{font-size:11px;color:var(--mu)}
+.cm .by .ow{font-size:10px;line-height:14px;padding:0 6px;border:1px solid var(--mint);border-radius:8px;color:var(--mint)}
+.cm .bd{margin:0;font-size:13.5px;line-height:20px;color:var(--t);white-space:pre-wrap;overflow-wrap:anywhere}
+.cm .bd u{text-decoration:none;color:var(--mint)}
+.cm li small{display:block;margin-top:6px;font-size:11px;color:var(--mu)}
+.cm li small button{padding:0;margin-right:14px;border:0;background:none;font:400 11px/14px var(--ff);color:var(--mu);cursor:pointer}
+.cm li small button:hover{color:var(--mint)}
+.cm .none{margin:0 0 26px;color:var(--mu)}
+.cm .wr,.cm .sign{margin-top:6px;padding-top:22px;border-top:1px solid var(--g3)}
+.cm .field{border:1px solid var(--g3);border-radius:10px;background:var(--g0);padding:10px 12px 8px;transition:border-color .2s}
+.cm .field:focus-within{border-color:var(--mint)}
+.cm textarea,.cm input{display:block;width:100%;border:0;background:transparent;color:var(--t);font:400 13.5px/20px var(--ff);padding:0;resize:vertical}
+.cm textarea{min-height:64px}
+.cm input{margin-top:6px;padding-top:7px;border-top:1px solid var(--g3);font-size:11.5px;line-height:18px;color:var(--gr)}
+.cm textarea::placeholder,.cm input::placeholder{color:var(--mu)}
+.cm textarea:focus,.cm input:focus{outline:0}
+.cm .acts{display:flex;align-items:center;gap:18px;margin-top:10px}
+.cm .acts .hint{margin-left:auto;font-size:11px;color:var(--mu)}
+.cm button.post,.cm .sign button{border:1px solid var(--mint);border-radius:16px;background:var(--mint);color:var(--g0);font:700 12px/16px var(--ff);padding:7px 16px;cursor:pointer;transition:opacity .2s}
+.cm .sign button{background:none;color:var(--mint);margin:0 8px 8px 0}
+.cm button.post:hover,.cm .sign button:hover{opacity:.8}
+.cm button.post:disabled{opacity:.45;cursor:default}
+.cm button.q{border:0;background:none;padding:0;font:400 11px/14px var(--ff);color:var(--mu);cursor:pointer}
+.cm button.q:hover{color:var(--mint)}
+.cm .sign .fake{border:1px dashed var(--g3);border-radius:10px;padding:12px;color:var(--mu);margin:0 0 12px}
+.cm .sign p{margin:0 0 10px;color:var(--gr)}
+.cm .note{max-width:680px;margin:6px 0 0;font-size:11px;color:var(--mu)}
+@media (max-width:760px){
+  .rv{grid-template-columns:minmax(0,1fr);padding:30px 0 26px}
+  .rv .rvt,.rv .cvl{padding:0 18px}
+  .rv .cvl{border-left:0;border-top:1px solid var(--g3);margin-top:16px;padding-top:22px}
+  .cvr{grid-template-columns:104px minmax(0,1fr);gap:4px 14px}
+  .cm .acts .hint{display:none}
+  .mdl{padding-top:34px}
+}
+@media (prefers-reduced-motion:reduce){.stack .nm,.stack a::before,.row a::before{transition:none}}
+
+/* C-curated black-ground assets: blend filtered pixels against page, not a cell fill. */
+.fig > a.blended,.row a.blended{background:transparent}
+.row a.blended::before{display:none}
+.vw .bx[data-blend]{opacity:1;transition:none}
+.vw .bx[data-blend] img{opacity:0;transition:opacity .5s}
+.vw .bx[data-blend].in img{opacity:1}
+
+/* film pre-play: black screen + simple triangle */
+.vid .yt .pl{position:absolute;left:50%;top:50%;width:0;height:0;transform:translate(-36%,-50%);border-style:solid;border-width:clamp(14px,3.2vw,30px) 0 clamp(14px,3.2vw,30px) clamp(24px,5.5vw,52px);border-color:transparent transparent transparent var(--t);opacity:.85;transition:border-left-color .25s,opacity .25s,transform .25s;pointer-events:none}
+.vid .yt:hover .pl,.vid .yt:focus-visible .pl{border-left-color:var(--mint);opacity:1;transform:translate(-36%,-50%) scale(1.08)}
+.vid .yt:focus-visible{outline:1px solid var(--mint);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.vid .yt .pl{transition:none}}
+
+/* image number/caption tags in the gutter removed (Janin has none) */
+.tag,.fig .tag,.fig.vid .tag{display:none!important}
+
+/* small-image clusters (rows of the same block / same column count) touch vertically on desktop; big groups keep the 5px gap */
+@media (min-width:761px){.row.tight{margin-bottom:0}}
+
+/* Three independent references: tall left, two landscapes right. */
+.mosaic3{width:var(--pw);margin:0 auto 5px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:5px;aspect-ratio:1.85}
+.mosaic3>a{position:relative;min-width:0;min-height:0;overflow:hidden}
+.mosaic3>a:first-child{grid-row:1/3}
+@media(max-width:600px){.mosaic3{gap:3px}}
+
+/* ---------- home hero = the PDF title prism (2026-11-16) ---------- */
+.home{min-height:188vh}
+.home .bg{inset:0 0 auto 0;height:100vh}
+.home .bg img{object-fit:cover;object-position:50% 50%;filter:none;background:#000}
+.home .bg::after{background:linear-gradient(180deg,rgba(23,24,25,0) 0,rgba(23,24,25,0) 18%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}
+.id{left:0;right:0;top:61vh;display:flex;flex-direction:column;align-items:center}
+.id .wm{margin:0;font-weight:300;font-size:clamp(40px,6.4vw,112px);letter-spacing:.2em;line-height:1;padding-left:.2em}
+.id .sl{width:min(52vw,900px);justify-content:space-between;margin:12px 0 0;padding-top:0;font-size:clamp(11px,1.1vw,17px);line-height:1.4}
+.id .sl::before{display:none}
+.id .sl b{font-size:inherit;font-weight:400}
+.id .go{right:4.6vw;top:calc(-61vh + 24px)}
+@media (max-width:760px), (max-aspect-ratio:9/10){
+  .home .bg{height:78vh}
+  .home .bg img{object-position:50% 50%}
+  .id{top:44vh}
+  .id .wm{font-size:clamp(30px,10.5vw,64px)}
+  .id .sl{width:min(86vw,420px);font-size:clamp(10px,2.9vw,13px)}
+  .id .go{top:calc(-44vh + 18px)}
+}
+
+/* free-aspect rows (pass 24): every picture keeps its own ratio, one shared row height, the widths fill the grid */
+.row.free{display:flex;gap:0;margin-bottom:5px}
+.row.free a{flex:var(--a) 1 0;min-width:0;aspect-ratio:var(--a)}
+.row.free.c1 a{flex:none;width:100%;max-width:calc(82vh*var(--a));margin:0 auto}
+@media (max-width:760px){.row.free{flex-direction:column;row-gap:5px}.row.free a{flex:none;width:100%;max-width:calc(82vh*var(--a));margin:0 auto}}
+
+/* paired concepts (IAC): names as titles above the two pictures, explanations below in the same order */
+.row.pt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:8px}
+.row.pt h3{margin:0;font:700 15px/20px var(--ff);color:var(--t)}
+.tx.ptx{width:var(--pw);margin:16px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.tx.ptx p,.tx.ptx p + p{max-width:340px;margin:0 24px 8px 0;color:var(--gr)}.ptx b{display:block;margin:0 0 3px;color:var(--t)}
+@media (max-width:760px){.row.pt{display:none}.tx.ptx{grid-template-columns:minmax(0,1fr)}.tx.ptx p{max-width:none}}
+
+/* ---------- phone hierarchy pass (2026-11-17): one left edge, SPECTRUM > Projects > body, looser rhythm ---------- */
+@media (max-width:760px){
+  /* home */
+  .id{align-items:flex-start;padding:44vh 20px 0;left:0;right:0}
+  .id .wm{padding-left:0;margin:0 0 0 -2px;font-size:clamp(34px,11.6vw,58px);letter-spacing:.14em;text-align:left}
+  .id .sl{width:auto;max-width:none;margin:18px 0 0;display:block;font-size:13px;line-height:20px;color:var(--gr);text-align:left}
+  .id .sl b{display:block;font-weight:400;font-size:13px;color:var(--gr)}
+  .id .go{position:static;order:3;align-self:flex-start;margin:calc(34vh - 58px) 0 0;font:600 15px/20px var(--ff);letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
+  .cv{padding:5vh 20px 0}
+  .cv li{margin-bottom:14px;line-height:21px;padding-left:0;text-indent:0;color:var(--t)}
+  .cv li:has(.y){padding-left:58px;text-indent:-58px;margin-bottom:11px}
+  .cv .y{min-width:58px;text-indent:0}
+  /* projects */
+  .nav{width:auto;margin:0;padding:14px 20px 0}.nav a{transform:none}
+  .ph{width:auto;margin:0;padding:84px 20px 64px}
+  .ph h1{margin:0;font-size:34px;line-height:40px;letter-spacing:-.005em}
+  .ph p{margin-top:18px;font-size:13px;line-height:20px}
+  .stack{width:auto;margin:0 20px}
+  .stack li{margin-bottom:34px}
+  .end{width:auto;margin:0;padding:48px 20px 56px}
+}
+
+/* ================= design pass 2026-11-17b (phone only, max-width:760px; desktop untouched) =================
+   one 20px left edge for every text and picture · SPECTRUM (title) > Projects (page head) > card names > body
+   home: title sits in the dark band under the beam, PROJECTS is its own row under the picture */
+@media (max-width:760px){
+  /* ---- home / title ---- */
+  .home{min-height:0;padding-bottom:84px}
+  .home .bg{height:43vh}
+  .id{display:flex;flex-direction:column;align-items:stretch;min-height:calc(43vh + 160px);padding:40vh 20px 0}
+  .id .wm{margin:0 0 0 -2px;padding:0;font-weight:300;font-size:clamp(36px,12.4vw,62px);line-height:1;letter-spacing:.14em;text-align:left}
+  .id .sl{margin:14px 0 0;font-size:13px;line-height:19px;color:var(--gr)}
+  .id .sl span{display:block}
+  .id .sl b{font-size:13px;font-weight:400;color:var(--t)}
+  .id .go{position:static;order:3;align-self:stretch;display:flex;justify-content:space-between;align-items:baseline;
+    margin:auto 0 0;padding:15px 0 0;border-top:1px solid rgba(232,232,234,.16);
+    font:600 14px/20px var(--ff);letter-spacing:.16em;text-transform:uppercase;color:var(--mint)}
+  .id .go::after{content:"\2192";font-weight:400;letter-spacing:0}
+  /* ---- about ---- */
+  .cv{padding:64px 20px 0;font-size:13px}
+  .cv li{margin:0 0 6px;padding-left:0;text-indent:0;line-height:20px;color:var(--gr)}
+  .cv li:first-child{margin-bottom:12px;font-size:15px;line-height:22px;color:var(--t)}
+  .cv li:nth-child(4){height:0;margin:26px 0 22px;border-top:1px solid rgba(232,232,234,.1);font-size:0;line-height:0;overflow:hidden}
+  .cv li:has(.y){margin-bottom:12px;padding-left:54px;text-indent:-54px;line-height:19px;color:var(--t)}
+  .cv .y{min-width:50px;text-indent:0;color:var(--mu)}
+  .cv li:has(.more){margin:22px 0 0}
+  .cv .more{margin:0;font:600 11px/16px var(--ff);letter-spacing:.12em;text-transform:uppercase;color:var(--mint)}
+  .cv .more::after{content:"  \2192";font-weight:400;letter-spacing:0}
+  /* ---- contact / foot ---- */
+  .contact{margin:52px 20px 0;padding-top:24px;border-top:1px solid rgba(232,232,234,.1);gap:14px;font-size:15px;line-height:20px}
+  .foot{left:20px;right:20px;bottom:18px;font-size:11px;line-height:16px}
+  /* ---- projects list ---- */
+  .nav{padding:16px 20px 0;font-size:12px}
+  .ph{padding:56px 20px 40px}
+  .ph h1{font-size:30px;line-height:34px;letter-spacing:0}
+  .ph p{margin-top:14px;font-size:12.5px;line-height:19px}
+  .stack{margin:0 20px}
+  .stack li{margin:0 0 30px}
+  .stack li:last-child{margin-bottom:0}
+  /* the name leaves the picture: picture first, caption under it on the same left edge */
+  .stack a{aspect-ratio:auto;overflow:visible;background:none}
+  .stack a::before{display:none}
+  .stack a img{height:auto;aspect-ratio:12/5;background:var(--g2)}
+  .stack .nm{position:static;opacity:1;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:1px 12px;padding:10px 0 0;text-align:left;pointer-events:auto}
+  .stack .nm b{grid-column:1 / -1;font:700 15px/20px var(--ff);letter-spacing:0;color:var(--t)}
+  .stack .nm i{font:400 12px/17px var(--ff);color:var(--gr)}
+  .stack .nm em{margin:0;font:400 11px/17px var(--ff);letter-spacing:.03em;color:var(--mint);text-align:right}
+  .end{padding:56px 20px 48px;font-size:12px}
+}
+
+/* ================= Janin-match pass 3 (2026-11-17c) =================
+   menu (phone) · about.html · contact.html (dark) · phone home = one full-bleed hero · projects list: touching pictures, name on tap */
+.hl{margin:0}
+.id .ab{display:none}
+.mb,.stack .lkb{display:none}
+.mn{position:fixed;inset:0;z-index:60;background:var(--g0);overflow:auto;opacity:0;transition:opacity .25s}
+html.mo .mn{opacity:1}
+html.mo,html.mo body{overflow:hidden}
+.mn nav{padding:132px 20px 40px;text-align:center}
+.mn a{display:block;width:max-content;max-width:100%;margin:0 auto 34px;padding:4px 0 4px .22em;font:300 20px/26px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:var(--gr);transition:color .2s}
+.mn a:hover,.mn a[aria-current]{color:var(--t)}
+.mn a.hm{margin-top:56px;font-size:11px;line-height:16px;letter-spacing:.2em;color:var(--mu)}
+.mn a.hm[aria-current]{display:none}
+
+/* ---- about / contact: same column as Projects ---- */
+.abt{width:var(--col);margin:0 auto;padding:36px 0 0}
+.abt h1{margin:0 0 0 -3px;font:700 72px/86px var(--ff);letter-spacing:-.01em}
+.abt .por{width:min(100%,420px);margin:0 0 44px;aspect-ratio:3/4;overflow:hidden;background:var(--g2)}
+.abi{margin:38px 0 0;font-size:12.5px;line-height:18px;color:var(--gr)}
+.abi p{margin:0}
+.abi b{font-weight:700;color:var(--t)}
+.abi a,.abl a{color:var(--t);transition:color .2s}
+.abi a{border-bottom:1px solid var(--mu)}
+.abi a:hover,.abl a:hover{color:var(--mint)}
+.abq{max-width:470px;margin:24px 0 0;color:var(--t)}
+.abt h2{margin:56px 0 12px;font:400 11px/14px var(--ff);letter-spacing:.08em;text-transform:uppercase;color:var(--mint)}
+.abl{max-width:720px;margin:0;padding:0;list-style:none;color:var(--t)}
+.abl li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:0 12px;margin:0 0 3px;line-height:16px}
+.abl .y{color:var(--gr)}
+.ctc .lead{max-width:470px;margin:22px 0 0;font-size:14px;line-height:20px;color:var(--gr)}
+.cf{max-width:520px;margin:44px 0 0;color-scheme:dark}
+.cf label{display:block;margin:0 0 20px;font-size:12px;line-height:16px;color:var(--gr)}
+.cf input,.cf textarea{display:block;width:100%;margin:8px 0 0;padding:11px 12px;border:1px solid #3A3C3F;border-radius:2px;background:var(--g0);color:var(--t);font:400 15px/21px var(--ff);caret-color:var(--mint);-webkit-appearance:none;appearance:none;transition:border-color .2s}
+.cf textarea{min-height:170px;resize:vertical}
+.cf input:focus,.cf textarea:focus{outline:0;border-color:var(--mint)}
+.cf input:-webkit-autofill{-webkit-text-fill-color:var(--t);box-shadow:0 0 0 1000px var(--g0) inset}
+.cf button{margin:6px 0 0;padding:10px 22px;border:1px solid var(--mint);border-radius:20px;background:var(--mint);color:var(--g0);font:700 13px/18px var(--ff);cursor:pointer;transition:opacity .2s}
+.cf button:hover{opacity:.8}
+.cf button:disabled{opacity:.45;cursor:default}
+.cf .hpot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.cf #status{min-height:18px;margin:16px 0 0;font-size:13px;line-height:18px;color:var(--t)}
+
+/* ---- projects list on touch screens: clean pictures, the name appears over the picture on the first tap (li.on), the second tap opens ---- */
+@media (hover:none){
+  .stack a::before{background:#0d0e0f;opacity:0}
+  .stack .nm{align-items:center;justify-content:center;gap:4px;padding:0 24px;text-align:center;opacity:0}
+  .stack li.on a::before{opacity:.66}
+  .stack li.on .nm{opacity:1}
+  .stack .lkb{display:block;position:absolute;left:12px;bottom:9px;z-index:2;margin:0;transition:opacity .3s}
+  .stack li.on .lkb{opacity:0}
+  .unlocked .stack .lkb{display:none}
+}
+
+@media (max-width:760px){
+  /* ---- menu button: round, top-left, on the 20px edge ---- */
+  .js .nav:not(.nav--proj){display:none}
+  .js .mb{display:block;position:absolute;left:20px;top:20px;z-index:61;width:52px;height:52px;padding:0;border:0;border-radius:50%;background:#2B2B2B;color:var(--t);cursor:pointer;-webkit-tap-highlight-color:transparent}
+  html.mo .mb{position:fixed}
+  .mb i,.mb i::before,.mb i::after{position:absolute;left:50%;width:20px;height:1.5px;margin-left:-10px;background:currentColor;transition:transform .25s,background-color .2s}
+  .mb i{top:50%;margin-top:-.75px}
+  .mb i::before,.mb i::after{content:"";top:0}
+  .mb i::before{transform:translateY(-6.5px)}
+  .mb i::after{transform:translateY(6.5px)}
+  html.mo .mb i{background:transparent}
+  html.mo .mb i::before{transform:rotate(45deg)}
+  html.mo .mb i::after{transform:rotate(-45deg)}
+
+  /* ---- home: one screen. prism on top, SPECTRUM, then PROJECTS / ABOUT across the bottom and the contact line (Janin's home) ---- */
+  .home{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;padding-bottom:0}
+  .home .bg{inset:44px 0 auto 0;height:43vh}
+  .id{flex:1 0 auto;min-height:0;padding:calc(40vh + 40px) 20px 0}
+  .hl{display:flex;justify-content:space-between;align-items:baseline;margin:auto 0 0;padding:36px 0 0}
+  .id .go,.id .ab{position:static;display:block;order:0;align-self:auto;margin:0;padding:0;border:0;font:300 14px/20px var(--ff);letter-spacing:.18em;text-transform:uppercase;color:var(--t)}
+  .id .go::after{content:none}
+  .cv{display:none}
+  .contact{margin:10px 20px 0;padding-top:0;border-top:0;font-size:12px;line-height:16px;justify-content:flex-end;gap:10px}
+  .contact .pr{width:18px}
+  .home .foot{position:static!important;margin:26px 20px 18px;font-size:10.5px;line-height:15px}
+
+  /* ---- projects: big word, then pictures edge to edge with a thin gap, no captions ---- */
+  .ph{padding:116px 20px 48px}
+  .ph h1{font-size:46px;line-height:50px;letter-spacing:-.012em}
+  .ph p{margin-top:16px}
+  .stack{margin:0}
+  .stack li{margin:0 0 6px}
+  .stack a{aspect-ratio:12/5;overflow:hidden;background:var(--g2)}
+  .stack a::before{display:block;background:#0d0e0f;opacity:0}
+  .stack a img{height:100%;aspect-ratio:auto}
+  .stack .nm{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0 24px;text-align:center;opacity:0;pointer-events:none}
+  .stack .nm b{grid-column:auto;font:700 19px/24px var(--ff);color:#fff}
+  .stack .nm i{font:300 13px/18px var(--ff);color:var(--t)}
+  .stack .nm em{margin:10px 0 0;font:400 11px/14px var(--ff);letter-spacing:.04em;color:var(--mint);text-align:center}
+  .stack li.on a::before{opacity:.66}
+  .stack li.on .nm{opacity:1}
+  .stack .lkb{display:block;position:absolute;left:12px;bottom:9px;z-index:2;margin:0;transition:opacity .3s}
+  .stack li.on .lkb{opacity:0}
+  .unlocked .stack .lkb{display:none}
+
+  /* ---- about / contact ---- */
+  .abt{width:auto;margin:0;padding:116px 20px 0}
+  .abt h1{margin:0;font-size:46px;line-height:50px;letter-spacing:-.012em}
+  .abt .por{width:100%;max-width:340px;margin-bottom:36px}
+  .abi{margin-top:30px;font-size:13px;line-height:20px}
+  .abq{margin-top:20px;font-size:13px;line-height:20px}
+  .abt h2{margin-top:44px}
+  .abl li{grid-template-columns:92px minmax(0,1fr);margin-bottom:10px;font-size:13px;line-height:19px}
+  .ctc .lead{margin-top:18px;font-size:13px;line-height:20px}
+  .cf{max-width:none;margin-top:34px}
+  .cf input,.cf textarea{font-size:16px;line-height:22px}
+  .cf button{padding:12px 26px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){.mn,.mb i,.mb i::before,.mb i::after{transition:none}}
+@media (max-width:760px){.home .bg::after{background:linear-gradient(180deg,#171819 0,rgba(23,24,25,0) 16%,rgba(23,24,25,0) 62%,rgba(23,24,25,.85) 90%,#171819 100%)}}
+
+/* resume page (Janin: photo, RESUME, plain lines, EDUCATION / POSITION) */
+.abt.rs h1{font-size:24px;line-height:30px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 28px}
+@media (max-width:760px){.abt.rs h1{font-size:22px}}
+
+/* locked projects in the list: soft gaussian blur until the passcode has been entered in this session */
+.stack li.lockd img.fx{filter:blur(3.5px);transform:scale(1.03);transition:filter .6s,transform .6s}
+.unlocked .stack li.lockd img.fx{filter:none;transform:none}
+
+/* ---- home phone, round 2: SPECTRUM back inside the prism; PROJECTS larger, RESUME + CONTACT small and together about as heavy as PROJECTS ---- */
+.hr{display:none}
+@media (max-width:760px){
+  .home .id .wm{position:absolute;left:0;right:0;top:calc(44px + 43vh*.69);margin:0;padding:0 0 0 .16em;text-align:center;font-weight:300;font-size:min(8.8vw,4.1vh);letter-spacing:.16em;line-height:1;white-space:nowrap}
+  .home .id{padding-top:calc(44px + 43vh + 24px)}
+  .home .id .sl{margin-top:0}
+  .hl{align-items:flex-end}
+  .id .go{font:300 26px/30px var(--ff);letter-spacing:.16em}
+  .hr{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+  .id .hr .ab,.id .hr .ct{display:block;font:300 12px/16px var(--ff);letter-spacing:.2em;text-transform:uppercase;color:var(--t);margin:0}
+  .home .contact{display:none}
+}
+
+/* ---- home phone, round 3: title block inside the prism = SPECTRUM, then one row (Digital Visualization Portfolio 2026 ... Minho Song) justified to its width; PROJECTS / RESUME / CONTACT on one left-aligned line ---- */
+@media (max-width:760px){
+  .home{--f:min(9.8vw,4.5vh)}
+  .home .id .wm{top:calc(44px + 43vh*.62);font-size:var(--f);padding:0 0 0 .16em}
+  .home .id .sl{position:absolute;left:50%;top:calc(44px + 43vh*.62 + var(--f) + 9px);transform:translateX(-50%);width:calc(var(--f)*6.6);margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:6px;font-size:calc(var(--f)*.255);line-height:1.2;white-space:nowrap;color:var(--gr)}
+  .home .id .sl span{display:block}
+  .home .id .sl b{font-size:inherit;font-weight:400;color:var(--t)}
+  .hl{justify-content:flex-start;align-items:baseline;gap:22px;margin:0;padding:40px 0 0}
+  .id .go{font:300 24px/30px var(--ff);letter-spacing:.14em}
+  .hr{flex-direction:row;align-items:baseline;gap:16px}
+  .id .hr .ab,.id .hr .ct{font:300 12px/16px var(--ff);letter-spacing:.16em}
+  .home .id{padding-top:calc(44px + 43vh + 8px);flex:0 0 auto}
+}
+@media (max-width:760px){.home .foot{margin-top:auto!important}}
+
+/* ---- home phone, round 4 (Fable review): three equal links on one row spread edge to edge in the lower third; footer pinned to the bottom ---- */
+@media (max-width:760px){
+  .home .id .sl{top:calc(44px + 43vh*.62 + var(--f) + 5px)}
+  .home .id{flex:1 0 auto;display:flex;flex-direction:column;padding-top:calc(44px + 43vh + 8px)}
+  .hl{margin:auto 0 0;padding:0;display:flex;justify-content:space-between;align-items:center;gap:0;border-top:1px solid rgba(232,232,234,.12);padding-top:6px}
+  .hr{display:contents}
+  .id .go,.id .hr .ab,.id .hr .ct{display:block;font:300 clamp(13px,3.7vw,15px)/20px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.88);padding:14px 0;margin:0}
+  .home .id{padding-bottom:0}
+  .home .foot{margin:0 20px calc(24px + env(safe-area-inset-bottom))!important;padding-top:6px;font-size:11px;opacity:.5;letter-spacing:.04em}
+  .home .foot .ft-long{display:none}
+}
+
+/* ---- home phone, round 5: links sit close under the prism (not pinned far down); only the footer stays at the bottom ---- */
+@media (max-width:760px){
+  .home .id{flex:0 0 auto!important;padding-bottom:0;min-height:0}
+  .hl{margin:28px 0 0!important}
+}
+@media (max-width:760px){.home .foot{margin-top:auto!important;padding-top:28px}}
+
+/* ---- home phone, round 6: links as a vertical left-aligned list; compact career under them ---- */
+@media (max-width:760px){
+  .hl{flex-direction:column;align-items:flex-start;justify-content:flex-start;padding-top:10px}
+  .id .go,.id .hr .ab,.id .hr .ct{padding:9px 0;font-size:clamp(15px,4.2vw,17px)}
+  .home .cv{display:block;order:3;padding:26px 20px 0;margin:0}
+  .home .cv li{display:none}
+  .home .cv li:has(.y){display:block;margin:0 0 8px;padding-left:46px;text-indent:-46px;font-size:11.5px;line-height:16px;color:var(--gr)}
+  .home .cv li:has(.y) .y{min-width:42px;color:var(--mu)}
+  .home .cv li:has(.more){display:none}
+}
+@media (max-width:760px){.home .foot{order:9;padding-top:36px}}
+
+/* ---- home desktop: PROJECTS / RESUME / CONTACT as one equal-weight row top right (same words and order as the phone); the old mint PROJECTS word and the separate Contact line retire ---- */
+@media (min-width:761px) and (min-aspect-ratio:9/10){
+  .home .id .hl{position:absolute;right:4.6vw;top:calc(-61vh + 26px);display:flex;align-items:baseline;gap:38px;margin:0;padding:0}
+  .home .id .hr{display:flex;align-items:baseline;gap:38px}
+  .home .id .go,.home .id .hr .ab,.home .id .hr .ct{position:static;display:block;margin:0;padding:6px 0;font:300 14px/20px var(--ff);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.9);border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .home .id .go:hover,.home .id .hr .ab:hover,.home .id .hr .ct:hover{opacity:1;color:var(--mint);border-bottom-color:var(--mint)}
+  .home .contact{display:none}
+}
+
+/* ---- desktop alignment with the phone: same content per page ---- */
+.nav .nv{display:flex;gap:30px}
+.nav .nv a{transform:none}
+.nav .nv a[aria-current]{color:var(--t)}
+.home .cv li:not(:has(.y)){display:none}
+@media (max-width:760px){.nav .nv{gap:20px}}
+
+/* resume desktop: photo left, text right (Janin keeps the same content, only the arrangement follows the screen) */
+@media (min-width:900px){
+  .abt.rs{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,560px);column-gap:96px;align-items:start;width:min(1100px,calc(100vw - 160px));margin:56px auto 0}
+  .abt.rs>*{grid-column:2}
+  .abt.rs>.por{grid-column:1;grid-row:1 / span 14;width:100%;margin:0;position:sticky;top:32px}
+  .abt.rs>h1{margin-top:0}
+}
+
+/* ================= desktop pass 2026-11-17c (Fable; >=761px only — phone rules untouched) =================
+   same content as the phone on every page; only the arrangement follows the wide screen (Janin's relation)
+   home: career hangs from the title block's left edge, page ends right after it · projects: plates 89vw, 6px gaps
+   resume + contact: one two-column grid on the site column · project pages: same right-hand links as the other pages */
+@media (min-width:761px){
+  /* ---- home ---- */
+  .home{min-height:calc(92vh + 340px)}
+  .home .cv{left:calc(50vw - min(26vw,450px));top:92vh;width:min(52vw,900px);font-size:13px}
+  .home .cv li{line-height:21px}
+  .home .cv .y{min-width:76px;color:var(--mu)}
+  .home .cv a{transition:color .2s}
+  .home .foot{left:calc(50vw - min(26vw,450px));bottom:24px;font-size:11px;line-height:16px;letter-spacing:.04em;opacity:.7}
+  .home .foot .ft-long{display:none}
+
+  /* ---- projects list: large plates near the screen edges, thin gaps, no captions; name on hover; locked ones stay softly blurred ---- */
+  .ph{padding-bottom:96px}
+  .stack{width:min(100vw - 32px,89vw)}
+  .stack li{margin:0 0 6px}
+  .stack li:last-child{margin-bottom:0}
+  .stack .nm b{font-size:clamp(21px,1.7vw,30px);line-height:1.2}
+  .stack .nm i{font-size:clamp(15px,1.1vw,19px);line-height:1.25}
+
+  /* ---- project pages: the right-hand links of every other page ---- */
+  .nav--proj{align-items:baseline}
+  .nav--proj .nvp[hidden]{display:flex!important}
+  .nav--proj .nv a{font-size:13px}
+
+  /* ---- resume + contact: left column (photo / page word) and right column (text / form) on the site column ---- */
+  @media (min-width:900px){
+    .abt.rs,.abt.ctc{display:grid;grid-template-columns:clamp(300px,33%,420px) minmax(0,1fr);column-gap:64px;align-items:start;width:var(--col);margin:56px auto 0}
+    .abt.rs{grid-template-rows:repeat(7,auto) 1fr}
+    .abt.rs>.por{grid-row:1 / span 8}
+    .abt.rs .abl{max-width:none}
+    .abt.rs .abl li{grid-template-columns:88px minmax(0,1fr);margin-bottom:4px;line-height:17px}
+    .abt.ctc{grid-template-rows:auto auto 1fr}
+    .abt.ctc>h1{grid-column:1;grid-row:1}
+    .abt.ctc>.lead{grid-column:1;grid-row:2;max-width:330px}
+    .abt.ctc>.cf{grid-column:2;grid-row:1 / span 3;max-width:600px;margin:20px 0 0}
+    .abt.ctc .cf textarea{min-height:210px}
+    .pg .end{padding-top:96px}
+  }
+}
+
+/* ---- home desktop: subtitle row justified to SPECTRUM's own width (left end under S, right end under M) like the phone ---- */
+@media (min-width:761px) and (min-aspect-ratio:9/10){
+  .home{--f:clamp(40px,6.4vw,112px)}
+  .home .id .wm{font-size:var(--f)}
+  .home .id .sl{width:calc(var(--f)*7.03);max-width:none;transform:translateX(calc(var(--f)*.035));margin-top:calc(var(--f)*.12);font-size:clamp(12px,1.15vw,18px)}
+}
+
+/* home phone: the three links retire (the menu button carries them) */
+@media (max-width:760px){
+  .home .hl{display:none!important}
+  .home .id{padding-bottom:0}
+  .home .cv{padding-top:36px}
+}
+
+/* projects list: more air between projects (was 6px) — desktop 36px, phone 22px */
+.stack li{margin:0 0 36px}
+.stack li:last-child{margin-bottom:0}
+@media (max-width:760px){.stack li{margin:0 0 22px}.stack li:last-child{margin-bottom:0}}
+
+/* ---- collaborators strip (Linear-style): one line, white monochrome logos, slow marquee ---- */
+.lg{margin:0}
+.lgt{margin:0 0 22px;font:400 10.5px/14px "SFMono-Regular",Menlo,Consolas,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.lgm{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);display:flex;width:100%}
+.lgl{flex:0 0 auto;display:flex;align-items:center;gap:clamp(48px,7vw,96px);margin:0;padding:0 clamp(24px,3.5vw,48px) 0 0;list-style:none;animation:lgmove 48s linear infinite}
+.lgl img{display:block;width:auto;opacity:.62;transition:opacity .3s}
+.lgl li:hover img{opacity:1}
+.lgm:hover .lgl{animation-play-state:paused}
+@keyframes lgmove{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.lgl{animation:none}.lgl+.lgl{display:none}.lgm{flex-wrap:wrap;mask-image:none;-webkit-mask-image:none}}
+@media (min-width:761px){
+  .home{min-height:calc(92vh + 440px)}
+  .home .lg{position:absolute;left:var(--ax);right:var(--ax);top:calc(92vh + 250px)}
+  .lgl img{height:24px}
+}
+@media (max-width:760px){
+  .home .lg{order:8;margin:46px 0 0;padding:0 20px}
+  .lgm{margin:0 -20px;width:calc(100% + 40px)}
+  .lgl img{height:20px}
+}
+
+/* logo strip spacing (round 2): equal gap incl. the loop seam, per-logo optical heights */
+.lgm{--lg-gap:clamp(64px,6.2vw,92px)}
+.lgl{gap:var(--lg-gap);padding:0 var(--lg-gap) 0 0}
+@media (max-width:760px){.lgm{--lg-gap:56px}}
+
+/* hero loop video: sits exactly over the still, fades in once it plays */
+.home .bg{overflow:hidden}
+.home .bg .hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;opacity:0;transition:opacity 1.4s ease;pointer-events:none;background:transparent}
+.home .bg .hv.on{opacity:1}
+
+/* logo strip v3: one track with two identical halves, translate by exactly -50% (no seam jump); GPU layer; cleaned alpha */
+.lgm{display:block;overflow:hidden;contain:paint}
+.lgk{display:flex;width:max-content;will-change:transform;animation:lgmove2 56s linear infinite;backface-visibility:hidden}
+.lgl{animation:none!important}
+.lgm:hover .lgk{animation-play-state:paused}
+@keyframes lgmove2{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+@media (prefers-reduced-motion:reduce){.lgk{animation:none;flex-wrap:wrap;width:auto}}
