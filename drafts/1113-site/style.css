@@ -740,3 +740,24 @@ html.mo,html.mo body{overflow:hidden}
 .stack li{margin:0 0 36px}
 .stack li:last-child{margin-bottom:0}
 @media (max-width:760px){.stack li{margin:0 0 22px}.stack li:last-child{margin-bottom:0}}
+
+/* ---- collaborators strip (Linear-style): one line, white monochrome logos, slow marquee ---- */
+.lg{margin:0}
+.lgt{margin:0 0 22px;font:400 10.5px/14px "SFMono-Regular",Menlo,Consolas,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.lgm{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);display:flex;width:100%}
+.lgl{flex:0 0 auto;display:flex;align-items:center;gap:clamp(48px,7vw,96px);margin:0;padding:0 clamp(24px,3.5vw,48px) 0 0;list-style:none;animation:lgmove 48s linear infinite}
+.lgl img{display:block;width:auto;opacity:.62;transition:opacity .3s}
+.lgl li:hover img{opacity:1}
+.lgm:hover .lgl{animation-play-state:paused}
+@keyframes lgmove{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.lgl{animation:none}.lgl+.lgl{display:none}.lgm{flex-wrap:wrap;mask-image:none;-webkit-mask-image:none}}
+@media (min-width:761px){
+  .home{min-height:calc(92vh + 440px)}
+  .home .lg{position:absolute;left:var(--ax);right:var(--ax);top:calc(92vh + 250px)}
+  .lgl img{height:24px}
+}
+@media (max-width:760px){
+  .home .lg{order:8;margin:46px 0 0;padding:0 20px}
+  .lgm{margin:0 -20px;width:calc(100% + 40px)}
+  .lgl img{height:20px}
+}
