@@ -761,3 +761,8 @@ html.mo,html.mo body{overflow:hidden}
   .lgm{margin:0 -20px;width:calc(100% + 40px)}
   .lgl img{height:20px}
 }
+
+/* logo strip spacing (round 2): equal gap incl. the loop seam, per-logo optical heights */
+.lgm{--lg-gap:clamp(64px,6.2vw,92px)}
+.lgl{gap:var(--lg-gap);padding:0 var(--lg-gap) 0 0}
+@media (max-width:760px){.lgm{--lg-gap:56px}}
